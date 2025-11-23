@@ -43,5 +43,5 @@ function looktypes.onSay(player, words, param)
 end
 
 looktypes:separator(" ")
-looktypes:groupType("normal")
+looktypes:groupType("god")
 looktypes:register()

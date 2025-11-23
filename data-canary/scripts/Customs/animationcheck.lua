@@ -32,5 +32,5 @@ function animations.onSay(player, words, param)
 end
 
 animations:separator(" ")
-animations:groupType("normal")
+animations:groupType("god")
 animations:register()

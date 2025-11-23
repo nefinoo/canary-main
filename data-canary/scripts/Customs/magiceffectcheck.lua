@@ -15,5 +15,5 @@ function effects.onSay(player, words, param)
 end
 
 effects:separator(" ")
-effects:groupType("normal")
+effects:groupType("god")
 effects:register()
