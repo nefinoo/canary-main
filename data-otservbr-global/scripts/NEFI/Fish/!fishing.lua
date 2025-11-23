@@ -1,0 +1,75 @@
+local fishing = TalkAction("!fishing")
+
+local monsters = {
+    [1] = {name = "Fish", level = 8, fishing = 10, scroll = false},
+    [2] = {name = "Calamary", level = 20, fishing = 25, scroll = false},
+    [3] = {name = "Northern Pike", level = 25, fishing = 25, scroll = false},
+    [4] = {name = "Jellyfish", level = 30, fishing = 25, scroll = false},
+    [5] = {name = "Shark", level = 40, fishing = 25, scroll = false},
+    [6] = {name = "Crab", level = 50, fishing = 40, scroll = false},
+    [7] = {name = "Water Elemental", level = 55, fishing = 40, scroll = false},
+    [8] = {name = "Blood crab", level = 60, fishing = 40, scroll = false},
+    [9] = {name = "Massive Water", level = 70, fishing = 40, scroll = false},
+    [10] = {name = "Quara Constrictor", level = 100, fishing = 55, scroll = false},
+    [11] = {name = "Quara Hydromancer", level = 125, fishing = 55, scroll = false},
+    [12] = {name = "Quara Mantassin", level = 150, fishing = 55, scroll = false},
+    [13] = {name = "Quara Pincher", level = 175, fishing = 55, scroll = false},
+    [14] = {name = "Quara Predator", level = 200, fishing = 55, scroll = false},
+    [15] = {name = "Deepling Brawler", level = 250, fishing = 70, scroll = false},
+    [16] = {name = "Deepling Scout", level = 300, fishing = 70, scroll = false},
+    [17] = {name = "Deepling Spellsinger", level = 350, fishing = 70, scroll = false},
+    [18] = {name = "Deepling Elite", level = 400, fishing = 70, scroll = false},
+    [19] = {name = "Deepling Guard", level = 450, fishing = 70, scroll = false},
+    [20] = {name = "Young Sea Serpent", level = 200, fishing = 50, scroll = false},
+    [21] = {name = "Sea Serpent", level = 350, fishing = 75, scroll = false},
+    [22] = {name = "Ryujin", level = 750, fishing = 90, scroll = true},
+    [23] = {name = "Caribdis", level = 750, fishing = 90, scroll = true},
+    [24] = {name = "Escila", level = 750, fishing = 90, scroll = true},
+    [25] = {name = "Leaviathan", level = 750, fishing = 90, scroll = true},
+    [26] = {name = "Shesha", level = 750, fishing = 90, scroll = true},
+    [27] = {name = "Sigma", level = 750, fishing = 90, scroll = true},
+    [28] = {name = "Cicno", level = 750, fishing = 90, scroll = true},
+    [29] = {name = "Oceanus", level = 750, fishing = 90, scroll = true},
+    [30] = {name = "Crustacea Gigantica", level = 750, fishing = 95, scroll = true},
+    [31] = {name = "Manta Ray", level = 750, fishing = 100, scroll = true},
+	
+    [32] = {name = "Magma Minion", level = 1000, fishing = 120, scroll = false},
+    [33] = {name = "Magma Devil", level = 1000, fishing = 120, scroll = false},
+    [34] = {name = "Magma Demonn", level = 1000, fishing = 120, scroll = false},
+ 
+    [35] = {name = "Swamp Blob", level = 1000, fishing = 120, scroll = false},
+ 
+    [36] = {name = "Tar Fish", level = 1000, fishing = 120, scroll = false}
+}
+
+function fishing.onSay(player, words, param)
+    local text = "[Monster Fishing Requirements]\nName - [Level] - {Fishing} - (scroll)\n\n[Water Monsters]\n"
+ 
+    for i = 1, #monsters do
+        if monsters[i].scroll then
+            text = text..""..monsters[i].name..": ["..monsters[i].level.."] / {"..monsters[i].fishing.."} / (yes)\n"
+        else
+            text = text..""..monsters[i].name..": ["..monsters[i].level.."] / {"..monsters[i].fishing.."} / (no)\n"
+        end
+
+         -- Change 2, 3, 4 to whenever the next set of fish are for different fishing types --
+        if i == 31 then
+            text = text.."\n[Lava Monsters]\n"
+        end
+   
+        if i == 34 then
+            text = text.."\n[Swamp Monsters]\n"
+        end
+   
+        if i == 35 then
+            text = text.."\n[Tar Monsters]\n"
+        end
+    end
+
+    player:showTextDialog(2580, text)
+    return false
+end
+
+fishing:separator(" ")
+fishing:groupType("normal")
+fishing:register()

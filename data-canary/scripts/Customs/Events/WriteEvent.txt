@@ -1,0 +1,94 @@
+local TypeRace = {
+    active = false,
+    currentCode = "",
+    prize = {2160, 10}, -- itemId, count
+    interval = 17 * 13 * 1000, -- 30 min
+}
+
+function TypeRace.generateCode()
+    local chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local length = 6
+    local code = ""
+
+    math.randomseed(os.time())
+
+    for i = 1, length do
+        local index = math.random(#chars)
+        code = code .. chars:sub(index, index)
+    end
+
+    return code
+end
+
+local event = GlobalEvent("type_race_event")
+
+function event.onThink(interval)
+    if TypeRace.active then
+        return true
+    end
+
+    TypeRace.currentCode = TypeRace.generateCode()
+    TypeRace.active = true
+
+    -- Mostrar con espacios (anti copy-paste)
+    local spacedCode = TypeRace.currentCode:gsub(".", "%1 ")
+
+    Game.broadcastMessage(
+        "[TYPE RACE EVENT] First to type this code (WITHOUT spaces) using !type <code> wins:\n" ..
+        spacedCode,
+        MESSAGE_EVENT_ADVANCE
+    )
+
+    return true
+end
+
+event:interval(TypeRace.interval)
+event:register()
+
+_G.TypeRace = TypeRace
+
+
+local talk = TalkAction("!type")
+
+function talk.onSay(player, words, param)
+    local code = param:upper():trim()
+
+    if not TypeRace.active then
+        player:sendCancelMessage("There is no active Type Race event.")
+        return false
+    end
+
+    if code == "" then
+        player:sendCancelMessage("Usage: !type <code>")
+        return false
+    end
+
+    if player:getGroup():getAccess() then
+        player:sendCancelMessage("Staff cannot participate.")
+        return false
+    end
+
+    if code ~= TypeRace.currentCode then
+        player:sendCancelMessage("Incorrect code! Try again.")
+        return false
+    end
+
+    -- Winner
+    TypeRace.active = false
+
+    local itemId = TypeRace.prize[1]
+    local count = TypeRace.prize[2]
+    player:addItem(itemId, count)
+
+    Game.broadcastMessage(
+        "[TYPE RACE EVENT] " .. player:getName() .. " typed the correct code first and won " ..
+        count .. "x " .. ItemType(itemId):getName() .. "!",
+        MESSAGE_EVENT_ADVANCE
+    )
+
+    return false
+end
+
+talk:separator(" ")
+talk:groupType("normal")
+talk:register()

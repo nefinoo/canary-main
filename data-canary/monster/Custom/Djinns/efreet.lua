@@ -1,0 +1,127 @@
+﻿local mType = Game.createMonsterType("efreet")
+local monster = {}
+
+monster.name = "efreet"
+monster.description = "an efreet"
+monster.experience = 325
+monster.outfit = {
+	lookType = 103,
+	lookHead = 20,
+	lookBody = 30,
+	lookLegs = 40,
+	lookFeet = 50,
+	lookAddons = 0,
+	lookMount = 0
+}
+
+monster.health = 550
+monster.maxHealth = 550
+monster.runHealth = 0
+monster.race = "blood"
+monster.corpse = 6032
+monster.speed = 270
+monster.summonCost = 0
+
+monster.changeTarget = {
+	interval = 5000,
+	chance = 8
+}
+
+monster.flags = {
+	attackable = true,
+	hostile = true,
+	summonable = false,
+	convinceable = false,
+	illusionable = false,
+	boss = false,
+	ignoreSpawnBlock = false,
+	pushable = false,
+	canPushItems = true,
+	canPushCreatures = false,
+	staticAttackChance = 90,
+	targetDistance = 1,
+	healthHidden = false,
+	canWalkOnEnergy = false,
+	canWalkOnFire = false,
+	canWalkOnPoison = false
+}
+
+monster.light = {
+	level = 0,
+	color = 0
+}
+
+monster.voices = {
+	interval = 5000,
+	chance = 10,
+	{text = "I grant you a deathwish!", yell = false},
+	{text = "Good wishes are for fairytales", yell = false}
+}
+
+monster.immunities = {
+	{type = "paralyze", condition = true},
+	{type = "outfit", condition = false},
+	{type = "invisible", condition = true},
+	{type = "drunk", condition = true},
+	{type = "bleed", condition = false}
+}
+
+monster.elements = {
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 60},
+	{type = COMBAT_EARTHDAMAGE, percent = 40},
+	{type = COMBAT_FIREDAMAGE, percent = 90},
+	{type = COMBAT_LIFEDRAIN, percent = 0},
+	{type = COMBAT_MANADRAIN, percent = 0},
+	{type = COMBAT_DROWNDAMAGE, percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_HOLYDAMAGE , percent = -10},
+	{type = COMBAT_DEATHDAMAGE , percent = 30}
+}
+
+monster.attacks = {
+	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -150},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -40, maxDamage = -110, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -65, maxDamage = -115, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="speed", interval = 1000, chance = 13, speed = {min = -650, max = -650}, duration = 15000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
+	{name ="drunk", interval = 1000, chance = 20, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
+	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 30000, outfitMonster = "rat" },
+	{name ="condition", interval = 1000, chance = 17, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -60, maxDamage = -100, radius = 3, target = false, effect = CONST_ME_ENERGYHIT}
+}
+
+monster.defenses = {
+	defense = 20,
+	armor = 15,
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 50, maxDamage = 80, effect = CONST_ME_MAGIC_BLUE}
+}
+
+monster.maxSummons = 2
+monster.summons = {
+	{name = "green djinn", chance = 15, interval = 1000, max = 2}
+}
+
+monster.loot = {
+	{name = "green gem", chance = 100},
+	{name = "gold coin", chance = 100000, maxCount = 60},
+	{name = "pear", chance = 6666, maxCount = 4},
+	{id = 2914, chance = 10000},
+	{id = 2853, chance = 100000, child = {
+			{name = "royal spear", chance = 2000, maxCount = 2},
+			{name = "small oil lamp", chance = 20000},
+			{name = "small emerald", chance = 7000, maxCount = 2},
+			{name = "green piece of cloth", chance = 5000, maxCount = 2},
+			{name = "magma monocle", chance = 500},
+			{name = "mystic turban", chance = 200},
+			{id = 2647, chance = 2500},
+			{name = "gold coin", chance = 80000, maxCount = 15},
+			{name = "heavy machete", chance = 2000},
+			{name = "wand of inferno", chance = 1111}
+		}
+	}
+}
+
+mType:register(monster)
+
+
+

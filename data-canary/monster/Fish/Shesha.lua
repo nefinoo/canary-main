@@ -1,0 +1,122 @@
+﻿local mType = Game.createMonsterType("Shesha")
+local monster = {}
+
+monster.description = "a serpentine demigod"
+monster.experience = 90000000
+monster.outfit = {
+	lookType = 1539,
+	lookHead = 0,
+	lookBody = 50,
+	lookLegs = 86,
+	lookFeet = 43,
+	lookAddons = 3,
+	lookMount = 0,
+}
+
+monster.bosstiary = {
+	bossRaceId = 8005,
+	bossRace = RARITY_NEMESIS,
+}
+
+monster.health = 7000000
+monster.maxHealth = 7000000
+monster.race = "blood"
+monster.corpse = 39225
+monster.speed = 180
+monster.manaCost = 0
+
+monster.changeTarget = {
+	interval = 4000,
+	chance = 10,
+}
+
+monster.strategiesTarget = {
+	nearest = 100,
+}
+
+monster.flags = {
+	summonable = false,
+	attackable = true,
+	hostile = true,
+	convinceable = false,
+	pushable = false,
+	rewardBoss = true,
+	illusionable = false,
+	canPushItems = true,
+	canPushCreatures = true,
+	staticAttackChance = 90,
+	targetDistance = 1,
+	runHealth = 0,
+	healthHidden = false,
+	isBlockable = false,
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true,
+}
+
+monster.light = {
+	level = 0,
+	color = 0,
+}
+
+monster.voices = {
+	interval = 5000,
+	chance = 10,
+	{ text = "Fear the wrath of the wronged!", yell = false },
+}
+
+monster.loot = {
+	{ name = "platinum coin", chance = 100000, maxCount = 12 },
+	{ name = "dagger", chance = 38810 },
+	{ name = "strong health potion", chance = 14930, maxCount = 2 },
+	{ name = "naga warrior scales", chance = 10600, maxCount = 4 },
+	{ name = "naga earring", chance = 6420, maxCount = 2 },
+	{ id = 3307, chance = 5520 }, -- scimitar
+	{ name = "naga armring", chance = 3730 },
+	{ name = "plate armor", chance = 2990 },
+	{ name = "spiky club", chance = 2090 },
+	{ name = "serpent sword", chance = 1940 },
+	{ name = "violet crystal shard", chance = 1640 },
+	{ name = "katana", chance = 1490 },
+	{ name = "relic sword", chance = 1190 },
+	{ name = "knight armor", chance = 450 },
+	{ id = 7441, chance = 300 }, -- ice cube
+}
+
+monster.attacks = {
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -15000, maxDamage = -42000, target = true }, -- basic
+	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -38000, maxDamage = -52000, effect = CONST_ME_YELLOWSMOKE, range = 3, target = true }, -- burst
+	{ name = "nagadeathattack", interval = 2000, chance = 25, minDamage = -45000, maxDamage = -60000, target = true }, -- strong death
+	{ name = "combat", interval = 4000, chance = 31, type = COMBAT_LIFEDRAIN, minDamage = -40000, maxDamage = -52000, radius = 4, effect = CONST_ME_DRAWBLOOD, target = false }, -- AoE
+}
+
+monster.defenses = {
+	defense = 125,
+	armor = 90,
+	mitigation = 2.30,
+}
+
+monster.elements = {
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 20 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
+	{ type = COMBAT_EARTHDAMAGE, percent = -5 },
+	{ type = COMBAT_FIREDAMAGE, percent = 10 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 10 },
+	{ type = COMBAT_HOLYDAMAGE, percent = -20 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 10 },
+}
+
+monster.immunities = {
+	{ type = "paralyze", condition = true },
+	{ type = "outfit", condition = false },
+	{ type = "invisible", condition = true },
+	{ type = "bleed", condition = false },
+}
+
+mType:register(monster)
+
+
+

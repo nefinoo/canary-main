@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<npcs>
+	<npc centerx="593" centery="565" centerz="6" radius="1">
+		<npc name="Nephy" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="601" centery="565" centerz="6" radius="1">
+		<npc name="Malak" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="593" centery="569" centerz="6" radius="1">
+		<npc name="Varkhal" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="517" centery="795" centerz="6" radius="1">
+		<npc name="Cory" x="0" y="-1" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="510" centery="827" centerz="6" radius="1">
+		<npc name="Nephy" x="1" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="524" centery="827" centerz="6" radius="1">
+		<npc name="Malak" x="-1" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="513" centery="840" centerz="6" radius="1">
+		<npc name="Varkhal" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="518" centery="687" centerz="7" radius="30">
+		<npc name="King Kalazur" x="-17" y="19" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="525" centery="1698" centerz="7" radius="30">
+		<npc name="Charon" x="8" y="-5" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="619" centery="853" centerz="11" radius="1">
+		<npc name="Thasun the Guard" x="-1" y="1" z="11" spawntime="60" />
+	</npc>
+	<npc centerx="617" centery="877" centerz="11" radius="1">
+		<npc name="Kings Disciple" x="0" y="1" z="11" spawntime="60" />
+	</npc>
+</npcs>

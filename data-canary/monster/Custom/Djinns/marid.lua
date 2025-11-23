@@ -1,0 +1,128 @@
+﻿local mType = Game.createMonsterType("marid")
+local monster = {}
+
+monster.name = "marid"
+monster.description = "a marid"
+monster.experience = 325
+monster.outfit = {
+	lookType = 104,
+	lookHead = 20,
+	lookBody = 30,
+	lookLegs = 40,
+	lookFeet = 50,
+	lookAddons = 0,
+	lookMount = 0
+}
+
+monster.health = 550
+monster.maxHealth = 550
+monster.runHealth = 0
+monster.race = "blood"
+monster.corpse = 6033
+monster.speed = 170
+monster.summonCost = 0
+
+monster.changeTarget = {
+	interval = 5000,
+	chance = 8
+}
+
+monster.flags = {
+	attackable = true,
+	hostile = true,
+	summonable = false,
+	convinceable = false,
+	illusionable = false,
+	boss = false,
+	ignoreSpawnBlock = false,
+	pushable = false,
+	canPushItems = true,
+	canPushCreatures = false,
+	staticAttackChance = 90,
+	targetDistance = 1,
+	healthHidden = false,
+	canWalkOnEnergy = false,
+	canWalkOnFire = false,
+	canWalkOnPoison = false
+}
+
+monster.light = {
+	level = 0,
+	color = 0
+}
+
+monster.voices = {
+	interval = 5000,
+	chance = 10,
+	{text = "Simsalabim", yell = false},
+	{text = "Feel the power of my magic, tiny mortal!", yell = false},
+	{text = "Wishes can come true.", yell = false},
+	{text = "Djinns will soon again be the greatest!", yell = false}
+}
+
+monster.immunities = {
+	{type = "paralyze", condition = true},
+	{type = "outfit", condition = false},
+	{type = "invisible", condition = true},
+	{type = "drunk", condition = true},
+	{type = "bleed", condition = false}
+}
+
+monster.elements = {
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 60},
+	{type = COMBAT_EARTHDAMAGE, percent = 70},
+	{type = COMBAT_FIREDAMAGE, percent = 90},
+	{type = COMBAT_LIFEDRAIN, percent = 0},
+	{type = COMBAT_MANADRAIN, percent = 0},
+	{type = COMBAT_DROWNDAMAGE, percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = -20},
+	{type = COMBAT_HOLYDAMAGE , percent = 30},
+	{type = COMBAT_DEATHDAMAGE , percent = -15}
+}
+
+monster.attacks = {
+	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -150},
+	{name ="combat", interval = 1000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -40, maxDamage = -110, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -65, maxDamage = -115, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="speed", interval = 1000, chance = 13, speed = {min = -650, max = -650}, duration = 15000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
+	{name ="drunk", interval = 1000, chance = 20, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
+	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 20000, outfitMonster = "rabbit" },
+	{name ="condition", interval = 2000, chance = 17, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -60, maxDamage = -100, radius = 3, target = false, effect = CONST_ME_ENERGYHIT}
+}
+
+monster.defenses = {
+	defense = 15,
+	armor = 22,
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 50, maxDamage = 80, effect = CONST_ME_MAGIC_BLUE}
+}
+
+monster.maxSummons = 2
+monster.summons = {
+	{name = "blue djinn", chance = 15, interval = 1000, max = 2}
+}
+
+monster.loot = {
+	{name = "blue gem", chance = 300},
+	{id = 2659, chance = 2500},
+	{name = "gold coin", chance = 100000, maxCount = 50},
+	{name = "heavy machete", chance = 5000},
+	{name = "hailstorm rod", chance = 1000},
+	{name = "blue piece of cloth", chance = 5000, maxCount = 2},
+	{id = 2853, chance = 100000, child = {
+			{id = 2948, chance = 300},
+			{name = "magma monocle", chance = 500},
+			{name = "gold coin", chance = 100000, maxCount = 14},
+			{name = "small sapphire", chance = 7000, maxCount = 3},
+			{name = "small oil lamp", chance = 3333},
+			{name = "blueberry", chance = 20000, maxCount = 4},
+			{name = "life crystal", chance = 10000}
+		}
+	}
+}
+
+mType:register(monster)
+
+
+
