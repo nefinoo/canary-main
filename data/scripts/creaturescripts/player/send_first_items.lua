@@ -56,9 +56,8 @@ local config = {
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 266, 10 }, -- health potion
-			{ 3350, 1 }, -- bow
-			{ 3447, 50 }, -- 50 arrows
+			{ 266, 5 }, -- health potion
+			{ 268, 5 }, -- health potion
 		},
 	},
 

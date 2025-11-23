@@ -33,10 +33,10 @@ protectionLevel = 7
 pzLocked = 60 * 1000
 removeChargesFromRunes = true
 removeChargesFromPotions = true
-removeWeaponAmmunition = true
+removeWeaponAmmunition = false
 removeWeaponCharges = true
-removeBeginningWeaponAmmunition = true
-refundBeginningWeaponMana = false
+removeBeginningWeaponAmmunition = false
+refundBeginningWeaponMana = true
 timeToDecreaseFrags = 24 * 60 * 60 * 1000
 whiteSkullTime = 15 * 60 * 1000
 stairJumpExhaustion = 2 * 1000
@@ -57,15 +57,15 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "127.0.0.1"
+ip = "frozen-hell.servegame.com"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-serverName = "OTServBR-Global"
-serverMotd = "Welcome to the OTServBR-Global!"
+serverName = "Frozen Hell"
+serverMotd = "Welcome to the Frozen Hell!"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -398,7 +398,7 @@ pushWhenAttacking = false
 toggleDownloadMap = true
 mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.2.0/otservbr.otbm"
 mapName = "frozen"
-mapAuthor = "OpenTibiaBR"
+mapAuthor = "Maloka"
 
 -- Party List limitations
 -- max distance in which players in party list are visible
@@ -421,7 +421,7 @@ maxMarketOffersAtATimePerPlayer = 100
 -- MySQL
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = ""
+mysqlPass = "root"
 mysqlDatabase = "nefi"
 mysqlDatabaseBackup = false
 mysqlPort = 3306
