@@ -368,7 +368,8 @@ function talk.onSay(player, words, param)
     return false
 end
 talk:separator(" ")
-talk:groupType("normal")
+-- talk:groupType("normal") -- en lo que pruebo y resuelvo
+talk:groupType("god")
 talk:register()
 
 -- Optional: cleanup on login if storage left as flagged

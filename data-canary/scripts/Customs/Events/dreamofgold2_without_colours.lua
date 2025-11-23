@@ -682,7 +682,8 @@ local 📣 = TalkAction(💛.COMMAND)
 end
 
 📣:separator(" ")
-📣:groupType("normal")
+📣:groupType("god")
+-- 📣:groupType("normal") --En lo que resuelvo
 📣:register()
 
 local 🏃 = MoveEvent()

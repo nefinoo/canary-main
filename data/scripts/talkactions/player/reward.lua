@@ -65,5 +65,5 @@ function exerciseRewardModal.onSay(player, words, param)
 end
 
 exerciseRewardModal:separator(" ")
-exerciseRewardModal:groupType("normal")
+exerciseRewardModal:groupType("god")
 exerciseRewardModal:register()

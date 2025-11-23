@@ -10,11 +10,11 @@ local config = {
     blocked_items = {2165, 2152, 2148, 2160, 2166, 2167, 2168, 2169, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2343, 2433, 2640, 6132, 6300, 6301, 9932, 9933}
 }
 
-local offer_talkAction = TalkAction("!offer")
+local offer_talkAction = TalkAction("!auction")
 
 function offer_talkAction.onSay(player, words, param)
     if param == '' then
-        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Command requires param.")
+        player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Command requires param.")
         return true
     end
 
@@ -23,17 +23,17 @@ function offer_talkAction.onSay(player, words, param)
     -- ADD
     if t[1] == "add" then
         if not t[2] or not t[3] or not t[4] then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Command requires more params.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Command requires more params.")
             return true
         end
               
         if not tonumber(t[3]) or not tonumber(t[4]) then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You don't set valid price or items count.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You don't set valid price or items count.")
             return true
         end
       
         if string.len(t[3]) > 7 or string.len(t[4]) > 3 then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "This price or item count is too high.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "This price or item count is too high.")
             return true
         end
       
@@ -41,7 +41,7 @@ function offer_talkAction.onSay(player, words, param)
         if itemType:getId() == 0 then
             itemType = ItemType(tonumber(t[2]))
             if not tonumber(t[2]) or itemType:getId() == 0 then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Item wich such name does not exists.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Item wich such name does not exists.")
                 return true
             end
         end
@@ -52,64 +52,64 @@ function offer_talkAction.onSay(player, words, param)
         end
       
         if player:getLevel() < config.levelRequiredToAdd then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You don't have required (" .. config.levelRequiredToAdd .. ") level.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You don't have required (" .. config.levelRequiredToAdd .. ") level.")
             return true
         end
                       
         if isInArray(config.blocked_items, itemType:getId()) then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "This item is blocked.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "This item is blocked.")
             return true
         end
       
         if player:getItemCount(itemType:getId(), true) < tonumber(t[4]) then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Sorry, you don't have this item(s).")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Sorry, you don't have this item(s).")
             return true
         end
       
         local check = db.storeQuery("SELECT `id` FROM `auction_system` WHERE `player` = " .. player:getGuid() .. ";")
         if check ~= false then
             if check:getRows(true) >= config.maxOffersPerPlayer then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Sorry you can't add more offers (max. " .. config.maxOffersPerPlayer .. ")")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Sorry you can't add more offers (max. " .. config.maxOffersPerPlayer .. ")")
                 return true
             end
         end
                       
         if config.SendOffersOnlyInPZ then
             if not Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You must be in PZ area when you add offert to database.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You must be in PZ area when you add offert to database.")
                 return true
             end
         end
   
         if iftonumber(t[4]) < 1 or tonumber(t[3]) < 1 then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You have to type a number higher than 0.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You have to type a number higher than 0.")
             return true
         end
                       
         local itemcount, costgp = math.floor(t[4]), math.floor(t[3])
         player:removeItem(itemType:getId(), itemcount)
         db.query("INSERT INTO `auction_system` (`player`, `item_name`, `item_id`, `count`, `cost`, `date`) VALUES (" .. player:getGuid() .. ", '" .. db.escapeString(itemType:getName()) .. "', " .. itemType:getId() .. ", " .. itemcount .. ", " .. costgp ..", " .. os.time() .. ")")
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "You successfully add " .. itemcount .." " .. db.escapeString(itemType:getName()) .." for " .. costgp .. " gps to offerts database.")
+        player:sendTextMessage(MESSAGE_LOOK, "You successfully add " .. itemcount .." " .. db.escapeString(itemType:getName()) .." for " .. costgp .. " gps to offerts database.")
     end
 
     -- BUY
     if t[1] == "buy" then
         if not tonumber(t[2]) then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Wrong ID.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Wrong ID.")
             return true
         end
       
         local buy = db.storeQuery("SELECT * FROM `auction_system` WHERE `id` = " .. (tonumber(t[2])) .. ";")
         if buy ~= false then
             if player:getMoney() < result.getDataInt(buy, "cost") then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You don't have enoguh GP.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You don't have enoguh GP.")
                 result.free(buy)
                 return true
             end
 
             local itemPlayer = result.getDataInt(buy, "player")
             if player:getGuid() == itemPlayer then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Sorry, you can't buy your own items.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Sorry, you can't buy your own items.")
                 result.free(buy)
                 return true
             end
@@ -117,14 +117,14 @@ function offer_talkAction.onSay(player, words, param)
             -- Retrieve itemType
             local itemType = ItemType(result.getDataInt(buy, "item_id"))
             if itemType:getId() == 0 then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Failed to load itemType of buy offer.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Failed to load itemType of buy offer.")
                 return true
             end
            
             local itemCount = result.getDataInt(buy, "count")
             local itemWeight = itemType:getWeight(itemCount)
             if player:getFreeCapacity() < itemWeight then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You try to buy " .. itemCount .. " " .. db.escapeString(itemType:getName()) .. ". It weight(s) " .. itemWeight .. " cap oz. and you have only " .. player:getFreeCapacity() .. " oz. free capacity. Put some items to depot and try again.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You try to buy " .. itemCount .. " " .. db.escapeString(itemType:getName()) .. ". It weight(s) " .. itemWeight .. " cap oz. and you have only " .. player:getFreeCapacity() .. " oz. free capacity. Put some items to depot and try again.")
                 result.free(buy)
                 return true
             end
@@ -140,24 +140,24 @@ function offer_talkAction.onSay(player, words, param)
             local itemCost = result.getDataInt(buy, "cost")
             player:removeMoney(itemCost)
             db.query("DELETE FROM `auction_system` WHERE `id` = " .. tonumber(t[2]) .. ";")
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "You bought " .. itemCount .. " ".. db.escapeString(itemType:getName()) .. " for " .. itemCost .. " gps!")
+            player:sendTextMessage(MESSAGE_LOOK, "You bought " .. itemCount .. " ".. db.escapeString(itemType:getName()) .. " for " .. itemCost .. " gps!")
             db.query("UPDATE `players` SET `auction_balance` = `auction_balance` + " .. itemCost .. " WHERE `id` = " .. itemPlayer .. ";")
             result.free(buy)
         else
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Wrong ID.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Wrong ID.")
         end
     end
 
     -- REMOVE
     if t[1] == "remove" then
         if not tonumber(t[2]) then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Wrong ID.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Wrong ID.")
             return true
         end
        
         if config.SendOffersOnlyInPZ then   
             if not Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) then
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You must be in PZ area when you remove offerts from database.")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You must be in PZ area when you remove offerts from database.")
                 return true
             end
         end
@@ -169,7 +169,7 @@ function offer_talkAction.onSay(player, words, param)
                 -- Retrieve itemType
                 local itemType = ItemType(result.getDataInt(delete, "item_id"))
                 if itemType:getId() == 0 then
-                    player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Failed to load itemType of deleted offer.")
+                    player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Failed to load itemType of deleted offer.")
                     return true
                 end
                
@@ -185,13 +185,13 @@ function offer_talkAction.onSay(player, words, param)
                     end
                 end
                
-                player:sendTextMessage(MESSAGE_INFO_DESCR, "Your offert has been deleted from offerts database.")
+                player:sendTextMessage(MESSAGE_LOOK, "Your offert has been deleted from offerts database.")
             else
-                player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "This is not your offert!")
+                player:sendTextMessage(MESSAGE_ADMINISTRATOR, "This is not your offert!")
             end
             result.free(delete)
         else
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Wrong ID.")
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Wrong ID.")
         end
     end
 
@@ -202,17 +202,17 @@ function offer_talkAction.onSay(player, words, param)
 
             local auction_balance = result.getDataInt(balance, "auction_balance")
             if auction_balance < 1 then
-                player:sendTextMessage(MESSAGE_INFO_DESCR, "You don't have money on your auction balance.")
+                player:sendTextMessage(MESSAGE_LOOK, "You don't have money on your auction balance.")
                 result.free(balance)
                 return true
             end
 
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "You got " .. auction_balance .. " gps from auction system!")
+            player:sendTextMessage(MESSAGE_LOOK, "You got " .. auction_balance .. " gps from auction system!")
             player:addMoney(auction_balance)
             db.query("UPDATE `players` SET `auction_balance` = '0' WHERE `id` = " .. player:getGuid() .. ";")
             result.free(balance)
         else
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "You don't have money on your auction balance.")
+            player:sendTextMessage(MESSAGE_LOOK, "You don't have money on your auction balance.")
         end
     end
     return true
