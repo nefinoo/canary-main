@@ -219,4 +219,5 @@ function offer_talkAction.onSay(player, words, param)
 end
 
 offer_talkAction:separator(" ") -- Separate arguments passed to the command by a space
+offer_talkAction:groupType("normal")
 offer_talkAction:register()
