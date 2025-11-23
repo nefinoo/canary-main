@@ -230,7 +230,7 @@ pvpMaxLevelDifference = 0
 -- Wheel of destiny system
 -- NOTE: set wheelSystemEnabled = false to disable the wheel of destiny
 -- NOTE: only the wheel points are modified, all other data is on the client executable and cannot be modified
-wheelSystemEnabled = true
+wheelSystemEnabled = false
 wheelPointsPerLevel = 1
 
 -- Gem Atelier
@@ -592,10 +592,10 @@ discordWebhookDelayMs = 1000
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
 vipSystemEnabled = false
-vipBonusExp = 0
+vipBonusExp = 10
 vipBonusLoot = 0
 vipBonusSkill = 0
-vipAutoLootVipOnly = false
+vipAutoLootVipOnly = true
 vipStayOnline = false
 vipFamiliarTimeCooldownReduction = 0
 vipKeepHouse = false
