@@ -216,7 +216,7 @@ local function RunTypeRace()
     )
 	
 	Webhook.send("[TYPE RACE EVENT]", "First to type this code (WITHOUT spaces) using !type <code> wins:\n" ..
-        spaced", WEBHOOK_COLOR_WARNING)
+        spaced, WEBHOOK_COLOR_WARNING)
 end
 
 ---------------------------------------------------
