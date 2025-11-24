@@ -66,7 +66,7 @@ ZombieEvent = {
 
 	tpId = 1949,
 	tpPos = Position(517, 840, 5),
-	tpTime = 1, -- minutes
+	tpTime = 3, -- minutes
 
 	exitPos = Position(518, 840, 7),
 
@@ -83,7 +83,7 @@ ZombieEvent = {
 
 ---@type table<integer, {itemId: integer, count: integer, chance: integer}>
 ZombieEvent.rewards = {
-	{itemId = 52583, count = {10, 13}, chance = 100}
+	{itemId = 52583, count = {5, 6}, chance = 100}
 }
 
 ---```diff

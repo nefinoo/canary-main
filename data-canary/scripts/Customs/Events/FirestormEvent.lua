@@ -47,7 +47,7 @@ local config = {
     },
     rewardBag = 2859, -- Reward bag id
     rewards = { -- In this table, you can add the rewards, as are the example:
-        { itemId = 52583, count = {10, 13}, chance = 100 },
+        { itemId = 52583, count = {5, 6}, chance = 100 },
     },
     cache = { -- This table should not be modified for anything
         eventIds = {},

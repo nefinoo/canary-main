@@ -46,7 +46,8 @@ function talkLottery.onSay(player, words, param)
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 
             "Today's lottery prize: " .. prizeCount .. "x " .. ItemType(prizeId):getName() .. 
             ".\nUse !lottery buy to purchase a ticket for " .. tokenAmount .. " gold.")
-
+		Webhook.send("Lottery", "Today's lottery prize: " .. prizeCount .. "x " .. ItemType(prizeId):getName() .. 
+            ".\nUse !lottery buy to purchase a ticket for " .. tokenAmount .. " gold.", WEBHOOK_COLOR_WARNING)
         return false
     end
 
@@ -124,6 +125,9 @@ local function RunLottery()
             " gained " .. count .. "x " .. ItemType(prize):getName() .. "!",
             MESSAGE_EVENT_ADVANCE
         )
+		
+		Webhook.send("Lottery Winner", "[LOTTERY] Winner: " .. winner:getName() ..
+            " gained " .. count .. "x " .. ItemType(prize):getName() .. "!", WEBHOOK_COLOR_WARNING)
     end
 
     -- Limpiar para siguiente ronda
@@ -182,14 +186,17 @@ function talkType.onSay(player, words, param)
 
     local itemId = TypeRace.prize[1]
     local count = TypeRace.prize[2]
-    player:addItem(itemId, math.random(count-5, count))
+    local randomprice = math.random(count-5, count)
+    player:addItem(itemId, randomprice)
 
     Game.broadcastMessage(
         "[TYPE RACE EVENT] " .. player:getName() .. " typed the correct code first and won " ..
-        count .. "x " .. ItemType(itemId):getName() .. "!",
+        randomprice .. "x " .. ItemType(itemId):getName() .. "!",
         MESSAGE_EVENT_ADVANCE
     )
-
+	
+	Webhook.send("[TYPE RACE EVENT]", "" .. player:getName() .. " typed the correct code first and won " ..
+        randomprice .. "x " .. ItemType(itemId):getName() .. "!", WEBHOOK_COLOR_WARNING)
     return false
 end
 
@@ -207,6 +214,9 @@ local function RunTypeRace()
         spaced,
         MESSAGE_EVENT_ADVANCE
     )
+	
+	Webhook.send("[TYPE RACE EVENT]", "First to type this code (WITHOUT spaces) using !type <code> wins:\n" ..
+        spaced", WEBHOOK_COLOR_WARNING)
 end
 
 ---------------------------------------------------
