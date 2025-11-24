@@ -574,7 +574,7 @@ location = "South America"
 -- Sends Discord webhook notifications on startup, raids and shutdown.
 -- The URL layout is https://discord.com/api/webhooks/:id/:token
 -- Leave empty if you wish to disable.
-discordWebhookURL = "https://discord.com/api/webhooks/1442416853598339105/aZHceQM7UBn6z8tilkVNHdOqQ2h8FADnQT--3NUbpRZ8ApqVzkJFBUaqzn1Ghhv_0MsB"
+discordWebhookURL = ""
 discordSendFooter = true
 discordWebhookDelayMs = 1000
 
