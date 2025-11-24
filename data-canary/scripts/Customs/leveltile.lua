@@ -21,5 +21,5 @@ end
 
 -- REGISTRO
 levelTile:type("stepin")
-levelTile:id(8282)
+levelTile:id(8282, 8886)
 levelTile:register()
