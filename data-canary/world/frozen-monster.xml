@@ -2312,13 +2312,6 @@
 		<monster name="Elf Scout" x="-2" y="11" z="7" spawntime="20" />
 		<monster name="Elf Scout" x="1" y="12" z="7" spawntime="20" />
 	</monster>
-	<monster centerx="416" centery="708" centerz="7" radius="5">
-		<monster name="Crab" x="-3" y="-2" z="7" spawntime="60" />
-		<monster name="Crab" x="4" y="4" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="430" centery="709" centerz="7" radius="5">
-		<monster name="Crab" x="4" y="0" z="7" spawntime="60" />
-	</monster>
 	<monster centerx="801" centery="717" centerz="7" radius="18">
 		<monster name="Giant Spider" x="0" y="-18" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="-4" y="-15" z="7" spawntime="30" />
