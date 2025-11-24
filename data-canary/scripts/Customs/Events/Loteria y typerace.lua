@@ -46,8 +46,7 @@ function talkLottery.onSay(player, words, param)
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 
             "Today's lottery prize: " .. prizeCount .. "x " .. ItemType(prizeId):getName() .. 
             ".\nUse !lottery buy to purchase a ticket for " .. tokenAmount .. " gold.")
-		Webhook.send("Lottery", "Today's lottery prize: " .. prizeCount .. "x " .. ItemType(prizeId):getName() .. 
-            ".\nUse !lottery buy to purchase a ticket for " .. tokenAmount .. " gold.", WEBHOOK_COLOR_WARNING)
+		-- Webhook.send("Lottery", "Today's lottery prize: " .. prizeCount .. "x " .. ItemType(prizeId):getName() ..".\nUse !lottery buy to purchase a ticket for " ..tokenAmount .. " gold.", WEBHOOK_COLOR_WARNING)
         return false
     end
 
@@ -126,8 +125,7 @@ local function RunLottery()
             MESSAGE_EVENT_ADVANCE
         )
 		
-		Webhook.send("Lottery Winner", "[LOTTERY] Winner: " .. winner:getName() ..
-            " gained " .. count .. "x " .. ItemType(prize):getName() .. "!", WEBHOOK_COLOR_WARNING)
+		-- Webhook.send("Lottery Winner", "[LOTTERY] Winner: " .. winner:getName() .." gained " .. count .. "x " .. ItemType(prize):getName() .. "!", WEBHOOK_COLOR_WARNING)
     end
 
     -- Limpiar para siguiente ronda
@@ -195,8 +193,7 @@ function talkType.onSay(player, words, param)
         MESSAGE_EVENT_ADVANCE
     )
 	
-	Webhook.send("[TYPE RACE EVENT]", "" .. player:getName() .. " typed the correct code first and won " ..
-        randomprice .. "x " .. ItemType(itemId):getName() .. "!", WEBHOOK_COLOR_WARNING)
+	-- Webhook.send("[TYPE RACE EVENT]", "" .. player:getName() .. " typed the correct code first and won " ..randomprice .. "x " .. ItemType(itemId):getName() .. "!", WEBHOOK_COLOR_WARNING)
     return false
 end
 
@@ -215,8 +212,7 @@ local function RunTypeRace()
         MESSAGE_EVENT_ADVANCE
     )
 	
-	Webhook.send("[TYPE RACE EVENT]", "First to type this code (WITHOUT spaces) using !type <code> wins:\n" ..
-        spaced, WEBHOOK_COLOR_WARNING)
+	-- Webhook.send("[TYPE RACE EVENT]", "First to type this code (WITHOUT spaces) using !type <code> wins:\n" ..spaced, WEBHOOK_COLOR_WARNING)
 end
 
 ---------------------------------------------------
