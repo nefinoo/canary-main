@@ -9987,6 +9987,7 @@
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="500"/>
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
@@ -10006,6 +10007,7 @@
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="500"/>
 			<attribute key="slot" value="legs"/>
 		</attribute>
 	</item>
@@ -11084,10 +11086,10 @@
 	<item id="3549" article="a" name="pair of soft boots">
 		<attribute key="showduration" value="1"/>
 		<attribute key="showAttributes" value="1"/>
-		<attribute key="manaticks" value="6000"/>
-		<attribute key="managain" value="12"/>
-		<attribute key="healthticks" value="6000"/>
-		<attribute key="healthgain" value="3"/>
+		<attribute key="manaticks" value="1000"/>
+		<attribute key="managain" value="25"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="25"/>
 		<attribute key="duration" value="14400"/>
 		<attribute key="transformdeequipto" value="6529"/>
 		<attribute key="decayTo" value="6530"/>
@@ -70553,6 +70555,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="skillboost distance" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="500"/>
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>

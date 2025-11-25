@@ -222,7 +222,7 @@
 		<monster name="Dog" x="15" y="-2" z="5" spawntime="60" />
 		<monster name="Hellraiser" x="-6" y="4" z="5" spawntime="60" />
 		<monster name="Dwarf Geomancer" x="6" y="4" z="5" spawntime="60" />
-		<monster name="Demodras" x="-6" y="8" z="5" spawntime="60" />
+		<monster name="Dragon Lord" x="-6" y="8" z="5" spawntime="60" />
 		<monster name="Hero" x="6" y="8" z="5" spawntime="60" />
 		<monster name="Orshabaal" x="0" y="9" z="5" spawntime="60" />
 	</monster>
@@ -1001,18 +1001,18 @@
 		<monster name="Juggernaut" x="-11" y="9" z="7" spawntime="20" />
 		<monster name="Juggernaut" x="9" y="9" z="7" spawntime="20" />
 		<monster name="Juggernaut" x="-4" y="10" z="7" spawntime="20" />
-		<monster name="Demodras" x="13" y="13" z="7" spawntime="20" />
-		<monster name="Demodras" x="-8" y="14" z="7" spawntime="20" />
-		<monster name="Demodras" x="1" y="14" z="7" spawntime="20" />
-		<monster name="Demodras" x="-11" y="15" z="7" spawntime="20" />
-		<monster name="Demodras" x="8" y="15" z="7" spawntime="20" />
-		<monster name="Demodras" x="2" y="17" z="7" spawntime="20" />
-		<monster name="Demodras" x="10" y="17" z="7" spawntime="20" />
-		<monster name="Demodras" x="-14" y="19" z="7" spawntime="20" />
-		<monster name="Demodras" x="-4" y="20" z="7" spawntime="20" />
-		<monster name="Demodras" x="11" y="20" z="7" spawntime="20" />
-		<monster name="Demodras" x="-10" y="22" z="7" spawntime="20" />
-		<monster name="Demodras" x="4" y="22" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="13" y="13" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-8" y="14" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="1" y="14" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-11" y="15" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="8" y="15" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="2" y="17" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="10" y="17" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-14" y="19" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-4" y="20" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="11" y="20" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-10" y="22" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="4" y="22" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="1713" centery="70" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
@@ -1435,11 +1435,11 @@
 		<monster name="Ghoul" x="13" y="13" z="7" spawntime="30" />
 		<monster name="Ghoul" x="11" y="15" z="7" spawntime="30" />
 		<monster name="Demon Skeleton" x="16" y="19" z="7" spawntime="30" />
-		<monster name="Demodras" x="-27" y="20" z="7" spawntime="30" />
-		<monster name="Demodras" x="-23" y="20" z="7" spawntime="30" />
+		<monster name="Dragon Lord" x="-27" y="20" z="7" spawntime="30" />
+		<monster name="Dragon Lord" x="-23" y="20" z="7" spawntime="30" />
 		<monster name="Ghoul" x="25" y="20" z="7" spawntime="30" />
 		<monster name="Ghoul" x="21" y="21" z="7" spawntime="30" />
-		<monster name="Demodras" x="-24" y="22" z="7" spawntime="30" />
+		<monster name="Dragon Lord" x="-24" y="22" z="7" spawntime="30" />
 		<monster name="Ghoul" x="14" y="22" z="7" spawntime="30" />
 		<monster name="Ghoul" x="11" y="23" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="-15" y="25" z="7" spawntime="30" />
@@ -3328,21 +3328,21 @@
 		<monster name="Necromancer" x="1" y="-2" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="230" centery="384" centerz="8" radius="30">
-		<monster name="Demodras" x="2" y="-29" z="8" spawntime="30" />
-		<monster name="Demodras" x="6" y="-29" z="8" spawntime="30" />
-		<monster name="Demodras" x="3" y="-25" z="8" spawntime="30" />
-		<monster name="Demodras" x="3" y="-18" z="8" spawntime="30" />
-		<monster name="Demodras" x="6" y="-18" z="8" spawntime="30" />
-		<monster name="Demodras" x="0" y="-12" z="8" spawntime="30" />
-		<monster name="Demodras" x="9" y="-12" z="8" spawntime="30" />
-		<monster name="Demodras" x="4" y="-8" z="8" spawntime="30" />
-		<monster name="Demodras" x="0" y="2" z="8" spawntime="30" />
-		<monster name="Demodras" x="-21" y="3" z="8" spawntime="30" />
-		<monster name="Demodras" x="-6" y="5" z="8" spawntime="30" />
-		<monster name="Demodras" x="-18" y="6" z="8" spawntime="30" />
-		<monster name="Demodras" x="-23" y="8" z="8" spawntime="30" />
-		<monster name="Demodras" x="-18" y="11" z="8" spawntime="30" />
-		<monster name="Demodras" x="-22" y="14" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="2" y="-29" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="6" y="-29" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="3" y="-25" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="3" y="-18" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="6" y="-18" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="0" y="-12" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="9" y="-12" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="4" y="-8" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="0" y="2" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-21" y="3" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-6" y="5" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-18" y="6" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-23" y="8" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-18" y="11" z="8" spawntime="30" />
+		<monster name="Dragon Lord" x="-22" y="14" z="8" spawntime="30" />
 		<monster name="Rotworm" x="8" y="14" z="8" spawntime="30" />
 		<monster name="Dwarf" x="7" y="18" z="8" spawntime="30" />
 		<monster name="Dwarf" x="8" y="27" z="8" spawntime="30" />
@@ -4701,20 +4701,20 @@
 		<monster name="beholder" x="3" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="419" centery="686" centerz="9" radius="10">
-		<monster name="Demodras" x="-5" y="-10" z="9" spawntime="30" />
-		<monster name="Demodras" x="-6" y="-5" z="9" spawntime="30" />
-		<monster name="Demodras" x="-5" y="1" z="9" spawntime="30" />
-		<monster name="Demodras" x="-6" y="6" z="9" spawntime="30" />
-		<monster name="Demodras" x="-6" y="10" z="9" spawntime="30" />
-		<monster name="Demodras" x="-5" y="10" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="-10" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-6" y="-5" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="1" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-6" y="6" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-6" y="10" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="10" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="418" centery="707" centerz="9" radius="10">
-		<monster name="Demodras" x="-5" y="-7" z="9" spawntime="30" />
-		<monster name="Demodras" x="-4" y="-7" z="9" spawntime="30" />
-		<monster name="Demodras" x="-5" y="-3" z="9" spawntime="30" />
-		<monster name="Demodras" x="-4" y="-3" z="9" spawntime="30" />
-		<monster name="Demodras" x="-5" y="1" z="9" spawntime="30" />
-		<monster name="Demodras" x="-4" y="1" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="-7" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-4" y="-7" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="-3" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-4" y="-3" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-5" y="1" z="9" spawntime="30" />
+		<monster name="Dragon Lord" x="-4" y="1" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="805" centery="716" centerz="9" radius="9">
 		<monster name="Giant Spider" x="6" y="-7" z="9" spawntime="30" />

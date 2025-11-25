@@ -123,5 +123,5 @@ function startEnhancedCounter(player, duration)
     addEvent(showCounter, 100)
 end
 
-massParalysis:id(9149)
+massParalysis:id(48194)
 massParalysis:register()

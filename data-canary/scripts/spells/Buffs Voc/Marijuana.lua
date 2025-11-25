@@ -22,7 +22,7 @@ function spell.onCastSpell(player, variant)
     end
 
     if soul < 200 and not player:hasFlag(PlayerFlag_CanBroadcast) then
-        player:sendCancelMessage("Sorry, you need 250 soul points.")
+        player:sendCancelMessage("Sorry, you need 200 soul points.")
         return false
     end
 

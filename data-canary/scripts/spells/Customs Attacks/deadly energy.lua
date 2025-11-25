@@ -118,8 +118,5 @@ spell:range(5)
 spell:needCasterTargetOrDirection(true)
 spell:cooldown(2000) -- exhaustion in milliseconds
 spell:vocation("sorcerer;true")
-spell:vocation("druid;true")
-spell:vocation("paladin;true")
-spell:vocation("knight;true")
 
 spell:register()

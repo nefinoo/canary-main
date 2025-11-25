@@ -51,7 +51,7 @@ local config = {
 			{ 8095, 1 }, -- ranger legs
 			{ 3552, 1 }, -- leather boots
 			{ 3572, 1 }, -- scarf
-			{ 3374, 1 }, -- legion helmet
+			{ 3353, 1 }, -- iron helmet
 		},
 
 		container = {
