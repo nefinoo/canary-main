@@ -1,47 +1,47 @@
 local config = {
     -- uniqueid = {cost, amount}
-    [9001] = {cost = 25, amount = 1},  -- Monster Drink (stamina +2h) Frecuente pero útil
+    [9001] = {cost = 115, amount = 1},  -- Monster Drink (stamina +2h) Frecuente pero útil
 	[9002] = {cost = 30, amount = 1},  -- Teleport Scroll (muy usado pero no OP)
-	[9003] = {cost = 80, amount = 1},  -- 100% EXP Ticket (muy fuerte → caro)
-	[9004] = {cost = 55, amount = 1},  -- 50% EXP Ticket (balanceado)
+	[9003] = {cost = 150, amount = 1},  -- 100% EXP Ticket (muy fuerte → caro)
+	[9004] = {cost = 80, amount = 1},  -- 50% EXP Ticket (balanceado)
 	[9005] = {cost = 65, amount = 5},  -- Prey Wildcards (ventaja grande, uso continuo)
 
 	-- Black Demon set (solo por tienda, stats únicos)
-	[9006] = {cost = 110, amount = 1}, -- Black Demon Helmet
-	[9007] = {cost = 150, amount = 1}, -- Black Demon Armor (pieza principal)
-	[9008] = {cost = 130, amount = 1}, -- Black Demon Legs
-	[9009] = {cost = 140, amount = 1}, -- Black Demon Shield
-	[9010] = {cost = 120, amount = 1}, -- Black Demon Boots
+	[9006] = {cost = 980, amount = 1}, -- Black Demon Helmet
+	[9007] = {cost = 980, amount = 1}, -- Black Demon Armor (pieza principal)
+	[9008] = {cost = 980, amount = 1}, -- Black Demon Legs
+	[9009] = {cost = 980, amount = 1}, -- Black Demon Shield
+	[9010] = {cost = 980, amount = 1}, -- Black Demon Boots
 
 	-- Overpower Runes (consumibles pero fuertes)
-	[9011] = {cost = 20, amount = 100}, -- Thunderstorm OV
-	[9012] = {cost = 20, amount = 100}, -- Fireball OV
-	[9013] = {cost = 20, amount = 100}, -- Avalanche OV
+	[9011] = {cost = 15, amount = 100}, -- Thunderstorm OV
+	[9012] = {cost = 25, amount = 100}, -- Fireball OV
+	[9013] = {cost = 25, amount = 100}, -- Avalanche OV
 	[9014] = {cost = 15, amount = 100}, -- Stoneshower OV (menos usada)
-	[9015] = {cost = 25, amount = 100}, -- Sudden Death OV (la más valiosa)
+	[9015] = {cost = 35, amount = 100}, -- Sudden Death OV (la más valiosa)
 
 	-- Objetos especiales / utilitarios
-	[9016] = {cost = 90, amount = 1},  -- The Death Note (molesto = caro)
-	[9017] = {cost = 35, amount = 1},  -- Elven Amulet (se usa mucho)
-	[9018] = {cost = 45, amount = 1},  -- PK Amulet (situacional pero útil)
-	[9019] = {cost = 40, amount = 1},  -- Skull Remover (muy situacional)
-	[9020] = {cost = 30, amount = 1},  -- Soul Potion (útil pero no OP)
+	[9016] = {cost = 350, amount = 1},  -- The Death Note (molesto = caro)
+	[9017] = {cost = 20, amount = 1},  -- Elven Amulet (se usa mucho)
+	[9018] = {cost = 250, amount = 1},  -- PK Amulet (situacional pero útil)
+	[9019] = {cost = 650, amount = 1},  -- Skull Remover (muy situacional)
+	[9020] = {cost = 80, amount = 1},  -- Soul Potion (útil pero no OP)
 
 	-- Yalahari set (único como el black demon)
-	[9021] = {cost = 100, amount = 1}, -- Mask
-	[9022] = {cost = 140, amount = 1}, -- Armor
-	[9023] = {cost = 120, amount = 1}, -- Legs
-	[9024] = {cost = 130, amount = 1}, -- Shield
-	[9025] = {cost = 110, amount = 1}, -- Boots
+	[9021] = {cost = 550, amount = 1}, -- Mask
+	[9022] = {cost = 550, amount = 1}, -- Armor
+	[9023] = {cost = 550, amount = 1}, -- Legs
+	[9024] = {cost = 550, amount = 1}, -- Shield
+	[9025] = {cost = 550, amount = 1}, -- Boots
 
 	-- Monedas especiales / retraining
-	[9026] = {cost = 75, amount = 1},  -- Roulette Token (objeto de riesgo/suerte)
+	[9026] = {cost = 250, amount = 1},  -- Roulette Token (objeto de riesgo/suerte)
 
 	-- Exercise Presents (basado en cargas)
-	[9027] = {cost = 40, amount = 1},  -- Exercise Present (500 cargas)
-	[9028] = {cost = 75, amount = 1},  -- Durable (1800 cargas)
-	[9029] = {cost = 120, amount = 1}, -- Lasting (14400 cargas)
-	[9030] = {cost = 180, amount = 1}, -- Legendary (45000 cargas)
+	[9027] = {cost = 25, amount = 1},  -- Exercise Present (500 cargas)
+	[9028] = {cost = 90, amount = 1},  -- Durable (1800 cargas)
+	[9029] = {cost = 720, amount = 1}, -- Lasting (14400 cargas)
+	[9030] = {cost = 2250, amount = 1}, -- Legendary (45000 cargas)
 
 }
 
@@ -52,10 +52,10 @@ local LAST_UID  = 9030
 local eventShop = Action()
 
 function eventShop.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if player:getLevel() <= 25000 then
-        player:sendTextMessage(MESSAGE_LOOK,"Event Shop Closed for now, We are making final adjustments...")
-        return true
-    end
+	-- if player:getLevel() <= 25000 then
+        -- player:sendTextMessage(MESSAGE_LOOK,"Event Shop Closed for now, We are making final adjustments...")
+        -- return true
+    -- end
 	
     -- 1) Obtener el tile donde está el counter
     local tile = Tile(fromPosition)

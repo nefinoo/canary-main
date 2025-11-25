@@ -3,6 +3,7 @@ local config = {
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 3457, 1 }, -- shovel
+			{ 3035, 50 }, -- shovel
 		},
 	},
 

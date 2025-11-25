@@ -61,15 +61,15 @@ node1:addChildKeyword({ "no" }, StdModule.say, {
 })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "hail king" }, {
+keywordHandler:addGreetKeyword({ "hail king hijodelavrga" }, {
 	npcHandler = npcHandler,
 	text = "Hello |PLAYERNAME|. I can promote you.",
 })
-keywordHandler:addGreetKeyword({ "salutations king" }, {
+keywordHandler:addGreetKeyword({ "salutations king hijodelavrga" }, {
 	npcHandler = npcHandler,
 	text = "Hello |PLAYERNAME|. I can promote you.",
 })
-keywordHandler:addGreetKeyword({ "que viva el rey" }, {
+keywordHandler:addGreetKeyword({ "que viva el rey hijodelavrga" }, {
 	npcHandler = npcHandler,
 	text = "Hello |PLAYERNAME|. I can promote you.",
 })

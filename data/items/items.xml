@@ -7273,7 +7273,7 @@
 		<attribute key="primarytype" value="amulets and necklaces"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="showAttributes" value="1"/>
-		<attribute key="charges" value="500"/>
+		<attribute key="charges" value="50"/>
 		<attribute key="absorbpercentlifedrain" value="90"/>
 		<attribute key="weight" value="270"/>
 		<attribute key="script" value="moveevent">

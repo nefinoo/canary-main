@@ -212,19 +212,19 @@ end
 
 💛.broadcastMessage = function (💛, message, ...)
     for _, player in pairs(Game.getPlayers()) do
-        player:sendTextMessage(MESSAGE_INFO_DESCR, message:format(...))
+        player:sendTextMessage(MESSAGE_LOOK, message:format(...))
     end
 end
 
 💛.broadcastGame = function (💛, message, ...)
     for _, gamePlayer in pairs(💛:getGamePlayers()) do
-        gamePlayer:sendTextMessage(MESSAGE_INFO_DESCR, message:format(...))
+        gamePlayer:sendTextMessage(MESSAGE_LOOK, message:format(...))
     end
 end
 
 💛.broadcastLobby = function (💛, message, ...)
     for _, lobbyPlayer in pairs(💛:getLobbyPlayers()) do
-        lobbyPlayer:sendTextMessage(MESSAGE_INFO_DESCR, message:format(...))
+        lobbyPlayer:sendTextMessage(MESSAGE_LOOK, message:format(...))
     end
 end
 
@@ -491,10 +491,10 @@ end
                     local inbox = player:getInbox()
                     if inbox then
                         inbox:addItemEx(rewardBag, INDEX_WHERETHER, FLAG_NOLIMIT)
-                        player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("You are the TOP %d and your received in your inbox:\n%s", 🔝, rewardBag:getContentDescription()))
+                        player:sendTextMessage(MESSAGE_LOOK, string.format("You are the TOP %d and your received in your inbox:\n%s", 🔝, rewardBag:getContentDescription()))
                     end
                 else
-                    player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("You are the TOP %d and your received:\n%s", 🔝, rewardBag:getContentDescription()))
+                    player:sendTextMessage(MESSAGE_LOOK, string.format("You are the TOP %d and your received:\n%s", 🔝, rewardBag:getContentDescription()))
                 end
             end
         end
@@ -589,7 +589,7 @@ local 📣 = TalkAction(💛.COMMAND)
         💛.CHECK_IP[🏷] = MC + 1
         player:teleportTo(randomPos, false)
         randomPos:sendMagicEffect(CONST_ME_TELEPORT)
-        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "[Dream Of Gold]: You have been teleported to the lobby.")
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "[Dream Of Gold]: You have been teleported to the lobby.")
         return false
     elseif param == "leave" then
         if 💛.STATE == '⏹️' then
@@ -600,7 +600,7 @@ local 📣 = TalkAction(💛.COMMAND)
                 if lobbyPlayer:getGuid() == player:getGuid() then
                     player:teleportTo(💛.EXIT_POSITION, false)
                     💛.EXIT_POSITION:sendMagicEffect(CONST_ME_TELEPORT)
-                    player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "[Dream Of Gold]: You have been teleported to the exit.")
+                    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "[Dream Of Gold]: You have been teleported to the exit.")
                     local 🏷 = player:getIp()
                     local MC = 💛.CHECK_IP[🏷] or 0
                     if MC > 0 then
@@ -616,7 +616,7 @@ local 📣 = TalkAction(💛.COMMAND)
                 if gamePlayer:getGuid() == player:getGuid() then
                     player:teleportTo(💛.EXIT_POSITION, false)
                     💛.EXIT_POSITION:sendMagicEffect(CONST_ME_TELEPORT)
-                    player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "[Dream Of Gold]: You have been teleported to the exit.")
+                    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "[Dream Of Gold]: You have been teleported to the exit.")
                     local 🏷 = player:getIp()
                     local MC = 💛.CHECK_IP[🏷] or 0
                     if MC > 0 then
@@ -712,7 +712,7 @@ local 🏃 = MoveEvent()
 
             local scoreGained = (it.💸 * foundItem:getCount()) / score.🎛
             score.💸 = score.💸 + scoreGained
-            player:sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, nil, pos, scoreGained, it.🌈, 0, TEXTCOLOR_NONE)
+            player:sendTextMessage(MESSAGE_ADMINISTRATOR, nil, pos, scoreGained, it.🌈, 0, TEXTCOLOR_NONE)
             foundItem:remove()
             💛.SCORE_ITEM_COUNT = 💛.SCORE_ITEM_COUNT - 1
             return true
@@ -751,7 +751,7 @@ local 🎬 = Action()
 
     local scoreGained = scoreItem.💸 / score.🎛
     score.💸 = score.💸 + scoreGained
-    player:sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, nil, fromPos, scoreGained, scoreItem.🌈, 0, TEXTCOLOR_NONE)
+    player:sendTextMessage(MESSAGE_ADMINISTRATOR, nil, fromPos, scoreGained, scoreItem.🌈, 0, TEXTCOLOR_NONE)
     item:remove()
     💛.SCORE_ITEM_COUNT = 💛.SCORE_ITEM_COUNT - 1
     return true

@@ -509,9 +509,9 @@ sortLootByChance = false
 rateUseStages = false
 lowLevelBonusExp = 500
 rateExp = 100
-rateSkill = 1
-rateLoot = 1
-rateMagic = 1
+rateSkill = 100
+rateLoot = 2
+rateMagic = 50
 rateSpawn = 1
 
 -- Killing in the name of Quest

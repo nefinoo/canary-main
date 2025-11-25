@@ -18,13 +18,21 @@ local LotterySystem = {
     storageDailyPrizeCount = 55002,
 
     prizePool = {
-        {3031, 5, 10},
-        {3035, 1, 3},
-        {3043, 1, 1},
-        {22118, 1, 1},
-        {24390, 1, 1},
-        {32583, 1, 1},
-        {37317, 1, 1},
+        {51736, 1, 2},-- teleport scroll
+        {51755, 1, 1}, -- exp de 50% //// Mas caro que el boleto
+        {52636, 100, 100},-- thunder ov
+        {52635, 100, 100},--fireball ov
+        {52634, 100, 100},--avalanche ov
+        {52633, 100, 100},--stoneshower ov
+        {51432, 50, 100},-- sudden death ov
+        {3082, 1, 1},--elven amuylet
+        {52628, 1, 1},-- soul potion // Mas caro que el boleto
+        {52038, 1, 1}, -- exercise present
+        {52088, 1, 1}, -- prey cards // Mas caro que el bole
+        {50876, 1, 1}, -- monster drink // Mas caro que el bole
+        {3043, 10, 50}, -- crystal coin
+        {52039, 1, 1}, -- exercise present 1800 // Mas caro que el bole
+        {51756, 1, 1}, -- exp ticket 100% // Mas caro que el bole
     }
 }
 
@@ -142,7 +150,7 @@ end
 local TypeRace = {
     active = false,
     currentCode = "",
-    prize = {52583, 10},
+    prize = {52583, 8},
 }
 
 function TypeRace.generateCode()
@@ -184,7 +192,7 @@ function talkType.onSay(player, words, param)
 
     local itemId = TypeRace.prize[1]
     local count = TypeRace.prize[2]
-    local randomprice = math.random(count-5, count)
+    local randomprice = math.random(count-3, count)
     player:addItem(itemId, randomprice)
 
     Game.broadcastMessage(
