@@ -35,7 +35,7 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     player:setStorageValue(1990, os.time() + 2)
     
     -- Consumir runa
-    -- item:remove(1)
+    item:remove(1)
     return true
 end
 

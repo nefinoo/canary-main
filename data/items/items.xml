@@ -9949,23 +9949,23 @@
 		<attribute key="weight" value="2950"/>
 		<attribute key="augments" value="1">
 			<attribute key="Hell's Core" value="base">
-				<attribute key="value" value="125"/>
+				<attribute key="value" value="150"/>
 			</attribute>
-			<attribute key="Hell's Core" value="cooldown">
-				<attribute key="value" value="1500"/>
-			</attribute>
-			<attribute key="Hell's Core" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
+			<!-- <attribute key="Hell's Core" value="cooldown"> -->
+				<!-- <attribute key="value" value="1500"/> -->
+			<!-- </attribute> -->
+			<!-- <attribute key="Hell's Core" value="mana leech"> -->
+				<!-- <attribute key="value" value="5"/> -->
+			<!-- </attribute> -->
 			<attribute key="Eternal Winter" value="base">
-				<attribute key="value" value="125"/>
+				<attribute key="value" value="150"/>
 			</attribute>
-			<attribute key="Eternal Winter" value="cooldown">
-				<attribute key="value" value="1500"/>
-			</attribute>
-			<attribute key="Eternal Winter" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
+			<!-- <attribute key="Eternal Winter" value="cooldown"> -->
+				<!-- <attribute key="value" value="1500"/> -->
+			<!-- </attribute> -->
+			<!-- <attribute key="Eternal Winter" value="mana leech"> -->
+				<!-- <attribute key="value" value="5"/> -->
+			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="head"/>
@@ -9977,14 +9977,14 @@
 		<attribute key="weight" value="8000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Fierce Berserk" value="base">
-				<attribute key="value" value="125"/>
+				<attribute key="value" value="150"/>
 			</attribute>
-			<attribute key="Fierce Berserk" value="cooldown">
-				<attribute key="value" value="1500"/>
-			</attribute>
-			<attribute key="Fierce Berserk" value="life leech">
-				<attribute key="value" value="8"/>
-			</attribute>
+			<!-- <attribute key="Fierce Berserk" value="cooldown"> -->
+				<!-- <attribute key="value" value="1500"/> -->
+			<!-- </attribute> -->
+			<!-- <attribute key="Fierce Berserk" value="life leech"> -->
+				<!-- <attribute key="value" value="8"/> -->
+			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
@@ -9997,14 +9997,14 @@
 		<attribute key="weight" value="7000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Divine Caldera" value="base">
-				<attribute key="value" value="125"/>
+				<attribute key="value" value="150"/>
 			</attribute>
-			<attribute key="Divine Caldera" value="cooldown">
-				<attribute key="value" value="1500"/>
-			</attribute>
-			<attribute key="Divine Caldera" value="life leech">
-				<attribute key="value" value="4"/>
-			</attribute>
+			<!-- <attribute key="Divine Caldera" value="cooldown"> -->
+				<!-- <attribute key="value" value="1500"/> -->
+			<!-- </attribute> -->
+			<!-- <attribute key="Divine Caldera" value="life leech"> -->
+				<!-- <attribute key="value" value="4"/> -->
+			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>

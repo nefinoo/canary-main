@@ -10,7 +10,7 @@ local storageBase = 9000000
 -- Cuando un jugador abre uno de los 4 cofres del grupo, los demás quedan bloqueados.
 local sharedQuestGroups = {
     [2001] = { storage = 31001 }, -- QUEST ARMAS LEVEL 500
-    [2002] = { storage = 31002 }, -- quest mana runes
+    [2002] = { storage = 31002 }, rewardStorages = { [60000] = 1}, -- quest mana runes
     [2003] = { storage = 31003 }, -- armas lvl 1000
     [2004] = { storage = 31004 }, -- demon set
     [2005] = { storage = 31005 }, -- ARmas lvl 100
@@ -23,13 +23,13 @@ local sharedQuestGroups = {
     [2011] = { storage = 31011 }, -- empty
 }
 
--- ⚙️ CREACIÓN DEL ACTION
 local action = Action()
 
 function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
     local aid = chest:getActionId()
     local unique = chest:getUniqueId()
     local questStorage = nil
+    local extraStorages = nil  -- ⭐ NUEVO
 
     -- 🔹 Cofres individuales (AID 2000)
     if aid == 2000 then
@@ -39,11 +39,11 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
         end
         questStorage = storageBase + unique
 
-    -- 🔹 Cofres compartidos (AID 2001–2004)
+    -- 🔹 Cofres compartidos
     elseif sharedQuestGroups[aid] then
         questStorage = storageBase + sharedQuestGroups[aid].storage
+        extraStorages = sharedQuestGroups[aid].rewardStorages  -- ⭐ NUEVO
 
-    -- 🔹 Acción desconocida
     else
         player:sendCancelMessage("Invalid actionid for quest chest.")
         return true
@@ -65,9 +65,9 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
         error(string.format("[QuestChest::%d] No items found.", unique))
     end
 
-    -- ⚖️ Calculamos peso total
+    -- ⚖️ Calculamos peso
     local totalWeight = 0
-    for _, item in pairs(items) do
+    for _, item in ipairs(items) do
         totalWeight = totalWeight + item:getWeight()
     end
 
@@ -78,10 +78,31 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
 
     -- 🎁 Entregamos recompensa
     player:setStorageValue(questStorage, 1)
-    player:sendTextMessage(MESSAGE_LOOK, string.format("You have found %s.", chest:getContentDescription()))
-    for _, item in pairs(items) do
+
+    -- ⭐ NUEVO: Storages extra del cofre
+    if extraStorages then
+        for id, val in pairs(extraStorages) do
+			if id == 60000 then
+				player:setStorageValue(id, val)
+				player:sendTextMessage(MESSAGE_LOOK,
+					string.format("Now you are able to buy manarune and knightmanarunes to Malak")
+				)
+			else
+				player:setStorageValue(id, val)
+			end
+        end
+    end
+
+    -- Mensaje
+    player:sendTextMessage(MESSAGE_LOOK,
+        string.format("You have found %s.", chest:getContentDescription())
+    )
+
+    -- Dar ítems
+    for _, item in ipairs(items) do
         player:addItemEx(item:clone(), true)
     end
+
     return true
 end
 

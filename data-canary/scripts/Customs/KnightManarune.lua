@@ -3,7 +3,7 @@ local reqlvl = 250         -- Level required to use
 local potExhaust = false   -- If true, uses potion exhaust system
 local storeValue = 50995   -- Storage used for custom exhaust
 local exhaustTime = 1      -- Exhaust time
-local infinite = true      -- Rune loses charges? true = infinite
+local infinite = false      -- Rune loses charges? true = infinite
 local canUseInPz = true    -- Allow PZ use?
 
 local ani = CONST_ME_MAGIC_BLUE
