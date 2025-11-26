@@ -3,7 +3,7 @@ local massParalysis = Action()
 
 -- Configuración
 local config = {
-    paralysisDuration = 20000, -- 20 segundos
+    paralysisDuration = 10000, -- 20 segundos
     cooldownStorage = 1988,
     longCooldownStorage = 1985,
     targetCooldownStorage = 1989,

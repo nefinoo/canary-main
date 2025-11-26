@@ -10,10 +10,12 @@ local storageBase = 9000000
 -- Cuando un jugador abre uno de los 4 cofres del grupo, los demás quedan bloqueados.
 local sharedQuestGroups = {
     [2001] = { storage = 31001 }, -- QUEST ARMAS LEVEL 500
-    [2002] = { storage = 31002 }, rewardStorages = { [60000] = 1}, -- quest mana runes
+    [2002] =  { 
+        storage = 31002,
+        rewardStorages = { [60000] = 1 }
+    }, -- quest mana runes
     [2003] = { storage = 31003 }, -- armas lvl 1000
     [2004] = { storage = 31004 }, -- demon set
-    [2005] = { storage = 31005 }, -- ARmas lvl 100
     [2005] = { storage = 31005 }, -- ARmas lvl 100
     [2006] = { storage = 31006 }, -- Quest ToT
     [2007] = { storage = 31007 }, -- empty
@@ -61,9 +63,13 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
     end
 
     local items = chest:getItems()
-    if #items == 0 then
-        error(string.format("[QuestChest::%d] No items found.", unique))
-    end
+	local hasItems = (#items > 0)
+	local hasStorages = (extraStorages ~= nil)
+
+	if not hasItems and not hasStorages then
+		player:sendCancelMessage("This chest has no reward configured.")
+		return true
+	end
 
     -- ⚖️ Calculamos peso
     local totalWeight = 0
@@ -91,12 +97,14 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
 				player:setStorageValue(id, val)
 			end
         end
+	else
+			-- Mensaje
+		player:sendTextMessage(MESSAGE_LOOK,
+			string.format("You have found %s.", chest:getContentDescription())
+		)
     end
 
-    -- Mensaje
-    player:sendTextMessage(MESSAGE_LOOK,
-        string.format("You have found %s.", chest:getContentDescription())
-    )
+    
 
     -- Dar ítems
     for _, item in ipairs(items) do

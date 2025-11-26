@@ -2,7 +2,7 @@ local bowl = Action()
 
 local monsters = {
     [1] = {name = "Fish", aid = 2000, plural = "a Fish"},
-    [2] = {name = "Quara predator", aid = 2013, plural = "an quara predator"},
+    [2] = {name = "Aegaeus", aid = 2001, plural = "an Aegaeus"},
 }
 
 function bowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
@@ -13,7 +13,7 @@ function bowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     local MONS = nil
  
     for i = 1, #monsters do
-        if target:getName():lower() == monsters[i].name:lower() then
+        if target:getName() == monsters[i].name then
             MONS = monsters[i]
             break
         end
