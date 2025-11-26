@@ -82743,7 +82743,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="You can see exit tile."/>
 		<attribute key="effect" value="teleport"/>
 	</item>
-	<item id="52914" article="an" name="experience scroll">
+	<item id="51670" article="an" name="experience scroll">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="1000"/>
 	</item>
