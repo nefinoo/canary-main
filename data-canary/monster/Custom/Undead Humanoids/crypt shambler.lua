@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("crypt shambler")
+﻿local mType = Game.createMonsterType("deathwalker")
 local monster = {}
 
 monster.name = "deathwalker"
@@ -99,6 +99,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

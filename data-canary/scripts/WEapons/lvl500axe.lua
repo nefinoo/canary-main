@@ -1,4 +1,4 @@
-local customSword = Weapon(WEAPON_SWORD)
+local customSword = Weapon(WEAPON_AXE)
 
 function customSword.onUseWeapon(player, variant)
 	local target = player:getTarget()
@@ -7,7 +7,7 @@ function customSword.onUseWeapon(player, variant)
     end
 
     local lvl = player:getLevel()
-    local skill = player:getSkillLevel(SKILL_SWORD)
+    local skill = player:getSkillLevel(SKILL_AXE)
 
     local dmgMax = ((lvl * 3) + (skill * 35)) / 2.90
     local dmgMin = dmgMax / 1.5

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("the dark dancer")
+﻿local mType = Game.createMonsterType("The Dark Dancer")
 local monster = {}
 
 monster.name = "The Dark Dancer"
@@ -102,6 +102,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("war golem")
+﻿local mType = Game.createMonsterType("War Golem")
 local monster = {}
 
 monster.name = "War Golem"
@@ -115,6 +115,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

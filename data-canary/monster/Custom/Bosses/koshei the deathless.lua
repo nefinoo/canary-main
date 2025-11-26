@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("koshei the deathless")
+﻿local mType = Game.createMonsterType("Koshei The Deathless")
 local monster = {}
 
 monster.name = "Koshei The Deathless"
@@ -122,6 +122,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

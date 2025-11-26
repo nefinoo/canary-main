@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("spirit of water")
+﻿local mType = Game.createMonsterType("Spirit of Water")
 local monster = {}
 
 monster.name = "Spirit of Water"
@@ -93,6 +93,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

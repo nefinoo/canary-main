@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("novice of the cult")
+﻿local mType = Game.createMonsterType("Novice Of The Cult")
 local monster = {}
 
 monster.name = "Novice Of The Cult"
@@ -114,6 +114,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("slick water elemental")
+﻿local mType = Game.createMonsterType("Iceling")
 local monster = {}
 
 monster.name = "Iceling"
@@ -100,6 +100,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("wyrm")
+﻿local mType = Game.createMonsterType("Wyrm")
 local monster = {}
 
 monster.name = "Wyrm"
@@ -101,11 +101,12 @@ monster.loot = {
 	{name = "assassin star", chance = 5},
 	{name = "justice seeker", chance = 5},
 	{name = "experience scroll", chance = 3000},
-	{id = 893, chance = 5},
+	-- {id = 893, chance = 5},
 	{name = "deadly wand", chance = 5}
 }
 
 mType:register(monster)
+
 
 
 

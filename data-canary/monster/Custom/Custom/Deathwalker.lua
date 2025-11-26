@@ -1,7 +1,7 @@
-﻿local mType = Game.createMonsterType("Deathwalker")
+﻿local mType = Game.createMonsterType("The Deathwalker")
 local monster = {}
 
-monster.name = "Deathwalker"
+monster.name = "The Deathwalker"
 monster.description = "a deathwalker"
 monster.experience = 20000000
 monster.outfit = {
@@ -95,6 +95,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

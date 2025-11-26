@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("barbarian headsplitter")
+﻿local mType = Game.createMonsterType("Barbarian Headsplitter")
 local monster = {}
 
 monster.name = "Barbarian Headsplitter"
@@ -106,6 +106,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -66,7 +66,7 @@ function massParalysis.onUse(player, item, fromPosition, target, toPosition, isH
                     
                     if spectator:isPlayer() then
                         spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, 
-                            string.format("You have been paralyzed by %s!", player:getName()))
+                            string.format("You have been frozen by %s!", player:getName()))
                         
                         -- Iniciar contador visual mejorado
                         startEnhancedCounter(spectator, config.paralysisDuration)
@@ -78,8 +78,7 @@ function massParalysis.onUse(player, item, fromPosition, target, toPosition, isH
 
     -- Efectos finales
     player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 
-        string.format("Paralysis wave affected %d creatures!", affectedCount))
+    -- player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Frozen affected %d creatures!", affectedCount))
 
     return true
 end
@@ -123,5 +122,6 @@ function startEnhancedCounter(player, duration)
     addEvent(showCounter, 100)
 end
 
-massParalysis:id(48194)
+massParalysis:allowFarUse(true)
+massParalysis:id(14052)
 massParalysis:register()

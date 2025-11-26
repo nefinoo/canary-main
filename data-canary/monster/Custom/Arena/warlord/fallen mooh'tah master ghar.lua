@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("fallen mooh'tah master ghar")
+﻿local mType = Game.createMonsterType("Fallen Mooh'tah Master Ghar")
 local monster = {}
 
 monster.name = "Fallen Mooh'tah Master Ghar"
@@ -99,6 +99,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

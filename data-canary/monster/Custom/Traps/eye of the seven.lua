@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("eye of the seven")
+﻿local mType = Game.createMonsterType("Eye of the Seven")
 local monster = {}
 
 monster.name = "Eye of the Seven"
@@ -85,6 +85,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

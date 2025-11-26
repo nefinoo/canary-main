@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("great battlesmith")
+﻿local mType = Game.createMonsterType("Great Battlesmith")
 local monster = {}
 
 monster.name = "Great Battlesmith"
@@ -96,6 +96,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

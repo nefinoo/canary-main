@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("damaged worker golem")
+﻿local mType = Game.createMonsterType("Damaged Worker Golem")
 local monster = {}
 
 monster.name = "Damaged Worker Golem"
@@ -103,6 +103,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

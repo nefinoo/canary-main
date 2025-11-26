@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("massive fire elemental")
+﻿local mType = Game.createMonsterType("Massive Fire Elemental")
 local monster = {}
 
 monster.name = "Massive Fire Elemental"
@@ -93,6 +93,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

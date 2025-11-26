@@ -8454,7 +8454,6 @@
 		<attribute key="attack" value="25"/>
 		<attribute key="weight" value="2000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="breakChance" value="3"/>
 			<attribute key="weaponType" value="missile"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
@@ -9509,7 +9508,6 @@
 		<attribute key="attack" value="32"/>
 		<attribute key="weight" value="2200"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="breakChance" value="6"/>
 			<attribute key="level" value="20"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="missile"/>
@@ -9968,6 +9966,7 @@
 			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="500"/>
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
@@ -19282,7 +19281,6 @@
 		<attribute key="attack" value="38"/>
 		<attribute key="weight" value="2000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="breakChance" value="1"/>
 			<attribute key="level" value="42"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="missile"/>
@@ -19359,7 +19357,6 @@
 		<attribute key="attack" value="35"/>
 		<attribute key="weight" value="2500"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="breakChance" value="3"/>
 			<attribute key="level" value="25"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="missile"/>
@@ -41719,7 +41716,6 @@
 		<attribute key="attack" value="55"/>
 		<attribute key="weight" value="2600"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="breakChance" value="2"/>
 			<attribute key="level" value="60"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="missile"/>

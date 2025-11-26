@@ -18,7 +18,7 @@ monster.health = 12000
 monster.maxHealth = 12000
 monster.runHealth = 0
 monster.race = "undead"
-monster.corpse = 2016
+monster.corpse = 9582
 monster.speed = 450
 monster.summonCost = 0
 
@@ -95,6 +95,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,8 +1,8 @@
 ﻿local mType = Game.createMonsterType("yellow butterfly")
 local monster = {}
 
-monster.name = "butterfly"
-monster.description = "a butterfly"
+monster.name = "yellow butterfly"
+monster.description = "a yellow butterfly"
 monster.experience = 0
 monster.outfit = {
 	lookType = 10,
@@ -90,6 +90,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

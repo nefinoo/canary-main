@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("halloweenhare")
+﻿local mType = Game.createMonsterType("The Halloween Hare")
 local monster = {}
 
 monster.name = "The Halloween Hare"
@@ -106,6 +106,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

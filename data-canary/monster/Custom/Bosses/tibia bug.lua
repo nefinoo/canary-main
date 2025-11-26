@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("tibia bug")
+﻿local mType = Game.createMonsterType("Tibia Bug")
 local monster = {}
 
 monster.name = "Tibia Bug"
@@ -103,6 +103,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

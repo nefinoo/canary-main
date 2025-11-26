@@ -1,4 +1,4 @@
-local customSword = Weapon(WEAPON_SWORD)
+local customSword = Weapon(WEAPON_AXE)
 
 function customSword.onUseWeapon(player, variant)
 	local target = player:getTarget()
@@ -8,7 +8,7 @@ function customSword.onUseWeapon(player, variant)
 
     -- Datos del jugador
     local lvl = player:getLevel()
-    local skill = player:getSkillLevel(SKILL_DISTANCE)
+    local skill = player:getSkillLevel(SKILL_AXE)
 
     -- Daño físico
     local dmgMax = (lvl * 3) + (skill * 35)

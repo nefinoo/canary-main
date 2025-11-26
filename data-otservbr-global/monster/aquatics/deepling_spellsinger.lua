@@ -1,8 +1,10 @@
 local mType = Game.createMonsterType("Deepling Spellsinger")
 local monster = {}
 
+monster.name = "Deepling Spellsinger"
 monster.description = "a deepling spellsinger"
-monster.experience = 1000
+monster.experience = 3500000
+
 monster.outfit = {
 	lookType = 443,
 	lookHead = 0,
@@ -10,125 +12,99 @@ monster.outfit = {
 	lookLegs = 0,
 	lookFeet = 0,
 	lookAddons = 0,
-	lookMount = 0,
+	lookMount = 0
 }
 
-monster.raceId = 772
-monster.Bestiary = {
-	class = "Aquatic",
-	race = BESTY_RACE_AQUATIC,
-	toKill = 1000,
-	FirstUnlock = 50,
-	SecondUnlock = 500,
-	CharmsPoints = 25,
-	Stars = 3,
-	Occurrence = 0,
-	Locations = "Fiehonja.",
-}
-
-monster.health = 850
-monster.maxHealth = 850
+monster.health = 500000
+monster.maxHealth = 500000
 monster.race = "blood"
 monster.corpse = 13771
-monster.speed = 95
-monster.manaCost = 0
-
-monster.faction = FACTION_DEEPLING
-monster.enemyFactions = { FACTION_PLAYER, FACTION_DEATHLING }
+monster.speed = 410
 
 monster.changeTarget = {
-	interval = 4000,
-	chance = 10,
-}
-
-monster.strategiesTarget = {
-	nearest = 70,
-	health = 10,
-	damage = 10,
-	random = 10,
+	interval = 3000,
+	chance = 15
 }
 
 monster.flags = {
-	summonable = false,
 	attackable = true,
 	hostile = true,
+	summonable = false,
 	convinceable = false,
 	pushable = false,
 	rewardBoss = false,
 	illusionable = false,
 	canPushItems = false,
 	canPushCreatures = true,
-	staticAttackChance = 60,
+	staticAttackChance = 70,
 	targetDistance = 1,
-	runHealth = 60,
-	healthHidden = false,
-	isBlockable = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = true,
-	canWalkOnPoison = false,
-}
-
-monster.light = {
-	level = 0,
-	color = 0,
+	runHealth = 0,
+	healthHidden = false
 }
 
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Jey Obu giotja!!", yell = false },
-	{ text = "Mmmmmoooaaaaaahaaa!!", yell = false },
+	{text = "Jey Obu giotja!!", yell = false},
+	{text = "Mmmmmoooaaaaahaaa!!", yell = false}
 }
 
-monster.loot = {
-	{ name = "platinum coin", chance = 80120 },
-	{ name = "gold coin", chance = 75110, maxCount = 60 },
-	{ name = "spellsinger's seal", chance = 15185 },
-	{ name = "deepling filet", chance = 14995 },
-	{ name = "key to the drowned library", chance = 10740 },
-	{ id = 3578, chance = 3448 }, -- fish
-	{ name = "small sapphire", chance = 2934 },
-	{ name = "eye of a deepling", chance = 2540 },
-	{ id = 3052, chance = 2459 }, -- life ring
-	{ name = "deepling staff", chance = 2020 },
-	{ name = "necklace of the deep", chance = 790 },
-	{ name = "fish fin", chance = 520 },
-	{ name = "ornate crossbow", chance = 220 },
-}
-
+-- Daño mágico fuerte
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -152, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -180, maxDamage = -350, length = 10, spread = 3, effect = CONST_ME_ICETORNADO, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_DROWNDAMAGE, minDamage = -90, maxDamage = -130, radius = 4, effect = CONST_ME_BUBBLES, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -140, range = 7, effect = CONST_ME_SMALLPLANTS, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -60, maxDamage = -140, range = 7, effect = CONST_ME_SMALLPLANTS, target = false },
-	{ name = "deepling spellsinger skill reducer", interval = 2000, chance = 5, range = 5, target = false },
+	{name = "melee", interval = 2000, chance = 100, minDamage = -6000, maxDamage = -9000, effect = CONST_ME_DRAWBLOOD},
+
+	-- Ice tornado grande (mago)
+	{name = "combat", interval = 2000, chance = 30, type = COMBAT_ICEDAMAGE,
+	 minDamage = -12000, maxDamage = -16000, radius = 4, effect = CONST_ME_ICETORNADO, target = false},
+
+	-- Drown damage mágico
+	{name = "combat", interval = 2000, chance = 25, type = COMBAT_DROWNDAMAGE,
+	 minDamage = -9000, maxDamage = -13000, radius = 4, effect = CONST_ME_BUBBLES, target = true},
+
+	-- Life drain AOE
+	{name = "combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN,
+	 minDamage = -8000, maxDamage = -13000, length = 8, spread = 3, effect = CONST_ME_SMALLPLANTS, target = false},
+
+	-- Mana drain AOE
+	{name = "combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN,
+	 minDamage = -4000, maxDamage = -7000, range = 7, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 42,
-	mitigation = 1.29,
+	defense = 65,
+	armor = 70,
+	{name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING,
+	 minDamage = 20000, maxDamage = 26000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
-	{ type = COMBAT_EARTHDAMAGE, percent = -10 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
-	{ type = COMBAT_LIFEDRAIN, percent = 0 },
-	{ type = COMBAT_MANADRAIN, percent = 0 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
-	{ type = COMBAT_ICEDAMAGE, percent = 100 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 50 },
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_EARTHDAMAGE, percent = 10},
+	{type = COMBAT_FIREDAMAGE, percent = -20},
+	{type = COMBAT_LIFEDRAIN, percent = 20},
+	{type = COMBAT_MANADRAIN, percent = 20},
+	{type = COMBAT_DROWNDAMAGE, percent = 30},
+	{type = COMBAT_ICEDAMAGE, percent = 40},
+	{type = COMBAT_HOLYDAMAGE, percent = 0},
+	{type = COMBAT_DEATHDAMAGE, percent = 10}
 }
 
 monster.immunities = {
-	{ type = "paralyze", condition = false },
-	{ type = "outfit", condition = false },
-	{ type = "invisible", condition = true },
-	{ type = "bleed", condition = false },
+	{type = "paralyze", condition = true},
+	{type = "invisible", condition = true},
+	{type = "drunk", condition = true}
+}
+
+monster.loot = {
+	{name = "platinum coin", chance = 80120},
+	{name = "platinum coin", chance = 75000, maxCount = 120},
+	{name = "spellsinger's seal", chance = 20000},
+	{name = "deepling filet", chance = 18000},
+	{name = "key to the drowned library", chance = 12000},
+	{name = "small sapphire", chance = 3500},
+	{name = "eye of a deepling", chance = 4000},
+	{name = "experience scroll", chance = 2500}
 }
 
 mType:register(monster)

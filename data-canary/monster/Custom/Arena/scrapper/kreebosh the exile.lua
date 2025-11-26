@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("kreebosh the exile")
+﻿local mType = Game.createMonsterType("Kreebosh the Exile")
 local monster = {}
 
 monster.name = "Kreebosh the Exile"
@@ -102,6 +102,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

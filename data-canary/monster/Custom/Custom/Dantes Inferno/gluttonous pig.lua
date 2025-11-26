@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("gluttonous pig")
+﻿local mType = Game.createMonsterType("Gluttonous Pig")
 local monster = {}
 
 monster.name = "Gluttonous Pig"
@@ -97,6 +97,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

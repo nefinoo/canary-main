@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("barbarian skullhunter")
+﻿local mType = Game.createMonsterType("Barbarian Skullhunter")
 local monster = {}
 
 monster.name = "Barbarian Skullhunter"
@@ -100,6 +100,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

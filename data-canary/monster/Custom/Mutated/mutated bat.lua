@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("mutated bat")
+﻿local mType = Game.createMonsterType("Infested Bat")
 local monster = {}
 
 monster.name = "Infested Bat"
@@ -97,6 +97,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("chakoya tribewarden")
+﻿local mType = Game.createMonsterType("Chakoya Tribewarden")
 local monster = {}
 
 monster.name = "Chakoya Tribewarden"
@@ -100,6 +100,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("haunted treeling")
+﻿local mType = Game.createMonsterType("Haunted Treeling")
 local monster = {}
 
 monster.name = "Haunted Treeling"
@@ -108,6 +108,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

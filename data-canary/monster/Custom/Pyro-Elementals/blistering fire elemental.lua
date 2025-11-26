@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("blistering fire elemental")
+﻿local mType = Game.createMonsterType("Blistering fire elemental")
 local monster = {}
 
 monster.name = "Blistering fire elemental"
@@ -97,6 +97,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

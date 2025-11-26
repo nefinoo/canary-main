@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("mutated human")
+﻿local mType = Game.createMonsterType("Infested Human")
 local monster = {}
 
 monster.name = "Infested Human"
@@ -101,6 +101,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

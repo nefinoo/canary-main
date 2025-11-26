@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("undead minion")
+﻿local mType = Game.createMonsterType("Undead Minion")
 local monster = {}
 
 monster.name = "Undead Minion"
@@ -98,6 +98,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

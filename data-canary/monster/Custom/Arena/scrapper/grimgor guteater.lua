@@ -1,4 +1,4 @@
-﻿local mType = Game.createMonsterType("grimgor guteater")
+﻿local mType = Game.createMonsterType("Grimgor Guteater")
 local monster = {}
 
 monster.name = "Grimgor Guteater"
@@ -92,6 +92,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

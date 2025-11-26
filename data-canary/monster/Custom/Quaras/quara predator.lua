@@ -99,10 +99,11 @@ monster.loot = {
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
 	{name = "experience scroll", chance = 3000},
-	{id = 893, chance = 5}
+	-- {id = 893, chance = 5}
 }
 
 mType:register(monster)
+
 
 
 
