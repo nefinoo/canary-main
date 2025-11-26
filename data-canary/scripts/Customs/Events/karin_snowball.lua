@@ -76,6 +76,22 @@ function Karin.Events.SnowBall.f:getPlayersInEvent()
     return Karin:getPlayersPosRangeXY(Karin.Events.SnowBall.map.pos,Karin.Events.SnowBall.map.ranges.x,Karin.Events.SnowBall.map.ranges.y)
 end
 
+function Karin.hasSameIP(player)
+    local ip = player:getIp()
+    if ip == 0 then
+        return false
+    end
+
+    for _, pid in ipairs(Game.getPlayers()) do
+        local other = Player(pid)
+        if other and other ~= player and other:getIp() == ip then
+            return true
+        end
+    end
+
+    return false
+end
+
 function showRankModal(player, str)
     
     if str then
@@ -171,7 +187,7 @@ function startEvent()
     if Karin.Events.SnowBall.teleport.pos then
         local tp = Game.createItem(1949, 1, Karin.Events.SnowBall.teleport.pos)
         if tp then
-            tp:setDestination(Karin.Events.SnowBall.map.lobby.pos)
+            tp:setAttribute("aid", 7777)
         end
         Karin.Events.SnowBall.teleport.tp = tp
     end
@@ -433,7 +449,18 @@ if not Karin.Events.SnowBall.teleport.pos then
             creature:teleportTo(fromPosition)
             return true
         end
-
+			  -- ⛔ RESTRICCIÓN DE IP (una IP por evento)
+		if Karin.hasSameIP(player) then
+			player:teleportTo(fromPosition)
+			fromPosition:sendMagicEffect(CONST_ME_POFF)
+			player:popupFYI(
+				"⚠ SNOWBALL EVENT\n\n" ..
+				"Solo se permite **un personaje por IP** dentro del evento SnowBall.\n" ..
+				"Otra conexión con tu IP ya está participando."
+			)
+			return true
+		end
+		
         if Karin.Events.SnowBall.started then
             creature:teleportTo(fromPosition)
             return true

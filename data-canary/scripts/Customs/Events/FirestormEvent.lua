@@ -18,7 +18,7 @@ local config = {
     },
     start = {
         time = "05:05:05", -- time to start event each day
-        waiting = '3m' -- wait player to enter event, examples: 10s -> 10 seconds | 2m -> 2 minutes
+        waiting = '30s' -- wait player to enter event, examples: 10s -> 10 seconds | 2m -> 2 minutes
     },
     area = {
         center = Position(51, 706, 7), -- center room event
@@ -67,6 +67,21 @@ local config = {
 config.teleport.destination = config.area.center
 
 _FSE = {}
+
+function _FSE.hasSameIP(player)
+    local ip = player:getIp()
+    if ip == 0 then
+        return false
+    end
+    for _, pid in pairs(config.cache.players) do
+        local other = Player(pid)
+        if other and other:getIp() == ip then
+            return true
+        end
+    end
+    return false
+end
+
 
 function _FSE.isWalkable(x, y, z)
     local tile = Tile(x, y, z)
@@ -262,15 +277,16 @@ end
 
 function _FSE.checkWaiting()
     if #config.cache.players >= config.players.min then
-        _FSE.eventPreparing()
-        return
-    end
-    config.state.type = "stoped"
-    _FSE.eventSay("The event has been closed due to lack of participants.")
-    _FSE.kickPlayers()
+		_FSE.eventPreparing()
+		return
+	end
+
+	_FSE.eventSay("The event has been closed due to lack of participants.")
+	_FSE.close()   -- <-- ESTA ES LA CLAVE
 end
 
 function _FSE.kickPlayers()
+    -- Kick all players
     for _, playerId in pairs(config.cache.players) do
         local player = Player(playerId)
         if player then
@@ -278,6 +294,12 @@ function _FSE.kickPlayers()
         end
     end
     config.cache.players = {}
+
+    -- Remove teleport if exists
+    if config.cache.teleport then
+        config.cache.teleport:remove()
+        config.cache.teleport = nil
+    end
 end
 
 function _FSE.kickPlayer(player)
@@ -301,6 +323,9 @@ function _FSE.isPlayerExist(player)
 end
 
 function _FSE.joinPlayer(player)
+	if _FSE.hasSameIP(player) then
+		return "ip"
+	end
     table.insert(config.cache.players, player:getId())
     player:setStorageValue(config.players.storage, 1)
     player:getPosition():sendMagicEffect(CONST_ME_POFF)
@@ -397,6 +422,11 @@ function _FSE.init()
     config.cache.eventIds['waiting'] = addEvent(_FSE.checkWaiting, tseconds * 1000)
     config.state.type = "open"
 	
+	local oldTp = Tile(config.teleport.position):getItemById(config.teleport.objectId)
+	if oldTp then
+		oldTp:remove()
+	end
+
 	local tp = Game.createItem(config.teleport.objectId, 1, config.teleport.position)
     if tp then
         tp:setDestination(config.teleport.destination)
@@ -416,6 +446,7 @@ function _FSE.close()
         config.cache.teleport:remove()
         config.cache.teleport = nil
     end
+	
 	
     config.cache.waves = 0
     config.cache.dificulty = 0
@@ -455,8 +486,18 @@ function joineventmovement.onStepIn(creature, item, position, fromPosition)
         return true
     end
 
-    _FSE.joinPlayer(player)
-    return true
+    local result = _FSE.joinPlayer(player)
+	if result == "ip" then
+		player:sendCancelMessage("Solo un personaje por IP puede entrar al evento.")
+		player:teleportTo(fromPosition)
+		return true
+	elseif result == false then
+		player:sendCancelMessage("The event is full.")
+		player:teleportTo(fromPosition)
+		return true
+	end
+
+	return true
 end
 
 joineventmovement:position(config.teleport.position)
@@ -504,9 +545,12 @@ function talk.onSay(player, words, param)
         return false
     end
     if config.state.type == "open" then
-        if not _FSE.joinPlayer(player) then
-            player:sendCancelMessage("Sorry, there are no more spaces.")
-        end
+        local result = _FSE.joinPlayer(player)
+		if result == "ip" then
+			player:sendCancelMessage("Solo un personaje por IP puede entrar al evento.")
+		elseif result == false then
+			player:sendCancelMessage("Sorry, there are no more spaces.")
+		end
     elseif table.contains({'close', 'stoped'}, config.state.type) then
         player:sendCancelMessage("Sorry, but the event is closed.")
     else

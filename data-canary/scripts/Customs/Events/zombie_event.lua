@@ -182,6 +182,19 @@ local random = math.random
 local insert = table.insert
 local remove = table.remove
 
+function ZombieEvent:hasSameIP(player)
+    local ip = player:getIp()
+    if ip == 0 then return false end
+
+    for _, guid in ipairs(cachePlayers) do
+        local other = Player(guid)
+        if other and other:getIp() == ip then
+            return true
+        end
+    end
+    return false
+end
+
 function ZombieEvent:createTp()
 	local tile = Tile(self.tpPos)
 	if not tile then error("[ZombieEvent] Invalid position.") end
@@ -525,6 +538,12 @@ function ZombieEvent:join(player)
         return false
     end
 
+	  -- ❗ Prohibir multicliente por IP
+    if self:hasSameIP(player) then
+        player:sendCancelMessage("Only one character per IP may join the Zombie Event.")
+        return false
+    end
+	
     local playerGuid = player:getGuid()
     if table.contains(cachePlayers, playerGuid) then
         player:sendCancelMessage("You are already participating in the event.")
