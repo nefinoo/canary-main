@@ -401,3 +401,4 @@ database_backup
 # CLION
 cmake-build-*
 Auto_Restarter.bat
+config.lua
