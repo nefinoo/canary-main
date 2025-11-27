@@ -101,8 +101,8 @@ monster.loot = {
 	{name = "royal helmet", chance = 588},
 	{id = 3361, chance = 333},
 	{name = "royal spear", chance = 2000, maxCount = 2},
-	{id = 3449, chance = 2500, maxCount = 5},
-	{name = "power bolt", chance = 2222, maxCount = 10},
+	-- {id = 3449, chance = 2500, maxCount = 5},
+	-- {name = "power bolt", chance = 2222, maxCount = 10},
 	{name = "green mushroom", chance = 6666},
 	{name = "red dragon leather", chance = 5000},
 	{id = 2853, chance = 100000, child = {

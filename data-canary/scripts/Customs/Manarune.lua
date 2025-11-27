@@ -1,4 +1,9 @@
 local manaRune = Action()
+local reqml = 30            -- Magic level required to use
+local reqlvl = 250         -- Level required to use
+local error_ml = "You don't have the required magic level to use that rune."
+local error_lvl = "You don't have the required level to use that rune."
+local error_voc = "You don't are Paladin, Sorcerer or Druid."
 
 function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     -- Usar el jugador como objetivo
@@ -6,7 +11,23 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     if target and target:isPlayer() then
         targetPlayer = target
     end
-    
+    if player:getLevel() < reqlvl then
+        player:sendCancelMessage(error_lvl)
+        fromPos:sendMagicEffect(CONST_ME_POFF)
+        return true
+    end
+
+    if not player:isDruid() and not player:isPaladin() and not player:isSorcerer()then
+        player:sendCancelMessage(error_voc)
+        fromPos:sendMagicEffect(CONST_ME_POFF)
+        return true
+    end
+
+    if player:getMagicLevel() < reqml then
+        player:sendCancelMessage(error_ml)
+        fromPos:sendMagicEffect(CONST_ME_POFF)
+        return true
+    end
     -- Cálculos idénticos al script original
     local mana = targetPlayer:getMaxMana()
     local maxheal = (mana * 0.005)
@@ -28,8 +49,7 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     targetPlayer:addMana(manaToAdd)
     
     -- Mensaje de depuración en consola
-    print(string.format("[MANA RUNE] %s +%d mana (nivel: %d, manaMax: %d)", 
-          targetPlayer:getName(), manaToAdd, targetPlayer:getLevel(), mana))
+    -- print(string.format("[MANA RUNE] %s +%d mana (nivel: %d, manaMax: %d)", targetPlayer:getName(), manaToAdd, targetPlayer:getLevel(), mana))
     
     -- Establecer exhaust (2 segundos)
     player:setStorageValue(1990, os.time() + 2)

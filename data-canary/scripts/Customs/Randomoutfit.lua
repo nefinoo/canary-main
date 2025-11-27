@@ -1,7 +1,7 @@
 local randomOutfit = Action()
 
 local TOKEN_ID = 52583
-local TOKEN_COST = 500
+local TOKEN_COST = 1500
 local UNIQUE_ID = 1000
 
 -- Función para elegir un outfit válido aleatorio
@@ -30,7 +30,7 @@ function randomOutfit.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if player:getItemCount(TOKEN_ID) < TOKEN_COST then
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "You do not have enough tokens.")
+		player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You do not have enough tokens.")
 		return true
 	end
 
@@ -50,7 +50,7 @@ function randomOutfit.onUse(player, item, fromPosition, target, toPosition, isHo
 
 	player:removeItem(TOKEN_ID, TOKEN_COST)
 	player:setOutfit(newOutfit)
-	player:sendTextMessage(MESSAGE_INFO_DESCR, "Your outfit has been changed to a random one!")
+	player:sendTextMessage(MESSAGE_LOOK, "Your outfit has been changed to a random one!")
 
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	return true

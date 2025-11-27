@@ -94,7 +94,7 @@ monster.summons = {
 }
 
 monster.loot = {
-	{id = 3053, chance = 700},
+	-- {id = 3053, chance = 700},
 	{name = "gold coin", chance = 100000, maxCount = 50},
 	{name = "plate armor", chance = 4000},
 	{name = "platinum amulet", chance = 400},
@@ -106,7 +106,7 @@ monster.loot = {
 			{name = "knight armor", chance = 700},
 			{name = "knight legs", chance = 500},
 			{name = "brass legs", chance = 10000},
-			{id = 3053, chance = 800}
+			-- {id = 3053, chance = 800}
 		}
 	}
 }

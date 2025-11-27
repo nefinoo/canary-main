@@ -91,6 +91,14 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{name = "crystal coin", chance = 100000, maxCount = 15},
+	{name = "crystal coin", chance = 70000, maxCount = 45},
+	{name = "crystal coin", chance = 50000, maxCount = 70},
+	{name = "crystal coin", chance = 20000, maxCount = 100},
+	{name = "assassin star", chance = 5},
+	{name = "justice seeker", chance = 5},
+	{name = "experience scroll", chance = 3000},
+	{name = "deadly wand", chance = 5},
 }
 
 mType:register(monster)

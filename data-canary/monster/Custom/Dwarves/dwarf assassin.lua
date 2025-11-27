@@ -97,7 +97,7 @@ monster.loot = {
 			{name = "elven brooch", chance = 100000}
 		}
 	},
-	{id = 9058, chance = 100000, maxCount = 5},
+	{id = 3043, chance = 100000, maxCount = 5},
 	{name = "assassin star", chance = 8000}
 }
 

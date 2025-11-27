@@ -52,11 +52,11 @@ function manaRune.onUse(player, item, fromPosition, target, toPosition, isHotkey
         return true
     end
 
-    -- if not player:isKnight() then
-        -- player:sendCancelMessage(error_voc)
-        -- fromPosition:sendMagicEffect(CONST_ME_POFF)
-        -- return true
-    -- end
+    if not player:isKnight() then
+        player:sendCancelMessage(error_voc)
+        fromPosition:sendMagicEffect(CONST_ME_POFF)
+        return true
+    end
 
     if player:getMagicLevel() < reqml then
         player:sendCancelMessage(error_ml)
@@ -101,11 +101,7 @@ function manaRune.onUse(player, item, fromPosition, target, toPosition, isHotkey
 
     -- Consume charge?
     if not infinite then
-        if item:getSubtype() > 1 then
-            item:transform(item:getId(), item:getSubtype() - 1)
-        else
-            item:remove()
-        end
+       item:remove()
     end
     return true
 end

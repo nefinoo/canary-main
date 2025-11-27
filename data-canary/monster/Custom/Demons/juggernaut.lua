@@ -92,8 +92,8 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000},
-	{name = "platinum coin", chance = 100000},
+	{name = "gold coin", chance = 100000, maxCount = 80},
+	{name = "platinum coin", chance = 100000, maxCount = 80},
 	{name = "meat", chance = 20000, maxCount = 8},
 	{name = "dragon ham", chance = 10000, maxCount = 3},
 	{name = "dirty fur", chance = 10000},

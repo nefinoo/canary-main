@@ -92,11 +92,11 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 12},
+	{name = "crystal coin", chance = 100000, maxCount = 12},
 	{name = "meat", chance = 40000, maxCount = 2},
 	{name = "wooden shield", chance = 10000},
 	{name = "copper shield", chance = 4000},
-	{id = 3044, chance = 10000, maxCount = 3},
+	{id = 7366, chance = 10000, maxCount = 3},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{id = 2853, chance = 100000, child = {
 			{name = "didgeridoo", chance = 500},

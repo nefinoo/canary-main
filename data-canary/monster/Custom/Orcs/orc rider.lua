@@ -93,7 +93,7 @@ monster.loot = {
 	{id = 2853, chance = 100000, child = {
 			{name = "obsidian lance", chance = 2000},
 			{name = "orcish axe", chance = 2500},
-			{name = "legion helmet", chance = 10000},
+			-- {name = "legion helmet", chance = 10000},
 			{name = "battle shield", chance = 6666}
 		}
 	},

@@ -95,5 +95,5 @@ function scrollAction.onUse(player, item, fromPos, target, toPos, isHotkey)
 end
 
 -- Cambia el 0 por el ID real de tu scroll
-scrollAction:id(52914)
+scrollAction:id(51670)
 scrollAction:register()

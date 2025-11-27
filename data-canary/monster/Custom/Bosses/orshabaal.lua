@@ -113,7 +113,7 @@ monster.summons = {
 monster.loot = {
 	{name = "purple tome", chance = 2600},
 	{name = "golden mug", chance = 7500},
-	{id = 2989, chance = 14500},
+	-- {id = 2989, chance = 14500},
 	{name = "ring of the sky", chance = 3500},
 	{id = 3007, chance = 5500},
 	{name = "crystal necklace", chance = 1500},
@@ -129,10 +129,11 @@ monster.loot = {
 	{name = "blue gem", chance = 1500},
 	{name = "crystal coin", chance = 50000, maxCount = 6},
 	{id = 3046, chance = 11500},
-	{id = 3049, chance = 9500},
-	{id = 3051, chance = 13500},
-	{name = "silver amulet", chance = 13000},
-	{name = "platinum amulet", chance = 4500},
+	-- {id = 3049, chance = 9500},
+	-- {id = 3051, chance = 13500},
+	-- {name = "silver amulet", chance = 13000},
+	{name = "platinum amulet", chance = 75000, maxCount = 80},
+	{name = "platinum amulet", chance = 45000, maxCount = 60},
 	{name = "strange symbol", chance = 2500},
 	{name = "orb", chance = 12000},
 	{name = "life crystal", chance = 1000},
@@ -145,7 +146,7 @@ monster.loot = {
 	{id = 3076, chance = 2500},
 	{name = "boots of haste", chance = 4000},
 	{name = "stone skin amulet", chance = 4000},
-	{id = 3098, chance = 13000},
+	-- {id = 3098, chance = 13000},
 	{name = "giant sword", chance = 12500},
 	{name = "ice rapier", chance = 7500},
 	{name = "silver dagger", chance = 15500},
@@ -158,7 +159,7 @@ monster.loot = {
 	{name = "magic plate armor", chance = 3000},
 	{name = "mastermind shield", chance = 7500},
 	{name = "demon shield", chance = 15500},
-	{id = 3002, chance = 100}
+	-- {id = 3002, chance = 100}
 }
 
 mType:register(monster)

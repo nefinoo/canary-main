@@ -105,7 +105,7 @@ monster.loot = {
 	{name = "double axe", chance = 4000},
 	{name = "dragonbone staff", chance = 4000},
 	{name = "longsword", chance = 5000},
-	{id = 3449, chance = 4000, maxCount = 10},
+	-- {id = 3449, chance = 4000, maxCount = 10},
 	{name = "green dragon leather", chance = 4000},
 	{id = 2853, chance = 100000, child = {
 			{name = "wand of inferno", chance = 1111},

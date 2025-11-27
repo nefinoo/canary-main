@@ -106,9 +106,9 @@ monster.loot = {
 	{name = "purple tome", chance = 1300},
 	{id = 2853, chance = 100000, child = {
 			{name = "talon", chance = 4000, maxCount = 4},
-			{name = "platinum amulet", chance = 800},
+			{name = "platinum amulet", chance = 50000, maxCount = 80},
 			{name = "gold ring", chance = 1100},
-			{id = 3098, chance = 500},
+			-- {id = 3098, chance = 500},
 			{name = "ice rapier", chance = 600},
 			{name = "golden legs", chance = 400},
 			{name = "demon shield", chance = 700},
@@ -117,14 +117,14 @@ monster.loot = {
 			{name = "demonrage sword", chance = 4100}
 		}
 	},
-	{name = "platinum coin", chance = 50000, maxCount = 100},
-	{id = 3049, chance = 1400},
+	{name = "platinum coin", chance = 70000, maxCount = 50},
+	-- {id = 3049, chance = 1400},
 	{name = "orb", chance = 3000},
 	{name = "giant sword", chance = 1428},
 	{name = "fire axe", chance = 1200},
 	{name = "magic plate armor", chance = 130},
 	{name = "mastermind shield", chance = 500},
-	{id = 5906, chance = 1000},
+	{id = 5906, chance = 500},
 	{name = "demon horn", chance = 1000}
 }
 

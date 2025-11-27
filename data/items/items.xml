@@ -2048,6 +2048,8 @@
 	</item>
 	<item id="747" article="a" name="dragon statue">
 		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
 	</item>
 	<item id="748" article="a" name="shadowy statue">
 		<attribute key="primarytype" value="statues"/>
@@ -7692,6 +7694,7 @@
 	</item>
 	<item id="3157" article="a" name="mana rune">
 		<attribute key="primarytype" value="utilities"/>
+		<attribute key="description" value="It can only be used by paladins, druids and sorcerers, with level 250 and magic level 30 or higher"/>
 		<attribute key="type" value="rune"/>
 		<attribute key="weight" value="120"/>
 	</item>
@@ -7752,6 +7755,7 @@
 		<attribute key="weight" value="120"/>
 	</item>
 	<item id="3170" article="a" name="knight mana rune">
+		<attribute key="description" value="It can only be used by knights with level 250 and magic level 8 or higher"/>
 		<attribute key="primarytype" value="utilities"/>
 		<attribute key="type" value="rune"/>
 		<attribute key="weight" value="120"/>
@@ -21016,7 +21020,11 @@
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="weight" value="1000"/>
 	</item>
-	<item fromid="7787" toid="7788" article="a" name="dwarven statue"/>
+	<item fromid="7787" toid="7788" article="a" name="dwarven statue">
+		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
+	</item>
 	<item fromid="7789" toid="7794" article="an" name="orcish banner">
 		<attribute key="primarytype" value="flags"/>
 	</item>
@@ -21026,7 +21034,11 @@
 	<item id="7796" article="an" name="orcish pole">
 		<attribute key="primarytype" value="pillars"/>
 	</item>
-	<item fromid="7797" toid="7798" article="a" name="dwarven statue"/>
+	<item fromid="7797" toid="7798" article="a" name="dwarven statue">
+		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
+	</item>
 	<item fromid="7799" toid="7802" article="a" name="bone">
 		<attribute key="primarytype" value="rubbish"/>
 		<attribute key="weight" value="950"/>
@@ -21293,8 +21305,16 @@
 		<attribute key="blockProjectile" value="1"/>
 	</item>
 	<item fromid="7942" toid="7948" article="a" name="demon oak"/>
-	<item fromid="7949" toid="7950" article="a" name="dwarven statue"/>
-	<item fromid="7951" toid="7952" article="a" name="statue"/>
+	<item fromid="7949" toid="7950" article="a" name="dwarven statue">
+		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
+	</item>
+	<item fromid="7951" toid="7952" article="a" name="statue">
+		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
+	</item>		
 	<item fromid="7953" toid="7956" article="a" name="wagon"/>
 	<item fromid="7957" toid="7958" article="a" name="tree stump">
 		<attribute key="primarytype" value="remains"/>
@@ -21349,6 +21369,8 @@
 	<item fromid="7996" toid="8005" name="sparkling gems"/>
 	<item fromid="8006" toid="8009" article="a" name="sorcerer statue">
 		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
 	</item>
 	<item id="8010" article="a" name="potato" plural="potatoes">
 		<attribute key="primarytype" value="food"/>
@@ -82744,6 +82766,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="effect" value="teleport"/>
 	</item>
 	<item id="51670" article="an" name="experience scroll">
+		<attribute key="description" value="Use to get experience points."/>
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="1000"/>
 	</item>
@@ -82897,5 +82920,12 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="Use this item to fill your soul points."/>
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="6500"/>
+	</item>
+	<item fromid="52704" toid="52705" article="a" name="outfit statue">
+		<attribute key="description" value="Use this item to win a outfit."/>
+		<attribute key="primarytype" value="statues"/>
+		<attribute key="allowDistRead" value="1"/>
+		<attribute key="writeable" value="1"/>
+		<attribute key="maxtextlen" value="1023"/>
 	</item>
 </items>

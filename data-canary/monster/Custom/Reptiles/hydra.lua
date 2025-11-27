@@ -104,7 +104,7 @@ monster.loot = {
 	{name = "small sapphire", chance = 5000, description2 = "small sapphire"},
 	{id = 2853, chance = 100000, description2 = "bag", child = {
 			{name = "hydra egg", chance = 600, description2 = "hydra egg"},
-			{id = 3098, chance = 1050, description2 = "ring of healing"},
+			-- {id = 3098, chance = 1050, description2 = "ring of healing"},
 			{id = 3369, chance = 1000, description2 = "warrior helmet"},
 			{name = "knight armor", chance = 1200, description2 = "knight armor"},
 			{name = "medusa shield", chance = 200, description2 = "medusa shield"},
