@@ -57,7 +57,7 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "127.0.0.1"
+ip = "frozen-hell.servegame.com"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
@@ -507,10 +507,10 @@ sortLootByChance = false
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
 rateUseStages = true
-lowLevelBonusExp = 500
+lowLevelBonusExp = 100
 rateExp = 100
 rateSkill = 100
-rateLoot = 2
+rateLoot = 5
 rateMagic = 50
 rateSpawn = 1
 
