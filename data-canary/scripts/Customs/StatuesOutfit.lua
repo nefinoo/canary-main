@@ -1,19 +1,19 @@
 local config = {
-    [16700] = { female = 137, male = 129, effect = CONST_ME_GREEN_RINGS },--hunter
-    [16701] = { female = 138, male = 130, effect = CONST_ME_GREEN_RINGS },--mage
-    [16702] = { female = 139, male = 131, effect = CONST_ME_GREEN_RINGS },--Knight
-    [16703] = { female = 140, male = 132, effect = CONST_ME_GREEN_RINGS },
-    [16704] = { female = 141, male = 133, effect = CONST_ME_GREEN_RINGS },
-    [16705] = { female = 142, male = 134, effect = CONST_ME_GREEN_RINGS },
-    [16706] = { female = 147, male = 143, effect = CONST_ME_GREEN_RINGS },
-    [16707] = { female = 148, male = 144, effect = CONST_ME_GREEN_RINGS },
-    [16708] = { female = 149, male = 145, effect = CONST_ME_GREEN_RINGS },
-    [16709] = { female = 150, male = 146, effect = CONST_ME_GREEN_RINGS },
-    [16710] = { female = 155, male = 151, effect = CONST_ME_GREEN_RINGS },
-    [16711] = { female = 156, male = 152, effect = CONST_ME_GREEN_RINGS },
-    [16712] = { female = 157, male = 153, effect = CONST_ME_GREEN_RINGS },
-    [16713] = { female = 158, male = 154, effect = CONST_ME_GREEN_RINGS },
-    [16714] = { female = 252, male = 251, effect = CONST_ME_GREEN_RINGS },
+    [16700] = { female = 137, male = 129, effect = CONST_ME_GREEN_RINGS },--hunter D
+    [16701] = { female = 138, male = 130, effect = CONST_ME_GREEN_RINGS },--mage D
+    [16702] = { female = 139, male = 131, effect = CONST_ME_GREEN_RINGS },--Knight D
+    [16703] = { female = 140, male = 132, effect = CONST_ME_GREEN_RINGS },--nobleman D
+    [16704] = { female = 141, male = 133, effect = CONST_ME_GREEN_RINGS },--summoner D
+    [16705] = { female = 142, male = 134, effect = CONST_ME_GREEN_RINGS },--warrior D
+    [16706] = { female = 147, male = 143, effect = CONST_ME_GREEN_RINGS },--barbarian D
+    [16707] = { female = 148, male = 144, effect = CONST_ME_GREEN_RINGS },--druid D
+    [16708] = { female = 149, male = 145, effect = CONST_ME_GREEN_RINGS },--wizard D
+    [16709] = { female = 150, male = 146, effect = CONST_ME_GREEN_RINGS },--oriental D
+    [16710] = { female = 155, male = 151, effect = CONST_ME_GREEN_RINGS },--pirate D
+    [16711] = { female = 156, male = 152, effect = CONST_ME_GREEN_RINGS },--assassin D
+    [16712] = { female = 157, male = 153, effect = CONST_ME_GREEN_RINGS },--beggar D
+    [16713] = { female = 158, male = 154, effect = CONST_ME_GREEN_RINGS },--shaman D
+    [16714] = { female = 252, male = 251, effect = CONST_ME_GREEN_RINGS },--norseman D
     [16715] = { female = 269, male = 268, effect = CONST_ME_GREEN_RINGS },
     [16716] = { female = 270, male = 273, effect = CONST_ME_GREEN_RINGS },
     [16717] = { female = 279, male = 278, effect = CONST_ME_GREEN_RINGS },

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "necropharus"
 monster.description = "Necropharus"
-monster.experience = 700
+monster.experience = 32000
 monster.outfit = {
 	lookType = 209,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 750
-monster.maxHealth = 750
+monster.health = 50000
+monster.maxHealth = 50000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -80,33 +80,33 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 35, attack = 45, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -80, maxDamage = -120, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_EARTHDAMAGE, minDamage = -50, maxDamage = -140, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, skill = 1000, attack = 100, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 45, type = COMBAT_LIFEDRAIN, minDamage = -1700, maxDamage = -2800, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 1000, chance = 39, type = COMBAT_EARTHDAMAGE, minDamage = -2900, maxDamage = -4600, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
 	defense = 25,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 60, maxDamage = 90, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 600, maxDamage = 990, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.maxSummons = 4
 monster.summons = {
-	{name = "ghoul", chance = 20, interval = 1000, max = 2},
-	{name = "ghost", chance = 17, interval = 1000, max = 1},
-	{name = "mummy", chance = 15, interval = 1000, max = 1}
+	{name = "undead mage", chance = 40, interval = 6000, max = 2},
+	{name = "bloody mary", chance = 34, interval = 10000, max = 1},
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 40},
-	{id = 2902, chance = 10000},
-	{name = "horseman helmet", chance = 150},
+	{name = "crystal coin", chance = 100000, maxCount = 50},
+	-- {id = 2902, chance = 10000},
+	-- {name = "horseman helmet", chance = 150},
 	{name = "fire sword", chance = 220},
 	{name = "shadow herb", chance = 20000, maxCount = 2},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "soul stone", chance = 2500},
 	{name = "moonlight rod", chance = 500},
+	{name = "experience scroll", chance = 2500},
 	{id = 2853, chance = 100000, child = {
 			{name = "scale armor", chance = 8500},
 			{name = "green mushroom", chance = 22500},
@@ -120,7 +120,8 @@ monster.loot = {
 			{name = "skull staff", chance = 833},
 			{name = "mystic turban", chance = 909},
 			{name = "boots of haste", chance = 666},
-			{name = "clerical mace", chance = 5000}
+			{name = "clerical mace", chance = 5000},
+			{id = 3341, chance = 100}
 		}
 	}
 }

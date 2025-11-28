@@ -95,7 +95,8 @@ monster.loot = {
 	{id = 3410, chance = 5000},
 	{name = "vampire shield", chance = 5000},
 	{name = "experience scroll", chance = 3000},
-	{id = 9743, chance = 2500}
+	{name = "flask of warrior's sweat", chance = 500},
+	-- {id = 9743, chance = 2500}
 }
 
 mType:register(monster)

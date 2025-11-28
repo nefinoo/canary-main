@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "The Old Widow"
 monster.description = "the Old Widow"
-monster.experience = 2800
+monster.experience = 3500
 monster.outfit = {
 	lookType = 208,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 3200
-monster.maxHealth = 3200
+monster.health = 6400
+monster.maxHealth = 6400
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -43,7 +43,7 @@ monster.flags = {
 	healthHidden = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -109,7 +109,7 @@ monster.loot = {
 			{name = "knight armor", chance = 1000},
 			{name = "knight legs", chance = 500},
 			{name = "brass legs", chance = 10000},
-			{id = 3053, chance = 800}
+			{id = 5886, chance = 800}
 		}
 	}
 }

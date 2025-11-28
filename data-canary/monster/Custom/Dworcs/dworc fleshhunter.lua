@@ -104,6 +104,7 @@ monster.loot = {
 			{name = "chain armor", chance = 5000},
 			{name = "machete", chance = 5000},
 			{name = "studded club", chance = 5000},
+			{name = "piece of draconian steel", chance = 500},
 			{id = 2875, chance = 20000}
 		}
 	}

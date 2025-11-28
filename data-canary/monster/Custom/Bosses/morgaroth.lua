@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Morgaroth"
 monster.description = "Morgaroth"
-monster.experience = 1000000
+monster.experience = 2000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 1000000
+monster.maxHealth = 1000000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -86,9 +86,9 @@ monster.attacks = {
 	{name ="combat", interval = 3000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -1200, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="melee", interval = 1800, chance = 100, skill = 400, attack = 400},
 	{name ="combat", interval = 3000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -2000, maxDamage = -3000, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 2500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -480, range = 7, radius = 5, target = false, effect = CONST_ME_MAGIC_GREEN},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -1500, range = 7, radius = 13, target = false, effect = CONST_ME_SOUND_RED},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -2000, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 2500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -4800, range = 7, radius = 5, target = false, effect = CONST_ME_MAGIC_GREEN},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -30000, range = 7, radius = 13, target = false, effect = CONST_ME_SOUND_RED},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -3000, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
 	{name ="melee", interval = 3000, chance = 100, skill = 400, attack = 400}
 }
 
@@ -117,7 +117,10 @@ monster.loot = {
 	{name = "crown shield", chance = 500},
 	{name = "vampire shield", chance = 5000},
 	{name = "experience scroll", chance = 3000},
-	{id = 9743, chance = 2500}
+	{name = "Huge Chunk of Crude Iron", chance = 500},
+	{name = "flask of warrior's sweat", chance = 1500},
+	{name = "Damaged Steel Helmet", chance = 56000, unique = true },
+	-- {id = 9743, chance = 2500}
 }
 
 mType:register(monster)

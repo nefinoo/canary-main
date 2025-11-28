@@ -78,9 +78,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1500, chance = 100, minDamage = -380, maxDamage = -700, condition = { type = CONDITION_POISON, totalDamage = 1200, interval = 4000 } },
-	{ name = "combat", interval = 2000, chance = 40, type = COMBAT_DROWNDAMAGE, minDamage = -255, maxDamage = -340, range = 7, radius = 2, effect = CONST_ME_LOSEENERGY, target = true },
-	{ name = "combat", interval = 2000, chance = 40, type = COMBAT_ICEDAMAGE, minDamage = -250, maxDamage = -340, range = 7, shootEffect = CONST_ANI_SMALLICE, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -380, maxDamage = -700, condition = { type = CONDITION_POISON, totalDamage = 1200, interval = 4000 } },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_DROWNDAMAGE, minDamage = -255, maxDamage = -340, range = 7, radius = 2, effect = CONST_ME_LOSEENERGY, target = true },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -250, maxDamage = -340, range = 7, shootEffect = CONST_ANI_SMALLICE, target = false },
 	-- poison
 	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 35, minDamage = -255, maxDamage = -550, radius = 5, effect = CONST_ME_POISONAREA, target = false },
 }

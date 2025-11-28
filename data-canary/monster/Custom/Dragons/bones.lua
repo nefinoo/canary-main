@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 9500
-monster.maxHealth = 9500
+monster.health = 95000
+monster.maxHealth = 95000
 monster.race = "undead"
 monster.corpse = 6305
 monster.speed = 150
@@ -83,16 +83,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -845 },
-	{ name = "combat", interval = 1000, chance = 13, type = COMBAT_LIFEDRAIN, minDamage = -400, maxDamage = -600, radius = 1, target = true },
-	{ name = "combat", interval = 3000, chance = 34, type = COMBAT_DEATHDAMAGE, minDamage = -180, maxDamage = -500, range = 1, radius = 1, shootEffect = CONST_ANI_DEATH, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -845, maxDamage = -1649 },
+	{ name = "combat", interval = 1000, chance = 13, type = COMBAT_LIFEDRAIN, minDamage = -800, maxDamage = -1200, radius = 1, target = true },
+	{ name = "combat", interval = 3000, chance = 34, type = COMBAT_DEATHDAMAGE, minDamage = -660, maxDamage = -1000, range = 1, radius = 1, shootEffect = CONST_ANI_DEATH, target = true },
 }
 
 monster.defenses = {
 	defense = 55,
 	armor = 50,
 	mitigation = 2.00,
-	{ name = "combat", interval = 5000, chance = 25, type = COMBAT_HEALING, minDamage = 60, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 3500, chance = 50, type = COMBAT_HEALING, minDamage = 1200, maxDamage = 2000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
