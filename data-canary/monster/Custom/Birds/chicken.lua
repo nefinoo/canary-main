@@ -92,7 +92,8 @@ monster.loot = {
 	{id = 3606, chance = 20000, maxCount = 4},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "worm", chance = 50000, maxCount = 18},
-	{name = "chicken feather", chance = 5000}
+	{name = "chicken feather", chance = 2500},
+	{name = "enchanted chicken wing", chance = 100}
 }
 
 mType:register(monster)

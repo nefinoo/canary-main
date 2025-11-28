@@ -98,6 +98,7 @@ monster.loot = {
 		}
 	},
 	{id = 3043, chance = 100000, maxCount = 5},
+	{ name = "iron ore", chance = 85000, maxCount = 3},
 	{name = "assassin star", chance = 8000}
 }
 

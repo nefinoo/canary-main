@@ -82,10 +82,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 100, attack = 100},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_LIFEDRAIN, minDamage = -5000, maxDamage = -7000, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
+	{name ="melee", interval = 1000, chance = 100, skill = 100, attack = 10},
+	{name ="combat", interval = 1000, chance = 75, type = COMBAT_LIFEDRAIN, minDamage = -500, maxDamage = -700, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
 	{name ="speed", interval = 2000, chance = 12, speed = {min = -600, max = -600}, duration = 60000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -1500, maxDamage = -3500, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -350, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
 }
 
 monster.defenses = {

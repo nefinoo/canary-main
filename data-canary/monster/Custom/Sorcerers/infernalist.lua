@@ -82,7 +82,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 50},
+	{name ="melee", interval = 2000, chance = 100, skill = 250, attack = 50},
 	{name ="combat", interval = 1000, chance = 85, type = COMBAT_FIREDAMAGE, minDamage = -1600, maxDamage = -2500, range = 3, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
 	{name ="combat", interval = 1000, chance = 20, type = COMBAT_MANADRAIN, minDamage = -500, maxDamage = -750, range = 3, radius = 3, target = true, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_TELEPORT},
 	{name ="firefield", interval = 1000, chance = 20, range = 3, radius = 3, target = true, shootEffect = CONST_ANI_FIRE},
@@ -100,7 +100,9 @@ monster.loot = {
 	{name = "orange backpack", chance = 100},
 	{name = "crystal coin", chance = 10000, maxCount = 10},
 	{name = "experience scroll", chance = 3000},
-	{name = "experience scroll", chance = 3000}
+	{name = "experience scroll", chance = 3000},
+	{ name = "magic sulphur", chance = 600 },
+	{ name = "royal tapestry", chance = 520 }
 }
 
 mType:register(monster)

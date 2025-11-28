@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="Beware! The Toad is coming!!!" />
+	<announce delay="1000" type="event" message="Demodras rises from the depths of the Dragon Lair! Prepare for destruction!!!" />
 	<!--Single Spawns-->
-	<singlespawn delay="1000" name="Toad" x="5000" y="5008" z="7" />
+	<singlespawn delay="5000" name="Demodras" x="414" y="702" z="9" />
 	<!--Area Spawns-->
 </raid>

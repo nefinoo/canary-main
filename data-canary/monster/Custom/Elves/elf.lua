@@ -101,6 +101,7 @@ monster.loot = {
 	{name = "crown legs", chance = 2500},
 	{name = "crown helmet", chance = 2500},
 	{name = "experience scroll", chance = 2000},
+	{ id = 5921, chance = 940 }, -- heaven blossom
 	-- {id = 9743, chance = 2500}
 }
 

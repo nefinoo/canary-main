@@ -93,6 +93,7 @@ monster.loot = {
 	{name = "crystal coin", chance = 50000, maxCount = 10},
 	{id = 7426, chance = 50},
 	{name = "experience scroll", chance = 2000},
+	{ name = "bat wing", chance = 4900, maxCount = 2 },
 	-- {id = 9743, chance = 2500}
 }
 

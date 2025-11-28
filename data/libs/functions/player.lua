@@ -2,26 +2,32 @@
 local foodCondition = Condition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
 
 function Player.addCatch(self, key, amount)
+    -- Escapar caracteres problemáticos en el nombre
+    local name = self:getName():gsub("'", "\\'")
+    
     -- Verificar si ya existe un registro para este jugador y clave
-    local query = db.storeQuery("SELECT `value` FROM `player_catchs` WHERE `key` = " .. key .. " AND `name` = '" .. self:getName() .. "';")
+    local query = db.storeQuery("SELECT `value` FROM `player_catchs` WHERE `key` = " .. key .. " AND `name` = '" .. name .. "';")
     
     if query == false then
         -- Si no existe, insertar un nuevo registro con valor inicial 0
-        local insertSuccess = db.query("INSERT INTO `player_catchs` (`name`, `key`, `value`) VALUES ('" .. self:getName() .. "', " .. key .. ", 0);")
+        local insertSuccess = db.query("INSERT INTO `player_catchs` (`name`, `key`, `value`) VALUES ('" .. name .. "', " .. key .. ", 0);")
         if not insertSuccess then
             return false
         end
+        
         -- Luego, actualizar el valor sumando `amount`
-        return db.query("UPDATE `player_catchs` SET `value` = `value` + " .. amount .. " WHERE `key` = " .. key .. " AND `name` = '" .. self:getName() .. "';")
+        return db.query("UPDATE `player_catchs` SET `value` = `value` + " .. amount .. " WHERE `key` = " .. key .. " AND `name` = '" .. name .. "';")
     else
         -- Si existe, actualizar el valor sumando `amount`
         result.free(query)
-        return db.query("UPDATE `player_catchs` SET `value` = `value` + " .. amount .. " WHERE `key` = " .. key .. " AND `name` = '" .. self:getName() .. "';")
+        return db.query("UPDATE `player_catchs` SET `value` = `value` + " .. amount .. " WHERE `key` = " .. key .. " AND `name` = '" .. name .. "';")
     end
 end
 
 function Player.getCatch(self, key)
-    local query = string.format("SELECT `value` FROM `player_catchs` WHERE `name` = '%s' AND `key` = %d", self:getName(), key)
+    local name = self:getName():gsub("'", "\\'")
+    local query = string.format("SELECT `value` FROM `player_catchs` WHERE `name` = '%s' AND `key` = %d", name, key)
+    
     local resultId = db.storeQuery(query)
     if resultId ~= false then
         local value = result.getNumber(resultId, "value")

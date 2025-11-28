@@ -96,13 +96,13 @@ monster.loot = {
 	{name = "ham", chance = 20000, maxCount = 2},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{id = 2853, chance = 100000, child = {
-			{id = 3350, chance = 6666},
-			{name = "arrow", chance = 10000, maxCount = 15},
-			{id = 3449, chance = 10000, maxCount = 5},
+			-- {id = 3350, chance = 6666},
+			-- {name = "arrow", chance = 10000, maxCount = 15},
+			-- {id = 3449, chance = 10000, maxCount = 5},
 			{name = "small ruby", chance = 3333, maxCount = 2},
 			{name = "orange", chance = 6666, maxCount = 4},
 			{name = "roll", chance = 6666, maxCount = 4},
-			{id = 2920, chance = 20000},
+			-- {id = 2920, chance = 20000},
 			{name = "brass legs", chance = 3333},
 			{name = "green tunic", chance = 2222},
 			{name = "dragon necklace", chance = 2500}

@@ -65,18 +65,18 @@ local femaleOutfits = {136,137,138,139,140,141,142,147,148,149,150,156,157,158,2
     local msg = string.format([[
 ~° BONUS SYSTEM °~
 
-Outfits completos: %d
-Monturas: %d
-Niveles obtenidos: %d
+Complete outfits: %d
+Mounts: %d
+Levels obtained: %d
 
-Vida extra: %d%%
-Mana extra: %d%%
-Crit damage: %d%%
-Life Leech: %.1f%%
-Mana Leech: %.1f%%
-Experiencia extra: %d%%
+Extra health: %d%%
+Extra mana: %d%%
+Critical damage: %d%%
+Life leech: %.1f%%
+Mana leech: %.1f%%
+Extra experience: %d%%
 
-Total acumulado: %d elementos
+Total accumulated: %d items
 ]], outfitCount, mountCount, levels,
 hpBonus, mpBonus, crit,
 leech, leech, loot, expBonus, total)

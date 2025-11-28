@@ -5013,6 +5013,7 @@
 		<attribute key="containersize" value="15"/>
 		<attribute key="rotateto" value="2481"/>
 		<attribute key="weight" value="12000"/>
+		<attribute key="movable" value="0"/>
 	</item>
 	<item id="2473" article="a" name="box">
 		<attribute key="primarytype" value="containers"/>
@@ -5044,18 +5045,21 @@
 		<attribute key="containersize" value="15"/>
 		<attribute key="rotateto" value="2482"/>
 		<attribute key="weight" value="12000"/>
+		<attribute key="movable" value="0"/>
 	</item>
 	<item id="2481" article="a" name="chest">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="rotateto" value="2480"/>
 		<attribute key="weight" value="12000"/>
+		<attribute key="movable" value="0"/>
 	</item>
 	<item id="2482" article="a" name="chest">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="rotateto" value="2472"/>
 		<attribute key="weight" value="12000"/>
+		<attribute key="movable" value="0"/>
 	</item>
 	<item id="2483" article="a" name="large trunk">
 		<attribute key="primarytype" value="containers"/>

@@ -14,5 +14,5 @@ function autoBroadcast.onThink(interval, lastExecution)
     return true
 end
 
-autoBroadcast:interval(300000) --5 minutes
+autoBroadcast:interval(900000) --5 minutes
 autoBroadcast:register()

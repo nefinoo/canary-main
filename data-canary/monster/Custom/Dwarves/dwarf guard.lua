@@ -99,6 +99,7 @@ monster.loot = {
 	{name = "golden legs", chance = 2500},
 	{name = "magic plate armor", chance = 2500},
 	{name = "experience scroll", chance = 2000},
+	{ name = "iron ore", chance = 510 },
 	-- {id = 9743, chance = 2500}
 }
 

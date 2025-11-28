@@ -45,49 +45,57 @@ local monsters = {
 }
 
 function catchs.onSay(player, words, param)
-    local target = nil
- 
+    -- nombre "crudo" (exacto como lo quiere Player())
+    local rawTarget
     if not param or param == "" then
-        target = player:getName()
+        rawTarget = player:getName()
     else
-        target = param
+        rawTarget = param
     end
- 
-    if not isRealPlayer(target) then
+
+    -- nombre escapado para usar en queries internas que arman SQL
+    local escTarget = rawTarget:gsub("'", "\\'")
+
+    -- usa la versión ESCAPED al llamar a isRealPlayer (evita romper SQL)
+    if not isRealPlayer(escTarget) then
         player:sendCancelMessage("Player does not exist.")
         return false
     end
- 
-    local text = "["..target.." Catchs]\n\n"
- 
-    text = text.."--[Water Fishing]--\n"
- 
-    for i = 1, #monsters do
-        local info = player:getCatch(monsters[i].key)
-        if not info or info == nil or info == -1 then
-            info = 0  -- Si no hay datos, establecer el valor a 0
-            player:addCatch(monsters[i].key, 0)  -- Asegurarse de que exista un registro en la base de datos
-        end
-     
-        -- Cambiar 2, 3, 4 para los siguientes conjuntos de peces para diferentes tipos de pesca --
-        if i >= 32 then
-            text = text.."\n--[Lava Fishing]--\n"
-        end
-     
-        if i >= 33 then
-            text = text.."\n--[Swamp Fishing]--\n"
-        end
-     
-        if i >= 34 then
-            text = text.."\n--[Tar Fishing]--\n"
-        end
-     
-        text = text.."["..monsters[i].name.."]: "..info.."\n"
+
+    -- para obtener el objeto online usamos la versión RAW (sin backslash)
+    local targetPlayer = Player(rawTarget)
+    if not targetPlayer then
+        player:sendCancelMessage("Player is not online.")
+        return false
     end
- 
+
+    local text = "[" .. rawTarget .. " Catchs]\n\n"
+    text = text .. "--[Water Fishing]--\n"
+
+    for i = 1, #monsters do
+        local info = targetPlayer:getCatch(monsters[i].key)
+
+        if not info or info == nil or info == -1 then
+            info = 0
+            targetPlayer:addCatch(monsters[i].key, 0)
+        end
+
+        if i == 32 then
+            text = text .. "\n--[Lava Fishing]--\n"
+        elseif i == 33 then
+            text = text .. "\n--[Swamp Fishing]--\n"
+        elseif i == 34 then
+            text = text .. "\n--[Tar Fishing]--\n"
+        end
+
+        text = text .. "[" .. monsters[i].name .. "]: " .. info .. "\n"
+    end
+
     player:showTextDialog(2580, text)
     return false
 end
+
+
 
 catchs:separator(" ")
 catchs:groupType("normal")
