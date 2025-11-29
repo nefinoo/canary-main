@@ -101,7 +101,7 @@ function manaRune.onUse(player, item, fromPosition, target, toPosition, isHotkey
 
     -- Consume charge?
     if not infinite then
-       item:remove()
+       item:remove(1)
     end
     return true
 end
