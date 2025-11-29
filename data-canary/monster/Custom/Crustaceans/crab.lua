@@ -88,7 +88,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
+	{name = "experience scroll", chance = 3000},
 	{name = "ham", chance = 100000, maxCount = 4},
 	{name = "worm", chance = 50000, maxCount = 10}
 }

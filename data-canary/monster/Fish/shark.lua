@@ -81,6 +81,7 @@ monster.loot = {
 	{ name = "eye of a deepling", chance = 1200 },
 	{ name = "small sapphire", chance = 1090 },
 	{ id = 281, chance = 390 }, -- giant shimmering pearl (green)
+	{name = "experience scroll", chance = 3000},
 	{ name = "fish fin", chance = 161 },
 }
 

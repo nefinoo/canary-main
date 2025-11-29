@@ -78,6 +78,7 @@ monster.voices = {
 }
 
 monster.loot = {
+	{name = "experience scroll", chance = 3000},
 	{ name = "shrimp", chance = 8333, maxCount = 2 },
 }
 

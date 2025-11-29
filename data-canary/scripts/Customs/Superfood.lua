@@ -5,7 +5,7 @@ local superFoods = {
         hpPercent = 1,
         manaPercent = 1,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     },
     [3579] = {
@@ -14,7 +14,7 @@ local superFoods = {
         hpPercent = 1,
         manaPercent = 1,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     },
     [3580] = {
@@ -23,7 +23,7 @@ local superFoods = {
         hpPercent = 1.5,
         manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     },
     [3581] = {
@@ -32,7 +32,7 @@ local superFoods = {
         hpPercent = 1.5,
         manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     },
     [7158] = {
@@ -41,7 +41,7 @@ local superFoods = {
         hpPercent = 1.5,
         manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     },
     [7159] = {
@@ -50,7 +50,7 @@ local superFoods = {
         hpPercent = 1.5,
         manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1000 * 1, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     }
 }
@@ -67,17 +67,17 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
 
     local playerId = player:getId()
     local exhausted = exhausteds[playerId]
-    if exhausted and os.mtime() < exhausted then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "You are exhausted.")
-        return true
-    end
+    if exhausted and os.time() < exhausted then
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are exhausted.")
+		return true
+	end
 
     local playerHealth = player:getHealth()
     local playerMaxHealth = player:getMaxHealth()
     local playerMana = player:getMana()
     local playerMaxMana = player:getMaxMana()
     if playerHealth == playerMaxHealth and playerMana == playerMaxMana then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "You are already at full health and mana.")
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are already at full health and mana.")
         return true
     end
 
@@ -106,12 +106,12 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
     end
 
     if food.exhaustedTime then
-        exhausteds[playerId] = os.mtime() + food.exhaustedTime
+        exhausteds[playerId] = os.time() + food.exhaustedTime
     end
 
     player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
     player:say(food.says, TALKTYPE_MONSTER_SAY)
-    player:sendTextMessage(MESSAGE_STATUS_SMALL, string.format("You have been fed, You recover %s%s.", (gainHp > 0 and string.format("%d hit points", gainHp) or ""), (gainMana > 0 and string.format("%s%s", (gainHp > 0 and " and " or ""), string.format("%d mana points", gainMana)) or "")))
+    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have been fed, You recover %s%s.", (gainHp > 0 and string.format("%d hit points", gainHp) or ""), (gainMana > 0 and string.format("%s%s", (gainHp > 0 and " and " or ""), string.format("%d mana points", gainMana)) or "")))
     return true
 end
 

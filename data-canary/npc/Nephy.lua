@@ -1392,6 +1392,25 @@ npcConfig.shop = {
 	{ itemName = "young lich worm", clientId = 31590, sell = 25000 },
 	{ itemName = "zaogun flag", clientId = 10413, sell = 600 },
 	{ itemName = "zaogun shoulderplates", clientId = 10414, sell = 150 },	
+	
+	--Customs
+	{ itemName = "arcane staff", clientId = 3341, sell = 100000 },	
+	{ itemName = "thunder hammer", clientId = 3309, sell = 100000 },
+	{ itemName = "stonecutter axe", clientId = 3319, sell = 100000 },
+	{ itemName = "magic sword", clientId = 3288, sell = 100000 },
+	{ itemName = "throwing star", clientId = 3287, sell = 100000 },
+	
+	{ itemName = "amber staff", clientId = 7426, sell = 500000 },	
+	{ itemName = "sapphire hammer", clientId = 7437, sell = 500000 },
+	{ itemName = "reaper's axe", clientId = 7420, sell = 500000 },
+	{ itemName = "warlord sword", clientId = 3296, sell = 500000 },
+	{ itemName = "viper star", clientId = 7366, sell = 500000 },
+	
+	{ itemName = "deadly wand", clientId = 895, sell = 1000000 },	
+	{ itemName = "cranial basher", clientId = 7415, sell = 1000000 },
+	{ itemName = "great axe", clientId = 3303, sell = 1000000 },
+	{ itemName = "justice seeker", clientId = 7390, sell = 1000000 },
+	{ itemName = "assassin star", clientId = 7368, sell = 1000000 },
 }
 
 -- On buy npc shop message
