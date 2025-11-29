@@ -27,6 +27,11 @@ monster.changeTarget = {
 	chance = 8
 }
 
+monster.bosstiary = {
+	bossRaceId = 5001,
+	bossRace = RARITY_NEMESIS,
+}
+
 monster.flags = {
 	attackable = true,
 	hostile = true,

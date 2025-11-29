@@ -14,10 +14,10 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.bosstiary = {
-	bossRaceId = 201,
-	bossRace = RARITY_NEMESIS,
-}
+-- monster.bosstiary = {
+	-- bossRaceId = 201,
+	-- bossRace = RARITY_NEMESIS,
+-- }
 
 
 monster.health = 22500
@@ -132,8 +132,8 @@ monster.loot = {
 	-- {id = 3049, chance = 9500},
 	-- {id = 3051, chance = 13500},
 	-- {name = "silver amulet", chance = 13000},
-	{name = "platinum amulet", chance = 75000, maxCount = 80},
-	{name = "platinum amulet", chance = 45000, maxCount = 60},
+	{name = "platinum coin", chance = 75000, maxCount = 80},
+	-- {name = "platinum amulet", chance = 45000, maxCount = 60},
 	{name = "strange symbol", chance = 2500},
 	{name = "orb", chance = 12000},
 	{name = "life crystal", chance = 1000},
@@ -151,7 +151,7 @@ monster.loot = {
 	{name = "ice rapier", chance = 7500},
 	{name = "silver dagger", chance = 15500},
 	{name = "golden sickle", chance = 4500},
-	{name = "thunder hammer", chance = 13500},
+	-- {name = "thunder hammer", chance = 13500},
 	{name = "fire axe", chance = 17000},
 	{name = "dragon hammer", chance = 4500},
 	{name = "skull staff", chance = 5000},

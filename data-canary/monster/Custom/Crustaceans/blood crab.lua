@@ -78,7 +78,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -700, maxDamage = -1000}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1350, maxDamage = -1600}
 }
 
 monster.defenses = {

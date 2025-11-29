@@ -18,7 +18,7 @@ monster.health = 25000
 monster.maxHealth = 25000
 monster.runHealth = 0
 monster.race = "undead"
-monster.corpse = 2016
+monster.corpse = 9582
 monster.speed = 500
 monster.summonCost = 0
 
@@ -65,32 +65,36 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 95},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 15},
 	{type = COMBAT_ENERGYDAMAGE, percent = -10},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 100},
-	{type = COMBAT_HOLYDAMAGE , percent = 50},
-	{type = COMBAT_DEATHDAMAGE , percent = 50}
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -380, maxDamage = -800},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_EARTHDAMAGE, minDamage = -255, maxDamage = -640, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 1000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -220, maxDamage = -540, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -335, maxDamage = -750, range = 7, radius = 6, target = false, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -800, maxDamage = -1600},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_EARTHDAMAGE, minDamage = -560, maxDamage = -940, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 1000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -640, maxDamage = -1040, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1050, maxDamage = -1500, range = 7, radius = 6, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
 	defense = 22,
 	armor = 20,
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 30, maxDamage = 50, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 3000, maxDamage = 5000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
+	{name = "experience scroll", chance = 2900, maxCount = 3},
+	{id = 3578, chance = 60000, maxCount = 3},--fish
+	{name = "salmon", chance = 40000, maxCount = 2},
+	{name = "green perch", chance = 15000, maxCount = 2}
 }
 
 mType:register(monster)

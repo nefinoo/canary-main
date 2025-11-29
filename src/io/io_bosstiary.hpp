@@ -10,9 +10,9 @@
 #pragma once
 
 enum class BosstiaryRarity_t : uint8_t {
-	RARITY_BANE = 0,
-	RARITY_ARCHFOE = 1,
-	RARITY_NEMESIS = 2,
+	RARITY_BANE = 0, // son los bosses que respawnean en el reset
+	RARITY_ARCHFOE = 1, //los que sacas por palanca
+	RARITY_NEMESIS = 2, // los que aparecen aleatoriamente 
 
 	// Only for server reading, not send to the client
 	BOSS_INVALID = 10,

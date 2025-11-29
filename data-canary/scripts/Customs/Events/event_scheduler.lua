@@ -5,5 +5,5 @@ function scheduler.onThink(interval)
     return true
 end
 
-scheduler:interval(30 * 60 * 1000) -- 1 hora
+scheduler:interval(60 * 60 * 1000) -- 1 hora
 scheduler:register()

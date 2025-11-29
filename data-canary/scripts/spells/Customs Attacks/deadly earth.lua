@@ -76,7 +76,7 @@ function spell.onCastSpell(creature, variant)
     if vocationId == 1 or vocationId == 5 then
         config = deadlyEarthStrike[1] -- Deadly Wizard
     elseif vocationId == 2 or vocationId == 6 then
-        config = deadlyEarthStrike[2] -- Deadly Priest
+        config = deadlyEarthStrike[1] -- Deadly Priest
     elseif vocationId == 3 or vocationId == 7 then
         config = deadlyEarthStrike[3] -- Deadly Archer
     elseif vocationId == 4 or vocationId == 8 then
