@@ -92,6 +92,10 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{name = "experience scroll", chance = 2900},
+	{name = "fish", chance = 45000, maxCount = 3},
+	{name = "salmon", chance = 30000, maxCount = 2},
+	{name = "green perch", chance = 7500, maxCount = 2}
 }
 
 mType:register(monster)
