@@ -169,7 +169,7 @@ function spell.onCastSpell(creature, variant)
     end
 
     -- Escala mínima
-    local weaponScale = math.max(weaponAttack / 10, 1)
+    local weaponScale = weaponAttack / 1000
 
     ------------------------------------------------------
     -- RECONSTRUIR FORMULA ESCALADA
@@ -180,10 +180,10 @@ function spell.onCastSpell(creature, variant)
 	print(config.baseB)
 	print(config.baseC)
 	print(config.baseD)
-    local a = config.baseA * weaponScale
-    local b = config.baseB * weaponScale
-    local c = config.baseC * weaponScale
-    local d = config.baseD * weaponScale
+    local a = config.baseA * (1 + weaponScale)
+    local b = config.baseB * (1 + weaponScale)
+    local c = config.baseC * (1 + weaponScale)
+    local d = config.baseD * (1 + weaponScale)
 	print(a)
 	print(b)
 	print(c)
