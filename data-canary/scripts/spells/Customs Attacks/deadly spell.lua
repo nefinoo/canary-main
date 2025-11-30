@@ -3,111 +3,204 @@ local deadlyReckoning = {
     [1] = {
         mana = 1000,
         combat = Combat(),
-        area = createCombatArea(AREA_CIRCLE3X3)
+        area = createCombatArea(AREA_CIRCLE3X3),
+
+        baseA = -3.2,
+        baseB = -30,
+        baseC = -3.7,
+        baseD = 0
     },
+
     -- Deadly Priest (10, 14)
     [2] = {
         mana = 1000,
         combat = Combat(),
-        area = createCombatArea(AREA_CIRCLE3X3)
+        area = createCombatArea(AREA_CIRCLE3X3),
+
+        baseA = -3.1,
+        baseB = -50,
+        baseC = -3.5,
+        baseD = 0
     },
+
     -- Deadly Archer (11, 15)
     [3] = {
         mana = 400,
         combat = Combat(),
-        area = createCombatArea(AREA_CIRCLE3X3)
+        area = createCombatArea(AREA_CIRCLE3X3),
+
+        baseA = -4.3,
+        baseB = 0,
+        baseC = -5.4,
+        baseD = 0
     },
+
     -- Deadly Berserker (12, 16)
     [4] = {
         mana = 400,
         combat = Combat(),
-        area = createCombatArea(AREA_SQUARE2X2)
+        area = createCombatArea(AREA_SQUARE2X2),
+
+        baseA = -3.5,
+        baseB = 0,
+        baseC = -5.4,
+        baseD = 0
     },
+
     -- Gamemaster
     [5] = {
         combat = Combat(),
-        area = createCombatArea(AREA_WHOLESCREEN)
+        area = createCombatArea(AREA_WHOLESCREEN),
+
+        baseA = -10.0,
+        baseB = -500000,
+        baseC = -10.0,
+        baseD = -600000
     }
 }
 
--- Deadly Wizard configuration (Death Damage)
+----------------------------------------------------------
+-- CONFIGURACIÓN DE CADA COMBAT
+----------------------------------------------------------
+
+-- Wizard
 deadlyReckoning[1].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
 deadlyReckoning[1].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_STUN)
-deadlyReckoning[1].combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -3.2, -30, -3.7, 0)
 deadlyReckoning[1].combat:setArea(deadlyReckoning[1].area)
+deadlyReckoning[1].combat:setFormula(
+    COMBAT_FORMULA_LEVELMAGIC,
+    deadlyReckoning[1].baseA, deadlyReckoning[1].baseB,
+    deadlyReckoning[1].baseC, deadlyReckoning[1].baseD
+)
 
--- Deadly Priest configuration (Ice Damage)
+-- Priest
 deadlyReckoning[2].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
 deadlyReckoning[2].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICETORNADO)
-deadlyReckoning[2].combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -3.1, -50, -3.5, 0)
 deadlyReckoning[2].combat:setArea(deadlyReckoning[2].area)
+deadlyReckoning[2].combat:setFormula(
+    COMBAT_FORMULA_LEVELMAGIC,
+    deadlyReckoning[2].baseA, deadlyReckoning[2].baseB,
+    deadlyReckoning[2].baseC, deadlyReckoning[2].baseD
+)
 
--- Deadly Archer configuration (Holy Damage)
+-- Archer
 deadlyReckoning[3].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
 deadlyReckoning[3].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HOLYAREA)
-deadlyReckoning[3].combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -4.3, 0, -5.4, 0)
 deadlyReckoning[3].combat:setArea(deadlyReckoning[3].area)
+deadlyReckoning[3].combat:setFormula(
+    COMBAT_FORMULA_LEVELMAGIC,
+    deadlyReckoning[3].baseA, deadlyReckoning[3].baseB,
+    deadlyReckoning[3].baseC, deadlyReckoning[3].baseD
+)
 
--- Deadly Berserker configuration (Physical Damage)
+-- Berserker
 deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITAREA)
 deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_USECHARGES, true)
-deadlyReckoning[4].combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -3.5, 0, -5.4, 0)
 deadlyReckoning[4].combat:setArea(deadlyReckoning[4].area)
+deadlyReckoning[4].combat:setFormula(
+    COMBAT_FORMULA_LEVELMAGIC,
+    deadlyReckoning[4].baseA, deadlyReckoning[4].baseB,
+    deadlyReckoning[4].baseC, deadlyReckoning[4].baseD
+)
 
--- Gamemaster configuration (Physical Damage - Whole Screen)
+-- Gamemaster
 deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_STUN)
 deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_DEATH)
-deadlyReckoning[5].combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -10.0, -500000, -10.0, -600000)
 deadlyReckoning[5].combat:setArea(deadlyReckoning[5].area)
+deadlyReckoning[5].combat:setFormula(
+    COMBAT_FORMULA_LEVELMAGIC,
+    deadlyReckoning[5].baseA, deadlyReckoning[5].baseB,
+    deadlyReckoning[5].baseC, deadlyReckoning[5].baseD
+)
+
+----------------------------------------------------------
+-- SPELL
+----------------------------------------------------------
 
 local spell = Spell(SPELL_INSTANT)
 
 function spell.onCastSpell(creature, variant)
     local player = creature:getPlayer()
-    if not player then
-        return false
-    end
+    if not player then return false end
 
-    -- Check for Gamemaster first
+    -- GM
     if player:getGroup():getAccess() then
         return deadlyReckoning[5].combat:execute(creature, variant)
     end
 
-    local vocationId = player:getVocation():getId()
-    local config
+    -- Vocations
+    local voc = player:getVocation():getId()
+    local config =
+        (voc == 1 or voc == 5) and deadlyReckoning[1] or
+        (voc == 2 or voc == 6) and deadlyReckoning[2] or
+        (voc == 3 or voc == 7) and deadlyReckoning[3] or
+        (voc == 4 or voc == 8) and deadlyReckoning[4]
 
-    -- Determine which vocation group
-    if vocationId == 1 or vocationId == 5 then
-        config = deadlyReckoning[1] -- Deadly Wizard
-    elseif vocationId == 2 or vocationId == 6 then
-        config = deadlyReckoning[2] -- Deadly Priest
-    elseif vocationId == 3 or vocationId == 7 then
-        config = deadlyReckoning[3] -- Deadly Archer
-    elseif vocationId == 4 or vocationId == 8 then
-        config = deadlyReckoning[4] -- Deadly Berserker
-    else
+    if not config then
         player:sendCancelMessage("Sorry, you must get your second promotion (500) first.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
 
-    -- Check mana
-    if player:getMana() < config.mana then
+    -- Mana
+    if config.mana and player:getMana() < config.mana then
         player:sendCancelMessage("You do not have enough mana.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
 
-    -- Deduct mana and add mana spent
-    player:addMana(-config.mana)
-    player:addManaSpent(1000) -- Always add 1000 spent mana as in original
+    ------------------------------------------------------
+    -- ⚔ OBTENER EL ATAQUE DEL ARMA (CANARY 100% CORRECTO)
+    ------------------------------------------------------
+    local weapon = player:getSlotItem(CONST_SLOT_LEFT)
+    if not weapon then
+        weapon = player:getSlotItem(CONST_SLOT_RIGHT)
+    end
+
+    local weaponAttack = 0
+
+    if weapon then
+        local itemType = weapon:getType()
+        if itemType then
+            weaponAttack = itemType:getAttack() or 0
+        end
+    end
+
+    -- Escala mínima
+    local weaponScale = math.max(weaponAttack / 10, 1)
+
+    ------------------------------------------------------
+    -- RECONSTRUIR FORMULA ESCALADA
+    ------------------------------------------------------
+	print(weaponAttack)
+	print(weaponScale)
+	print(config.baseA)
+	print(config.baseB)
+	print(config.baseC)
+	print(config.baseD)
+    local a = config.baseA * weaponScale
+    local b = config.baseB * weaponScale
+    local c = config.baseC * weaponScale
+    local d = config.baseD * weaponScale
+	print(a)
+	print(b)
+	print(c)
+	print(d)
+
+    config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
+
+    -- Consumir mana
+    if config.mana then
+        player:addMana(-config.mana)
+        player:addManaSpent(1000)
+    end
 
     return config.combat:execute(creature, variant)
 end
 
--- Spell configuration
+-- Spell config
 spell:name("Deadly Reckoning")
 spell:words("exevo mort")
 spell:group("attack")
@@ -116,10 +209,11 @@ spell:needTarget(false)
 spell:needWeapon(false)
 spell:isPremium(true)
 spell:level(500)
-spell:mana(0) -- We handle mana manually in the script
-spell:cooldown(2000) -- exhaustion in milliseconds
+spell:mana(0)
+spell:cooldown(2000)
 spell:needLearn(false)
 spell:isSelfTarget(true)
+
 spell:vocation("sorcerer;true")
 spell:vocation("druid;true")
 spell:vocation("paladin;true")
