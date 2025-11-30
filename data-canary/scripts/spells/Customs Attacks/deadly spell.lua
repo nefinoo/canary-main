@@ -174,20 +174,10 @@ function spell.onCastSpell(creature, variant)
     ------------------------------------------------------
     -- RECONSTRUIR FORMULA ESCALADA
     ------------------------------------------------------
-	print(weaponAttack)
-	print(weaponScale)
-	print(config.baseA)
-	print(config.baseB)
-	print(config.baseC)
-	print(config.baseD)
     local a = config.baseA * (1 + weaponScale)
     local b = config.baseB * (1 + weaponScale)
     local c = config.baseC * (1 + weaponScale)
     local d = config.baseD * (1 + weaponScale)
-	print(a)
-	print(b)
-	print(c)
-	print(d)
 
     config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
 
