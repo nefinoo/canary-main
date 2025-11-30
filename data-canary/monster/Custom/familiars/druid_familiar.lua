@@ -1,4 +1,4 @@
-local mType = Game.createMonsterType("Druid familiar")
+﻿local mType = Game.createMonsterType("Druid familiar")
 local monster = {}
 
 monster.description = "a druid familiar"

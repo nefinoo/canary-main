@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "demon"
 monster.description = "a demon"
-monster.experience = 6000
+monster.experience = 5000
 monster.outfit = {
 	lookType = 35,
 	lookHead = 0,
@@ -42,7 +42,7 @@ monster.flags = {
 	targetDistance = 1,
 	healthHidden = false,
 	canWalkOnEnergy = false,
-	canWalkOnFire = false,
+	canWalkOnFire = true,
 	canWalkOnPoison = false
 }
 
@@ -83,11 +83,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -500},
-	{name ="combat", interval = 3000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -80, maxDamage = -300, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -160, maxDamage = -350, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -375},
+	{name ="combat", interval = 3000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 15, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -220, maxDamage = -460, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -288, maxDamage = -375, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {

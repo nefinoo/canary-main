@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "juggernaut"
 monster.description = "a juggernaut"
-monster.experience = 6500
+monster.experience = 5500
 monster.outfit = {
 	lookType = 244,
 	lookHead = 0,
@@ -42,7 +42,7 @@ monster.flags = {
 	targetDistance = 1,
 	healthHidden = false,
 	canWalkOnEnergy = false,
-	canWalkOnFire = false,
+	canWalkOnFire = true,
 	canWalkOnPoison = false
 }
 
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 3000, chance = 100, minDamage = -200, maxDamage = -1423},
-	{name ="combat", interval = 4000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -280, maxDamage = -620, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -288, maxDamage = -800},
+	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {

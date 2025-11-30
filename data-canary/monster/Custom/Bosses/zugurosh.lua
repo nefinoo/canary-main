@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Zugurosh"
 monster.description = "Zugurosh"
-monster.experience = 2000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 2,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1000000
-monster.maxHealth = 1000000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -81,11 +81,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 500, attack = 500},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -1500, maxDamage = -2000, radius = 4, target = true, effect = CONST_ME_EXPLOSIONHIT},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -1000, maxDamage = -3000, radius = 4, target = false, effect = CONST_ME_SMALLCLOUDS},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -2000, maxDamage = -5000, radius = 5, target = false, effect = CONST_ME_WATERSPLASH},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -500, length = 7, spread = 0, effect = CONST_ME_MORTAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = true, effect = CONST_ME_EXPLOSIONHIT},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_SMALLCLOUDS},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, effect = CONST_ME_WATERSPLASH},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, length = 7, spread = 0, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {

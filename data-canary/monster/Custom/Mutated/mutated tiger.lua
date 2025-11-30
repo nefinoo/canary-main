@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Tiger"
 monster.description = "an infested tiger"
-monster.experience = 100000
+monster.experience = 1115000
 monster.outfit = {
 	lookType = 318,
 	lookHead = 0,
@@ -80,8 +80,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 220, attack = 220},
-	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1500, maxDamage = -2000, length = 8, spread = 3, effect = CONST_ME_DRAWBLOOD}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -4615, maxDamage = -6000},
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -4615, maxDamage = -6000, length = 8, spread = 3, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

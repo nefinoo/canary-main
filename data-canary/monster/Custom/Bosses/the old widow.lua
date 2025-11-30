@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "The Old Widow"
 monster.description = "the Old Widow"
-monster.experience = 3500
+monster.experience = 3250
 monster.outfit = {
 	lookType = 208,
 	lookHead = 20,
@@ -78,8 +78,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -500},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -250, maxDamage = -300, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -202, maxDamage = -263},
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -404, maxDamage = -526, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
 	{name ="speed", interval = 1000, chance = 20, speed = {min = -850, max = -850}, duration = 25000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
 	{name ="poisonfield", interval = 1000, chance = 10, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON}
 }

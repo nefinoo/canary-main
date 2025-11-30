@@ -192,15 +192,19 @@
 	</monster>
 	<monster centerx="340" centery="479" centerz="5" radius="5">
 		<monster name="Necropharus" x="0" y="-4" z="5" spawntime="30" />
-		<monster name="undead mage" x="4" y="-3" z="5" spawntime="10" />
+		<monster name="undead mage" x="-4" y="-2" z="5" spawntime="60" />
+		<monster name="undead mage" x="4" y="-2" z="5" spawntime="10" />
+		<monster name="undead mage" x="-4" y="-1" z="5" spawntime="60" />
 		<monster name="valick" x="0" y="-1" z="5" spawntime="30" />
 		<monster name="undead mage" x="4" y="-1" z="5" spawntime="10" />
-		<monster name="Mummy" x="-1" y="0" z="5" spawntime="30" />
-		<monster name="Mummy" x="1" y="0" z="5" spawntime="30" />
+		<monster name="undead mage" x="-4" y="0" z="5" spawntime="60" />
+		<monster name="undead mage" x="4" y="0" z="5" spawntime="60" />
+		<monster name="undead mage" x="-4" y="1" z="5" spawntime="60" />
 		<monster name="valick" x="-1" y="1" z="5" spawntime="10" />
 		<monster name="valick" x="0" y="1" z="5" spawntime="256" />
 		<monster name="valick" x="1" y="1" z="5" spawntime="10" />
 		<monster name="undead mage" x="4" y="1" z="5" spawntime="10" />
+		<monster name="undead mage" x="-4" y="2" z="5" spawntime="60" />
 		<monster name="undead mage" x="4" y="2" z="5" spawntime="10" />
 	</monster>
 	<monster centerx="478" centery="580" centerz="5" radius="3">
@@ -235,18 +239,18 @@
 		<monster name="Training Monk" x="1" y="0" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="576" centery="754" centerz="5" radius="15">
-		<monster name="frozenhell guard" x="0" y="-12" z="5" spawntime="60" />
-		<monster name="venom" x="10" y="-10" z="5" spawntime="60" />
-		<monster name="arch angel" x="-10" y="-9" z="5" spawntime="60" />
-		<monster name="undead mage" x="-15" y="-7" z="5" spawntime="60" />
-		<monster name="outlawed elite guard" x="15" y="-7" z="5" spawntime="60" />
-		<monster name="dementor" x="-15" y="-2" z="5" spawntime="60" />
-		<monster name="little puppy" x="15" y="-2" z="5" spawntime="60" />
-		<monster name="Hellraiser" x="-6" y="4" z="5" spawntime="60" />
+		<monster name="venom" x="0" y="-13" z="5" spawntime="60" direction="2" />
+		<monster name="frozenhell guard" x="-10" y="-9" z="5" spawntime="60" />
+		<monster name="frozenhell guard" x="10" y="-9" z="5" spawntime="60" />
+		<monster name="dementor" x="-15" y="-7" z="5" spawntime="60" />
+		<monster name="Orshabaal" x="15" y="-7" z="5" spawntime="60" direction="3" />
+		<monster name="little puppy" x="-15" y="-2" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="15" y="-2" z="5" spawntime="60" />
+		<monster name="undead mage" x="-6" y="4" z="5" spawntime="60" />
 		<monster name="outlawed sorcerer" x="6" y="4" z="5" spawntime="60" />
-		<monster name="Dragon Lord" x="-6" y="8" z="5" spawntime="60" />
-		<monster name="frozenhell guard" x="6" y="8" z="5" spawntime="60" />
-		<monster name="Orshabaal" x="0" y="9" z="5" spawntime="60" />
+		<monster name="arch angel" x="-6" y="8" z="5" spawntime="60" />
+		<monster name="outlawed elite guard" x="6" y="8" z="5" spawntime="60" />
+		<monster name="Undead Dragon" x="0" y="9" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="424" centery="760" centerz="5" radius="5">
 		<monster name="Bandit" x="-1" y="0" z="5" spawntime="60" />
@@ -474,31 +478,30 @@
 		<monster name="hell soldier" x="0" y="-2" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="-1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="0" y="-1" z="6" spawntime="30" />
+		<monster name="valick" x="-5" y="0" z="6" spawntime="60" />
 		<monster name="hell soldier" x="-1" y="0" z="6" spawntime="30" />
 		<monster name="hell soldier" x="0" y="0" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="0" y="1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="2" z="6" spawntime="30" />
 		<monster name="hell soldier" x="0" y="2" z="6" spawntime="30" />
-		<monster name="Ghoul" x="-5" y="3" z="6" spawntime="30" />
 		<monster name="undead mage" x="-1" y="3" z="6" spawntime="30" />
 		<monster name="undead mage" x="0" y="3" z="6" spawntime="30" />
 		<monster name="undead mage" x="-1" y="4" z="6" spawntime="30" />
 		<monster name="undead mage" x="0" y="4" z="6" spawntime="30" />
+		<monster name="valick" x="-5" y="5" z="6" spawntime="60" />
 		<monster name="undead mage" x="0" y="5" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="334" centery="477" centerz="6" radius="2">
 		<monster name="valick" x="0" y="-2" z="6" spawntime="30" />
 		<monster name="undead mage" x="1" y="-2" z="6" spawntime="10" />
 		<monster name="valick" x="-1" y="-1" z="6" spawntime="30" />
-		<monster name="Mummy" x="0" y="2" z="6" spawntime="30" />
+		<monster name="hell soldier" x="0" y="2" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="344" centery="477" centerz="6" radius="5">
 		<monster name="hell soldier" x="-2" y="-2" z="6" spawntime="30" />
-		<monster name="Ghoul" x="-4" y="-1" z="6" spawntime="30" />
 		<monster name="valick" x="-2" y="-1" z="6" spawntime="10" />
 		<monster name="hell soldier" x="-1" y="0" z="6" spawntime="30" />
-		<monster name="Ghoul" x="2" y="1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="5" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="342" centery="484" centerz="6" radius="5">
@@ -509,6 +512,10 @@
 		<monster name="undead mage" x="-4" y="3" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="3" z="6" spawntime="30" />
 		<monster name="valick" x="-1" y="4" z="6" spawntime="10" />
+	</monster>
+	<monster centerx="333" centery="486" centerz="6" radius="1">
+		<monster name="hell soldier" x="1" y="-1" z="6" spawntime="60" />
+		<monster name="hell soldier" x="0" y="0" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="349" centery="487" centerz="6" radius="2">
 		<monster name="deathwalker" x="-1" y="-1" z="6" spawntime="30" />
@@ -1462,11 +1469,11 @@
 		<monster name="Ghoul" x="13" y="13" z="7" spawntime="30" />
 		<monster name="Ghoul" x="11" y="15" z="7" spawntime="30" />
 		<monster name="hell soldier" x="16" y="19" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-27" y="20" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-23" y="20" z="7" spawntime="30" />
+		<monster name="Undead Dragon" x="-26" y="20" z="7" spawntime="60" />
 		<monster name="Ghoul" x="25" y="20" z="7" spawntime="30" />
+		<monster name="Undead Dragon" x="-25" y="21" z="7" spawntime="60" />
+		<monster name="Undead Dragon" x="-23" y="21" z="7" spawntime="60" />
 		<monster name="Ghoul" x="21" y="21" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-24" y="22" z="7" spawntime="30" />
 		<monster name="Ghoul" x="14" y="22" z="7" spawntime="30" />
 		<monster name="Ghoul" x="11" y="23" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="-15" y="25" z="7" spawntime="30" />
@@ -1909,15 +1916,12 @@
 	<monster centerx="342" centery="478" centerz="7" radius="2">
 		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="10" />
 		<monster name="valick" x="1" y="-1" z="7" spawntime="10" />
-		<monster name="Mummy" x="0" y="0" z="7" spawntime="30" />
 		<monster name="undead mage" x="1" y="0" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="350" centery="478" centerz="7" radius="5">
-		<monster name="Mummy" x="1" y="0" z="7" spawntime="30" />
 		<monster name="valick" x="-1" y="1" z="7" spawntime="10" />
 		<monster name="valick" x="1" y="1" z="7" spawntime="10" />
 		<monster name="undead mage" x="1" y="2" z="7" spawntime="10" />
-		<monster name="Mummy" x="-2" y="3" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="550" centery="483" centerz="7" radius="30">
 		<monster name="salazaari ranger" x="-20" y="-27" z="7" spawntime="20" />
@@ -1938,11 +1942,9 @@
 		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="10" />
 		<monster name="valick" x="-2" y="0" z="7" spawntime="30" />
 		<monster name="valick" x="1" y="0" z="7" spawntime="10" />
-		<monster name="Mummy" x="0" y="2" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="342" centery="485" centerz="7" radius="2">
 		<monster name="hell soldier" x="1" y="-1" z="7" spawntime="30" />
-		<monster name="Mummy" x="0" y="0" z="7" spawntime="30" />
 		<monster name="valick" x="1" y="0" z="7" spawntime="10" />
 		<monster name="undead mage" x="0" y="1" z="7" spawntime="10" />
 	</monster>
@@ -2001,9 +2003,7 @@
 		<monster name="salazaari ranger" x="-24" y="27" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="350" centery="487" centerz="7" radius="5">
-		<monster name="Mummy" x="0" y="-1" z="7" spawntime="30" />
 		<monster name="undead mage" x="1" y="-1" z="7" spawntime="10" />
-		<monster name="Mummy" x="2" y="0" z="7" spawntime="30" />
 		<monster name="valick" x="0" y="1" z="7" spawntime="10" />
 		<monster name="hell soldier" x="2" y="4" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-3" y="5" z="7" spawntime="30" />
@@ -2392,8 +2392,8 @@
 	</monster>
 	<monster centerx="576" centery="756" centerz="7" radius="15">
 		<monster name="Giant Spider" x="-8" y="-7" z="7" spawntime="60" />
-		<monster name="Hydra" x="-4" y="-7" z="7" spawntime="60" />
-		<monster name="Dragon" x="4" y="-7" z="7" spawntime="60" />
+		<monster name="Dragon" x="-4" y="-7" z="7" spawntime="60" />
+		<monster name="Hydra" x="4" y="-7" z="7" spawntime="60" />
 		<monster name="Orc" x="8" y="-7" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="432" centery="766" centerz="7" radius="5">
@@ -3389,21 +3389,21 @@
 		<monster name="undead mage" x="1" y="-2" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="230" centery="384" centerz="8" radius="30">
-		<monster name="Dragon Lord" x="2" y="-29" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="6" y="-29" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="3" y="-25" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="3" y="-18" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="6" y="-18" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="0" y="-12" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="9" y="-12" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="4" y="-8" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="0" y="2" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-21" y="3" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-6" y="5" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-18" y="6" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-23" y="8" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-18" y="11" z="8" spawntime="30" />
-		<monster name="Dragon Lord" x="-22" y="14" z="8" spawntime="30" />
+		<monster name="Undead Dragon" x="3" y="-28" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="6" y="-28" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="4" y="-24" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="3" y="-18" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="5" y="-18" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="0" y="-11" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="8" y="-10" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="4" y="-7" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="1" y="2" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-23" y="4" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-20" y="5" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-9" y="7" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-21" y="10" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-18" y="11" z="8" spawntime="60" />
+		<monster name="Undead Dragon" x="-22" y="13" z="8" spawntime="60" />
 		<monster name="Rotworm" x="8" y="14" z="8" spawntime="30" />
 		<monster name="outlawed warrior" x="7" y="18" z="8" spawntime="30" />
 		<monster name="outlawed warrior" x="8" y="27" z="8" spawntime="30" />
@@ -3554,6 +3554,7 @@
 		<monster name="arch angel" x="-9" y="16" z="8" spawntime="30" />
 		<monster name="arch angel" x="18" y="16" z="8" spawntime="30" />
 		<monster name="arch angel" x="26" y="16" z="8" spawntime="30" />
+		<monster name="arch angel" x="22" y="18" z="8" spawntime="60" />
 		<monster name="arch angel" x="12" y="24" z="8" spawntime="30" />
 		<monster name="arch angel" x="19" y="24" z="8" spawntime="30" />
 		<monster name="arch angel" x="26" y="24" z="8" spawntime="30" />
@@ -3795,33 +3796,33 @@
 		<monster name="Deepling Elite" x="0" y="0" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="500" centery="811" centerz="8" radius="25">
-		<monster name="Slime" x="-9" y="-13" z="8" spawntime="60" />
-		<monster name="Slime" x="-11" y="-9" z="8" spawntime="60" />
-		<monster name="Slime" x="-11" y="-5" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-10" y="-11" z="8" spawntime="60" />
 		<monster name="Rat" x="-8" y="-3" z="8" spawntime="60" />
-		<monster name="Slime" x="10" y="-2" z="8" spawntime="60" />
-		<monster name="Slime" x="-19" y="1" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-11" y="-1" z="8" spawntime="60" />
+		<monster name="Rat" x="-13" y="0" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="10" y="0" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-18" y="1" z="8" spawntime="60" />
 		<monster name="Rat" x="-2" y="1" z="8" spawntime="60" />
-		<monster name="Slime" x="12" y="1" z="8" spawntime="60" />
-		<monster name="Slime" x="-25" y="2" z="8" spawntime="60" />
-		<monster name="Slime" x="8" y="3" z="8" spawntime="60" />
+		<monster name="Rat" x="10" y="2" z="8" spawntime="60" />
+		<monster name="Rat" x="-25" y="3" z="8" spawntime="60" />
 		<monster name="Rat" x="-5" y="6" z="8" spawntime="60" />
-		<monster name="Slime" x="25" y="7" z="8" spawntime="60" />
-		<monster name="Slime" x="-25" y="8" z="8" spawntime="60" />
 		<monster name="Rat" x="4" y="8" z="8" spawntime="60" />
-		<monster name="Slime" x="-13" y="9" z="8" spawntime="60" />
-		<monster name="Slime" x="20" y="9" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="19" y="8" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-24" y="9" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-4" y="9" z="8" spawntime="60" />
+		<monster name="Rat" x="-22" y="10" z="8" spawntime="60" />
 		<monster name="Rat" x="-1" y="10" z="8" spawntime="60" />
-		<monster name="Slime" x="-23" y="11" z="8" spawntime="60" />
+		<monster name="Rat" x="24" y="10" z="8" spawntime="60" />
 		<monster name="Rat" x="-10" y="11" z="8" spawntime="60" />
-		<monster name="Slime" x="12" y="12" z="8" spawntime="60" />
-		<monster name="Slime" x="25" y="15" z="8" spawntime="60" />
-		<monster name="Slime" x="6" y="17" z="8" spawntime="60" />
-		<monster name="Slime" x="21" y="18" z="8" spawntime="60" />
-		<monster name="Slime" x="-6" y="19" z="8" spawntime="60" />
-		<monster name="Slime" x="0" y="22" z="8" spawntime="60" />
+		<monster name="Rat" x="10" y="13" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="7" y="18" z="8" spawntime="60" />
+		<monster name="Rat" x="-7" y="19" z="8" spawntime="60" />
+		<monster name="Rat" x="23" y="19" z="8" spawntime="60" />
+		<monster name="Rat" x="3" y="21" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="-3" y="22" z="8" spawntime="60" />
+		<monster name="Cave Rat" x="21" y="23" z="8" spawntime="60" />
 		<monster name="Slime" x="23" y="23" z="8" spawntime="60" />
-		<monster name="Slime" x="12" y="25" z="8" spawntime="60" />
+		<monster name="Rat" x="16" y="25" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="578" centery="825" centerz="8" radius="5">
 		<monster name="Cyclops Drone" x="2" y="-1" z="8" spawntime="60" />
@@ -4088,31 +4089,32 @@
 		<monster name="Warlock" x="1" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="1714" centery="243" centerz="9" radius="30">
-		<monster name="Behemoth" x="5" y="-24" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-4" y="-23" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-1" y="-22" z="9" spawntime="30" />
-		<monster name="Behemoth" x="4" y="-18" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="1" y="-23" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="3" y="-23" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="-5" y="-22" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="-3" y="-17" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="3" y="-17" z="9" spawntime="60" />
 		<monster name="Cyclops" x="-1" y="-13" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-24" y="-4" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="0" y="-8" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="-22" y="-4" z="9" spawntime="60" />
 		<monster name="Cyclops" x="1" y="-3" z="9" spawntime="30" />
-		<monster name="Behemoth" x="24" y="-2" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="21" y="-3" z="9" spawntime="60" />
 		<monster name="Cyclops" x="25" y="-1" z="9" spawntime="30" />
 		<monster name="Cyclops" x="-24" y="0" z="9" spawntime="30" />
 		<monster name="Cyclops" x="-12" y="0" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-8" y="0" z="9" spawntime="30" />
-		<monster name="Behemoth" x="7" y="0" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-6" y="0" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="8" y="0" z="9" spawntime="60" />
 		<monster name="Cyclops" x="12" y="1" z="9" spawntime="30" />
-		<monster name="Behemoth" x="22" y="1" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="24" y="1" z="9" spawntime="60" />
 		<monster name="Cyclops" x="21" y="3" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-25" y="5" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-21" y="5" z="9" spawntime="30" />
-		<monster name="Behemoth" x="26" y="5" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-21" y="4" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="0" y="6" z="9" spawntime="60" />
 		<monster name="Cyclops" x="0" y="8" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-4" y="16" z="9" spawntime="30" />
 		<monster name="Cyclops" x="-2" y="16" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="3" y="18" z="9" spawntime="60" />
 		<monster name="Cyclops" x="-1" y="20" z="9" spawntime="30" />
-		<monster name="Behemoth" x="3" y="23" z="9" spawntime="30" />
-		<monster name="Behemoth" x="-5" y="24" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-5" y="21" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="1" y="24" z="9" spawntime="60" />
 		<monster name="Cyclops" x="4" y="25" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="251" centery="252" centerz="9" radius="5">
@@ -4520,21 +4522,35 @@
 	<monster centerx="663" centery="574" centerz="9" radius="30">
 		<monster name="undead mage" x="17" y="-29" z="9" spawntime="30" />
 		<monster name="undead mage" x="25" y="-29" z="9" spawntime="30" />
+		<monster name="arch angel" x="18" y="-27" z="9" spawntime="60" />
+		<monster name="arch angel" x="18" y="-26" z="9" spawntime="60672" />
+		<monster name="arch angel" x="25" y="-25" z="9" spawntime="60" />
 		<monster name="undead mage" x="21" y="-24" z="9" spawntime="30" />
 		<monster name="undead mage" x="-22" y="-22" z="9" spawntime="30" />
 		<monster name="undead mage" x="21" y="-21" z="9" spawntime="30" />
+		<monster name="arch angel" x="-24" y="-20" z="9" spawntime="60" />
 		<monster name="undead mage" x="-16" y="-19" z="9" spawntime="30" />
+		<monster name="arch angel" x="-11" y="-18" z="9" spawntime="60" />
+		<monster name="arch angel" x="22" y="-18" z="9" spawntime="60" />
 		<monster name="undead mage" x="-28" y="-17" z="9" spawntime="30" />
 		<monster name="undead mage" x="-9" y="-17" z="9" spawntime="30" />
+		<monster name="arch angel" x="-1" y="-15" z="9" spawntime="60" />
 		<monster name="undead mage" x="7" y="-15" z="9" spawntime="30" />
+		<monster name="arch angel" x="13" y="-15" z="9" spawntime="60" />
 		<monster name="undead mage" x="17" y="-15" z="9" spawntime="30" />
 		<monster name="undead mage" x="0" y="-11" z="9" spawntime="30" />
 		<monster name="undead mage" x="1" y="-2" z="9" spawntime="30" />
+		<monster name="arch angel" x="4" y="-1" z="9" spawntime="60" />
 		<monster name="undead mage" x="9" y="-1" z="9" spawntime="30" />
+		<monster name="arch angel" x="11" y="4" z="9" spawntime="60" />
 		<monster name="undead mage" x="12" y="8" z="9" spawntime="30" />
+		<monster name="arch angel" x="11" y="14" z="9" spawntime="60" />
 		<monster name="undead mage" x="12" y="18" z="9" spawntime="30" />
+		<monster name="arch angel" x="16" y="21" z="9" spawntime="60" />
 		<monster name="undead mage" x="21" y="22" z="9" spawntime="30" />
+		<monster name="arch angel" x="22" y="26" z="9" spawntime="60" />
 		<monster name="undead mage" x="21" y="27" z="9" spawntime="30" />
+		<monster name="arch angel" x="27" y="29" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="559" centery="585" centerz="9" radius="18">
 		<monster name="deathwalker" x="2" y="-14" z="9" spawntime="30" />
@@ -4564,6 +4580,8 @@
 	</monster>
 	<monster centerx="690" centery="610" centerz="9" radius="5">
 		<monster name="undead mage" x="-3" y="-4" z="9" spawntime="30" />
+		<monster name="arch angel" x="4" y="-3" z="9" spawntime="60" />
+		<monster name="arch angel" x="-4" y="-2" z="9" spawntime="60" />
 		<monster name="undead mage" x="3" y="0" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="479" centery="611" centerz="9" radius="30">
@@ -5308,6 +5326,14 @@
 	<monster centerx="398" centery="544" centerz="10" radius="5">
 		<monster name="venom" x="1" y="0" z="10" spawntime="30" />
 	</monster>
+	<monster centerx="684" centery="547" centerz="10" radius="1">
+		<monster name="arch angel" x="0" y="0" z="10" spawntime="60" />
+		<monster name="arch angel" x="1" y="1" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="684" centery="550" centerz="10" radius="1">
+		<monster name="arch angel" x="0" y="0" z="10" spawntime="60" />
+		<monster name="arch angel" x="1" y="1" z="10" spawntime="60" />
+	</monster>
 	<monster centerx="510" centery="632" centerz="10" radius="30">
 		<monster name="Scarab" x="-23" y="-20" z="10" spawntime="30" />
 		<monster name="Scarab" x="-24" y="-18" z="10" spawntime="30" />
@@ -5581,6 +5607,11 @@
 		<monster name="Orshabaal" x="-7" y="18" z="11" spawntime="30" />
 		<monster name="Orshabaal" x="-6" y="26" z="11" spawntime="30" />
 	</monster>
+	<monster centerx="684" centery="550" centerz="11" radius="1">
+		<monster name="arch angel" x="-1" y="-1" z="11" spawntime="60" />
+		<monster name="arch angel" x="0" y="0" z="11" spawntime="60" />
+		<monster name="arch angel" x="1" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="506" centery="654" centerz="11" radius="30">
 		<monster name="deathpincer" x="16" y="-23" z="11" spawntime="30" />
 		<monster name="deathpincer" x="13" y="-22" z="11" spawntime="30" />
@@ -5820,6 +5851,11 @@
 		<monster name="Wrathful Wraith" x="9" y="14" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="-2" y="18" z="11" spawntime="60" />
 	</monster>
+	<monster centerx="684" centery="551" centerz="12" radius="1">
+		<monster name="arch angel" x="1" y="-1" z="12" spawntime="60" />
+		<monster name="arch angel" x="0" y="0" z="12" spawntime="60" />
+		<monster name="arch angel" x="1" y="1" z="12" spawntime="60" />
+	</monster>
 	<monster centerx="442" centery="683" centerz="12" radius="5">
 		<monster name="Fire Elemental" x="-3" y="-2" z="12" spawntime="30" />
 		<monster name="Fire Devil" x="3" y="-2" z="12" spawntime="30" />
@@ -5852,6 +5888,11 @@
 		<monster name="Heretic" x="-12" y="14" z="12" spawntime="60" />
 		<monster name="Heretic" x="11" y="16" z="12" spawntime="60" />
 	</monster>
+	<monster centerx="684" centery="551" centerz="13" radius="1">
+		<monster name="arch angel" x="1" y="-1" z="13" spawntime="60" />
+		<monster name="arch angel" x="0" y="0" z="13" spawntime="60" />
+		<monster name="arch angel" x="1" y="1" z="13" spawntime="60" />
+	</monster>
 	<monster centerx="744" centery="554" centerz="13" radius="2">
 		<monster name="Morgaroth" x="-1" y="-1" z="13" spawntime="30" />
 	</monster>
@@ -5874,6 +5915,11 @@
 	<monster centerx="705" centery="543" centerz="14" radius="4">
 		<monster name="frozenhell guard" x="-1" y="-2" z="14" spawntime="30" />
 		<monster name="frozenhell guard" x="0" y="3" z="14" spawntime="30" />
+	</monster>
+	<monster centerx="684" centery="550" centerz="14" radius="1">
+		<monster name="arch angel" x="0" y="0" z="14" spawntime="60" />
+		<monster name="arch angel" x="1" y="0" z="14" spawntime="60" />
+		<monster name="arch angel" x="0" y="1" z="14" spawntime="60" />
 	</monster>
 	<monster centerx="745" centery="555" centerz="14" radius="4">
 		<monster name="frozenhell guard" x="2" y="-4" z="14" spawntime="10" />

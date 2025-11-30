@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari windwalker"
 monster.description = "a salazaari windwalker"
-monster.experience = 20000
+monster.experience = 33000
 monster.outfit = {
 	lookType = 63,
 	lookHead = 20,
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 100, attack = 100},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -300, maxDamage = -600, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
-	{name ="combat", interval = 1000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -300, maxDamage = -600, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
+	{name ="combat", interval = 1000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
 }
 
 monster.defenses = {

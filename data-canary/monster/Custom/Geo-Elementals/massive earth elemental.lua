@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "venom"
 monster.description = "a venom"
-monster.experience = 350000
+monster.experience = 500000
 monster.outfit = {
 	lookType = 285,
 	lookHead = 0,
@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Lower Spike, Truffels Garden and Mushroom Gardens.",
 }
 
-monster.health = 60000
-monster.maxHealth = 60000
+monster.health = 150000
+monster.maxHealth = 150000
 monster.runHealth = 100
 monster.race = "undead"
 monster.corpse = 8105
@@ -92,8 +92,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 100, attack = 95},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -20000, maxDamage = -30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -2450, maxDamage = -3187},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -28000, maxDamage = -35000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA}
 }
 
 monster.defenses = {
@@ -102,15 +102,15 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "backpack of holding", chance = 2500},
-	{name = "warlord sword", chance = 100},
-	{name = "camouflage backpack", chance = 2500},
-	{name = "pirate backpack", chance = 2500},
-	{name = "beach backpack", chance = 2500},
-	{name = "fur backpack", chance = 2500},
-	{id = 7366, chance = 100},
-	{id = 7426, chance = 100},
-	{name = "experience scroll", chance = 2500},
+	{name = "backpack of holding", chance = 500},
+	{name = "warlord sword", chance = 50},
+	{name = "camouflage backpack", chance = 500},
+	{name = "pirate backpack", chance = 500},
+	{name = "beach backpack", chance = 500},
+	{name = "fur backpack", chance = 500},
+	{id = 7366, chance = 50},
+	{id = 7426, chance = 50},
+	{name = "experience scroll", chance = 300},
 	-- {id = 9743, chance = 2500}
 }
 

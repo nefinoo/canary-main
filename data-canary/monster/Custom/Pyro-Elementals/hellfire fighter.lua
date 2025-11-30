@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hellfire fighter"
 monster.description = "a hellfire fighter"
-monster.experience = 3900
+monster.experience = 5000
 monster.outfit = {
 	lookType = 243,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 3800
-monster.maxHealth = 3800
+monster.health = 8000
+monster.maxHealth = 8000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6324
@@ -42,7 +42,7 @@ monster.flags = {
 	targetDistance = 1,
 	healthHidden = false,
 	canWalkOnEnergy = false,
-	canWalkOnFire = false,
+	canWalkOnFire = true,
 	canWalkOnPoison = false
 }
 
@@ -78,10 +78,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -30, maxDamage = -420},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -420},
 	{name ="firefield", interval = 3000, chance = 30, range = 7, radius = 4, target = false, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -1115, range = 5, radius = 1, target = true, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="melee", interval = 1000, chance = 25, minDamage = -150, maxDamage = -250}
+	{name ="combat", interval = 2000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 5, radius = 1, target = true, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 1000, chance = 25, minDamage = -288, maxDamage = -375}
 }
 
 monster.defenses = {

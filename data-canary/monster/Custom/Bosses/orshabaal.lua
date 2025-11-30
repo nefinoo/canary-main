@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Orshabaal"
 monster.description = "Orshabaal"
-monster.experience = 25000
+monster.experience = 315000
 monster.outfit = {
 	lookType = 201,
 	lookHead = 0,
@@ -89,12 +89,12 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 190, attack = 199},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -300, maxDamage = -600, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 6, type = COMBAT_MANADRAIN, minDamage = -150, maxDamage = -350, radius = 5, target = false, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_FIREDAMAGE, minDamage = -310, maxDamage = -600, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2020, maxDamage = -2625},
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -2020, maxDamage = -2625, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 6, type = COMBAT_MANADRAIN, minDamage = -2020, maxDamage = -2625, radius = 5, target = false, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 34, type = COMBAT_FIREDAMAGE, minDamage = -2020, maxDamage = -2625, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -500, maxDamage = -850, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -2020, maxDamage = -2625, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
@@ -114,7 +114,7 @@ monster.loot = {
 	{name = "purple tome", chance = 2600},
 	{name = "golden mug", chance = 7500},
 	-- {id = 2989, chance = 14500},
-	{name = "ring of the sky", chance = 3500},
+	-- {name = "ring of the sky", chance = 3500},
 	{id = 3007, chance = 5500},
 	{name = "crystal necklace", chance = 1500},
 	{id = 3025, chance = 3500},

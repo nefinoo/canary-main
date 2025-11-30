@@ -1,4 +1,4 @@
-local mType = Game.createMonsterType("Event Zombie")
+﻿local mType = Game.createMonsterType("Event Zombie")
 local monster = {}
 
 monster.description = "a event zombie"

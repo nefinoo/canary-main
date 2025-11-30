@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "deathpincer"
 monster.description = "a deathpincer"
-monster.experience = 45000
+monster.experience = 90000
 monster.outfit = {
 	lookType = 79,
 	lookHead = 20,
@@ -78,10 +78,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 200, attack = 200, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -500, maxDamage = -1000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1153, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -1153, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED},
 	{name ="speed", interval = 1000, chance = 13, speed = {min = -700, max = -700}, duration = 25000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY},
-	{name ="condition", interval = 3000, chance = 50, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -100, maxDamage = -500, radius = 5, target = false, effect = CONST_ME_POISONAREA}
+	{name ="condition", interval = 3000, chance = 50, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -1153, maxDamage = -1500, radius = 5, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {

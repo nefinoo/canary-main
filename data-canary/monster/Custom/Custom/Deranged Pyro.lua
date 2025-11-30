@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deranged Pyro"
 monster.description = "a deranged pyro"
-monster.experience = 400000
+monster.experience = 700000
 monster.outfit = {
 	lookType = 194,
 	lookHead = 132,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 145000
-monster.maxHealth = 145000
+monster.health = 400000
+monster.maxHealth = 400000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2500, maxDamage = -3500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_EXPLOSIONHIT},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -3173, maxDamage = -4125, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_EXPLOSIONHIT},
 	{name ="melee", interval = 1000, chance = 100, skill = 200, attack = 200}
 }
 

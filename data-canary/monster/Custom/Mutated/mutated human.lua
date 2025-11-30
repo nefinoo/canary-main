@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Human"
 monster.description = "an infested human"
-monster.experience = 100000
+monster.experience = 1115000
 monster.outfit = {
 	lookType = 323,
 	lookHead = 0,
@@ -84,8 +84,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 220, attack = 220, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -1500, maxDamage = -2500, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -4615, maxDamage = -6000, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -4615, maxDamage = -6000, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deranged Toxophilite"
 monster.description = "a deranged toxophilite"
-monster.experience = 400000
+monster.experience = 700000
 monster.outfit = {
 	lookType = 137,
 	lookHead = 114,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 150000
-monster.maxHealth = 150000
+monster.health = 400000
+monster.maxHealth = 400000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1500, maxDamage = -3000, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3173, maxDamage = -4125, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
 }
 
 monster.defenses = {

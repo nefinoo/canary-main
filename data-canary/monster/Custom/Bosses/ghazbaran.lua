@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Ghazbaran"
 monster.description = "Ghazbaran"
-monster.experience = 1500000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 750000
-monster.maxHealth = 750000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 3500
 monster.race = "blood"
 monster.corpse = 6068
@@ -83,14 +83,14 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="melee", interval = 3000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -500, maxDamage = -1000, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1000, range = 14, radius = 5, target = false, effect = CONST_ME_POFF},
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1000, range = 7, radius = 13, target = false, effect = CONST_ME_BLOCKHIT},
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1000, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
-	{name ="melee", interval = 3000, chance = 100, skill = 400, attack = 400}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="melee", interval = 3000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 4000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 14, radius = 5, target = false, effect = CONST_ME_POFF},
+	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 7, radius = 13, target = false, effect = CONST_ME_BLOCKHIT},
+	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
+	{name ="melee", interval = 3000, chance = 100, minDamage = -2884, maxDamage = -3750}
 }
 
 monster.defenses = {

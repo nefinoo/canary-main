@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hellgorak"
 monster.description = "Hellgorak"
-monster.experience = 1000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 19,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -80,11 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -1500, maxDamage = -2000, length = 8, spread = 0, effect = CONST_ME_PURPLEENERGY},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -2000, maxDamage = -3000, radius = 5, target = false, effect = CONST_ME_STUN},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -600, radius = 5, target = true, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = 0, maxDamage = -600, radius = 7, target = false, effect = CONST_ME_POFF}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_PURPLEENERGY},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, effect = CONST_ME_STUN},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = true, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -2884, maxDamage = -3750, radius = 7, target = false, effect = CONST_ME_POFF}
 }
 
 monster.defenses = {

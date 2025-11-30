@@ -419,7 +419,7 @@ npcConfig.shop = {
 	--rashid--
 		{ itemName = "abyss hammer", clientId = 7414, sell = 20000 },
 	{ itemName = "albino plate", clientId = 19358, sell = 1500 },
-	{ itemName = "amber staff", clientId = 7426, sell = 8000 },
+	-- { itemName = "amber staff", clientId = 7426, sell = 8000 },
 	{ itemName = "ancient amulet", clientId = 3025, sell = 200 },
 	{ itemName = "assassin dagger", clientId = 7404, sell = 20000 },
 	{ itemName = "bandana", clientId = 5917, sell = 150 },
@@ -1400,17 +1400,17 @@ npcConfig.shop = {
 	{ itemName = "magic sword", clientId = 3288, sell = 100000 },
 	{ itemName = "throwing star", clientId = 3287, sell = 100000 },
 	
-	{ itemName = "amber staff", clientId = 7426, sell = 500000 },	
-	{ itemName = "sapphire hammer", clientId = 7437, sell = 500000 },
-	{ itemName = "reaper's axe", clientId = 7420, sell = 500000 },
-	{ itemName = "warlord sword", clientId = 3296, sell = 500000 },
-	{ itemName = "viper star", clientId = 7366, sell = 500000 },
+	{ itemName = "amber staff", clientId = 7426, sell = 200000 },	
+	{ itemName = "sapphire hammer", clientId = 7437, sell = 200000 },
+	{ itemName = "reaper's axe", clientId = 7420, sell = 200000 },
+	{ itemName = "warlord sword", clientId = 3296, sell = 200000 },
+	{ itemName = "viper star", clientId = 7366, sell = 200000 },
 	
-	{ itemName = "deadly wand", clientId = 895, sell = 1000000 },	
-	{ itemName = "cranial basher", clientId = 7415, sell = 1000000 },
-	{ itemName = "great axe", clientId = 3303, sell = 1000000 },
-	{ itemName = "justice seeker", clientId = 7390, sell = 1000000 },
-	{ itemName = "assassin star", clientId = 7368, sell = 1000000 },
+	{ itemName = "deadly wand", clientId = 895, sell = 300000 },	
+	{ itemName = "cranial basher", clientId = 7415, sell = 300000 },
+	{ itemName = "great axe", clientId = 3303, sell = 300000 },
+	{ itemName = "justice seeker", clientId = 7390, sell = 300000 },
+	{ itemName = "assassin star", clientId = 7368, sell = 300000 },
 }
 
 -- On buy npc shop message

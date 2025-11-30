@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Zeus"
 monster.description = "a shining light"
-monster.experience = 20000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 57,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1000000
-monster.maxHealth = 1000000
+monster.health = 20000000
+monster.maxHealth = 20000000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -5000, maxDamage = -10000, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_FIREWORK_YELLOW},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_FIREWORK_YELLOW},
 	{name ="combat", interval = 1000, chance = 100, minDamage = -5000, maxDamage = -6000, range = 6, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 

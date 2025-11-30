@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "warlock"
 monster.description = "a warlock"
-monster.experience = 4000
+monster.experience = 3575
 monster.outfit = {
 	lookType = 130,
 	lookHead = 19,
@@ -81,20 +81,20 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -180},
-	{name ="combat", interval = 1000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -85, maxDamage = -185, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_MANADRAIN, minDamage = -75, maxDamage = -160, range = 7, radius = 1, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -202, maxDamage = -263},
+	{name ="combat", interval = 1000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -85, maxDamage = -263, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_MANADRAIN, minDamage = -75, maxDamage = -263, range = 7, radius = 1, target = true},
 	{name ="speed", interval = 1000, chance = 12, speed = {min = -600, max = -600}, duration = 40000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -220, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_BURSTARROW, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -263, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_BURSTARROW, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 20, range = 7, radius = 2, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -165, maxDamage = -245, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -165, maxDamage = -263, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
 	{name ="speed", interval = 6000, chance = 10, speed = {min = -600, max = -600}, duration = 20000, range = 5, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
 	defense = 30,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 60, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 300, maxDamage = 450, effect = CONST_ME_MAGIC_BLUE},
 	{name ="invisible", interval = 5000, chance = 50, duration = 5000, effect = CONST_ME_MAGIC_RED}
 }
 
@@ -107,7 +107,7 @@ monster.loot = {
 	{name = "red tome", chance = 400},
 	{id = 2853, chance = 100000, child = {
 			{name = "candlestick", chance = 15000},
-			{name = "ring of the sky", chance = 500},
+			{name = "ring of the sky", chance = 150},
 			{name = "small sapphire", chance = 1400, maxCount = 2},
 			{name = "gold coin", chance = 80000, maxCount = 50},
 			{name = "mind stone", chance = 2500},

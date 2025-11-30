@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 3500
-monster.maxHealth = 3500
+monster.health = 35000
+monster.maxHealth = 35000
 monster.runHealth = 350
 monster.race = "blood"
 monster.corpse = 6364
@@ -42,7 +42,7 @@ monster.flags = {
 	targetDistance = 4,
 	healthHidden = false,
 	canWalkOnEnergy = false,
-	canWalkOnFire = false,
+	canWalkOnFire = true,
 	canWalkOnPoison = false
 }
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Madareth"
 monster.description = "Madareth"
-monster.experience = 1000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 77,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -79,9 +79,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -600, maxDamage = -3000, shootEffect = CONST_ANI_WHIRLWINDAXE, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -3000, shootEffect = CONST_ANI_ICE, effect = CONST_ME_MAGIC_RED},
-	{name ="melee", interval = 1000, chance = 100, skill = 400, attack = 400}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_WHIRLWINDAXE, effect = CONST_ME_MAGIC_RED},
+	{name ="combat", interval = 3000, chance = 75, type = COMBAT_ICEDAMAGE, minDamage = -3000, maxDamage = -6000, shootEffect = CONST_ANI_ICE, effect = CONST_ME_MAGIC_RED},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -2884, maxDamage = -3750}
 }
 
 monster.defenses = {

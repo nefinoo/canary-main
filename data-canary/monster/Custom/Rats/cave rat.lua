@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cave rat"
 monster.description = "a cave rat"
-monster.experience = 10
+monster.experience = 15
 monster.outfit = {
 	lookType = 56,
 	lookHead = 20,
@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 18, attack = 8}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -15, maxDamage = -21},
 }
 
 monster.defenses = {

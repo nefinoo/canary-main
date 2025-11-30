@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "the imperor"
 monster.description = "the imperor"
-monster.experience = 8000
+monster.experience = 5000
 monster.outfit = {
 	lookType = 237,
 	lookHead = 0,
@@ -80,10 +80,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 110, attack = 110},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -800, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -800, range = 7, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -90, maxDamage = -350, length = 4, spread = 2, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -375 },
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, length = 4, spread = 2, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {

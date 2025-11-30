@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hydra"
 monster.description = "a hydra"
-monster.experience = 2100
+monster.experience = 700
 monster.outfit = {
 	lookType = 121,
 	lookHead = 0,
@@ -80,10 +80,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 80, attack = 60},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -87, maxDamage = -113},
 	{name ="speed", interval = 1000, chance = 17, speed = {min = -600, max = -600}, duration = 15000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
-	{name ="combat", interval = 3000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -150, maxDamage = -250, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -300, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="combat", interval = 3000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -87, maxDamage = -113, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -100, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -100,7 +100,7 @@ monster.loot = {
 	{name = "ham", chance = 25000, maxCount = 4, description2 = "ham"},
 	{name = "strong mana potion", chance = 200, description2 = "strong mana potion"},
 	{name = "life crystal", chance = 500, description2 = "life crystal"},
-	{name = "stone skin amulet", chance = 900, description2 = "stone skin amulet"},
+	-- {name = "stone skin amulet", chance = 900, description2 = "stone skin amulet"},
 	{name = "small sapphire", chance = 5000, description2 = "small sapphire"},
 	{id = 2853, chance = 100000, description2 = "bag", child = {
 			{name = "hydra egg", chance = 600, description2 = "hydra egg"},

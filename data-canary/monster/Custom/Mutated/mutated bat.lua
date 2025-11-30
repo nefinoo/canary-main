@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Bat"
 monster.description = "an infested bat"
-monster.experience = 100000
+monster.experience = 1115000
 monster.outfit = {
 	lookType = 307,
 	lookHead = 0,
@@ -78,9 +78,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 200, attack = 200, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -900, maxDamage = -1800, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_DROWNDAMAGE, minDamage = -1000, maxDamage = -1800, radius = 6, target = false, effect = CONST_ME_SOUND_WHITE},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -4615, maxDamage = -6000, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -4615, maxDamage = -6000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 1000, chance = 8, type = COMBAT_DROWNDAMAGE, minDamage = -4615, maxDamage = -6000, radius = 6, target = false, effect = CONST_ME_SOUND_WHITE},
 	{name ="drunk", interval = 1000, chance = 8, drunkenness = 25, duration = 15000, radius = 6, target = false, effect = CONST_ME_SOUND_YELLOW}
 }
 

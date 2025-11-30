@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Captain Jackson"
 monster.description = "the ghost of Captain Jackson"
-monster.experience = 8000000
+monster.experience = 1600000
 monster.outfit = {
 	lookType = 196,
 	lookHead = 0,
@@ -81,7 +81,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -9000, maxDamage = -13000, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -5192, maxDamage = -6750, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Lost Pirate"
 monster.description = "lost pirate"
-monster.experience = 2200000
+monster.experience = 1600000
 monster.outfit = {
 	lookType = 195,
 	lookHead = 0,
@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -5000, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -5192, maxDamage = -67500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

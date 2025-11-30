@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "mummy"
 monster.description = "a mummy"
-monster.experience = 150
+monster.experience = 15000
 monster.outfit = {
 	lookType = 65,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 240
-monster.maxHealth = 240
+monster.health = 30000
+monster.maxHealth = 30000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6004
@@ -84,8 +84,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 32, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -30, maxDamage = -40, range = 1, radius = 1, target = true},
+	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 120, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -650, maxDamage = -800, range = 1, radius = 1, target = true},
 	{name ="speed", interval = 1000, chance = 8, speed = {min = -600, max = -600}, duration = 10000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Golgordan"
 monster.description = "Golgordan"
-monster.experience = 1000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 108,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -79,11 +79,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -500, maxDamage = -1000, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
-	{name ="condition", interval = 1000, chance = 100, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -300, maxDamage = -1500, length = 5, spread = 2, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1000, maxDamage = -1750, radius = 6, target = false, effect = CONST_ME_GROUNDSHAKER},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -200, maxDamage = -1000, radius = 7, target = true, effect = CONST_ME_FIREAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
+	{name ="condition", interval = 1000, chance = 100, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -2884, maxDamage = -3750, length = 5, spread = 2, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = false, effect = CONST_ME_GROUNDSHAKER},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 7, target = true, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {

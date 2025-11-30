@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hell soldier"
 monster.description = "a hell soldier"
-monster.experience = 20000
+monster.experience = 65000
 monster.outfit = {
 	lookType = 37,
 	lookHead = 20,
@@ -78,8 +78,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 100, attack = 100},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -500, maxDamage = -700, range = 1, radius = 1, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -923, maxDamage = -1200},
+	{name ="combat", interval = 2000, chance = 65, type = COMBAT_LIFEDRAIN, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

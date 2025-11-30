@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hellraiser"
 monster.description = "a hellraiser"
-monster.experience = 40000
+monster.experience = 270000
 monster.outfit = {
 	lookType = 322,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Magician Quarter, Vengoth, Deeper Banuta, Formorgar Minese, Chyllfroest, Oramond Dungeon, Asura Palace, Asura Vaults.",
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 40000
+monster.maxHealth = 40000
 monster.runHealth = 0
 monster.race = "fire"
 monster.corpse = 9009
@@ -94,8 +94,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -600, maxDamage = -800},
-	{name ="diabolic imp fireball", interval = 1000, chance = 100, minDamage = -1000, maxDamage = -1200, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1875, maxDamage = -2437},
+	{name ="diabolic imp fireball", interval = 1000, chance = 100, minDamage = -1875, maxDamage = -2437, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
 	{name ="hellspawn soulfire", interval = 2000, chance = 14, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 

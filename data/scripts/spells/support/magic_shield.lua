@@ -6,8 +6,8 @@ local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
 	local condition = Condition(CONDITION_MANASHIELD)
-	-- condition:setParameter(CONDITION_PARAM_TICKS, 180000) -- 180 sec
-	condition:setParameter(CONDITION_PARAM_TICKS, 10000) -- 180 sec
+	condition:setParameter(CONDITION_PARAM_TICKS, 180000) -- 180 sec
+	-- condition:setParameter(CONDITION_PARAM_TICKS, 10000) -- 180 sec
 	creature:addCondition(condition)
 	return combat:execute(creature, var)
 end
@@ -30,22 +30,29 @@ spell:register()
 local ManaShield = CreatureEvent("ClassicManaShield")
 
 function ManaShield.onHealthChange(creature, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType, origin)
+
 	if not creature or not creature:isPlayer() then
 		return primaryDamage, primaryType, secondaryDamage, secondaryType
 	end
 
-	-- Si Magic Shield NO está activo → daño normal
+	-- Si Magic Shield NO está activo
 	if not creature:hasCondition(CONDITION_MANASHIELD) then
 		return primaryDamage, primaryType, secondaryDamage, secondaryType
 	end
 
-	-- Evitar que heals curen mana
+	-- 1) IGNORAR COSTOS DE HECHIZO (el mana real del spell)
+	if origin == ORIGIN_SPELL then
+		return primaryDamage, primaryType, secondaryDamage, secondaryType
+	end
+
+	-- 2) Evitar que curaciones activen el escudo
 	if primaryDamage <= 0 then
 		return primaryDamage, primaryType, secondaryDamage, secondaryType
 	end
 
 	local mana = creature:getMana()
 
+	-- 3) Absorber daño real
 	if mana >= primaryDamage then
 		creature:addMana(-primaryDamage)
 		primaryDamage = 0
@@ -55,7 +62,10 @@ function ManaShield.onHealthChange(creature, attacker, primaryDamage, primaryTyp
 		primaryDamage = remaining
 	end
 
+	-- 4) Cancelar secondaryDamage (es daño a mana, pero tú NO quieres usarlo)
+	secondaryDamage = 0
 	return primaryDamage, primaryType, secondaryDamage, secondaryType
 end
 
 ManaShield:register()
+

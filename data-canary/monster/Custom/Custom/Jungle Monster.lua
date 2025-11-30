@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Jungle Monster"
 monster.description = "a jungle monster"
-monster.experience = 300000
+monster.experience = 825000
 monster.outfit = {
 	lookType = 216,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 210000
-monster.maxHealth = 210000
+monster.health = 300000
+monster.maxHealth = 300000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4375
@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1125, maxDamage = -1500, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -1125, maxDamage = -1750, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3461, maxDamage = -4500, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3461, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {
@@ -105,11 +105,12 @@ monster.loot = {
 	{id = 2952, chance = 2000},
 	{id = 3257, chance = 2000},
 	{id = 3258, chance = 2000},
-	{name = "horn of sundering", chance = 2000},
+	-- {name = "horn of sundering", chance = 2000},
 	{id = 3260, chance = 2000},
 	{name = "panpipes", chance = 2000},
 	{name = "experience scroll", chance = 3000},
-	{id = 9743, chance = 2500}
+	{name = "piece of draconian steel", chance = 500},
+--	{id = 9743, chance = 2500}
 }
 
 mType:register(monster)

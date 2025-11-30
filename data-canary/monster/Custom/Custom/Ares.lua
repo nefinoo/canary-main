@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Ares"
 monster.description = "Ares"
-monster.experience = 300000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 129,
 	lookHead = 132,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 220000
-monster.maxHealth = 220000
+monster.health = 300000
+monster.maxHealth = 300000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -4000, maxDamage = -6000, range = 1, radius = 1, target = true}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

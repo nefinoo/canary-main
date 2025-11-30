@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "deathwalker"
 monster.description = "a deathwalker"
-monster.experience = 18000
+monster.experience = 50000
 monster.outfit = {
 	lookType = 100,
 	lookHead = 20,
@@ -82,8 +82,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 75, attack = 75},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -350, maxDamage = -550, range = 1, radius = 1, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -865, maxDamage = -1125},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_FIREDAMAGE, minDamage = -865, maxDamage = -1125, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

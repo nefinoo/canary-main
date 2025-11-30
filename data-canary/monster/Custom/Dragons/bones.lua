@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Bones"
-monster.experience = 3750
+monster.experience = 6500
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -83,9 +83,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -845, maxDamage = -1649 },
-	{ name = "combat", interval = 1000, chance = 13, type = COMBAT_LIFEDRAIN, minDamage = -800, maxDamage = -1200, radius = 1, target = true },
-	{ name = "combat", interval = 3000, chance = 34, type = COMBAT_DEATHDAMAGE, minDamage = -660, maxDamage = -1000, range = 1, radius = 1, shootEffect = CONST_ANI_DEATH, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -560, maxDamage = -875 },
+	{ name = "combat", interval = 1000, chance = 13, type = COMBAT_LIFEDRAIN, minDamage = -400, maxDamage = -875, radius = 1, target = true },
+	{ name = "combat", interval = 3000, chance = 34, type = COMBAT_DEATHDAMAGE, minDamage = -660, maxDamage = -875, range = 1, radius = 1, shootEffect = CONST_ANI_DEATH, target = true },
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Latrivan"
 monster.description = "Latrivan"
-monster.experience = 1000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 120,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -79,8 +79,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -1000, maxDamage = -2000, length = 7, spread = 0, effect = CONST_ME_EXPLOSIONHIT}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, length = 7, spread = 0, effect = CONST_ME_EXPLOSIONHIT}
 }
 
 monster.defenses = {

@@ -1,4 +1,4 @@
-local mType = Game.createMonsterType("Midnight Panther")
+﻿local mType = Game.createMonsterType("Midnight Panther")
 local monster = {}
 
 monster.description = "a midnight panther"

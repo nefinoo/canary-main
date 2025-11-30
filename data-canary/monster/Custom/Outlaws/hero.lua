@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "frozenhell guard"
 monster.description = "a frozenhell guard"
-monster.experience = 70000
+monster.experience = 435000
 monster.outfit = {
 	lookType = 73,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 70000
+monster.maxHealth = 70000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -82,9 +82,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 200, attack = 200},
-	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1000, maxDamage = -2000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -500, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -2105, maxDamage = -2737},
+	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -2105, maxDamage = -2737, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
+	{name ="combat", interval = 1000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -2105, maxDamage = -2737, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {

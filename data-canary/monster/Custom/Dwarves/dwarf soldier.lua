@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed ranger"
 monster.description = "an outlawed ranger"
-monster.experience = 24000
+monster.experience = 12500
 monster.outfit = {
 	lookType = 71,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 22500
-monster.maxHealth = 22500
+monster.health = 26000
+monster.maxHealth = 26000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6014
@@ -79,9 +79,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 100, attack = 100},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -400, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -300, maxDamage = -600, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 5000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Rat"
 monster.description = "an infested rat"
-monster.experience = 100000
+monster.experience = 1115000
 monster.outfit = {
 	lookType = 305,
 	lookHead = 0,
@@ -80,11 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, skill = 200, attack = 200, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -1500, maxDamage = -2500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
-	{name ="condition", interval = 3000, chance = 20, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -300, maxDamage = -400, length = 8, spread = 0, effect = CONST_ME_SMALLPLANTS},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -4615, maxDamage = -6000, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -4615, maxDamage = -6000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="condition", interval = 3000, chance = 20, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -4615, maxDamage = -6000, length = 8, spread = 0, effect = CONST_ME_SMALLPLANTS},
 	{name ="speed", interval = 3000, chance = 10, speed = {min = -600, max = -600}, duration = 30000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -750, maxDamage = -1500, range = 7, radius = 3, target = false, effect = CONST_ME_MAGIC_RED}
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -4615, maxDamage = -6000, range = 7, radius = 3, target = false, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {

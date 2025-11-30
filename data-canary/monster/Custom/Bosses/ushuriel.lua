@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Ushuriel"
 monster.description = "Ushuriel"
-monster.experience = 1000000
+monster.experience = 650000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 500000
-monster.maxHealth = 500000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6068
@@ -78,13 +78,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -2000, length = 10, spread = 0, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -30, maxDamage = -2000, radius = 5, target = false, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -200, maxDamage = -1000, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ICEDAMAGE, minDamage = -500, maxDamage = -1000, radius = 6, target = false, effect = CONST_ME_ICETORNADO},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, length = 10, spread = 0, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ICEDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = false, effect = CONST_ME_ICETORNADO},
 	{name ="drunk", interval = 3000, chance = 50, drunkenness = 25, duration = 10000, radius = 6, target = false, effect = CONST_ME_SOUND_PURPLE},
-	{name ="condition", interval = 2000, chance = 100, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -2000, maxDamage = -3000, radius = 4, target = false, effect = CONST_ME_ENERGYHIT}
+	{name ="condition", interval = 2000, chance = 100, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
