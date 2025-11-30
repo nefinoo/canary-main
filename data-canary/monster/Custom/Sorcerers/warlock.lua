@@ -94,7 +94,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 30,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 300, maxDamage = 450, effect = CONST_ME_MAGIC_BLUE},
+	{name ="combat", interval = 4000, chance = 25, type = COMBAT_HEALING, minDamage = 300, maxDamage = 450, effect = CONST_ME_MAGIC_BLUE},
 	{name ="invisible", interval = 5000, chance = 50, duration = 5000, effect = CONST_ME_MAGIC_RED}
 }
 
