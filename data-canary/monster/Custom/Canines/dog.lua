@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "little puppy"
 monster.description = "a little puppy"
-monster.experience = 225000
+monster.experience = 13500
 monster.outfit = {
 	lookType = 32,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 22000
+monster.maxHealth = 22000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5971
@@ -80,11 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1587, maxDamage = -2063},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1587, maxDamage = -2063, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1587, maxDamage = -2063, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1587, maxDamage = -2063, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -1587, maxDamage = -2063, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -807, maxDamage = -1050},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 1000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -807, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {

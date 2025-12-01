@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dementor"
 monster.description = "a dementor"
-monster.experience = 250000
+monster.experience = 10000
 monster.outfit = {
 	lookType = 78,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 45000
-monster.maxHealth = 45000
+monster.health = 18500
+monster.maxHealth = 18500
 monster.runHealth = 500
 monster.race = "blood"
 monster.corpse = 6019
@@ -85,15 +85,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1730, maxDamage = -2250, condition = {type = CONDITION_POISON, startDamage = 150, interval = 5000}},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -690, maxDamage = -900, condition = {type = CONDITION_POISON, startDamage = 150, interval = 5000}},
 	{name ="speed", interval = 1000, chance = 50, speed = {min = -600, max = -600}, duration = 20000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 1000, chance = 95, type = COMBAT_LIFEDRAIN, minDamage = -1730, maxDamage = -2250, radius = 4, target = false, effect = CONST_ME_SOUND_RED}
+	{name ="combat", interval = 1000, chance = 95, type = COMBAT_LIFEDRAIN, minDamage = -690, maxDamage = -900, radius = 4, target = false, effect = CONST_ME_SOUND_RED}
 }
 
 monster.defenses = {
 	defense = 20,
 	armor = 15,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 2500, maxDamage = 3500, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 250, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {

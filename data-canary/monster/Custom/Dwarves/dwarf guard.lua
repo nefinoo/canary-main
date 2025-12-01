@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed elite guard"
 monster.description = "an outlawed elite guard"
-monster.experience = 13000
+monster.experience = 5500
 monster.outfit = {
 	lookType = 70,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 28000
-monster.maxHealth = 28000
+monster.health = 5300
+monster.maxHealth = 5300
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6013
@@ -79,8 +79,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -518, maxDamage = -674, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -460, maxDamage = -600 },
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -460, maxDamage = -600, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

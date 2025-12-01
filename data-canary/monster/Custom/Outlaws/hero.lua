@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "frozenhell guard"
 monster.description = "a frozenhell guard"
-monster.experience = 435000
+monster.experience = 70000
 monster.outfit = {
 	lookType = 73,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 70000
-monster.maxHealth = 70000
+monster.health = 36000
+monster.maxHealth = 36000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081

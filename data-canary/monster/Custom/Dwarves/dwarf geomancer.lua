@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed sorcerer"
 monster.description = "an outlawed sorcerer"
-monster.experience = 13500
+monster.experience = 5500
 monster.outfit = {
 	lookType = 66,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 4500
+monster.maxHealth = 4500
 monster.runHealth = 150
 monster.race = "blood"
 monster.corpse = 6015
@@ -82,9 +82,9 @@ monster.elements = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true}
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -518, maxDamage = -774, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -750, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -518, maxDamage = -720, range = 7, radius = 1, target = true}
 }
 
 monster.defenses = {

@@ -3015,7 +3015,12 @@
 		<monster name="Pirate Scavenger" x="-9" y="15" z="7" spawntime="30" />
 		<monster name="Pirate Scavenger" x="-3" y="15" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="-15" y="16" z="7" spawntime="30" />
+		<monster name="Pirate Ravager" x="-7" y="16" z="7" spawntime="60" />
 		<monster name="Pirate Scavenger" x="2" y="16" z="7" spawntime="30" />
+		<monster name="Pirate Ravager" x="1" y="17" z="7" spawntime="60" />
+		<monster name="Pirate Scavenger" x="1" y="20" z="7" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="6" y="20" z="7" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="3" y="21" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="525" centery="1663" centerz="7" radius="10">
 		<monster name="Opportunist" x="-3" y="-1" z="7" spawntime="60" />

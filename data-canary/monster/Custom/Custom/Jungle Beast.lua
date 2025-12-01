@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Jungle Beast"
 monster.description = "a jungle beast"
-monster.experience = 825000
+monster.experience = 325000
 monster.outfit = {
 	lookType = 214,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 300000
-monster.maxHealth = 300000
+monster.health = 90000
+monster.maxHealth = 90000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4369
@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3461, maxDamage = -4500, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3461, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -4500, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3461, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {

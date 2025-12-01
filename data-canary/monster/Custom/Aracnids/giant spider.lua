@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "giant spider"
 monster.description = "a giant spider"
-monster.experience = 2000
+monster.experience = 1700
 monster.outfit = {
 	lookType = 38,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1300
-monster.maxHealth = 1300
+monster.health = 1720
+monster.maxHealth = 1720
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -78,7 +78,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -144, maxDamage = -188},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -201, maxDamage = -261},
 	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
 }
 

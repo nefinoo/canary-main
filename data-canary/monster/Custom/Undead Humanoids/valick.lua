@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "valick"
 monster.description = "a valick"
-monster.experience = 52500
+monster.experience = 15500
 monster.outfit = {
 	lookType = 68,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 13000
+monster.maxHealth = 13000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6006

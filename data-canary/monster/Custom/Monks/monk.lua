@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "arch angel"
 monster.description = "an arch angel"
-monster.experience = 160000
+monster.experience = 61500
 monster.outfit = {
 	lookType = 57,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 50000
-monster.maxHealth = 50000
+monster.health = 36000
+monster.maxHealth = 36000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -1442, maxDamage = -1875},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -1442, maxDamage = -1875, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1730, maxDamage = -2250},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -1730, maxDamage = -2250, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {

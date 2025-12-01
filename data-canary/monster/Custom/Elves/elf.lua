@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari defender"
 monster.description = "a salazaari defender"
-monster.experience = 31500
+monster.experience = 11500
 monster.outfit = {
 	lookType = 62,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 20000
-monster.maxHealth = 20000
+monster.health = 9400
+monster.maxHealth = 9400
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6003
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -635, maxDamage = -825 },
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -635, maxDamage = -825, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW},
-	{name ="Berserk", interval = 2000, chance = 65, minDamage = -635, maxDamage = -825, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -594, maxDamage = -773 },
+	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -594, maxDamage = -773, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW},
+	{name ="Berserk", interval = 2000, chance = 65, minDamage = -594, maxDamage = -825, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

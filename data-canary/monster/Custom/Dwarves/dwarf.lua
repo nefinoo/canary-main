@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed warrior"
 monster.description = "an outlawed warrior"
-monster.experience = 12000
+monster.experience = 5500
 monster.outfit = {
 	lookType = 69,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 24000
-monster.maxHealth = 24000
+monster.health = 4200
+monster.maxHealth = 4200
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6007
@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -345, maxDamage = -449 },
 }
 
 monster.defenses = {

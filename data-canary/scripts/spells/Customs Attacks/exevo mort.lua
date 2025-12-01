@@ -25,7 +25,7 @@ local deadlyReckoning = {
 
     -- Deadly Archer (11, 15)
     [3] = {
-        mana = 400,
+        mana = 600,
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
@@ -151,40 +151,17 @@ function spell.onCastSpell(creature, variant)
         return false
     end
 
-    ------------------------------------------------------
-    -- ⚔ OBTENER EL ATAQUE DEL ARMA (CANARY 100% CORRECTO)
-    ------------------------------------------------------
-    local weapon = player:getSlotItem(CONST_SLOT_LEFT)
-    if not weapon then
-        weapon = player:getSlotItem(CONST_SLOT_RIGHT)
-    end
-
-    local weaponAttack = 0
-
-    if weapon then
-        local itemType = weapon:getType()
-        if itemType then
-            weaponAttack = itemType:getAttack() or 0
-        end
-    end
-
-    -- Escala mínima
-    local weaponScale = weaponAttack / 1000
-
-    ------------------------------------------------------
-    -- RECONSTRUIR FORMULA ESCALADA
-    ------------------------------------------------------
-    local a = config.baseA * (1 + weaponScale)
-    local b = config.baseB * (1 + weaponScale)
-    local c = config.baseC * (1 + weaponScale)
-    local d = config.baseD * (1 + weaponScale)
+    local a = config.baseA / 2
+    local b = config.baseB / 2
+    local c = config.baseC / 2
+    local d = config.baseD / 2
 
     config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
 
     -- Consumir mana
     if config.mana then
         player:addMana(-config.mana)
-        player:addManaSpent(1000)
+        player:addManaSpent(2000)
     end
 
     return config.combat:execute(creature, variant)
@@ -198,12 +175,11 @@ spell:isAggressive(true)
 spell:needTarget(false)
 spell:needWeapon(false)
 spell:isPremium(true)
-spell:level(500)
+spell:level(250)
 spell:mana(0)
 spell:cooldown(2000)
 spell:needLearn(false)
 spell:isSelfTarget(true)
-
 spell:vocation("sorcerer;true")
 spell:vocation("druid;true")
 spell:vocation("paladin;true")

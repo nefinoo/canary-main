@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hercules"
 monster.description = "Hercules"
-monster.experience = 650000
+monster.experience = 225000
 monster.outfit = {
 	lookType = 131,
 	lookHead = 116,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 850000
-monster.maxHealth = 850000
+monster.health = 85000
+monster.maxHealth = 85000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2690, maxDamage = -3497, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

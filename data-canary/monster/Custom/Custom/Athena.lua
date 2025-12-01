@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Athena"
 monster.description = "Athena"
-monster.experience = 650000
+monster.experience = 225000
 monster.outfit = {
 	lookType = 139,
 	lookHead = 79,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 300000
-monster.maxHealth = 300000
+monster.health = 75000
+monster.maxHealth = 75000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2498, maxDamage = -3248, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead dragon"
 monster.description = "a undead dragon"
-monster.experience = 7200
+monster.experience = 65000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -80,14 +80,14 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 85, attack = 85},
-	{name ="melee", interval = 2000, chance = 20, minDamage = -300, maxDamage = -395},
-	{name ="combat", interval = 3000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -120, maxDamage = -390, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 23, type = COMBAT_EARTHDAMAGE, minDamage = -50, maxDamage = -180, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 4000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -500, maxDamage = -600, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -200, maxDamage = -685, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -300, maxDamage = -600, length = 8, spread = 3, effect = CONST_ME_MAGIC_GREEN},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1730, maxDamage = -2500},
+	{name ="melee", interval = 2000, chance = 20, minDamage = -1730, maxDamage = -2500},
+	{name ="combat", interval = 3000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 23, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1730, maxDamage = -25000, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -1730, maxDamage = -2500, length = 8, spread = 3, effect = CONST_ME_MAGIC_GREEN},
 	{name ="condition", interval = 1000, chance = 20, type = CONDITION_DROWN, startDamage = 0, tick = 5000, length = 8, spread = 3, effect = CONST_ME_POFF}
 }
 

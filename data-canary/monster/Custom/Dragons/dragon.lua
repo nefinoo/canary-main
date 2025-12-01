@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon"
 monster.description = "a dragon"
-monster.experience = 2000
+monster.experience = 1700
 monster.outfit = {
 	lookType = 34,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2000
-monster.maxHealth = 2000
+monster.health = 1720
+monster.maxHealth = 1720
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 5973
@@ -80,9 +80,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -90, maxDamage = -150},
-	{name ="combat", interval = 4000, chance = 60, type = COMBAT_FIREDAMAGE, minDamage = -188, maxDamage = -220, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 3000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -188, maxDamage = -220, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -201, maxDamage = -261},
+	{name ="combat", interval = 4000, chance = 60, type = COMBAT_FIREDAMAGE, minDamage = -201, maxDamage = -261, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 3000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -201, maxDamage = -261, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {

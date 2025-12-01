@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deranged Phsyco"
 monster.description = "a deranged phsyco"
-monster.experience = 700000
+monster.experience = 325000
 monster.outfit = {
 	lookType = 134,
 	lookHead = 132,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 400000
-monster.maxHealth = 400000
+monster.health = 90000
+monster.maxHealth = 90000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3173, maxDamage = -4125, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -4500, range = 1, radius = 1, target = true},
 	{name ="melee", interval = 1000, chance = 100, skill = 200, attack = 200}
 }
 

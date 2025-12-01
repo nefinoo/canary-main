@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari windwalker"
 monster.description = "a salazaari windwalker"
-monster.experience = 33000
+monster.experience = 11500
 monster.outfit = {
 	lookType = 63,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 20000
-monster.maxHealth = 20000
+monster.health = 7200
+monster.maxHealth = 7200
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6011

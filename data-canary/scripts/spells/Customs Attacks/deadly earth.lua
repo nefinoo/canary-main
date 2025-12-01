@@ -46,20 +46,20 @@ for _, config in pairs(deadlyEarthStrike) do
 end
 
 -- Sorcerer formulas
-deadlyEarthStrike[1].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -3.2, -30, -3.8, 0)
-deadlyEarthStrike[1].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -3.2, -30, -3.8, 0)
+deadlyEarthStrike[1].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.6, -30, -1.9, 0)
+deadlyEarthStrike[1].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.6, -30, -1.9, 0)
 
 -- Druid formulas
-deadlyEarthStrike[2].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -2.9, -30, -3.4, 0)
-deadlyEarthStrike[2].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -2.9, -30, -3.4, 0)
+deadlyEarthStrike[2].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.45, -30, -1.7, 0)
+deadlyEarthStrike[2].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.45, -30, -1.7, 0)
 
 -- Paladin formulas
-deadlyEarthStrike[3].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -2.0, 0, -2.5, 0)
-deadlyEarthStrike[3].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -2.0, 0, -2.5, 0)
+deadlyEarthStrike[3].combat.close:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.0, 0, -1.25, 0)
+deadlyEarthStrike[3].combat.distance:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.0, 0, -1.25, 0)
 
 -- Knight formulas (using SKILL formula as in original)
-deadlyEarthStrike[4].combat.close:setFormula(COMBAT_FORMULA_SKILL, 1.5, 0, 2.0, 0)
-deadlyEarthStrike[4].combat.distance:setFormula(COMBAT_FORMULA_SKILL, 1.5, 0, 2.0, 0)
+deadlyEarthStrike[4].combat.close:setFormula(COMBAT_FORMULA_SKILL, 0.75, 0, 1.0, 0)
+deadlyEarthStrike[4].combat.distance:setFormula(COMBAT_FORMULA_SKILL, 0.75, 0, 1.0, 0)
 
 local spell = Spell(SPELL_INSTANT)
 
@@ -112,7 +112,7 @@ spell:isAggressive(true)
 spell:blockWalls(true)
 spell:needLearn(false)
 spell:isPremium(true)
-spell:level(500)
+spell:level(250)
 spell:mana(0) -- We handle mana manually in the script
 spell:range(5)
 spell:needCasterTargetOrDirection(true)
