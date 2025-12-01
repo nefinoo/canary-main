@@ -11,7 +11,7 @@ function Blesstiletemple.onStepIn(creature, item, position, fromPosition)
 		creature:showTextDialog(3506, updateMsg)
 		creature:sendTextMessage(MESSAGE_LOOK, "To view the newcomers message again say !help")
 	end
-	
+	player:setFeature(Features.AutoLoot, 1)
 	Blessings.BuyAllBlesses(player)
     return true
 end

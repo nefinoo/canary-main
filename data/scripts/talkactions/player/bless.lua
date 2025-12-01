@@ -1,9 +1,9 @@
--- local bless = TalkAction("!bless")
+local bless = TalkAction("!bless")
 
--- function bless.onSay(player, words, param)
-	-- Blessings.BuyAllBlesses(player)
-	-- return true
--- end
+function bless.onSay(player, words, param)
+	Blessings.BuyAllBlesses(player)
+	return true
+end
 
--- bless:groupType("normal")
--- bless:register()
+bless:groupType("normal")
+bless:register()
