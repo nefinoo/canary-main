@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard sentinel"
 monster.description = "a lizard sentinel"
-monster.experience = 110
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 114,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 265
-monster.maxHealth = 265
+monster.health = 176433
+monster.maxHealth = 176433
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 6040
@@ -79,8 +79,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 35, attack = 26},
-	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -40, maxDamage = -70, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748},
+	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
 }
 
 monster.defenses = {

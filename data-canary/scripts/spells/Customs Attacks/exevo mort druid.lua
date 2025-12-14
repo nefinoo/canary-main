@@ -1,31 +1,31 @@
 local deadlyReckoning = {
     -- Deadly Wizard (9, 13)
     [1] = {
-        mana = 1000,
+        mana = 0,
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -3.2,
+        baseA = -3.5,
         baseB = -30,
-        baseC = -3.7,
+        baseC = -3.9,
         baseD = 0
     },
 
     -- Deadly Priest (10, 14)
     [2] = {
-        mana = 1000,
+        mana = 0,
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -3.1,
-        baseB = -50,
-        baseC = -3.5,
+        baseA = -4.8,
+        baseB = -30,
+        baseC = -5.5,
         baseD = 0
     },
 
     -- Deadly Archer (11, 15)
     [3] = {
-        mana = 600,
+        mana = 0,
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
@@ -37,7 +37,7 @@ local deadlyReckoning = {
 
     -- Deadly Berserker (12, 16)
     [4] = {
-        mana = 400,
+        mana = 0,
         combat = Combat(),
         area = createCombatArea(AREA_SQUARE2X2),
 
@@ -168,8 +168,8 @@ function spell.onCastSpell(creature, variant)
 end
 
 -- Spell config
-spell:name("Deadly Reckoning")
-spell:words("exevo mort")
+spell:name("Deadly Tornado")
+spell:words("exevo frigo mort")
 spell:group("attack")
 spell:isAggressive(true)
 spell:needTarget(false)
@@ -180,9 +180,9 @@ spell:mana(0)
 spell:cooldown(2000)
 spell:needLearn(false)
 spell:isSelfTarget(true)
-spell:vocation("sorcerer;true")
+-- spell:vocation("sorcerer;true")
 spell:vocation("druid;true")
-spell:vocation("paladin;true")
-spell:vocation("knight;true")
+-- spell:vocation("paladin;true")
+-- spell:vocation("knight;true")
 
 spell:register()

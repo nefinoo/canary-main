@@ -2,7 +2,7 @@ local reqml = 8            -- Magic level required to use
 local reqlvl = 250         -- Level required to use
 local potExhaust = false   -- If true, uses potion exhaust system
 local storeValue = 50995   -- Storage used for custom exhaust
-local exhaustTime = 1      -- Exhaust time
+local exhaustTime = 2      -- Exhaust time
 local infinite = false      -- Rune loses charges? true = infinite
 local canUseInPz = true    -- Allow PZ use?
 
@@ -80,11 +80,11 @@ function manaRune.onUse(player, item, fromPosition, target, toPosition, isHotkey
     local lvl = player:getLevel()
     local ml = player:getMagicLevel()
 
-    local minMana = ((lvl * 0.5 + ml * 2) * 0.55) + 15
-    local maxMana = ((lvl * 1 + ml * 1) * 0.95) + 20
+    local minMana = ((lvl * 0.35 + ml * 1) * 0.55) + 15
+    local maxMana = ((lvl * 0.35 + ml * 2) * 0.65) + 20
 
-    local minHealth = ((lvl * 3 + ml * 2) * 0.55) + 15
-    local maxHealth = ((lvl * 4 + ml * 1) * 0.95) + 20
+    local minHealth = ((lvl * 2 + ml * 2) * 0.55) + 15
+    local maxHealth = ((lvl * 2.5 + ml * 1) * 0.95) + 20
 
     -- Ring bonus
     local ring = player:getSlotItem(CONST_SLOT_RING)

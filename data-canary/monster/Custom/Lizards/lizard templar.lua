@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard templar"
 monster.description = "a lizard templar"
-monster.experience = 115
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 113,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 410
-monster.maxHealth = 410
+monster.health = 176433
+monster.maxHealth = 176433
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4251
@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 44, attack = 30}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748}
 }
 
 monster.defenses = {

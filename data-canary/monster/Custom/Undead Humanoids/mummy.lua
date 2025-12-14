@@ -14,12 +14,12 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 11000
+monster.maxHealth = 11000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6004
-monster.speed = 220
+monster.speed = 180
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -73,19 +73,19 @@ monster.immunities = {
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
-	{type = COMBAT_LIFEDRAIN, percent = 100},
+	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 22},
-	{type = COMBAT_HOLYDAMAGE , percent = -25},
-	{type = COMBAT_DEATHDAMAGE , percent = 100}
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 120, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -650, maxDamage = -800, range = 1, radius = 1, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1225, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -1165, maxDamage = -1225, range = 1, radius = 1, target = true},
 	{name ="speed", interval = 1000, chance = 8, speed = {min = -600, max = -600}, duration = 10000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 

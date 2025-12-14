@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_TELEPORT)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SUDDENDEATH)
 
-combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.3, -30, -0.6, 0)
+combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.45, -30, -0.75, 0)
 
 local amberstaff = Weapon(WEAPON_WAND)
 

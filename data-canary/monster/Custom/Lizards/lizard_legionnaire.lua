@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Lizard Legionnaire")
+local mType = Game.createMonsterType("Lizard Legionnaire")
 local monster = {}
 
 monster.description = "a lizard legionnaire"
-monster.experience = 1100
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 338,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Corruption Hole, Razachai, Temple of Equilibrium, Northern Zao Plantations.",
 }
 
-monster.health = 1400
-monster.maxHealth = 1400
+monster.health = 176433
+monster.maxHealth = 176433
 monster.race = "blood"
 monster.corpse = 10359
 monster.speed = 133
@@ -93,8 +93,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -180 },
-	{ name = "combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -200, range = 7, shootEffect = CONST_ANI_SPEAR, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, shootEffect = CONST_ANI_SPEAR, target = true },
 }
 
 monster.defenses = {

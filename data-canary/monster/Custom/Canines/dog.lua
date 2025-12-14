@@ -80,11 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -807, maxDamage = -1050},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -807, maxDamage = -1050, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -807, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1307, maxDamage = -1350},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {

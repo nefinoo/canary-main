@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 85,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -79,12 +79,12 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, length = 10, spread = 0, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ICEDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = false, effect = CONST_ME_ICETORNADO},
-	{name ="drunk", interval = 3000, chance = 50, drunkenness = 25, duration = 10000, radius = 6, target = false, effect = CONST_ME_SOUND_PURPLE},
-	{name ="condition", interval = 2000, chance = 100, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_ENERGYHIT}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, length = 10, spread = 0, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 2000, chance = 24, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 1000, chance = 14, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = false, effect = CONST_ME_ICETORNADO},
+	{name ="drunk", interval = 3000, chance = 38, drunkenness = 25, duration = 10000, radius = 6, target = false, effect = CONST_ME_SOUND_PURPLE},
+	{name ="condition", interval = 2000, chance = 25, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {

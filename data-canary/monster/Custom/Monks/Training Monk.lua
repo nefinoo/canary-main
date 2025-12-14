@@ -27,6 +27,12 @@ monster.changeTarget = {
 	chance = 0
 }
 
+monster.events = {
+    -- "DamageSum",
+    -- "trainingDummy_register"
+}
+
+
 monster.flags = {
 	attackable = true,
 	hostile = true,
@@ -84,7 +90,8 @@ monster.attacks = {
 monster.defenses = {
 	defense = 0,
 	armor = 0,
-	{name ="combat", interval = 5000, chance = 100, type = COMBAT_HEALING, minDamage = 10000000, maxDamage = 10000000}
+	--	mitigation = ???,
+	-- {name ="combat", interval = 5000, chance = 100, type = COMBAT_HEALING, minDamage = 10000000, maxDamage = 10000000}
 }
 
 monster.loot = {

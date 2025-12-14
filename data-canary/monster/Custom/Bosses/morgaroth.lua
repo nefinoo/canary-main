@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 98,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -82,14 +82,14 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -1200, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="melee", interval = 1800, chance = 100, skill = 400, attack = 400},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -2000, maxDamage = -3000, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 2500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -4800, range = 7, radius = 5, target = false, effect = CONST_ME_MAGIC_GREEN},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -30000, range = 7, radius = 13, target = false, effect = CONST_ME_SOUND_RED},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -3000, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
-	{name ="melee", interval = 3000, chance = 100, skill = 400, attack = 400}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -3749, maxDamage = -4874},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3749, maxDamage = -4874, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -3749, maxDamage = -4874},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3749, maxDamage = -4874, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 2500, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3749, maxDamage = -4874, range = 7, radius = 5, target = false, effect = CONST_ME_MAGIC_GREEN},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3749, maxDamage = -4874, range = 7, radius = 13, target = false, effect = CONST_ME_SOUND_RED},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -3749, maxDamage = -4874, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
+	{name ="melee", interval = 3000, chance = 100, minDamage = -3749, maxDamage = -4874},
 }
 
 monster.defenses = {

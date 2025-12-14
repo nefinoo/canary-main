@@ -30,15 +30,15 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     end
     -- Cálculos idénticos al script original
     local mana = targetPlayer:getMaxMana()
-    local maxheal = (mana * 0.005)
-    local minHeal = 250 + targetPlayer:getLevel() * 0.4 + maxheal
-    local maxHeal = 500 + targetPlayer:getLevel() * 0.6 + maxheal
+    local maxheal = (mana * 0.05)
+    local minHeal = 350 + targetPlayer:getLevel() * 0.35 + maxheal
+    local maxHeal = 500 + targetPlayer:getLevel() * 0.5 + maxheal
     
     -- Bonus por exhaust
-    if targetPlayer:getStorageValue(1990) > os.time() then
-        minHeal = minHeal * 1.25
-        maxHeal = maxHeal * 1.25
-    end
+    -- if targetPlayer:getStorageValue(1990) > os.time() then
+        -- minHeal = minHeal * 1.25
+        -- maxHeal = maxHeal * 1.25
+    -- end
     
     local manaToAdd = math.random(minHeal, maxHeal)
     
@@ -52,7 +52,7 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     -- print(string.format("[MANA RUNE] %s +%d mana (nivel: %d, manaMax: %d)", targetPlayer:getName(), manaToAdd, targetPlayer:getLevel(), mana))
     
     -- Establecer exhaust (2 segundos)
-    player:setStorageValue(1990, os.time() + 2)
+    -- player:setStorageValue(1990, os.time() + 2)
     
     -- Consumir runa
     item:remove(1)

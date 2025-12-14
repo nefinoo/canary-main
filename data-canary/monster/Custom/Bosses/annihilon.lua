@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 85,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -80,10 +80,10 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_ICEAREA},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = true, effect = CONST_ME_GROUNDSHAKER},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_ICEAREA},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = true, effect = CONST_ME_GROUNDSHAKER},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {

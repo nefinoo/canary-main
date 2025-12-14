@@ -16,8 +16,8 @@ function updatePlayerOnAdvancedLevel.onAdvance(player, skill, oldLevel, newLevel
             end
         end
     end
-	player:addHealth(player:getMaxHealth())
-	player:addMana(player:getMaxMana())
+	-- player:addHealth(player:getMaxHealth())
+	-- player:addMana(player:getMaxMana())
 	player:getFinalLowLevelBonus()
 	player:getFinalLowLevelBonus()
 	player:getPosition():sendMagicEffect(284)

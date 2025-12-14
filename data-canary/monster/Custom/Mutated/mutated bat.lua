@@ -78,10 +78,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4615, maxDamage = -6000, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -4615, maxDamage = -6000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_DROWNDAMAGE, minDamage = -4615, maxDamage = -6000, radius = 6, target = false, effect = CONST_ME_SOUND_WHITE},
-	{name ="drunk", interval = 1000, chance = 8, drunkenness = 25, duration = 15000, radius = 6, target = false, effect = CONST_ME_SOUND_YELLOW}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -7383, maxDamage = -9598, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -7383, maxDamage = -9598, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_DROWNDAMAGE, minDamage = -7383, maxDamage = -9598, radius = 6, target = false, effect = CONST_ME_SOUND_WHITE},
+	{name ="drunk", interval = 1000, chance = 10, drunkenness = 25, duration = 15000, radius = 6, target = false, effect = CONST_ME_SOUND_YELLOW}
 }
 
 monster.defenses = {

@@ -79,9 +79,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -403, maxDamage = -524 },
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -403, maxDamage = -524, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 5000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -403, maxDamage = -524, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 5000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

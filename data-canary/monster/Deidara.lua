@@ -1,8 +1,8 @@
 ﻿local mType = Game.createMonsterType("Deidara")
 local monster = {}
 
-monster.description = "Deidara"
-monster.experience = 150
+monster.description = "an explosive clay master."
+monster.experience = 500000
 monster.outfit = {
 	lookType = 1907,
 	lookHead = 0,
@@ -13,15 +13,20 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 95
-monster.maxHealth = 95
+monster.bosstiary = {
+	bossRaceId = 9002,
+	bossRace = RARITY_ARCHFOE,
+}
+
+monster.health = 24
+monster.maxHealth = 2400000
 monster.race = "blood"
-monster.corpse = 5981
-monster.speed = 85
+monster.corpse = 6068
+monster.speed = 300
 monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 5000,
+	interval = 10000,
 	chance = 8,
 }
 
@@ -43,7 +48,7 @@ monster.flags = {
 	canPushItems = true,
 	canPushCreatures = true,
 	staticAttackChance = 90,
-	targetDistance = 4,
+	targetDistance = 1,
 	runHealth = 20,
 	healthHidden = false,
 	isBlockable = false,
@@ -58,14 +63,16 @@ monster.light = {
 }
 
 monster.summon = {
-	maxSummons = 2,
+	maxSummons = 3,
 	summons = {
-		{ name = "Hyaena", chance = 30, interval = 5000, count = 2 },
+		{ name = "hell soldier", chance = 30, interval = 10000, count = 1 },
+		-- { name = "salazaari defender", chance = 30, interval = 10000, count = 1 },
+		-- { name = "outlawed warrior", chance = 30, interval = 10000, count = 1 },
 	},
 }
 
 monster.voices = {
-	interval = 5000,
+	interval = 10000,
 	chance = 10,
 	{ text = "I will protect the secrets of my master!", yell = false },
 	{ text = "Kaplar!", yell = false },
@@ -74,28 +81,54 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "minotaur leather", chance = 100000 },
-	{ id = 3046, chance = 76000 }, -- magic light wand
-	{ name = "gold coin", chance = 38000, maxCount = 10 },
-	{ id = 2920, chance = 30000, maxCount = 2 }, -- torch
-	{ name = "leather legs", chance = 23000 },
-	{ id = 3595, chance = 7690 }, -- carrot
-	{ name = "leather helmet", chance = 7690 },
-	{ name = "knife", chance = 7690 },
+	{ name = "crystal coin", chance = 38000, maxCount = 50 },
+	{ name = "experience scroll", chance = 5000, maxCount = 3 },
+	{ name = "silver token", chance = 6000, maxCount = 2 },
+	{ id = 51076, chance = 1250}, -- sorcerer helmet
+	{ id = 51077, chance = 1250}, -- sorcerer armor
+	{ id = 51078, chance = 1250}, -- sorcerer legs
+	{ id = 51079, chance = 1250}, -- sorcerer boots
+	{ id = 51080, chance = 1250}, -- sorcerer shield
+	
+	{ id = 51230, chance = 1250}, -- paladin helmet
+	{ id = 51231, chance = 1250}, -- paladin armor
+	{ id = 51232, chance = 1250}, -- paladin legs
+	{ id = 51233, chance = 1250}, -- paladin boots
+	{ id = 52367, chance = 1250}, -- paladin shield
+	
+	{ id = 51226, chance = 1250}, -- knight helmet
+	{ id = 51229, chance = 1250}, -- knight armor
+	{ id = 51212, chance = 1250}, -- knight legs
+	{ id = 51228, chance = 1250}, -- knight boots
+	{ id = 51697, chance = 1250}, -- knight shield
+	
+	{ id = 51070, chance = 1250}, -- druid helmet
+	{ id = 51071, chance = 1250}, -- druid armor
+	{ id = 51072, chance = 1250}, -- druid legs
+	{ id = 51073, chance = 1250}, -- druid boots
+	{ id = 51074, chance = 1250}, -- druid shield
+	
+	{ id = 51081, chance = 1000, unique = true}, -- wand
+	{ id = 53278, chance = 1000, unique = true}, -- bow
+	{ id = 50730, chance = 1000, unique = true}, -- crossbow
+	{ id = 52376, chance = 1000, unique = true}, -- sword
+	{ id = 52365, chance = 1000, unique = true}, -- axe
+	{ id = 52366, chance = 1000, unique = true}, -- club
+	{ id = 51075, chance = 1000, unique = true}, -- rod
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -10 },
-	{ name = "energyfield", interval = 1000, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1000, chance = 14, type = COMBAT_ENERGYDAMAGE, minDamage = 0, maxDamage = -25, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = 0, maxDamage = -45, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -3500, maxDamage = -5000 },
+	{ name = "energyfield", interval = 1250, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
+	{ name = "combat", interval = 1250, chance = 14, type = COMBAT_PHYSICALDAMAGE, minDamage = -3500, maxDamage = -5000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -3500, maxDamage = -5000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
 }
 
 monster.defenses = {
 	defense = 13,
 	armor = 12,
 	--	mitigation = ???,
-	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 10, maxDamage = 20, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 5000, maxDamage = 10000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {

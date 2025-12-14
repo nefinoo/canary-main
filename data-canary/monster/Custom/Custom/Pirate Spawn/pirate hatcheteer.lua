@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Pirate Hatcheteer"
 monster.description = "pirate hatcheteer"
-monster.experience = 1600000
+monster.experience = 900000
 monster.outfit = {
 	lookType = 93,
 	lookHead = 0,
@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 1,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {

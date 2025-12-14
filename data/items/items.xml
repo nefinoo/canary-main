@@ -5011,9 +5011,9 @@
 	<item id="2472" article="a" name="chest">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="15"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="rotateto" value="2481"/>
 		<attribute key="weight" value="12000"/>
-		<attribute key="movable" value="0"/>
 	</item>
 	<item id="2473" article="a" name="box">
 		<attribute key="primarytype" value="containers"/>
@@ -9950,29 +9950,19 @@
 		</attribute>
 	</item>
 	<item id="3387" article="a" name="demon helmet">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="20"/>
+		<attribute key="armor" value="100"/>
 		<attribute key="weight" value="2950"/>
 		<attribute key="augments" value="1">
 			<attribute key="Hell's Core" value="base">
 				<attribute key="value" value="150"/>
 			</attribute>
-			<!-- <attribute key="Hell's Core" value="cooldown"> -->
-				<!-- <attribute key="value" value="1500"/> -->
-			<!-- </attribute> -->
-			<!-- <attribute key="Hell's Core" value="mana leech"> -->
-				<!-- <attribute key="value" value="5"/> -->
-			<!-- </attribute> -->
 			<attribute key="Eternal Winter" value="base">
 				<attribute key="value" value="150"/>
 			</attribute>
-			<!-- <attribute key="Eternal Winter" value="cooldown"> -->
-				<!-- <attribute key="value" value="1500"/> -->
-			<!-- </attribute> -->
-			<!-- <attribute key="Eternal Winter" value="mana leech"> -->
-				<!-- <attribute key="value" value="5"/> -->
-			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
@@ -9980,19 +9970,15 @@
 		</attribute>
 	</item>
 	<item id="3388" article="a" name="demon armor">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="26"/>
+		<attribute key="armor" value="100"/>
 		<attribute key="weight" value="8000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Fierce Berserk" value="base">
 				<attribute key="value" value="150"/>
 			</attribute>
-			<!-- <attribute key="Fierce Berserk" value="cooldown"> -->
-				<!-- <attribute key="value" value="1500"/> -->
-			<!-- </attribute> -->
-			<!-- <attribute key="Fierce Berserk" value="life leech"> -->
-				<!-- <attribute key="value" value="8"/> -->
-			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
@@ -10000,19 +9986,15 @@
 		</attribute>
 	</item>
 	<item id="3389" name="demon legs">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="19"/>
+		<attribute key="armor" value="100"/>
 		<attribute key="weight" value="7000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Divine Caldera" value="base">
 				<attribute key="value" value="150"/>
 			</attribute>
-			<!-- <attribute key="Divine Caldera" value="cooldown"> -->
-				<!-- <attribute key="value" value="1500"/> -->
-			<!-- </attribute> -->
-			<!-- <attribute key="Divine Caldera" value="life leech"> -->
-				<!-- <attribute key="value" value="4"/> -->
-			<!-- </attribute> -->
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
@@ -10448,8 +10430,8 @@
 	</item>
 	<item id="3423" article="a" name="blessed shield">
 		<attribute key="primarytype" value="shields"/>
-		<attribute key="description" value="The shield grants divine protection"/>
 		<attribute key="weaponType" value="shield"/>
+		<attribute key="description" value="The shield grants divine protection"/>
 		<attribute key="defense" value="40"/>
 		<attribute key="weight" value="6800"/>
 		<attribute key="script" value="moveevent">
@@ -17688,23 +17670,12 @@
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="defense" value="37"/>
-		<attribute key="skillclub" value="3"/>
-		<attribute key="skillaxe" value="3"/>
-		<attribute key="skillsword" value="3"/>
+		<attribute key="defense" value="50"/>
+		<attribute key="skillshield" value="5"/>
 		<attribute key="weight" value="3200"/>
-		<attribute key="augments" value="1">
-			<attribute key="fierce berserk" value="base">
-				<attribute key="value" value="115"/>
-			</attribute>
-			<attribute key="fierce berserk" value="cooldown">
-				<attribute key="value" value="1000"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="2000"/>
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="6391" article="a" name="hawser">
@@ -19572,14 +19543,13 @@
 		</attribute>
 	</item>
 	<item id="7390" article="the" name="justice seeker">
-		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
+		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="47"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="75"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
@@ -70542,54 +70512,38 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<item id="37607" name="green demon legs">
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="9"/>
+		<attribute key="armor" value="140"/>
 		<attribute key="weight" value="7000"/>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="legs"/>
 		</attribute>
 	</item>
 	<item id="37608" name="green demon armor">
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="16"/>
+		<attribute key="armor" value="160"/>
 		<attribute key="weight" value="8000"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="life leech" value="3"/>
-			<attribute key="elemental protection death" value="3"/>
-			<attribute key="elemental protection earth" value="3"/>
-			<attribute key="elemental protection fire" value="3"/>
-			<attribute key="elemental protection ice" value="3"/>
-			<attribute key="elemental protection energy" value="3"/>
-			<attribute key="elemental protection holy" value="3"/>
-		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
 	<item id="37609" name="green demon helmet">
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="10"/>
+		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="2950"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="mana leech" value="3"/>
-			<attribute key="skillboost axe" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-			<attribute key="skillboost shielding" value="3"/>
-			<attribute key="skillboost distance" value="3"/>
-		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="500"/>
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
 	<item id="37610" name="green demon slippers">
 		<attribute key="primarytype" value="boots"/>
 		<attribute key="weight" value="600"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="increase speed" value="3"/>
-		</attribute>
+		<attribute key="armor" value="50"/>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="feet"/>
 		</attribute>
 	</item>
@@ -82934,5 +82888,1182 @@ Granted by TibiaGoals.com"/>
 		<attribute key="writeable" value="1"/>
 		<attribute key="maxtextlen" value="1023"/>
 		<attribute key="movable" value="0"/>
+	</item>
+	<item id="51112" article="a" name="druid chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+	</item>
+	<item id="51108" article="a" name="sorcerer chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+	</item>
+	<item id="51106" article="a" name="paladin chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+	</item>
+	<item id="51110" article="a" name="knight chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+	</item>
+	<item id="51873" article="a" name="druid ring">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="manashield" value="1"/>
+		<attribute key="magiclevelpoints" value="30"/>
+		<attribute key="absorbpercentearth" value="5"/>
+		<attribute key="absorbpercentice" value="5"/>
+		<attribute key="icemagiclevelpoints" value="5"/>
+		<attribute key="earthmagiclevelpoints" value="5"/>
+		<attribute key="healingmagiclevelpoints" value="5"/>
+		<attribute key="maxmanapointspercent" value="5"/>
+		<attribute key="weight" value="80"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="ring"/>
+		</attribute>
+	</item>
+	<item id="51866" article="a" name="sorcerer ring">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="manashield" value="1"/>
+		<attribute key="magiclevelpoints" value="30"/>
+		<attribute key="absorbpercentfire" value="5"/>
+		<attribute key="absorbpercentenergy" value="5"/>
+		<attribute key="firemagiclevelpoints" value="5"/>
+		<attribute key="energymagiclevelpoints" value="5"/>
+		<attribute key="deathmagiclevelpoints" value="5"/>
+		<attribute key="maxmanapointspercent" value="5"/>
+		<attribute key="weight" value="80"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="ring"/>
+		</attribute>
+	</item>
+	<item id="51880" article="a" name="paladin ring">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="skilldist" value="30"/>
+		<attribute key="skillfist" value="10"/>
+		<attribute key="maxhitpointspercent" value="2"/>
+		<attribute key="maxmanapointspercent" value="3"/>
+		<attribute key="absorbpercentholy" value="5"/>
+		<attribute key="holymagiclevelpoints" value="5"/>
+		<attribute key="weight" value="80"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="ring"/>
+		</attribute>
+	</item>
+	<item id="51887" article="a" name="knight ring">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="absorbpercentall" value="5"/>
+		<attribute key="physicalmagiclevelpoints" value="5"/>
+		<attribute key="maxhitpointspercent" value="5"/>
+		<attribute key="skillsword" value="30"/>
+		<attribute key="skillaxe" value="30"/>
+		<attribute key="skillclub" value="30"/>
+		<attribute key="weight" value="80"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="ring"/>
+		</attribute>
+	</item>
+	<!-- armas levle 1000 v2 -->
+	<item id="50730" article="an" name="squama crossbow">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="53278" article="an" name="squama bow">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51081" article="a" name="star wand">
+		<!-- <attribute key="manaleechamount" value="5000"/> -->
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="magiclevelpoints" value="8"/>
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="1000"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51075" article="a" name="ritual rod">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="magiclevelpoints" value="8"/>
+		<attribute key="range" value="4"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="1000"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="52376" article="the" name="black knight seeker">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="skillsword" value="10"/>
+		<attribute key="attack" value="47"/>
+		<attribute key="defense" value="24"/>
+		<attribute key="weight" value="5000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1000"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="sword"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="52366" article="a" name="black knight basher">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="skillclub" value="10"/>
+		<attribute key="attack" value="44"/>
+		<attribute key="defense" value="20"/>
+		<attribute key="weight" value="7800"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1000"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="club"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="52365" article="a" name="black knight axe">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="description" value="A masterpiece of a dwarven smith"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="skillaxe" value="10"/>
+		<attribute key="attack" value="52"/>
+		<attribute key="defense" value="22"/>
+		<attribute key="weight" value="9000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1000"/>
+			<attribute key="weaponType" value="axe"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	
+	<!-- armas level 2000 -->
+	<item id="51088" article="an" name="ascendant crossbow">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="skilldist" value="20"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51087" article="an" name="ascendant bow">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="skilldist" value="20"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="50976" article="a" name="green demon wand">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="magiclevelpoints" value="20"/>
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="1500"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51853" article="a" name="grizzly rod">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="magiclevelpoints" value="20"/>
+		<attribute key="range" value="4"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="1500"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51064" article="the" name="frozen seeker">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="skillsword" value="20"/>
+		<attribute key="attack" value="47"/>
+		<attribute key="defense" value="24"/>
+		<attribute key="weight" value="5000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1500"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="sword"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51066" article="a" name="frozen basher">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="skillclub" value="20"/>
+		<attribute key="attack" value="44"/>
+		<attribute key="defense" value="20"/>
+		<attribute key="weight" value="7800"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1500"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="club"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51069" article="a" name="frozen axe">
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="description" value="A masterpiece of a dwarven smith"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="skillaxe" value="20"/>
+		<attribute key="attack" value="52"/>
+		<attribute key="defense" value="22"/>
+		<attribute key="weight" value="9000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1500"/>
+			<attribute key="weaponType" value="axe"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	
+	<!-- armas level 2500 -->
+	<item id="50639" article="an" name="ornamented crossbow">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="2500"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="50638" article="an" name="ornamented bow">
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="2500"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="50636" article="a" name="ornamented wand">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="2500"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="50637" article="a" name="ornamented rod">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="2500"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="50635" article="the" name="ornamented seeker">
+		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="attack" value="47"/>
+		<attribute key="defense" value="24"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="5000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="2500"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="sword"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="50633" article="a" name="ornamented basher">
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="attack" value="44"/>
+		<attribute key="defense" value="20"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="7800"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="2500"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="club"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="50634" article="a" name="ornamented axe">
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="description" value="A masterpiece of a dwarven smith"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="attack" value="52"/>
+		<attribute key="defense" value="22"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="1500"/>
+		<attribute key="weight" value="9000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="2500"/>
+			<attribute key="weaponType" value="axe"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51921" article="an" name="golden crossbow">
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="10000"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51919" article="an" name="golden bow 5000">
+		<attribute key="primarytype" value="distance weapons"/>
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="shootType" value="redstar"/>
+		<attribute key="maxhitchance" value="100"/>
+		<attribute key="hitchance" value="100"/>
+		<attribute key="range" value="5"/>
+		<attribute key="attack" value="250"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="10000"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51924" article="a" name="golden wand">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="10000"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51923" article="a" name="golden rod">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="range" value="4"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="3500"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="level" value="10000"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51922" article="the" name="golden seeker">
+		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="attack" value="47"/>
+		<attribute key="defense" value="24"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="5000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="10000"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="sword"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51920" article="a" name="golden basher">
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="attack" value="44"/>
+		<attribute key="defense" value="20"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="7800"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="10000"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="club"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51918" article="a" name="golden axe">
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="description" value="A masterpiece of a dwarven smith"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="attack" value="52"/>
+		<attribute key="defense" value="22"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="3000"/>
+		<attribute key="weight" value="9000"/>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="10000"/>
+			<attribute key="weaponType" value="axe"/>
+			<attribute key="slot" value="hand"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<!-- 1000 sorcerer set's -->
+	<item id="51076" article="a" name="star hat">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="2950"/>			
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Core" value="mana leech"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51077" article="a" name="star robe">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51078" name="star legs">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="critical extra damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51079" article="a" name="star boots">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="description" value="[250 mp/sec | 50hp/sec]"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="250"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="50"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51080" article="a" name="spellbook of the stars">
+		<attribute key="weaponType" value="spellbook"/>
+		<attribute key="defense" value="150"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="10"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	
+	<!-- 1000 paladin set's -->
+	<item id="51230" article="a" name="squama helmet">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="250"/>
+		<attribute key="weight" value="2950"/>			
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51231" article="a" name="squama armor">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="250"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51232" name="squama legs">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="250"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="critical extra damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51233" article="a" name="squama boots">
+		<attribute key="maxmanapoints" value="500"/>
+		<attribute key="maxhitpoints" value="500"/>
+		<attribute key="description" value="[150 mp/sec | 150hp/sec]"/>
+		<attribute key="armor" value="250"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="150"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="150"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="52367" article="a" name="squama quiver">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="defense" value="200"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="15"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	
+	<!-- 1000 knight set's -->
+	<item id="51226" article="a" name="black knight helmet">
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="300"/>
+		<attribute key="weight" value="2950"/>
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51229" article="a" name="black knight armor">
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="300"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51212" name="black knight legs">
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="300"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="critical extra damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51228" article="a" name="black knight boots">
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="description" value="[250 hp/sec | 50mp/sec]"/>
+		<attribute key="armor" value="300"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="50"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="250"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51697" article="a" name="black knight shield">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="defense" value="300"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="20"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	
+	<!-- 1000 druid set's -->
+	<item id="51070" article="a" name="ritual mask">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="2950"/>			
+		<!-- <attribute key="augments" value="1"> -->
+		<!-- </attribute> -->
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51071" article="a" name="ritual robe">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51072" name="ritual legs">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="critical extra damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51073" article="a" name="ritual boots">
+		<attribute key="maxmanapoints" value="1000"/>
+		<attribute key="description" value="[250 mp/sec | 50hp/sec]"/>
+		<attribute key="armor" value="200"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="250"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="50"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51074" article="a" name="spellbook of the ritual">
+		<attribute key="weaponType" value="spellbook"/>
+		<attribute key="defense" value="150"/>
+		<attribute key="skillshield" value="10"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1000"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	
+	
+	
+	<!-- 2000 sorcerer set's -->
+	<item id="51049" article="a" name="green demon hat">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="2950"/>			
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Core" value="mana leech"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51050" article="a" name="green demon robe">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="20"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51051" name="green demon legs">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="critical extra damage">
+				<attribute key="value" value="25"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51052" article="a" name="green demon boots">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="description" value="[500 mp/sec | 100hp/sec]"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="500"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="100"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	<item id="51053" article="a" name="green demon grimoire">
+		<attribute key="weaponType" value="spellbook"/>
+		<attribute key="defense" value="300"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="20"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+		</attribute>
+	</item>
+	
+	<!-- 2000 paladin set's -->
+	<item id="51082" article="a" name="ascendant helmet">
+		<attribute key="maxmanapoints" value="1500"/>
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="500"/>
+		<attribute key="weight" value="2950"/>			
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51083" article="a" name="ascendant armor">
+		<attribute key="maxmanapoints" value="1500"/>
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="500"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="20"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51084" name="ascendant legs">
+		<attribute key="maxmanapoints" value="1500"/>
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="500"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="50"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="critical extra damage">
+				<attribute key="value" value="25"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51085" article="a" name="ascendant boots">
+		<attribute key="maxmanapoints" value="1500"/>
+		<attribute key="maxhitpoints" value="1000"/>
+		<attribute key="description" value="[300 mp/sec | 300 hp/sec]"/>
+		<attribute key="armor" value="500"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="300"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="300"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	<item id="51086" article="a" name="ascendant quiver">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="defense" value="400"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="30"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
+		</attribute>
+	</item>
+	
+	<!-- 2000 knight set's -->
+	<item id="51062" article="a" name="frozen helmet">
+		<attribute key="maxhitpoints" value="2500"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="600"/>
+		<attribute key="weight" value="2950"/>
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="75"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51059" article="a" name="frozen armor">
+		<attribute key="maxhitpoints" value="2500"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="600"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="75"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="20"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51060" name="frozen legs">
+		<attribute key="maxhitpoints" value="2500"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="600"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="fair wound cleansing" value="base">
+				<attribute key="value" value="75"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="critical extra damage">
+				<attribute key="value" value="25"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51061" article="a" name="frozen boots">
+		<attribute key="maxhitpoints" value="2500"/>
+		<attribute key="description" value="[500 hp/sec | 100 mp/sec]"/>
+		<attribute key="armor" value="600"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="100"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="500"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	<item id="51063" article="a" name="frozen shield">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="defense" value="600"/>
+		<attribute key="weight" value="1950"/>
+		<attribute key="skillshield" value="40"/>
+		<!-- <attribute key="healingmagiclevelpoints" value="500"/> -->
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
+	
+	<!-- 2000 druid set's -->
+	<item id="51054" article="a" name="grizzly hood">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="2950"/>			
+		<!-- <attribute key="augments" value="1"> -->
+		<!-- </attribute> -->
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="head"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51055" article="a" name="grizzly armor">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="8000"/>				
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="20"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="armor"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51056" name="grizzly legs">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="critical extra damage">
+				<attribute key="value" value="25"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="legs"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51057" article="a" name="grizzly boots">
+		<attribute key="maxmanapoints" value="2500"/>
+		<attribute key="description" value="[500 mp/sec | 100 hp/sec]"/>
+		<attribute key="armor" value="400"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="500"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="100"/>
+		<attribute key="weight" value="800"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="feet"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
+	</item>
+	<item id="51058" article="a" name="spellbook of the beasts">
+		<attribute key="weaponType" value="spellbook"/>
+		<attribute key="defense" value="300"/>
+		<attribute key="skillshield" value="20"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1500"/>
+			<attribute key="slot" value="shield"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+		</attribute>
 	</item>
 </items>
