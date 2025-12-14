@@ -286,9 +286,9 @@ toggleGoldPouchQuickLootOnly = true
 toggleServerIsRetroPVP = false
 toggleTravelsFree = false
 buyAolCommandFee = 0
-buyBlessCommandFee = 0
+buyBlessCommandFee = 5
 teleportPlayerToVocationRoom = true
-toggleReceiveReward = false
+toggleReceiveReward = true
 randomMonsterSpawn = false
 lootPouchMaxLimit = 2000
 storeInboxMaxLimit = 2000
@@ -461,7 +461,7 @@ showScriptsLogInConsole = false
 minDelayBetweenConditions = 0
 -- configure maximum value of critical imbuement
 criticalChance = 100
-inventoryGlowOnFiveBless = false
+inventoryGlowOnFiveBless = true
 adventurersBlessingLevel = 500
 skulledDeathLoseStoreItem = false
 experienceDisplayRates = true
@@ -500,7 +500,7 @@ globalServerSaveTime = "06:00:00"
 -- rateLoot to avoid losing all rare items when
 -- the corpse size is less than the total of loots
 -- the monster can drop
-sortLootByChance = false
+sortLootByChance = true
 
 -- Rates
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
@@ -510,7 +510,7 @@ rateUseStages = true
 lowLevelBonusExp = 100
 rateExp = 100
 rateSkill = 100
-rateLoot = 5
+rateLoot = 2.5
 rateMagic = 50
 rateSpawn = 1
 

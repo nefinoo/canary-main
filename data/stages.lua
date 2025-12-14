@@ -4,11 +4,26 @@
 experienceStages = {
 	{
 		minlevel = 1,
-		maxlevel = 500,
-		multiplier = 110,
+		maxlevel = 1000,
+		multiplier = 450,
 	},
 	{
-		minlevel = 501,
+		minlevel = 1000,
+		maxlevel = 5000,
+		multiplier = 400,
+	},
+	{
+		minlevel = 5001,
+		maxlevel = 10000,
+		multiplier = 300,
+	},
+	{
+		minlevel = 10001,
+		maxlevel = 15000,
+		multiplier = 200,
+	},
+	{
+		minlevel = 15001,
 		multiplier = 100,
 	},
 }
@@ -36,7 +51,7 @@ skillsStages = {
 	},
 	{
 		minlevel = 126,
-		multiplier = 1,
+		multiplier = 2,
 	},
 }
 
@@ -68,6 +83,6 @@ magicLevelStages = {
 	},
 	{
 		minlevel = 126,
-		multiplier = 1,
+		multiplier = 2,
 	},
 }
