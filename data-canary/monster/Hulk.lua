@@ -74,14 +74,41 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "minotaur leather", chance = 100000 },
-	{ id = 3046, chance = 76000 }, -- magic light wand
-	{ name = "gold coin", chance = 38000, maxCount = 10 },
-	{ id = 2920, chance = 30000, maxCount = 2 }, -- torch
-	{ name = "leather legs", chance = 23000 },
-	{ id = 3595, chance = 7690 }, -- carrot
-	{ name = "leather helmet", chance = 7690 },
-	{ name = "knife", chance = 7690 },
+	{ name = "crystal coin", chance = 38000, maxCount = 50 },
+	{ name = "experience scroll", chance = 30000, maxCount = 3 },
+	{ name = "silver token", chance = 6000, maxCount = 2 },
+	{ id = 51049, chance = 1250}, -- sorcerer helmet
+	{ id = 51050, chance = 1250}, -- sorcerer armor
+	{ id = 51051, chance = 1250}, -- sorcerer legs
+	{ id = 51052, chance = 1250}, -- sorcerer boots
+	{ id = 51053, chance = 1250}, -- sorcerer shield
+	
+	{ id = 51082, chance = 1250}, -- paladin helmet
+	{ id = 51083, chance = 1250}, -- paladin armor
+	{ id = 51084, chance = 1250}, -- paladin legs
+	{ id = 51085, chance = 1250}, -- paladin boots
+	{ id = 51086, chance = 1250}, -- paladin shield
+	
+	{ id = 51062, chance = 1250}, -- knight helmet
+	{ id = 51059, chance = 1250}, -- knight armor
+	{ id = 51060, chance = 1250}, -- knight legs
+	{ id = 51061, chance = 1250}, -- knight boots
+	{ id = 51063, chance = 1250}, -- knight shield
+	
+	{ id = 51054, chance = 1250}, -- druid helmet
+	{ id = 51055, chance = 1250}, -- druid armor
+	{ id = 51056, chance = 1250}, -- druid legs
+	{ id = 51057, chance = 1250}, -- druid boots
+	{ id = 51058, chance = 1250}, -- druid shield
+	
+	{ id = 50976, chance = 1000, unique = true}, -- wand
+	{ id = 51087, chance = 1000, unique = true}, -- bow
+	{ id = 51088, chance = 1000, unique = true}, -- crossbow
+	{ id = 51064, chance = 1000, unique = true}, -- sword
+	{ id = 51069, chance = 1000, unique = true}, -- axe
+	{ id = 51066, chance = 1000, unique = true}, -- club
+	{ id = 51853, chance = 1000, unique = true}, -- rod
+	
 }
 
 monster.attacks = {

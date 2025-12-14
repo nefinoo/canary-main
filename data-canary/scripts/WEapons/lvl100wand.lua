@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MORTAREA)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SUDDENDEATH)
 
-combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.1, -30, -0.4, 0)
+combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.23, -30, -0.525, 0)
 
 local arcanestaffs = Weapon(WEAPON_WAND)
 

@@ -14,8 +14,13 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 17500
-monster.maxHealth = 17500
+monster.bosstiary = {
+	bossRaceId = 8999,
+	bossRace = RARITY_ARCHFOE,
+}
+
+monster.health = 175000
+monster.maxHealth = 175000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -28,6 +33,7 @@ monster.changeTarget = {
 }
 
 monster.flags = {
+	rewardBoss = true,
 	attackable = true,
 	hostile = true,
 	summonable = false,
@@ -78,10 +84,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1153, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -1153, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1153, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 400, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1153, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED},
 	{name ="speed", interval = 1000, chance = 13, speed = {min = -700, max = -700}, duration = 25000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY},
-	{name ="condition", interval = 3000, chance = 50, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -1153, maxDamage = -1500, radius = 5, target = false, effect = CONST_ME_POISONAREA}
+	{name ="condition", interval = 3000, chance = 50, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -1153, maxDamage = -1500, radius = 5, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -91,10 +97,40 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{name = "warlord sword", chance = 50},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	{ name = "crystal coin", chance = 38000, maxCount = 20 },
+	{ name = "experience scroll", chance = 2500, maxCount = 2 },
+	{ name = "silver token", chance = 1500, maxCount = 1 },
+	{ id = 37609, chance = 1250}, -- sorcerer helmet
+	{ id = 37608, chance = 1250}, -- sorcerer armor
+	{ id = 37607, chance = 1250}, -- sorcerer legs
+	{ id = 37610, chance = 1250}, -- sorcerer boots
+	{ id = 6390, chance = 1250}, -- sorcerer shield
+	
+	-- { id = 51230, chance = 1250}, -- paladin helmet
+	-- { id = 51231, chance = 1250}, -- paladin armor
+	-- { id = 51232, chance = 1250}, -- paladin legs
+	-- { id = 51233, chance = 1250}, -- paladin boots
+	-- { id = 52367, chance = 1250}, -- paladin shield
+	
+	-- { id = 51226, chance = 1250}, -- knight helmet
+	-- { id = 51229, chance = 1250}, -- knight armor
+	-- { id = 51212, chance = 1250}, -- knight legs
+	-- { id = 51228, chance = 1250}, -- knight boots
+	-- { id = 51697, chance = 1250}, -- knight shield
+	
+	-- { id = 51070, chance = 1250}, -- druid helmet
+	-- { id = 51071, chance = 1250}, -- druid armor
+	-- { id = 51072, chance = 1250}, -- druid legs
+	-- { id = 51073, chance = 1250}, -- druid boots
+	-- { id = 51074, chance = 1250}, -- druid shield
+	
+	-- { id = 51081, chance = 1000, unique = true}, -- wand
+	-- { id = 53278, chance = 1000, unique = true}, -- bow
+	-- { id = 50730, chance = 1000, unique = true}, -- crossbow
+	-- { id = 52376, chance = 1000, unique = true}, -- sword
+	-- { id = 52365, chance = 1000, unique = true}, -- axe
+	-- { id = 52366, chance = 1000, unique = true}, -- club
+	-- { id = 51075, chance = 1000, unique = true}, -- rod
 }
 
 mType:register(monster)

@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 8350
-monster.maxHealth = 8350
+monster.health = 45000
+monster.maxHealth = 45000
 monster.runHealth = 0
 monster.race = "undead"
 monster.corpse = 6306
@@ -80,15 +80,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -1730, maxDamage = -2500},
-	{name ="melee", interval = 2000, chance = 20, minDamage = -1730, maxDamage = -2500},
-	{name ="combat", interval = 3000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 23, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 4000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1730, maxDamage = -25000, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1730, maxDamage = -2500, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -1730, maxDamage = -2500, length = 8, spread = 3, effect = CONST_ME_MAGIC_GREEN},
-	{name ="condition", interval = 1000, chance = 20, type = CONDITION_DROWN, startDamage = 0, tick = 5000, length = 8, spread = 3, effect = CONST_ME_POFF}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2730, maxDamage = -3500},
+	{name ="melee", interval = 4000, chance = 20, minDamage = -2730, maxDamage = -3500},
+	{name ="combat", interval = 3000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 23, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -2730, maxDamage = -3500, length = 8, spread = 3, effect = CONST_ME_MAGIC_GREEN},
+	{name ="condition", interval = 1000, chance = 20, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, length = 8, spread = 3, effect = CONST_ME_POFF}
 }
 
 monster.defenses = {
@@ -98,7 +98,7 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 25000, maxCount = 3},
+	{name = "platinum coin", chance = 35000, maxCount = 3},
 	{id = 3121, chance = 15000},
 	{name = "broadsword", chance = 20000},
 	{name = "broadsword", chance = 3000},

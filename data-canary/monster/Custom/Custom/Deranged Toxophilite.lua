@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 90000
-monster.maxHealth = 90000
+monster.health = 88000
+monster.maxHealth = 88000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -88,7 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -5537, maxDamage = -7198},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -5537, maxDamage = -7198, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
 }
 
 monster.defenses = {
@@ -101,7 +102,7 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{name = "elven amulet", chance = 90000, maxCount = 4},
+	{name = "elven amulet", chance = 1},
 	{name = "experience scroll", chance = 3000},
 	{name = "piece of royal steel", chance = 500},
 	-- {id = 9743, chance = 2500}

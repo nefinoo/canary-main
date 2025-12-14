@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Lower Spike, Truffels Garden and Mushroom Gardens.",
 }
 
-monster.health = 53700
-monster.maxHealth = 53700
+monster.health = 60000
+monster.maxHealth = 60000
 monster.runHealth = 100
 monster.race = "undead"
 monster.corpse = 8105
@@ -92,8 +92,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -2300, maxDamage = -3000},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -28000, maxDamage = -35000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -3600, maxDamage = -4200},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -29000, maxDamage = -36000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA}
 }
 
 monster.defenses = {

@@ -47,9 +47,9 @@ monster.flags = {
 	staticAttackChance = 90,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -89,12 +89,12 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1210, maxDamage = -1574},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -1210, maxDamage = -1574, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 6, type = COMBAT_MANADRAIN, minDamage = -1210, maxDamage = -1574, radius = 5, target = false, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_FIREDAMAGE, minDamage = -1210, maxDamage = -1574, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1510, maxDamage = -1874},
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 6, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, radius = 5, target = false, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -1210, maxDamage = -1574, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {

@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Lizard High Guard")
+local mType = Game.createMonsterType("Lizard High Guard")
 local monster = {}
 
 monster.description = "a lizard high guard"
-monster.experience = 1450
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 337,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Corruption Hole, Razachai, Temple of Equilibrium, Northern Zao Plantations.",
 }
 
-monster.health = 1800
-monster.maxHealth = 1800
+monster.health = 176433
+monster.maxHealth = 176433
 monster.race = "blood"
 monster.corpse = 10355
 monster.speed = 119
@@ -98,7 +98,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -306 },
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -19037, maxDamage = -24748 },
 }
 
 monster.defenses = {

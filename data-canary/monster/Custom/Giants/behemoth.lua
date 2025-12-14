@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "behemoth"
 monster.description = "a behemoth"
-monster.experience = 2500
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 55,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 4000
-monster.maxHealth = 4000
+monster.health = 176433
+monster.maxHealth = 176433
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5999
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -90, maxDamage = -430},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -100, maxDamage = -185, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -19037, maxDamage = -24748},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {

@@ -78,8 +78,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -923, maxDamage = -1200},
-	{name ="combat", interval = 2000, chance = 65, type = COMBAT_LIFEDRAIN, minDamage = -923, maxDamage = -1200, range = 1, radius = 1, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1223, maxDamage = -1500},
+	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -1223, maxDamage = -1500, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {

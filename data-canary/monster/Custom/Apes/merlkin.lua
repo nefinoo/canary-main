@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "merlkin"
 monster.description = "a merlkin"
-monster.experience = 145
+monster.experience = 2050000
 monster.outfit = {
 	lookType = 117,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 230
-monster.maxHealth = 230
+monster.health = 176433
+monster.maxHealth = 176433
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6044
@@ -81,9 +81,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 25, attack = 15},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -30, maxDamage = -90, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 3000, chance = 34, type = COMBAT_ENERGYDAMAGE, minDamage = -15, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748},
+	{name ="combat", interval = 2000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 3000, chance = 34, type = COMBAT_ENERGYDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
 	{name ="poisonfield", interval = 1000, chance = 15, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
 }
 

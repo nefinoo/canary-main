@@ -94,8 +94,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -1037, maxDamage = -1350},
-	{name ="diabolic imp fireball", interval = 1000, chance = 100, minDamage = -1037, maxDamage = -1350, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1337, maxDamage = -1650},
+	{name ="diabolic imp fireball", interval = 1000, chance = 100, minDamage = -1337, maxDamage = -1650, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
 	{name ="hellspawn soulfire", interval = 2000, chance = 14, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 

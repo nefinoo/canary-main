@@ -9,7 +9,7 @@ function customSword.onUseWeapon(player, variant)
     local lvl = player:getLevel()
     local skill = player:getSkillLevel(SKILL_SWORD)
 
-    local dmgMax = ((lvl * 3) + (skill * 35)) / 2.90
+    local dmgMax = ((lvl * 3) + (skill * 35)) / 3.1
     local dmgMin = dmgMax / 1.5
 
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)

@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 70,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -88,7 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2690, maxDamage = -3497, range = 1, radius = 1, target = true}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {
@@ -96,7 +97,7 @@ monster.defenses = {
 	armor = 15,
 	{name ="speed", interval = 1000, chance = 15, speed = {min = 290, max = 290}, duration = 6000, effect = CONST_ME_MAGIC_RED},
 	{name = "outfit", interval = 10000, chance = 15, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 5000, outfitMonster = "pig" },
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HEALING, minDamage = 13000, maxDamage = 15000, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_HEALING, minDamage = 3000, maxDamage = 5000, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
@@ -109,7 +110,3 @@ monster.loot = {
 }
 
 mType:register(monster)
-
-
-
-

@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 85,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -81,11 +81,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = true, effect = CONST_ME_EXPLOSIONHIT},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_SMALLCLOUDS},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, effect = CONST_ME_WATERSPLASH},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2884, maxDamage = -3750, length = 7, spread = 0, effect = CONST_ME_MORTAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -4874},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = true, effect = CONST_ME_EXPLOSIONHIT},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 4, target = false, effect = CONST_ME_SMALLCLOUDS},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, effect = CONST_ME_WATERSPLASH},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 7, spread = 0, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {
