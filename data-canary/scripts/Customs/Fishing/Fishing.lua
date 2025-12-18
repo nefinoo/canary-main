@@ -129,7 +129,7 @@ local function broadcastMessage(player, message, serverBC)
     local msg = message:gsub("|PLAYERNAME|", player:getName())
     if serverBC then
         Game.broadcastMessage(msg, MESSAGE_ADMINISTRATOR)
-		v:sendChannelMessage("", msg, TALKTYPE_CHANNEL_O, 9)
+		player:sendChannelMessage("", msg, TALKTYPE_CHANNEL_O, 9)
     else
         local players = Game.getPlayers()
         for _, v in ipairs(players) do

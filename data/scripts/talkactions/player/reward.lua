@@ -8,7 +8,7 @@ local config = {
 		{ id = 35280, charges = 50000 },
 		{ id = 44066, charges = 50000 },
 	},
-	storage = tonumber(Storage.PlayerWeaponReward), -- storage key, player can only win once
+	storage = 95112, -- storage key, player can only win once
 }
 
 local function sendExerciseRewardModal(player)
@@ -53,9 +53,9 @@ end
 
 local exerciseRewardModal = TalkAction("!reward")
 function exerciseRewardModal.onSay(player, words, param)
-	if not configManager.getBoolean(configKeys.TOGGLE_RECEIVE_REWARD) or player:getTown():getId() < TOWNS_LIST.AB_DENDRIEL then
-		return true
-	end
+	-- if not configManager.getBoolean(configKeys.TOGGLE_RECEIVE_REWARD) or player:getTown():getId() < TOWNS_LIST.AB_DENDRIEL then
+		-- return true
+	-- end
 	if player:getStorageValue(config.storage) > 0 then
 		player:sendTextMessage(MESSAGE_LOOK, "You already received your exercise weapon reward!")
 		return true

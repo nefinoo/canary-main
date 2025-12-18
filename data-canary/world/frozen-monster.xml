@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <monsters>
 	<monster centerx="530" centery="368" centerz="1" radius="3">
+		<monster name="Draken Spellweaver" x="2" y="-3" z="1" spawntime="60" />
 		<monster name="Draken Spellweaver" x="-2" y="-2" z="1" spawntime="60" />
-		<monster name="Draken Elite" x="-2" y="-1" z="1" spawntime="60" />
 		<monster name="Draken Warmaster" x="2" y="-1" z="1" spawntime="60" />
+		<monster name="Draken Elite" x="-2" y="0" z="1" spawntime="60" />
 		<monster name="Draken Warmaster" x="1" y="1" z="1" spawntime="60" />
+		<monster name="Draken Elite" x="0" y="2" z="1" spawntime="60" />
 	</monster>
 	<monster centerx="144" centery="352" centerz="2" radius="5">
 		<monster name="Dracola" x="1" y="0" z="2" spawntime="30" />
@@ -442,6 +444,10 @@
 		<monster name="Withered Soul" x="-1" y="0" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="1673" centery="90" centerz="6" radius="12">
+		<monster name="Deranged Pyro" x="-5" y="-8" z="6" spawntime="60" />
+		<monster name="Deranged Pyro" x="2" y="-7" z="6" spawntime="60" />
+		<monster name="Deranged Pyro" x="2" y="-3" z="6" spawntime="60" />
+		<monster name="Deranged Pyro" x="-4" y="-2" z="6" spawntime="60" />
 		<monster name="Deranged Phsyco" x="7" y="10" z="6" spawntime="30" />
 		<monster name="Deranged Phsyco" x="-1" y="11" z="6" spawntime="30" />
 	</monster>
@@ -4032,6 +4038,10 @@
 		<monster name="Draken Spellweaver" x="0" y="-2" z="8" spawntime="60" />
 		<monster name="Draken Warmaster" x="-1" y="-1" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="514" centery="338" centerz="8" radius="1">
+		<monster name="Draken Spellweaver" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Draken Spellweaver" x="0" y="1" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="524" centery="340" centerz="8" radius="3">
 		<monster name="Draken Warmaster" x="1" y="-1" z="8" spawntime="60" />
 		<monster name="Draken Warmaster" x="-1" y="0" z="8" spawntime="60" />
@@ -4309,8 +4319,17 @@
 		<monster name="Kongra" x="2" y="2" z="8" spawntime="60" />
 		<monster name="Kongra" x="-1" y="5" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="127" centery="494" centerz="8" radius="1">
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Merlkin" x="1" y="1" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="123" centery="499" centerz="8" radius="2">
 		<monster name="Merlkin" x="-1" y="-1" z="8" spawntime="60" />
+		<monster name="Merlkin" x="0" y="2" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="499" centerz="8" radius="1">
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Merlkin" x="0" y="1" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="138" centery="504" centerz="8" radius="2">
 		<monster name="Kongra" x="1" y="0" z="8" spawntime="60" />
@@ -6018,9 +6037,15 @@
 		<monster name="Behemoth" x="-5" y="-3" z="10" spawntime="60" />
 		<monster name="Behemoth" x="4" y="1" z="10" spawntime="60" />
 	</monster>
+	<monster centerx="175" centery="223" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
+	</monster>
 	<monster centerx="143" centery="224" centerz="10" radius="5">
 		<monster name="Behemoth" x="4" y="-1" z="10" spawntime="60" />
 		<monster name="Behemoth" x="1" y="3" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="180" centery="224" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="190" centery="225" centerz="10" radius="5">
 		<monster name="Behemoth" x="0" y="-2" z="10" spawntime="60" />
@@ -6028,6 +6053,12 @@
 	<monster centerx="201" centery="230" centerz="10" radius="5">
 		<monster name="Behemoth" x="-4" y="-1" z="10" spawntime="60" />
 		<monster name="Behemoth" x="4" y="1" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="143" centery="235" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="141" centery="237" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="948" centery="240" centerz="10" radius="5">
 		<monster name="Orshabaal" x="-2" y="-1" z="10" spawntime="30" />
@@ -6042,6 +6073,9 @@
 	</monster>
 	<monster centerx="214" centery="243" centerz="10" radius="5">
 		<monster name="Behemoth" x="2" y="1" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="206" centery="248" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="936" centery="248" centerz="10" radius="5">
 		<monster name="Orshabaal" x="-1" y="-1" z="10" spawntime="30" />
@@ -6059,6 +6093,9 @@
 	<monster centerx="952" centery="252" centerz="10" radius="5">
 		<monster name="Demon" x="-1" y="-1" z="10" spawntime="30" />
 		<monster name="Demon" x="1" y="-1" z="10" spawntime="30" />
+	</monster>
+	<monster centerx="202" centery="253" centerz="10" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="210" centery="253" centerz="10" radius="1">
 		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
@@ -6611,6 +6648,14 @@
 		<monster name="Behemoth" x="5" y="1" z="11" spawntime="60" />
 		<monster name="Behemoth" x="-3" y="5" z="11" spawntime="60" />
 	</monster>
+	<monster centerx="154" centery="258" centerz="11" radius="1">
+		<monster name="Infernalist" x="0" y="0" z="11" spawntime="60" />
+		<monster name="Infernalist" x="1" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="156" centery="258" centerz="11" radius="1">
+		<monster name="Infernalist" x="0" y="0" z="11" spawntime="60" />
+		<monster name="Infernalist" x="1" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="184" centery="263" centerz="11" radius="5">
 		<monster name="Behemoth" x="3" y="-1" z="11" spawntime="60" />
 		<monster name="Behemoth" x="-1" y="2" z="11" spawntime="60" />
@@ -6621,6 +6666,15 @@
 	<monster centerx="146" centery="265" centerz="11" radius="5">
 		<monster name="Behemoth" x="2" y="-3" z="11" spawntime="60" />
 		<monster name="Behemoth" x="0" y="3" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="156" centery="265" centerz="11" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="265" centerz="11" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="174" centery="265" centerz="11" radius="1">
+		<monster name="Behemoth" x="0" y="0" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="541" centery="267" centerz="11" radius="3">
 		<monster name="Draken Spellweaver" x="2" y="-1" z="11" spawntime="60" />
@@ -6889,26 +6943,20 @@
 		<monster name="Behemoth" x="2" y="2" z="12" spawntime="60" />
 	</monster>
 	<monster centerx="181" centery="252" centerz="12" radius="5">
+		<monster name="Dragon Lord" x="1" y="1" z="12" spawntime="60" />
 		<monster name="Behemoth" x="2" y="1" z="12" spawntime="60" />
 		<monster name="beholder" x="3" y="4" z="12" spawntime="60" />
 	</monster>
 	<monster centerx="184" centery="260" centerz="12" radius="5">
 		<monster name="Behemoth" x="1" y="0" z="12" spawntime="60" />
+		<monster name="Dragon Lord" x="0" y="1" z="12" spawntime="60" />
+		<monster name="Behemoth" x="-2" y="2" z="12" spawntime="60" />
 	</monster>
 	<monster centerx="195" centery="261" centerz="12" radius="5">
 		<monster name="Behemoth" x="-2" y="-2" z="12" spawntime="60" />
 		<monster name="Dragon Lord" x="2" y="0" z="12" spawntime="60" />
 		<monster name="Behemoth" x="3" y="2" z="12" spawntime="60" />
 		<monster name="beholder" x="1" y="4" z="12" spawntime="60" />
-	</monster>
-	<monster centerx="167" centery="268" centerz="12" radius="5">
-		<monster name="War Wolf" x="2" y="-2" z="12" spawntime="60" />
-		<monster name="War Wolf" x="-4" y="-1" z="12" spawntime="60" />
-		<monster name="War Wolf" x="-1" y="-1" z="12" spawntime="60" />
-		<monster name="War Wolf" x="1" y="4" z="12" spawntime="60" />
-	</monster>
-	<monster centerx="165" centery="274" centerz="12" radius="1">
-		<monster name="War Wolf" x="0" y="0" z="12" spawntime="60" />
 	</monster>
 	<monster centerx="603" centery="286" centerz="12" radius="8">
 		<monster name="Ghastly Dragon" x="6" y="-7" z="12" spawntime="60" />
