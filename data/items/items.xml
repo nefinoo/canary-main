@@ -83197,7 +83197,7 @@ Granted by TibiaGoals.com"/>
 	</item>
 	
 	<!-- armas level 2500 -->
-	<item id="50639" article="an" name="ornamented crossbow">
+	<item id="53054" article="an" name="ornamented crossbow">
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="skilldist" value="10"/>
 		<attribute key="primarytype" value="distance weapons"/>
@@ -83217,7 +83217,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
-	<item id="50638" article="an" name="ornamented bow">
+	<item id="53053" article="an" name="ornamented bow">
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
@@ -83237,7 +83237,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
-	<item id="50636" article="a" name="ornamented wand">
+	<item id="53052" article="a" name="ornamented wand">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="range" value="4"/>
@@ -83251,7 +83251,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
-	<item id="50637" article="a" name="ornamented rod">
+	<item id="53051" article="a" name="ornamented rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="range" value="4"/>
@@ -83265,7 +83265,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
-	<item id="50635" article="the" name="ornamented seeker">
+	<item id="53050" article="the" name="ornamented seeker">
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="47"/>
@@ -83281,7 +83281,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="50633" article="a" name="ornamented basher">
+	<item id="53048" article="a" name="ornamented basher">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
@@ -83298,7 +83298,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="50634" article="a" name="ornamented axe">
+	<item id="53049" article="a" name="ornamented axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>

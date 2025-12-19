@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 }
 
-monster.health = 24
-monster.maxHealth = 2400000
+monster.health = 600000
+monster.maxHealth = 600000
 monster.race = "blood"
 monster.corpse = 6068
 monster.speed = 300
@@ -66,8 +66,8 @@ monster.summon = {
 	maxSummons = 3,
 	summons = {
 		{ name = "hell soldier", chance = 30, interval = 10000, count = 1 },
-		-- { name = "salazaari defender", chance = 30, interval = 10000, count = 1 },
-		-- { name = "outlawed warrior", chance = 30, interval = 10000, count = 1 },
+		{ name = "salazaari defender", chance = 30, interval = 10000, count = 1 },
+		{ name = "outlawed warrior", chance = 30, interval = 10000, count = 1 },
 	},
 }
 
@@ -118,17 +118,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -3500, maxDamage = -5000 },
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -6500, maxDamage = -9500 },
 	{ name = "energyfield", interval = 1250, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1250, chance = 14, type = COMBAT_PHYSICALDAMAGE, minDamage = -3500, maxDamage = -5000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -3500, maxDamage = -5000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "combat", interval = 1250, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -4500, maxDamage = -9000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -4500, maxDamage = -9000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
 }
 
 monster.defenses = {
 	defense = 13,
 	armor = 12,
 	--	mitigation = ???,
-	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 5000, maxDamage = 10000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 15000, maxDamage = 20000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
