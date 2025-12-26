@@ -80,8 +80,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -7383, maxDamage = -9598, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -7383, maxDamage = -9598, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -2300, maxDamage = -3000, condition = {type = CONDITION_POISON, startDamage = 300, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -4614, maxDamage = -6000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD},
 	{name ="condition", interval = 3000, chance = 30, type = CONDITION_POISON, startDamage = 0, tick = 5000, minDamage = -7383, maxDamage = -9598, length = 8, spread = 0, effect = CONST_ME_SMALLPLANTS},
 	{name ="speed", interval = 3000, chance = 30, speed = {min = -600, max = -600}, duration = 30000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
 	{name ="combat", interval = 1000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -7383, maxDamage = -9598, range = 7, radius = 3, target = false, effect = CONST_ME_MAGIC_RED}

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Majin Boo"
-monster.experience = 150
+monster.experience = 41000000
 monster.outfit = {
 	lookType = 1906,
 	lookHead = 0,
@@ -13,8 +13,13 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 95
-monster.maxHealth = 95
+monster.bosstiary = {
+	bossRaceId = 2642,
+	bossRace = RARITY_ARCHFOE,
+} 
+
+monster.health = 2646500
+monster.maxHealth = 2646500
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
@@ -43,8 +48,8 @@ monster.flags = {
 	canPushItems = true,
 	canPushCreatures = true,
 	staticAttackChance = 90,
-	targetDistance = 4,
-	runHealth = 20,
+	targetDistance = 1,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = true,
@@ -60,7 +65,7 @@ monster.light = {
 monster.summon = {
 	maxSummons = 2,
 	summons = {
-		{ name = "Hyaena", chance = 30, interval = 5000, count = 2 },
+		{ name = "Behemoth", chance = 30, interval = 5000, count = 2 },
 	},
 }
 
@@ -85,17 +90,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -10 },
-	{ name = "energyfield", interval = 1000, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1000, chance = 14, type = COMBAT_ENERGYDAMAGE, minDamage = 0, maxDamage = -25, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = 0, maxDamage = -45, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -6500, maxDamage = -7500, target = true }, -- basic attack (1000-3500)
+	{ name = "death beam", interval = 2000, chance = 25, minDamage = -8653, maxDamage = -11249, target = false }, -- -_death_beam(1000-2100)
+	{ name = "big death wave", interval = 2000, chance = 25, minDamage = -8653, maxDamage = -11249, target = false }, -- -_death_wave(1000-2000)
+	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 5, effect = CONST_ME_MORTAREA, target = false }, -- -_great_death_bomb(700-1000)
 }
 
 monster.defenses = {
 	defense = 13,
 	armor = 12,
 	--	mitigation = ???,
-	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 10, maxDamage = 20, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 19000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {

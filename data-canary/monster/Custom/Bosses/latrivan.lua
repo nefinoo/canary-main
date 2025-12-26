@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -1442, maxDamage = -1875},
 	{name ="combat", interval = 1000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 7, spread = 0, effect = CONST_ME_EXPLOSIONHIT}
 }
 

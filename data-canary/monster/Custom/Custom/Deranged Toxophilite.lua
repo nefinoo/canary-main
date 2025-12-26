@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -5537, maxDamage = -7198},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -5537, maxDamage = -7198, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -3460, maxDamage = -4500},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -3460, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_SMALLPLANTS}
 }
 
 monster.defenses = {

@@ -15,12 +15,12 @@ monster.outfit = {
 }
 
 monster.bosstiary = {
-	bossRaceId = 8999,
-	bossRace = RARITY_ARCHFOE,
+	bossRaceId = 2646,
+	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 175000
-monster.maxHealth = 175000
+monster.health = 75000
+monster.maxHealth = 75000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -97,14 +97,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "crystal coin", chance = 38000, maxCount = 20 },
+	{ name = "crystal coin", chance = 50000, maxCount = 20 },
 	{ name = "experience scroll", chance = 2500, maxCount = 2 },
 	{ name = "silver token", chance = 1500, maxCount = 1 },
-	{ id = 37609, chance = 1250}, -- sorcerer helmet
-	{ id = 37608, chance = 1250}, -- sorcerer armor
-	{ id = 37607, chance = 1250}, -- sorcerer legs
-	{ id = 37610, chance = 1250}, -- sorcerer boots
-	{ id = 6390, chance = 1250}, -- sorcerer shield
+	{ id = 37609, chance = 1250, unique = true}, -- sorcerer helmet
+	{ id = 37608, chance = 1150, unique = true}, -- sorcerer armor
+	{ id = 37607, chance = 1000, unique = true}, -- sorcerer legs
+	{ id = 37610, chance = 750, unique = true}, -- sorcerer boots
+	{ id = 6390, chance = 500, unique = true}, -- sorcerer shield
 	
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor

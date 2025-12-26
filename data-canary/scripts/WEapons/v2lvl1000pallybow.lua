@@ -14,8 +14,8 @@ local area = createCombatArea({
 -- ============================
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITAREA)
-combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_GREENSTAR)
+combat:setParameter(COMBAT_PARAM_EFFECT, 557)
+combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, 71)
 combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 combat:setArea(area)
 
@@ -59,4 +59,5 @@ viperStar:attack(330)
 viperStar:breakChance(0)
 viperStar:shootType(CONST_ANI_GREENSTAR)
 viperStar:maxHitChance(100)
+viperStar:level(1500)
 viperStar:register()

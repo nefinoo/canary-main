@@ -74,7 +74,7 @@ monster.defenses = {
 	armor = 11,
 	--	mitigation = ???,
 	{ name = "speed", interval = 2000, chance = 100, duration = 2000 },
-	{ name = "Outfiterr Boss", interval = 2000, chance = 100, duration = 2000 },
+	{ name = "Outfiterr", interval = 2000, chance = 100, duration = 2000 },
 }
 
 monster.elements = {

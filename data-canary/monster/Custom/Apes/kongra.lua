@@ -81,13 +81,14 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -8653, maxDamage = -11249},
 }
 
 monster.defenses = {
 	defense = 14,
 	armor = 18,
-	{name ="speed", interval = 1000, chance = 7, speed = {min = 260, max = 260}, duration = 3000, effect = CONST_ME_MAGIC_RED}
+	{name ="speed", interval = 1000, chance = 7, speed = {min = 260, max = 260}, duration = 3000, effect = CONST_ME_MAGIC_RED},
+	{ name = "combat", interval = 4000, chance = 50, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 19000, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
 monster.loot = {
@@ -95,14 +96,6 @@ monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 65},
 	{name = "small stone", chance = 2500, maxCount = 3},
 	{name = "ape fur", chance = 1000, maxCount = 2},
-	{id = 2853, chance = 100000, child = {
-			{name = "banana", chance = 5000, maxCount = 11},
-			{name = "protection amulet", chance = 2000},
-			{id = 3093, chance = 2857},
-			{id = 3050, chance = 1429},
-			{name = "plate armor", chance = 1667}
-		}
-	}
 }
 
 mType:register(monster)

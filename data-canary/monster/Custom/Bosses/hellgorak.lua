@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -2884, maxDamage = -3750},
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
 	{name ="combat", interval = 1000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_PURPLEENERGY},
 	{name ="combat", interval = 2000, chance = 34, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = false, effect = CONST_ME_STUN},
 	{name ="combat", interval = 1000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 5, target = true, effect = CONST_ME_FIREAREA},
@@ -90,7 +90,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 100,
 	armor = 100,
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HEALING, minDamage = 5000, maxDamage = 10000, effect = CONST_ME_MAGIC_GREEN}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HEALING, minDamage = 2400, maxDamage = 4500, effect = CONST_ME_MAGIC_GREEN}
 }
 
 monster.loot = {

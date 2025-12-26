@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Vegeta"
-monster.experience = 150
+monster.experience = 41000000
 monster.outfit = {
 	lookType = 1836,
 	lookHead = 0,
@@ -13,16 +13,21 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 95
-monster.maxHealth = 95
+monster.bosstiary = {
+	bossRaceId = 2640,
+	bossRace = RARITY_ARCHFOE,
+} 
+
+monster.health = 2117196
+monster.maxHealth = 2117196
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
 monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 5000,
-	chance = 8,
+	interval = 4000,
+	chance = 10,
 }
 
 monster.strategiesTarget = {
@@ -43,8 +48,8 @@ monster.flags = {
 	canPushItems = true,
 	canPushCreatures = true,
 	staticAttackChance = 90,
-	targetDistance = 4,
-	runHealth = 20,
+	targetDistance = 1,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = true,
@@ -60,7 +65,7 @@ monster.light = {
 monster.summon = {
 	maxSummons = 2,
 	summons = {
-		{ name = "Hyaena", chance = 30, interval = 5000, count = 2 },
+		{ name = "Draken Abomination", chance = 30, interval = 5000, count = 2 },
 	},
 }
 
@@ -85,17 +90,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -10 },
-	{ name = "energyfield", interval = 1000, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1000, chance = 14, type = COMBAT_ENERGYDAMAGE, minDamage = 0, maxDamage = -25, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = 0, maxDamage = -45, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -8653, maxDamage = -11249 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, length = 6, spread = 0, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, range = 3, length = 6, spread = 0, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 3, length = 6, spread = 0, effect = CONST_ME_HITBYFIRE, target = false },
+	{ name = "stone shower rune", interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, range = 7, target = false },
 }
 
 monster.defenses = {
 	defense = 13,
 	armor = 12,
 	--	mitigation = ???,
-	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 10, maxDamage = 20, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 3000, chance = 15, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 19000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {

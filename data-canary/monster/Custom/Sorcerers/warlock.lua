@@ -104,28 +104,20 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "red tome", chance = 400},
 	{id = 2853, chance = 100000, child = {
-			{name = "candlestick", chance = 15000},
 			{name = "ring of the sky", chance = 150},
-			{name = "small sapphire", chance = 1400, maxCount = 2},
 			{name = "gold coin", chance = 80000, maxCount = 50},
-			{name = "mind stone", chance = 2500},
-			{name = "poison dagger", chance = 5000},
 			{name = "skull staff", chance = 1428},
 			{name = "golden armor", chance = 588},
 			{id = 7991, chance = 2000},
 			{name = "cherry", chance = 20000, maxCount = 4},
 			{name = "dark mushroom", chance = 6666, maxCount = 5},
-			-- {id = 2793, chance = 6666, maxCount = 2}
 		}
 	},
 	{name = "piggy bank", chance = 1400},
 	{id = 3007, chance = 1000},
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "talon", chance = 1100, maxCount = 2},
-	-- {id = 3051, chance = 3000},
-	{id = 3509, chance = 10000},
 	{name = "bread", chance = 11000}
 }
 

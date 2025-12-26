@@ -109,6 +109,7 @@ function action.onUse(player, chest, fromPosition, target, toPosition, isHotkey)
     -- Dar ítems
     for _, item in ipairs(items) do
         player:addItemEx(item:clone(), true)
+        toPosition:sendMagicEffect(691)
     end
 
     return true

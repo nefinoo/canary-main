@@ -13,6 +13,18 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+monster.raceId = 2636
+monster.Bestiary = {
+	class = "Undead",
+	race = BESTY_RACE_UNDEAD,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Check the teleport bitch.",
+}
 
 monster.health = 13000
 monster.maxHealth = 13000

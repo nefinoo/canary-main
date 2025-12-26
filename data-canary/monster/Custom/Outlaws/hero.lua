@@ -82,15 +82,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -1730, maxDamage = -2250},
-	{name ="combat", interval = 3000, chance = 55, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
-	{name ="combat", interval = 2000, chance = 55, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -865, maxDamage = -1100},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {
 	defense = 20,
 	armor = 30,
-	{name ="combat", interval = 1000, chance = 40, type = COMBAT_HEALING, minDamage = 750, maxDamage = 1000, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 40, type = COMBAT_HEALING, minDamage = 750, maxDamage = 1000, effect = 567}
 }
 
 monster.loot = {
@@ -98,7 +98,7 @@ monster.loot = {
 	{name = "warlord sword", chance = 50},
 	{name = "experience scroll", chance = 2000},
 	{ name = "red piece of cloth", chance = 2006 },
-	-- {id = 9743, chance = 2500}
+	{id = 3082, chance = 2500}
 }
 
 mType:register(monster)

@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -5768, maxDamage = -7500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -5768, maxDamage = -7500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -95,6 +95,9 @@ monster.loot = {
 	{name = "crystal coin", chance = 70000, maxCount = 45},
 	{name = "crystal coin", chance = 50000, maxCount = 70},
 	{name = "crystal coin", chance = 20000, maxCount = 100},
+	{ name = "hook", chance = 450 },
+	{ name = "eye patch", chance = 420 },
+	{ name = "peg leg", chance = 510 },
 	{name = "assassin star", chance = 5},
 	{name = "justice seeker", chance = 5},
 	{name = "experience scroll", chance = 3000},

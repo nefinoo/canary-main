@@ -15,12 +15,12 @@ monster.outfit = {
 }
 
 monster.bosstiary = {
-	bossRaceId = 5002,
-	bossRace = RARITY_NEMESIS,
+	bossRaceId = 2643,
+	bossRace = RARITY_BANE,
 }
 
-monster.health = 50000
-monster.maxHealth = 50000
+monster.health = 15000
+monster.maxHealth = 15000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -109,7 +109,7 @@ monster.loot = {
 	{name = "fire sword", chance = 220},
 	{name = "shadow herb", chance = 20000, maxCount = 2},
 	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "soul stone", chance = 2500},
+	{name = "soul stone", chance = 2500, unique = true},
 	{name = "moonlight rod", chance = 500},
 	{name = "experience scroll", chance = 2500},
 	{id = 2853, chance = 100000, child = {

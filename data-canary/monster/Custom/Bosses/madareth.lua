@@ -81,7 +81,7 @@ monster.elements = {
 monster.attacks = {
 	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_WHIRLWINDAXE, effect = CONST_ME_MAGIC_RED},
 	{name ="combat", interval = 3000, chance = 34, type = COMBAT_ICEDAMAGE, minDamage = -2884, maxDamage = -3750, shootEffect = CONST_ANI_ICE, effect = CONST_ME_MAGIC_RED},
-	{name ="melee", interval = 1500, chance = 23, minDamage = -2884, maxDamage = -3750}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
 }
 
 monster.defenses = {

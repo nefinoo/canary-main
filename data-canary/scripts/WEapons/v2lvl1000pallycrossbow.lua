@@ -16,7 +16,7 @@ function viperStar.onUseWeapon(player, variant)
     local targetPos = target:getPosition()
 
     -- efecto distance
-    fromPos:sendDistanceEffect(targetPos, CONST_ANI_REDSTAR)
+    fromPos:sendDistanceEffect(targetPos, 70)
 
     -- daño
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)

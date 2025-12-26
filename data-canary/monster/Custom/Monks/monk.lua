@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -2249, maxDamage = -2924},
-	{name ="combat", interval = 4000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -2249, maxDamage = -2924, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -865, maxDamage = -1100},
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {
@@ -96,7 +96,7 @@ monster.loot = {
 	{name = "crystal coin", chance = 100000, maxCount = 15},
 	{name = "experience scroll", chance = 2500},
 	{ name = "ankh", chance = 2240 },
-	-- {id = 9743, chance = 2500}
+	{id = 3082, chance = 1500}
 }
 
 mType:register(monster)

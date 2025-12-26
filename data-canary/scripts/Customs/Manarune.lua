@@ -43,7 +43,7 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     local manaToAdd = math.random(minHeal, maxHeal)
     
     -- Efecto visual
-    targetPlayer:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
+    targetPlayer:getPosition():sendMagicEffect(564)
     
     -- Añadir mana
     targetPlayer:addMana(manaToAdd)

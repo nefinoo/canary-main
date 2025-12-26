@@ -81,14 +81,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -19037, maxDamage = -24748},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SMALLSTONE}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SMALLSTONE}
 }
 
 monster.defenses = {
 	defense = 12,
 	armor = 15,
-	{name ="speed", interval = 1000, chance = 12, speed = {min = 240, max = 240}, duration = 3000, effect = CONST_ME_MAGIC_RED}
+	{name ="speed", interval = 1000, chance = 12, speed = {min = 240, max = 240}, duration = 3000, effect = CONST_ME_MAGIC_RED},
+	{ name = "combat", interval = 4000, chance = 50, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 19000, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
 monster.loot = {
@@ -97,7 +98,6 @@ monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 65},
 	{name = "orange", chance = 6667, maxCount = 5},
 	{name = "melon", chance = 2857},
-	{name = "chain helmet", chance = 3333},
 	{name = "small stone", chance = 2500, maxCount = 3},
 	{name = "ape fur", chance = 1000, maxCount = 2}
 }

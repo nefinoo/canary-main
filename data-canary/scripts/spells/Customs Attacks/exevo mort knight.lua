@@ -95,7 +95,7 @@ deadlyReckoning[3].combat:setFormula(
 
 -- Berserker
 deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITAREA)
+deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_EFFECT, 287)
 deadlyReckoning[4].combat:setParameter(COMBAT_PARAM_USECHARGES, true)
 deadlyReckoning[4].combat:setArea(deadlyReckoning[4].area)
 deadlyReckoning[4].combat:setFormula(

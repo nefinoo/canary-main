@@ -27,7 +27,7 @@ end
 local function createCombat(area, combatFunc)
 	local initCombat = Combat()
 	initCombat:setCallback(CALLBACK_PARAM_TARGETCREATURE, combatFunc)
-	initCombat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_BLUE)
+	initCombat:setParameter(COMBAT_PARAM_EFFECT, 568)
 	initCombat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
 	initCombat:setParameter(COMBAT_PARAM_DISPEL, CONDITION_PARALYZE)
 	initCombat:setArea(createCombatArea(area))

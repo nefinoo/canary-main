@@ -65,7 +65,7 @@ local deadlyReckoning = {
 
 -- Wizard
 deadlyReckoning[1].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
-deadlyReckoning[1].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_FIREAREA)
+deadlyReckoning[1].combat:setParameter(COMBAT_PARAM_EFFECT, 376)
 deadlyReckoning[1].combat:setArea(deadlyReckoning[1].area)
 deadlyReckoning[1].combat:setFormula(
     COMBAT_FORMULA_LEVELMAGIC,

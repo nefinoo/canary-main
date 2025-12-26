@@ -19,5 +19,5 @@ end
 customSword:id(52366)
 customSword:attack(320)
 customSword:defense(130)
-customSword:level(1000)
+customSword:level(1500)
 customSword:register()

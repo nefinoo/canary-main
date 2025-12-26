@@ -96,13 +96,12 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "helmet of ultimate terror", chance = 500},
 	{name = "orange backpack", chance = 100},
 	{name = "crystal coin", chance = 10000, maxCount = 10},
 	{name = "experience scroll", chance = 3000},
 	{name = "experience scroll", chance = 3000},
+	{id = 3006, chance = 2600 },
 	{ name = "magic sulphur", chance = 600 },
-	{ name = "royal tapestry", chance = 520 }
 }
 
 mType:register(monster)

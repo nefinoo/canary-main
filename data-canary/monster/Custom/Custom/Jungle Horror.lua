@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -5537, maxDamage = -7198, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -5537, maxDamage = -7198, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -4500, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -3460, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {
@@ -106,17 +106,10 @@ monster.summons = {
 
 monster.loot = {
 	{name = "crystal coin", chance = 100000, maxCount = 10},
-	{name = "valentine's cake", chance = 2000},
-	{id = 6500, chance = 2000},
-	{id = 6541, chance = 2000},
-	{id = 6542, chance = 2000},
-	{id = 6543, chance = 2000},
-	{id = 6544, chance = 2000},
-	{id = 6545, chance = 2000},
 	{name = "candy", chance = 2000},
 	{name = "experience scroll", chance = 3000},
 	{name = "piece of draconian steel", chance = 500},
---	{id = 9743, chance = 2500}
+	{name = "tribal mask", chance = 100},
 }
 
 mType:register(monster)

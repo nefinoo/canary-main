@@ -32,10 +32,8 @@ local function removeMonsterFromArea(fromPos, toPos)
                         for _, creature in ipairs(creatures) do
                             if creature:isMonster() then
                                 creature:remove()
-                                print("There's a creature, removing it..")
                             elseif creature:isPlayer() then
                                 creature:teleportTo(exitPosition)
-                                print("There's a player, teleporting them out of the boss room..")
                             end
                         end
                     end
@@ -52,7 +50,6 @@ function isPositionEqual(pos1, pos2)
 end
 
 function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	print("Entro al use")
     if player:getStorageValue(config.storage) > os.time() then -- Is player cooldown locked?
         local remainingCooldown = player:getStorageValue(config.storage) - os.time()
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You still have a cooldown before you can enter the room again. Time remaining: " .. os.date("!%X", remainingCooldown))
@@ -112,8 +109,6 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
                 for _, creature in ipairs(creatures) do
                     if creature:isPlayer() then
                         local playerName = creature:getName()
-
-                        print("Teleporting player(s) into boss room:", playerName)
                         creature:teleportTo(newTeleportPos, true)
                         newTeleportPos:sendMagicEffect(CONST_ME_TELEPORT)
 

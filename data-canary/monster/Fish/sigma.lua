@@ -7,10 +7,10 @@ monster.outfit = {
 	lookType = 1562,
 }
 
-monster.bosstiary = {
-	bossRaceId = 8006,
-	bossRace = RARITY_NEMESIS,
-}
+-- monster.bosstiary = {
+	-- bossRaceId = 8006,
+	-- bossRace = RARITY_NEMESIS,
+-- }
 
 monster.health = 9000000
 monster.maxHealth = 9000000

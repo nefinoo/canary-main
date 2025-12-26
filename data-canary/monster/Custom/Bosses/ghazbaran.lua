@@ -83,20 +83,20 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -2884, maxDamage = -3750},
-	{name ="melee", interval = 2000, chance = 25, minDamage = -2884, maxDamage = -3750},
-	{name ="melee", interval = 3000, chance = 35, minDamage = -2884, maxDamage = -3750},
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
 	{name ="combat", interval = 4000, chance = 45, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, length = 8, spread = 0, effect = CONST_ME_MORTAREA},
 	{name ="combat", interval = 3000, chance = 35, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, range = 14, radius = 5, target = false, effect = CONST_ME_POFF},
 	{name ="combat", interval = 4000, chance = 45, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, range = 7, radius = 13, target = false, effect = CONST_ME_BLOCKHIT},
 	{name ="combat", interval = 4000, chance = 45, type = COMBAT_ENERGYDAMAGE, minDamage = -2884, maxDamage = -3750, radius = 14, target = false, effect = CONST_ME_LOSEENERGY},
-	{name ="melee", interval = 3000, chance = 35, minDamage = -2884, maxDamage = -3750}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -1442, maxDamage = -1875},
 }
 
 monster.defenses = {
 	defense = 100,
 	armor = 100,
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_HEALING, minDamage = 5000, maxDamage = 10000, effect = CONST_ME_MAGIC_BLUE},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_HEALING, minDamage = 2400, maxDamage = 4500, effect = CONST_ME_MAGIC_BLUE},
 	{name ="speed", interval = 4000, chance = 80, speed = {min = 440, max = 440}, duration = 6000, effect = CONST_ME_MAGIC_RED}
 }
 

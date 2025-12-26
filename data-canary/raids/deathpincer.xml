@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="The valicks have summoned an ancient insect!" />
+		<singlespawn delay="1000" name="Deathpincer" x="575" y="592" z="9" />
+</raid>

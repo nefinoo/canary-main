@@ -75,7 +75,7 @@ deadlyReckoning[1].combat:setFormula(
 
 -- Priest
 deadlyReckoning[2].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
-deadlyReckoning[2].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICETORNADO)
+deadlyReckoning[2].combat:setParameter(COMBAT_PARAM_EFFECT, 374)
 deadlyReckoning[2].combat:setArea(deadlyReckoning[2].area)
 deadlyReckoning[2].combat:setFormula(
     COMBAT_FORMULA_LEVELMAGIC,

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Rottie the Rotworm"
-monster.experience = 400
+monster.experience = 8500
 monster.outfit = {
 	lookType = 26,
 	lookHead = 0,
@@ -13,8 +13,13 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 650
-monster.maxHealth = 650
+monster.bosstiary = {
+	bossRaceId = 2645,
+	bossRace = RARITY_BANE,
+}
+
+monster.health = 65000
+monster.maxHealth = 65000
 monster.race = "blood"
 monster.corpse = 5967
 monster.speed = 90
@@ -71,7 +76,7 @@ monster.loot = {
 	{ id = 3582, chance = 3160, maxCount = 2 }, -- ham
 	{ id = 3264, chance = 3335 }, -- sword
 	{ id = 3300, chance = 900 }, -- katana
-	{ id = 3374, chance = 250 }, -- legion helmet
+	{ id = 3374, chance = 250, unique = true }, -- legion helmet
 }
 
 monster.attacks = {

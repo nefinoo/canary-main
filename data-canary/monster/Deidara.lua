@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an explosive clay master."
-monster.experience = 500000
+monster.experience = 1230000
 monster.outfit = {
 	lookType = 1907,
 	lookHead = 0,
@@ -14,12 +14,12 @@ monster.outfit = {
 }
 
 monster.bosstiary = {
-	bossRaceId = 9002,
+	bossRaceId = 2638,
 	bossRace = RARITY_ARCHFOE,
-}
+} 
 
-monster.health = 600000
-monster.maxHealth = 600000
+monster.health = 550000
+monster.maxHealth = 550000
 monster.race = "blood"
 monster.corpse = 6068
 monster.speed = 300
@@ -49,7 +49,7 @@ monster.flags = {
 	canPushCreatures = true,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 20,
+	runHealth = 5,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = true,
@@ -84,29 +84,29 @@ monster.loot = {
 	{ name = "crystal coin", chance = 38000, maxCount = 50 },
 	{ name = "experience scroll", chance = 5000, maxCount = 3 },
 	{ name = "silver token", chance = 6000, maxCount = 2 },
-	{ id = 51076, chance = 1250}, -- sorcerer helmet
-	{ id = 51077, chance = 1250}, -- sorcerer armor
-	{ id = 51078, chance = 1250}, -- sorcerer legs
-	{ id = 51079, chance = 1250}, -- sorcerer boots
-	{ id = 51080, chance = 1250}, -- sorcerer shield
+	{ id = 51076, chance = 1000, unique = true}, -- sorcerer helmet
+	{ id = 51077, chance = 1000, unique = true}, -- sorcerer armor
+	{ id = 51078, chance = 1000, unique = true}, -- sorcerer legs
+	{ id = 51079, chance = 1000, unique = true}, -- sorcerer boots
+	{ id = 51080, chance = 1000, unique = true}, -- sorcerer shield
 	
-	{ id = 51230, chance = 1250}, -- paladin helmet
-	{ id = 51231, chance = 1250}, -- paladin armor
-	{ id = 51232, chance = 1250}, -- paladin legs
-	{ id = 51233, chance = 1250}, -- paladin boots
-	{ id = 52367, chance = 1250}, -- paladin shield
+	{ id = 51230, chance = 1000, unique = true}, -- paladin helmet
+	{ id = 51231, chance = 1000, unique = true}, -- paladin armor
+	{ id = 51232, chance = 1000, unique = true}, -- paladin legs
+	{ id = 51233, chance = 1000, unique = true}, -- paladin boots
+	{ id = 52367, chance = 1000, unique = true}, -- paladin shield
 	
-	{ id = 51226, chance = 1250}, -- knight helmet
-	{ id = 51229, chance = 1250}, -- knight armor
-	{ id = 51212, chance = 1250}, -- knight legs
-	{ id = 51228, chance = 1250}, -- knight boots
-	{ id = 51697, chance = 1250}, -- knight shield
+	{ id = 51226, chance = 1000, unique = true}, -- knight helmet
+	{ id = 51229, chance = 1000, unique = true}, -- knight armor
+	{ id = 51212, chance = 1000, unique = true}, -- knight legs
+	{ id = 51228, chance = 1000, unique = true}, -- knight boots
+	{ id = 51697, chance = 1000, unique = true}, -- knight shield
 	
-	{ id = 51070, chance = 1250}, -- druid helmet
-	{ id = 51071, chance = 1250}, -- druid armor
-	{ id = 51072, chance = 1250}, -- druid legs
-	{ id = 51073, chance = 1250}, -- druid boots
-	{ id = 51074, chance = 1250}, -- druid shield
+	{ id = 51070, chance = 1000, unique = true}, -- druid helmet
+	{ id = 51071, chance = 1000, unique = true}, -- druid armor
+	{ id = 51072, chance = 1000, unique = true}, -- druid legs
+	{ id = 51073, chance = 1000, unique = true}, -- druid boots
+	{ id = 51074, chance = 1000, unique = true}, -- druid shield
 	
 	{ id = 51081, chance = 1000, unique = true}, -- wand
 	{ id = 53278, chance = 1000, unique = true}, -- bow
@@ -118,10 +118,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1500, chance = 100, minDamage = -6500, maxDamage = -9500 },
-	{ name = "energyfield", interval = 1250, chance = 8, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1250, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -4500, maxDamage = -9000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -4500, maxDamage = -9000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -1730, maxDamage = -2250 },
+	{ name = "energyfield", interval = 1250, chance = 12, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
+	{ name = "combat", interval = 1250, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -4500, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -4500, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
 }
 
 monster.defenses = {

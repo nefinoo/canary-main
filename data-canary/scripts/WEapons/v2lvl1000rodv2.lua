@@ -13,7 +13,7 @@ function deadlywand.onUseWeapon(player, variant)
 end
 
 deadlywand:id(51075)
-deadlywand:level(1000)
+deadlywand:level(1500)
 deadlywand:mana(250)
 deadlywand:damage(750, 1024)
 deadlywand:range(4)

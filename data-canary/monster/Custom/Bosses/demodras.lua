@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Demodras"
 monster.description = "Demodras"
-monster.experience = 4000
+monster.experience = 4250
 monster.outfit = {
 	lookType = 204,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 4500
-monster.maxHealth = 4500
+monster.health = 21500
+monster.maxHealth = 21500
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 5984
@@ -28,8 +28,8 @@ monster.changeTarget = {
 }
 
 monster.bosstiary = {
-	bossRaceId = 5001,
-	bossRace = RARITY_NEMESIS,
+	bossRaceId = 2644,
+	bossRace = RARITY_BANE,
 }
 
 monster.flags = {
@@ -122,7 +122,7 @@ monster.loot = {
 			{name = "tower shield", chance = 1333},
 			{name = "red dragon leather", chance = 5000},
 			{name = "red dragon scale", chance = 5000},
-			{id = 5919, chance = 1000}
+			{id = 5919, chance = 1000, unique = true}
 		}
 	}
 }

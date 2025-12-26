@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, mminDamage = -5537, maxDamage = -7198, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_EXPLOSIONHIT},
-	{name ="melee", interval = 1500, chance = 100, minDamage = -5537, maxDamage = -7198}
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, mminDamage = -3460, maxDamage = -4500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_EXPLOSIONHIT},
+	{name ="melee", interval = 1500, chance = 100, minDamage = -3460, maxDamage = -4500}
 }
 
 monster.defenses = {

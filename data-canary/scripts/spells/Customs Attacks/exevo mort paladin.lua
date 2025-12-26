@@ -85,7 +85,7 @@ deadlyReckoning[2].combat:setFormula(
 
 -- Archer
 deadlyReckoning[3].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
-deadlyReckoning[3].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HOLYAREA)
+deadlyReckoning[3].combat:setParameter(COMBAT_PARAM_EFFECT, 624)
 deadlyReckoning[3].combat:setArea(deadlyReckoning[3].area)
 deadlyReckoning[3].combat:setFormula(
     COMBAT_FORMULA_LEVELMAGIC,
@@ -106,7 +106,7 @@ deadlyReckoning[4].combat:setFormula(
 
 -- Gamemaster
 deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_STUN)
+deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_EFFECT, 624)
 deadlyReckoning[5].combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_DEATH)
 deadlyReckoning[5].combat:setArea(deadlyReckoning[5].area)
 deadlyReckoning[5].combat:setFormula(

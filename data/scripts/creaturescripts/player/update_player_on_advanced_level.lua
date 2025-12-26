@@ -21,6 +21,7 @@ function updatePlayerOnAdvancedLevel.onAdvance(player, skill, oldLevel, newLevel
 	player:getFinalLowLevelBonus()
 	player:getFinalLowLevelBonus()
 	player:getPosition():sendMagicEffect(284)
+	player:getPosition():sendMagicEffect(898)
 	player:save()
 	return true
 end
