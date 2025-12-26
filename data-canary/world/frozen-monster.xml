@@ -5377,6 +5377,7 @@
 		<monster name="Carnal Being" x="-7" y="15" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="7" y="17" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="-5" y="24" z="8" spawntime="60" />
+		<monster name="Carnal Being" x="22" y="25" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="10" y="28" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="532" centery="1697" centerz="8" radius="30">
@@ -5384,6 +5385,7 @@
 		<monster name="Carnal Being" x="-1" y="-20" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="-13" y="-17" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="3" y="-7" z="8" spawntime="60" />
+		<monster name="Carnal Being" x="-4" y="-1" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="5" y="8" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="-19" y="19" z="8" spawntime="60" />
 		<monster name="Carnal Being" x="-6" y="20" z="8" spawntime="60" />
@@ -6418,16 +6420,19 @@
 	</monster>
 	<monster centerx="505" centery="1692" centerz="9" radius="30">
 		<monster name="Gluttonous Pig" x="-3" y="-21" z="9" spawntime="60" />
+		<monster name="Cerebrus" x="4" y="-19" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="14" y="-19" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="-12" y="-18" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="2" y="-15" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="-21" y="-13" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="20" y="-11" z="9" spawntime="60" />
+		<monster name="Cerebrus" x="22" y="-3" z="9" spawntime="60" />
 		<monster name="Cerebrus" x="-25" y="-1" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="26" y="0" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="18" y="8" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="-27" y="10" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="-14" y="16" z="9" spawntime="60" />
+		<monster name="Cerebrus" x="-2" y="16" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="-23" y="18" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="2" y="20" z="9" spawntime="60" />
 		<monster name="Gluttonous Pig" x="14" y="20" z="9" spawntime="60" />
@@ -7236,11 +7241,14 @@
 		<monster name="Hoarder" x="-12" y="-20" z="10" spawntime="60" />
 		<monster name="Hoarder" x="7" y="-19" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="-5" y="-15" z="10" spawntime="60" />
+		<monster name="Spendthrift" x="15" y="-15" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="-21" y="-14" z="10" spawntime="60" />
 		<monster name="Hoarder" x="18" y="-12" z="10" spawntime="60" />
 		<monster name="Hoarder" x="-16" y="-11" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="22" y="-5" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="-27" y="-2" z="10" spawntime="60" />
+		<monster name="Hoarder" x="-24" y="-2" z="10" spawntime="60" />
+		<monster name="Hoarder" x="19" y="7" z="10" spawntime="60" />
 		<monster name="Hoarder" x="-22" y="9" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="22" y="9" z="10" spawntime="60" />
 		<monster name="Spendthrift" x="-22" y="11" z="10" spawntime="60" />
@@ -7545,12 +7553,17 @@
 		<monster name="Sullen Lurker" x="-12" y="-17" z="11" spawntime="60" />
 		<monster name="Wrathful Wraith" x="11" y="-16" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="2" y="-15" z="11" spawntime="60" />
+		<monster name="Wrathful Wraith" x="-7" y="-14" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="20" y="-11" z="11" spawntime="60" />
 		<monster name="Wrathful Wraith" x="-17" y="-9" z="11" spawntime="60" />
+		<monster name="Wrathful Wraith" x="23" y="-8" z="11" spawntime="60" />
+		<monster name="Sullen Lurker" x="20" y="-7" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="-18" y="0" z="11" spawntime="60" />
+		<monster name="Sullen Lurker" x="20" y="6" z="11" spawntime="60" />
 		<monster name="Wrathful Wraith" x="-22" y="10" z="11" spawntime="60" />
 		<monster name="Wrathful Wraith" x="15" y="12" z="11" spawntime="60" />
 		<monster name="Wrathful Wraith" x="9" y="14" z="11" spawntime="60" />
+		<monster name="Sullen Lurker" x="-15" y="16" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="-2" y="18" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="191" centery="251" centerz="12" radius="5">
@@ -7627,9 +7640,12 @@
 	<monster centerx="504" centery="1687" centerz="12" radius="30">
 		<monster name="Heretic" x="18" y="-11" z="12" spawntime="60" />
 		<monster name="Heretic" x="0" y="-10" z="12" spawntime="60" />
+		<monster name="Heretic" x="-17" y="-9" z="12" spawntime="60" />
 		<monster name="Heretic" x="10" y="-5" z="12" spawntime="60" />
 		<monster name="Heretic" x="-10" y="-2" z="12" spawntime="60" />
+		<monster name="Heretic" x="-18" y="-1" z="12" spawntime="60" />
 		<monster name="Heretic" x="11" y="5" z="12" spawntime="60" />
+		<monster name="Heretic" x="-21" y="8" z="12" spawntime="60" />
 		<monster name="Heretic" x="4" y="10" z="12" spawntime="60" />
 		<monster name="Heretic" x="-4" y="12" z="12" spawntime="60" />
 		<monster name="Heretic" x="-12" y="14" z="12" spawntime="60" />
@@ -7653,13 +7669,16 @@
 		<monster name="outlawed assassin" x="0" y="0" z="13" spawntime="60" />
 	</monster>
 	<monster centerx="502" centery="1690" centerz="13" radius="20">
+		<monster name="Atilla the Hun" x="1" y="-15" z="13" spawntime="60" />
 		<monster name="Violent Beast" x="-2" y="-13" z="13" spawntime="60" />
 		<monster name="Violent Beast" x="-8" y="-10" z="13" spawntime="60" />
 		<monster name="Violent Beast" x="16" y="-6" z="13" spawntime="60" />
+		<monster name="Atilla the Hun" x="18" y="-4" z="13" spawntime="60" />
 		<monster name="Atilla the Hun" x="-13" y="-1" z="13" spawntime="60" />
 		<monster name="Violent Beast" x="15" y="4" z="13" spawntime="256" />
 		<monster name="Violent Beast" x="-10" y="11" z="13" spawntime="60" />
 		<monster name="Violent Beast" x="6" y="12" z="13" spawntime="60" />
+		<monster name="Atilla the Hun" x="1" y="13" z="13" spawntime="60" />
 	</monster>
 	<monster centerx="696" centery="543" centerz="14" radius="4">
 		<monster name="frozenhell guard" x="-1" y="-2" z="14" spawntime="30" />
@@ -7730,6 +7749,6 @@
 		<monster name="frozenhell guard" x="-7" y="17" z="15" spawntime="30" />
 	</monster>
 	<monster centerx="502" centery="1690" centerz="15" radius="4">
-		<monster name="Satan" x="-2" y="0" z="15" spawntime="120" />
+		<monster name="Satan" x="-2" y="0" z="15" spawntime="3600" />
 	</monster>
 </monsters>

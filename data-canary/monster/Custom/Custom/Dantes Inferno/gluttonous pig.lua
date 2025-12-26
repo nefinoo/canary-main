@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Gluttonous Pig"
 monster.description = "gluttonous pig"
-monster.experience = 2000000
+monster.experience = 750000
 monster.outfit = {
 	lookType = 60,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 190000
-monster.maxHealth = 190000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6000

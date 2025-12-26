@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Wrathful Wraith"
 monster.description = "wrathful wraith"
-monster.experience = 5000000
+monster.experience = 2500000
 monster.outfit = {
 	lookType = 320,
 	lookHead = 0,

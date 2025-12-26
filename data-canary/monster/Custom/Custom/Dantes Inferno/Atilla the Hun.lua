@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Atilla the Hun"
 monster.description = "the scourge of God"
-monster.experience = 10000000
+monster.experience = 5000000
 monster.outfit = {
 	lookType = 131,
 	lookHead = 114,

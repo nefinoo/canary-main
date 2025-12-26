@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Satan"
 monster.description = "the adversary"
-monster.experience = 150000000
+monster.experience = 50000000
 monster.outfit = {
 	lookType = 248,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1500000
-monster.maxHealth = 1500000
+monster.health = 11500000
+monster.maxHealth = 11500000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 7091
@@ -92,12 +92,7 @@ monster.defenses = {
 
 monster.loot = {
 	{id = 3028, chance = 100, description2 = "tear of satan"},
-	{name = "bullseye potion", chance = 3000, description2 = "soul potion"},
-	{id = 9058, chance = 5000, maxCount = 25, description2 = "gold bars"},
-	{id = 4441, chance = 2000, description2 = "trial manashield ring"},
-	{name = "pure energy", chance = 5000, description2 = "upgrade crystal"},
-	{id = 4567, chance = 5000, description2 = "upgrade crystal"},
-	{id = 4455, chance = 5000, description2 = "upgrade crystal"}
+	-- {name = "bullseye potion", chance = 3000, description2 = "soul potion"},
 }
 
 mType:register(monster)
