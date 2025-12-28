@@ -109,7 +109,7 @@ monster.loot = {
 			{name = "knight armor", chance = 1000},
 			{name = "knight legs", chance = 500},
 			{name = "brass legs", chance = 10000},
-			{id = 5886, chance = 1000, maxCount = 3}
+			{id = 5886, chance = 1000, maxCount = 3},
 			{id = 12320, chance = 100}
 		}
 	}
