@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Lethal Lissy"
 monster.description = "Lethal Lissy"
-monster.experience = 500
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 155,
 	lookHead = 77,
@@ -93,7 +93,7 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "lethal lissy's shirt", chance = 100000},
+	{name = "lethal lissy's shirt", chance = 1000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 40},
 	{name = "knight armor", chance = 1200},
 	{name = "double axe", chance = 1500},

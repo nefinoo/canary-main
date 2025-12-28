@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Ron the Ripper"
 monster.description = "Ron the Ripper"
-monster.experience = 500
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 151,
 	lookHead = 95,
@@ -87,7 +87,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "ron the ripper's sabre", chance = 100000},
+	{name = "ron the ripper's sabre", chance = 1000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 50},
 	{name = "knight armor", chance = 1200},
 	{name = "double axe", chance = 1500},

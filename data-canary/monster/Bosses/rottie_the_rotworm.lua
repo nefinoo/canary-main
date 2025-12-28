@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Rottie the Rotworm"
-monster.experience = 8500
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 26,
 	lookHead = 0,
@@ -87,6 +87,13 @@ monster.defenses = {
 	defense = 11,
 	armor = 8,
 	mitigation = 0.38,
+}
+
+monster.loot = {
+	{name = "gold coin", chance = 100000, maxCount = 47},
+	{name = "gland", chance = 3333},
+	{name = "worm", chance = 20000, maxCount = 45}
+	{name = "legion helmet", chance = 1000, unique = true}
 }
 
 monster.elements = {

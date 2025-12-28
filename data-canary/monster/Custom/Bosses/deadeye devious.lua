@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deadeye Devious"
 monster.description = "Deadeye Devious"
-monster.experience = 500
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 151,
 	lookHead = 115,
@@ -92,7 +92,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "deadeye devious' eye patch", chance = 100000},
+	{name = "deadeye devious' eye patch", chance = 1000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 65},
 	{name = "knight armor", chance = 1200},
 	{name = "plate armor", chance = 4000},

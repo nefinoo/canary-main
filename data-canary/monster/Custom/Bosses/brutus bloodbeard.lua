@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Brutus Bloodbeard"
 monster.description = "Brutus Bloodbeard"
-monster.experience = 500
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 98,
 	lookHead = 0,
@@ -87,7 +87,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "brutus bloodbeard's hat", chance = 100000},
+	{name = "brutus bloodbeard's hat", chance = 1000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 40},
 	{name = "knight armor", chance = 1200},
 	{name = "plate armor", chance = 4000},

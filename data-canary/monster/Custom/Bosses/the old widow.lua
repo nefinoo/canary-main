@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "The Old Widow"
 monster.description = "the Old Widow"
-monster.experience = 2250
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 208,
 	lookHead = 20,
@@ -67,9 +67,9 @@ monster.immunities = {
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
-	{type = COMBAT_LIFEDRAIN, percent = 100},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
+	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
@@ -102,14 +102,15 @@ monster.loot = {
 	{name = "platinum amulet", chance = 400},
 	{name = "iron helmet", chance = 20000},
 	{name = "worm", chance = 50000, maxCount = 10},
-	{id = 5879, chance = 5000},
+	{id = 5879, chance = 5000, maxCount = 5},
 	{id = 2853, chance = 100000, child = {
 			{name = "steel helmet", chance = 10000},
 			{name = "gold coin", chance = 100000, maxCount = 40},
 			{name = "knight armor", chance = 1000},
 			{name = "knight legs", chance = 500},
 			{name = "brass legs", chance = 10000},
-			{id = 5886, chance = 800}
+			{id = 5886, chance = 1000, maxCount = 3}
+			{id = 12320, chance = 100}
 		}
 	}
 }

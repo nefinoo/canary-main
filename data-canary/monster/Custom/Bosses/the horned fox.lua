@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "The Horned Fox"
 monster.description = "the Horned Fox"
-monster.experience = 200
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 202,
 	lookHead = 0,
@@ -110,7 +110,7 @@ monster.loot = {
 	{name = "plate legs", chance = 1818},
 	{name = "broadsword", chance = 2857},
 	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "nose ring", chance = 5000},
+	{name = "nose ring", chance = 1000, unique = true},
 	{id = 2853, chance = 100000, child = {
 			{name = "wand of cosmic energy", chance = 1333},
 			{id = 3091, chance = 2000},

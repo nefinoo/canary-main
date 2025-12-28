@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <monsters>
+	<monster centerx="295" centery="1623" centerz="0" radius="5">
+		<monster name="Pirate Skeleton" x="1" y="-1" z="0" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-1" y="0" z="0" spawntime="60" />
+		<monster name="Pirate Skeleton" x="1" y="0" z="0" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-1" y="1" z="0" spawntime="60" />
+		<monster name="Pirate Skeleton" x="0" y="1" z="0" spawntime="60" />
+	</monster>
 	<monster centerx="530" centery="368" centerz="1" radius="3">
 		<monster name="Draken Spellweaver" x="2" y="-3" z="1" spawntime="60" />
 		<monster name="Draken Spellweaver" x="-2" y="-2" z="1" spawntime="60" />
@@ -32,6 +39,13 @@
 		<monster name="Fantasma" x="4" y="10" z="1" spawntime="60" />
 		<monster name="Calaca" x="18" y="10" z="1" spawntime="60" />
 	</monster>
+	<monster centerx="294" centery="1623" centerz="1" radius="5">
+		<monster name="Pirate Skeleton" x="0" y="-3" z="1" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-1" y="-1" z="1" spawntime="60" />
+		<monster name="Pirate Scavenger" x="2" y="-1" z="1" spawntime="60" />
+		<monster name="Pirate Ravager" x="1" y="0" z="1" spawntime="60" />
+		<monster name="Pirate Meddler" x="0" y="1" z="1" spawntime="60" />
+	</monster>
 	<monster centerx="144" centery="352" centerz="2" radius="5">
 		<monster name="Dracola" x="1" y="0" z="2" spawntime="30" />
 	</monster>
@@ -47,6 +61,90 @@
 	<monster centerx="424" centery="762" centerz="2" radius="5">
 		<monster name="arch angel" x="0" y="-1" z="2" spawntime="60" />
 		<monster name="arch angel" x="-2" y="0" z="2" spawntime="60" />
+	</monster>
+	<monster centerx="294" centery="1622" centerz="2" radius="5">
+		<monster name="Pirate Hatcheteer" x="1" y="-1" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="-1" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-1" y="1" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="0" y="1" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="2" y="1" z="2" spawntime="60" />
+	</monster>
+	<monster centerx="287" centery="1658" centerz="2" radius="30">
+		<monster name="Pirate Ravager" x="-3" y="6" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-1" y="7" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-1" y="8" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="2" y="8" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="13" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="11" y="11" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="13" y="12" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-3" y="13" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="20" y="13" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-26" y="18" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-10" y="19" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-11" y="21" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-10" y="22" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-14" y="23" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="25" y="24" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-27" y="25" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="25" y="25" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-25" y="26" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="23" y="26" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-27" y="27" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="8" y="28" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-28" y="29" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="8" y="29" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="11" y="29" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="18" y="30" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="27" y="30" z="2" spawntime="60" />
+	</monster>
+	<monster centerx="324" centery="1689" centerz="2" radius="30">
+		<monster name="Pirate Hatcheteer" x="-26" y="0" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-18" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-5" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-3" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-17" y="11" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-19" y="12" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-2" y="12" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-10" y="14" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-6" y="16" z="2" spawntime="60" />
+	</monster>
+	<monster centerx="263" centery="1691" centerz="2" radius="30">
+		<monster name="Pirate Skeleton" x="-1" y="3" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-3" y="6" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-4" y="7" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-2" y="8" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-5" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-3" y="16" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="0" y="18" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="1" y="19" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="9" y="20" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="0" y="21" z="2" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="12" y="22" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="6" y="23" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="11" y="23" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="10" y="27" z="2" spawntime="60" />
+	</monster>
+	<monster centerx="283" centery="1753" centerz="2" radius="30">
+		<monster name="Pirate Ravager" x="-7" y="-18" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-5" y="-18" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="8" y="-17" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="4" y="-13" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="6" y="-13" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-2" y="-11" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="13" y="-9" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-9" y="-7" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-7" y="-6" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="-6" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="1" y="3" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="4" y="5" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="-10" y="6" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="-8" y="9" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-3" y="10" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="10" y="11" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-6" y="13" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="7" y="16" z="2" spawntime="60" />
+		<monster name="Pirate Ravager" x="5" y="18" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="7" y="20" z="2" spawntime="60" />
 	</monster>
 	<monster centerx="144" centery="352" centerz="3" radius="5">
 		<monster name="Drasilla" x="1" y="0" z="3" spawntime="30" />
@@ -64,9 +162,44 @@
 	<monster centerx="528" centery="374" centerz="3" radius="3">
 		<monster name="Draken Warmaster" x="1" y="-1" z="3" spawntime="60" />
 	</monster>
+	<monster centerx="429" centery="733" centerz="3" radius="3">
+		<monster name="Minotaur Archer" x="0" y="-2" z="3" spawntime="90" />
+		<monster name="Minotaur Archer" x="-2" y="1" z="3" spawntime="90" />
+		<monster name="Minotaur Archer" x="2" y="1" z="3" spawntime="90" />
+		<monster name="Minotaur Archer" x="0" y="2" z="3" spawntime="90" />
+	</monster>
+	<monster centerx="428" centery="745" centerz="3" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="1" z="3" spawntime="90" />
+	</monster>
+	<monster centerx="434" centery="745" centerz="3" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="0" z="3" spawntime="90" />
+	</monster>
+	<monster centerx="430" centery="749" centerz="3" radius="1">
+		<monster name="Minotaur Archer" x="1" y="-1" z="3" spawntime="90" />
+	</monster>
+	<monster centerx="434" centery="749" centerz="3" radius="1">
+		<monster name="Minotaur Mage" x="-1" y="-1" z="3" spawntime="90" />
+	</monster>
 	<monster centerx="424" centery="761" centerz="3" radius="5">
 		<monster name="Troll" x="-1" y="-1" z="3" spawntime="60" />
 		<monster name="Troll" x="-2" y="0" z="3" spawntime="60" />
+	</monster>
+	<monster centerx="294" centery="1623" centerz="3" radius="5">
+		<monster name="Pirate Hatcheteer" x="-1" y="-1" z="3" spawntime="60" />
+		<monster name="Pirate Skeleton" x="1" y="0" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="2" y="0" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="-1" y="1" z="3" spawntime="60" />
+		<monster name="Pirate Meddler" x="0" y="1" z="3" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="1690" centerz="3" radius="30" />
+	<monster centerx="288" centery="1694" centerz="3" radius="30">
+		<monster name="Pirate Scavenger" x="-7" y="-13" z="3" spawntime="60" />
+	</monster>
+	<monster centerx="311" centery="1741" centerz="3" radius="5">
+		<monster name="Pirate Ravager" x="0" y="-2" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-1" y="-1" z="3" spawntime="60" />
+		<monster name="Pirate Meddler" x="0" y="0" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-2" y="1" z="3" spawntime="60" />
 	</monster>
 	<monster centerx="513" centery="273" centerz="4" radius="5">
 		<monster name="Lizard Dragon Priest" x="0" y="-1" z="4" spawntime="60" />
@@ -127,17 +260,47 @@
 		<monster name="Training Monk" x="-1" y="-1" z="4" spawntime="60" />
 		<monster name="Training Monk" x="1" y="-1" z="4" spawntime="60" />
 	</monster>
+	<monster centerx="429" centery="733" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="425" centery="737" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="1" y="1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="431" centery="737" centerz="4" radius="1">
+		<monster name="Minotaur Guard" x="1" y="1" z="4" spawntime="90" />
+	</monster>
 	<monster centerx="573" centery="739" centerz="4" radius="1">
 		<monster name="Deranged Toxophilite" x="0" y="1" z="4" spawntime="60" direction="2" />
 	</monster>
 	<monster centerx="578" centery="739" centerz="4" radius="1">
 		<monster name="Jungle Beast" x="0" y="1" z="4" spawntime="60" direction="2" />
 	</monster>
+	<monster centerx="429" centery="741" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="0" y="-1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="434" centery="741" centerz="4" radius="1">
+		<monster name="Minotaur Guard" x="-1" y="-1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="423" centery="742" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="1" y="-1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="429" centery="746" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="0" y="1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="433" centery="746" centerz="4" radius="1">
+		<monster name="Minotaur Mage" x="-1" y="0" z="4" spawntime="90" />
+	</monster>
 	<monster centerx="561" centery="747" centerz="4" radius="1">
 		<monster name="Madareth" x="1" y="0" z="4" spawntime="60" direction="1" />
 	</monster>
 	<monster centerx="591" centery="747" centerz="4" radius="1">
 		<monster name="Infested Bat" x="-1" y="0" z="4" spawntime="60" direction="3" />
+	</monster>
+	<monster centerx="429" centery="752" centerz="4" radius="1">
+		<monster name="Minotaur Mage" x="1" y="-1" z="4" spawntime="90" />
+	</monster>
+	<monster centerx="435" centery="752" centerz="4" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="0" z="4" spawntime="90" />
 	</monster>
 	<monster centerx="561" centery="752" centerz="4" radius="1">
 		<monster name="Hercules" x="1" y="0" z="4" spawntime="60" direction="1" />
@@ -179,6 +342,147 @@
 	</monster>
 	<monster centerx="1526" centery="1531" centerz="4" radius="5">
 		<monster name="Naberious" x="0" y="-4" z="4" spawntime="30" />
+	</monster>
+	<monster centerx="291" centery="1621" centerz="4" radius="30">
+		<monster name="Pirate Meddler" x="3" y="-1" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="5" y="1" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="4" y="2" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="2" y="3" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="4" y="4" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-21" y="23" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-22" y="24" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-5" y="25" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-21" y="26" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-4" y="26" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-6" y="27" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-2" y="27" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-24" y="30" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="1" y="30" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="278" centery="1661" centerz="4" radius="30">
+		<monster name="Pirate Skeleton" x="-1" y="-9" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-10" y="-8" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-12" y="-7" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="21" y="-7" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="23" y="-7" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-14" y="-6" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="22" y="-5" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="26" y="-5" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="27" y="-1" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-10" y="2" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-15" y="5" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-12" y="5" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-9" y="5" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-9" y="7" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="29" y="8" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="30" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="21" y="10" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="30" y="10" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="20" y="13" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-11" y="15" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="22" y="15" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-12" y="16" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="23" y="17" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="24" y="17" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-12" y="18" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-11" y="20" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-8" y="28" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-6" y="28" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-5" y="29" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-1" y="29" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="30" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="324" centery="1679" centerz="4" radius="30">
+		<monster name="Pirate Ravager" x="-11" y="-23" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-11" y="-21" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-13" y="-19" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-10" y="-8" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="21" y="7" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="21" y="8" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="5" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="7" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="19" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-11" y="11" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-16" y="13" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-14" y="13" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-14" y="19" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-19" y="20" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-20" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-30" y="29" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-22" y="29" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="300" centery="1706" centerz="4" radius="30">
+		<monster name="Pirate Scavenger" x="-17" y="-14" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-18" y="-10" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-19" y="-7" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-11" y="-1" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-18" y="0" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-13" y="1" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-10" y="1" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="0" y="6" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="6" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="11" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="17" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="19" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="23" y="9" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="3" y="10" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-17" y="15" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-18" y="17" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-12" y="17" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-17" y="19" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="22" y="19" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-20" y="20" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="19" y="20" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="20" y="21" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="23" y="21" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-4" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="4" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="16" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-6" y="23" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-2" y="24" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-5" y="25" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="7" y="25" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="28" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="6" y="28" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="302" centery="1762" centerz="4" radius="30">
+		<monster name="Pirate Hatcheteer" x="9" y="-22" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="13" y="-22" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="8" y="-21" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="9" y="-21" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="12" y="-21" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="14" y="-21" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="0" y="-20" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="-20" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="13" y="-20" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="0" y="-18" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="8" y="-18" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="8" y="-17" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="10" y="-16" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="-15" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="14" y="-15" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="11" y="-13" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="14" y="-13" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-1" y="-12" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="-10" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="2" y="-8" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-1" y="-7" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-1" y="-1" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="5" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="1" y="7" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="3" y="8" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="0" y="10" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="4" y="14" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="19" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-12" y="21" z="4" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-8" y="21" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-1" y="21" z="4" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-9" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="2" y="22" z="4" spawntime="60" />
+		<monster name="Pirate Ravager" x="-10" y="23" z="4" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-6" y="23" z="4" spawntime="60" />
+		<monster name="Pirate Meddler" x="-1" y="23" z="4" spawntime="60" />
 	</monster>
 	<monster centerx="1680" centery="104" centerz="5" radius="6">
 		<monster name="Deranged Toxophilite" x="-1" y="-4" z="5" spawntime="30" />
@@ -392,6 +696,7 @@
 		<monster name="undead mage" x="4" y="2" z="5" spawntime="10" />
 	</monster>
 	<monster centerx="415" centery="572" centerz="5" radius="2">
+		<monster name="Lizard Legionnaire" x="1" y="1" z="5" spawntime="60" />
 		<monster name="Demon" x="0" y="2" z="5" spawntime="90" />
 	</monster>
 	<monster centerx="423" centery="575" centerz="5" radius="4">
@@ -409,6 +714,7 @@
 		<monster name="Ghoul" x="0" y="1" z="5" spawntime="90" />
 	</monster>
 	<monster centerx="415" centery="587" centerz="5" radius="2">
+		<monster name="Lizard Legionnaire" x="-1" y="-1" z="5" spawntime="60" />
 		<monster name="Dragon Lord" x="0" y="-1" z="5" spawntime="90" />
 		<monster name="Dragon Lord" x="2" y="2" z="5" spawntime="90" />
 	</monster>
@@ -453,6 +759,9 @@
 		<monster name="Minotaur Guard" x="1" y="0" z="5" spawntime="90" />
 		<monster name="Minotaur Mage" x="-4" y="2" z="5" spawntime="90" />
 	</monster>
+	<monster centerx="429" centery="733" centerz="5" radius="1">
+		<monster name="Minotaur Guard" x="0" y="1" z="5" spawntime="90" />
+	</monster>
 	<monster centerx="961" centery="735" centerz="5" radius="1">
 		<monster name="Training Monk" x="-1" y="0" z="5" spawntime="60" />
 		<monster name="Training Monk" x="1" y="0" z="5" spawntime="60" />
@@ -461,10 +770,19 @@
 		<monster name="Training Monk" x="-1" y="0" z="5" spawntime="60" />
 		<monster name="Training Monk" x="1" y="0" z="5" spawntime="60" />
 	</monster>
+	<monster centerx="428" centery="737" centerz="5" radius="1">
+		<monster name="Minotaur Guard" x="1" y="0" z="5" spawntime="90" />
+	</monster>
 	<monster centerx="390" centery="739" centerz="5" radius="2">
 		<monster name="Minotaur Archer" x="-2" y="-2" z="5" spawntime="90" />
 		<monster name="Minotaur Guard" x="-2" y="1" z="5" spawntime="90" />
 		<monster name="Minotaur Archer" x="1" y="1" z="5" spawntime="90" />
+	</monster>
+	<monster centerx="427" centery="745" centerz="5" radius="1">
+		<monster name="Minotaur Guard" x="1" y="1" z="5" spawntime="90" />
+	</monster>
+	<monster centerx="432" centery="745" centerz="5" radius="1">
+		<monster name="Minotaur Guard" x="-1" y="1" z="5" spawntime="90" />
 	</monster>
 	<monster centerx="576" centery="754" centerz="5" radius="15">
 		<monster name="venom" x="0" y="-12" z="5" spawntime="60" direction="2" />
@@ -495,6 +813,61 @@
 	</monster>
 	<monster centerx="1526" centery="1530" centerz="5" radius="5">
 		<monster name="Semiazas" x="0" y="-3" z="5" spawntime="30" />
+	</monster>
+	<monster centerx="287" centery="1621" centerz="5" radius="30">
+		<monster name="Pirate Scavenger" x="3" y="-14" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="3" y="-12" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="4" y="-12" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="6" y="-12" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="10" y="-7" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="0" y="-4" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="8" y="-1" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="8" y="1" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-2" y="2" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="-1" y="2" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="8" y="2" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-4" y="3" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="-2" y="3" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="8" y="3" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-11" y="4" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="-12" y="5" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="-12" y="10" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-11" y="10" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-10" y="10" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-13" y="20" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="-12" y="20" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="-13" y="21" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-13" y="22" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-16" y="23" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="283" centery="1668" centerz="5" radius="30">
+		<monster name="Pirate Hatcheteer" x="-10" y="-15" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="-9" y="-12" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-11" y="-11" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="-10" y="-11" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="26" y="-9" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="27" y="-9" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="-8" y="-7" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-5" y="-2" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-3" y="-2" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="-5" y="0" z="5" spawntime="60" />
+		<monster name="Pirate Skeleton" x="4" y="2" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="5" y="6" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="4" y="7" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="7" y="7" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="8" y="9" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="1686" centerz="5" radius="1">
+		<monster name="Pirate Ravager" x="0" y="-1" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-1" y="0" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="330" centery="1765" centerz="5" radius="30">
+		<monster name="Pirate Skeleton" x="5" y="0" z="5" spawntime="60" />
+		<monster name="Pirate Scavenger" x="2" y="1" z="5" spawntime="60" />
+		<monster name="Pirate Ravager" x="3" y="1" z="5" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="5" y="2" z="5" spawntime="60" />
+		<monster name="Pirate Meddler" x="1" y="3" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="521" centery="1804" centerz="5" radius="3">
 		<monster name="Withered Soul" x="0" y="-1" z="5" spawntime="60" />
@@ -980,6 +1353,7 @@
 	<monster centerx="420" centery="590" centerz="6" radius="4">
 		<monster name="Warlock" x="-3" y="-3" z="6" spawntime="90" />
 		<monster name="Lich" x="2" y="-2" z="6" spawntime="90" />
+		<monster name="Behemoth" x="-2" y="1" z="6" spawntime="60" />
 		<monster name="Warlock" x="3" y="1" z="6" spawntime="90" />
 		<monster name="Lich" x="-1" y="2" z="6" spawntime="90" />
 	</monster>
@@ -1098,13 +1472,28 @@
 		<monster name="Minotaur Guard" x="-1" y="1" z="6" spawntime="90" />
 		<monster name="Minotaur Guard" x="2" y="2" z="6" spawntime="60" />
 	</monster>
+	<monster centerx="429" centery="734" centerz="6" radius="1">
+		<monster name="Minotaur Guard" x="-1" y="1" z="6" spawntime="90" />
+	</monster>
 	<monster centerx="397" centery="737" centerz="6" radius="2">
 		<monster name="Minotaur Guard" x="-1" y="-2" z="6" spawntime="60" />
 		<monster name="Minotaur Guard" x="1" y="-1" z="6" spawntime="90" />
 		<monster name="Minotaur Guard" x="-2" y="1" z="6" spawntime="60" />
 	</monster>
+	<monster centerx="425" centery="737" centerz="6" radius="1">
+		<monster name="Minotaur Guard" x="0" y="1" z="6" spawntime="90" />
+	</monster>
 	<monster centerx="389" centery="739" centerz="6" radius="2">
 		<monster name="Minotaur Guard" x="0" y="-1" z="6" spawntime="90" />
+	</monster>
+	<monster centerx="427" centery="741" centerz="6" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="1" z="6" spawntime="90" />
+	</monster>
+	<monster centerx="433" centery="741" centerz="6" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="0" z="6" spawntime="90" />
+	</monster>
+	<monster centerx="430" centery="745" centerz="6" radius="1">
+		<monster name="Minotaur Archer" x="1" y="-1" z="6" spawntime="90" />
 	</monster>
 	<monster centerx="464" centery="747" centerz="6" radius="1">
 		<monster name="Outfitter" x="0" y="-1" z="6" spawntime="60" />
@@ -1336,10 +1725,38 @@
 	<monster centerx="1526" centery="1533" centerz="6" radius="5">
 		<monster name="Mephistopheles" x="0" y="-5" z="6" spawntime="30" />
 	</monster>
+	<monster centerx="291" centery="1614" centerz="6" radius="30">
+		<monster name="Pirate Meddler" x="0" y="-18" z="6" spawntime="60" />
+		<monster name="Pirate Skeleton" x="2" y="-16" z="6" spawntime="60" />
+		<monster name="Pirate Ravager" x="-2" y="-15" z="6" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-3" y="-14" z="6" spawntime="60" />
+		<monster name="Pirate Scavenger" x="1" y="-14" z="6" spawntime="60" />
+		<monster name="Pirate Meddler" x="4" y="-14" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="321" centery="1663" centerz="6" radius="30">
+		<monster name="Pirate Hatcheteer" x="-9" y="-4" z="6" spawntime="60" />
+		<monster name="Pirate Ravager" x="-11" y="-3" z="6" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-6" y="-3" z="6" spawntime="60" />
+		<monster name="Pirate Scavenger" x="24" y="22" z="6" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="24" y="23" z="6" spawntime="60" />
+		<monster name="Pirate Ravager" x="25" y="23" z="6" spawntime="60" />
+	</monster>
 	<monster centerx="498" centery="1683" centerz="6" radius="4">
 		<monster name="The Leopard" x="-3" y="-1" z="6" spawntime="120" />
 		<monster name="The Lion" x="0" y="-1" z="6" spawntime="120" />
 		<monster name="The She-Wolf" x="3" y="-1" z="6" spawntime="120" />
+	</monster>
+	<monster centerx="329" centery="1758" centerz="6" radius="30">
+		<monster name="Pirate Hatcheteer" x="2" y="-2" z="6" spawntime="60" />
+		<monster name="Pirate Meddler" x="4" y="-1" z="6" spawntime="60" />
+		<monster name="Pirate Scavenger" x="6" y="-1" z="6" spawntime="60" />
+		<monster name="Pirate Skeleton" x="1" y="0" z="6" spawntime="60" />
+		<monster name="Pirate Ravager" x="3" y="1" z="6" spawntime="60" />
+		<monster name="Pirate Scavenger" x="1" y="6" z="6" spawntime="60" />
+		<monster name="Pirate Skeleton" x="0" y="7" z="6" spawntime="60" />
+		<monster name="Pirate Ravager" x="1" y="9" z="6" spawntime="60" />
+		<monster name="Pirate Meddler" x="2" y="10" z="6" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="1" y="11" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="490" centery="1802" centerz="6" radius="4">
 		<monster name="The Leopard" x="-4" y="-1" z="6" spawntime="120" />
@@ -1923,20 +2340,33 @@
 		<monster name="Scarab" x="-3" y="3" z="7" spawntime="30" />
 		<monster name="Scarab" x="3" y="3" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="216" centery="264" centerz="7" radius="4">
+		<monster name="Carniphila" x="0" y="-1" z="7" spawntime="90" />
+		<monster name="Carniphila" x="2" y="2" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="478" centery="264" centerz="7" radius="5">
 		<monster name="Lizard Legionnaire" x="1" y="0" z="7" spawntime="60" />
 		<monster name="Lizard Dragon Priest" x="4" y="0" z="7" spawntime="60" />
 		<monster name="Lizard High Guard" x="0" y="2" z="7" spawntime="60" />
 	</monster>
+	<monster centerx="209" centery="266" centerz="7" radius="1">
+		<monster name="Carniphila" x="0" y="1" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="513" centery="267" centerz="7" radius="1">
 		<monster name="Orc Berserker" x="1" y="0" z="7" spawntime="60" />
 		<monster name="Orc Berserker" x="-1" y="1" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="858" centery="267" centerz="7" radius="5" />
 	<monster centerx="516" centery="268" centerz="7" radius="1">
 		<monster name="Orc Warrior" x="1" y="1" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="862" centery="268" centerz="7" radius="5" />
+	<monster centerx="860" centery="268" centerz="7" radius="5">
+		<monster name="Scarab" x="2" y="-2" z="7" spawntime="30" />
+		<monster name="Scarab" x="-2" y="-1" z="7" spawntime="30" />
+		<monster name="Scarab" x="1" y="2" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="207" centery="269" centerz="7" radius="1">
+		<monster name="Carniphila" x="1" y="1" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="516" centery="273" centerz="7" radius="1">
 		<monster name="Orc Berserker" x="1" y="0" z="7" spawntime="60" />
 	</monster>
@@ -3244,6 +3674,9 @@
 		<monster name="Minotaur" x="-3" y="3" z="7" spawntime="90" />
 		<monster name="Minotaur" x="2" y="3" z="7" spawntime="90" />
 	</monster>
+	<monster centerx="432" centery="728" centerz="7" radius="1">
+		<monster name="Minotaur" x="1" y="-1" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="897" centery="728" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
 		<monster name="Training Monk" x="0" y="1" z="7" spawntime="60" />
@@ -3255,6 +3688,9 @@
 		<monster name="Minotaur" x="1" y="-2" z="7" spawntime="90" />
 		<monster name="Minotaur" x="1" y="2" z="7" spawntime="90" />
 	</monster>
+	<monster centerx="423" centery="734" centerz="7" radius="1">
+		<monster name="Minotaur" x="0" y="0" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="897" centery="734" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
 		<monster name="Training Monk" x="1" y="0" z="7" spawntime="60" />
@@ -3262,6 +3698,9 @@
 	<monster centerx="917" centery="734" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
 		<monster name="Training Monk" x="-1" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="429" centery="735" centerz="7" radius="1">
+		<monster name="Minotaur Archer" x="-1" y="1" z="7" spawntime="90" />
 	</monster>
 	<monster centerx="850" centery="736" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
@@ -3278,6 +3717,18 @@
 	<monster centerx="390" centery="739" centerz="7" radius="1">
 		<monster name="Minotaur" x="-1" y="-1" z="7" spawntime="90" />
 	</monster>
+	<monster centerx="426" centery="739" centerz="7" radius="1">
+		<monster name="Minotaur Guard" x="1" y="-1" z="7" spawntime="90" />
+	</monster>
+	<monster centerx="430" centery="739" centerz="7" radius="1">
+		<monster name="Minotaur Guard" x="-1" y="1" z="7" spawntime="90" />
+	</monster>
+	<monster centerx="418" centery="740" centerz="7" radius="1">
+		<monster name="Minotaur" x="1" y="-1" z="7" spawntime="90" />
+	</monster>
+	<monster centerx="430" centery="743" centerz="7" radius="1">
+		<monster name="Minotaur Archer" x="0" y="-1" z="7" spawntime="90" />
+	</monster>
 	<monster centerx="576" centery="756" centerz="7" radius="15">
 		<monster name="Giant Spider" x="-8" y="-7" z="7" spawntime="60" />
 		<monster name="Dragon" x="-4" y="-7" z="7" spawntime="60" />
@@ -3293,10 +3744,10 @@
 		<monster name="Ferumbras" x="-21" y="-16" z="7" spawntime="60" />
 		<monster name="Ron the Ripper" x="-28" y="-9" z="7" spawntime="60" />
 		<monster name="Lethal Lissy" x="-14" y="-9" z="7" spawntime="60" />
-		<monster name="The Old Widow" x="-28" y="-4" z="7" spawntime="60" />
+		<monster name="Brutus Bloodbeard" x="-28" y="-4" z="7" spawntime="60" />
 		<monster name="Deadeye Devious" x="-14" y="-4" z="7" spawntime="60" />
 		<monster name="The Horned Fox" x="-28" y="1" z="7" spawntime="60" />
-		<monster name="Brutus Bloodbeard" x="-14" y="1" z="7" spawntime="60" />
+		<monster name="The Old Widow" x="-14" y="1" z="7" spawntime="60" />
 		<monster name="Trunks" x="-7" y="1" z="7" spawntime="60" />
 		<monster name="Vegeta" x="7" y="1" z="7" spawntime="60" />
 		<monster name="Rottie the Rotworm" x="-28" y="6" z="7" spawntime="60" />
@@ -3882,6 +4333,18 @@
 	<monster centerx="1527" centery="1534" centerz="7" radius="5">
 		<monster name="Asmoday" x="0" y="-5" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="321" centery="1662" centerz="7" radius="30">
+		<monster name="Pirate Ravager" x="-1" y="-4" z="7" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-2" y="-3" z="7" spawntime="60" />
+		<monster name="Pirate Meddler" x="0" y="-3" z="7" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-2" y="-2" z="7" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="30" y="1" z="7" spawntime="30" />
+		<monster name="Pirate Ravager" x="30" y="7" z="7" spawntime="30" />
+		<monster name="Pirate Hatcheteer" x="22" y="12" z="7" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="24" y="24" z="7" spawntime="60" />
+		<monster name="Pirate Scavenger" x="25" y="25" z="7" spawntime="60" />
+		<monster name="Pirate Ravager" x="24" y="26" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="379" centery="1663" centerz="7" radius="30">
 		<monster name="Pirate Scavenger" x="8" y="-21" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="14" y="-21" z="7" spawntime="30" />
@@ -3904,13 +4367,11 @@
 		<monster name="Pirate Hatcheteer" x="3" y="-3" z="7" spawntime="60" />
 		<monster name="Pirate Ravager" x="9" y="-3" z="7" spawntime="60" />
 		<monster name="Pirate Meddler" x="6" y="-1" z="7" spawntime="30" />
-		<monster name="Pirate Hatcheteer" x="-28" y="0" z="7" spawntime="30" />
 		<monster name="Pirate Ravager" x="14" y="1" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="20" y="1" z="7" spawntime="30" />
 		<monster name="Pirate Meddler" x="26" y="1" z="7" spawntime="30" />
 		<monster name="Pirate Ravager" x="6" y="2" z="7" spawntime="30" />
 		<monster name="Pirate Scavenger" x="-19" y="3" z="7" spawntime="30" />
-		<monster name="Pirate Ravager" x="-28" y="6" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="-23" y="7" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="-18" y="7" z="7" spawntime="30" />
 		<monster name="Pirate Ravager" x="-15" y="7" z="7" spawntime="30" />
@@ -4982,6 +5443,11 @@
 	<monster centerx="286" centery="705" centerz="8" radius="1">
 		<monster name="Bonelord" x="0" y="0" z="8" spawntime="90" />
 	</monster>
+	<monster centerx="529" centery="706" centerz="8" radius="2">
+		<monster name="Giant Spider" x="1" y="-1" z="8" spawntime="90" />
+		<monster name="Giant Spider" x="-1" y="1" z="8" spawntime="60" />
+		<monster name="Giant Spider" x="1" y="2" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="311" centery="708" centerz="8" radius="3">
 		<monster name="Bonelord" x="0" y="-2" z="8" spawntime="90" />
 		<monster name="Bonelord" x="3" y="2" z="8" spawntime="90" />
@@ -5099,12 +5565,21 @@
 		<monster name="Training Monk" x="1" y="0" z="8" spawntime="60" />
 		<monster name="Training Monk" x="1" y="1" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="433" centery="750" centerz="8" radius="1">
+		<monster name="outlawed warrior" x="0" y="0" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="550" centery="752" centerz="8" radius="1">
 		<monster name="Training Monk" x="1" y="0" z="8" spawntime="60" />
 		<monster name="Training Monk" x="1" y="1" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="433" centery="757" centerz="8" radius="1">
+		<monster name="Orc Berserker" x="0" y="0" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="576" centery="759" centerz="8" radius="6">
 		<monster name="Bosses" x="0" y="-6" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="429" centery="761" centerz="8" radius="1">
+		<monster name="Orc Berserker" x="0" y="0" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="872" centery="777" centerz="8" radius="30">
 		<monster name="frozenhell guard" x="4" y="-29" z="8" spawntime="10" />
@@ -5365,6 +5840,14 @@
 		<monster name="fright" x="-2" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="3" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="3" y="4" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="343" centery="1682" centerz="8" radius="30">
+		<monster name="Pirate Scavenger" x="-1" y="-5" z="8" spawntime="60" />
+		<monster name="Pirate Ravager" x="1" y="-5" z="8" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="0" y="-2" z="8" spawntime="60" />
+		<monster name="Pirate Scavenger" x="0" y="2" z="8" spawntime="60" />
+		<monster name="Pirate Ravager" x="1" y="5" z="8" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="0" y="8" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="481" centery="1693" centerz="8" radius="30">
 		<monster name="Carnal Being" x="13" y="-24" z="8" spawntime="60" />

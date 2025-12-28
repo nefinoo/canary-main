@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "tiquandas revenge"
 monster.description = "a tiquandas revenge"
-monster.experience = 1755
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 120,
 	lookHead = 20,
@@ -67,7 +67,7 @@ monster.immunities = {
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -97,7 +97,7 @@ monster.loot = {
 	{name = "ham", chance = 20000, maxCount = 8},
 	{name = "small diamond", chance = 33333, maxCount = 3},
 	{name = "seeds", chance = 4000},
-	{name = "mandrake", chance = 100000},
+	{name = "mandrake", chance = 1000, unique = true},
 	{name = "worm", chance = 50000, maxCount = 10}
 }
 
