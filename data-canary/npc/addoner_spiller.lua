@@ -79,8 +79,8 @@ addoninfo = {
 ['first druid addon'] = {cost = 0, items = {{5896,50}, {5897,50}}, outfit_female = 148, outfit_male = 144, addon = 1, storageID = 51011},
 ['second druid addon'] = {cost = 0, items = {{5906,100}}, outfit_female = 148, outfit_male = 144, addon = 2, storageID = 51012},
 
-['first nobleman addon'] = {cost = 150000, items = {}, outfit_female = 140, outfit_male = 132, addon = 1, storageID = 51013},
-['second nobleman addon'] = {cost = 150000, items = {}, outfit_female = 140, outfit_male = 132, addon = 2, storageID = 51014},
+['first nobleman addon'] = {cost = 15000000, items = {}, outfit_female = 140, outfit_male = 132, addon = 1, storageID = 51013},
+['second nobleman addon'] = {cost = 15000000, items = {}, outfit_female = 140, outfit_male = 132, addon = 2, storageID = 51014},
 
 ['first oriental addon'] = {cost = 0, items = {{5945,1}}, outfit_female = 150, outfit_male = 146, addon = 1, storageID = 51015},
 ['second oriental addon'] = {cost = 0, items = {{5883,100}, {5895,100}, {5891,2}, {5912,100}}, outfit_female = 150, outfit_male = 146, addon = 2, storageID = 51016},
