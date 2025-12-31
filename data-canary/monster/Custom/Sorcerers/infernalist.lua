@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infernalist"
 monster.description = "an infernalist"
-monster.experience = 400000
+monster.experience = 3000000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 78,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 250000
-monster.maxHealth = 250000
+monster.health = 1500000
+monster.maxHealth = 1500000
 monster.runHealth = 1150
 monster.race = "blood"
 monster.corpse = 6080
@@ -82,23 +82,24 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 250, attack = 50},
-	{name ="combat", interval = 1000, chance = 85, type = COMBAT_FIREDAMAGE, minDamage = -1600, maxDamage = -2500, range = 3, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_MANADRAIN, minDamage = -500, maxDamage = -750, range = 3, radius = 3, target = true, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_TELEPORT},
-	{name ="firefield", interval = 1000, chance = 20, range = 3, radius = 3, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -1500, maxDamage = -1700, length = 8, spread = 0, effect = CONST_ME_FIREATTACK}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -10000 },
+	{ name = "combat", interval = 2000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -6500, maxDamage = -18000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_HITBYFIRE, target = true },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -9000, maxDamage = -18000, range = 7, radius = 3, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -5300, maxDamage = -12000, range = 7, radius = 3, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_TELEPORT, target = true },
+	{ name = "firefield", interval = 2000, chance = 15, range = 7, radius = 3, shootEffect = CONST_ANI_FIRE, target = true },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -15000, maxDamage = -25000, length = 8, spread = 0, effect = CONST_ME_FIREATTACK, target = false },
+	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_PHYSICALDAMAGE, minDamage = -10000, maxDamage = -15000, radius = 2, effect = CONST_ME_EXPLOSIONAREA, target = false },
 }
 
 monster.defenses = {
 	defense = 25,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 1000, maxDamage = 2130, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 3000, chance = 15, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 21300, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
 	{name = "orange backpack", chance = 100},
 	{name = "crystal coin", chance = 10000, maxCount = 10},
-	{name = "experience scroll", chance = 3000},
 	{name = "experience scroll", chance = 3000},
 	{id = 3006, chance = 2600 },
 	{ name = "magic sulphur", chance = 600 },

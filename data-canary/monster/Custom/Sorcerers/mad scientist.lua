@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Mad Scientist"
 monster.description = "a mad scientist"
-monster.experience = 205
+monster.experience = 3000000
 monster.outfit = {
 	lookType = 133,
 	lookHead = 97,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 325
-monster.maxHealth = 325
+monster.health = 5000000
+monster.maxHealth = 5000000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -51,6 +51,10 @@ monster.light = {
 	color = 0
 }
 
+monster.events = {
+	"MadScientistDeath",
+}
+
 monster.voices = {
 	interval = 3000,
 	chance = 10,
@@ -82,10 +86,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -35},
-	{name ="combat", interval = 1000, chance = 35, type = COMBAT_LIFEDRAIN, minDamage = -20, maxDamage = -60, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_POFF},
-	{name ="energy strike", interval = 2000, chance = 25, minDamage = 0, maxDamage = -30},
-	{name ="speed", interval = 3000, chance = 10, speed = {min = -300, max = -300}, duration = 2000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -35000 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -20000, maxDamage = -56000, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_POFF, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -20000, maxDamage = -36000, shootEffect = CONST_ANI_POISON, effect = CONST_ME_ENERGYHIT, target = false },
+	{ name = "speed", interval = 2000, chance = 10, speedChange = -300, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_SMALLPLANTS, target = true, duration = 2000 },
 }
 
 monster.defenses = {
@@ -95,21 +99,12 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 70, description2 = "gps"},
-	{name = "gold coin", chance = 100000, maxCount = 50, description2 = "gps"},
-	{name = "white mushroom", chance = 900, maxCount = 3, description2 = "white mushroom"},
-	{name = "soulfire rune", chance = 1500, description2 = "powder herb"},
-	{name = "mana potion", chance = 13500, description2 = "mp"},
-	{name = "health potion", chance = 12500, description2 = "hp"},
-	{name = "cookie", chance = 900, maxCount = 3, description2 = "cookie"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "small enchanted amethyst", chance = 700, description2 = "small enchanted amethyst"},
-			{name = "life crystal", chance = 800, description2 = "life crystal"},
-			{id = 7893, chance = 800, description2 = "cream cake"},
-			{id = 3046, chance = 800, description2 = "magic lightwand"},
-			{name = "boots of haste", chance = 200, description2 = "boh"}
-		}
-	}
+	{name = "orange backpack", chance = 100},
+	{name = "crystal coin", chance = 10000, maxCount = 30},
+	{name = "experience scroll", chance = 3000, maxCount = 5},
+	{name = "silver token", chance = 1500, maxCount = 5},
+	{id = 3006, chance = 2600 },
+	{ name = "magic sulphur", chance = 600, maxCount = 10},
 }
 
 mType:register(monster)

@@ -98,7 +98,16 @@
 		<monster name="Pirate Meddler" x="27" y="30" z="2" spawntime="60" />
 	</monster>
 	<monster centerx="324" centery="1689" centerz="2" radius="30">
+		<monster name="Pirate Scavenger" x="24" y="-2" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="19" y="-1" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="22" y="-1" z="2" spawntime="60" />
 		<monster name="Pirate Hatcheteer" x="-26" y="0" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="27" y="0" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="20" y="3" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="27" y="3" z="2" spawntime="60" />
+		<monster name="Pirate Scavenger" x="23" y="6" z="2" spawntime="60" />
+		<monster name="Pirate Meddler" x="25" y="6" z="2" spawntime="60" />
+		<monster name="Pirate Skeleton" x="21" y="7" z="2" spawntime="60" />
 		<monster name="Pirate Ravager" x="-18" y="10" z="2" spawntime="60" />
 		<monster name="Pirate Hatcheteer" x="-5" y="10" z="2" spawntime="60" />
 		<monster name="Pirate Ravager" x="-3" y="10" z="2" spawntime="60" />
@@ -191,7 +200,26 @@
 		<monster name="Pirate Ravager" x="-1" y="1" z="3" spawntime="60" />
 		<monster name="Pirate Meddler" x="0" y="1" z="3" spawntime="60" />
 	</monster>
-	<monster centerx="346" centery="1690" centerz="3" radius="30" />
+	<monster centerx="346" centery="1690" centerz="3" radius="30">
+		<monster name="Pirate Ravager" x="-1" y="-8" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="4" y="-8" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-4" y="-7" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="6" y="-6" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="8" y="-5" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="-8" y="-3" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="11" y="-2" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-3" y="0" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-1" y="0" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-8" y="1" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="11" y="1" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="-7" y="5" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="10" y="7" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="11" y="8" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="-6" y="10" z="3" spawntime="60" />
+		<monster name="Pirate Ravager" x="-4" y="10" z="3" spawntime="60" />
+		<monster name="Pirate Scavenger" x="8" y="10" z="3" spawntime="60" />
+		<monster name="Pirate Hatcheteer" x="-3" y="12" z="3" spawntime="60" />
+	</monster>
 	<monster centerx="288" centery="1694" centerz="3" radius="30">
 		<monster name="Pirate Scavenger" x="-7" y="-13" z="3" spawntime="60" />
 	</monster>
@@ -6748,8 +6776,14 @@
 		<monster name="Infernalist" x="-8" y="-9" z="9" spawntime="60" />
 		<monster name="Infernalist" x="-9" y="2" z="9" spawntime="60" />
 		<monster name="Infernalist" x="-5" y="4" z="9" spawntime="60" />
-		<monster name="Infernalist" x="7" y="7" z="9" spawntime="60" />
+		<monster name="Infernalist" x="1" y="7" z="9" spawntime="60" />
+		<monster name="Infernalist" x="-7" y="9" z="9" spawntime="60" />
+		<monster name="Infernalist" x="5" y="9" z="9" spawntime="60" />
+		<monster name="Infernalist" x="-8" y="12" z="9" spawntime="60" />
+		<monster name="Infernalist" x="6" y="12" z="9" spawntime="60" />
 		<monster name="Infernalist" x="-6" y="18" z="9" spawntime="60" />
+		<monster name="Infernalist" x="3" y="18" z="9" spawntime="60" />
+		<monster name="Infernalist" x="9" y="18" z="9" spawntime="60" />
 		<monster name="Infernalist" x="7" y="20" z="9" spawntime="60" />
 		<monster name="Infernalist" x="21" y="20" z="9" spawntime="60" />
 	</monster>
@@ -7539,6 +7573,16 @@
 		<monster name="Cyclops" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="Cyclops" x="2" y="1" z="10" spawntime="60" />
 	</monster>
+	<monster centerx="664" centery="757" centerz="10" radius="30">
+		<monster name="Infernalist" x="-1" y="-1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="0" y="-1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="1" y="-1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-20" y="27" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-20" y="28" z="10" spawntime="60" />
+		<monster name="Infernalist" x="7" y="28" z="10" spawntime="60" />
+		<monster name="Infernalist" x="1" y="29" z="10" spawntime="60" />
+		<monster name="Infernalist" x="7" y="30" z="10" spawntime="60" />
+	</monster>
 	<monster centerx="529" centery="758" centerz="10" radius="21">
 		<monster name="Infernalist" x="3" y="-21" z="10" spawntime="60" />
 		<monster name="Infernalist" x="11" y="-21" z="10" spawntime="60" />
@@ -7577,9 +7621,51 @@
 		<monster name="Infernalist" x="8" y="12" z="10" spawntime="60" />
 		<monster name="Infernalist" x="-12" y="13" z="10" spawntime="60" />
 		<monster name="Infernalist" x="6" y="18" z="10" spawntime="60" />
+		<monster name="Infernalist" x="17" y="19" z="10" spawntime="60" />
 		<monster name="Infernalist" x="-12" y="20" z="10" spawntime="60" />
 		<monster name="Infernalist" x="-3" y="20" z="10" spawntime="60" />
 		<monster name="Infernalist" x="-21" y="21" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="602" centery="776" centerz="10" radius="21">
+		<monster name="Infernalist" x="3" y="-7" z="10" spawntime="60" />
+		<monster name="Infernalist" x="3" y="-1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-3" y="2" z="10" spawntime="60" />
+		<monster name="Infernalist" x="3" y="3" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="669" centery="805" centerz="10" radius="29">
+		<monster name="Infernalist" x="-8" y="-17" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-9" y="-16" z="10" spawntime="60" />
+		<monster name="Infernalist" x="11" y="-14" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-25" y="-11" z="10" spawntime="60" />
+		<monster name="Infernalist" x="12" y="-11" z="10" spawntime="60" />
+		<monster name="Infernalist" x="19" y="-11" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-27" y="-10" z="10" spawntime="60" />
+		<monster name="Infernalist" x="0" y="-8" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-2" y="-6" z="10" spawntime="60" />
+		<monster name="Infernalist" x="19" y="-6" z="10" spawntime="60" />
+		<monster name="Infernalist" x="21" y="-6" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-25" y="-5" z="10" spawntime="60" />
+		<monster name="Infernalist" x="2" y="-4" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-27" y="1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-26" y="1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="0" y="1" z="10" spawntime="60" />
+		<monster name="Infernalist" x="4" y="2" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-24" y="5" z="10" spawntime="60" />
+		<monster name="Infernalist" x="21" y="5" z="10" spawntime="60" />
+		<monster name="Infernalist" x="23" y="5" z="10" spawntime="60" />
+		<monster name="Infernalist" x="22" y="7" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-22" y="10" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-1" y="11" z="10" spawntime="60" />
+		<monster name="Infernalist" x="0" y="12" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-21" y="13" z="10" spawntime="60" />
+		<monster name="Infernalist" x="20" y="13" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-10" y="15" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-14" y="16" z="10" spawntime="60" />
+		<monster name="Infernalist" x="-8" y="17" z="10" spawntime="60" />
+		<monster name="Infernalist" x="16" y="19" z="10" spawntime="60" />
+		<monster name="Mad Scientist" x="20" y="19" z="10" spawntime="60" />
+		<monster name="Infernalist" x="26" y="19" z="10" spawntime="60" />
+		<monster name="Infernalist" x="20" y="23" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="662" centery="866" centerz="10" radius="5">
 		<monster name="Medusa" x="0" y="-1" z="10" spawntime="60" />
@@ -7848,6 +7934,17 @@
 		<monster name="Poison Spider" x="-5" y="0" z="11" spawntime="30" />
 		<monster name="Poison Spider" x="3" y="1" z="11" spawntime="30" />
 		<monster name="Giant Spider" x="-2" y="3" z="11" spawntime="30" />
+	</monster>
+	<monster centerx="666" centery="745" centerz="11" radius="30">
+		<monster name="Infernalist" x="-20" y="-16" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-4" y="-16" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-11" y="-15" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-16" y="-14" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-3" y="-10" z="11" spawntime="60" />
+		<monster name="Infernalist" x="0" y="-3" z="11" spawntime="60" />
+		<monster name="Infernalist" x="2" y="0" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-2" y="1" z="11" spawntime="60" />
+		<monster name="Infernalist" x="-2" y="6" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="641" centery="836" centerz="11" radius="5">
 		<monster name="Medusa" x="-3" y="2" z="11" spawntime="60" />
@@ -8119,6 +8216,16 @@
 		<monster name="Minishabaal" x="-4" y="9" z="12" spawntime="20" />
 		<monster name="Minishabaal" x="1" y="9" z="12" spawntime="20" />
 		<monster name="Minishabaal" x="7" y="11" z="12" spawntime="20" />
+	</monster>
+	<monster centerx="665" centery="743" centerz="12" radius="30">
+		<monster name="Infernalist" x="1" y="-14" z="12" spawntime="60" />
+		<monster name="Infernalist" x="-3" y="-12" z="12" spawntime="60" />
+		<monster name="Infernalist" x="1" y="-4" z="12" spawntime="60" />
+		<monster name="Infernalist" x="-8" y="-1" z="12" spawntime="60" />
+		<monster name="Infernalist" x="12" y="0" z="12" spawntime="60" />
+		<monster name="Infernalist" x="-9" y="7" z="12" spawntime="60" />
+		<monster name="Infernalist" x="4" y="7" z="12" spawntime="60" />
+		<monster name="Infernalist" x="10" y="7" z="12" spawntime="60" />
 	</monster>
 	<monster centerx="504" centery="1687" centerz="12" radius="30">
 		<monster name="Heretic" x="18" y="-11" z="12" spawntime="60" />
