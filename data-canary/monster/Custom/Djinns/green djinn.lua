@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "green djinn"
 monster.description = "a green djinn"
-monster.experience = 215
+monster.experience = 5000000
 monster.outfit = {
 	lookType = 51,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 330
-monster.maxHealth = 330
+monster.health = 1000000
+monster.maxHealth = 1000000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6016
@@ -82,10 +82,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -120},
-	{name ="combat", interval = 1000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -45, maxDamage = -75, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="condition", interval = 2000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -50, maxDamage = -90, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -55, maxDamage = -105, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -15000},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -20000, maxDamage = -30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="condition", interval = 1000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
 	{name ="drunk", interval = 1000, chance = 15, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
 	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 20000, outfitMonster = "rabbit" },
 }

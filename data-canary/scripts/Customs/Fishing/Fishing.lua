@@ -211,5 +211,6 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 fishing:allowFarUse(true)
-fishing:id(3483, 9306)
+fishing:id(52053)
+-- fishing:id(3483, 9306)
 fishing:register()

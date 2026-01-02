@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 } 
 
-monster.health = 2646500
-monster.maxHealth = 2646500
+monster.health = 11500000
+monster.maxHealth = 11500000
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
@@ -90,17 +90,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -6500, maxDamage = -7500, target = true }, -- basic attack (1000-3500)
-	{ name = "death beam", interval = 2000, chance = 25, minDamage = -8653, maxDamage = -11249, target = false }, -- -_death_beam(1000-2100)
-	{ name = "big death wave", interval = 2000, chance = 25, minDamage = -8653, maxDamage = -11249, target = false }, -- -_death_wave(1000-2000)
-	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 5, effect = CONST_ME_MORTAREA, target = false }, -- -_great_death_bomb(700-1000)
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -30000, maxDamage = -60000, target = true }, -- basic attack (1000-3500)
+	{ name = "death beam", interval = 2000, chance = 25, minDamage = -10000, maxDamage = -20000, target = false }, -- -_death_beam(1000-2100)
+	{ name = "big death wave", interval = 2000, chance = 25, minDamage = -10000, maxDamage = -20000, target = false }, -- -_death_wave(1000-2000)
+	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -10000, maxDamage = -20000, radius = 5, effect = CONST_ME_MORTAREA, target = false }, -- -_great_death_bomb(700-1000)
 }
 
 monster.defenses = {
 	defense = 13,
 	armor = 12,
 	--	mitigation = ???,
-	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 19000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 4000, chance = 15, type = COMBAT_HEALING, minDamage = 155666, maxDamage = 225000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {

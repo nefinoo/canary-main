@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "marid"
 monster.description = "a marid"
-monster.experience = 325
+monster.experience = 6000000
 monster.outfit = {
 	lookType = 104,
 	lookHead = 20,
@@ -82,20 +82,20 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -150},
-	{name ="combat", interval = 1000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -40, maxDamage = -110, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -65, maxDamage = -115, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -15000, maxDamage = -20000},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -30000, maxDamage = -40000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
 	{name ="speed", interval = 1000, chance = 13, speed = {min = -650, max = -650}, duration = 15000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
 	{name ="drunk", interval = 1000, chance = 20, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
-	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 20000, outfitMonster = "rabbit" },
-	{name ="condition", interval = 2000, chance = 17, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -60, maxDamage = -100, radius = 3, target = false, effect = CONST_ME_ENERGYHIT}
+	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 30000, outfitMonster = "rat" },
+	{name ="condition", interval = 1000, chance = 17, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -35000, maxDamage = -50000, radius = 3, target = false, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
 	defense = 15,
 	armor = 22,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 50, maxDamage = 80, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 15000, maxDamage = 25000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.maxSummons = 2

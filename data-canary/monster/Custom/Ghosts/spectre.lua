@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "spectre"
 monster.description = "a spectre"
-monster.experience = 2100
+monster.experience = 7000000
 monster.outfit = {
 	lookType = 235,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1350
-monster.maxHealth = 1350
+monster.health = 1250000
+monster.maxHealth = 1250000
 monster.runHealth = 0
 monster.race = "undead"
 monster.corpse = 6348
@@ -80,16 +80,16 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -150, maxDamage = -350, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -35000, maxDamage = -50000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
 	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_POISON},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -10, maxDamage = -400, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
 	defense = 20,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 50, type = COMBAT_HEALING, minDamage = 75, maxDamage = 125, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 50, type = COMBAT_HEALING, minDamage = 15000, maxDamage = 25000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {

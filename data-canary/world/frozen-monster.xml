@@ -62,6 +62,21 @@
 		<monster name="arch angel" x="0" y="-1" z="2" spawntime="60" />
 		<monster name="arch angel" x="-2" y="0" z="2" spawntime="60" />
 	</monster>
+	<monster centerx="711" centery="963" centerz="2" radius="10">
+		<monster name="Hellraiser" x="-1" y="-8" z="2" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-8" z="2" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-6" z="2" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="-5" z="2" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-2" z="2" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-2" z="2" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="1" z="2" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="2" z="2" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="3" z="2" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="4" z="2" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="5" z="2" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="6" z="2" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="6" z="2" spawntime="60" />
+	</monster>
 	<monster centerx="294" centery="1622" centerz="2" radius="5">
 		<monster name="Pirate Hatcheteer" x="1" y="-1" z="2" spawntime="60" />
 		<monster name="Pirate Skeleton" x="2" y="-1" z="2" spawntime="60" />
@@ -193,6 +208,48 @@
 		<monster name="Troll" x="-1" y="-1" z="3" spawntime="60" />
 		<monster name="Troll" x="-2" y="0" z="3" spawntime="60" />
 	</monster>
+	<monster centerx="711" centery="962" centerz="3" radius="15">
+		<monster name="Dawnfire Asura" x="3" y="-13" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-12" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="-11" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-11" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-10" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-9" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-8" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="-8" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="-7" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-7" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="-5" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="-4" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-4" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-3" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-2" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="-2" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="-2" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="0" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="1" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="1" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="2" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="2" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="3" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="4" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="4" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="5" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="5" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="5" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="6" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="6" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="7" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="7" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-9" y="9" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="9" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="9" z="3" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="12" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="12" z="3" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="14" z="3" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="14" z="3" spawntime="60" />
+	</monster>
+	<monster centerx="167" centery="1289" centerz="3" radius="30" />
 	<monster centerx="294" centery="1623" centerz="3" radius="5">
 		<monster name="Pirate Hatcheteer" x="-1" y="-1" z="3" spawntime="60" />
 		<monster name="Pirate Skeleton" x="1" y="0" z="3" spawntime="60" />
@@ -356,6 +413,10 @@
 	<monster centerx="573" centery="767" centerz="4" radius="1">
 		<monster name="Spectre" x="0" y="0" z="4" spawntime="60" />
 	</monster>
+	<monster centerx="578" centery="767" centerz="4" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="1" z="4" spawntime="60" />
+	</monster>
 	<monster centerx="545" centery="808" centerz="4" radius="5">
 		<monster name="Parrot" x="-2" y="-3" z="4" spawntime="60" />
 		<monster name="Butterfly" x="-1" y="-3" z="4" spawntime="60" />
@@ -367,6 +428,107 @@
 	</monster>
 	<monster centerx="398" centery="863" centerz="4" radius="10">
 		<monster name="Zeus" x="0" y="-10" z="4" spawntime="30" />
+	</monster>
+	<monster centerx="703" centery="945" centerz="4" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="705" centery="946" centerz="4" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="708" centery="946" centerz="4" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="711" centery="946" centerz="4" radius="1">
+		<monster name="Midnight Asura" x="-1" y="-1" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="715" centery="946" centerz="4" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="710" centery="962" centerz="4" radius="15">
+		<monster name="Midnight Asura" x="3" y="-15" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="-15" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-10" y="-12" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-11" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="-10" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-9" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-9" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="-9" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-9" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="-8" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="-8" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="6" y="-8" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="-8" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="-7" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-7" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-6" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-6" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="13" y="-6" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="-5" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="-5" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-5" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="-4" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-4" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-4" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-12" y="-2" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-13" y="-1" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-1" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="12" y="-1" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="0" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="0" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-12" y="1" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="1" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="1" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-13" y="2" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="2" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="2" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="2" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-14" y="3" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="13" y="3" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="4" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="4" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="4" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="5" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="5" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="7" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="8" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="9" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="10" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="10" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="10" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="10" z="4" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="13" z="4" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="15" z="4" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="15" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="712" centery="979" centerz="4" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="161" centery="1293" centerz="4" radius="30">
+		<monster name="Werelion" x="-25" y="-19" z="4" spawntime="60" />
+		<monster name="Werelioness" x="-22" y="-18" z="4" spawntime="60" />
+		<monster name="Werelioness" x="-26" y="-15" z="4" spawntime="60" />
+		<monster name="Werelion" x="-23" y="-14" z="4" spawntime="60" />
+		<monster name="Werelioness" x="-22" y="13" z="4" spawntime="60" />
+		<monster name="Werelion" x="-21" y="13" z="4" spawntime="60" />
+		<monster name="Werelion" x="2" y="13" z="4" spawntime="60" />
+		<monster name="Werelion" x="11" y="13" z="4" spawntime="60" />
+		<monster name="Werelioness" x="7" y="14" z="4" spawntime="60" />
+		<monster name="Werelioness" x="-19" y="15" z="4" spawntime="60" />
+		<monster name="Werelioness" x="12" y="16" z="4" spawntime="60" />
+		<monster name="Werelion" x="-21" y="17" z="4" spawntime="60" />
+		<monster name="Werelioness" x="2" y="18" z="4" spawntime="60" />
+		<monster name="Werelion" x="7" y="18" z="4" spawntime="60" />
+	</monster>
+	<monster centerx="176" centery="1293" centerz="4" radius="30">
+		<monster name="Werelion" x="18" y="-19" z="4" spawntime="60" />
+		<monster name="Werelioness" x="23" y="-18" z="4" spawntime="60" />
+		<monster name="Werelioness" x="19" y="-14" z="4" spawntime="60" />
+		<monster name="Werelion" x="22" y="-14" z="4" spawntime="60" />
+		<monster name="Werelioness" x="22" y="12" z="4" spawntime="60" />
+		<monster name="Werelion" x="19" y="13" z="4" spawntime="60" />
+		<monster name="Werelioness" x="17" y="16" z="4" spawntime="60" />
+		<monster name="Werelion" x="21" y="16" z="4" spawntime="60" />
 	</monster>
 	<monster centerx="1526" centery="1531" centerz="4" radius="5">
 		<monster name="Naberious" x="0" y="-4" z="4" spawntime="30" />
@@ -838,6 +1000,167 @@
 	</monster>
 	<monster centerx="389" centery="863" centerz="5" radius="10">
 		<monster name="Zeus" x="0" y="-10" z="5" spawntime="30" />
+	</monster>
+	<monster centerx="704" centery="943" centerz="5" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="710" centery="944" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="-4" y="-2" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-2" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-1" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-1" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="716" centery="946" centerz="5" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="720" centery="949" centerz="5" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="705" centery="951" centerz="5" radius="5">
+		<monster name="Midnight Asura" x="-4" y="-4" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="-3" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="0" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="1" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="3" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="693" centery="952" centerz="5" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="714" centery="952" centerz="5" radius="5">
+		<monster name="Midnight Asura" x="3" y="-3" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="-1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="3" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="5" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="693" centery="954" centerz="5" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="727" centery="954" centerz="5" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="696" centery="956" centerz="5" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="720" centery="957" centerz="5" radius="5">
+		<monster name="Hellraiser" x="1" y="-1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-1" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="0" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="1" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="726" centery="957" centerz="5" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="702" centery="959" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="-5" y="-1" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="0" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="0" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="2" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="3" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="4" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="4" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="711" centery="960" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="2" y="-1" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="4" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="694" centery="962" centerz="5" radius="5">
+		<monster name="Hellraiser" x="0" y="-5" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="1" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="3" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="3" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="4" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="5" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="725" centery="964" centerz="5" radius="5">
+		<monster name="Hellraiser" x="1" y="-4" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-2" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-2" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="0" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="2" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="4" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="708" centery="965" centerz="5" radius="5">
+		<monster name="Midnight Asura" x="-2" y="2" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="2" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="718" centery="968" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="-4" y="-2" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="4" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="4" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="5" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="691" centery="969" centerz="5" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="702" centery="971" centerz="5" radius="5">
+		<monster name="Midnight Asura" x="0" y="0" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="0" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="2" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="2" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="700" centery="977" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="3" y="0" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="0" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="711" centery="977" centerz="5" radius="5">
+		<monster name="Dawnfire Asura" x="0" y="-4" z="5" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="0" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="1" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="2" z="5" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="2" z="5" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="3" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="161" centery="1292" centerz="5" radius="30">
+		<monster name="Werelioness" x="5" y="-24" z="5" spawntime="60" />
+		<monster name="Werelioness" x="8" y="-24" z="5" spawntime="60" />
+		<monster name="Werelion" x="6" y="-22" z="5" spawntime="60" />
+		<monster name="Werelion" x="3" y="-21" z="5" spawntime="60" />
+		<monster name="Werelion" x="10" y="-21" z="5" spawntime="60" />
+		<monster name="Werelion" x="-25" y="-17" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-20" y="-17" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-9" y="-15" z="5" spawntime="60" />
+		<monster name="Werelion" x="-3" y="-15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="5" y="-15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="19" y="-15" z="5" spawntime="60" />
+		<monster name="Werelion" x="13" y="-14" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-23" y="-11" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-21" y="-3" z="5" spawntime="60" />
+		<monster name="Werelion" x="-21" y="1" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-23" y="3" z="5" spawntime="60" />
+		<monster name="Werelioness" x="10" y="12" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-22" y="13" z="5" spawntime="60" />
+		<monster name="Werelion" x="7" y="14" z="5" spawntime="60" />
+		<monster name="Werelion" x="-22" y="15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-13" y="15" z="5" spawntime="60" />
+		<monster name="Werelion" x="-7" y="15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="18" y="15" z="5" spawntime="60" />
+		<monster name="Werelion" x="24" y="15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="-22" y="17" z="5" spawntime="60" />
+		<monster name="Werelioness" x="4" y="18" z="5" spawntime="60" />
+		<monster name="Werelioness" x="11" y="19" z="5" spawntime="60" />
+	</monster>
+	<monster centerx="176" centery="1292" centerz="5" radius="30">
+		<monster name="Werelioness" x="24" y="-18" z="5" spawntime="60" />
+		<monster name="Werelion" x="20" y="-15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="22" y="-13" z="5" spawntime="60" />
+		<monster name="Werelioness" x="20" y="-3" z="5" spawntime="60" />
+		<monster name="Werelion" x="20" y="2" z="5" spawntime="60" />
+		<monster name="Werelioness" x="19" y="6" z="5" spawntime="60" />
+		<monster name="Werelioness" x="17" y="16" z="5" spawntime="60" />
+		<monster name="Werelion" x="19" y="16" z="5" spawntime="60" />
+		<monster name="Werelioness" x="22" y="19" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="1526" centery="1530" centerz="5" radius="5">
 		<monster name="Semiazas" x="0" y="-3" z="5" spawntime="30" />
@@ -1602,6 +1925,128 @@
 		<monster name="Frozen Giantess" x="5" y="5" z="6" spawntime="30" />
 		<monster name="Enraged Frostbeast" x="-1" y="6" z="6" spawntime="30" />
 	</monster>
+	<monster centerx="710" centery="964" centerz="6" radius="25">
+		<monster name="Dawnfire Asura" x="-8" y="-25" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-25" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="9" y="-25" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="-24" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-24" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-24" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="-24" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="13" y="-23" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="-20" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-12" y="-19" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="-19" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-19" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-10" y="-18" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="-18" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="11" y="-18" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-20" y="-17" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-12" y="-17" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-17" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-17" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="-17" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="-17" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="18" y="-17" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-15" y="-16" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="-16" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="-16" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="-15" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-15" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-14" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-14" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="19" y="-14" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-13" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-13" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="21" y="-13" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-22" y="-12" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="20" y="-11" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-24" y="-10" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-18" y="-8" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-11" y="-8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-9" y="-8" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-8" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="10" y="-8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="16" y="-8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="22" y="-8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="-7" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-7" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-17" y="-6" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="10" y="-6" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="20" y="-6" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-25" y="-5" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="-5" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-16" y="-5" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-11" y="-5" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-5" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="-5" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="15" y="-5" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="22" y="-5" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-22" y="-4" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-18" y="-4" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-9" y="-4" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-4" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="-4" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="-4" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="15" y="-4" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-11" y="-3" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-3" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-16" y="-2" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="-2" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="-1" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="17" y="-1" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="22" y="-1" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-24" y="0" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-22" y="0" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-11" y="0" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="0" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="0" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="0" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="20" y="0" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="3" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="3" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="19" y="3" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-25" y="4" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-22" y="4" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="5" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="6" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="20" y="6" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="22" y="6" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="7" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="7" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="7" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-22" y="8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="8" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-9" y="9" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="20" y="9" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-11" y="10" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="10" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="10" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-15" y="11" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-13" y="11" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-11" y="11" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="11" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="11" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="12" y="11" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="12" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="13" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="12" y="13" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="14" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="14" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="15" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="15" z="6" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="16" z="6" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="17" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-9" y="21" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="21" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="22" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-9" y="24" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="24" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-14" y="25" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="25" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="25" z="6" spawntime="60" />
+		<monster name="Hellraiser" x="11" y="25" z="6" spawntime="60" />
+	</monster>
 	<monster centerx="588" centery="1022" centerz="6" radius="15">
 		<monster name="bone crusher" x="0" y="-10" z="6" spawntime="60" />
 		<monster name="hellfire" x="-5" y="-7" z="6" spawntime="60" />
@@ -1749,6 +2194,57 @@
 	<monster centerx="574" centery="1278" centerz="6" radius="1">
 		<monster name="Training Monk" x="-1" y="1" z="6" spawntime="60" />
 		<monster name="Training Monk" x="1" y="1" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="1291" centerz="6" radius="30">
+		<monster name="Werelioness" x="7" y="-23" z="6" spawntime="60" />
+		<monster name="Werelioness" x="11" y="-23" z="6" spawntime="60" />
+		<monster name="Werelion" x="11" y="-21" z="6" spawntime="60" />
+		<monster name="Werelion" x="6" y="-20" z="6" spawntime="60" />
+		<monster name="Werelion" x="9" y="-20" z="6" spawntime="60" />
+		<monster name="Werelion" x="-25" y="-16" z="6" spawntime="60" />
+		<monster name="Werelion" x="-18" y="-16" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-9" y="-14" z="6" spawntime="60" />
+		<monster name="Werelion" x="-4" y="-14" z="6" spawntime="60" />
+		<monster name="Werelioness" x="5" y="-14" z="6" spawntime="60" />
+		<monster name="Werelion" x="13" y="-14" z="6" spawntime="60" />
+		<monster name="Werelioness" x="20" y="-13" z="6" spawntime="60" />
+		<monster name="Werelion" x="29" y="-13" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-21" y="-12" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-5" y="-9" z="6" spawntime="60" />
+		<monster name="Werelion" x="2" y="-9" z="6" spawntime="60" />
+		<monster name="Werelioness" x="10" y="-9" z="6" spawntime="60" />
+		<monster name="Werelion" x="19" y="-9" z="6" spawntime="60" />
+		<monster name="Werelioness" x="27" y="-9" z="6" spawntime="60" />
+		<monster name="Werelion" x="-14" y="-5" z="6" spawntime="60" />
+		<monster name="Werelion" x="-20" y="-2" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-20" y="2" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-15" y="4" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-8" y="12" z="6" spawntime="60" />
+		<monster name="Werelion" x="9" y="12" z="6" spawntime="60" />
+		<monster name="Werelioness" x="20" y="12" z="6" spawntime="60" />
+		<monster name="Werelioness" x="5" y="14" z="6" spawntime="60" />
+		<monster name="Werelioness" x="12" y="14" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-21" y="16" z="6" spawntime="60" />
+		<monster name="Werelion" x="28" y="16" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-14" y="17" z="6" spawntime="60" />
+		<monster name="Werelion" x="-8" y="17" z="6" spawntime="60" />
+		<monster name="Werelioness" x="-4" y="17" z="6" spawntime="60" />
+		<monster name="Werelioness" x="24" y="17" z="6" spawntime="60" />
+		<monster name="Werelion" x="-18" y="18" z="6" spawntime="60" />
+		<monster name="Werelioness" x="8" y="20" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="174" centery="1291" centerz="6" radius="30">
+		<monster name="Werelion" x="23" y="-15" z="6" spawntime="60" />
+		<monster name="Werelioness" x="28" y="-15" z="6" spawntime="60" />
+		<monster name="Werelioness" x="20" y="-14" z="6" spawntime="60" />
+		<monster name="Werelion" x="17" y="-2" z="6" spawntime="60" />
+		<monster name="Werelioness" x="18" y="0" z="6" spawntime="60" />
+		<monster name="Werelioness" x="22" y="1" z="6" spawntime="60" />
+		<monster name="Werelion" x="21" y="4" z="6" spawntime="60" />
+		<monster name="Werelioness" x="16" y="11" z="6" spawntime="60" />
+		<monster name="Werelioness" x="19" y="17" z="6" spawntime="60" />
+		<monster name="Werelion" x="22" y="19" z="6" spawntime="61184" />
+		<monster name="Werelion" x="23" y="19" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="1526" centery="1533" centerz="6" radius="5">
 		<monster name="Mephistopheles" x="0" y="-5" z="6" spawntime="30" />
@@ -4067,6 +4563,26 @@
 	<monster centerx="434" centery="944" centerz="7" radius="5">
 		<monster name="valick" x="-5" y="0" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="703" centery="944" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="-2" y="-3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-3" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="0" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="2" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="713" centery="944" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="2" y="-4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-3" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="-2" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="2" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="3" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="445" centery="945" centerz="7" radius="5">
 		<monster name="valick" x="-5" y="-3" z="7" spawntime="30" />
 		<monster name="valick" x="2" y="0" z="7" spawntime="30" />
@@ -4074,6 +4590,55 @@
 	<monster centerx="456" centery="945" centerz="7" radius="5">
 		<monster name="valick" x="-3" y="-2" z="7" spawntime="30" />
 		<monster name="valick" x="2" y="1" z="7" spawntime="30" />
+	</monster>
+	<monster centerx="695" centery="945" centerz="7" radius="1">
+		<monster name="Calamary" x="0" y="-1" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="722" centery="945" centerz="7" radius="1">
+		<monster name="Fish" x="0" y="-1" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="722" centery="950" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="-1" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="693" centery="951" centerz="7" radius="5">
+		<monster name="Midnight Asura" x="2" y="-4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-3" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="-2" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="5" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="708" centery="952" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="2" y="-2" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="-1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="4" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="4" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="724" centery="952" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="4" y="-3" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="0" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="2" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="4" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="4" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="716" centery="953" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="687" centery="954" centerz="7" radius="1">
+		<monster name="Blood Crab" x="-1" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="732" centery="954" centerz="7" radius="1">
+		<monster name="Crustacea Gigantica" x="-1" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="701" centery="955" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="176" centery="956" centerz="7" radius="8">
 		<monster name="Frozen Giant" x="5" y="-3" z="7" spawntime="30" />
@@ -4086,13 +4651,140 @@
 		<monster name="valick" x="-3" y="-1" z="7" spawntime="30" />
 		<monster name="valick" x="1" y="2" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="715" centery="956" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="702" centery="960" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="697" centery="961" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="717" centery="961" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="701" centery="962" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="708" centery="962" centerz="7" radius="5">
+		<monster name="Midnight Asura" x="-3" y="-2" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-2" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="-1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="0" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="2" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="731" centery="962" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="691" centery="963" centerz="7" radius="5">
+		<monster name="Midnight Asura" x="3" y="-4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="4" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="5" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="5" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="724" centery="964" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="2" y="-5" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="-4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="-1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="4" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="731" centery="964" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="690" centery="966" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="-3" y="3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="5" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="461" centery="967" centerz="7" radius="5">
 		<monster name="valick" x="-2" y="-5" z="7" spawntime="30" />
 		<monster name="valick" x="-3" y="0" z="7" spawntime="30" />
 		<monster name="valick" x="2" y="4" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="731" centery="967" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="702" centery="968" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="717" centery="968" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="715" centery="969" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="724" centery="970" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="728" centery="970" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="709" centery="972" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="-2" y="-3" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="-1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="2" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="716" centery="973" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="702" centery="974" centerz="7" radius="1">
+		<monster name="Hellraiser" x="-1" y="-1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="689" centery="975" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="715" centery="976" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="695" centery="977" centerz="7" radius="5">
+		<monster name="Midnight Asura" x="0" y="-4" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="0" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="724" centery="977" centerz="7" radius="5">
+		<monster name="Midnight Asura" x="3" y="-3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-2" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="1" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="463" centery="978" centerz="7" radius="5">
 		<monster name="valick" x="-2" y="-3" z="7" spawntime="30" />
+	</monster>
+	<monster centerx="701" centery="978" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="714" centery="979" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="708" centery="981" centerz="7" radius="5">
+		<monster name="Dawnfire Asura" x="-5" y="-3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-2" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="-1" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="1" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="2" z="7" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="3" z="7" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="3" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="699" centery="983" centerz="7" radius="1">
+		<monster name="Dawnfire Asura" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="716" centery="984" centerz="7" radius="1">
+		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="718" centery="984" centerz="7" radius="1">
+		<monster name="Midnight Asura" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="463" centery="989" centerz="7" radius="5">
 		<monster name="valick" x="1" y="-5" z="7" spawntime="30" />
@@ -4358,6 +5050,77 @@
 		<monster name="Jungle Monster" x="-2" y="-10" z="7" spawntime="30" />
 		<monster name="Jungle Beast" x="8" y="-8" z="7" spawntime="30" />
 	</monster>
+	<monster centerx="159" centery="1290" centerz="7" radius="30">
+		<monster name="Werelion" x="5" y="-22" z="7" spawntime="60" />
+		<monster name="Werelion" x="8" y="-22" z="7" spawntime="60" />
+		<monster name="Werelion" x="11" y="-22" z="7" spawntime="60" />
+		<monster name="Werelioness" x="7" y="-19" z="7" spawntime="60" />
+		<monster name="Werelioness" x="10" y="-19" z="7" spawntime="60" />
+		<monster name="Werelion" x="-25" y="-16" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-20" y="-16" z="7" spawntime="60" />
+		<monster name="Werelion" x="-10" y="-13" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-4" y="-13" z="7" spawntime="60" />
+		<monster name="Werelion" x="8" y="-13" z="7" spawntime="60" />
+		<monster name="Werelioness" x="18" y="-13" z="7" spawntime="60" />
+		<monster name="Werelion" x="24" y="-12" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-23" y="-10" z="7" spawntime="60" />
+		<monster name="Werelion" x="-19" y="-9" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-7" y="-8" z="7" spawntime="60" />
+		<monster name="Werelion" x="1" y="-8" z="7" spawntime="60" />
+		<monster name="Werelion" x="18" y="-8" z="7" spawntime="60" />
+		<monster name="Werelioness" x="23" y="-8" z="7" spawntime="60" />
+		<monster name="Werelioness" x="8" y="-7" z="7" spawntime="60" />
+		<monster name="Werelion" x="-14" y="-4" z="7" spawntime="60" />
+		<monster name="Werelion" x="6" y="-2" z="7" spawntime="60" />
+		<monster name="Werelion" x="-19" y="-1" z="7" spawntime="60" />
+		<monster name="Werelion" x="-5" y="-1" z="7" spawntime="60" />
+		<monster name="Werelion" x="0" y="-1" z="7" spawntime="60" />
+		<monster name="Werelion" x="22" y="0" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-15" y="1" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-20" y="3" z="7" spawntime="60" />
+		<monster name="Werelion" x="-7" y="4" z="7" spawntime="60" />
+		<monster name="Werelion" x="12" y="4" z="7" spawntime="60" />
+		<monster name="Werelion" x="19" y="5" z="7" spawntime="60" />
+		<monster name="Werelion" x="5" y="6" z="7" spawntime="60" />
+		<monster name="Werelion" x="-15" y="7" z="7" spawntime="60" />
+		<monster name="Werelion" x="-19" y="8" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-11" y="13" z="7" spawntime="60" />
+		<monster name="Werelion" x="-3" y="13" z="7" spawntime="60" />
+		<monster name="Werelioness" x="8" y="13" z="7" spawntime="60" />
+		<monster name="Werelion" x="22" y="13" z="7" spawntime="60" />
+		<monster name="Werelioness" x="27" y="13" z="7" spawntime="60" />
+		<monster name="Werelion" x="-18" y="15" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-21" y="17" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-7" y="17" z="7" spawntime="60" />
+		<monster name="Werelion" x="-10" y="18" z="7" spawntime="60" />
+		<monster name="Werelion" x="-3" y="18" z="7" spawntime="60" />
+		<monster name="Werelion" x="21" y="18" z="7" spawntime="60" />
+		<monster name="Werelioness" x="24" y="18" z="7" spawntime="60" />
+		<monster name="Werelion" x="27" y="18" z="7" spawntime="60" />
+		<monster name="Werelioness" x="-19" y="19" z="7" spawntime="60" />
+		<monster name="Werelioness" x="6" y="20" z="7" spawntime="60" />
+		<monster name="Werelion" x="-21" y="21" z="7" spawntime="60" />
+		<monster name="Werelioness" x="13" y="21" z="7" spawntime="60" />
+		<monster name="Werelioness" x="7" y="26" z="7" spawntime="60" />
+		<monster name="Werelioness" x="10" y="26" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="174" centery="1290" centerz="7" radius="30">
+		<monster name="Werelioness" x="21" y="-16" z="7" spawntime="60" />
+		<monster name="Werelion" x="26" y="-16" z="7" spawntime="60" />
+		<monster name="Werelion" x="20" y="-10" z="7" spawntime="60" />
+		<monster name="Werelioness" x="26" y="-10" z="7" spawntime="60" />
+		<monster name="Werelion" x="16" y="-3" z="7" spawntime="60" />
+		<monster name="Werelion" x="22" y="-3" z="7" spawntime="60" />
+		<monster name="Werelioness" x="22" y="1" z="7" spawntime="60" />
+		<monster name="Werelioness" x="17" y="4" z="7" spawntime="60" />
+		<monster name="Werelion" x="23" y="6" z="7" spawntime="60" />
+		<monster name="Werelion" x="17" y="9" z="7" spawntime="60" />
+		<monster name="Werelion" x="21" y="15" z="7" spawntime="60" />
+		<monster name="Werelioness" x="21" y="18" z="7" spawntime="60" />
+		<monster name="Werelion" x="21" y="21" z="7" spawntime="60" />
+		<monster name="Werelioness" x="23" y="21" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="168" centery="1321" centerz="7" radius="30" />
 	<monster centerx="1527" centery="1534" centerz="7" radius="5">
 		<monster name="Asmoday" x="0" y="-5" z="7" spawntime="30" />
 	</monster>
@@ -4732,6 +5495,23 @@
 	<monster centerx="704" centery="307" centerz="8" radius="5">
 		<monster name="Mummy" x="-2" y="0" z="8" spawntime="30" />
 		<monster name="undead mage" x="-3" y="5" z="8" spawntime="30" />
+	</monster>
+	<monster centerx="396" centery="309" centerz="8" radius="30">
+		<monster name="Spectre" x="-20" y="-24" z="8" spawntime="60" />
+		<monster name="Spectre" x="6" y="-23" z="8" spawntime="60" />
+		<monster name="Spectre" x="22" y="-19" z="8" spawntime="60" />
+		<monster name="Spectre" x="-14" y="-18" z="8" spawntime="60" />
+		<monster name="Spectre" x="-19" y="-11" z="8" spawntime="60" />
+		<monster name="Spectre" x="0" y="-10" z="8" spawntime="60" />
+		<monster name="Spectre" x="18" y="-3" z="8" spawntime="60" />
+		<monster name="Spectre" x="-10" y="-2" z="8" spawntime="60" />
+		<monster name="Spectre" x="16" y="7" z="8" spawntime="60" />
+		<monster name="Spectre" x="-8" y="8" z="8" spawntime="60" />
+		<monster name="Spectre" x="18" y="16" z="8" spawntime="60" />
+		<monster name="Spectre" x="-24" y="17" z="8" spawntime="60" />
+		<monster name="Spectre" x="3" y="18" z="8" spawntime="60" />
+		<monster name="Spectre" x="-10" y="20" z="8" spawntime="60" />
+		<monster name="Spectre" x="14" y="27" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="674" centery="310" centerz="8" radius="5">
 		<monster name="valick" x="0" y="-2" z="8" spawntime="30" />
@@ -5838,6 +6618,29 @@
 		<monster name="Demon" x="4" y="0" z="8" spawntime="30" />
 		<monster name="Demon" x="0" y="3" z="8" spawntime="30" />
 	</monster>
+	<monster centerx="693" centery="946" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="-2" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="-5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="9" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="6" y="7" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="793" centery="947" centerz="8" radius="5">
 		<monster name="Demon" x="0" y="-5" z="8" spawntime="30" />
 		<monster name="Demon" x="5" y="-4" z="8" spawntime="30" />
@@ -5845,16 +6648,148 @@
 		<monster name="Demon" x="2" y="-2" z="8" spawntime="30" />
 		<monster name="Demon" x="1" y="4" z="8" spawntime="30" />
 	</monster>
+	<monster centerx="663" centery="952" centerz="8" radius="10">
+		<monster name="Hellraiser" x="-3" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="-4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="6" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="793" centery="962" centerz="8" radius="5">
 		<monster name="Bones" x="-3" y="0" z="8" spawntime="30" />
 		<monster name="Bones" x="3" y="0" z="8" spawntime="30" />
 		<monster name="Bones" x="0" y="3" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="653" centery="966" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="0" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="7" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="678" centery="977" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="10" y="2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="4" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="698" centery="981" centerz="8" radius="10">
+		<monster name="Hellraiser" x="-4" y="-7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="6" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="723" centery="985" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="3" y="-8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-10" y="-6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-7" y="2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="9" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="662" centery="1002" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-5" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="-3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="-1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="6" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="8" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="592" centery="1004" centerz="8" radius="7">
 		<monster name="Morgaroth" x="-4" y="0" z="8" spawntime="60" />
 		<monster name="Morgaroth" x="4" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="-6" y="6" z="8" spawntime="60" />
 		<monster name="Fury" x="6" y="6" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="704" centery="1006" centerz="8" radius="10">
+		<monster name="Hellraiser" x="9" y="-7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-9" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="9" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="5" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="729" centery="1014" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="1" y="-9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="7" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="638" centery="1023" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-4" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-8" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="-1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="7" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="592" centery="1029" centerz="8" radius="7">
 		<monster name="Purple Death" x="0" y="1" z="8" spawntime="60" />
@@ -5868,6 +6803,424 @@
 		<monster name="fright" x="-2" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="3" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="3" y="4" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="680" centery="1032" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="3" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="8" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="715" centery="1036" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-4" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="9" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="658" centery="1054" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="4" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="9" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="706" centery="1055" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-10" y="-4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="-1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="9" y="7" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="728" centery="1055" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="-8" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="-4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-7" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="-2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="-2" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="692" centery="1070" centerz="8" radius="10">
+		<monster name="Dawnfire Asura" x="-6" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="658" centery="1082" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="-9" y="-7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="8" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="694" centery="1095" centerz="8" radius="4">
+		<monster name="Hellraiser" x="-2" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-2" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-1" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="1" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="660" centery="1105" centerz="8" radius="10">
+		<monster name="Hellraiser" x="-1" y="-9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="-2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-7" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="7" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="710" centery="1109" centerz="8" radius="4">
+		<monster name="Hellraiser" x="0" y="-3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="2" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="687" centery="1118" centerz="8" radius="10">
+		<monster name="Midnight Asura" x="0" y="-10" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-8" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="-8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="-7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-3" y="-7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-10" y="-5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="-3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-8" y="-3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-8" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="10" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="5" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="205" centery="1259" centerz="8" radius="30">
+		<monster name="Werepanther" x="9" y="-24" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-5" y="-23" z="8" spawntime="60" />
+		<monster name="Werepanther" x="22" y="-22" z="8" spawntime="60" />
+		<monster name="Weretiger" x="9" y="-21" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-6" y="-20" z="8" spawntime="60" />
+		<monster name="Weretiger" x="22" y="-20" z="8" spawntime="60" />
+		<monster name="Werepanther" x="9" y="-19" z="8" spawntime="60" />
+		<monster name="Werepanther" x="27" y="-18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-4" y="-17" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-15" y="-12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="25" y="-12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="4" y="-11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="13" y="-11" z="8" spawntime="60" />
+		<monster name="Weretiger" x="18" y="-11" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="-10" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-5" y="-6" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-3" y="-6" z="8" spawntime="60" />
+		<monster name="Werepanther" x="11" y="-5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-5" y="-4" z="8" spawntime="60" />
+		<monster name="Werepanther" x="9" y="-4" z="8" spawntime="60" />
+		<monster name="Weretiger" x="11" y="-3" z="8" spawntime="60" />
+		<monster name="Weretiger" x="28" y="-3" z="8" spawntime="60" />
+		<monster name="Werepanther" x="29" y="2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-20" y="4" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="5" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-16" y="6" z="8" spawntime="60" />
+		<monster name="Weretiger" x="1" y="6" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="11" z="8" spawntime="60" />
+		<monster name="Weretiger" x="29" y="14" z="8" spawntime="60" />
+		<monster name="Werepanther" x="12" y="15" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-19" y="17" z="8" spawntime="60" />
+		<monster name="Weretiger" x="12" y="18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="12" y="24" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="26" z="8" spawntime="60" />
+		<monster name="Weretiger" x="21" y="26" z="8" spawntime="60" />
+		<monster name="Werepanther" x="29" y="26" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="27" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="143" centery="1263" centerz="8" radius="30">
+		<monster name="Werepanther" x="-10" y="-28" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="-25" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="-25" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-4" y="-25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="2" y="-25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-8" y="-22" z="8" spawntime="60" />
+		<monster name="Werepanther" x="6" y="-15" z="8" spawntime="60" />
+		<monster name="Weretiger" x="3" y="-11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="7" y="-10" z="8" spawntime="60" />
+		<monster name="Weretiger" x="6" y="-7" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-23" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="9" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="22" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="24" y="4" z="8" spawntime="60" />
+		<monster name="Weretiger" x="8" y="7" z="8" spawntime="60" />
+		<monster name="Weretiger" x="1" y="8" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="9" z="8" spawntime="60" />
+		<monster name="Werepanther" x="5" y="9" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-17" y="11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-8" y="12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="9" y="12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="23" y="14" z="8" spawntime="60" />
+		<monster name="Werepanther" x="2" y="15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="8" y="18" z="8" spawntime="60" />
+		<monster name="Weretiger" x="6" y="20" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="23" z="8" spawntime="60" />
+		<monster name="Werepanther" x="24" y="24" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="28" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-22" y="29" z="8" spawntime="60" />
+		<monster name="Weretiger" x="5" y="30" z="8" spawntime="60" />
+		<monster name="Werepanther" x="15" y="30" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="108" centery="1267" centerz="8" radius="30">
+		<monster name="Werepanther" x="1" y="-28" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-5" y="-22" z="8" spawntime="60" />
+		<monster name="Werepanther" x="4" y="-22" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-20" y="-20" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="-20" z="8" spawntime="60" />
+		<monster name="Weretiger" x="2" y="-20" z="8" spawntime="60" />
+		<monster name="Weretiger" x="0" y="-17" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-4" y="-15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="4" y="-13" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-2" y="-11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-26" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="0" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="4" z="8" spawntime="60" />
+		<monster name="Weretiger" x="0" y="6" z="8" spawntime="60" />
+		<monster name="Weretiger" x="0" y="13" z="8" spawntime="60" />
+		<monster name="Werepanther" x="1" y="14" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-24" y="19" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-4" y="25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-18" y="30" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="73" centery="1268" centerz="8" radius="30">
+		<monster name="Werepanther" x="-23" y="-29" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="-28" z="8" spawntime="60" />
+		<monster name="Weretiger" x="0" y="-27" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-25" y="-19" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-3" y="-3" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-9" y="1" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-3" y="4" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="1" y="8" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="266" centery="1284" centerz="8" radius="30">
+		<monster name="Werepanther" x="9" y="-14" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-29" y="-11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="27" y="-10" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-17" y="-5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="-3" z="8" spawntime="60" />
+		<monster name="Weretiger" x="28" y="-1" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="0" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="3" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="5" z="8" spawntime="60" />
+		<monster name="Weretiger" x="27" y="5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="29" y="8" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-30" y="10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="5" y="15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="21" y="15" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-17" y="24" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-20" y="25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="26" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-19" y="27" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="199" centery="1292" centerz="8" radius="30">
+		<monster name="Werepanther" x="-23" y="0" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-6" y="0" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="2" z="8" spawntime="60" />
+		<monster name="Weretiger" x="21" y="2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="15" y="3" z="8" spawntime="60" />
+		<monster name="Werepanther" x="23" y="10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-14" y="11" z="8" spawntime="60" />
+		<monster name="Weretiger" x="25" y="11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="30" y="12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-22" y="14" z="8" spawntime="60" />
+		<monster name="Werepanther" x="5" y="14" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-21" y="16" z="8" spawntime="60" />
+		<monster name="Weretiger" x="5" y="17" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-26" y="18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-9" y="18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="20" y="18" z="8" spawntime="60" />
+		<monster name="Weretiger" x="27" y="18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-22" y="20" z="8" spawntime="60" />
+		<monster name="Werepanther" x="4" y="20" z="8" spawntime="60" />
+		<monster name="Weretiger" x="5" y="23" z="8" spawntime="60" />
+		<monster name="Werepanther" x="22" y="23" z="8" spawntime="60" />
+		<monster name="Weretiger" x="30" y="26" z="8" spawntime="60" />
+		<monster name="Werepanther" x="25" y="27" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="232" centery="1316" centerz="8" radius="30">
+		<monster name="Weretiger" x="3" y="-25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="-21" z="8" spawntime="60" />
+		<monster name="Werepanther" x="3" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="3" y="1" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-25" y="10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-29" y="11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="12" z="8" spawntime="60" />
+		<monster name="Weretiger" x="1" y="17" z="8" spawntime="60" />
+		<monster name="Werepanther" x="0" y="20" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-24" y="21" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-30" y="30" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="108" centery="1321" centerz="8" radius="30">
+		<monster name="Werepanther" x="-26" y="-19" z="8" spawntime="60" />
+		<monster name="Werepanther" x="18" y="-19" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-23" y="-18" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-11" y="-18" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-8" y="-18" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-19" y="-13" z="8" spawntime="60" />
+		<monster name="Weretiger" x="20" y="-13" z="8" spawntime="60" />
+		<monster name="Werepanther" x="28" y="-12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-30" y="-10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="-8" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-10" y="-8" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-26" y="-7" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-10" y="-5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="8" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="18" y="-1" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="0" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-23" y="1" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-12" y="1" z="8" spawntime="60" />
+		<monster name="Weretiger" x="10" y="1" z="8" spawntime="60" />
+		<monster name="Werepanther" x="8" y="5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="18" y="11" z="8" spawntime="60" />
+		<monster name="Weretiger" x="18" y="21" z="8" spawntime="60" />
+		<monster name="Werepanther" x="19" y="24" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="169" centery="1324" centerz="8" radius="30">
+		<monster name="Werepanther" x="-22" y="-26" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="-25" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-30" y="-17" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-14" y="-17" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-13" y="-15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="-13" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-22" y="-4" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="-2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="8" y="0" z="8" spawntime="60" />
+		<monster name="Weretiger" x="4" y="2" z="8" spawntime="60" />
+		<monster name="Weretiger" x="8" y="2" z="8" spawntime="60" />
+		<monster name="Werepanther" x="9" y="4" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-3" y="9" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-21" y="12" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-14" y="14" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-20" y="15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-18" y="15" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-27" y="23" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-15" y="24" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-9" y="24" z="8" spawntime="60" />
+		<monster name="Weretiger" x="0" y="24" z="8" spawntime="60" />
+		<monster name="Werepanther" x="10" y="24" z="8" spawntime="60" />
+		<monster name="Weretiger" x="28" y="25" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="205" centery="1352" centerz="8" radius="30">
+		<monster name="Weretiger" x="-4" y="-11" z="8" spawntime="60" />
+		<monster name="Werepanther" x="27" y="-4" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-27" y="3" z="8" spawntime="60" />
+		<monster name="Werepanther" x="5" y="3" z="8" spawntime="60" />
+		<monster name="Weretiger" x="26" y="3" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-25" y="5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="23" y="5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="8" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-10" y="9" z="8" spawntime="60" />
+		<monster name="Weretiger" x="6" y="9" z="8" spawntime="60" />
+		<monster name="Werepanther" x="12" y="9" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-17" y="10" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-29" y="12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-24" y="15" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-27" y="16" z="8" spawntime="60" />
+		<monster name="Weretiger" x="6" y="21" z="8" spawntime="60" />
+		<monster name="Werepanther" x="6" y="24" z="8" spawntime="60" />
+		<monster name="Werepanther" x="2" y="25" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-26" y="27" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-28" y="30" z="8" spawntime="60160" />
+		<monster name="Weretiger" x="-27" y="30" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="152" centery="1376" centerz="8" radius="30">
+		<monster name="Weretiger" x="-12" y="-21" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-15" y="-19" z="8" spawntime="60" />
+		<monster name="Werepanther" x="-4" y="-18" z="8" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="-16" z="8" spawntime="60" />
+		<monster name="Weretiger" x="30" y="8" z="8" spawntime="60" />
+		<monster name="Werepanther" x="23" y="12" z="8" spawntime="60" />
+		<monster name="Werepanther" x="30" y="15" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="207" centery="1390" centerz="8" radius="30">
+		<monster name="Werepanther" x="-22" y="-5" z="8" spawntime="60" />
+		<monster name="Weretiger" x="3" y="-5" z="8" spawntime="60" />
+		<monster name="Werepanther" x="6" y="-3" z="8" spawntime="60" />
+		<monster name="Werepanther" x="0" y="-2" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="343" centery="1682" centerz="8" radius="30">
 		<monster name="Pirate Scavenger" x="-1" y="-5" z="8" spawntime="60" />
@@ -5956,6 +7309,21 @@
 		<monster name="frozenhell guard" x="15" y="16" z="9" spawntime="30" />
 		<monster name="frozenhell guard" x="-22" y="21" z="9" spawntime="30" />
 		<monster name="frozenhell guard" x="-19" y="21" z="9" spawntime="30" />
+	</monster>
+	<monster centerx="351" centery="233" centerz="9" radius="1">
+		<monster name="Marid" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="354" centery="234" centerz="9" radius="1">
+		<monster name="Efreet" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="349" centery="235" centerz="9" radius="1">
+		<monster name="Efreet" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="348" centery="239" centerz="9" radius="1">
+		<monster name="Efreet" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="356" centery="239" centerz="9" radius="1">
+		<monster name="Efreet" x="0" y="0" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="250" centery="240" centerz="9" radius="5">
 		<monster name="Warlock" x="-3" y="-4" z="9" spawntime="30" />
@@ -6096,6 +7464,50 @@
 		<monster name="Draken Spellweaver" x="-1" y="5" z="9" spawntime="60" />
 		<monster name="Draken Warmaster" x="-8" y="7" z="9" spawntime="60" />
 		<monster name="Draken Elite" x="-2" y="7" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="369" centery="310" centerz="9" radius="30">
+		<monster name="Spectre" x="-21" y="-22" z="9" spawntime="60" />
+		<monster name="Spectre" x="5" y="-22" z="9" spawntime="60" />
+		<monster name="Spectre" x="10" y="-22" z="9" spawntime="60" />
+		<monster name="Spectre" x="-6" y="-20" z="9" spawntime="60" />
+		<monster name="Spectre" x="5" y="-15" z="9" spawntime="60" />
+		<monster name="Spectre" x="10" y="-13" z="9" spawntime="60" />
+		<monster name="Spectre" x="17" y="-13" z="9" spawntime="60" />
+		<monster name="Spectre" x="-16" y="-10" z="9" spawntime="60" />
+		<monster name="Spectre" x="-7" y="-9" z="9" spawntime="60" />
+		<monster name="Spectre" x="11" y="-4" z="9" spawntime="60" />
+		<monster name="Spectre" x="-4" y="0" z="9" spawntime="60" />
+		<monster name="Spectre" x="-16" y="1" z="9" spawntime="60" />
+		<monster name="Spectre" x="7" y="5" z="9" spawntime="60" />
+		<monster name="Spectre" x="23" y="5" z="9" spawntime="60" />
+		<monster name="Spectre" x="-5" y="8" z="9" spawntime="60" />
+		<monster name="Spectre" x="-24" y="9" z="9" spawntime="60" />
+		<monster name="Spectre" x="17" y="10" z="9" spawntime="60" />
+		<monster name="Spectre" x="4" y="11" z="9" spawntime="60" />
+		<monster name="Spectre" x="-15" y="12" z="9" spawntime="60" />
+		<monster name="Spectre" x="4" y="15" z="9" spawntime="60" />
+		<monster name="Spectre" x="-25" y="17" z="9" spawntime="60" />
+		<monster name="Spectre" x="-5" y="17" z="9" spawntime="60" />
+		<monster name="Spectre" x="4" y="19" z="9" spawntime="60" />
+		<monster name="Spectre" x="-8" y="20" z="9" spawntime="60" />
+		<monster name="Spectre" x="22" y="21" z="9" spawntime="60" />
+		<monster name="Spectre" x="-3" y="23" z="9" spawntime="60" />
+		<monster name="Spectre" x="4" y="25" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="404" centery="311" centerz="9" radius="30">
+		<monster name="Spectre" x="15" y="-23" z="9" spawntime="60" />
+		<monster name="Spectre" x="-4" y="-22" z="9" spawntime="60" />
+		<monster name="Spectre" x="25" y="-21" z="9" spawntime="60" />
+		<monster name="Spectre" x="20" y="-16" z="9" spawntime="60" />
+		<monster name="Spectre" x="-2" y="-6" z="9" spawntime="60" />
+		<monster name="Spectre" x="21" y="-3" z="9" spawntime="60" />
+		<monster name="Spectre" x="11" y="-2" z="9" spawntime="60" />
+		<monster name="Spectre" x="16" y="2" z="9" spawntime="60" />
+		<monster name="Spectre" x="-2" y="9" z="9" spawntime="60" />
+		<monster name="Spectre" x="18" y="17" z="9" spawntime="60" />
+		<monster name="Spectre" x="3" y="20" z="9" spawntime="60" />
+		<monster name="Spectre" x="21" y="20" z="9" spawntime="60" />
+		<monster name="Spectre" x="17" y="26" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="491" centery="356" centerz="9" radius="3">
 		<monster name="Draken Warmaster" x="2" y="0" z="9" spawntime="60" />
@@ -6907,17 +8319,68 @@
 		<monster name="the executioner" x="-1" y="4" z="9" spawntime="60" />
 		<monster name="the screamer" x="-9" y="8" z="9" spawntime="60" />
 	</monster>
+	<monster centerx="701" centery="1003" centerz="9" radius="5">
+		<monster name="Dawnfire Asura" x="-4" y="-4" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-4" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="-3" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="0" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="1" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="1" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="2" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="3" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="4" z="9" spawntime="60" />
+	</monster>
 	<monster centerx="592" centery="1017" centerz="9" radius="7">
 		<monster name="hellfire" x="-4" y="-2" z="9" spawntime="60" />
 		<monster name="hellfire" x="4" y="-2" z="9" spawntime="60" />
 		<monster name="fright" x="-2" y="7" z="9" spawntime="60" />
 		<monster name="fright" x="2" y="7" z="9" spawntime="60" />
 	</monster>
+	<monster centerx="732" centery="1017" centerz="9" radius="10">
+		<monster name="Hellraiser" x="1" y="-8" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-8" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-7" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="-6" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="-5" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="-5" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="-4" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="-4" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-4" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="-3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="-3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="-1" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-1" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="1" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="1" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="1" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="3" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="5" z="9" spawntime="60" />
+	</monster>
 	<monster centerx="592" centery="1032" centerz="9" radius="7">
 		<monster name="Purple Death" x="0" y="-2" z="9" spawntime="60" />
 		<monster name="mawnstur" x="0" y="2" z="9" spawntime="60" />
 		<monster name="Fury" x="-3" y="5" z="9" spawntime="60" />
 		<monster name="Fury" x="3" y="5" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="688" centery="1032" centerz="9" radius="10">
+		<monster name="Midnight Asura" x="-1" y="-5" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-4" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="-3" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="-3" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-1" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-1" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="0" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="0" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="2" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="2" z="9" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="2" z="9" spawntime="60" />
+		<monster name="Hellraiser" x="-2" y="5" z="9" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="5" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="576" centery="1041" centerz="9" radius="7">
 		<monster name="fright" x="0" y="-6" z="9" spawntime="60" />
@@ -6934,6 +8397,155 @@
 		<monster name="fright" x="5" y="1" z="9" spawntime="60" />
 		<monster name="fright" x="-1" y="3" z="9" spawntime="60" />
 		<monster name="fright" x="1" y="3" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="68" centery="1253" centerz="9" radius="30">
+		<monster name="Werepanther" x="-12" y="-7" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-6" y="-6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="11" y="-6" z="9" spawntime="60" />
+		<monster name="Werepanther" x="3" y="-4" z="9" spawntime="60" />
+		<monster name="Werepanther" x="16" y="-4" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-14" y="-3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="0" y="-2" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-6" y="2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="8" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="1" y="11" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="18" z="9" spawntime="60" />
+		<monster name="Weretiger" x="0" y="23" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="27" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-21" y="29" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="167" centery="1278" centerz="9" radius="30">
+		<monster name="Weretiger" x="-18" y="-26" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-18" y="-23" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-16" y="-21" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-5" y="-14" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="-13" z="9" spawntime="60" />
+		<monster name="Weretiger" x="1" y="-9" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-16" y="-8" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-8" y="-5" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-2" y="-4" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-12" y="-2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-5" y="0" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-6" y="9" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-19" y="12" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-10" y="12" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-22" y="13" z="9" spawntime="60" />
+		<monster name="Weretiger" x="18" y="13" z="9" spawntime="60" />
+		<monster name="Werepanther" x="13" y="14" z="9" spawntime="60" />
+		<monster name="Werepanther" x="27" y="14" z="9" spawntime="60" />
+		<monster name="Weretiger" x="3" y="15" z="9" spawntime="60" />
+		<monster name="Weretiger" x="30" y="18" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="22" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-23" y="26" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-18" y="28" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-30" y="30" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-21" y="30" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="276" centery="1286" centerz="9" radius="30">
+		<monster name="Weretiger" x="3" y="-12" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-1" y="-11" z="9" spawntime="60" />
+		<monster name="Werepanther" x="12" y="-9" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="-6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="10" y="-2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-27" y="-1" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-23" y="-1" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-27" y="0" z="9" spawntime="60160" />
+		<monster name="Weretiger" x="-5" y="2" z="9" spawntime="60" />
+		<monster name="Werepanther" x="3" y="2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-3" y="9" z="9" spawntime="60" />
+		<monster name="Werepanther" x="14" y="9" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="223" centery="1289" centerz="9" radius="30">
+		<monster name="Werepanther" x="-22" y="-18" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-15" y="-18" z="9" spawntime="60160" />
+		<monster name="Weretiger" x="-14" y="-18" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-9" y="-17" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-21" y="-14" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-15" y="-14" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-5" y="-14" z="9" spawntime="60" />
+		<monster name="Werepanther" x="12" y="-5" z="9" spawntime="60" />
+		<monster name="Weretiger" x="5" y="-4" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-25" y="-1" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-21" y="3" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-10" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-2" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="12" z="9" spawntime="60" />
+		<monster name="Weretiger" x="7" y="12" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="15" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="15" z="9" spawntime="60" />
+		<monster name="Weretiger" x="6" y="15" z="9" spawntime="60" />
+		<monster name="Werepanther" x="9" y="15" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="16" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-1" y="18" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-9" y="23" z="9" spawntime="60160" />
+		<monster name="Weretiger" x="-8" y="24" z="9" spawntime="60" />
+		<monster name="Werepanther" x="8" y="24" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="26" z="9" spawntime="60" />
+		<monster name="Weretiger" x="4" y="26" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-10" y="27" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-7" y="27" z="9" spawntime="60" />
+		<monster name="Weretiger" x="5" y="28" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="73" centery="1292" centerz="9" radius="30">
+		<monster name="Werepanther" x="-23" y="-8" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-11" y="-8" z="9" spawntime="60" />
+		<monster name="Weretiger" x="7" y="-7" z="9" spawntime="60" />
+		<monster name="Weretiger" x="10" y="-7" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-28" y="-6" z="9" spawntime="60" />
+		<monster name="Werepanther" x="8" y="-6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-25" y="-3" z="9" spawntime="60160" />
+		<monster name="Weretiger" x="-24" y="-3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="9" y="0" z="9" spawntime="60" />
+		<monster name="Weretiger" x="28" y="1" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-6" y="2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="28" y="2" z="9" spawntime="60160" />
+		<monster name="Werepanther" x="-6" y="5" z="9" spawntime="60" />
+		<monster name="Weretiger" x="19" y="6" z="9" spawntime="60" />
+		<monster name="Werepanther" x="7" y="7" z="9" spawntime="60" />
+		<monster name="Werepanther" x="25" y="7" z="9" spawntime="60" />
+		<monster name="Weretiger" x="8" y="14" z="9" spawntime="60" />
+		<monster name="Weretiger" x="30" y="16" z="9" spawntime="60" />
+		<monster name="Weretiger" x="6" y="20" z="9" spawntime="60" />
+		<monster name="Werepanther" x="8" y="20" z="9" spawntime="60" />
+		<monster name="Weretiger" x="11" y="20" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="132" centery="1297" centerz="9" radius="30">
+		<monster name="Weretiger" x="-21" y="-10" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-16" y="-9" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-4" y="-9" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="-8" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-1" y="-8" z="9" spawntime="60" />
+		<monster name="Weretiger" x="1" y="-6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-5" y="-4" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-16" y="-3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-19" y="-2" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-3" y="-2" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-20" y="11" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-14" y="11" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-14" y="12" z="9" spawntime="60160" />
+		<monster name="Weretiger" x="0" y="12" z="9" spawntime="60" />
+		<monster name="Weretiger" x="17" y="14" z="9" spawntime="60" />
+		<monster name="Werepanther" x="28" y="17" z="9" spawntime="60" />
+		<monster name="Weretiger" x="12" y="18" z="9" spawntime="60" />
+		<monster name="Weretiger" x="27" y="20" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-1" y="30" z="9" spawntime="60" />
+		<monster name="Werepanther" x="28" y="30" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="151" centery="1328" centerz="9" radius="30">
+		<monster name="Weretiger" x="25" y="-8" z="9" spawntime="60" />
+		<monster name="Weretiger" x="21" y="-7" z="9" spawntime="60" />
+		<monster name="Werepanther" x="13" y="-6" z="9" spawntime="60" />
+		<monster name="Werepanther" x="23" y="-6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="24" y="-3" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-27" y="0" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-12" y="0" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-20" y="2" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-24" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-4" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="7" y="3" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-16" y="5" z="9" spawntime="60" />
+		<monster name="Werepanther" x="-19" y="6" z="9" spawntime="60" />
+		<monster name="Weretiger" x="-23" y="7" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="505" centery="1692" centerz="9" radius="30">
 		<monster name="Gluttonous Pig" x="-3" y="-21" z="9" spawntime="60" />
@@ -7197,8 +8809,20 @@
 	<monster centerx="143" centery="235" centerz="10" radius="1">
 		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
 	</monster>
+	<monster centerx="347" centery="235" centerz="10" radius="1">
+		<monster name="Efreet" x="0" y="0" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="235" centerz="10" radius="1">
+		<monster name="Marid" x="0" y="0" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="235" centerz="10" radius="1">
+		<monster name="Efreet" x="0" y="0" z="10" spawntime="60" />
+	</monster>
 	<monster centerx="141" centery="237" centerz="10" radius="1">
 		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="238" centerz="10" radius="1">
+		<monster name="Efreet" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="948" centery="240" centerz="10" radius="5">
 		<monster name="Orshabaal" x="-2" y="-1" z="10" spawntime="30" />
@@ -7211,9 +8835,18 @@
 		<monster name="Demon" x="1" y="1" z="10" spawntime="30" />
 		<monster name="Demon" x="-3" y="5" z="10" spawntime="30" />
 	</monster>
+	<monster centerx="347" centery="242" centerz="10" radius="1">
+		<monster name="Efreet" x="0" y="0" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="242" centerz="10" radius="1">
+		<monster name="Efreet" x="0" y="0" z="10" spawntime="60" />
+	</monster>
 	<monster centerx="214" centery="243" centerz="10" radius="5">
 		<monster name="Behemoth" x="-3" y="-4" z="10" spawntime="60" />
 		<monster name="Behemoth" x="2" y="1" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="353" centery="243" centerz="10" radius="1">
+		<monster name="Marid" x="0" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="206" centery="248" centerz="10" radius="1">
 		<monster name="Behemoth" x="0" y="0" z="10" spawntime="60" />
@@ -7384,6 +9017,92 @@
 	<monster centerx="488" centery="345" centerz="10" radius="3">
 		<monster name="Draken Warmaster" x="-2" y="-1" z="10" spawntime="60" />
 		<monster name="Lizard Chosen" x="0" y="2" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="338" centery="353" centerz="10" radius="30">
+		<monster name="Spectre" x="22" y="-26" z="10" spawntime="60" />
+		<monster name="Spectre" x="24" y="-21" z="10" spawntime="60" />
+		<monster name="Spectre" x="27" y="-21" z="10" spawntime="60" />
+		<monster name="Spectre" x="20" y="-20" z="10" spawntime="60" />
+		<monster name="Spectre" x="20" y="-13" z="10" spawntime="60" />
+		<monster name="Spectre" x="1" y="-7" z="10" spawntime="60" />
+		<monster name="Spectre" x="-29" y="-6" z="10" spawntime="60" />
+		<monster name="Spectre" x="21" y="-6" z="10" spawntime="60" />
+		<monster name="Spectre" x="-25" y="-5" z="10" spawntime="60" />
+		<monster name="Spectre" x="-13" y="-5" z="10" spawntime="60" />
+		<monster name="Spectre" x="7" y="-4" z="10" spawntime="60" />
+		<monster name="Spectre" x="17" y="-4" z="10" spawntime="60" />
+		<monster name="Spectre" x="-28" y="-3" z="10" spawntime="60" />
+		<monster name="Spectre" x="-26" y="-3" z="10" spawntime="60" />
+		<monster name="Spectre" x="-8" y="-3" z="10" spawntime="60" />
+		<monster name="Spectre" x="0" y="-3" z="10" spawntime="60" />
+		<monster name="Spectre" x="-10" y="-2" z="10" spawntime="60" />
+		<monster name="Spectre" x="17" y="-2" z="10" spawntime="60" />
+		<monster name="Spectre" x="24" y="-2" z="10" spawntime="60" />
+		<monster name="Spectre" x="-14" y="-1" z="10" spawntime="60" />
+		<monster name="Spectre" x="3" y="-1" z="10" spawntime="60" />
+		<monster name="Spectre" x="-27" y="4" z="10" spawntime="60" />
+		<monster name="Spectre" x="-7" y="5" z="10" spawntime="60" />
+		<monster name="Spectre" x="4" y="5" z="10" spawntime="60" />
+		<monster name="Spectre" x="21" y="5" z="10" spawntime="60" />
+		<monster name="Spectre" x="-17" y="6" z="10" spawntime="60" />
+		<monster name="Spectre" x="-3" y="6" z="10" spawntime="60" />
+		<monster name="Spectre" x="10" y="6" z="10" spawntime="60" />
+		<monster name="Spectre" x="-6" y="13" z="10" spawntime="60" />
+		<monster name="Spectre" x="-1" y="13" z="10" spawntime="60" />
+		<monster name="Spectre" x="9" y="13" z="10" spawntime="60" />
+		<monster name="Spectre" x="-12" y="15" z="10" spawntime="60" />
+		<monster name="Spectre" x="2" y="15" z="10" spawntime="60" />
+		<monster name="Spectre" x="15" y="15" z="10" spawntime="60" />
+		<monster name="Spectre" x="-18" y="16" z="10" spawntime="60" />
+		<monster name="Spectre" x="-8" y="16" z="10" spawntime="60" />
+		<monster name="Spectre" x="-1" y="18" z="10" spawntime="60" />
+		<monster name="Spectre" x="22" y="18" z="10" spawntime="60" />
+		<monster name="Spectre" x="7" y="19" z="10" spawntime="60" />
+		<monster name="Spectre" x="-7" y="20" z="10" spawntime="60" />
+		<monster name="Spectre" x="-9" y="26" z="10" spawntime="60" />
+		<monster name="Spectre" x="2" y="26" z="10" spawntime="60" />
+		<monster name="Spectre" x="18" y="26" z="10" spawntime="60" />
+		<monster name="Spectre" x="21" y="26" z="10" spawntime="60" />
+		<monster name="Spectre" x="-30" y="27" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="286" centery="372" centerz="10" radius="30">
+		<monster name="Spectre" x="12" y="-25" z="10" spawntime="60" />
+		<monster name="Spectre" x="16" y="-25" z="10" spawntime="60" />
+		<monster name="Spectre" x="12" y="-22" z="10" spawntime="60" />
+		<monster name="Spectre" x="15" y="-21" z="10" spawntime="60" />
+		<monster name="Spectre" x="-19" y="-13" z="10" spawntime="60" />
+		<monster name="Spectre" x="0" y="-13" z="10" spawntime="60" />
+		<monster name="Spectre" x="12" y="-13" z="10" spawntime="60" />
+		<monster name="Spectre" x="-16" y="-12" z="10" spawntime="60" />
+		<monster name="Spectre" x="-9" y="-12" z="10" spawntime="60" />
+		<monster name="Spectre" x="-3" y="-12" z="10" spawntime="60" />
+		<monster name="Spectre" x="5" y="-12" z="10" spawntime="60" />
+		<monster name="A Greedy Eye" x="12" y="-6" z="10" spawntime="60" />
+		<monster name="A Greedy Eye" x="14" y="-6" z="10" spawntime="60" />
+		<monster name="Spectre" x="7" y="8" z="10" spawntime="60" />
+		<monster name="Spectre" x="9" y="13" z="10" spawntime="60" />
+		<monster name="Spectre" x="14" y="14" z="10" spawntime="60" />
+		<monster name="Spectre" x="21" y="19" z="10" spawntime="60" />
+		<monster name="Spectre" x="-12" y="20" z="10" spawntime="60" />
+		<monster name="Spectre" x="3" y="21" z="10" spawntime="60" />
+		<monster name="Spectre" x="-6" y="22" z="10" spawntime="60" />
+		<monster name="Spectre" x="18" y="22" z="10" spawntime="60" />
+		<monster name="Spectre" x="9" y="23" z="10" spawntime="60" />
+		<monster name="Spectre" x="30" y="24" z="10" spawntime="60" />
+	</monster>
+	<monster centerx="331" centery="374" centerz="10" radius="30">
+		<monster name="Spectre" x="10" y="11" z="10" spawntime="60" />
+		<monster name="Spectre" x="25" y="11" z="10" spawntime="60" />
+		<monster name="Spectre" x="-6" y="12" z="10" spawntime="60" />
+		<monster name="Spectre" x="12" y="13" z="10" spawntime="60" />
+		<monster name="Spectre" x="26" y="15" z="10" spawntime="60" />
+		<monster name="Spectre" x="-5" y="16" z="10" spawntime="60" />
+		<monster name="Spectre" x="8" y="18" z="10" spawntime="60" />
+		<monster name="Spectre" x="13" y="18" z="10" spawntime="60" />
+		<monster name="Spectre" x="-4" y="21" z="10" spawntime="60" />
+		<monster name="Spectre" x="28" y="21" z="10" spawntime="60" />
+		<monster name="Spectre" x="23" y="22" z="10" spawntime="60" />
+		<monster name="Spectre" x="10" y="23" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="102" centery="424" centerz="10" radius="25">
 		<monster name="Hellraiser" x="4" y="-21" z="10" spawntime="30" />
@@ -7841,6 +9560,34 @@
 		<monster name="Orshabaal" x="-7" y="18" z="11" spawntime="30" />
 		<monster name="Orshabaal" x="-6" y="26" z="11" spawntime="30" />
 	</monster>
+	<monster centerx="353" centery="229" centerz="11" radius="1">
+		<monster name="Efreet" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="343" centery="230" centerz="11" radius="1">
+		<monster name="Efreet" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="357" centery="231" centerz="11" radius="1">
+		<monster name="Marid" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="234" centerz="11" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="236" centerz="11" radius="1">
+		<monster name="Marid" x="1" y="-1" z="11" spawntime="60" />
+		<monster name="Efreet" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="358" centery="237" centerz="11" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="360" centery="238" centerz="11" radius="1">
+		<monster name="Efreet" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="348" centery="239" centerz="11" radius="1">
+		<monster name="Marid" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="243" centerz="11" radius="1">
+		<monster name="Efreet" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="173" centery="257" centerz="11" radius="5">
 		<monster name="Behemoth" x="-2" y="-2" z="11" spawntime="60" />
 		<monster name="Behemoth" x="5" y="1" z="11" spawntime="60" />
@@ -8146,6 +9893,45 @@
 		<monster name="Sullen Lurker" x="-15" y="16" z="11" spawntime="60" />
 		<monster name="Sullen Lurker" x="-2" y="18" z="11" spawntime="60" />
 	</monster>
+	<monster centerx="354" centery="229" centerz="12" radius="1">
+		<monster name="Marid" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="358" centery="230" centerz="12" radius="1">
+		<monster name="Efreet" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="349" centery="231" centerz="12" radius="1">
+		<monster name="Efreet" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="344" centery="232" centerz="12" radius="1">
+		<monster name="Marid" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="356" centery="232" centerz="12" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="233" centerz="12" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="345" centery="237" centerz="12" radius="1">
+		<monster name="Efreet" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="238" centerz="12" radius="1">
+		<monster name="Efreet" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="362" centery="238" centerz="12" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="357" centery="239" centerz="12" radius="1">
+		<monster name="Efreet" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="242" centerz="12" radius="1">
+		<monster name="Marid" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="244" centerz="12" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="247" centerz="12" radius="1">
+		<monster name="Marid" x="0" y="0" z="12" spawntime="60" />
+	</monster>
 	<monster centerx="191" centery="251" centerz="12" radius="5">
 		<monster name="Behemoth" x="-1" y="-4" z="12" spawntime="60" />
 		<monster name="beholder" x="0" y="-3" z="12" spawntime="60" />
@@ -8240,6 +10026,177 @@
 		<monster name="Heretic" x="-4" y="12" z="12" spawntime="60" />
 		<monster name="Heretic" x="-12" y="14" z="12" spawntime="60" />
 		<monster name="Heretic" x="11" y="16" z="12" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="223" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="223" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="340" centery="224" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="357" centery="224" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="360" centery="224" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="364" centery="224" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="350" centery="225" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="225" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="364" centery="226" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="341" centery="227" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="227" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="353" centery="227" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="350" centery="228" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="356" centery="228" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="359" centery="228" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="365" centery="228" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="343" centery="229" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="230" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="349" centery="230" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="357" centery="231" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="365" centery="231" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="348" centery="232" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="345" centery="233" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="352" centery="233" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="359" centery="233" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="364" centery="233" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="348" centery="234" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="339" centery="235" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="360" centery="235" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="236" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="237" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="354" centery="237" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="365" centery="237" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="344" centery="238" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="356" centery="238" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="359" centery="238" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="346" centery="240" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="351" centery="240" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="340" centery="241" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="360" centery="242" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="365" centery="242" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="340" centery="244" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="345" centery="244" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="244" centerz="13" radius="1">
+		<monster name="Efreet" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="364" centery="245" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="352" centery="246" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="355" centery="246" centerz="13" radius="1">
+		<monster name="Blue Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="361" centery="246" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="341" centery="247" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="343" centery="247" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="247" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="350" centery="248" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="360" centery="248" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="341" centery="249" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="347" centery="249" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="356" centery="249" centerz="13" radius="1">
+		<monster name="Green Djinn" x="0" y="0" z="13" spawntime="60" />
+	</monster>
+	<monster centerx="364" centery="249" centerz="13" radius="1">
+		<monster name="Marid" x="0" y="0" z="13" spawntime="60" />
 	</monster>
 	<monster centerx="684" centery="551" centerz="13" radius="1">
 		<monster name="arch angel" x="1" y="-1" z="13" spawntime="60" />
