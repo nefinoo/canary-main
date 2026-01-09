@@ -29,9 +29,9 @@ local deadlyReckoning = {
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -2.35,
-        baseB = -1500,
-        baseC = -3,
+        baseA = -1.9,
+        baseB = -150,
+        baseC = -2.15,
         baseD = 0
     },
 

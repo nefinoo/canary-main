@@ -9,7 +9,7 @@ function viperStar.onUseWeapon(player, variant)
     local lvl = player:getLevel()
     local skill = player:getSkillLevel(SKILL_DISTANCE)
 
-    local dmgMax = ((lvl * 3.5) + (skill * 35)) / 2.20
+    local dmgMax = ((lvl * 3) + (skill * 35)) / 2.20
     local dmgMin = dmgMax / 1.5
 
     local fromPos = player:getPosition()
