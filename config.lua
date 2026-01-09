@@ -29,7 +29,7 @@ maintainModeMessage = ""
 -- NOTE: loginProtectionTime in MS
 worldType = "pvp"
 hotkeyAimbotEnabled = true
-protectionLevel = 7
+protectionLevel = 100
 pzLocked = 60 * 1000
 removeChargesFromRunes = true
 removeChargesFromPotions = true
@@ -57,7 +57,7 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "frozen-hell.servegame.com"
+ip = "127.0.0.1"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
@@ -288,6 +288,7 @@ toggleTravelsFree = false
 buyAolCommandFee = 0
 buyBlessCommandFee = 5
 teleportPlayerToVocationRoom = true
+teleportPlayerToVocationRoom = false
 toggleReceiveReward = true
 randomMonsterSpawn = false
 lootPouchMaxLimit = 2000
@@ -506,11 +507,11 @@ sortLootByChance = true
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
-rateUseStages = true
+rateUseStages = false
 lowLevelBonusExp = 100
-rateExp = 100
+rateExp = 1000
 rateSkill = 100
-rateLoot = 2.5
+rateLoot = 1
 rateMagic = 50
 rateSpawn = 1
 
@@ -591,11 +592,11 @@ discordWebhookDelayMs = 1000
 -- 		If you use 'vipFamiliarTimeCooldownReduction' greater than half of 'familiarTime', it will get the highest possible value, in this case 15
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
-vipSystemEnabled = false
+vipSystemEnabled = true
 vipBonusExp = 10
 vipBonusLoot = 0
 vipBonusSkill = 0
-vipAutoLootVipOnly = true
+vipAutoLootVipOnly = false
 vipStayOnline = false
 vipFamiliarTimeCooldownReduction = 0
 vipKeepHouse = false

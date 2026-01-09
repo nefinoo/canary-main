@@ -5,10 +5,10 @@ local deadlyReckoning = {
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -4.8,
-        baseB = -30,
-        baseC = -5.5,
-        baseD = 0
+        baseA = -4.15,
+        baseB = -100,
+        baseC = -4.65,
+        baseD = -100
     },
 
     -- Deadly Priest (10, 14)

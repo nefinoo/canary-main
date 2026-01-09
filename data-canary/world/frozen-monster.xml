@@ -508,7 +508,12 @@
 		<monster name="Werelion" x="-25" y="-19" z="4" spawntime="60" />
 		<monster name="Werelioness" x="-22" y="-18" z="4" spawntime="60" />
 		<monster name="Werelioness" x="-26" y="-15" z="4" spawntime="60" />
+		<monster name="Werelion" x="-20" y="-15" z="4" spawntime="60" />
 		<monster name="Werelion" x="-23" y="-14" z="4" spawntime="60" />
+		<monster name="Werelion" x="-27" y="-12" z="4" spawntime="60" />
+		<monster name="Werelion" x="-21" y="-12" z="4" spawntime="60" />
+		<monster name="Werelion" x="4" y="11" z="4" spawntime="60" />
+		<monster name="Werelion" x="10" y="11" z="4" spawntime="60" />
 		<monster name="Werelioness" x="-22" y="13" z="4" spawntime="60" />
 		<monster name="Werelion" x="-21" y="13" z="4" spawntime="60" />
 		<monster name="Werelion" x="2" y="13" z="4" spawntime="60" />
@@ -516,19 +521,26 @@
 		<monster name="Werelioness" x="7" y="14" z="4" spawntime="60" />
 		<monster name="Werelioness" x="-19" y="15" z="4" spawntime="60" />
 		<monster name="Werelioness" x="12" y="16" z="4" spawntime="60" />
+		<monster name="Werelion" x="-24" y="17" z="4" spawntime="60" />
 		<monster name="Werelion" x="-21" y="17" z="4" spawntime="60" />
+		<monster name="Werelion" x="-19" y="17" z="4" spawntime="60" />
 		<monster name="Werelioness" x="2" y="18" z="4" spawntime="60" />
 		<monster name="Werelion" x="7" y="18" z="4" spawntime="60" />
 	</monster>
 	<monster centerx="176" centery="1293" centerz="4" radius="30">
+		<monster name="Werelioness" x="20" y="-20" z="4" spawntime="60" />
 		<monster name="Werelion" x="18" y="-19" z="4" spawntime="60" />
 		<monster name="Werelioness" x="23" y="-18" z="4" spawntime="60" />
+		<monster name="Werelion" x="26" y="-16" z="4" spawntime="60" />
+		<monster name="Werelioness" x="16" y="-15" z="4" spawntime="60" />
 		<monster name="Werelioness" x="19" y="-14" z="4" spawntime="60" />
 		<monster name="Werelion" x="22" y="-14" z="4" spawntime="60" />
 		<monster name="Werelioness" x="22" y="12" z="4" spawntime="60" />
 		<monster name="Werelion" x="19" y="13" z="4" spawntime="60" />
 		<monster name="Werelioness" x="17" y="16" z="4" spawntime="60" />
 		<monster name="Werelion" x="21" y="16" z="4" spawntime="60" />
+		<monster name="Werelion" x="19" y="17" z="4" spawntime="60" />
+		<monster name="Werelion" x="23" y="17" z="4" spawntime="60" />
 	</monster>
 	<monster centerx="1526" centery="1531" centerz="4" radius="5">
 		<monster name="Naberious" x="0" y="-4" z="4" spawntime="30" />
@@ -1123,6 +1135,7 @@
 		<monster name="Hellraiser" x="3" y="3" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="161" centery="1292" centerz="5" radius="30">
+		<monster name="Werelioness" x="6" y="-26" z="5" spawntime="60" />
 		<monster name="Werelioness" x="5" y="-24" z="5" spawntime="60" />
 		<monster name="Werelioness" x="8" y="-24" z="5" spawntime="60" />
 		<monster name="Werelion" x="6" y="-22" z="5" spawntime="60" />
@@ -1135,10 +1148,13 @@
 		<monster name="Werelioness" x="5" y="-15" z="5" spawntime="60" />
 		<monster name="Werelioness" x="19" y="-15" z="5" spawntime="60" />
 		<monster name="Werelion" x="13" y="-14" z="5" spawntime="60" />
+		<monster name="Werelion" x="-28" y="-13" z="5" spawntime="60" />
+		<monster name="Werelion" x="-20" y="-13" z="5" spawntime="60" />
 		<monster name="Werelioness" x="-23" y="-11" z="5" spawntime="60" />
 		<monster name="Werelioness" x="-21" y="-3" z="5" spawntime="60" />
 		<monster name="Werelion" x="-21" y="1" z="5" spawntime="60" />
 		<monster name="Werelioness" x="-23" y="3" z="5" spawntime="60" />
+		<monster name="Werelion" x="2" y="12" z="5" spawntime="60" />
 		<monster name="Werelioness" x="10" y="12" z="5" spawntime="60" />
 		<monster name="Werelioness" x="-22" y="13" z="5" spawntime="60" />
 		<monster name="Werelion" x="7" y="14" z="5" spawntime="60" />
@@ -1147,19 +1163,27 @@
 		<monster name="Werelion" x="-7" y="15" z="5" spawntime="60" />
 		<monster name="Werelioness" x="18" y="15" z="5" spawntime="60" />
 		<monster name="Werelion" x="24" y="15" z="5" spawntime="60" />
+		<monster name="Werelion" x="-24" y="16" z="5" spawntime="60" />
+		<monster name="Werelion" x="-20" y="16" z="5" spawntime="60" />
 		<monster name="Werelioness" x="-22" y="17" z="5" spawntime="60" />
 		<monster name="Werelioness" x="4" y="18" z="5" spawntime="60" />
+		<monster name="Werelioness" x="0" y="19" z="5" spawntime="60" />
 		<monster name="Werelioness" x="11" y="19" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="176" centery="1292" centerz="5" radius="30">
 		<monster name="Werelioness" x="24" y="-18" z="5" spawntime="60" />
+		<monster name="Werelioness" x="17" y="-17" z="5" spawntime="60" />
 		<monster name="Werelion" x="20" y="-15" z="5" spawntime="60" />
+		<monster name="Werelioness" x="25" y="-14" z="5" spawntime="60" />
 		<monster name="Werelioness" x="22" y="-13" z="5" spawntime="60" />
 		<monster name="Werelioness" x="20" y="-3" z="5" spawntime="60" />
 		<monster name="Werelion" x="20" y="2" z="5" spawntime="60" />
 		<monster name="Werelioness" x="19" y="6" z="5" spawntime="60" />
+		<monster name="Werelion" x="20" y="13" z="5" spawntime="60" />
 		<monster name="Werelioness" x="17" y="16" z="5" spawntime="60" />
 		<monster name="Werelion" x="19" y="16" z="5" spawntime="60" />
+		<monster name="Werelion" x="21" y="17" z="5" spawntime="60" />
+		<monster name="Werelion" x="20" y="18" z="5" spawntime="60" />
 		<monster name="Werelioness" x="22" y="19" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="1526" centery="1530" centerz="5" radius="5">
@@ -2201,6 +2225,8 @@
 		<monster name="Werelion" x="11" y="-21" z="6" spawntime="60" />
 		<monster name="Werelion" x="6" y="-20" z="6" spawntime="60" />
 		<monster name="Werelion" x="9" y="-20" z="6" spawntime="60" />
+		<monster name="Werelioness" x="7" y="-19" z="6" spawntime="60" />
+		<monster name="Werelion" x="-21" y="-17" z="6" spawntime="60" />
 		<monster name="Werelion" x="-25" y="-16" z="6" spawntime="60" />
 		<monster name="Werelion" x="-18" y="-16" z="6" spawntime="60" />
 		<monster name="Werelioness" x="-9" y="-14" z="6" spawntime="60" />
@@ -2209,6 +2235,7 @@
 		<monster name="Werelion" x="13" y="-14" z="6" spawntime="60" />
 		<monster name="Werelioness" x="20" y="-13" z="6" spawntime="60" />
 		<monster name="Werelion" x="29" y="-13" z="6" spawntime="60" />
+		<monster name="Werelion" x="-25" y="-12" z="6" spawntime="60" />
 		<monster name="Werelioness" x="-21" y="-12" z="6" spawntime="60" />
 		<monster name="Werelioness" x="-5" y="-9" z="6" spawntime="60" />
 		<monster name="Werelion" x="2" y="-9" z="6" spawntime="60" />
@@ -2224,6 +2251,7 @@
 		<monster name="Werelioness" x="20" y="12" z="6" spawntime="60" />
 		<monster name="Werelioness" x="5" y="14" z="6" spawntime="60" />
 		<monster name="Werelioness" x="12" y="14" z="6" spawntime="60" />
+		<monster name="Werelion" x="-19" y="15" z="6" spawntime="60" />
 		<monster name="Werelioness" x="-21" y="16" z="6" spawntime="60" />
 		<monster name="Werelion" x="28" y="16" z="6" spawntime="60" />
 		<monster name="Werelioness" x="-14" y="17" z="6" spawntime="60" />
@@ -2231,17 +2259,22 @@
 		<monster name="Werelioness" x="-4" y="17" z="6" spawntime="60" />
 		<monster name="Werelioness" x="24" y="17" z="6" spawntime="60" />
 		<monster name="Werelion" x="-18" y="18" z="6" spawntime="60" />
-		<monster name="Werelioness" x="8" y="20" z="6" spawntime="60" />
+		<monster name="Werelion" x="-20" y="19" z="6" spawntime="60" />
+		<monster name="Werelioness" x="5" y="20" z="6" spawntime="60" />
+		<monster name="Werelioness" x="12" y="20" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="174" centery="1291" centerz="6" radius="30">
+		<monster name="Werelion" x="21" y="-17" z="6" spawntime="60" />
 		<monster name="Werelion" x="23" y="-15" z="6" spawntime="60" />
 		<monster name="Werelioness" x="28" y="-15" z="6" spawntime="60" />
 		<monster name="Werelioness" x="20" y="-14" z="6" spawntime="60" />
+		<monster name="Werelion" x="26" y="-12" z="6" spawntime="60" />
 		<monster name="Werelion" x="17" y="-2" z="6" spawntime="60" />
 		<monster name="Werelioness" x="18" y="0" z="6" spawntime="60" />
 		<monster name="Werelioness" x="22" y="1" z="6" spawntime="60" />
 		<monster name="Werelion" x="21" y="4" z="6" spawntime="60" />
 		<monster name="Werelioness" x="16" y="11" z="6" spawntime="60" />
+		<monster name="Werelion" x="22" y="15" z="6" spawntime="60" />
 		<monster name="Werelioness" x="19" y="17" z="6" spawntime="60" />
 		<monster name="Werelion" x="22" y="19" z="6" spawntime="61184" />
 		<monster name="Werelion" x="23" y="19" z="6" spawntime="60" />

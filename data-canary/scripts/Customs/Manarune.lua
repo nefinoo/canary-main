@@ -47,7 +47,6 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     
     -- Añadir mana
     targetPlayer:addMana(manaToAdd)
-    
     -- Mensaje de depuración en consola
     -- print(string.format("[MANA RUNE] %s +%d mana (nivel: %d, manaMax: %d)", targetPlayer:getName(), manaToAdd, targetPlayer:getLevel(), mana))
     

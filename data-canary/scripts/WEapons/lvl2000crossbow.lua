@@ -11,7 +11,7 @@ function viperStar.onUseWeapon(player, variant)
     local skill = player:getSkillLevel(SKILL_DISTANCE)
 
     -- Daño físico
-    local dmgMax = (lvl * 3.85) + (skill * 55)
+    local dmgMax = (lvl * 4.35) + (skill * 55)
     local dmgMin = dmgMax / 1.5
 
     -- Daño holy
