@@ -179,7 +179,7 @@ bool Weapon::useWeapon(const std::shared_ptr<Player> &player, const std::shared_
 
 CombatDamage Weapon::getCombatDamage(CombatDamage combat, const std::shared_ptr<Player> &player, const std::shared_ptr<Item> &item, int32_t damageModifier) const {
 	// Local variables
-	const uint32_t level = player->getLevel();
+	const uint64_t level = player->getLevel();
 	const int16_t elementalAttack = getElementDamageValue();
 	const int32_t weaponAttack = std::max<int32_t>(0, item->getAttack());
 	const int32_t playerSkill = player->getWeaponSkill(item);
@@ -606,7 +606,7 @@ int32_t WeaponMelee::getElementDamage(const std::shared_ptr<Player> &player, con
 	const int32_t attackSkill = player->getWeaponSkill(item);
 	const int32_t attackValue = elementDamage;
 	const float attackFactor = player->getAttackFactor();
-	const uint32_t level = player->getLevel();
+	const uint64_t level = player->getLevel();
 
 	const int32_t maxValue = Weapons::getMaxWeaponDamage(level, attackSkill, attackValue, attackFactor, true);
 	const int32_t minValue = level / 5;
@@ -625,7 +625,7 @@ int32_t WeaponMelee::getWeaponDamage(const std::shared_ptr<Player> &player, cons
 	const int32_t combinedAttack = physicalAttack + elementalAttack;
 
 	const float attackFactor = player->getAttackFactor();
-	const uint32_t level = player->getLevel();
+	const uint64_t level = player->getLevel();
 
 	const auto maxValue = static_cast<int32_t>(Weapons::getMaxWeaponDamage(level, attackSkill, combinedAttack, attackFactor, true) * player->getVocation()->meleeDamageMultiplier);
 

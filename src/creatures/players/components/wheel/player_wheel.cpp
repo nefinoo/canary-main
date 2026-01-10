@@ -1875,7 +1875,7 @@ uint16_t PlayerWheel::getExtraPoints() const {
 }
 
 uint16_t PlayerWheel::getWheelPoints(bool includeExtraPoints /* = true*/) const {
-	const uint32_t level = m_player.getLevel();
+	const uint64_t level = m_player.getLevel();
 	auto totalPoints = std::max(0u, (level - m_minLevelToStartCountPoints)) * m_pointsPerLevel;
 
 	if (includeExtraPoints) {
