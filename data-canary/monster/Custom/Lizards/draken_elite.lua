@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Draken Elite")
 local monster = {}
 
 monster.description = "a draken elite"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 362,
 	lookHead = 0,
@@ -100,13 +100,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 4, effect = CONST_ME_POFF, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, radius = 4, effect = CONST_ME_POFF, target = true },
 	{ name = "soulfire rune", interval = 2000, chance = 10, target = false },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_POISON, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_POISON, target = true },
 }
 
 monster.defenses = {

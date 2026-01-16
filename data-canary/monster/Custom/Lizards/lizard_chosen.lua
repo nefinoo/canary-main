@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lizard Chosen")
 local monster = {}
 
 monster.description = "a lizard chosen"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 344,
 	lookHead = 0,
@@ -96,11 +96,11 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 20, minDamage = -8653, maxDamage = -11249, length = 3, spread = 2, effect = CONST_ME_POISONAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, length = 8, spread = 3, effect = CONST_ME_GREEN_RINGS, target = false },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 20, minDamage = -20306, maxDamage = -26398, length = 3, spread = 2, effect = CONST_ME_POISONAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, length = 8, spread = 3, effect = CONST_ME_GREEN_RINGS, target = false },
 }
 
 monster.defenses = {

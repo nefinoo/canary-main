@@ -249,7 +249,6 @@
 		<monster name="Midnight Asura" x="-1" y="14" z="3" spawntime="60" />
 		<monster name="Hellraiser" x="1" y="14" z="3" spawntime="60" />
 	</monster>
-	<monster centerx="167" centery="1289" centerz="3" radius="30" />
 	<monster centerx="294" centery="1623" centerz="3" radius="5">
 		<monster name="Pirate Hatcheteer" x="-1" y="-1" z="3" spawntime="60" />
 		<monster name="Pirate Skeleton" x="1" y="0" z="3" spawntime="60" />
@@ -5120,7 +5119,6 @@
 		<monster name="Werelion" x="21" y="21" z="7" spawntime="60" />
 		<monster name="Werelioness" x="23" y="21" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="168" centery="1321" centerz="7" radius="30" />
 	<monster centerx="1527" centery="1534" centerz="7" radius="5">
 		<monster name="Asmoday" x="0" y="-5" z="7" spawntime="30" />
 	</monster>

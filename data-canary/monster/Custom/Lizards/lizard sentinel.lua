@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard sentinel"
 monster.description = "a lizard sentinel"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 114,
 	lookHead = 20,
@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
 	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
 }
 

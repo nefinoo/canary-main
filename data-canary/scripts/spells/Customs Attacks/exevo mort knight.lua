@@ -144,8 +144,10 @@ function spell.onCastSpell(creature, variant)
         return false
     end
 
+	costmana = player:getMaxMana() * 0.05
+	
     -- Mana
-    if config.mana and player:getMana() < config.mana then
+    if player:getMana() < costmana then
         player:sendCancelMessage("You do not have enough mana.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
@@ -160,8 +162,8 @@ function spell.onCastSpell(creature, variant)
 
     -- Consumir mana
     if config.mana then
-        player:addMana(-config.mana)
-        player:addManaSpent(2000)
+        player:addMana(-costmana)
+        player:addManaSpent(costmana)
     end
 
     return config.combat:execute(creature, variant)

@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Dawnfire Asura")
 local monster = {}
 
 monster.description = "a dawnfire asura"
-monster.experience = 7500000
+monster.experience = 11000000
 monster.outfit = {
 	lookType = 150,
 	lookHead = 114,
@@ -100,10 +100,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000 },
-	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
-	{ name = "combat", interval = 3200, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -35000, maxDamage = -50000, radius = 4, range = 5, target = true, effect = CONST_ME_MORTAREA },
-	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -35000, maxDamage = -50000, range = 3, shootEffect = CONST_ANI_FIRE, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22499, maxDamage = -38075 },
+	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_LIFEDRAIN, minDamage = -38075, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
+	{ name = "combat", interval = 3200, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -38075, maxDamage = -50000, radius = 4, range = 5, target = true, effect = CONST_ME_MORTAREA },
+	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -38075, maxDamage = -50000, range = 3, shootEffect = CONST_ANI_FIRE, target = true },
 	{ name = "speed", interval = 2000, chance = 20, speedChange = -800, radius = 1, shootEffect = CONST_ANI_EXPLOSION, effect = CONST_ME_SLEEP, target = true, duration = 15000 },
 }
 
@@ -116,16 +116,16 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -10 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = -10 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 20 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

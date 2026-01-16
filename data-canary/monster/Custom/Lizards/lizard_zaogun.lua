@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lizard Zaogun")
 local monster = {}
 
 monster.description = "a lizard zaogun"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 343,
 	lookHead = 0,
@@ -96,8 +96,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
 }
 
 monster.defenses = {

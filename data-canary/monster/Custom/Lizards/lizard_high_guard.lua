@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lizard High Guard")
 local monster = {}
 
 monster.description = "a lizard high guard"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 337,
 	lookHead = 0,
@@ -98,7 +98,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1500, chance = 100, minDamage = -8653, maxDamage = -11249 },
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -20306, maxDamage = -26398 },
 }
 
 monster.defenses = {

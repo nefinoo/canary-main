@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Midnight Asura")
 local monster = {}
 
 monster.description = "a midnight asura"
-monster.experience = 7500000
+monster.experience = 11000000
 monster.outfit = {
 	lookType = 150,
 	lookHead = 0,
@@ -100,12 +100,12 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000 },
-	{ name = "combat", interval = 3300, chance = 10, type = COMBAT_MANADRAIN, minDamage = -35000, maxDamage = -50000, range = 7, target = true },
-	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, length = 5, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
-	{ name = "combat", interval = 4100, chance = 27, type = COMBAT_DEATHDAMAGE, minDamage = -35000, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2700, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -35000, maxDamage = -50000, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, target = true },
-	{ name = "combat", interval = 3100, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, range = 1, shootEffect = CONST_ANI_ENERGY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22499, maxDamage = -38075 },
+	{ name = "combat", interval = 3300, chance = 10, type = COMBAT_MANADRAIN, minDamage = -38075, maxDamage = -50000, range = 7, target = true },
+	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -38075, maxDamage = -50000, length = 5, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
+	{ name = "combat", interval = 4100, chance = 27, type = COMBAT_DEATHDAMAGE, minDamage = -38075, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2700, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -38075, maxDamage = -50000, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, target = true },
+	{ name = "combat", interval = 3100, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -38075, maxDamage = -50000, range = 1, shootEffect = CONST_ANI_ENERGY, target = true },
 	{ name = "speed", interval = 2000, chance = 20, speedChange = -800, radius = 1, shootEffect = CONST_ANI_EXPLOSION, effect = CONST_ME_SLEEP, target = true, duration = 15000 },
 }
 
@@ -119,15 +119,15 @@ monster.defenses = {
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
-	{ type = COMBAT_EARTHDAMAGE, percent = -10 },
-	{ type = COMBAT_FIREDAMAGE, percent = 10 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 100 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

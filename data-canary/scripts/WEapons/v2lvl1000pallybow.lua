@@ -26,7 +26,7 @@ function onGetFormula(player, skill, attack, factor)
 	local lvl = player:getLevel()
 	local dist = player:getSkillLevel(SKILL_DISTANCE)
 
-	local dmgMax = ((lvl * 3) + (dist * 35)) / 1.2
+	local dmgMax = ((lvl * 3) + (dist * 35)) / 1.15
 	local dmgMin = dmgMax / 1.5
 
 	-- reducción del 45%

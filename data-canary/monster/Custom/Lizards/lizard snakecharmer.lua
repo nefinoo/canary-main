@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard snakecharmer"
 monster.description = "a lizard snakecharmer"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 115,
 	lookHead = 20,
@@ -80,9 +80,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{name ="condition", interval = 1000, chance = 10, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
+	{name ="condition", interval = 1000, chance = 10, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {

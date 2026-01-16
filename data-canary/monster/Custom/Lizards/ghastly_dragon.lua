@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Ghastly Dragon")
 local monster = {}
 
 monster.description = "a ghastly dragon"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 351,
 	lookHead = 0,
@@ -108,7 +108,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
 	{ name = "ghastly dragon curse", interval = 2000, chance = 5, range = 5, target = false },
 	-- poison
 	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, range = 5, effect = CONST_ME_SMALLCLOUDS, target = true },

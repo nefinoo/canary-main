@@ -5,9 +5,9 @@ local deadlyReckoning = {
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -4.8,
+        baseA = -4.6,
         baseB = -30,
-        baseC = -5.5,
+        baseC = -5.3,
         baseD = 0
     },
 
@@ -143,9 +143,11 @@ function spell.onCastSpell(creature, variant)
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
-
+	
+	costmana = player:getMaxMana() * 0.05
+	
     -- Mana
-    if config.mana and player:getMana() < config.mana then
+    if player:getMana() < costmana then
         player:sendCancelMessage("You do not have enough mana.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
@@ -157,11 +159,11 @@ function spell.onCastSpell(creature, variant)
     local d = config.baseD / 2
 
     config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
-
+	
     -- Consumir mana
     if config.mana then
-        player:addMana(-config.mana)
-        player:addManaSpent(2000)
+        player:addMana(-costmana)
+        player:addManaSpent(costmana)
     end
 
     return config.combat:execute(creature, variant)

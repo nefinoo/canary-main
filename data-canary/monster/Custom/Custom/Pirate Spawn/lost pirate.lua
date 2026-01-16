@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -5768, maxDamage = -7500, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -7500, maxDamage = -11000, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {

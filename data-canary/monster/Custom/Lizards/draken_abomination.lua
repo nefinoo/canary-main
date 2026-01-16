@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Draken Abomination")
 local monster = {}
 
 monster.description = "a draken abomination"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 357,
 	lookHead = 0,
@@ -107,10 +107,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
 	{ name = "draken abomination curse", interval = 2000, chance = 10, range = 5, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_MORTAREA, target = false },
 	{ name = "drunk", interval = 2000, chance = 15, range = 7, radius = 4, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false, duration = 9000 },
 	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, range = 7, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
 }

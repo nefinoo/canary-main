@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "green djinn"
 monster.description = "a green djinn"
-monster.experience = 5000000
+monster.experience = 5750000
 monster.outfit = {
 	lookType = 51,
 	lookHead = 20,
@@ -69,23 +69,23 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 30},
-	{type = COMBAT_ENERGYDAMAGE, percent = 50},
-	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 80},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = -10},
-	{type = COMBAT_DEATHDAMAGE , percent = 20}
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -15000},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -20000, maxDamage = -30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="condition", interval = 1000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -14999, maxDamage = -25383},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="condition", interval = 1000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
 	{name ="drunk", interval = 1000, chance = 15, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
 	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 20000, outfitMonster = "rabbit" },
 }

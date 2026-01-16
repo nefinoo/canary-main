@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "sibang"
 monster.description = "a sibang"
-monster.experience = 2050000
+monster.experience = 2500000
 monster.outfit = {
 	lookType = 118,
 	lookHead = 20,
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SMALLSTONE}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -11249, maxDamage = -19037},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -11249, maxDamage = -19037, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SMALLSTONE}
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "kongra"
 monster.description = "a kongra"
-monster.experience = 2050000
+monster.experience = 2500000
 monster.outfit = {
 	lookType = 116,
 	lookHead = 20,
@@ -81,7 +81,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -8653, maxDamage = -11249},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11249, maxDamage = -19037},
 }
 
 monster.defenses = {

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "spectre"
 monster.description = "a spectre"
-monster.experience = 7000000
+monster.experience = 8250000
 monster.outfit = {
 	lookType = 235,
 	lookHead = 20,
@@ -67,23 +67,23 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 60},
-	{type = COMBAT_ENERGYDAMAGE, percent = -20},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = -23},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 55},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
-	{type = COMBAT_DEATHDAMAGE , percent = 100}
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -35000, maxDamage = -50000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -18749, maxDamage = -31729},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -31729, maxDamage = -41248, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
 	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_POISON},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -31729, maxDamage = -41248, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {

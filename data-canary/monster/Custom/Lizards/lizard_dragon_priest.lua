@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lizard Dragon Priest")
 local monster = {}
 
 monster.description = "a lizard dragon priest"
-monster.experience = 2050000
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 339,
 	lookHead = 0,
@@ -102,10 +102,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK, target = true },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 15, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 15, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
 }
 
 monster.defenses = {
