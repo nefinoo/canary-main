@@ -173,6 +173,8 @@ end
 spell:name("Deadly Core")
 spell:words("exevo flam mort")
 spell:group("attack")
+spell:id(24)
+spell:castSound(SOUND_EFFECT_TYPE_SPELL_HELL_SCORE)
 spell:isAggressive(true)
 spell:needTarget(false)
 spell:needWeapon(false)

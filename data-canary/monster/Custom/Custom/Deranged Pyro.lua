@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deranged Pyro"
 monster.description = "a deranged pyro"
-monster.experience = 325000
+monster.experience = 225000
 monster.outfit = {
 	lookType = 194,
 	lookHead = 132,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 88000
-monster.maxHealth = 88000
+monster.health = 60000
+monster.maxHealth = 60000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -101,11 +101,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{name = "elven amulet", chance = 1},
-	{name = "experience scroll", chance = 3000},
-	{name = "piece of royal steel", chance = 500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 75000, maxCount = 35},
+	{name = "platinum coin", chance = 50000, maxCount = 55},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	-- weapons lvl 1000
+	{id = 895, chance = 300}, 
+	-- weapons lvl 500	
+	{id = 7426, chance = 500}, 
+	-- weapons lvl 100
+	{ id = 3341, chance = 700}, 
+	
+	{name = "demon helmet", chance = 350},
+	{id = 6529, chance = 350}, -- soft boots
+	{id = 3082, chance = 5000}, -- elven amulet
 }
 
 mType:register(monster)

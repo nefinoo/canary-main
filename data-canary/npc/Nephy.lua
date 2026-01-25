@@ -105,7 +105,7 @@ npcConfig.shop = {
 
 
 	--Alaistar-
-	{ itemName = "cowbell", clientId = 21204, sell = 210 },
+	 { itemName = "cowbell", clientId = 21204, sell = 210 },
 	{ itemName = "execowtioner mask", clientId = 21201, sell = 240 },
 	{ itemName = "giant pacifier", clientId = 21199, sell = 170 },
 	{ itemName = "glob of glooth", clientId = 21182, sell = 125 },
@@ -419,7 +419,6 @@ npcConfig.shop = {
 	--rashid--
 		{ itemName = "abyss hammer", clientId = 7414, sell = 20000 },
 	{ itemName = "albino plate", clientId = 19358, sell = 1500 },
-	-- { itemName = "amber staff", clientId = 7426, sell = 8000 },
 	{ itemName = "ancient amulet", clientId = 3025, sell = 200 },
 	{ itemName = "assassin dagger", clientId = 7404, sell = 20000 },
 	{ itemName = "bandana", clientId = 5917, sell = 150 },
@@ -438,7 +437,6 @@ npcConfig.shop = {
 	{ itemName = "cobra crown", clientId = 11674, sell = 50000 },
 	{ itemName = "coconut shoes", clientId = 9017, sell = 500 },
 	{ itemName = "composite hornbow", clientId = 8027, sell = 25000 },
-	{ itemName = "cranial basher", clientId = 7415, sell = 30000 },
 	{ itemName = "crocodile boots", clientId = 3556, sell = 1000 },
 	{ itemName = "crystal crossbow", clientId = 16163, sell = 35000 },
 	{ itemName = "crystal mace", clientId = 3333, sell = 12000 },
@@ -547,7 +545,6 @@ npcConfig.shop = {
 	{ itemName = "ruby necklace", clientId = 3016, sell = 2000 },
 	{ itemName = "ruthless axe", clientId = 6553, sell = 45000 },
 	{ itemName = "sacred tree amulet", clientId = 9302, sell = 3000 },
-	{ itemName = "sapphire hammer", clientId = 7437, sell = 7000 },
 	{ itemName = "scarab amulet", clientId = 3018, sell = 200 },
 	{ itemName = "scarab shield", clientId = 3440, sell = 2000 },
 	{ itemName = "shockwave amulet", clientId = 9304, sell = 3000 },
@@ -565,7 +562,6 @@ npcConfig.shop = {
 	{ itemName = "terra hood", clientId = 830, sell = 2500 },
 	{ itemName = "terra legs", clientId = 812, sell = 11000 },
 	{ itemName = "terra mantle", clientId = 811, sell = 11000 },
-	{ itemName = "the justice seeker", clientId = 7390, sell = 40000 },
 	{ itemName = "tortoise shield", clientId = 6131, sell = 150 },
 	{ itemName = "vile axe", clientId = 7388, sell = 30000 },
 	{ itemName = "voodoo doll", clientId = 3002, sell = 400 },
@@ -1391,9 +1387,13 @@ npcConfig.shop = {
 	{ itemName = "yirkas' egg", clientId = 34102, sell = 280 },
 	{ itemName = "young lich worm", clientId = 31590, sell = 25000 },
 	{ itemName = "zaogun flag", clientId = 10413, sell = 600 },
-	{ itemName = "zaogun shoulderplates", clientId = 10414, sell = 150 },	
+	{ itemName = "zaogun shoulderplates", clientId = 10414, sell = 150 },
+	{ itemName = "serpent sword", clientId = 3297, sell = 900 },	
 	
 	--Customs
+	{ itemName = "experience scroll", clientId = 51670, sell = 50000 },	
+	{ itemName = "silver token", clientId = 22516, sell = 100000 },	
+	
 	{ itemName = "arcane staff", clientId = 3341, sell = 100000 },	
 	{ itemName = "thunder hammer", clientId = 3309, sell = 100000 },
 	{ itemName = "stonecutter axe", clientId = 3319, sell = 100000 },
@@ -1411,6 +1411,17 @@ npcConfig.shop = {
 	{ itemName = "great axe", clientId = 3303, sell = 300000 },
 	{ itemName = "justice seeker", clientId = 7390, sell = 300000 },
 	{ itemName = "assassin star", clientId = 7368, sell = 300000 },
+	
+	{ itemName = "demon helmet", clientId = 3387, sell = 50000 },	
+	{ itemName = "demon armor", clientId = 3388, sell = 50000 },
+	{ itemName = "demon legs", clientId = 3389, sell = 50000 },
+	{ itemName = "new pair soft boots", clientId = 6529, sell = 50000 },
+	
+	{ itemName = "green demon helmet", clientId = 37609, sell = 300000 },	
+	{ itemName = "green demon armor", clientId = 37608, sell = 300000 },
+	{ itemName = "green demon legs", clientId = 37607, sell = 300000 },
+	{ itemName = "green demon slippers", clientId = 37610, sell = 300000 },
+	{ itemName = "nightmare shield", clientId = 7368, sell = 300000 },
 }
 
 -- On buy npc shop message

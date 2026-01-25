@@ -93,23 +93,20 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 80},
-	{name = "platinum coin", chance = 100000, maxCount = 80},
 	{name = "meat", chance = 20000, maxCount = 8},
 	{name = "dragon ham", chance = 10000, maxCount = 3},
 	{name = "dirty fur", chance = 10000},
-	{id = 3113, chance = 5000},
-	{name = "heavy mace", chance = 444},
-	{id = 6558, chance = 2500},
-	{id = 6558, chance = 2500},
+	{name = "heavy mace", chance = 1444},
 	{name = "demonic essence", chance = 1429},
-	{id = 2853, chance = 100000, child = {
-			{name = "soul orb", chance = 1333},
-			{name = "dragon hammer", chance = 1667},
-			{name = "golden armor", chance = 333},
-			{name = "golden legs", chance = 400},
-			{name = "spiked squelcher", chance = 600}
-		}
-	}
+	{name = "soul orb", chance = 1333},
+	{name = "dragon hammer", chance = 1667},
+	{name = "golden armor", chance = 1433},
+	{name = "golden legs", chance = 1200},
+	{name = "spiked squelcher", chance = 1600},
+	{name = "mastermind shield", chance = 500},
+	{name = "giant sword", chance = 1428},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
+	{name = "platinum coin", chance = 70000, maxCount = 18},
 }
 
 mType:register(monster)

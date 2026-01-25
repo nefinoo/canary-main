@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hellraiser"
 monster.description = "a hellraiser"
-monster.experience = 22500
+monster.experience = 26500
 monster.outfit = {
 	lookType = 322,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Magician Quarter, Vengoth, Deeper Banuta, Formorgar Minese, Chyllfroest, Oramond Dungeon, Asura Palace, Asura Vaults.",
 }
 
-monster.health = 29000
-monster.maxHealth = 29000
+monster.health = 22000
+monster.maxHealth = 22000
 monster.runHealth = 0
 monster.race = "fire"
 monster.corpse = 9009
@@ -106,11 +106,22 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 70000, maxCount = 20},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
 	{id = 7366, chance = 100},
+	{id = 7426, chance = 100}, 
+	{id = 7420, chance = 100}, 
+	{id = 3296, chance = 100},
+	{id = 7437, chance = 100},
+	{name = "magic sword", chance = 200},
+	{ id = 3319, chance = 200 }, 
+	{ id = 3309, chance = 200 }, 
+	{id = 3341, chance = 200},
+	{name = "throwing star", chance = 200},
+	{id = 3082, chance = 5500},
+	{name = "demonic essence", chance = 1818},
 	{id = 5888, chance = 500},-- hellsteel
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
 }
 
 mType:register(monster)

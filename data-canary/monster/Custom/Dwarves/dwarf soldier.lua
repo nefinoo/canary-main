@@ -90,17 +90,16 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small ruby", chance = 100000, maxCount = 7},
+	{name = "small ruby", chance = 75000, maxCount = 3},
 	{name = "violet gem", chance = 25000},
-	{name = "crystal coin", chance = 50000, maxCount = 3},
-	{name = "throwing star", chance = 100},
-	{name = "dragon lance", chance = 2500},
-	{name = "golden armor", chance = 2500},
-	{name = "magic plate armor", chance = 2500},
-	{name = "demon shield", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "iron ore", chance = 300 },
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 35000, maxCount = 3},
+	{name = "throwing star", chance = 300},
+	{name = "dragon lance", chance = 250},
+	{name = "golden armor", chance = 250},
+	{name = "magic plate armor", chance = 250},
+	{name = "demon shield", chance = 250},
+	{name = "experience scroll", chance = 600},
+	{ name = "iron ore", chance = 700 },
 }
 
 mType:register(monster)

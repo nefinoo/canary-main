@@ -104,27 +104,22 @@ monster.summons = {
 
 monster.loot = {
 	{name = "purple tome", chance = 1300},
-	{id = 2853, chance = 100000, child = {
-			{name = "talon", chance = 4000, maxCount = 4},
-			{name = "platinum amulet", chance = 50000, maxCount = 80},
-			{name = "gold ring", chance = 1100},
-			-- {id = 3098, chance = 500},
-			{name = "ice rapier", chance = 600},
-			{name = "golden legs", chance = 400},
-			{name = "demon shield", chance = 700},
-			{name = "coconut", chance = 10000, maxCount = 3},
-			{name = "fire mushroom", chance = 20000, maxCount = 6},
-			{name = "demonrage sword", chance = 4100}
-		}
-	},
-	{name = "platinum coin", chance = 70000, maxCount = 50},
-	-- {id = 3049, chance = 1400},
+	{name = "talon", chance = 4000, maxCount = 4},
+	{name = "platinum amulet", chance = 2400},
+	{name = "gold ring", chance = 800},
+	{name = "ice rapier", chance = 400},
+	{name = "golden legs", chance = 300},
+	{name = "demon shield", chance = 500},
+	{name = "coconut", chance = 10000, maxCount = 3},
+	{name = "fire mushroom", chance = 20000, maxCount = 6},
+	{name = "demonrage sword", chance = 4100},
+	{name = "platinum coin", chance = 100000, maxCount = 5},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
 	{name = "orb", chance = 3000},
 	{name = "giant sword", chance = 1428},
 	{name = "fire axe", chance = 1200},
 	{name = "magic plate armor", chance = 130},
 	{name = "mastermind shield", chance = 500},
-	{id = 5906, chance = 500},
 	{name = "demon horn", chance = 1000}
 }
 

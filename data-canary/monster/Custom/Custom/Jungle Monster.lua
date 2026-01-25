@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Jungle Monster"
 monster.description = "a jungle monster"
-monster.experience = 325000
+monster.experience = 225000
 monster.outfit = {
 	lookType = 216,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 88000
-monster.maxHealth = 88000
+monster.health = 60000
+monster.maxHealth = 60000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4375
@@ -100,9 +100,25 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 10},
-	{name = "candy", chance = 2000},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 75000, maxCount = 35},
+	{name = "platinum coin", chance = 50000, maxCount = 55},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	-- weapons lvl 1000
+	{id = 7390, chance = 150}, 
+	{id = 7415, chance = 150},
+	{id = 3303, chance = 150},
+	-- weapons lvl 500	
+	{id = 7420, chance = 250}, 
+	{id = 3296, chance = 250},
+	{id = 7437, chance = 250},
+	-- weapons lvl 100
+	{id = 3309, chance = 350}, 
+	{id = 3319, chance = 350},
+	{id = 3288, chance = 350},
+	
+	{name = "demon armor", chance = 350},
+	{id = 6529, chance = 350}, -- soft boots
 	{name = "piece of draconian steel", chance = 500},
 	{name = "tribal mask", chance = 100},
 }

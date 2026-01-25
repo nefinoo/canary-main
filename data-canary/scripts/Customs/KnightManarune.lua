@@ -83,8 +83,8 @@ function manaRune.onUse(player, item, fromPosition, target, toPosition, isHotkey
     local minMana = ((lvl * 0.35 + ml * 1) * 0.55) + 15
     local maxMana = ((lvl * 0.35 + ml * 2) * 0.65) + 20
 
-    local minHealth = ((lvl * 1.75 + ml * 2) * 0.55) + 15
-    local maxHealth = ((lvl * 2 + ml * 1) * 0.75) + 20
+    local minHealth = ((lvl * 1.75 + ml * 2) * 1.25) + 15
+    local maxHealth = ((lvl * 2 + ml * 1) * 1.75) + 20
 
     -- Ring bonus
     local ring = player:getSlotItem(CONST_SLOT_RING)

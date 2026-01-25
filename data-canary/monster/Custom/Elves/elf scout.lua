@@ -95,14 +95,15 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 5},
-	{name = "throwing star", chance = 100},
-	{name = "crown armor", chance = 2500},
-	{name = "crown legs", chance = 2500},
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 50000, maxCount = 5},
+	{name = "throwing star", chance = 300},
+	{name = "crown armor", chance = 3000},
+	{name = "crown legs", chance = 2000},
 	{name = "crown helmet", chance = 2500},
-	{name = "experience scroll", chance = 2000},
+	{name = "crown shield", chance = 3500},
+	{name = "experience scroll", chance = 3000},
 	{ id = 5921, chance = 1130 }, -- heaven blossom
-	-- {id = 9743, chance = 2500}
 }
 
 mType:register(monster)

@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Temple of Equilibrium (Zao) Hidden stairs, Fire Dragon Dojo, Corruption Hole, Razzachai.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10371
 monster.speed = 136
@@ -77,14 +77,9 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "small diamond", chance = 2550, maxCount = 5 },
-	{ name = "gold coin", chance = 33000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 36 },
-	{ name = "platinum coin", chance = 2920, maxCount = 5 },
 	{ name = "tower shield", chance = 1100 },
 	{ name = "lizard leather", chance = 2000 },
 	{ name = "lizard scale", chance = 980, maxCount = 3 },
-	{ name = "great health potion", chance = 5350, maxCount = 3 },
 	{ name = "zaoan armor", chance = 980 },
 	{ name = "zaoan helmet", chance = 140 },
 	{ name = "zaoan shoes", chance = 810 },
@@ -93,6 +88,41 @@ monster.loot = {
 	{ name = "corrupted flag", chance = 3350 },
 	{ name = "cursed shoulder spikes", chance = 5800 },
 	{ name = "scale of corruption", chance = 2870 },
+	
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 100000, maxCount = 80},
+	{name = "crystal coin", chance = 35000, maxCount = 2},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 350},
+	{id = 895, chance = 350}, 
+	{id = 7390, chance = 350}, 
+	{id = 7415, chance = 350},
+	{id = 3303, chance = 350},
+	-- weapons lvl 500	
+	{id = 7366, chance = 450},
+	{id = 7426, chance = 450}, 
+	{id = 7420, chance = 450}, 
+	{id = 3296, chance = 450},
+	{id = 7437, chance = 450},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 550},
+	{ id = 3319, chance = 550 }, 
+	{ id = 3309, chance = 550 }, 
+	{id = 3341, chance = 550},
+	{name = "throwing star", chance = 550},
+	
+	--demon green set
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
 }
 
 monster.attacks = {

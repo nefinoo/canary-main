@@ -1,4 +1,4 @@
-local customSword = Weapon(WEAPON_SWORD)
+local customSword = Weapon(WEAPON_AXE)
 
 function customSword.onUseWeapon(player, variant)
 	local target = player:getTarget()
@@ -7,17 +7,17 @@ function customSword.onUseWeapon(player, variant)
     end
 
     local lvl = player:getLevel()
-    local skill = player:getSkillLevel(SKILL_SWORD)
+    local skill = player:getSkillLevel(SKILL_AXE)
 
-    local dmgMax = ((lvl * 3) + (skill * 35)) / 1.55
-    local dmgMin = dmgMax / 1.5
+    local dmgMax = ((lvl * 7.5) + (skill * 35)) * 1.25
+    local dmgMin = dmgMax / 1.15
 
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)
 	return boolean
 end
 
-customSword:id(52376)
-customSword:attack(300)
-customSword:defense(150)
-customSword:level(1500)
+customSword:id(52365)
+customSword:attack(310)
+customSword:defense(140)
+customSword:level(5000)
 customSword:register()

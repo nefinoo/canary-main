@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Zeus"
 monster.description = "a shining light"
-monster.experience = 225000
+monster.experience = 100000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 57,
@@ -108,16 +108,36 @@ monster.summons = {
 }
 
 monster.loot = {
-	{id = 3063, chance = 10},
-	{name = "crystal coin", chance = 100000, maxCount = 15},
-	{name = "crystal coin", chance = 70000, maxCount = 45},
-	{name = "crystal coin", chance = 50000, maxCount = 70},
-	{name = "crystal coin", chance = 20000, maxCount = 100},
-	{name = "assassin star", chance = 5},
-	{name = "justice seeker", chance = 5},
-	{name = "experience scroll", chance = 3000},
-	{name = "deadly wand", chance = 5},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 30},
+	{name = "platinum coin", chance = 50000, maxCount = 50},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	-- weapons lvl 1000
+	{id = 7368, chance = 150},
+	{id = 895, chance = 150}, 
+	{id = 7390, chance = 150}, 
+	{id = 7415, chance = 150},
+	{id = 3303, chance = 150},
+	-- weapons lvl 500	
+	{id = 7366, chance = 250},
+	{id = 7426, chance = 250}, 
+	{id = 7420, chance = 250}, 
+	{id = 3296, chance = 250},
+	{id = 7437, chance = 250},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 350},
+	{ id = 3319, chance = 350 }, 
+	{ id = 3309, chance = 350 }, 
+	{id = 3341, chance = 350},
+	{name = "throwing star", chance = 350},
+	
+	{name = "demon helmet", chance = 350},
+	{name = "demon legs", chance = 350},
+	{name = "demon shield", chance = 350},
+	{id = 6529, chance = 350}, -- soft boots
+	
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)

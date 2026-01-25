@@ -1,7 +1,7 @@
 local bosslever = Action()
 local config = {
     boss = {
-        name = "Dabura",
+        name = "Deidara",
         position = Position(1681, 85, 7),
     },
     playerPositions = {

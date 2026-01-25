@@ -97,18 +97,12 @@ monster.loot = {
 	-- {id = 3053, chance = 700},
 	{name = "gold coin", chance = 100000, maxCount = 50},
 	{name = "plate armor", chance = 4000},
-	{name = "platinum amulet", chance = 400},
-	{name = "iron helmet", chance = 20000},
+	{name = "platinum amulet", chance = 2000},
 	{id = 5879, chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "steel helmet", chance = 5000},
-			{name = "knight armor", chance = 700},
-			{name = "knight legs", chance = 500},
-			{name = "brass legs", chance = 10000},
-			-- {id = 3053, chance = 800}
-		}
-	}
+	{name = "gold coin", chance = 100000, maxCount = 40},
+	{name = "steel helmet", chance = 5000},
+	{name = "knight armor", chance = 1800},
+	{name = "knight legs", chance = 1500},
 }
 
 mType:register(monster)

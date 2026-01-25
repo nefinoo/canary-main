@@ -104,21 +104,16 @@ monster.summons = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{name = "ring of the sky", chance = 150},
-			{name = "gold coin", chance = 80000, maxCount = 50},
-			{name = "skull staff", chance = 1428},
-			{name = "golden armor", chance = 588},
-			{id = 7991, chance = 2000},
-			{name = "cherry", chance = 20000, maxCount = 4},
-			{name = "dark mushroom", chance = 6666, maxCount = 5},
-		}
-	},
+	{name = "ring of the sky", chance = 150},
+	{name = "gold coin", chance = 80000, maxCount = 50},
+	{name = "skull staff", chance = 1428},
+	{name = "golden armor", chance = 588},
+	{name = "cherry", chance = 20000, maxCount = 4},
+	{name = "dark mushroom", chance = 6666, maxCount = 5},
 	{name = "piggy bank", chance = 1400},
 	{id = 3007, chance = 1000},
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "talon", chance = 1100, maxCount = 2},
-	{name = "bread", chance = 11000}
 }
 
 mType:register(monster)

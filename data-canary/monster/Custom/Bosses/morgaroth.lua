@@ -105,22 +105,35 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "grey backpack", chance = 100000, child = {
-			{name = "demon helmet", chance = 2000},
-			{name = "demon armor", chance = 2000},
-			{name = "demon legs", chance = 6000},
-			{id = 3410, chance = 5600}
-		}
-	},
-	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{id = 3046, chance = 50000},
-	{name = "crown shield", chance = 500},
-	{name = "vampire shield", chance = 5000},
-	{name = "experience scroll", chance = 3000},
-	{name = "Huge Chunk of Crude Iron", chance = 500},
-	{name = "flask of warrior's sweat", chance = 1500},
-	{name = "Damaged Steel Helmet", chance = 56000, unique = true },
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 70000, maxCount = 5},
+	{name = "experience scroll", chance = 2500, maxCount = 1},
+	-- weapons lvl 1000
+	{id = 7368, chance = 100},
+	{id = 895, chance = 100}, 
+	{id = 7390, chance = 100}, 
+	{id = 7415, chance = 100},
+	{id = 3303, chance = 100},
+	-- weapons lvl 500	
+	{id = 7366, chance = 200},
+	{id = 7426, chance = 200}, 
+	{id = 7420, chance = 200}, 
+	{id = 3296, chance = 200},
+	{id = 7437, chance = 200},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 300},
+	{ id = 3319, chance = 300 }, 
+	{ id = 3309, chance = 300 }, 
+	{id = 3341, chance = 300},
+	{name = "throwing star", chance = 300},
+	
+	{name = "demon helmet", chance = 300},
+	{name = "demon legs", chance = 300},
+	{name = "demon shield", chance = 300},
+	{id = 6529, chance = 500}, -- soft boots
+	{name = "Huge Chunk of Crude Iron", chance = 250},
+	{name = "Damaged Steel Helmet", chance = 1300, unique = true },
+	{name = "flask of warrior's sweat", chance = 500},
 }
 
 mType:register(monster)

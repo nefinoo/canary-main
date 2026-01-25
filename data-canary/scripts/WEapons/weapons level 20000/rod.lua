@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_POISONAREA)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_POISON)
 
-combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.365, -30, -1.3,0)
+combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.5, -30, -1.5,0)
 
 local starwand = Weapon(WEAPON_WAND)
 
@@ -12,10 +12,10 @@ function starwand.onUseWeapon(player, variant)
     return combat:execute(player, variant)
 end
 
-starwand:id(51853)
-starwand:level(2000)
-starwand:mana(500)
-starwand:damage(1500, 1893)
+starwand:id(53019)
+starwand:level(20000)
+starwand:mana(1500)
+starwand:damage(4500, 6000)
 starwand:range(4)
 -- starwand:magicLevel(5)
 starwand:element(COMBAT_HOLYDAMAGE)

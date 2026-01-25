@@ -1,41 +1,31 @@
 local viperStar = Weapon(WEAPON_MISSILE)
 
 function viperStar.onUseWeapon(player, variant)
-	local target = player:getTarget()
+	 local target = player:getTarget()
     if not target then
         return true
     end
 
-    -- Datos del jugador
     local lvl = player:getLevel()
     local skill = player:getSkillLevel(SKILL_DISTANCE)
 
-    -- Daño físico
-    local dmgMax = (lvl * 4.05) + (skill * 65)
-    local dmgMin = dmgMax / 1.5
+    local dmgMax = ((lvl * 9.85) + (skill * 35)) * 1.25
+    local dmgMin = dmgMax / 1.15
 
-    -- Daño holy
-    local holyMax = lvl
-    local holyMin = lvl / 2
-
-    -- Posiciones para effects
     local fromPos = player:getPosition()
     local targetPos = target:getPosition()
 
-    -- Effects
-    fromPos:sendDistanceEffect(targetPos, CONST_ANI_INFERNALBOLT)
+    -- efecto distance
+    fromPos:sendDistanceEffect(targetPos, 70)
 
-    -- Daño físico
+    -- daño
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)
-
-    -- Daño holy
-    doTargetCombatHealth(player, target, COMBAT_HOLYDAMAGE, -holyMin, -holyMax)
-
 	return boolean
 end
 
-viperStar:id(51088)
-viperStar:attack(500)
+viperStar:id(50730)
+viperStar:attack(380)
+viperStar:level(5000)
 viperStar:breakChance(0)
 viperStar:shootType(CONST_ANI_GREENSTAR)
 viperStar:maxHitChance(100)

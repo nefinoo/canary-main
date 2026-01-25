@@ -94,30 +94,17 @@ monster.defenses = {
 monster.loot = {
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "dragon ham", chance = 20000, maxCount = 2},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "mace", chance = 20000},
-	{id = 3349, chance = 6666},
+	{name = "gold coin", chance = 100000, maxCount = 25},
 	{name = "dragon hammer", chance = 1333},
-	{name = "steel shield", chance = 1818},
-	{name = "short sword", chance = 20000},
-	{name = "plate legs", chance = 2222},
-	{name = "steel helmet", chance = 3333},
-	{name = "double axe", chance = 4000},
 	{name = "dragonbone staff", chance = 4000},
-	{name = "longsword", chance = 5000},
-	-- {id = 3449, chance = 4000, maxCount = 10},
 	{name = "green dragon leather", chance = 4000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of inferno", chance = 1111},
-			{name = "gold coin", chance = 100000, maxCount = 25},
-			{name = "dragon shield", chance = 600},
-			{name = "small diamond", chance = 1538, maxCount = 3},
-			{name = "life crystal", chance = 2000},
-			{name = "broadsword", chance = 6666},
-			{name = "serpent sword", chance = 509},
-			{name = "green dragon scale", chance = 5000}
-		}
-	}
+	{name = "wand of inferno", chance = 1111},
+	{name = "gold coin", chance = 100000, maxCount = 25},
+	{name = "dragon shield", chance = 600},
+	{name = "small diamond", chance = 1538, maxCount = 3},
+	{name = "life crystal", chance = 2000},
+	{name = "serpent sword", chance = 509},
+	{name = "green dragon scale", chance = 5000},
 }
 
 mType:register(monster)

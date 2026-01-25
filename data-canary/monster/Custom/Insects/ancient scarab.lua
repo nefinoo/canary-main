@@ -97,14 +97,26 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "crystal coin", chance = 50000, maxCount = 20 },
-	{ name = "experience scroll", chance = 2500, maxCount = 2 },
-	{ name = "silver token", chance = 1500, maxCount = 1 },
-	{ id = 37609, chance = 1250, unique = true}, -- sorcerer helmet
-	{ id = 37608, chance = 1150, unique = true}, -- sorcerer armor
-	{ id = 37607, chance = 1000, unique = true}, -- sorcerer legs
-	{ id = 37610, chance = 750, unique = true}, -- sorcerer boots
-	{ id = 6390, chance = 500, unique = true}, -- sorcerer shield
+	{ name = "crystal coin", chance = 100000, maxCount = 2},
+	{ name = "crystal coin", chance = 50000, maxCount = 4},
+	{ name = "experience scroll", chance = 2500, maxCount = 5},
+	{ name = "silver token", chance = 1500, maxCount = 1},
+	
+	{id = 5879, chance = 5000},	--spider silk
+	{ name = "holy orchid", chance = 2100 },
+	{ id = 5921, chance = 940 }, -- heaven blossom
+	{ name = "iron ore", chance = 1400 },
+	{id = 5925, chance = 2500}, -- hardbone
+	{name = "red dragon scale", chance = 5000},
+	{name = "red dragon leather", chance = 5000},
+	{name = "green dragon scale", chance = 5000},
+	{name = "green dragon leather", chance = 4000},
+	
+	{ id = 37609, chance = 1250, unique = true}, -- green demon helmet
+	{ id = 37608, chance = 1200, unique = true}, -- green demon armor
+	{ id = 37607, chance = 1150, unique = true}, -- green demon legs
+	{ id = 37610, chance = 1100, unique = true}, -- green demon boots
+	{ id = 6390, chance = 1050, unique = true}, -- green demon shield
 	
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "venom"
 monster.description = "a venom"
-monster.experience = 110000
+monster.experience = 82500
 monster.outfit = {
 	lookType = 285,
 	lookHead = 0,
@@ -102,16 +102,32 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "backpack of holding", chance = 500},
-	{name = "warlord sword", chance = 50},
+	{name = "backpack of holding", chance = 50},
 	{name = "camouflage backpack", chance = 500},
 	{name = "pirate backpack", chance = 500},
 	{name = "beach backpack", chance = 500},
 	{name = "fur backpack", chance = 500},
-	{id = 7366, chance = 50},
-	{id = 7426, chance = 50},
-	{name = "experience scroll", chance = 300},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 70000, maxCount = 50},
+	{name = "experience scroll", chance = 2500, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 100},
+	{id = 895, chance = 100}, 
+	{id = 7390, chance = 100}, 
+	{id = 7415, chance = 100},
+	{id = 3303, chance = 100},
+	-- weapons lvl 500	
+	{id = 7366, chance = 200},
+	{id = 7426, chance = 200}, 
+	{id = 7420, chance = 200}, 
+	{id = 3296, chance = 200},
+	{id = 7437, chance = 200},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 300},
+	{ id = 3319, chance = 300 }, 
+	{ id = 3309, chance = 300 }, 
+	{id = 3341, chance = 300},
+	{name = "throwing star", chance = 300},
 }
 
 mType:register(monster)

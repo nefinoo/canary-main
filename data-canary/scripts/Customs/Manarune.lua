@@ -31,8 +31,8 @@ function manaRune.onUse(player, item, fromPos, target, toPos, isHotkey)
     -- Cálculos idénticos al script original
     local mana = targetPlayer:getMaxMana()
     local maxheal = (mana * 0.05)
-    local minHeal = 350 + targetPlayer:getLevel() * 0.35 + maxheal
-    local maxHeal = 500 + targetPlayer:getLevel() * 0.5 + maxheal
+    local minHeal = 350 + targetPlayer:getLevel() * 1.0 + maxheal
+    local maxHeal = 500 + targetPlayer:getLevel() * 1.25 + maxheal
     
     -- Bonus por exhaust
     -- if targetPlayer:getStorageValue(1990) > os.time() then

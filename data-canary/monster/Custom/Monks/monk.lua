@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "arch angel"
 monster.description = "an arch angel"
-monster.experience = 61500
+monster.experience = 36000
 monster.outfit = {
 	lookType = 57,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 42000
-monster.maxHealth = 42000
+monster.health = 20000
+monster.maxHealth = 20000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -93,8 +93,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 15},
-	{name = "experience scroll", chance = 2500},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{id = 7366, chance = 50},
+	{id = 7426, chance = 50 }, 
+	{id = 7420, chance = 50 }, 
+	{id = 3296, chance = 50},
+	{id = 7437, chance = 50},
+	{name = "magic sword", chance = 100},
+	{ id = 3319, chance = 100 }, 
+	{ id = 3309, chance = 100 }, 
+	{id = 3341, chance = 100},
+	{name = "throwing star", chance = 100},
 	{ name = "ankh", chance = 2240 },
 	{id = 3082, chance = 1500}
 }

@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ANI_DEATH)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ME_ENERGYAREA)
 
-combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.5, -30, -1.5,0)
+combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1, -30, -0.95,0)
 
 local starwand = Weapon(WEAPON_WAND)
 

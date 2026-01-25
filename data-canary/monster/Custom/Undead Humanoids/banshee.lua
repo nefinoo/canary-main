@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dementor"
 monster.description = "a dementor"
-monster.experience = 10000
+monster.experience = 20500
 monster.outfit = {
 	lookType = 78,
 	lookHead = 20,
@@ -97,10 +97,21 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{id = 7426, chance = 50},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 70000, maxCount = 20},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{id = 7366, chance = 100},
+	{id = 7426, chance = 100}, 
+	{id = 7420, chance = 100}, 
+	{id = 3296, chance = 100},
+	{id = 7437, chance = 100},
+	{name = "magic sword", chance = 200},
+	{ id = 3319, chance = 200 }, 
+	{ id = 3309, chance = 200 }, 
+	{id = 3341, chance = 200},
+	{name = "throwing star", chance = 200},
+	{id = 3082, chance = 5500},
+	{name = "demonic essence", chance = 1818},
 }
 
 mType:register(monster)

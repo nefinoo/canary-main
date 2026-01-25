@@ -91,28 +91,8 @@ monster.defenses = {
 monster.loot = {
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "gold coin", chance = 100000, maxCount = 30},
-	{name = "throwing knife", chance = 50000, maxCount = 2},
-	{id = 3307, chance = 10000},
-	{name = "plate shield", chance = 5000},
-	{id = 3578, chance = 20000},
-	{name = "plate legs", chance = 1818},
-	{name = "broadsword", chance = 2857},
-	{name = "backpack", chance = 20000, child = {
-			{name = "gold coin", chance = 2857}
-		}
-	},
-	{id = 2853, chance = 100000, child = {
-			{id = 3091, chance = 2000},
-			{name = "royal spear", chance = 2000, maxCount = 2},
-			{name = "meat", chance = 33333, maxCount = 2},
-			{name = "dagger", chance = 6666},
-			{id = 3369, chance = 1000},
-			{name = "longsword", chance = 10000},
-			{name = "green tunic", chance = 2500},
-			{name = "brass legs", chance = 2857},
-			{name = "plate armor", chance = 1818}
-		}
-	}
+	{name = "gold coin", chance = 2857},
+	{name = "meat", chance = 33333, maxCount = 2},
 }
 
 mType:register(monster)

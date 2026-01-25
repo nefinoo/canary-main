@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Asura Palace.",
 }
 
-monster.health = 1500000
-monster.maxHealth = 1500000
+monster.health = 1250000
+monster.maxHealth = 1250000
 monster.race = "blood"
 monster.corpse = 21987
 monster.speed = 140
@@ -79,10 +79,6 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 3031, chance = 69190, maxCount = 100 }, -- gold coin
-	{ id = 3035, chance = 84140, maxCount = 9 }, -- platinum coin
-	{ id = 6558, chance = 20910, maxCount = 2 }, -- flask of demonic blood
-	{ id = 238, chance = 8590, maxCount = 2 }, -- great mana potion
 	{ id = 3033, chance = 3140, maxCount = 1 }, -- small amethyst
 	{ id = 3028, chance = 2930, maxCount = 1 }, -- small diamond
 	{ id = 3032, chance = 3530, maxCount = 1 }, -- small emerald
@@ -97,6 +93,41 @@ monster.loot = {
 	{ id = 5911, chance = 2340 }, -- red piece of cloth
 	{ id = 3016, chance = 800 }, -- ruby necklace
 	{ id = 5944, chance = 14560 }, -- soul orb
+	
+	{name = "platinum coin", chance = 100000, maxCount = 75},
+	{name = "platinum coin", chance = 100000, maxCount = 100},
+	{name = "crystal coin", chance = 50000, maxCount = 3},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 500},
+	{id = 895, chance = 500}, 
+	{id = 7390, chance = 500}, 
+	{id = 7415, chance = 500},
+	{id = 3303, chance = 500},
+	-- weapons lvl 500	
+	{id = 7366, chance = 600},
+	{id = 7426, chance = 600}, 
+	{id = 7420, chance = 600}, 
+	{id = 3296, chance = 600},
+	{id = 7437, chance = 600},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 800},
+	{ id = 3319, chance = 800 }, 
+	{ id = 3309, chance = 800 }, 
+	{id = 3341, chance = 800},
+	{name = "throwing star", chance = 800},
+	
+	--demon green set
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
+	{name = "demon helmet", chance = 1000},
+	{name = "demon legs", chance = 1000},
+	{name = "demon shield", chance = 1000},
+	{id = 6529, chance = 1000}, -- soft boots
 }
 
 monster.attacks = {

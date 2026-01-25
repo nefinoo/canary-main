@@ -26,8 +26,10 @@ function onGetFormula(player, skill, attack, factor)
 	local lvl = player:getLevel()
 	local dist = player:getSkillLevel(SKILL_DISTANCE)
 
-	local dmgMax = ((lvl * 3) + (dist * 35)) / 1.15
-	local dmgMin = dmgMax / 1.5
+	-- local dmgMax = ((lvl * 3) + (dist * 35)) * 1.2
+	-- local dmgMin = dmgMax / 1.5
+	local dmgMax = ((lvl * 9.85) + (skill * 35)) * 1.25
+    local dmgMin = dmgMax / 1.15
 
 	-- reducción del 45%
 	dmgMax = dmgMax * 0.55
@@ -59,5 +61,5 @@ viperStar:attack(330)
 viperStar:breakChance(0)
 viperStar:shootType(CONST_ANI_GREENSTAR)
 viperStar:maxHitChance(100)
-viperStar:level(1500)
+viperStar:level(5000)
 viperStar:register()

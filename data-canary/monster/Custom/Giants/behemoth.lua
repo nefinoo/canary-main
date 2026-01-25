@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 540000
+monster.maxHealth = 540000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5999
@@ -93,32 +93,51 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{name = "crystal necklace", chance = 300},
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "strange talisman", chance = 3333},
-			{name = "wand of decay", chance = 1000},
-			{name = "crowbar", chance = 15000},
-			{name = "plate armor", chance = 2000},
-			{name = "dark armor", chance = 3000},
-			{id = 3456, chance = 6000},
-			{name = "steel boots", chance = 400},
-			{name = "meat", chance = 40000, maxCount = 6},
-			{name = "perfect behemoth fang", chance = 1200},
-			{name = "behemoth claw", chance = 1500}
-		}
-	},
-	{id = 2893, chance = 11000},
-	{name = "gold coin", chance = 100000, maxCount = 70},
-	{name = "small amethyst", chance = 4000, maxCount = 2},
-	{name = "strange symbol", chance = 800},
+	{name = "strange talisman", chance = 2000},
+	{name = "steel boots", chance = 300},
+	{name = "meat", chance = 40000, maxCount = 6},
+	{name = "perfect behemoth fang", chance = 400},
+	{name = "small amethyst", chance = 2000, maxCount = 2},
 	{name = "big bone", chance = 7000},
-	{name = "two handed sword", chance = 4000},
-	{name = "double axe", chance = 2000},
-	{name = "giant sword", chance = 688},
+	{name = "giant sword", chance = 388},
 	{name = "war axe", chance = 488},
 	{name = "ham", chance = 10000, maxCount = 3},
-	{name = "behemoth claw", chance = 400}
+	{name = "behemoth claw", chance = 400},
+	
+	{name = "platinum coin", chance = 100000, maxCount = 50},
+	{name = "platinum coin", chance = 75000, maxCount = 70},
+	{name = "crystal coin", chance = 35000, maxCount = 1},
+	{name = "experience scroll", chance = 3000, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 300},
+	{id = 895, chance = 300}, 
+	{id = 7390, chance = 300}, 
+	{id = 7415, chance = 300},
+	{id = 3303, chance = 300},
+	-- weapons lvl 500	
+	{id = 7366, chance = 400},
+	{id = 7426, chance = 400}, 
+	{id = 7420, chance = 400}, 
+	{id = 3296, chance = 400},
+	{id = 7437, chance = 400},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 500},
+	{ id = 3319, chance = 500 }, 
+	{ id = 3309, chance = 500 }, 
+	{id = 3341, chance = 500},
+	{name = "throwing star", chance = 500},
+	
+	--demon green set
+	{id = 37607, chance = 100},
+	{id = 37608, chance = 100},
+	{id = 37609, chance = 100},
+	{id = 37610, chance = 100},
+	{id = 7368, chance = 100},
+	
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots	
 }
 
 mType:register(monster)

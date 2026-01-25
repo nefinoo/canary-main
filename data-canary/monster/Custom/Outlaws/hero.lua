@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "frozenhell guard"
 monster.description = "a frozenhell guard"
-monster.experience = 70000
+monster.experience = 40000
 monster.outfit = {
 	lookType = 73,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 47000
-monster.maxHealth = 47000
+monster.health = 30000
+monster.maxHealth = 30000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -94,9 +94,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 25},
-	{name = "warlord sword", chance = 50},
-	{name = "experience scroll", chance = 2000},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 70000, maxCount = 50},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{id = 7366, chance = 100},
+	{id = 7426, chance = 100}, 
+	{id = 7420, chance = 100}, 
+	{id = 3296, chance = 100},
+	{id = 7437, chance = 100},
+	{name = "magic sword", chance = 200},
+	{ id = 3319, chance = 200 }, 
+	{ id = 3309, chance = 200 }, 
+	{id = 3341, chance = 200},
+	{name = "throwing star", chance = 200},
 	{ name = "red piece of cloth", chance = 2006 },
 	{id = 3082, chance = 2500}
 }

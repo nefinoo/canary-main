@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Bat"
 monster.description = "an infested bat"
-monster.experience = 575000
+monster.experience = 325000
 monster.outfit = {
 	lookType = 307,
 	lookHead = 0,
@@ -90,11 +90,34 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{id = 7426, chance = 50},
-	{name = "experience scroll", chance = 2000},
-	{ name = "bat wing", chance = 4900, maxCount = 2 },
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 75000, maxCount = 40},
+	{name = "platinum coin", chance = 50000, maxCount = 65},
+	{name = "experience scroll", chance = 2500, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 250},
+	{id = 895, chance = 250}, 
+	{id = 7390, chance = 250}, 
+	{id = 7415, chance = 250},
+	{id = 3303, chance = 250},
+	-- weapons lvl 500	
+	{id = 7366, chance = 350},
+	{id = 7426, chance = 350}, 
+	{id = 7420, chance = 350}, 
+	{id = 3296, chance = 350},
+	{id = 7437, chance = 350},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 500},
+	{ id = 3319, chance = 500 }, 
+	{ id = 3309, chance = 500 }, 
+	{id = 3341, chance = 500},
+	{name = "throwing star", chance = 500},
+	
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots	
+	{ name = "bat wing", chance = 3000, maxCount = 2},
 }
 
 mType:register(monster)

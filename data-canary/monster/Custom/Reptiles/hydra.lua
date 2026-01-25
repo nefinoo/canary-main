@@ -95,23 +95,16 @@ monster.defenses = {
 monster.loot = {
 	{name = "gold coin", chance = 24000, maxCount = 90, description2 = "gold coin"},
 	{name = "gold coin", chance = 24000, maxCount = 80, description2 = "gold coin"},
-	{name = "gold coin", chance = 24000, maxCount = 80, description2 = "gold coin"},
 	{name = "meat", chance = 37500, maxCount = 4, description2 = "meat"},
 	{name = "ham", chance = 25000, maxCount = 4, description2 = "ham"},
 	{name = "strong mana potion", chance = 200, description2 = "strong mana potion"},
 	{name = "life crystal", chance = 500, description2 = "life crystal"},
-	-- {name = "stone skin amulet", chance = 900, description2 = "stone skin amulet"},
-	{name = "small sapphire", chance = 5000, description2 = "small sapphire"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "hydra egg", chance = 600, description2 = "hydra egg"},
-			-- {id = 3098, chance = 1050, description2 = "ring of healing"},
-			{id = 3369, chance = 1000, description2 = "warrior helmet"},
-			{name = "knight armor", chance = 1200, description2 = "knight armor"},
-			{name = "medusa shield", chance = 200, description2 = "medusa shield"},
-			{name = "royal helmet", chance = 200, description2 = "royal helmet"},
-			{name = "boots of haste", chance = 120, description2 = "boots of haste"}
-		}
-	}
+	{name = "small sapphire", chance = 7500, maxCount = 3, description2 = "small sapphire"},
+	{name = "hydra egg", chance = 200, description2 = "hydra egg"},
+	{name = "medusa shield", chance = 1000, description2 = "medusa shield"},
+	{name = "royal helmet", chance = 500, description2 = "royal helmet"},
+	{name = "boots of haste", chance = 350, description2 = "boots of haste"}
+		
 }
 
 mType:register(monster)

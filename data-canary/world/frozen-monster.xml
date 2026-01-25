@@ -1249,15 +1249,9 @@
 	<monster centerx="540" centery="1819" centerz="5" radius="3">
 		<monster name="Withered Soul" x="-1" y="0" z="5" spawntime="60" />
 	</monster>
-	<monster centerx="1673" centery="90" centerz="6" radius="12">
-		<monster name="Deranged Pyro" x="-5" y="-8" z="6" spawntime="60" />
-		<monster name="Deranged Pyro" x="2" y="-7" z="6" spawntime="60" />
-		<monster name="Deranged Pyro" x="2" y="-3" z="6" spawntime="60" />
-		<monster name="Deranged Pyro" x="-4" y="-2" z="6" spawntime="60" />
-		<monster name="Deranged Phsyco" x="7" y="10" z="6" spawntime="30" />
-		<monster name="Deranged Phsyco" x="-1" y="11" z="6" spawntime="30" />
-	</monster>
 	<monster centerx="1673" centery="109" centerz="6" radius="12">
+		<monster name="Deranged Phsyco" x="7" y="-9" z="6" spawntime="30" />
+		<monster name="Deranged Phsyco" x="-1" y="-8" z="6" spawntime="30" />
 		<monster name="Deranged Phsyco" x="-7" y="-5" z="6" spawntime="30" />
 		<monster name="Deranged Phsyco" x="2" y="-2" z="6" spawntime="30" />
 		<monster name="Deranged Phsyco" x="8" y="-2" z="6" spawntime="30" />
@@ -2255,6 +2249,12 @@
 		<monster name="Pirate Hatcheteer" x="-3" y="-14" z="6" spawntime="60" />
 		<monster name="Pirate Scavenger" x="1" y="-14" z="6" spawntime="60" />
 		<monster name="Pirate Meddler" x="4" y="-14" z="6" spawntime="60" />
+	</monster>
+	<monster centerx="329" centery="1637" centerz="6" radius="12">
+		<monster name="Lethal Lissy" x="-4" y="-7" z="6" spawntime="60" />
+		<monster name="Ron the Ripper" x="1" y="-7" z="6" spawntime="60" />
+		<monster name="Brutus Bloodbeard" x="-4" y="-3" z="6" spawntime="60" />
+		<monster name="Deadeye Devious" x="1" y="-3" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="321" centery="1663" centerz="6" radius="30">
 		<monster name="Pirate Hatcheteer" x="-9" y="-4" z="6" spawntime="60" />
@@ -4317,6 +4317,9 @@
 		<monster name="Training Monks" x="-8" y="0" z="7" spawntime="60" />
 		<monster name="Training Monks" x="8" y="2" z="7" spawntime="60" />
 	</monster>
+	<monster centerx="509" centery="844" centerz="7" radius="1">
+		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="581" centery="848" centerz="7" radius="5">
 		<monster name="Cyclops" x="1" y="-5" z="7" spawntime="60" />
 		<monster name="Cyclops" x="-3" y="3" z="7" spawntime="60" />
@@ -6367,16 +6370,8 @@
 	<monster centerx="311" centery="743" centerz="8" radius="3">
 		<monster name="Bonelord" x="0" y="-3" z="8" spawntime="90" />
 	</monster>
-	<monster centerx="550" centery="749" centerz="8" radius="1">
-		<monster name="Training Monk" x="1" y="0" z="8" spawntime="60" />
-		<monster name="Training Monk" x="1" y="1" z="8" spawntime="60" />
-	</monster>
 	<monster centerx="433" centery="750" centerz="8" radius="1">
 		<monster name="outlawed warrior" x="0" y="0" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="550" centery="752" centerz="8" radius="1">
-		<monster name="Training Monk" x="1" y="0" z="8" spawntime="60" />
-		<monster name="Training Monk" x="1" y="1" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="433" centery="757" centerz="8" radius="1">
 		<monster name="Orc Berserker" x="0" y="0" z="8" spawntime="60" />
@@ -7846,10 +7841,10 @@
 		<monster name="venom" x="13" y="3" z="9" spawntime="30" />
 		<monster name="venom" x="-10" y="4" z="9" spawntime="30" />
 		<monster name="venom" x="-27" y="14" z="9" spawntime="30" />
+		<monster name="venom" x="-26" y="14" z="9" spawntime="30" />
 		<monster name="venom" x="-10" y="15" z="9" spawntime="30" />
 		<monster name="venom" x="3" y="15" z="9" spawntime="30" />
 		<monster name="venom" x="-28" y="16" z="9" spawntime="30" />
-		<monster name="venom" x="-30" y="17" z="9" spawntime="30" />
 		<monster name="venom" x="13" y="17" z="9" spawntime="30" />
 		<monster name="venom" x="-2" y="22" z="9" spawntime="30" />
 		<monster name="venom" x="-12" y="27" z="9" spawntime="30" />

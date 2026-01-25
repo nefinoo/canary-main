@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Zugurosh"
 monster.description = "Zugurosh"
-monster.experience = 225000
+monster.experience = 85000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 2,
@@ -95,17 +95,38 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{name = "demon helmet", chance = 10000},
-	{name = "demon legs", chance = 10000},
-	{name = "demon shield", chance = 10000},
-	{id = 6529, chance = 500},
-	{name = "justice seeker", chance = 5},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 70000, maxCount = 5},
+	{name = "experience scroll", chance = 2500, maxCount = 1},
+	-- weapons lvl 1000
+	{id = 7368, chance = 100},
+	{id = 895, chance = 100}, 
+	{id = 7390, chance = 100}, 
+	{id = 7415, chance = 100},
+	{id = 3303, chance = 100},
+	-- weapons lvl 500	
+	{id = 7366, chance = 200},
+	{id = 7426, chance = 200}, 
+	{id = 7420, chance = 200}, 
+	{id = 3296, chance = 200},
+	{id = 7437, chance = 200},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 300},
+	{ id = 3319, chance = 300 }, 
+	{ id = 3309, chance = 300 }, 
+	{id = 3341, chance = 300},
+	{name = "throwing star", chance = 300},
+	
+	{name = "demon helmet", chance = 300},
+	{name = "demon legs", chance = 300},
+	{name = "demon shield", chance = 300},
+	{id = 6529, chance = 500}, -- soft boots
 	{name = "Huge Chunk of Crude Iron", chance = 250},
+	{name = "Damaged Steel Helmet", chance = 1300, unique = true },
 	{name = "flask of warrior's sweat", chance = 500},
-	{name = "Damaged Steel Helmet", chance = 13000, unique = true },
-	-- {id = 9743, chance = 2500}
+	
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)
