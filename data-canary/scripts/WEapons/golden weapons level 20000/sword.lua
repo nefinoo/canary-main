@@ -21,13 +21,10 @@ function customSword.onUseWeapon(player, variant)
     -- Daño físico
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)
 
-    -- Daño holy
-    doTargetCombatHealth(player, target, COMBAT_HOLYDAMAGE, -fireMin, -fireMax)
-
 	return boolean
 end
 
-customSword:id(50970)
+customSword:id(53058)
 customSword:attack(1000)
 customSword:defense(100)
 customSword:level(20000)

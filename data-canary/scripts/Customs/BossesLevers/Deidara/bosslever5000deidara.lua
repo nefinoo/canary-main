@@ -1,29 +1,29 @@
 local bosslever = Action()
 local config = {
     boss = {
-        name = "Trunks",
-        position = Position(173, 523, 9),
+        name = "Deidara",
+        position = Position(338, 1632, 7),
     },
     playerPositions = {
-        { pos = Position(157, 519, 9), teleport = Position(172, 512, 9) },
-        { pos = Position(156, 519, 9), teleport = Position(172, 512, 9) },
-        { pos = Position(155, 519, 9), teleport = Position(172, 512, 9) },
-        { pos = Position(154, 519, 9), teleport = Position(172, 512, 9) },
+        { pos = Position(337, 1632, 5), teleport = Position(321, 1632, 7) },
+        { pos = Position(337, 1633, 5), teleport = Position(321, 1632, 7) },
+        { pos = Position(337, 1634, 5), teleport = Position(321, 1632, 7) },
+        { pos = Position(337, 1635, 5), teleport = Position(321, 1632, 7) },
     },
     specPos = {
-        from = Position(165, 509, 9),
-        to = Position(181, 526, 9),
+        from = Position(318, 1625, 7),
+        to = Position(341, 1639, 7),
     },
     teleportTimer = 900, -- 15 minutos
     cooldownTimer = 2 * 60 * 60, -- 2 horas
-    storage = 10015,
+    storage = 10010,
 
     -- 🔥 NUEVO
     minLevel = 5000
 }
 
 local function removeMonsterFromArea(fromPos, toPos)
-    local exitPosition = Position(156, 521, 9)
+    local exitPosition = Position(322, 1660, 7)
 
     for x = fromPos.x, toPos.x do
         for y = fromPos.y, toPos.y do
@@ -50,7 +50,7 @@ local function isPositionEqual(pos1, pos2)
     return pos1.x == pos2.x and pos1.y == pos2.y and pos1.z == pos2.z
 end
 
--- 🔎 Obtiene todos los players parados en los tiles
+-- 🔎 Obtiene todos los players que están en los tiles
 local function getPlayersOnTiles()
     local players = {}
 
@@ -82,7 +82,7 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
         return true
     end
 
-    -- Validar que esté parado en tile correcto
+    -- Verificar que el jugador esté en un tile válido
     local playerOnTile = false
     for _, positionData in ipairs(config.playerPositions) do
         if isPositionEqual(player:getPosition(), positionData.pos) then
@@ -127,14 +127,14 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
         if usedIps[ip] then
             player:sendTextMessage(
                 MESSAGE_EVENT_ADVANCE,
-                "Players with the same IP cannot enter this boss room together."
+                "Players with the same IP cannot enter the boss room together."
             )
             return true
         end
         usedIps[ip] = true
     end
 
-    -- Room en uso
+    -- Palanca ocupada
     if item.itemid == 8912 then
         player:say("Cling..", TALKTYPE_MONSTER_SAY)
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This room is currently in use. Please come back later.")
@@ -178,5 +178,5 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
     return true
 end
 
-bosslever:aid(5603)
+bosslever:aid(5600)
 bosslever:register()

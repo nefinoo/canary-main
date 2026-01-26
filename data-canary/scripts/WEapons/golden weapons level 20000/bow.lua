@@ -54,7 +54,7 @@ function viperStar.onUseWeapon(player, variant)
     return combat:execute(player, variant)
 end
 
-viperStar:id(51807)
+viperStar:id(53057)
 viperStar:attack(930)
 viperStar:breakChance(0)
 viperStar:shootType(CONST_ANI_GREENSTAR)

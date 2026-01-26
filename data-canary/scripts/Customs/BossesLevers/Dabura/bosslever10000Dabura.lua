@@ -1,29 +1,29 @@
 local bosslever = Action()
 local config = {
     boss = {
-        name = "Deidara",
-        position = Position(1681, 85, 7),
+        name = "Dabura",
+        position = Position(457, 255, 8),
     },
     playerPositions = {
-        { pos = Position(1681, 85, 5), teleport = Position(1665, 85, 7) },
-        { pos = Position(1681, 86, 5), teleport = Position(1665, 85, 7) },
-        { pos = Position(1681, 87, 5), teleport = Position(1665, 85, 7) },
-        { pos = Position(1681, 88, 5), teleport = Position(1665, 85, 7) },
+        { pos = Position(495, 251, 8), teleport = Position(451, 243, 8) },
+        { pos = Position(495, 252, 8), teleport = Position(451, 243, 8) },
+        { pos = Position(495, 253, 8), teleport = Position(451, 243, 8) },
+        { pos = Position(495, 254, 8), teleport = Position(451, 243, 8) },
     },
     specPos = {
-        from = Position(292, 487, 9),
-        to = Position(306, 501, 9),
+        from = Position(441, 238, 8),
+        to = Position(476, 263, 8),
     },
     teleportTimer = 900,
     cooldownTimer = 2 * 60 * 60,
     storage = 10011,
 
     -- 🔥 NUEVO
-    minLevel = 2500
+    minLevel = 10000
 }
 
 local function removeMonsterFromArea(fromPos, toPos)
-    local exitPosition = Position(291, 546, 9)
+    local exitPosition = Position(496, 238, 7)
 
     for x = fromPos.x, toPos.x do
         for y = fromPos.y, toPos.y do

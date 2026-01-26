@@ -5,7 +5,7 @@ local deadlyReckoning = {
         combat = Combat(),
         area = createCombatArea(AREA_CIRCLE3X3),
 
-        baseA = -4.6,
+        baseA = -5.1,
         baseB = -30,
         baseC = -5.3,
         baseD = 0
@@ -144,7 +144,7 @@ function spell.onCastSpell(creature, variant)
         return false
     end
 	
-	costmana = player:getMaxMana() * 0.05
+	costmana = player:getMaxMana() * 0.015
 	
     -- Mana
     if player:getMana() < costmana then

@@ -65845,6 +65845,11 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="description" value="It is embroidered with the letter E"/>
 		<attribute key="weight" value="50"/>
 	</item>
+	<item id="35496" article="a" name="magic portal spawn">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+		<attribute key="effect" value="teleport"/>
+	</item>
 	<item id="35502" article="a" name="magic portal">
 		<attribute key="primarytype" value="rocks"/>
 		<attribute key="type" value="teleport"/>
@@ -76750,7 +76755,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weight" value="5100"/>
 		<attribute key="augments" value="1">
 			<attribute key="intense wound cleansing" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="40"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -82747,6 +82752,16 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="It contains the most powerful artifacts from the king of hell"/>
 		<attribute key="weight" value="50000"/>
 	</item>
+	<item id="50851" article="a" name="majin boo box">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="It contains the most powerful artifacts from a chaotic, childish, immensely powerful magical creature"/>
+		<attribute key="weight" value="50000"/>
+	</item>
+	<item id="51717" article="a" name="blessing book">
+		<attribute key="primarytype" value="books"/>
+		<attribute key="description" value="It contains a powerful spell that blesses whoever reads it..."/>
+		<attribute key="weight" value="50000"/>
+	</item>
 	
 	<item id="51759" article="a" name="exit">
 		<attribute key="primarytype" value="teleporters"/>
@@ -83407,7 +83422,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="200"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
@@ -83427,7 +83442,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="200"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
@@ -83445,7 +83460,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
@@ -83461,7 +83476,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
@@ -83476,7 +83491,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
@@ -83495,7 +83510,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="7800"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>
@@ -83514,7 +83529,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="weaponType" value="axe"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -83536,7 +83551,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="200"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
@@ -83556,7 +83571,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="200"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
@@ -83574,7 +83589,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
@@ -83590,7 +83605,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
@@ -83605,7 +83620,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
@@ -83624,7 +83639,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="7800"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>
@@ -83643,7 +83658,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="3000"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="15000"/>
+			<attribute key="level" value="20000"/>
 			<attribute key="weaponType" value="axe"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -84846,14 +84861,28 @@ Granted by TibiaGoals.com"/>
 	
 	
 	
-<!-- 20000 sorcerer set's -->
+<!-- 15000 sorcerer set's -->
 	<item id="52374" article="a" name="redskull hat">
 		<attribute key="maxmanapoints" value="5000"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="weight" value="2950"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="head"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
@@ -84863,8 +84892,22 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="weight" value="8000"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
@@ -84874,23 +84917,51 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
 	<item id="52371" article="a" name="redskull boots">
 		<attribute key="maxmanapoints" value="5000"/>
-		<attribute key="description" value="[800 mp/sec | 200hp/sec]"/>
+		<attribute key="description" value="[4000 mp/sec | 200hp/sec]"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="manaticks" value="2000"/>
-		<attribute key="managain" value="800"/>
+		<attribute key="managain" value="4000"/>
 		<attribute key="healthticks" value="2000"/>
 		<attribute key="healthgain" value="200"/>
 		<attribute key="weight" value="800"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="feet"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
@@ -84899,84 +84970,141 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weaponType" value="spellbook"/>
 		<attribute key="defense" value="400"/>
 		<attribute key="weight" value="1950"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="1000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="10"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="skillshield" value="25"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="shield"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
 	
-<!-- 20000 paladin set's -->
+<!-- 15000 paladin set's -->
 	<item id="51200" article="a" name="carapace helmet">
-		<attribute key="maxmanapoints" value="2500"/>
-		<attribute key="maxhitpoints" value="2500"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="armor" value="700"/>
-		<attribute key="weight" value="2950"/>			
+		<attribute key="weight" value="2950"/>
+		<attribute key="maxhitpoints" value="22000"/>
+		<attribute key="maxmanapoints" value="18000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="2"/>
+			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="head"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="51201" article="a" name="carapace armor">
-		<attribute key="maxmanapoints" value="2500"/>
-		<attribute key="maxhitpoints" value="2500"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="700"/>
-		<attribute key="weight" value="8000"/>				
+		<attribute key="weight" value="8000"/>	
+		<attribute key="maxhitpoints" value="22000"/>
+		<attribute key="maxmanapoints" value="18000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Salvation" value="base">
-				<attribute key="value" value="75"/>
-			</attribute>
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="2"/>
+			</attribute>
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="51202" name="carapace legs">
-		<attribute key="maxmanapoints" value="2500"/>
-		<attribute key="maxhitpoints" value="2500"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="700"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="maxhitpoints" value="22000"/>
+		<attribute key="maxmanapoints" value="18000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Salvation" value="base">
-				<attribute key="value" value="75"/>
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="40"/>
 			</attribute>
-			<attribute key="Deadly Caldera" value="critical extra damage">
-				<attribute key="value" value="50"/>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="2"/>
+			</attribute>
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="51203" article="a" name="carapace boots">
-		<attribute key="maxmanapoints" value="2500"/>
-		<attribute key="maxhitpoints" value="2500"/>
-		<attribute key="description" value="[500 mp/sec | 500 hp/sec]"/>
+		<attribute key="description" value="[2200 hp/sec | 2000 mp/sec]"/>
 		<attribute key="armor" value="700"/>
 		<attribute key="manaticks" value="2000"/>
-		<attribute key="managain" value="500"/>
+		<attribute key="managain" value="2000"/>
 		<attribute key="healthticks" value="2000"/>
-		<attribute key="healthgain" value="500"/>
+		<attribute key="healthgain" value="2200"/>
 		<attribute key="weight" value="800"/>
+		<attribute key="maxhitpoints" value="22000"/>
+		<attribute key="maxmanapoints" value="18000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="2"/>
+			</attribute>
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="feet"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
@@ -84987,79 +85115,128 @@ Granted by TibiaGoals.com"/>
 		<attribute key="defense" value="500"/>
 		<attribute key="weight" value="1950"/>
 		<attribute key="skillshield" value="35"/>
+		<attribute key="maxhitpoints" value="12000"/>
+		<attribute key="maxmanapoints" value="8000"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="1000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="6"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="4"/>
+			</attribute>
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="shield"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	
-	<!-- 20000 knight set's -->
+<!-- 15000 knight set's -->
 	<item id="51204" article="a" name="gladiator helmet">
-		<attribute key="maxhitpoints" value="5000"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="2950"/>
+		<attribute key="maxhitpoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="fair wound cleansing" value="base">
-				<attribute key="value" value="75"/>
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="head"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="51206" article="a" name="gladiator armor">
-		<attribute key="maxhitpoints" value="5000"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="800"/>
-		<attribute key="weight" value="8000"/>				
+		<attribute key="weight" value="8000"/>
+		<attribute key="maxhitpoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="fair wound cleansing" value="base">
-				<attribute key="value" value="75"/>
-			</attribute>
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="51211" name="gladiator legs">
-		<attribute key="maxhitpoints" value="5000"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="maxhitpoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="fair wound cleansing" value="base">
-				<attribute key="value" value="75"/>
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="40"/>
 			</attribute>
-			<attribute key="Deadly Berseker" value="critical extra damage">
-				<attribute key="value" value="50"/>
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="51215" article="a" name="gladiator boots">
-		<attribute key="maxhitpoints" value="5000"/>
-		<attribute key="description" value="[800 hp/sec | 200 mp/sec]"/>
+		<attribute key="description" value="[4000 hp/sec | 200 mp/sec]"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="manaticks" value="2000"/>
 		<attribute key="managain" value="200"/>
 		<attribute key="healthticks" value="2000"/>
 		<attribute key="healthgain" value="800"/>
 		<attribute key="weight" value="800"/>
+		<attribute key="maxhitpoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="feet"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
@@ -85069,71 +85246,125 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weaponType" value="shield"/>
 		<attribute key="defense" value="700"/>
 		<attribute key="weight" value="1950"/>
+		<attribute key="maxhitpoints" value="40000"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="1000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="10"/>
+			</attribute>
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="skillshield" value="45"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="shield"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	
-	<!-- 20000 druid set's -->
+<!-- 15000 druid set's -->
 	<item id="51234" article="a" name="crimson hood">
-		<attribute key="maxmanapoints" value="5000"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="armor" value="600"/>
-		<attribute key="weight" value="2950"/>			
-		<!-- <attribute key="augments" value="1"> -->
-		<!-- </attribute> -->
+		<attribute key="weight" value="2950"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="head"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
 	<item id="51235" article="a" name="crimson armor">
-		<attribute key="maxmanapoints" value="5000"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="600"/>
-		<attribute key="weight" value="8000"/>				
+		<attribute key="weight" value="8000"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
 	<item id="51236" name="crimson legs">
-		<attribute key="maxmanapoints" value="5000"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="critical extra damage">
-				<attribute key="value" value="50"/>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
 	<item id="51237" article="a" name="crimson boots">
-		<attribute key="maxmanapoints" value="5000"/>
-		<attribute key="description" value="[800 mp/sec | 200 hp/sec]"/>
+		<attribute key="description" value="[4000 mp/sec | 200 hp/sec]"/>
 		<attribute key="armor" value="600"/>
 		<attribute key="manaticks" value="2000"/>
-		<attribute key="managain" value="800"/>
+		<attribute key="managain" value="4000"/>
 		<attribute key="healthticks" value="2000"/>
 		<attribute key="healthgain" value="200"/>
 		<attribute key="weight" value="800"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="500"/>
+		<attribute key="criticalhitdamage" value="500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="mana leech">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="feet"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
@@ -85141,9 +85372,24 @@ Granted by TibiaGoals.com"/>
 	<item id="51504" article="a" name="crimson spellbook">
 		<attribute key="weaponType" value="spellbook"/>
 		<attribute key="defense" value="400"/>
+		<attribute key="weight" value="1600"/>
+		<attribute key="maxmanapoints" value="40000"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="criticalhitdamage" value="1000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="40"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="mana leech">
+				<attribute key="value" value="10"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="skillshield" value="25"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="20000"/>
+			<attribute key="level" value="15000"/>
 			<attribute key="slot" value="shield"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
@@ -85322,7 +85568,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weight" value="2950"/>
 		<attribute key="augments" value="1">
 			<attribute key="fair wound cleansing" value="base">
-				<attribute key="value" value="50"/>
+				<attribute key="value" value="40"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">

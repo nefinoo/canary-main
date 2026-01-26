@@ -1,29 +1,29 @@
 local bosslever = Action()
 local config = {
     boss = {
-        name = "Vegeta",
-        position = Position(456, 256, 8),
+        name = "Majin Boo",
+        position = Position(595, 1099, 8),
     },
     playerPositions = {
-        { pos = Position(495, 251, 8), teleport = Position(461, 242, 8) },
-        { pos = Position(495, 252, 8), teleport = Position(461, 242, 8) },
-        { pos = Position(495, 253, 8), teleport = Position(461, 242, 8) },
-        { pos = Position(495, 254, 8), teleport = Position(461, 242, 8) },
+        { pos = Position(594, 1133, 8), teleport = Position(590, 1112, 8) },
+        { pos = Position(595, 1133, 8), teleport = Position(590, 1112, 8) },
+        { pos = Position(596, 1133, 8), teleport = Position(590, 1112, 8) },
+        { pos = Position(597, 1133, 8), teleport = Position(590, 1112, 8) },
     },
     specPos = {
-        from = Position(435, 232, 8),
-        to = Position(477, 264, 8),
+        from = Position(584, 1096, 8),
+        to = Position(608, 1116, 8),
     },
     teleportTimer = 900,
     cooldownTimer = 2 * 60 * 60,
-    storage = 10013,
+    storage = 10011,
 
     -- 🔥 NUEVO
-    minLevel = 5000
+    minLevel = 10000
 }
 
 local function removeMonsterFromArea(fromPos, toPos)
-    local exitPosition = Position(495, 256, 8)
+    local exitPosition = Position(695, 970, 6)
 
     for x = fromPos.x, toPos.x do
         for y = fromPos.y, toPos.y do
@@ -50,7 +50,7 @@ local function isPositionEqual(pos1, pos2)
     return pos1.x == pos2.x and pos1.y == pos2.y and pos1.z == pos2.z
 end
 
--- 🔎 Obtiene todos los players en los tiles
+-- 🔎 Obtiene todos los jugadores parados en los tiles
 local function getPlayersOnTiles()
     local players = {}
 
@@ -137,7 +137,7 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
     -- Palanca ocupada
     if item.itemid == 8912 then
         player:say("Cling..", TALKTYPE_MONSTER_SAY)
-        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This room is currently in use. Please come back later.")
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry, this room is currently in use. Please, come back later.")
         return true
     end
 
@@ -178,5 +178,5 @@ function bosslever.onUse(player, item, fromPosition, target, toPosition, isHotke
     return true
 end
 
-bosslever:aid(5604)
+bosslever:aid(5602)
 bosslever:register()

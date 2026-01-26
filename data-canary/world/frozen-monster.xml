@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <monsters>
+	<monster centerx="505" centery="822" centerz="0" radius="1">
+		<monster name="Deidara" x="0" y="0" z="0" spawntime="60" />
+	</monster>
+	<monster centerx="505" centery="826" centerz="0" radius="1">
+		<monster name="Dabura" x="0" y="0" z="0" spawntime="60" />
+	</monster>
+	<monster centerx="505" centery="831" centerz="0" radius="1">
+		<monster name="Majin Boo" x="0" y="0" z="0" spawntime="60" />
+	</monster>
 	<monster centerx="295" centery="1623" centerz="0" radius="5">
 		<monster name="Pirate Skeleton" x="1" y="-1" z="0" spawntime="60" />
 		<monster name="Pirate Skeleton" x="-1" y="0" z="0" spawntime="60" />
@@ -4568,12 +4577,14 @@
 	<monster centerx="703" centery="944" centerz="7" radius="5">
 		<monster name="Dawnfire Asura" x="-2" y="-3" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="1" y="-3" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="-3" z="7" spawntime="60" />
 		<monster name="Hellraiser" x="-3" y="0" z="7" spawntime="60" />
 		<monster name="Dawnfire Asura" x="1" y="0" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="-3" y="1" z="7" spawntime="60" />
 		<monster name="Dawnfire Asura" x="-1" y="1" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="0" y="1" z="7" spawntime="60" />
 		<monster name="Hellraiser" x="1" y="2" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="2" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="713" centery="944" centerz="7" radius="5">
 		<monster name="Dawnfire Asura" x="2" y="-4" z="7" spawntime="60" />
@@ -4581,6 +4592,7 @@
 		<monster name="Hellraiser" x="4" y="-3" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="3" y="-2" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="0" y="-1" z="7" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="0" z="7" spawntime="60" />
 		<monster name="Hellraiser" x="-1" y="0" z="7" spawntime="60" />
 		<monster name="Midnight Asura" x="0" y="2" z="7" spawntime="60" />
 		<monster name="Dawnfire Asura" x="3" y="3" z="7" spawntime="60" />
@@ -4634,7 +4646,7 @@
 		<monster name="Hellraiser" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="687" centery="954" centerz="7" radius="1">
-		<monster name="Blood Crab" x="-1" y="0" z="7" spawntime="60" />
+		<monster name="Manta Ray" x="-1" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="732" centery="954" centerz="7" radius="1">
 		<monster name="Crustacea Gigantica" x="-1" y="0" z="7" spawntime="60" />
@@ -6611,29 +6623,6 @@
 		<monster name="Demon" x="4" y="0" z="8" spawntime="30" />
 		<monster name="Demon" x="0" y="3" z="8" spawntime="30" />
 	</monster>
-	<monster centerx="693" centery="946" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="-2" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="-5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="3" y="-5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="5" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="7" y="-5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="2" y="-4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="5" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-5" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-5" y="1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="6" y="2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="9" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-3" y="3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="1" y="6" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="2" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-5" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="6" y="7" z="8" spawntime="60" />
-	</monster>
 	<monster centerx="793" centery="947" centerz="8" radius="5">
 		<monster name="Demon" x="0" y="-5" z="8" spawntime="30" />
 		<monster name="Demon" x="5" y="-4" z="8" spawntime="30" />
@@ -6641,93 +6630,156 @@
 		<monster name="Demon" x="2" y="-2" z="8" spawntime="30" />
 		<monster name="Demon" x="1" y="4" z="8" spawntime="30" />
 	</monster>
-	<monster centerx="663" centery="952" centerz="8" radius="10">
-		<monster name="Hellraiser" x="-3" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="2" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="-4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="7" y="-4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-3" y="5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-2" y="6" z="8" spawntime="60" />
-	</monster>
 	<monster centerx="793" centery="962" centerz="8" radius="5">
 		<monster name="Bones" x="-3" y="0" z="8" spawntime="30" />
 		<monster name="Bones" x="3" y="0" z="8" spawntime="30" />
 		<monster name="Bones" x="0" y="3" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="686" centery="964" centerz="8" radius="30">
+		<monster name="Midnight Asura" x="5" y="-24" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="-23" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="10" y="-23" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="12" y="-23" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="14" y="-23" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="3" y="-22" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="-22" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="12" y="-22" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="-20" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-26" y="-18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-21" y="-17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-8" y="-17" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="-17" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="2" y="-17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="11" y="-17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="-16" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-16" y="-16" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="-16" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="13" y="-16" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="16" y="-16" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-25" y="-15" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-15" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="6" y="-12" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="8" y="-12" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="-12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-27" y="-11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="13" y="-11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-26" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-25" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-29" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-26" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-16" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="11" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="16" y="1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="23" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="17" y="3" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-10" y="6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-12" y="7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="27" y="9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="10" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="12" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="10" y="12" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="13" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="14" y="14" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-12" y="15" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="15" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="27" y="15" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="16" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-9" y="17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="14" y="17" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="4" y="18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="14" y="19" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="28" y="19" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="20" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="26" y="20" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="21" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="22" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="22" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="23" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="30" y="23" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="27" y="26" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="653" centery="966" centerz="8" radius="10">
 		<monster name="Midnight Asura" x="0" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="-2" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="-3" y="-1" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="-6" y="0" z="8" spawntime="60" />
 		<monster name="Hellraiser" x="-6" y="7" z="8" spawntime="60" />
 	</monster>
-	<monster centerx="678" centery="977" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="-6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="-4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-4" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="10" y="2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="6" y="3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-1" y="4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="3" y="4" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="698" centery="981" centerz="8" radius="10">
-		<monster name="Hellraiser" x="-4" y="-7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-5" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="-5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="-4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="2" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="2" y="0" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-8" y="1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="2" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-8" y="3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="0" y="4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-7" y="5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-3" y="5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="6" z="8" spawntime="60" />
-	</monster>
 	<monster centerx="723" centery="985" centerz="8" radius="10">
 		<monster name="Midnight Asura" x="3" y="-8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-10" y="-6" z="8" spawntime="60" />
 		<monster name="Hellraiser" x="3" y="-6" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="3" y="-5" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="5" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-9" y="-2" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="3" y="0" z="8" spawntime="60" />
 		<monster name="Hellraiser" x="5" y="0" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="-3" y="1" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="5" y="1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-7" y="2" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="-2" y="3" z="8" spawntime="60" />
 		<monster name="Hellraiser" x="1" y="3" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="4" y="3" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="7" y="3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-10" y="5" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="1" y="5" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="7" y="6" z="8" spawntime="60" />
 		<monster name="Hellraiser" x="5" y="7" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="1" y="8" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="7" y="9" z="8" spawntime="60" />
 	</monster>
-	<monster centerx="662" centery="1002" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-5" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="-3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-8" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="8" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-5" y="-1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="8" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="6" y="4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-4" y="5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-6" y="7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="7" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="9" y="8" z="8" spawntime="60" />
+	<monster centerx="661" centery="999" centerz="8" radius="30">
+		<monster name="Midnight Asura" x="-17" y="-19" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-14" y="-19" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="-16" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="-13" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-16" y="-12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-17" y="-6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-15" y="-5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-15" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-14" y="-1" z="8" spawntime="60416" />
+		<monster name="Dawnfire Asura" x="-4" y="0" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="5" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-7" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="2" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-3" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="9" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="10" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="10" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="18" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="27" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="30" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="22" y="12" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-27" y="16" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="16" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-22" y="16" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="16" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="17" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-29" y="19" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-29" y="21" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="21" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-18" y="22" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-15" y="22" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-18" y="23" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-29" y="24" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-30" y="25" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="22" y="25" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-30" y="27" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-29" y="28" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="23" y="28" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-28" y="29" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-26" y="29" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-18" y="29" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="14" y="29" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-22" y="30" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="21" y="30" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="26" y="30" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="592" centery="1004" centerz="8" radius="7">
 		<monster name="Morgaroth" x="-4" y="0" z="8" spawntime="60" />
@@ -6748,42 +6800,6 @@
 		<monster name="Dawnfire Asura" x="9" y="4" z="8" spawntime="60" />
 		<monster name="Midnight Asura" x="-8" y="5" z="8" spawntime="60" />
 	</monster>
-	<monster centerx="729" centery="1014" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="1" y="-9" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="3" y="-6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="5" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-7" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-4" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="-2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="0" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-3" y="3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="5" y="3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="0" y="4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="3" y="4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="2" y="7" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="638" centery="1023" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-4" y="-8" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="-8" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="1" y="-8" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="-7" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-6" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="5" y="-2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="8" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="5" y="-1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-6" y="0" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-7" y="1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-6" y="4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-5" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-3" y="5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="5" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="1" y="6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="7" z="8" spawntime="60" />
-	</monster>
 	<monster centerx="592" centery="1029" centerz="8" radius="7">
 		<monster name="Purple Death" x="0" y="1" z="8" spawntime="60" />
 	</monster>
@@ -6797,167 +6813,192 @@
 		<monster name="Fury" x="3" y="0" z="8" spawntime="60" />
 		<monster name="Fury" x="3" y="4" z="8" spawntime="60" />
 	</monster>
-	<monster centerx="680" centery="1032" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="3" y="-8" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="-5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-5" y="-4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="2" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-9" y="2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="7" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="9" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="8" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="715" centery="1036" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-4" y="-6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-8" y="-5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="0" y="4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="1" y="9" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="658" centery="1054" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="4" y="-8" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="-7" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-6" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-5" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="3" y="-6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-6" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="0" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="3" y="7" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="8" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="1" y="9" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="5" y="9" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="706" centery="1055" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-10" y="-4" z="8" spawntime="60" />
+	<monster centerx="720" centery="1042" centerz="8" radius="30">
+		<monster name="Midnight Asura" x="-5" y="-30" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="-30" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="5" y="-28" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="-27" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="6" y="-25" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="14" y="-25" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="-24" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="-24" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="11" y="-21" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="11" y="-17" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="11" y="-14" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-9" y="-12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="8" y="-12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-21" y="-11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-20" y="-11" z="8" spawntime="60416" />
+		<monster name="Midnight Asura" x="-13" y="-11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="-9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-30" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-8" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="-6" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="-4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-5" y="-3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-10" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="4" y="-1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="-1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="9" y="1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="8" y="3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="9" y="4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="9" y="7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="-2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="0" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-24" y="9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-20" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-15" y="9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="15" y="9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-19" y="10" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="1" y="10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-22" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-18" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="2" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="10" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="12" y="11" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="15" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-14" y="12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-10" y="12" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-7" y="12" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-5" y="14" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="16" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="17" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="20" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="25" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-30" y="27" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-27" y="27" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="27" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-24" y="28" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-20" y="28" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="29" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="29" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="29" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-29" y="30" z="8" spawntime="60" />
 	</monster>
-	<monster centerx="728" centery="1055" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="-8" y="-5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="7" y="-4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-7" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-3" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="2" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="-2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="7" y="-2" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="692" centery="1070" centerz="8" radius="10">
-		<monster name="Dawnfire Asura" x="-6" y="-1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="-1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="-1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="0" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="8" y="0" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-8" y="1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="9" y="1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="658" centery="1082" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="-9" y="-7" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="6" y="-7" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-1" y="-6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="2" y="-6" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="7" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="0" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="7" y="2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-6" y="3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="7" y="5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-7" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-5" y="6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="0" y="6" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="4" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="7" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-4" y="8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="2" y="8" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="694" centery="1095" centerz="8" radius="4">
-		<monster name="Hellraiser" x="-2" y="-2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="0" y="-2" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-1" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="2" y="-1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="0" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="2" y="0" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-3" y="1" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="660" centery="1105" centerz="8" radius="10">
-		<monster name="Hellraiser" x="-1" y="-9" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="0" y="-8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="-7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="-5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-3" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="3" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-6" y="-2" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-7" y="0" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-6" y="1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-7" y="4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="4" y="4" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-2" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="4" y="6" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="8" y="6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-7" y="7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-3" y="7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-1" y="7" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="710" centery="1109" centerz="8" radius="4">
-		<monster name="Hellraiser" x="0" y="-3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-1" y="-1" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="1" y="-1" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-2" y="0" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-1" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="2" z="8" spawntime="60" />
-	</monster>
-	<monster centerx="687" centery="1118" centerz="8" radius="10">
-		<monster name="Midnight Asura" x="0" y="-10" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-8" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="2" y="-8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="8" y="-8" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="-7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-3" y="-7" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="5" y="-7" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-5" y="-6" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="-6" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-10" y="-5" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="6" y="-5" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="8" y="-4" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-9" y="-3" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-8" y="-3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-8" y="0" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="8" y="0" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="10" y="2" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="-5" y="3" z="8" spawntime="60" />
-		<monster name="Midnight Asura" x="1" y="3" z="8" spawntime="60" />
+	<monster centerx="658" centery="1057" centerz="8" radius="30">
+		<monster name="Midnight Asura" x="-21" y="-27" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="18" y="-26" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="13" y="-23" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="26" y="-23" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="29" y="-23" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-20" y="-21" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="21" y="-20" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="20" y="-17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-19" y="-16" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-19" y="-13" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-12" y="-10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-4" y="-10" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="0" y="-10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="19" y="-10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-15" y="-9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="-9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-5" y="-9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="-9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="-8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-13" y="-1" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-13" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-6" y="3" z="8" spawntime="60" />
 		<monster name="Dawnfire Asura" x="7" y="3" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="-7" y="4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="4" y="4" z="8" spawntime="60" />
-		<monster name="Hellraiser" x="-4" y="5" z="8" spawntime="60" />
-		<monster name="Dawnfire Asura" x="0" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-2" y="4" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="4" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="3" y="4" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-2" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="1" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="14" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-13" y="10" z="8" spawntime="60416" />
+		<monster name="Midnight Asura" x="-12" y="10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="14" y="11" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="28" y="12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="26" y="14" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="30" y="14" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="17" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-13" y="18" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="6" y="18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-1" y="19" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="2" y="19" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="20" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="7" y="22" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-6" y="25" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="7" y="27" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="28" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-7" y="30" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="7" y="30" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="683" centery="1103" centerz="8" radius="30">
+		<monster name="Dawnfire Asura" x="-30" y="-15" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-25" y="-15" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-21" y="-14" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-18" y="-14" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-29" y="-13" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-27" y="-13" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-23" y="-13" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-10" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="9" y="-10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="11" y="-10" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="11" y="-9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="13" y="-9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="10" y="-8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="13" y="-8" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-24" y="-7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="-7" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-23" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="-6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-25" y="-5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="-3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="-3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-26" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-20" y="-1" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-29" y="0" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="3" y="0" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-30" y="2" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-29" y="3" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="27" y="3" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="4" y="5" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="26" y="5" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="28" y="5" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-30" y="6" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-19" y="6" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="25" y="6" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-25" y="7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="7" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="6" y="7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="12" y="7" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-19" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-15" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-11" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-9" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="1" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="9" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="26" y="8" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="28" y="8" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-30" y="9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-26" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-24" y="9" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-12" y="9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-1" y="9" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="9" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-6" y="10" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="10" y="10" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="11" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-5" y="12" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="-4" y="12" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="28" y="13" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="20" y="14" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="25" y="14" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-4" y="15" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="12" y="15" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="14" y="17" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="-1" y="18" z="8" spawntime="60" />
+		<monster name="Midnight Asura" x="5" y="18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="11" y="18" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="-3" y="19" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="8" y="19" z="8" spawntime="60" />
+		<monster name="Hellraiser" x="0" y="20" z="8" spawntime="60" />
+		<monster name="Dawnfire Asura" x="4" y="20" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="205" centery="1259" centerz="8" radius="30">
 		<monster name="Werepanther" x="9" y="-24" z="8" spawntime="60" />
@@ -9586,13 +9627,9 @@
 		<monster name="Behemoth" x="5" y="1" z="11" spawntime="60" />
 		<monster name="Behemoth" x="-3" y="5" z="11" spawntime="60" />
 	</monster>
-	<monster centerx="154" centery="258" centerz="11" radius="1">
-		<monster name="Infernalist" x="0" y="0" z="11" spawntime="60" />
-		<monster name="Infernalist" x="1" y="0" z="11" spawntime="60" />
-	</monster>
-	<monster centerx="156" centery="258" centerz="11" radius="1">
-		<monster name="Infernalist" x="0" y="0" z="11" spawntime="60" />
-		<monster name="Infernalist" x="1" y="0" z="11" spawntime="60" />
+	<monster centerx="155" centery="258" centerz="11" radius="3">
+		<monster name="thick trunk" x="-2" y="1" z="11" spawntime="60" />
+		<monster name="thick trunk" x="3" y="1" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="184" centery="263" centerz="11" radius="5">
 		<monster name="Behemoth" x="3" y="-1" z="11" spawntime="60" />

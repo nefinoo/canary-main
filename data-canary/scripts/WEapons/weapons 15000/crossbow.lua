@@ -11,12 +11,8 @@ function viperStar.onUseWeapon(player, variant)
     local skill = player:getSkillLevel(SKILL_DISTANCE)
 
     -- Daño físico
-    local dmgMax = ((lvl * 4.05) + (skill * 65)) * 2.0
-    local dmgMin = dmgMax / 1.5
-
-    -- Daño holy
-    local holyMax = lvl
-    local holyMin = lvl / 2
+    local dmgMax = (lvl * 22) + (skill * 35) * 1.25
+    local dmgMin = dmgMax / 1.15
 
     -- Posiciones para effects
     local fromPos = player:getPosition()
@@ -28,16 +24,13 @@ function viperStar.onUseWeapon(player, variant)
     -- Daño físico
     doTargetCombatHealth(player, target, COMBAT_PHYSICALDAMAGE, -dmgMin, -dmgMax)
 
-    -- Daño holy
-    doTargetCombatHealth(player, target, COMBAT_HOLYDAMAGE, -holyMin, -holyMax)
-
 	return boolean
 end
 
 viperStar:id(51248)
-viperStar:attack(1030)
+viperStar:attack(830)
 viperStar:breakChance(0)
-viperStar:level(20000)
+viperStar:level(15000)
 viperStar:shootType(CONST_ANI_GREENSTAR)
 viperStar:maxHitChance(100)
 viperStar:register()

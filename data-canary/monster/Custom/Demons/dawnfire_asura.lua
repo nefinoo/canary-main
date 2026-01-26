@@ -85,7 +85,7 @@ monster.loot = {
 	{ id = 3030, chance = 5760, maxCount = 1 }, -- small ruby
 	{ id = 9057, chance = 2840, maxCount = 1 }, -- small topaz
 	{ id = 3041, chance = 220 }, -- blue gem
-	{ id = 6499, chance = 10660 }, -- demonic essence
+	{ id = 6499, chance = 10660, maxCount = 2}, -- demonic essence
 	{ id = 21974, chance = 1230 }, -- golden lotus brooch
 	{ id = 3078, chance = 1160 }, -- mysterious fetish
 	{ id = 3574, chance = 2190 }, -- mystic turban

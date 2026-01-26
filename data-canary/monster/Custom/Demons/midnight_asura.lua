@@ -80,7 +80,7 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 3027, chance = 3670, maxCount = 2 }, -- black pearl
-	{ id = 6499, chance = 9950 }, -- demonic essence
+	{ id = 6499, chance = 9950, maxCount = 2 }, -- demonic essence
 	{ id = 3028, chance = 5680, maxCount = 3 }, -- small diamond
 	{ id = 3032, chance = 3240, maxCount = 1 }, -- small emerald
 	{ id = 3030, chance = 3090, maxCount = 1 }, -- small ruby

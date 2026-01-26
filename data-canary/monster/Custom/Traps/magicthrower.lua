@@ -33,7 +33,7 @@ monster.flags = {
 	canPushItems = false,
 	canPushCreatures = true,
 	staticAttackChance = 90,
-	targetDistance = 1,
+	targetDistance = 7,
 	healthHidden = true,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
@@ -73,7 +73,7 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 1, attack = 1},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -50, maxDamage = -100, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_BLOCKHIT}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -50000, maxDamage = -100000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_BLOCKHIT}
 }
 
 monster.defenses = {

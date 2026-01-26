@@ -11,8 +11,8 @@ function customSword.onUseWeapon(player, variant)
     local skill = player:getSkillLevel(SKILL_AXE)
 
     -- Daño físico
-    local dmgMax = (lvl * 12.5) + (skill * 35) * 1.25
-    local dmgMin = dmgMax / 1.5
+    local dmgMax = (lvl * 10.5) + (skill * 35) * 1.25
+    local dmgMin = dmgMax / 1.15
 
     -- Daño holy
     -- local fireMax = lvl
