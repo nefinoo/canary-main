@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_TELEPORT)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SUDDENDEATH)
 
-combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.95, -30, -0.80, 0)
+combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.80, -30, -0.95, 0)
 
 local deadlywand = Weapon(WEAPON_WAND)
 
