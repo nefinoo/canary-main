@@ -82742,6 +82742,11 @@ Granted by TibiaGoals.com"/>
 <!-- EMPIEZAN ITEMS CUSTOMS -->
 <!-- EMPIEZAN ITEMS CUSTOMS -->
 
+	<item id="51300" article="a" name="ferumbras backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="40"/>
+		<attribute key="weight" value="2800"/>
+	</item>
 	<item id="50854" article="a" name="deidara box">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="description" value="It contains the most powerful artifacts from the explosive clay master"/>
