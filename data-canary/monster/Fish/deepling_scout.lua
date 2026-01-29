@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja, Sunken Mines near Dwarf Mines.",
 }
 
-monster.health = 240
-monster.maxHealth = 240
+monster.health = 240000
+monster.maxHealth = 240000
 monster.race = "blood"
 monster.corpse = 12684
 monster.speed = 65
@@ -95,8 +95,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -105, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = 0, maxDamage = -110, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -2300, maxDamage = -3000, effect = CONST_ME_DRAWBLOOD },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -2300, maxDamage = -3000, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
 }
 
 monster.defenses = {

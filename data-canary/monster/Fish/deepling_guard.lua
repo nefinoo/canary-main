@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Also may spawn during the gemcutting mission. Many more spawns in almost all areas of Deepling stage 2 and 3.",
 }
 
-monster.health = 1900
-monster.maxHealth = 1900
+monster.health = 1900000
+monster.maxHealth = 1900000
 monster.race = "blood"
 monster.corpse = 13750
 monster.speed = 135
@@ -100,16 +100,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -200, range = 7, shootEffect = CONST_ANI_WHIRLWINDSWORD, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -100, maxDamage = -150, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -7500 , maxDamage = -11000, effect = CONST_ME_DRAWBLOOD },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -7500, maxDamage = -11000, range = 7, shootEffect = CONST_ANI_WHIRLWINDSWORD, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -7500, maxDamage = -11000, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
 }
 
 monster.defenses = {
 	defense = 35,
 	armor = 53,
 	mitigation = 1.57,
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 100, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 7500, maxDamage = 11000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {

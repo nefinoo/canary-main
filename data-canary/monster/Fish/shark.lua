@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a shark"
-monster.experience = 4500
+monster.experience = 6700
 monster.outfit = {
 	lookType = 453,
 	lookHead = 0,
@@ -74,15 +74,13 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 50000, maxCount = 100 },
-	{ name = "gold coin", chance = 41000, maxCount = 38 },
+	{ name = "gold coin", chance = 50000, maxCount = 200 },
+	{ name = "gold coin", chance = 41000, maxCount = 76 },
 	{ id = 3578, chance = 25430, maxCount = 4 }, -- fish
 	{ name = "salmon", chance = 2430, maxCount = 2 }, -- fish
-	{ name = "deepling scales", chance = 9620 },
-	{ name = "eye of a deepling", chance = 1200 },
 	{ name = "small sapphire", chance = 1090 },
 	{ id = 281, chance = 390 }, -- giant shimmering pearl (green)
-	{name = "experience scroll", chance = 3000},
+	{name = "experience scroll", chance = 850},
 	{ name = "fish fin", chance = 161 },
 }
 

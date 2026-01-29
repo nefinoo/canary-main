@@ -94,8 +94,8 @@ monster.loot = {
 	{name = "platinum coin", chance = 25000, maxCount = 3},
 	{name = "boots of haste", chance = 1250},
 	{name = "magic sword", chance = 100},
-	{ id = 3319, chance = 100 }, 
-	{ id = 3309, chance = 100 }, 
+	{ id = 3319, chance = 100 }, --stonecutter
+	{ id = 3309, chance = 100 }, --thunder hammer
 	{name = "magic plate armor", chance = 250},
 	{name = "mastermind shield", chance = 250},
 	{name = "experience scroll", chance = 500},

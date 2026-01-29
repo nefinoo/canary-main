@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "massive water elemental"
 monster.description = "a massive water elemental"
-monster.experience = 25000
+monster.experience = 250000
 monster.outfit = {
 	lookType = 11,
 	lookHead = 20,
@@ -65,8 +65,8 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 15},
-	{type = COMBAT_ENERGYDAMAGE, percent = -10},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
@@ -91,10 +91,12 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "experience scroll", chance = 2900, maxCount = 3},
+	{name = "experience scroll", chance = 3000, maxCount = 2},
 	{id = 3578, chance = 60000, maxCount = 3},--fish
 	{name = "salmon", chance = 40000, maxCount = 2},
-	{name = "green perch", chance = 15000, maxCount = 2}
+	{name = "green perch", chance = 15000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 20},
 }
 
 mType:register(monster)

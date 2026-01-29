@@ -96,7 +96,9 @@ monster.loot = {
 	{name = "fish fin", chance = 2000},
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 70000, maxCount = 40},
+	{name = "experience scroll", chance = 3000, maxCount = 2},
 	{id = 893, chance = 5}
 }
 

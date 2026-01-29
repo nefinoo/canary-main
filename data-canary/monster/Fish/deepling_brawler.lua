@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja.",
 }
 
-monster.health = 380
-monster.maxHealth = 380
+monster.health = 380000
+monster.maxHealth = 380000
 monster.race = "blood"
 monster.corpse = 12685
 monster.speed = 85
@@ -90,8 +90,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -100, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -60, maxDamage = -120, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -3460, maxDamage = -4500, effect = CONST_ME_DRAWBLOOD },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -3460, maxDamage = -4500, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
 }
 
 monster.defenses = {

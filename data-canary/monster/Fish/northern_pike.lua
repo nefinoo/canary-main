@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a northern pike"
-monster.experience = 2000
+monster.experience = 2700
 monster.outfit = {
 	lookType = 454,
 	lookHead = 0,
@@ -75,7 +75,8 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -25, maxDamage = -125, effect = 2, target = false }
+	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 48},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_DROWNDAMAGE, minDamage = -50, maxDamage = -125, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
 }
 
 monster.defenses = {
@@ -85,13 +86,13 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -5 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 0 },

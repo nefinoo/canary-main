@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "blood crab"
 monster.description = "a blood crab"
-monster.experience = 18000
+monster.experience = 180000
 monster.outfit = {
 	lookType = 200,
 	lookHead = 0,
@@ -65,14 +65,14 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 12},
-	{type = COMBAT_ENERGYDAMAGE, percent = 5},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 10},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 100},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
@@ -87,8 +87,8 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 40000, maxCount = 80},
-	{name = "gold coin", chance = 40000, maxCount = 39},
+	{name = "platinum coin", chance = 100000, maxCount = 6},
+	{name = "platinum coin", chance = 50000, maxCount = 20},
 	{id = 3578, chance = 50000, maxCount = 4},--fish
 	{name = "experience scroll", chance = 3000},
 	{name = "salmon", chance = 35000, maxCount = 2},

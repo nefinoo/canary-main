@@ -82,8 +82,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1200, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1000, range = 1, radius = 3, target = false, effect = CONST_ME_HITAREA}
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -865, maxDamage = -1200, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -865, maxDamage = -1100, range = 1, radius = 3, target = false, effect = CONST_ME_HITAREA}
 }
 
 monster.defenses = {
@@ -98,8 +98,9 @@ monster.loot = {
 	{name = "fish fin", chance = 2000},
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
-	{name = "experience scroll", chance = 3000},
-	{id = 893, chance = 5}
+	{name = "experience scroll", chance = 3000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 50000, maxCount = 30},
 }
 
 mType:register(monster)
