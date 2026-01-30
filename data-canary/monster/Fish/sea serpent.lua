@@ -20,8 +20,8 @@ monster.outfit = {
 -- }
 
 
-monster.health = 1000000
-monster.maxHealth = 1000000
+monster.health = 15000000
+monster.maxHealth = 15000000
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 949
@@ -81,7 +81,7 @@ monster.elements = {
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 100},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
@@ -104,8 +104,24 @@ monster.loot = {
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
-	{name = "experience scroll", chance = 3000},
-	{id = 893, chance = 5}
+	{name = "experience scroll", chance = 3000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 30},
+	{name = "platinum coin", chance = 50000, maxCount = 60},
+	{id = 893, chance = 5},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 300},
+	{ id = 3319, chance = 300 }, 
+	{ id = 3309, chance = 300 }, 
+	{id = 3341, chance = 300},
+	{name = "throwing star", chance = 300},
+	
+	{name = "demon helmet", chance = 300},
+	{name = "demon legs", chance = 300},
+	{name = "demon shield", chance = 300},
+	{id = 6529, chance = 500}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)

@@ -17,17 +17,17 @@ broadcast - The message that will be broadcasted
 ]]--
 
 local waterMonsters = {
-    [1] = {name = "Manta Ray", level = 20000, fishing = 140, chance = 100, key = 31, scroll = true, bowlable = true, serverBC = true, broadcast = "The ocean trembles as |PLAYERNAME| reels in the colossal Manta Ray from the deep abyss!"},
-	[2] = {name = "Crustacea Gigantica", level = 17500, fishing = 130, chance = 200, key = 30, scroll = true, bowlable = true, serverBC = true, broadcast = "The sea floor quakes as |PLAYERNAME| hooks the mighty Crustacea Gigantica!"},
-	[3] = {name = "Oceanus", level = 15000, fishing = 125, chance = 250, key = 29, scroll = true, bowlable = true, serverBC = true, broadcast = "The tides roar as |PLAYERNAME| disturbs the ancient god of the seas — Oceanus rises from the depths!"},
-	[4] = {name = "Cicno", level = 12500, fishing = 120, chance = 500, key = 28, scroll = true, bowlable = true, serverBC = true, broadcast = "Waves part and the celestial swan Cicno descends from the heavens, summoned by |PLAYERNAME|!"},
-	[5] = {name = "Sigma", level = 10000, fishing = 115, chance = 750, key = 27, scroll = true, bowlable = true, serverBC = true, broadcast = "The sea rumbles in chaos as |PLAYERNAME| awakens Sigma, the mechanical god of the abyss!"},
-	[6] = {name = "Shesha", level = 9000, fishing = 110, chance = 1000, key = 26, scroll = true, bowlable = true, serverBC = true, broadcast = "The waters coil as the cosmic serpent Shesha emerges, summoned by |PLAYERNAME|!"},
-	[7] = {name = "Leaviathan", level = 8000, fishing = 105, chance = 1334, key = 25, scroll = true, bowlable = true, serverBC = true, broadcast = "The seas split apart as |PLAYERNAME| has awoken the great Leaviathan!"},
-	[8] = {name = "Escila", level = 7000, fishing = 100, chance = 1667, key = 24, scroll = true, bowlable = true, serverBC = true, broadcast = "Screams echo across the shore as Escila, the terror of sailors, surfaces to devour |PLAYERNAME|!"},
-	[9] = {name = "Caribdis", level = 6000, fishing = 95, chance = 2000, key = 23, scroll = true, bowlable = true, serverBC = true, broadcast = "A massive whirlpool forms! Caribdis rises, dragging |PLAYERNAME| toward the abyss!"},
-	[10] = {name = "Ryujin", level = 5000, fishing = 90, chance = 3000, key = 22, scroll = false, bowlable = true, serverBC = true, broadcast = "Lightning strikes the waves as |PLAYERNAME| summons Ryujin, the Dragon God of the Sea!"},
-	[11] = {name = "Sea Serpent", level = 5000, fishing = 85, chance = 3500, key = 21, scroll = false, bowlable = true, serverBC = true, broadcast = "The ocean churns violently as |PLAYERNAME| has disturbed the mighty Sea Serpent!"},
+    [1] = {name = "Manta Ray", level = 200000, fishing = 140, chance = 100, key = 31, scroll = true, bowlable = true, serverBC = true, broadcast = "The ocean trembles as |PLAYERNAME| reels in the colossal Manta Ray from the deep abyss!"},
+	[2] = {name = "Crustacea Gigantica", level = 175000, fishing = 130, chance = 200, key = 30, scroll = true, bowlable = true, serverBC = true, broadcast = "The sea floor quakes as |PLAYERNAME| hooks the mighty Crustacea Gigantica!"},
+	[3] = {name = "Oceanus", level = 150000, fishing = 125, chance = 250, key = 29, scroll = true, bowlable = true, serverBC = true, broadcast = "The tides roar as |PLAYERNAME| disturbs the ancient god of the seas — Oceanus rises from the depths!"},
+	[4] = {name = "Cicno", level = 125000, fishing = 120, chance = 500, key = 28, scroll = true, bowlable = true, serverBC = true, broadcast = "Waves part and the celestial swan Cicno descends from the heavens, summoned by |PLAYERNAME|!"},
+	[5] = {name = "Sigma", level = 100000, fishing = 115, chance = 750, key = 27, scroll = true, bowlable = true, serverBC = true, broadcast = "The sea rumbles in chaos as |PLAYERNAME| awakens Sigma, the mechanical god of the abyss!"},
+	[6] = {name = "Shesha", level = 90000, fishing = 110, chance = 1000, key = 26, scroll = true, bowlable = true, serverBC = true, broadcast = "The waters coil as the cosmic serpent Shesha emerges, summoned by |PLAYERNAME|!"},
+	[7] = {name = "Leaviathan", level = 80000, fishing = 105, chance = 1334, key = 25, scroll = true, bowlable = true, serverBC = true, broadcast = "The seas split apart as |PLAYERNAME| has awoken the great Leaviathan!"},
+	[8] = {name = "Escila", level = 70000, fishing = 100, chance = 1667, key = 24, scroll = true, bowlable = true, serverBC = true, broadcast = "Screams echo across the shore as Escila, the terror of sailors, surfaces to devour |PLAYERNAME|!"},
+	[9] = {name = "Caribdis", level = 60000, fishing = 95, chance = 2000, key = 23, scroll = true, bowlable = true, serverBC = true, broadcast = "A massive whirlpool forms! Caribdis rises, dragging |PLAYERNAME| toward the abyss!"},
+	[10] = {name = "Ryujin", level = 20000, fishing = 90, chance = 3000, key = 22, scroll = false, bowlable = true, serverBC = true, broadcast = "Lightning strikes the waves as |PLAYERNAME| summons Ryujin, the Dragon God of the Sea!"},
+	[11] = {name = "Sea Serpent", level = 10000, fishing = 85, chance = 3500, key = 21, scroll = false, bowlable = true, serverBC = true, broadcast = "The ocean churns violently as |PLAYERNAME| has disturbed the mighty Sea Serpent!"},
     [12] = {name = "Wyrm", level = 5000, fishing = 80, chance = 4000, key = 20, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
     [13] = {name = "Deepling Elite", level = 4000, fishing = 75, chance = 4200, key = 19, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
     [14] = {name = "Deepling Guard", level = 3800, fishing = 75, chance = 4400, key = 18, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
@@ -211,6 +211,6 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 fishing:allowFarUse(true)
-fishing:id(52053)
--- fishing:id(3483, 9306)
+-- fishing:id(3483, 9306, 52053)
+fishing:id(3483, 9306)
 fishing:register()

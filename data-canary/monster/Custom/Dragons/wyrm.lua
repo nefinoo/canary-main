@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1000000
-monster.maxHealth = 1000000
+monster.health = 10000000
+monster.maxHealth = 10000000
 monster.runHealth = 1
 monster.race = "blood"
 monster.corpse = 8113
@@ -100,9 +100,12 @@ monster.loot = {
 	{name = "green perch", chance = 2000},
 	{name = "assassin star", chance = 5},
 	{name = "justice seeker", chance = 5},
-	{name = "experience scroll", chance = 3000},
-	-- {id = 893, chance = 5},
-	{name = "deadly wand", chance = 5}
+	{name = "experience scroll", chance = 3000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 30},
+	{name = "platinum coin", chance = 50000, maxCount = 60},	
+	{id = 893, chance = 5},
+	
 }
 
 mType:register(monster)
