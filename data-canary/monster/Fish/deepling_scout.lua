@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling scout"
-monster.experience = 1200000
+monster.experience = 1500000
 monster.outfit = {
 	lookType = 413,
 	lookHead = 0,

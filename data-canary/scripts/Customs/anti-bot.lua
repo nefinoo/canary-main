@@ -1,6 +1,6 @@
 local config = {
-	minutesToAnswer = 2, -- minutes to answer anti bot system
-	delayAntiBot = 30, -- minutes of delay of delayAntiBot
+	minutesToAnswer = 15, -- minutes to answer anti bot system
+	delayAntiBot = 60, -- minutes of delay of delayAntiBot
 	maxGroupId = 1, -- groupid higher than this don't have antiBotSystem Activated
 	prisionPosition = Position(513, 893, 8), -- if don't answer, go to this pos
 	prisionMinutes = 60, -- time inside the prision
@@ -90,8 +90,8 @@ local function antiBot(playerGuid)
 			local tile = Tile(player:getPosition())
 			if tile then
 				if not tile:hasFlag(TILESTATE_PROTECTIONZONE) then
-					local firstNumber = math.random(1, 9)
-					local secondNumber = math.random(1, 9)
+					local firstNumber = math.random(1, 99)
+					local secondNumber = math.random(1, 99)
 					local resultOperation = firstNumber + secondNumber
 
 					player:kv():set("antibot-first-number", firstNumber)
@@ -99,6 +99,7 @@ local function antiBot(playerGuid)
 					player:kv():set("antibot-result-operation", resultOperation)
 
 					player:openChannel(config.antibotChannelId)
+					player:sendCancelMessage("[Anti-Bot] Check The Anti-Bot Channel")
 
 					player:sendChannelMessage(player, "[Anti-Bot] Hello, " .. player:getName() .. "! You have " .. config.minutesToAnswer .. " minute(s) to answer how much is " .. firstNumber .. " + " .. secondNumber .. ". To answer say: !antibot 'number'", TALKTYPE_CHANNEL_O, config.antibotChannelId)
 					player:sendChannelMessage(player, "[Anti-Bot] Example: 20 + 20 = 40, then you would say !antibot 40", TALKTYPE_CHANNEL_O, config.antibotChannelId)
