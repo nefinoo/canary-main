@@ -16,7 +16,7 @@ local config = {
     },
     teleportTimer = 900,
     cooldownTimer = 2 * 60 * 60,
-    storage = 10011,
+    storage = 10012,
 
     -- 🔥 NUEVO
     minLevel = 10000

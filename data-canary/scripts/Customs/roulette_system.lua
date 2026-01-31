@@ -17,7 +17,7 @@ local config = {
         effectDelay = 333,
         spinTime = {min = 8, max = 12}, -- seconds
         spinSlowdownRamping = 5,
-        rouletteStorage = "roulette-finishes" -- required storage to avoid player abuse (if they logout/die before roulette finishes.. they can spin again for free)
+        rouletteStorage = 35876 -- required storage to avoid player abuse (if they logout/die before roulette finishes.. they can spin again for free)
     },
 
     prizePool = {
@@ -163,7 +163,7 @@ local function rewardPlayer(playerId, leverPosition)
     end
 
     player:sendTextMessage(MESSAGE_STATUS, "Congratulations! You have won " .. item:getName() .. ". The item has been sent to your inbox.")
-    player:kv():set(config.rouletteOptions.rouletteStorage, -1)
+    player:setStorageValue(config.rouletteOptions.rouletteStorage, -1)
     player:setMoveLocked(false)
     Game.broadcastMessage(string.format("{%d|%s} The player %s has won {%d|%s} from the roulette!", MESSAGE_LOOK, "[ROULETTE WINNER]", player:getName(), MESSAGE_EVENT_ADVANCE, item:getName()), MESSAGE_LOOT)
 end
@@ -203,7 +203,7 @@ function casinoRoulette.onUse(player, item, fromPosition, target, toPosition, is
     end
 
     if player:getItemCount(config.playItem.itemId) < config.playItem.count then
-        if player:kv():get(config.rouletteOptions.rouletteStorage) < 1 then
+        if player:getStorageValue(config.rouletteOptions.rouletteStorage) < 1 then
             player:sendTextMessage(MESSAGE_FAILURE, "Casino Roulette requires " .. config.playItem.count .. " " .. (ItemType(config.playItem.itemId):getName()) .. " to use.")
             return true
         end
@@ -214,7 +214,7 @@ function casinoRoulette.onUse(player, item, fromPosition, target, toPosition, is
     chancedItems = {}
 
     player:removeItem(config.playItem.itemId, config.playItem.count)
-    player:kv():set(config.rouletteOptions.rouletteStorage, 1)
+    player:setStorageValue(config.rouletteOptions.rouletteStorage, 1)
     player:setMoveLocked(true)
 
     local spinTimeRemaining = math.random((config.rouletteOptions.spinTime.min * 1000), (config.rouletteOptions.spinTime.max * 1000))
@@ -241,7 +241,7 @@ callback:register()
 local rouletteLogout = CreatureEvent("Roulette Logout")
 
 function rouletteLogout.onLogout(player)
-    if player:kv():get(config.rouletteOptions.rouletteStorage) == 1 then
+    if player:getStorageValue(config.rouletteOptions.rouletteStorage) == 1 then
         player:sendTextMessage(MESSAGE_FAILURE, "You cannot disconnect while using roulette!")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
