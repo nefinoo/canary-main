@@ -4232,6 +4232,7 @@
 		<monster name="Training Monk" x="-1" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="429" centery="735" centerz="7" radius="1">
+		<monster name="Minotaur" x="-1" y="-1" z="7" spawntime="60" />
 		<monster name="Minotaur Archer" x="-1" y="1" z="7" spawntime="90" />
 	</monster>
 	<monster centerx="850" centery="736" centerz="7" radius="1">
@@ -4260,6 +4261,10 @@
 	</monster>
 	<monster centerx="430" centery="743" centerz="7" radius="1">
 		<monster name="Minotaur Archer" x="0" y="-1" z="7" spawntime="90" />
+	</monster>
+	<monster centerx="431" centery="748" centerz="7" radius="1">
+		<monster name="Minotaur" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Minotaur" x="-1" y="1" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="576" centery="756" centerz="7" radius="15">
 		<monster name="Giant Spider" x="-8" y="-7" z="7" spawntime="60" />
