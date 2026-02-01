@@ -100,12 +100,12 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 100},
 	{id = 3115, chance = 20000, description2 = "bone"},
 	{name = "shadow herb", chance = 10000, maxCount = 2, description2 = "shadow herb"},
 	{name = "blank rune", chance = 5000, description2 = "blank rune"},
 	{name = "soul orb", chance = 1538, description2 = "soul orb"},
-	{name = "small emerald", chance = 2500, maxCount = 3, description2 = "small emerald"}
+	{name = "small emerald", chance = 2500, maxCount = 3, description2 = "small emerald"},
 }
 
 mType:register(monster)

@@ -92,22 +92,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{name = "crystal necklace", chance = 300},
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "strange talisman", chance = 3333},
-			{name = "wand of decay", chance = 1000},
-			{name = "crowbar", chance = 15000},
-			{name = "plate armor", chance = 2000},
-			{name = "dark armor", chance = 3000},
-			{id = 3456, chance = 6000},
-			{name = "steel boots", chance = 400},
-			{name = "meat", chance = 40000, maxCount = 6},
-			{name = "perfect behemoth fang", chance = 1200},
-			{name = "behemoth claw", chance = 1500}
-		}
-	},
-	{id = 2893, chance = 11000},
+	{name = "crystal necklace", chance = 300},
+	{name = "platinum coin", chance = 100000, maxCount = 4},
+	{name = "strange talisman", chance = 3333},
+	{name = "wand of decay", chance = 1000},
+	{name = "crowbar", chance = 15000},
+	{name = "plate armor", chance = 2000},
+	{name = "dark armor", chance = 3000},
+	{id = 3456, chance = 6000},
+	{name = "steel boots", chance = 400},
+	{name = "meat", chance = 40000, maxCount = 6},
+	{name = "perfect behemoth fang", chance = 1200},
+	{name = "behemoth claw", chance = 1500},
 	{name = "gold coin", chance = 100000, maxCount = 70},
 	{name = "small amethyst", chance = 4000, maxCount = 2},
 	{name = "strange symbol", chance = 800},
@@ -117,7 +113,7 @@ monster.loot = {
 	{name = "giant sword", chance = 688},
 	{name = "war axe", chance = 488},
 	{name = "ham", chance = 10000, maxCount = 3},
-	{name = "behemoth claw", chance = 400}
+	{name = "behemoth claw", chance = 400},
 }
 
 mType:register(monster)

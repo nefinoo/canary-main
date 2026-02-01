@@ -94,23 +94,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 79, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 19},
 	{id = 2920, chance = 15000, description2 = "torch"},
 	{id = 6558, chance = 2222, description2 = "concentrated demonic blood"},
 	{name = "blank rune", chance = 18000, description2 = "blank rune"},
-	{id = 6299, chance = 999, description2 = "death ring"},
 	{name = "brass armor", chance = 6577, description2 = "brass armor"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{id = 3451, chance = 20000, description2 = "pitch fork"},
-			{name = "brass armor", chance = 6577, description2 = "brass armor"},
-			{name = "necrotic rod", chance = 833, description2 = "necrotic rod"},
-			{name = "chain armor", chance = 7887, description2 = "chain armor"},
-			{name = "soul orb", chance = 5666, description2 = "soul orb"},
-			{name = "demonic essence", chance = 7777, description2 = "demonic essence"},
-			{name = "small amethyst", chance = 8888, description2 = "small amethyst"},
-			{id = 3049, chance = 4555, description2 = "stealth ring"}
-		}
-	}
+	{id = 3451, chance = 20000, description2 = "pitch fork"},
+	{name = "brass armor", chance = 6577, description2 = "brass armor"},
+	{name = "necrotic rod", chance = 833, description2 = "necrotic rod"},
+	{name = "chain armor", chance = 7887, description2 = "chain armor"},
+	{name = "soul orb", chance = 5666, description2 = "soul orb"},
+	{name = "demonic essence", chance = 7777, description2 = "demonic essence"},
+	{name = "small amethyst", chance = 8888, description2 = "small amethyst"},
 }
 
 mType:register(monster)

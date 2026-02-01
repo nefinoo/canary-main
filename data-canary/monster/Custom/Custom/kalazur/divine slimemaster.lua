@@ -93,14 +93,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 121, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 12},
 	{name = "plate legs", chance = 5000, description2 = "plate legs"},
 	{name = "belted cape", chance = 2000, description2 = "belted cape"},
 	{name = "springsprout rod", chance = 5000, description2 = "springsprout rod"},
 	{name = "great spirit potion", chance = 5000, description2 = "great spirit potion"},
 	{name = "ultimate health potion", chance = 3000, description2 = "ultimate health potion"},
 	{name = "hibiscus dress", chance = 2500, description2 = "hibiscus dress"},
-	{name = "paladin armor", chance = 2800, description2 = "paladin armor"}
+	{name = "paladin armor", chance = 2800, description2 = "paladin armor"},
 }
 
 mType:register(monster)

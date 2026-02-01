@@ -279,7 +279,8 @@ Blessings.BuyAllBlesses = function(player)
 	if not hasToF then
 		totalCost = totalCost + Blessings.getPvpBlessingCost(player:getLevel(), true)
 	end
-	-- totalCost = totalCost * 25
+	
+	totalCost = totalCost * 0.15
 	
 	if player:removeMoneyBank(totalCost) then
 		metrics.addCounter("balance_decrease", totalCost, {

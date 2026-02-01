@@ -96,19 +96,16 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 20, description2 = "gold coin"},
 	{name = "royal spear", chance = 2000, maxCount = 2, description2 = "royal spear"},
 	{name = "small sapphire", chance = 6666, maxCount = 4, description2 = "small sapphire"},
 	{name = "mystic turban", chance = 1111, description2 = "mystic turban"},
 	{name = "blue rose", chance = 1000, description2 = "blue rose"},
 	{id = 3595, chance = 50000, maxCount = 5, description2 = "carrot"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{id = 1971, chance = 10000, description2 = "book"},
-			{id = 2914, chance = 20000, description2 = "lamp"},
-			{name = "small oil lamp", chance = 7500, description2 = "small oil lamp"},
-			{name = "blue piece of cloth", chance = 5000, description2 = "blue piece of cloth"}
-		}
-	}
+	{id = 1971, chance = 10000, description2 = "book"},
+	{id = 2914, chance = 20000, description2 = "lamp"},
+	{name = "small oil lamp", chance = 7500, description2 = "small oil lamp"},
+	{name = "blue piece of cloth", chance = 5000, description2 = "blue piece of cloth"},
 }
 
 mType:register(monster)

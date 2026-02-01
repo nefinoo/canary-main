@@ -95,21 +95,17 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{id = 3120, chance = 20000},
 	{name = "dirty cape", chance = 10000},
 	{name = "crowbar", chance = 3333},
 	{name = "hammer of wrath", chance = 666},
-	{id = 2853, chance = 100000, child = {
-			{id = 3361, chance = 2333},
-			{name = "steel boots", chance = 788},
-			{name = "battle hammer", chance = 6667},
-			{name = "steel shield", chance = 10000},
-			{name = "soul orb", chance = 1538},
-			{id = 15827, chance = 2000},
-			{id = 3093, chance = 2222}
-		}
-	}
+	{id = 3361, chance = 2333},
+	{name = "steel boots", chance = 788},
+	{name = "battle hammer", chance = 6667},
+	{name = "steel shield", chance = 10000},
+	{name = "soul orb", chance = 1538},
+	{id = 15827, chance = 2000},
 }
 
 mType:register(monster)

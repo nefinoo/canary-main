@@ -92,8 +92,8 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, description2 = "gold coin"},
-	{name = "platinum coin", chance = 100000, description2 = "platinum coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
+	{name = "platinum coin", chance = 50000, maxCount = 4},
 	{name = "meat", chance = 20000, maxCount = 8, description2 = "meat"},
 	{name = "dragon ham", chance = 10000, maxCount = 3, description2 = "dragon ham"},
 	{name = "dirty fur", chance = 10000, description2 = "dirty fur"},
@@ -102,14 +102,11 @@ monster.loot = {
 	{id = 6558, chance = 2500, description2 = "concentrated demonic blood"},
 	{id = 6558, chance = 2500, description2 = "concentrated demonic blood"},
 	{name = "demonic essence", chance = 1429, description2 = "demonic essence"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "soul orb", chance = 1333, description2 = "soul orb"},
-			{name = "dragon hammer", chance = 1667, description2 = "dragon hammer"},
-			{name = "golden armor", chance = 333, description2 = "golden armor"},
-			{name = "golden legs", chance = 400, description2 = "golden legs"},
-			{name = "spiked squelcher", chance = 600, description2 = "spiked squelcher"}
-		}
-	}
+	{name = "soul orb", chance = 1333, description2 = "soul orb"},
+	{name = "dragon hammer", chance = 1667, description2 = "dragon hammer"},
+	{name = "golden armor", chance = 333, description2 = "golden armor"},
+	{name = "golden legs", chance = 400, description2 = "golden legs"},
+	{name = "spiked squelcher", chance = 600, description2 = "spiked squelcher"},
 }
 
 mType:register(monster)
