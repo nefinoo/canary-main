@@ -105,11 +105,7 @@ monster.loot = {
 	{name = "terra rod", chance = 1333, description2 = "terra rod"},
 	{name = "white pearl", chance = 12000, description2 = "white pearl"},
 	{id = 3039, chance = 1900, description2 = "red gem"},
-	{name = "red piece of cloth", chance = 1800, description2 = "red piece of cloth"}.
+	{name = "red piece of cloth", chance = 1800, description2 = "red piece of cloth"},
 }
 
 mType:register(monster)
-
-
-
-
