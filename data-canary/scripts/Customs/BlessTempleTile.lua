@@ -9,7 +9,7 @@ function Blesstiletemple.onStepIn(creature, item, position, fromPosition)
 	if creature:getStorageValue(321321) <= 0 then
 		creature:setStorageValue(321321, 1)
 		creature:showTextDialog(3506, updateMsg)
-		creature:sendTextMessage(MESSAGE_LOOK, "To view the newcomers message again say !help")
+		-- creature:sendTextMessage(MESSAGE_LOOK, "To view the newcomers message again say !help")
 	end
 	player:setFeature(Features.AutoLoot, 1)
 	Blessings.BuyAllBlesses(player)

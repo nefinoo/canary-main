@@ -14952,6 +14952,7 @@
 	</item>
 	<item fromid="5471" toid="5472" article="a" name="ball on chains"/>
 	<item fromid="5473" toid="5474" article="an" name="iron maiden">
+		<attribute key="description" value="A cold iron coffin lined with spikes, built to silence screams forever."/>
 		<attribute key="primarytype" value="torture instruments"/>
 	</item>
 	<item fromid="5475" toid="5476" article="a" name="pillory">
