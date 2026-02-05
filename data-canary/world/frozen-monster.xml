@@ -1878,6 +1878,12 @@
 		<monster name="outlawed warrior" x="-2" y="-1" z="6" spawntime="60" />
 		<monster name="outlawed warrior" x="-3" y="0" z="6" spawntime="60" />
 	</monster>
+	<monster centerx="386" centery="798" centerz="6" radius="7">
+		<monster name="Witch" x="3" y="-7" z="6" spawntime="60" />
+		<monster name="Witch" x="-5" y="-4" z="6" spawntime="60" />
+		<monster name="Witch" x="2" y="-1" z="6" spawntime="60" />
+		<monster name="Witch" x="2" y="7" z="6" spawntime="60" />
+	</monster>
 	<monster centerx="594" centery="843" centerz="6" radius="5">
 		<monster name="Cyclops Drone" x="-1" y="-2" z="6" spawntime="60" />
 		<monster name="Cyclops" x="-2" y="2" z="6" spawntime="60" />
@@ -4109,15 +4115,19 @@
 		<monster name="Hunter" x="-14" y="-27" z="7" spawntime="30" />
 		<monster name="Hunter" x="-1" y="-24" z="7" spawntime="30" />
 		<monster name="Hunter" x="-22" y="-20" z="7" spawntime="30" />
+		<monster name="Wailing Widow" x="-6" y="-8" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-1" y="-8" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-13" y="-5" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-4" y="-1" z="7" spawntime="60" />
+		<monster name="Wailing Widow" x="-11" y="0" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-15" y="3" z="7" spawntime="60" />
+		<monster name="Wailing Widow" x="1" y="3" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-1" y="9" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="-6" y="10" z="7" spawntime="30" />
 		<monster name="outlawed elite guard" x="-25" y="11" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="5" y="11" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="5" y="13" z="7" spawntime="60" />
+		<monster name="Wailing Widow" x="-8" y="14" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="7" y="16" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="-1" y="17" z="7" spawntime="30" />
 		<monster name="Giant Spider" x="-3" y="19" z="7" spawntime="60" />
@@ -4130,9 +4140,7 @@
 	<monster centerx="426" centery="693" centerz="7" radius="5">
 		<monster name="Kongra" x="-3" y="-4" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="439" centery="694" centerz="7" radius="5">
-		<monster name="Hyaena" x="4" y="-4" z="7" spawntime="60" />
-	</monster>
+	<monster centerx="439" centery="694" centerz="7" radius="5" />
 	<monster centerx="237" centery="706" centerz="7" radius="13">
 		<monster name="salazaari defender" x="-3" y="-12" z="7" spawntime="20" />
 		<monster name="salazaari windwalker" x="-2" y="-11" z="7" spawntime="20" />

@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 21500
-monster.maxHealth = 21500
+monster.health = 215000
+monster.maxHealth = 215000
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 5984
@@ -85,16 +85,16 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -160, maxDamage = -600},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -250, maxDamage = -350, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1600, maxDamage = -6000},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -2500, maxDamage = -3500, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 6, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 4000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -250, maxDamage = -550, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -2500, maxDamage = -5500, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
 	defense = 25,
 	armor = 35,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 400, maxDamage = 700, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 4000, maxDamage = 7000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.maxSummons = 2
@@ -103,28 +103,23 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{name = "dragon ham", chance = 20000, maxCount = 2},
 	{name = "golden mug", chance = 1818},
 	{id = 2842, chance = 3333},
 	{name = "broadsword", chance = 5000},
 	{name = "royal helmet", chance = 588},
 	{id = 3361, chance = 333},
-	{name = "power bolt", chance = 2222, maxCount = 10},
-	{id = 3449, chance = 2222, maxCount = 5},
 	{name = "green mushroom", chance = 6666},
 	{name = "worm", chance = 50000, maxCount = 10},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "small emerald", chance = 833, maxCount = 2},
-			{name = "fire sword", chance = 1428},
-			{name = "small sapphire", chance = 2222, maxCount = 2},
-			{name = "tower shield", chance = 1333},
-			{name = "red dragon leather", chance = 5000},
-			{name = "red dragon scale", chance = 5000},
-			{id = 5919, chance = 1000, unique = true}
-		}
-	}
+	{name = "platinum coin", chance = 50000, maxCount = 25},
+	{name = "small emerald", chance = 833, maxCount = 2},
+	{name = "fire sword", chance = 1428},
+	{name = "small sapphire", chance = 2222, maxCount = 2},
+	{name = "tower shield", chance = 1333},
+	{name = "red dragon leather", chance = 5000},
+	{name = "red dragon scale", chance = 5000},
+	{id = 5919, chance = 100000, unique = true},
 }
 
 mType:register(monster)

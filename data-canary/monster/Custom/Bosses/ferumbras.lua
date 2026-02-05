@@ -19,8 +19,8 @@ monster.outfit = {
 	-- bossRace = RARITY_NEMESIS,
 -- }
 
-monster.health = 35000
-monster.maxHealth = 35000
+monster.health = 3500000
+monster.maxHealth = 3500000
 monster.runHealth = 2500
 monster.race = "blood"
 monster.corpse = 6078
@@ -109,21 +109,18 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
 	{name = "giant sword", chance = 16060},
 	{name = "mastermind shield", chance = 12050},
 	{name = "magic plate armor", chance = 7000},
-	{id = 2853, chance = 100000, child = {
-			{name = "coconut", chance = 20000, maxCount = 3},
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "talon", chance = 12000, maxCount = 4},
-			{name = "ferumbras' hat", chance = 1000, unique = true},
-			{name = "small emerald", chance = 15000, maxCount = 3},
-			{name = "platinum amulet", chance = 30000},
-			{name = "great axe", chance = 6000}
-		}
-	}
+	{name = "coconut", chance = 20000, maxCount = 3},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "talon", chance = 12000, maxCount = 4},
+	{name = "ferumbras' hat", chance = 100000, unique = true},
+	{name = "small emerald", chance = 15000, maxCount = 3},
+	{name = "platinum amulet", chance = 30000},
+	{name = "ravager's axe", chance = 600},
 }
 
 mType:register(monster)

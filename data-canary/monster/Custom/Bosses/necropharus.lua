@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "necropharus"
 monster.description = "Necropharus"
-monster.experience = 500000
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 209,
 	lookHead = 20,
@@ -19,8 +19,8 @@ monster.bosstiary = {
 	bossRace = RARITY_BANE,
 }
 
-monster.health = 15000
-monster.maxHealth = 15000
+monster.health = 150000
+monster.maxHealth = 150000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -93,7 +93,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 25,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 600, maxDamage = 990, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 6000, maxDamage = 9900, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.maxSummons = 4
@@ -103,32 +103,27 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 50},
-	-- {id = 2902, chance = 10000},
-	-- {name = "horseman helmet", chance = 150},
+	{name = "platinum coin", chance = 100000, maxCount = 50},
 	{name = "fire sword", chance = 220},
 	{name = "shadow herb", chance = 20000, maxCount = 2},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "soul stone", chance = 2500, unique = true},
 	{name = "moonlight rod", chance = 500},
 	{name = "experience scroll", chance = 2500},
-	{id = 2853, chance = 100000, child = {
-			{name = "scale armor", chance = 8500},
-			{name = "green mushroom", chance = 22500},
-			{name = "big bone", chance = 6000},
-			{id = 3115, chance = 30000},
-			{name = "bone club", chance = 19900},
-			{name = "bone shield", chance = 7500},
-			{name = "katana", chance = 10000},
-			{id = 3114, chance = 20000, maxCount = 3},
-			{name = "grave flower", chance = 20000},
-			{name = "skull staff", chance = 833},
-			{name = "mystic turban", chance = 909},
-			{name = "boots of haste", chance = 666},
-			{name = "clerical mace", chance = 5000},
-			{id = 3341, chance = 100}
-		}
-	}
+	{name = "scale armor", chance = 8500},
+	{name = "green mushroom", chance = 22500},
+	{name = "big bone", chance = 6000},
+	{id = 3115, chance = 30000},
+	{name = "bone club", chance = 19900},
+	{name = "bone shield", chance = 7500},
+	{name = "katana", chance = 10000},
+	{id = 3114, chance = 20000, maxCount = 3},
+	{name = "grave flower", chance = 20000},
+	{name = "skull staff", chance = 833},
+	{name = "mystic turban", chance = 909},
+	{name = "boots of haste", chance = 666},
+	{name = "clerical mace", chance = 5000},
+	{id = 3341, chance = 100},
 }
 
 mType:register(monster)

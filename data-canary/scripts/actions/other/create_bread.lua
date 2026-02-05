@@ -3,7 +3,7 @@ local millstones = { 1381, 1382, 1383, 1384 }
 
 local createBread = Action()
 
-function createBread.onUse(player, item, fromPosition, target, toPosition, isHotkey)
+function createBread.onUse(player, item, fromPosition, itemEx, target, toPosition, isHotkey)
 	local itemId = item:getId()
 	if itemId == 3603 then
 		if target.type == 1 and table.contains(liquidContainers, target.itemid) then

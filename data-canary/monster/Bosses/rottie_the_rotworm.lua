@@ -80,7 +80,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, skill = 30, attack = 30 },
+	{ name = "melee", interval = 2000, chance = 100, skill = 130, attack = 130 },
 }
 
 monster.defenses = {

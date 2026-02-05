@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 265
-monster.maxHealth = 265
+monster.health = 265000
+monster.maxHealth = 265000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5983
@@ -82,15 +82,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 54, attack = 38},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="condition", interval = 1000, chance = 17, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -50, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
+	{name ="melee", interval = 2000, chance = 100, skill = 154, attack = 138},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1200, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="condition", interval = 1000, chance = 17, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -500, maxDamage = -1200, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
 }
 
 monster.defenses = {
 	defense = 16,
 	armor = 17,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 25, maxDamage = 75, effect = CONST_ME_MAGIC_RED},
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 2500, maxDamage = 7500, effect = CONST_ME_MAGIC_RED},
 	{name ="invisible", interval = 1000, chance = 10, duration = 2000, effect = CONST_ME_MAGIC_BLUE}
 }
 
@@ -111,18 +111,14 @@ monster.loot = {
 	{name = "broadsword", chance = 2857},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "nose ring", chance = 1000, unique = true},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of cosmic energy", chance = 1333},
-			{id = 3091, chance = 2000},
-			{name = "meat", chance = 33333, maxCount = 2},
-			{name = "dagger", chance = 6666},
-			{id = 3369, chance = 1000},
-			{name = "longsword", chance = 10000},
-			{name = "green tunic", chance = 2500},
-			{name = "brass legs", chance = 2857},
-			{name = "plate armor", chance = 1818}
-		}
-	}
+	{name = "wand of cosmic energy", chance = 1333},
+	{name = "meat", chance = 33333, maxCount = 2},
+	{name = "dagger", chance = 6666},
+	{id = 3369, chance = 1000},
+	{name = "longsword", chance = 10000},
+	{name = "green tunic", chance = 2500},
+	{name = "brass legs", chance = 2857},
+	{name = "plate armor", chance = 1818},
 }
 
 mType:register(monster)

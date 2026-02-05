@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2150
-monster.maxHealth = 2150
+monster.health = 215000
+monster.maxHealth = 215000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -87,7 +87,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 21,
 	armor = 17,
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 225, maxDamage = 275, effect = CONST_ME_MAGIC_BLUE},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 2250, maxDamage = 2750, effect = CONST_ME_MAGIC_BLUE},
 	{name ="speed", interval = 1000, chance = 8, speed = {min = 345, max = 345}, duration = 6000, effect = CONST_ME_MAGIC_RED}
 }
 
@@ -103,16 +103,13 @@ monster.loot = {
 	{name = "iron helmet", chance = 20000},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{id = 5879, chance = 5000, maxCount = 5},
-	{id = 2853, chance = 100000, child = {
-			{name = "steel helmet", chance = 10000},
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "knight armor", chance = 1000},
-			{name = "knight legs", chance = 500},
-			{name = "brass legs", chance = 10000},
-			{id = 5886, chance = 1000, maxCount = 3},
-			{id = 12320, chance = 100}
-		}
-	}
+	{name = "steel helmet", chance = 10000},
+	{name = "gold coin", chance = 100000, maxCount = 40},
+	{name = "knight armor", chance = 1000},
+	{name = "knight legs", chance = 500},
+	{name = "brass legs", chance = 10000},
+	{id = 5886, chance = 1000, maxCount = 3},
+	{id = 12320, chance = 100},
 }
 
 mType:register(monster)

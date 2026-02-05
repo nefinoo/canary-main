@@ -221,7 +221,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3453, 9596 }, item.itemid) then
+	if not table.contains({ 3453, 9596, 52042 }, item.itemid) then
 		return false
 	end
 
@@ -236,14 +236,13 @@ function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseSickle(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3293, 3306 }, item.itemid) then
+	if not table.contains({ 3293, 3306, 52042 }, item.itemid) then
 		return false
 	end
-
-	if target.itemid == 5464 then -- burning sugar cane
-		target:transform(5463)
+	if target.itemid == 5463 then
+		target:transform(5462)
 		target:decay()
-		Game.createItem(5466, 1, toPosition) -- bunch of sugar cane
+		Game.createItem(5466, 1, toPosition)
 		player:addAchievementProgress("Natural Sweetener", 50)
 		return true
 	end
@@ -251,14 +250,14 @@ function onUseSickle(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3304, 9598 }, item.itemid) then
+	if not table.contains({ 3304, 9598, 52042 }, item.itemid) then
 		return false
 	end
 	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3469, 9594, 9598 }, item.itemid) then
+	if not table.contains({ 3469, 9594, 9598, 52042 }, item.itemid) then
 		return false
 	end
 
@@ -272,7 +271,7 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 end
 
 function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3468, 3470 }, item.itemid) then
+	if not table.contains({ 3468, 3470, 52042 }, item.itemid) then
 		return false
 	end
 	return false
