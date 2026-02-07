@@ -4137,10 +4137,12 @@
 		<monster name="outlawed warrior" x="-1" y="0" z="7" spawntime="30" />
 		<monster name="outlawed warrior" x="1" y="1" z="7" spawntime="30" />
 	</monster>
-	<monster centerx="426" centery="693" centerz="7" radius="5">
-		<monster name="Kongra" x="-3" y="-4" z="7" spawntime="60" />
+	<monster centerx="428" centery="701" centerz="7" radius="15">
+		<monster name="Fish" x="12" y="-10" z="7" spawntime="60" />
+		<monster name="Fish" x="-3" y="-7" z="7" spawntime="60" />
+		<monster name="Fish" x="4" y="5" z="7" spawntime="60" />
+		<monster name="Fish" x="-13" y="6" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="439" centery="694" centerz="7" radius="5" />
 	<monster centerx="237" centery="706" centerz="7" radius="13">
 		<monster name="salazaari defender" x="-3" y="-12" z="7" spawntime="20" />
 		<monster name="salazaari windwalker" x="-2" y="-11" z="7" spawntime="20" />
@@ -4287,10 +4289,10 @@
 	</monster>
 	<monster centerx="263" centery="775" centerz="7" radius="30">
 		<monster name="Ferumbras" x="-21" y="-16" z="7" spawntime="60" />
-		<monster name="Ron the Ripper" x="-28" y="-9" z="7" spawntime="60" />
-		<monster name="Lethal Lissy" x="-14" y="-9" z="7" spawntime="60" />
-		<monster name="Brutus Bloodbeard" x="-28" y="-4" z="7" spawntime="60" />
-		<monster name="Deadeye Devious" x="-14" y="-4" z="7" spawntime="60" />
+		<monster name="Lethal Lissy" x="-28" y="-9" z="7" spawntime="60" />
+		<monster name="Ron the Ripper" x="-14" y="-9" z="7" spawntime="60" />
+		<monster name="Deadeye Devious" x="-28" y="-4" z="7" spawntime="60" />
+		<monster name="Brutus Bloodbeard" x="-14" y="-4" z="7" spawntime="60" />
 		<monster name="The Horned Fox" x="-28" y="1" z="7" spawntime="60" />
 		<monster name="The Old Widow" x="-14" y="1" z="7" spawntime="60" />
 		<monster name="Trunks" x="-7" y="1" z="7" spawntime="60" />
@@ -5855,6 +5857,10 @@
 		<monster name="Sibang" x="-5" y="5" z="8" spawntime="60" />
 		<monster name="Kongra" x="3" y="5" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="159" centery="461" centerz="8" radius="1">
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Merlkin" x="1" y="1" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="449" centery="461" centerz="8" radius="18">
 		<monster name="valick" x="-8" y="-15" z="8" spawntime="30" />
 		<monster name="valick" x="-14" y="-9" z="8" spawntime="30" />
@@ -5869,6 +5875,19 @@
 		<monster name="Kongra" x="-1" y="-3" z="8" spawntime="60" />
 		<monster name="Kongra" x="0" y="1" z="8" spawntime="60" />
 	</monster>
+	<monster centerx="162" centery="462" centerz="8" radius="1">
+		<monster name="Kongra" x="0" y="0" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="463" centerz="8" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="469" centerz="8" radius="1">
+		<monster name="Kongra" x="0" y="0" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="472" centerz="8" radius="1">
+		<monster name="Merlkin" x="-1" y="-1" z="8" spawntime="60" />
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="146" centery="477" centerz="8" radius="2">
 		<monster name="Sibang" x="-1" y="1" z="8" spawntime="60" />
 		<monster name="Sibang" x="2" y="1" z="8" spawntime="60" />
@@ -5882,11 +5901,26 @@
 		<monster name="little puppy" x="4" y="10" z="8" spawntime="10" />
 		<monster name="little puppy" x="-1" y="14" z="8" spawntime="10" />
 	</monster>
+	<monster centerx="164" centery="478" centerz="8" radius="1">
+		<monster name="Kongra" x="0" y="0" z="8" spawntime="60" />
+	</monster>
 	<monster centerx="140" centery="482" centerz="8" radius="2">
 		<monster name="Kongra" x="1" y="-1" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="151" centery="482" centerz="8" radius="2">
 		<monster name="Kongra" x="1" y="-1" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="482" centerz="8" radius="1">
+		<monster name="Merlkin" x="-1" y="-1" z="8" spawntime="60" />
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="487" centerz="8" radius="1">
+		<monster name="Sibang" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Merlkin" x="-1" y="1" z="8" spawntime="60" />
+		<monster name="Merlkin" x="1" y="1" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="490" centerz="8" radius="1">
+		<monster name="Kongra" x="0" y="0" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="138" centery="493" centerz="8" radius="5">
 		<monster name="Merlkin" x="-1" y="-2" z="8" spawntime="60" />
@@ -7859,6 +7893,97 @@
 		<monster name="valick" x="-3" y="2" z="9" spawntime="30" />
 		<monster name="valick" x="2" y="3" z="9" spawntime="30" />
 	</monster>
+	<monster centerx="156" centery="467" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="467" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="210" centery="467" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="214" centery="467" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="216" centery="467" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="153" centery="468" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="187" centery="468" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="123" centery="469" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="469" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="131" centery="469" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="160" centery="469" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="184" centery="469" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="151" centery="470" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="170" centery="470" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="208" centery="470" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="184" centery="471" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="191" centery="471" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="218" centery="471" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="200" centery="472" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="140" centery="473" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="146" centery="473" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="187" centery="473" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="209" centery="473" centerz="9" radius="1">
+		<monster name="Merlkin" x="-1" y="0" z="9" spawntime="59904" />
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="130" centery="474" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="124" centery="475" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="175" centery="475" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="212" centery="475" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="216" centery="475" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="476" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="161" centery="477" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
 	<monster centerx="496" centery="477" centerz="9" radius="18">
 		<monster name="little puppy" x="-17" y="-12" z="9" spawntime="30" />
 		<monster name="little puppy" x="4" y="-8" z="9" spawntime="30" />
@@ -7877,6 +8002,167 @@
 		<monster name="little puppy" x="-2" y="12" z="9" spawntime="30" />
 		<monster name="little puppy" x="14" y="14" z="9" spawntime="30" />
 		<monster name="little puppy" x="9" y="15" z="9" spawntime="30" />
+	</monster>
+	<monster centerx="127" centery="478" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="132" centery="479" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="158" centery="480" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="165" centery="480" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="186" centery="480" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="142" centery="482" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="483" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="161" centery="484" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="170" centery="485" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="183" centery="486" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="145" centery="488" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="150" centery="488" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="489" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="153" centery="489" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="160" centery="489" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="126" centery="493" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="161" centery="493" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="129" centery="494" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="171" centery="494" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="176" centery="494" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="182" centery="496" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="201" centery="496" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="204" centery="496" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="124" centery="497" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="142" centery="498" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="145" centery="499" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="147" centery="499" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="499" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="183" centery="499" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="500" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="131" centery="500" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="142" centery="500" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="180" centery="500" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="202" centery="500" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="191" centery="501" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="194" centery="501" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="206" centery="501" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="-1" z="9" spawntime="59904" />
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="159" centery="503" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="184" centery="503" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="202" centery="504" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="205" centery="505" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="152" centery="506" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="162" centery="506" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="155" centery="507" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="141" centery="508" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="130" centery="509" centerz="9" radius="1">
+		<monster name="Sibang" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="137" centery="509" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="160" centery="509" centerz="9" radius="1">
+		<monster name="Merlkin" x="-1" y="0" z="9" spawntime="60" />
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="123" centery="511" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="511" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="140" centery="511" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="122" centery="515" centerz="9" radius="1">
+		<monster name="Kongra" x="0" y="0" z="9" spawntime="60" />
+	</monster>
+	<monster centerx="127" centery="515" centerz="9" radius="1">
+		<monster name="Merlkin" x="0" y="0" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="434" centery="528" centerz="9" radius="5">
 		<monster name="venom" x="0" y="3" z="9" spawntime="30" />

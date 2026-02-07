@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raids>
-	<raid name="Demodras" file="Demodras.xml" interval2="300" margin="100" />	
-	<raid name="Rottie the Rotworm" file="rottie2.xml" interval2="300" margin="100" />
-	<raid name="Necropharus" file="necropharus.xml" interval2="300" margin="100" />
-	<raid name="Brutus Bloodbeard" file="pirateboss1.xml" interval2="300" margin="100" />
-	<raid name="Deadeye Devious" file="pirateboss2.xml" interval2="300" margin="100" />
-	<raid name="Lethal Lissy" file="pirateboss3.xml" interval2="300" margin="100" />
-	<raid name="Ron The Ripper" file="pirateboss4.xml" interval2="300" margin="100" />
-	<raid name="the Horned Fox" file="horned.xml" interval2="300" margin="100" />
-	<raid name="The Old Widow" file="widow.xml" interval2="300" margin="100" />
-	<raid name="Tiquandas Revenge" file="tiquandas.xml" interval2="300" margin="100" />
-	<raid name="Ferumbras" file="ferumbras.xml" interval2="300" margin="100" />
+	<raid name="Demodras" file="bosses/Demodras.xml" interval2="240" margin="180" />	
+	<raid name="Rottie the Rotworm" file="bosses/rottie2.xml" interval2="180" margin="120" />
+	<raid name="Necropharus" file="bosses/necropharus.xml" interval2="240" margin="180" />
+	<raid name="Brutus Bloodbeard" file="bosses/pirateboss1.xml" interval2="180" margin="120" />
+	<raid name="Deadeye Devious" file="bosses/pirateboss2.xml" interval2="180" margin="120" />
+	<raid name="Lethal Lissy" file="bosses/pirateboss3.xml" interval2="180" margin="120" />
+	<raid name="Ron The Ripper" file="bosses/pirateboss4.xml" interval2="180" margin="120" />
+	<raid name="the Horned Fox" file="bosses/horned.xml" interval2="180" margin="120" />
+	<raid name="The Old Widow" file="bosses/widow.xml" interval2="180" margin="120" />
+	<raid name="Tiquandas Revenge" file="bosses/tiquandas.xml" interval2="240" margin="180" />
+	<raid name="Ferumbras" file="bosses/ferumbras.xml" interval2="240" margin="180" />
 	
 	<!-- monturas -->
-	<raid name="Donkey" file="donkeys.xml" interval2="300" margin="100" />
-	<raid name="Wild Horse" file="wild_horses.xml" interval2="300" margin="100" />
+	<raid name="Donkey" file="mounts/donkeys.xml" interval2="180" margin="90" />
+	<raid name="Wild Horse" file="mounts/wild_horses.xml" interval2="180" margin="90" />
 </raids>
