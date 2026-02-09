@@ -13,6 +13,13 @@
 	<raid name="Ferumbras" file="bosses/ferumbras.xml" interval2="240" margin="180" />
 	
 	<!-- monturas -->
+	<raid name="Boar" file="mounts/boar.xml" interval2="180" margin="90" />
 	<raid name="Donkey" file="mounts/donkeys.xml" interval2="180" margin="90" />
+	<raid name="Dragonling" file="mounts/dragonling.xml" interval2="180" margin="90" />
+	<raid name="Dromedary" file="mounts/dromedary.xml" interval2="180" margin="90" />
+	<raid name="Midnight Panther" file="mounts/midnight.xml" interval2="180" margin="90" />
+	<raid name="Noble Lion" file="mounts/noble_lion.xml" interval2="180" margin="90" />
+	<raid name="White Lion" file="mounts/white_lion.xml" interval2="180" margin="90" />
 	<raid name="Wild Horse" file="mounts/wild_horses.xml" interval2="180" margin="90" />
+	<raid name="Undead Cavebear" file="mounts/Undead Cavebear.xml" interval2="180" margin="90" />
 </raids>

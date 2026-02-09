@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="A white lion will appear in the most remote area of the lion spot." />
+	<announce delay="120000" type="event" message="The white lion is roaming deep within the lion spot." />
+
+	<!-- AREARESPAWN -->
+	<areaspawn delay="2000" fromx="49" fromy="1241" fromz="9" tox="293" toy="1336" toz="9">
+		<monster name="White Lion" amount="10" />
+	</areaspawn>
+</raid>
