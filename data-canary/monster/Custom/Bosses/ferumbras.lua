@@ -121,6 +121,7 @@ monster.loot = {
 	{name = "small emerald", chance = 15000, maxCount = 3},
 	{name = "platinum amulet", chance = 30000},
 	{name = "ravager's axe", chance = 600},
+	{id = 16155, chance = 600}, --Montura Dragonling
 }
 
 mType:register(monster)

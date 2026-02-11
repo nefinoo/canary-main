@@ -79,6 +79,8 @@ monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{name = "platinum coin", chance = 75000, maxCount = 30},
 	{name = "platinum coin", chance = 50000, maxCount = 60},
+	{id = 12318, chance = 20}, --Montura Cangrejo
+	{id = 14142, chance = 20}, --Montura Manta
 	{id = 893, chance = 5},
 	-- weapons lvl 500	
 	{id = 7366, chance = 350},
