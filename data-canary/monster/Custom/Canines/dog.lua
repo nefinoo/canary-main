@@ -107,6 +107,7 @@ monster.loot = {
 	{id = 3341, chance = 200},
 	{name = "throwing star", chance = 200},
 	{id = 3082, chance = 5500},
+	{id = 28537, chance = 3500}, --ritual sword
 	{name = "demonic essence", chance = 1818},
 }
 

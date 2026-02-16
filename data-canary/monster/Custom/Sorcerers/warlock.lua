@@ -114,6 +114,7 @@ monster.loot = {
 	{id = 3007, chance = 1000},
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "talon", chance = 1100, maxCount = 2},
+	{id = 12413, chance = 4000},
 }
 
 mType:register(monster)

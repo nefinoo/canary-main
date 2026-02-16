@@ -120,7 +120,8 @@ monster.loot = {
 	{name = "fire axe", chance = 1200},
 	{name = "magic plate armor", chance = 130},
 	{name = "mastermind shield", chance = 500},
-	{name = "demon horn", chance = 1000}
+	{name = "demon horn", chance = 1000},
+	{id = 12413, chance = 5000},
 }
 
 mType:register(monster)

@@ -91,7 +91,10 @@ monster.loot = {
 	{ id = 5911, chance = 2340 }, -- red piece of cloth
 	
 	-- Reward Box
-	{id = 50851, chance = 2500},
+	{id = 50851, chance = 10000},
+	
+	--Montura leatherwhip
+	{id = 12306, chance = 25},
 	
 	{ id = 52374, chance = 150, unique = true}, -- sorcerer helmet
 	{ id = 52373, chance = 150, unique = true}, -- sorcerer armor

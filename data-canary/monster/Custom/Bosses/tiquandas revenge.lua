@@ -98,6 +98,7 @@ monster.loot = {
 	{name = "small diamond", chance = 33333, maxCount = 3},
 	{name = "seeds", chance = 4000},
 	{name = "mandrake", chance = 1000, unique = true},
+	{id = 12311, chance = 100},
 	{name = "worm", chance = 50000, maxCount = 10}
 }
 

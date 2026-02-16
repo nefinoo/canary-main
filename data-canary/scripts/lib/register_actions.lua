@@ -188,18 +188,33 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif target.itemid == 17950 then -- swamp digging
 		if not player:hasExhaustion("swamp-digging") then
 			local chance = math.random(1, 100)
-			if chance <= 42 then
+			if chance <= 32 then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a dead snake.")
 				player:addItem(4259)
-			elseif chance >= 43 and chance <= 79 then
+			elseif chance >= 33 and chance <= 39 then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small diamond.")
 				player:addItem(3028)
+			elseif chance >= 40 and chance <= 49 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small sapphire.")
+				player:addItem(3029)
+			elseif chance >= 50 and chance <= 59 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small ruby.")
+				player:addItem(3030)
+			elseif chance >= 60 and chance <= 69 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small emerald.")
+				player:addItem(3032)
+			elseif chance >= 70 and chance <= 79 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small amethyst.")
+				player:addItem(3033)
+			elseif chance >= 80 and chance <= 90 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small amethyst.")
+				player:addItem(3033)
 			else
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a leech.")
 				player:addItem(17858)
 			end
-
-			player:setExhaustion("swamp-digging", 7 * 24 * 60 * 60)
+			
+			player:setExhaustion("swamp-digging", 2 * 60 * 60)
 			player:getPosition():sendMagicEffect(CONST_ME_GREEN_RINGS)
 		end
 	elseif table.contains(sandIds, groundId) then

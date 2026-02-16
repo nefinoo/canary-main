@@ -103,7 +103,8 @@ monster.loot = {
 	{name = "hydra egg", chance = 200, description2 = "hydra egg"},
 	{name = "medusa shield", chance = 1000, description2 = "medusa shield"},
 	{name = "royal helmet", chance = 500, description2 = "royal helmet"},
-	{name = "boots of haste", chance = 350, description2 = "boots of haste"}
+	{name = "boots of haste", chance = 350, description2 = "boots of haste"},
+	{id = 12413, chance = 3000},
 		
 }
 

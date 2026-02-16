@@ -94,7 +94,7 @@ monster.loot = {
 	{name = "behemoth claw", chance = 500},
 	
 	-- Reward Box
-	{id = 50850, chance = 2500},
+	{id = 50850, chance = 10000},
 	
 	{ id = 51049, chance = 150, unique = true}, -- sorcerer helmet
 	{ id = 51050, chance = 150, unique = true}, -- sorcerer armor

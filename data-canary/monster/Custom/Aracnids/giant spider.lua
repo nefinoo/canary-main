@@ -103,6 +103,7 @@ monster.loot = {
 	{name = "steel helmet", chance = 5000},
 	{name = "knight armor", chance = 1800},
 	{name = "knight legs", chance = 1500},
+	{id = 12413, chance = 3000},
 }
 
 mType:register(monster)

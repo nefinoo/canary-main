@@ -5,13 +5,13 @@ monster.name = "deathpincer"
 monster.description = "a deathpincer"
 monster.experience = 30000
 monster.outfit = {
-	lookType = 79,
-	lookHead = 20,
-	lookBody = 30,
-	lookLegs = 40,
-	lookFeet = 50,
+	lookType = 1055,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
-	lookMount = 0
+	lookMount = 0,
 }
 
 monster.bosstiary = {
@@ -19,8 +19,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 75000
-monster.maxHealth = 75000
+monster.health = 85000
+monster.maxHealth = 85000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -102,6 +102,9 @@ monster.loot = {
 	{ name = "experience scroll", chance = 2500, maxCount = 5},
 	{ name = "silver token", chance = 1500, maxCount = 1},
 	
+	--maximiluis montura
+	{id = 12304, chance = 150},	
+	
 	{id = 5879, chance = 5000},	--spider silk
 	{ name = "holy orchid", chance = 2100 },
 	{ id = 5921, chance = 940 }, -- heaven blossom
@@ -112,11 +115,11 @@ monster.loot = {
 	{name = "green dragon scale", chance = 5000},
 	{name = "green dragon leather", chance = 4000},
 	
-	{ id = 37609, chance = 1250, unique = true}, -- green demon helmet
-	{ id = 37608, chance = 1200, unique = true}, -- green demon armor
-	{ id = 37607, chance = 1150, unique = true}, -- green demon legs
-	{ id = 37610, chance = 1100, unique = true}, -- green demon boots
-	{ id = 6390, chance = 1050, unique = true}, -- green demon shield
+	{ id = 37609, chance = 2500, unique = true}, -- green demon helmet
+	{ id = 37608, chance = 2500, unique = true}, -- green demon armor
+	{ id = 37607, chance = 2500, unique = true}, -- green demon legs
+	{ id = 37610, chance = 2500, unique = true}, -- green demon boots
+	{ id = 6390, chance = 2500, unique = true}, -- green demon shield
 	
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor

@@ -95,7 +95,7 @@ monster.loot = {
 	{ name = "ankh", chance = 2240 },
 	
 	-- Reward Box
-	{id = 50854, chance = 2500},
+	{id = 50854, chance = 10000},
 	
 	-- items si tienen suerte
 	{ id = 51076, chance = 150, unique = true}, -- sorcerer helmet

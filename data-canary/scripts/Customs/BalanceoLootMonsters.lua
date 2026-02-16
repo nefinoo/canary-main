@@ -1375,7 +1375,7 @@ function simulateLoot.onSay(player, words, param)
         end
     end
 
-    local description = "Loot Simulation for " .. count .. "x " .. mType:getName() .. ":\n\n"
+    local description = "Loot Simulation for " .. count .. "x " .. mType:getName() .. ":\n"
 
     local sortedLoot = {}
     for id, amount in pairs(totalLoot) do
@@ -1395,12 +1395,12 @@ function simulateLoot.onSay(player, words, param)
         totalGold = totalGold + gold
 
         description = description .. string.format(
-            "%dx %s (%.1f%%) [Avg: %.2f] => %d gp\n",
-            item.amount, name, chance, avg, gold
+            "\n%dx %s (%.1f%%) [Avg: %.2f] => %d gp\n",
+            item.amount, name.. " \n", chance, avg, gold
         )
     end
 
-    description = description .. "\n----------------------------------\n"
+    description = description .. "----------------------------------\n"
     description = description .. "TOTAL GOLD: " .. totalGold .. " gp\n"
     description = description .. "AVG GOLD PER KILL: " .. math.floor(totalGold / count) .. " gp"
 
