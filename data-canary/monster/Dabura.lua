@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a king of hell"
-monster.experience = 6500000
+monster.experience = 300000000000
 monster.outfit = {
 	lookType = 1908,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 } 
 
-monster.health = 13500000
-monster.maxHealth = 13500000
+monster.health = 30000000
+monster.maxHealth = 30000000
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
@@ -85,48 +85,48 @@ monster.loot = {
 	{name = "crystal coin", chance = 100000, maxCount = 3},
 	{name = "crystal coin", chance = 75000, maxCount = 5},
 	{name = "crystal coin", chance = 50000, maxCount = 8},
-	{ name = "experience scroll", chance = 5000, maxCount = 4},
-	{ name = "silver token", chance = 2500, maxCount = 3 },
-	{ name = "lizard leather", chance = 2350, maxCount = 5},
-	{ name = "lizard scale", chance = 1280, maxCount = 3 },
-	{name = "ape fur", chance = 1150, maxCount = 3},
-	{name = "perfect behemoth fang", chance = 550, maxCount = 2},
-	{name = "behemoth claw", chance = 500},
+	{ name = "experience scroll", chance = 50000, maxCount = 4},
+	{ name = "silver token", chance = 25000, maxCount = 3 },
+	{ name = "lizard leather", chance = 23500, maxCount = 5},
+	{ name = "lizard scale", chance = 12800, maxCount = 3 },
+	{name = "ape fur", chance = 11500, maxCount = 3},
+	{name = "perfect behemoth fang", chance = 5500, maxCount = 2},
+	{name = "behemoth claw", chance = 5000, maxCount = 1},
 	
 	-- Reward Box
-	{id = 50850, chance = 10000},
+	{id = 50850, chance = 5000},
 	
-	{ id = 51049, chance = 150, unique = true}, -- sorcerer helmet
-	{ id = 51050, chance = 150, unique = true}, -- sorcerer armor
-	{ id = 51051, chance = 150, unique = true}, -- sorcerer legs
-	{ id = 51052, chance = 150, unique = true}, -- sorcerer boots
-	{ id = 51053, chance = 150, unique = true}, -- sorcerer shield
+	{ id = 51049, chance = 1500, unique = true}, -- sorcerer helmet
+	{ id = 51050, chance = 1500, unique = true}, -- sorcerer armor
+	{ id = 51051, chance = 1500, unique = true}, -- sorcerer legs
+	{ id = 51052, chance = 1500, unique = true}, -- sorcerer boots
+	{ id = 51053, chance = 1500, unique = true}, -- sorcerer shield
 	
-	{ id = 51082, chance = 150, unique = true}, -- paladin helmet
-	{ id = 51083, chance = 150, unique = true}, -- paladin armor
-	{ id = 51084, chance = 150, unique = true}, -- paladin legs
-	{ id = 51085, chance = 150, unique = true}, -- paladin boots
-	{ id = 51086, chance = 150, unique = true}, -- paladin shield
+	{ id = 51082, chance = 1500, unique = true}, -- paladin helmet
+	{ id = 51083, chance = 1500, unique = true}, -- paladin armor
+	{ id = 51084, chance = 1500, unique = true}, -- paladin legs
+	{ id = 51085, chance = 1500, unique = true}, -- paladin boots
+	{ id = 51086, chance = 1500, unique = true}, -- paladin shield
 	
-	{ id = 51062, chance = 150, unique = true}, -- knight helmet
-	{ id = 51059, chance = 150, unique = true}, -- knight armor
-	{ id = 51060, chance = 150, unique = true}, -- knight legs
-	{ id = 51061, chance = 150, unique = true}, -- knight boots
-	{ id = 51063, chance = 150, unique = true}, -- knight shield
+	{ id = 51062, chance = 1500, unique = true}, -- knight helmet
+	{ id = 51059, chance = 1500, unique = true}, -- knight armor
+	{ id = 51060, chance = 1500, unique = true}, -- knight legs
+	{ id = 51061, chance = 1500, unique = true}, -- knight boots
+	{ id = 51063, chance = 1500, unique = true}, -- knight shield
 	
-	{ id = 51054, chance = 150, unique = true}, -- druid helmet
-	{ id = 51055, chance = 150, unique = true}, -- druid armor
-	{ id = 51056, chance = 150, unique = true}, -- druid legs
-	{ id = 51057, chance = 150, unique = true}, -- druid boots
-	{ id = 51058, chance = 150, unique = true}, -- druid shield
+	{ id = 51054, chance = 1500, unique = true}, -- druid helmet
+	{ id = 51055, chance = 1500, unique = true}, -- druid armor
+	{ id = 51056, chance = 1500, unique = true}, -- druid legs
+	{ id = 51057, chance = 1500, unique = true}, -- druid boots
+	{ id = 51058, chance = 1500, unique = true}, -- druid shield
 	
-	{ id = 50976, chance = 100, unique = true}, -- wand
-	{ id = 51087, chance = 100, unique = true}, -- bow
-	{ id = 51088, chance = 100, unique = true}, -- crossbow
-	{ id = 51064, chance = 100, unique = true}, -- sword
-	{ id = 51069, chance = 100, unique = true}, -- axe
-	{ id = 51066, chance = 100, unique = true}, -- club
-	{ id = 51853, chance = 100, unique = true}, -- rod
+	{ id = 50976, chance = 1000, unique = true}, -- wand
+	{ id = 51087, chance = 1000, unique = true}, -- bow
+	{ id = 51088, chance = 1000, unique = true}, -- crossbow
+	{ id = 51064, chance = 1000, unique = true}, -- sword
+	{ id = 51069, chance = 1000, unique = true}, -- axe
+	{ id = 51066, chance = 1000, unique = true}, -- club
+	{ id = 51853, chance = 1000, unique = true}, -- rod
 }
 
 monster.attacks = {
@@ -167,6 +167,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

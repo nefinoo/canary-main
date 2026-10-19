@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Sandstone Scorpion")
+﻿local mType = Game.createMonsterType("Sandstone Scorpion")
 local monster = {}
 
 monster.description = "a sandstone scorpion"
-monster.experience = 680
+monster.experience = 680000
 monster.outfit = {
 	lookType = 398,
 	lookHead = 0,
@@ -119,3 +119,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

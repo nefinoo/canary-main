@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "giant spider"
 monster.description = "a giant spider"
-monster.experience = 1700
+monster.experience = 1700000
 monster.outfit = {
 	lookType = 38,
 	lookHead = 0,
@@ -13,6 +13,26 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 38
+monster.Bestiary = {
+	class = "Vermin",
+	race = BESTY_RACE_VERMIN,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Plains of Havoc, Point of no Return in Outlaw Camp, Ghostlands, Hellgate, \z
+	Mintwallin Secret Laboratory, Mad Mage Room deep below Ancient Temple, Mount Sternum Undead Cave, \z
+	Green Claw Swamp, Maze of Lost Souls, Crusader Helmet Quest in the Dwarf Mines, Mushroom Gardens, \z
+	west Drillworm Caves, Edron Hero Cave, Edron Orc Cave, on a hill near Drefia, \z
+	on a hill north-west of Ankrahmun (inaccessible), Forbidden Lands, Deeper Banuta, Malada, Ramoa, \z
+	 Arena and Zoo Quarter, second floor up of Cemetery Quarter, beneath Fenrock, Vengoth Castle, \z
+	 Vandura Mountain, in a cave in Robson Isle, Chyllfroest, Spider Caves, second floor of Krailos Spider Lair, Caverna Exanima.",
+}
+
 
 monster.health = 1720
 monster.maxHealth = 1720
@@ -65,15 +85,15 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_PHYSICALDAMAGE, percent = -30},
+	{type = COMBAT_ENERGYDAMAGE, percent = 50},
 	{type = COMBAT_EARTHDAMAGE, percent = 100},
 	{type = COMBAT_FIREDAMAGE, percent = -10},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 6},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = 50},
+	{type = COMBAT_HOLYDAMAGE , percent = 50},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
@@ -101,12 +121,16 @@ monster.loot = {
 	{id = 5879, chance = 5000},
 	{name = "gold coin", chance = 100000, maxCount = 40},
 	{name = "steel helmet", chance = 5000},
-	{name = "knight armor", chance = 1800},
-	{name = "knight legs", chance = 1500},
-	{id = 12413, chance = 3000},
+	{name = "knight armor", chance = 2000},
+	{name = "knight legs", chance = 1800},
+	{id = 12413, chance = 4000},
+	{id = 3399, chance = 100},
+	{id = 8095, chance = 100},
+	{id = 3408, chance = 100},
 }
 
 mType:register(monster)
+
 
 
 

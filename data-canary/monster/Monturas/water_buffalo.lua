@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Water Buffalo")
+﻿local mType = Game.createMonsterType("Water Buffalo")
 local monster = {}
 
 monster.description = "a water buffalo"
-monster.experience = 20
+monster.experience = 20000
 monster.outfit = {
 	lookType = 523,
 	lookHead = 0,
@@ -115,3 +115,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

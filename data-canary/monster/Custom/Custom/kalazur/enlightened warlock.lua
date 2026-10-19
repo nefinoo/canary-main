@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "enlightened warlock"
 monster.description = "an enlightened warlock"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 19,
@@ -124,6 +124,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

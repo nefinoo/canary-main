@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Midnight Panther")
+﻿local mType = Game.createMonsterType("Midnight Panther")
 local monster = {}
 
 monster.description = "a midnight panther"
-monster.experience = 900
+monster.experience = 900000
 monster.outfit = {
 	lookType = 385,
 	lookHead = 0,
@@ -119,3 +119,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

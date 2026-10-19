@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Ghastly Dragon")
+﻿local mType = Game.createMonsterType("Ghastly Dragon")
 local monster = {}
 
 monster.description = "a ghastly dragon"
-monster.experience = 3750000
+monster.experience = 3750000000
 monster.outfit = {
 	lookType = 351,
 	lookHead = 0,
@@ -172,3 +172,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

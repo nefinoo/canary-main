@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a northern pike"
-monster.experience = 2700
+monster.experience = 5100000
 monster.outfit = {
 	lookType = 454,
 	lookHead = 0,
@@ -75,8 +75,9 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 48},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_DROWNDAMAGE, minDamage = -50, maxDamage = -125, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -287, maxDamage = -374},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_DROWNDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -287, maxDamage = -374, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
 }
 
 monster.defenses = {
@@ -106,6 +107,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

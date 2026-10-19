@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "venom"
 monster.description = "a venom"
-monster.experience = 82500
+monster.experience = 100000000
 monster.outfit = {
 	lookType = 285,
 	lookHead = 0,
@@ -107,30 +107,28 @@ monster.loot = {
 	{name = "pirate backpack", chance = 500},
 	{name = "beach backpack", chance = 500},
 	{name = "fur backpack", chance = 500},
-	{name = "platinum coin", chance = 100000, maxCount = 30},
-	{name = "platinum coin", chance = 70000, maxCount = 50},
-	{name = "experience scroll", chance = 2500, maxCount = 3},
-	-- weapons lvl 1000
-	{id = 7368, chance = 100},
-	{id = 895, chance = 100}, 
-	{id = 7390, chance = 100}, 
-	{id = 7415, chance = 100},
-	{id = 3303, chance = 100},
-	-- weapons lvl 500	
-	{id = 7366, chance = 200},
-	{id = 7426, chance = 200}, 
-	{id = 7420, chance = 200}, 
-	{id = 3296, chance = 200},
-	{id = 7437, chance = 200},
-	-- weapons lvl 100
-	{name = "magic sword", chance = 300},
-	{ id = 3319, chance = 300 }, 
-	{ id = 3309, chance = 300 }, 
-	{id = 3341, chance = 300},
-	{name = "throwing star", chance = 300},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 70000, maxCount = 15},
+	{name = "experience scroll", chance = 800, maxCount = 3},
+	{name = "green gem", chance = 750},
+	{name = "blue gem", chance = 750},
+	{name = "boots of haste", chance = 400},
+	{name = "stone skin amulet", chance = 50},
+	{name = "giant sword", chance = 750},
+	{name = "ice rapier", chance = 750},
+	{name = "silver dagger", chance = 1550},
+	{name = "golden sickle", chance = 450},
+	{name = "fire axe", chance = 1700},
+	{name = "dragon hammer", chance = 450},
+	{name = "skull staff", chance = 500},
+	{name = "golden legs", chance = 500},
+	{name = "magic plate armor", chance = 300},
+	{name = "mastermind shield", chance = 350},
+	{name = "demon shield", chance = 1550},
 }
 
 mType:register(monster)
+
 
 
 

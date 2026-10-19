@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops drone"
 monster.description = "a cyclops drone"
-monster.experience = 200
+monster.experience = 200000
 monster.outfit = {
 	lookType = 280,
 	lookHead = 0,
@@ -13,6 +13,20 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 391
+monster.Bestiary = {
+	class = "Giant",
+	race = BESTY_RACE_GIANT,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mount Sternum, Mistrock and in the Cyclops version of the Forsaken Mine.",
+}
+
 
 monster.health = 325
 monster.maxHealth = 325
@@ -98,10 +112,15 @@ monster.loot = {
 	{name = "meat", chance = 5000, maxCount = 2},
 	{name = "plate shield", chance = 2000},
 	{name = "heavy machete", chance = 2000},
-	{name = "strong health potion", chance = 2000}
+	{name = "strong health potion", chance = 2000},
+	{id = 12413, chance = 3000},
+	{id = 3399, chance = 75},
+	{id = 8095, chance = 75},
+	{id = 3408, chance = 75},
 }
 
 mType:register(monster)
+
 
 
 

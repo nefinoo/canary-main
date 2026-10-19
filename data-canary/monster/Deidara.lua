@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an explosive clay master"
-monster.experience = 1230000
+monster.experience = 80000000000
 monster.outfit = {
 	lookType = 1907,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 } 
 
-monster.health = 5000000
-monster.maxHealth = 5000000
+monster.health = 8000000
+monster.maxHealth = 8000000
 monster.race = "blood"
 monster.corpse = 6068
 monster.speed = 300
@@ -81,61 +81,61 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 3},
-	{name = "crystal coin", chance = 75000, maxCount = 5},
-	{name = "crystal coin", chance = 50000, maxCount = 8},
-	{name = "experience scroll", chance = 5000, maxCount = 3},
-	{ name = "silver token", chance = 2500, maxCount = 2},
-	{ name = "hook", chance = 5200 },
-	{ name = "eye patch", chance = 5300 },
-	{ name = "peg leg", chance = 5200 },
-	{ name = "bat wing", chance = 2000, maxCount = 2},
-	{ name = "red piece of cloth", chance = 2006 },
-	{name = "demonic essence", chance = 1818},
-	{ name = "ankh", chance = 2240 },
+	{name = "crystal coin", chance = 100000, maxCount = 12},
+	{name = "crystal coin", chance = 75000, maxCount = 20},
+	{name = "crystal coin", chance = 50000, maxCount = 32},
+	{name = "experience scroll", chance = 50000, maxCount = 3},
+	{ name = "silver token", chance = 15000, maxCount = 2},
+	{ name = "hook", chance = 52000, maxCount = 3 },
+	{ name = "eye patch", chance = 53000, maxCount = 3 },
+	{ name = "peg leg", chance = 52000, maxCount = 3 },
+	{ name = "bat wing", chance = 20000, maxCount = 3},
+	{ name = "red piece of cloth", chance = 20060, maxCount = 2 },
+	{name = "demonic essence", chance = 18180, maxCount = 2},
+	{ name = "ankh", chance = 22400, maxCount = 1},
 	
 	-- Reward Box
-	{id = 50854, chance = 10000},
+	{id = 50854, chance = 5000},
 	
 	-- items si tienen suerte
-	{ id = 51076, chance = 150, unique = true}, -- sorcerer helmet
-	{ id = 51077, chance = 150, unique = true}, -- sorcerer armor
-	{ id = 51078, chance = 150, unique = true}, -- sorcerer legs
-	{ id = 51079, chance = 150, unique = true}, -- sorcerer boots
-	{ id = 51080, chance = 150, unique = true}, -- sorcerer shield
+	{ id = 51076, chance = 1500, unique = true}, -- sorcerer helmet
+	{ id = 51077, chance = 1500, unique = true}, -- sorcerer armor
+	{ id = 51078, chance = 1500, unique = true}, -- sorcerer legs
+	{ id = 51079, chance = 1500, unique = true}, -- sorcerer boots
+	{ id = 51080, chance = 1500, unique = true}, -- sorcerer shield
 	
-	{ id = 51230, chance = 150, unique = true}, -- paladin helmet
-	{ id = 51231, chance = 150, unique = true}, -- paladin armor
-	{ id = 51232, chance = 150, unique = true}, -- paladin legs
-	{ id = 51233, chance = 150, unique = true}, -- paladin boots
-	{ id = 52367, chance = 150, unique = true}, -- paladin shield
+	{ id = 51230, chance = 1500, unique = true}, -- paladin helmet
+	{ id = 51231, chance = 1500, unique = true}, -- paladin armor
+	{ id = 51232, chance = 1500, unique = true}, -- paladin legs
+	{ id = 51233, chance = 1500, unique = true}, -- paladin boots
+	{ id = 52367, chance = 1500, unique = true}, -- paladin shield
 	
-	{ id = 51226, chance = 150, unique = true}, -- knight helmet
-	{ id = 51229, chance = 150, unique = true}, -- knight armor
-	{ id = 51212, chance = 150, unique = true}, -- knight legs
-	{ id = 51228, chance = 150, unique = true}, -- knight boots
-	{ id = 51697, chance = 150, unique = true}, -- knight shield
+	{ id = 51226, chance = 1500, unique = true}, -- knight helmet
+	{ id = 51229, chance = 1500, unique = true}, -- knight armor
+	{ id = 51212, chance = 1500, unique = true}, -- knight legs
+	{ id = 51228, chance = 1500, unique = true}, -- knight boots
+	{ id = 51697, chance = 1500, unique = true}, -- knight shield
 	
-	{ id = 51070, chance = 150, unique = true}, -- druid helmet
-	{ id = 51071, chance = 150, unique = true}, -- druid armor
-	{ id = 51072, chance = 150, unique = true}, -- druid legs
-	{ id = 51073, chance = 150, unique = true}, -- druid boots
-	{ id = 51074, chance = 150, unique = true}, -- druid shield
+	{ id = 51070, chance = 1500, unique = true}, -- druid helmet
+	{ id = 51071, chance = 1500, unique = true}, -- druid armor
+	{ id = 51072, chance = 1500, unique = true}, -- druid legs
+	{ id = 51073, chance = 1500, unique = true}, -- druid boots
+	{ id = 51074, chance = 1500, unique = true}, -- druid shield
 	
-	{ id = 51081, chance = 100, unique = true}, -- wand 
-	{ id = 53278, chance = 100, unique = true}, -- bow
-	{ id = 50730, chance = 100, unique = true}, -- crossbow
-	{ id = 52376, chance = 100, unique = true}, -- sword
-	{ id = 52365, chance = 100, unique = true}, -- axe
-	{ id = 52366, chance = 100, unique = true}, -- club
-	{ id = 51075, chance = 100, unique = true}, -- rod
+	{ id = 51081, chance = 1000, unique = true}, -- wand 
+	{ id = 53278, chance = 1000, unique = true}, -- bow
+	{ id = 50730, chance = 1000, unique = true}, -- crossbow
+	{ id = 52376, chance = 1000, unique = true}, -- sword
+	{ id = 52365, chance = 1000, unique = true}, -- axe
+	{ id = 52366, chance = 1000, unique = true}, -- club
+	{ id = 51075, chance = 1000, unique = true}, -- rod
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -17300, maxDamage = -22500 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -13000, maxDamage = -15500 },
 	{ name = "energyfield", interval = 1250, chance = 12, range = 7, radius = 1, shootEffect = CONST_ANI_ENERGY, target = true },
-	{ name = "combat", interval = 1250, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -25000, maxDamage = -45000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -25000, maxDamage = -45000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "combat", interval = 1250, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -25000, maxDamage = -30000, range = 7, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -25000, maxDamage = -30000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
 }
 
 monster.defenses = {
@@ -166,6 +166,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

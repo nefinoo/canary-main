@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari windwalker"
 monster.description = "a salazaari windwalker"
-monster.experience = 11500
+monster.experience = 11500000
 monster.outfit = {
 	lookType = 63,
 	lookHead = 20,
@@ -14,7 +14,7 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 7200
+monster.health = 5200
 monster.maxHealth = 7200
 monster.runHealth = 0
 monster.race = "blood"
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
-	{name ="combat", interval = 2000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
+	{name ="combat", interval = 4000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
+	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
 }
 
 monster.defenses = {
@@ -98,16 +98,37 @@ monster.defenses = {
 monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 3},
 	{name = "platinum coin", chance = 50000, maxCount = 5},
-	{id = 3341, chance = 300},
-	{name = "crown armor", chance = 3000},
-	{name = "crown legs", chance = 2000},
-	{name = "crown helmet", chance = 2500},
-	{name = "crown shield", chance = 3500},
-	{name = "experience scroll", chance = 400},
+	{name = "violet gem", chance = 500},
+	{name = "yellow gem", chance = 2000},
+	{name = "crown armor", chance = 1500},
+	{name = "crown legs", chance = 1000},
+	{name = "crown helmet", chance = 2000},
+	{name = "crown shield", chance = 2250},
+	{name = "experience scroll", chance = 750},
 	{ name = "holy orchid", chance = 2100 },
+	{id = 12413, chance = 12000},
+	{id = 3399, chance = 250},
+	{id = 8095, chance = 250},
+	{id = 3408, chance = 250},
 }
 
+monster.raceId = 63
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Yalahar Foreigner Quarter, Demona, Shadowthorn, northwest of Ab'Dendriel, Maze of Lost Souls, \z
+		Cyclopolis, Elvenbane, near Mount Sternum.",
+}
+
+
 mType:register(monster)
+
 
 
 

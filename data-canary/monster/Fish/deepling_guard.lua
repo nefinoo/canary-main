@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling guard"
-monster.experience = 6000000
+monster.experience = 5000000000
 monster.outfit = {
 	lookType = 442,
 	lookHead = 0,
@@ -133,3 +133,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

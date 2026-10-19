@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "satanic imp"
 monster.description = "a satanic imp"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 237,
 	lookHead = 0,
@@ -109,6 +109,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

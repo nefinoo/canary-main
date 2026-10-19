@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a fish"
-monster.experience = 1600
+monster.experience = 500000
 monster.outfit = {
 	lookType = 455,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja.",
 }
 
-monster.health = 500
-monster.maxHealth = 500
+monster.health = 400
+monster.maxHealth = 400
 monster.race = "undead"
 monster.corpse = 3578
 monster.speed = 70
@@ -77,7 +77,7 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -30}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -35, maxDamage = -60}
 }
 
 monster.defenses = {
@@ -107,6 +107,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara pincher"
 monster.description = "a quara pincher"
-monster.experience = 850000
+monster.experience = 2000000000
 monster.outfit = {
 	lookType = 77,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 45000
-monster.maxHealth = 45000
+monster.health = 65000
+monster.maxHealth = 65000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6063
@@ -104,6 +104,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

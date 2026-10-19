@@ -28,7 +28,7 @@ monster.changeTarget = {
 }
 
 monster.flags = {
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	summonable = false,
 	convinceable = false,

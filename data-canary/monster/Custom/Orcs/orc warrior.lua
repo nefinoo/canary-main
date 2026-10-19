@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warrior"
 monster.description = "a orc warrior"
-monster.experience = 160
+monster.experience = 160000
 monster.outfit = {
 	lookType = 7,
 	lookHead = 20,
@@ -13,6 +13,22 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 7
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple in Thais, Orc Fort, below Point of No Return in Outlaw Camp and inside a \z
+		mountain north of it, Orc Peninsula, Folda, Edron Orc cave, Maze of Lost Souls, Elvenbane Castle, \z
+		Foreigner Quarter, Zao Orc Land.",
+}
+
 
 monster.health = 125
 monster.maxHealth = 125
@@ -81,7 +97,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -30}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -22, maxDamage = -33}
 }
 
 monster.defenses = {
@@ -94,9 +110,13 @@ monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 12},
 	{name = "meat", chance = 40000, maxCount = 2},
 	{id = 12413, chance = 2000},
+	{id = 3399, chance = 17},
+	{id = 8095, chance = 17},
+	{id = 3408, chance = 17},
 }
 
 mType:register(monster)
+
 
 
 

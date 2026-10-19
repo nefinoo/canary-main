@@ -1,9 +1,9 @@
 -- Restrinccion de acceso
 
 local config = {
-    teleportAid = 9009,
+    teleportAid = 9007,
 
-    storage = 46003,
+    storage = 46004,
     storageValue = 1
 }
 
@@ -13,7 +13,6 @@ function moveEvent.onStepIn(creature, item, position, fromPosition)
     if not creature:isPlayer() then
         return true
     end
-
     if creature:getStorageValue(config.storage) < config.storageValue then
 		-- creature:setStorageValue(config.storage, config.storageValue)
         creature:teleportTo(fromPosition)
@@ -33,9 +32,9 @@ moveEvent:register()
 
 
 local config = {
-    teleportAid = 9010,
+    teleportAid = 9008,
 
-    storage = 46003,
+    storage = 46004,
     storageValue = 1
 }
 

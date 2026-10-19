@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Crystal Wolf")
+﻿local mType = Game.createMonsterType("Crystal Wolf")
 local monster = {}
 
 monster.description = "a crystal wolf"
-monster.experience = 275
+monster.experience = 275000
 monster.outfit = {
 	lookType = 391,
 	lookHead = 0,
@@ -119,3 +119,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Bones"
-monster.experience = 6500
+monster.experience = 6500000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -72,14 +72,15 @@ monster.loot = {
 	{ id = 3091, chance = 10000 }, -- sword ring
 	{ name = "broadsword", chance = 4000 },
 	{ name = "magic plate armor", chance = 2000 },
-	{ name = "spectral stone", chance = 800 },
 	{ name = "skull helmet", chance = 50000 },
 	{ name = "soul orb", chance = 10000 },
 	{ id = 6299, chance = 4000 }, -- death ring
 	{ name = "demonic essence", chance = 1538 },
-	{ id = 6570, chance = 5538, maxCount = 3 }, -- surprise bag
-	{ id = 6571, chance = 1538 }, -- surprise bag
 	{ name = "dragonbone staff", chance = 50000 },
+	{id = 12413, chance = 10000},
+	{id = 3399, chance = 200},
+	{id = 8095, chance = 200},
+	{id = 3408, chance = 200},
 }
 
 monster.attacks = {
@@ -116,6 +117,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

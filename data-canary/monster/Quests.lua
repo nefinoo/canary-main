@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "enter the teleport to venture on missions and obtain great rewards.."
-monster.experience = 45
+monster.experience = 45000
 monster.outfit = {
 	lookType = 15,
 	lookHead = 0,
@@ -98,6 +98,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

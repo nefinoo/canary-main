@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "warlock"
 monster.description = "a warlock"
-monster.experience = 2250
+monster.experience = 2500000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 19,
@@ -13,6 +13,21 @@ monster.outfit = {
 	lookAddons = 1,
 	lookMount = 0
 }
+
+monster.raceId = 10
+monster.Bestiary = {
+	class = "Human",
+	race = BESTY_RACE_HUMAN,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Demona, Ghostland (Banshee Quest area), Temple of Xayepocax, Oasis Tomb, Kharos, Magician Quarter, \z
+		beneath Fenrock, The Arcanum.",
+}
+
 
 monster.health = 1935
 monster.maxHealth = 1935
@@ -68,7 +83,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_PHYSICALDAMAGE, percent = -20},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
@@ -76,7 +91,7 @@ monster.elements = {
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = -50},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
@@ -115,9 +130,13 @@ monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "talon", chance = 1100, maxCount = 2},
 	{id = 12413, chance = 4000},
+	{id = 3399, chance = 100},
+	{id = 8095, chance = 100},
+	{id = 3408, chance = 100},
 }
 
 mType:register(monster)
+
 
 
 

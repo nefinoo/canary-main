@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a chaotic, childish, immensely powerful magical creature"
-monster.experience = 41000000
+monster.experience = 950000000000
 monster.outfit = {
 	lookType = 1906,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 } 
 
-monster.health = 35000000
-monster.maxHealth = 35000000
+monster.health = 95000000
+monster.maxHealth = 95000000
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
@@ -164,6 +164,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

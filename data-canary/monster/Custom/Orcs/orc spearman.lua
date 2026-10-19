@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc spearman"
 monster.description = "a orc spearman"
-monster.experience = 115
+monster.experience = 130000
 monster.outfit = {
 	lookType = 50,
 	lookHead = 20,
@@ -13,6 +13,23 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 50
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Orc Fortress, Folda Dungeon, Edron Orc Cave and around it, Ancient Temple, \z
+		Venore Orc Cave, below the Point of No Return in Outlaw Camp, Plains of Havoc, \z
+		North of Thais in the Orc Peninsula, Elvenbane and Orc Camp in Foreigner Quarter. \z
+		Also found in Rookgaard West plains, Zao Orc Land.",
+}
+
 
 monster.health = 105
 monster.maxHealth = 105
@@ -94,9 +111,13 @@ monster.loot = {
 	{name = "meat", chance = 80000, maxCount = 2},
 	{name = "machete", chance = 10000},
 	{id = 12413, chance = 2000},
+	{id = 3399, chance = 15},
+	{id = 8095, chance = 15},
+	{id = 3408, chance = 15},
 }
 
 mType:register(monster)
+
 
 
 
