@@ -1,4 +1,4 @@
-name: Apply Frozen Hell level-100 quest weapon fixes
+name: Apply Frozen Hell quest weapons and Knight equipment augments
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - balance-frozen-hell-knight-100-200
     paths:
       - balance_report/fix_level100_quest_weapons.py
+      - balance_report/apply_knight_augments.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -23,15 +24,17 @@ jobs:
           persist-credentials: true
       - name: Apply ID-validated quest weapon corrections
         run: python3 balance_report/fix_level100_quest_weapons.py --apply
+      - name: Apply ID-validated equipment augments
+        run: python3 balance_report/apply_knight_augments.py --apply
       - name: Commit items.xml (only if changed)
         shell: bash
         run: |
           git add data/items/items.xml
           if git diff --cached --quiet; then
-            echo "items.xml already has the approved corrections."
+            echo "items.xml already has the approved weapons and augments."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "fix(items): activate level-100 quest weapons in items.xml"
+          git commit -m "balance(items): quest weapons and Knight augments"
           git push origin HEAD:balance-frozen-hell-knight-100-200
