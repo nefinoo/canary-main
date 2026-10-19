@@ -48,6 +48,12 @@ Los augments no son equivalentes a imbuements. En este C++:
 - mana leech y life leech de augment elevan su **cantidad**, pero NO la probabilidad. Necesitan chances conseguidas por otros mecanismos (ej. imbuement o stats). No prometer mana gratis con el augment solo.
 - Para el personaje inicial sin equipo avanzado, no suponer bonus de leech ni augment.
 
+## Correccion de estadisticas de los objetos raros (items.xml de esta rama)
+- Elven Mail ID 3399: armor **35**, no 67; maxhitpoints +100; augments existentes +30% Berserk y +30% Fierce Berserk.
+- Ranger Legs ID 8095: armor **27**, no 50; +50 HP, +50 mana.
+- Bonelord Helmet ID 3408: armor **25**, no 40; +100 mana y augments existentes de otras spells.
+- Estos tres objetos siguen disponibles como drops raros en varios monstruos, incluso antes de Hydra. NO se modifican ni se incluyen como equipo comun de referencia en esta iteracion.
+
 ## Referencia matematica Knight lvl 200 (ejemplo, no resultado in-game)
 - HP base 3065, mana base 1050, Axe Skill 51, Fist bloqueado en skill 10.
 - Stonecutter Axe attack 50, modo full attack, meleeDamage=1.0, sin bonos.
