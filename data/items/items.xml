@@ -8609,9 +8609,10 @@
 		<attribute key="range" value="5"/>
 		<attribute key="attack" value="30"/>
 		<attribute key="weight" value="200"/>
-		<attribute key="script" value="moveevent">
+		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="100"/>
 			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="distance"/>
 			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
@@ -8625,7 +8626,7 @@
 		<attribute key="weight" value="4200"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="100"/>
-			<attribute key="unproperly" value="true"/>
+			<attribute key="unproperly" value="false"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
@@ -8904,7 +8905,7 @@
 		<attribute key="weight" value="12500"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="100"/>
-			<attribute key="unproperly" value="true"/>
+			<attribute key="unproperly" value="false"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -9073,8 +9074,9 @@
 		<attribute key="weight" value="9900"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="100"/>
-			<attribute key="unproperly" value="true"/>
+			<attribute key="unproperly" value="false"/>
 			<attribute key="weaponType" value="axe"/>
+			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
@@ -9419,11 +9421,15 @@
 	<item id="3341" article="an" name="arcane staff">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
-		<attribute key="attack" value="50"/>
 		<attribute key="range" value="4"/>
 		<attribute key="weight" value="4000"/>
-		<attribute key="script" value="moveevent">
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="100"/>
 			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="wand"/>
+			<attribute key="wandtype" value="energy"/>
+			<attribute key="fromdamage" value="40"/>
+			<attribute key="todamage" value="60"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
 		</attribute>			
