@@ -7758,7 +7758,7 @@
 		<attribute key="type" value="rune"/>
 		<attribute key="weight" value="120"/>
 	</item>
-	<item id="3170" article="a" name="knight mana rune">
+	<item id="3170" article="a" name="knight healing rune">
 		<attribute key="description" value="It can only be used by knights with level 250 and magic level 8 or higher"/>
 		<attribute key="primarytype" value="utilities"/>
 		<attribute key="type" value="rune"/>
@@ -8620,12 +8620,12 @@
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="It's the Sword of Valor"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="90"/>
-		<attribute key="defense" value="35"/>
+		<attribute key="attack" value="48"/>
+		<attribute key="defense" value="40"/>
 		<attribute key="weight" value="4200"/>
 		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="100"/>
 			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
@@ -8824,7 +8824,7 @@
 			<attribute key="weaponType" value="axe"/>
 		</attribute>
 	</item>
-	<item id="3303" article="a" name="great axe">
+	<item id="3303" article="a" name="deadly axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
@@ -8898,12 +8898,12 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="It is blessed by the gods of Tibia"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="49"/>
+		<attribute key="attack" value="52"/>
 		<attribute key="extradef" value="1"/>
 		<attribute key="defense" value="35"/>
 		<attribute key="weight" value="12500"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="85"/>
+			<attribute key="level" value="100"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>
@@ -9072,7 +9072,7 @@
 		<attribute key="defense" value="30"/>
 		<attribute key="weight" value="9900"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="90"/>
+			<attribute key="level" value="100"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="axe"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -9951,17 +9951,16 @@
 	</item>
 	<item id="3387" article="a" name="demon helmet">
 		<attribute key="maxmanapoints" value="500"/>
-		<attribute key="maxhitpoints" value="500"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="100"/>
+		<attribute key="armor" value="70"/>
 		<attribute key="weight" value="2950"/>
 		<attribute key="augments" value="1">
-			<attribute key="Hell's Core" value="base">
-				<attribute key="value" value="150"/>
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
-			<attribute key="Eternal Winter" value="base">
-				<attribute key="value" value="150"/>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -9970,14 +9969,13 @@
 		</attribute>
 	</item>
 	<item id="3388" article="a" name="demon armor">
-		<attribute key="maxmanapoints" value="500"/>
 		<attribute key="maxhitpoints" value="500"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="100"/>
 		<attribute key="weight" value="8000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Fierce Berserk" value="base">
-				<attribute key="value" value="150"/>
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -9986,14 +9984,14 @@
 		</attribute>
 	</item>
 	<item id="3389" name="demon legs">
-		<attribute key="maxmanapoints" value="500"/>
-		<attribute key="maxhitpoints" value="500"/>
+		<attribute key="maxmanapoints" value="250"/>
+		<attribute key="maxhitpoints" value="250"/>
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="100"/>
+		<attribute key="armor" value="85"/>
 		<attribute key="weight" value="7000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Divine Caldera" value="base">
-				<attribute key="value" value="150"/>
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="10"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -10131,19 +10129,21 @@
 		</attribute>
 	</item>
 	<item id="3399" article="an" name="elven mail">
+		<attribute key="maxhitpoints" value="100"/>
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="9"/>
+		<attribute key="armor" value="35"/>
+		<attribute key="absorbpercentphysical" value="3"/>
 		<attribute key="weight" value="9000"/>
-		<attribute key="imbuementslot" value="3">
-			<attribute key="life leech" value="3"/>
-			<attribute key="elemental protection death" value="3"/>
-			<attribute key="elemental protection earth" value="3"/>
-			<attribute key="elemental protection fire" value="3"/>
-			<attribute key="elemental protection ice" value="3"/>
-			<attribute key="elemental protection energy" value="3"/>
-			<attribute key="elemental protection holy" value="3"/>
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="30"/>
+			</attribute>
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="30"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="100"/>
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
@@ -10221,18 +10221,22 @@
 		</attribute>
 	</item>
 	<item id="3408" article="a" name="bonelord helmet">
+		<attribute key="maxmanapoints" value="100"/>
 		<attribute key="primarytype" value="helmets"/>
-		<attribute key="armor" value="7"/>
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="absorbpercentphysical" value="2"/>
+		<attribute key="armor" value="25"/>
 		<attribute key="weight" value="4600"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="mana leech" value="3"/>
-			<attribute key="skillboost axe" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-			<attribute key="skillboost shielding" value="3"/>
-			<attribute key="skillboost distance" value="3"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="10"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="100"/>
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
@@ -10428,13 +10432,18 @@
 			<attribute key="slot" value="shield"/>
 		</attribute>
 	</item>
-	<item id="3423" article="a" name="blessed shield">
+	<item id="3423" article="a" name="yalahari shield">
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="description" value="The shield grants divine protection"/>
-		<attribute key="defense" value="40"/>
+		<attribute key="description" value="5000 Max Hp/Mp when equiped"/>
+		<attribute key="showAttributes" value="0"/>
+		<attribute key="skillshield" value="20"/>
+		<attribute key="maxhitpoints" value="5000"/>
+		<attribute key="maxmanapoints" value="5000"/>
+		<attribute key="defense" value="200"/>
 		<attribute key="weight" value="6800"/>
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="shield"/>
 		</attribute>
 	</item>
@@ -11349,16 +11358,16 @@
 	</item>
 	<item id="3578" article="a" name="fish" plural="fish">
 		<attribute key="primarytype" value="food"/>
-		<attribute key="weight" value="520"/>
+		<attribute key="weight" value="250"/>
 	</item>
-	<item id="3579" name="salmon" plural="salmons">
+	<item id="3579" article="a" name="salmon" plural="salmons">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="showCount" value="0"/>
-		<attribute key="weight" value="320"/>
+		<attribute key="weight" value="270"/>
 	</item>
 	<item id="3580" article="a" name="northern pike" plural="northern pikes">
 		<attribute key="primarytype" value="food"/>
-		<attribute key="weight" value="830"/>
+		<attribute key="weight" value="330"/>
 	</item>
 	<item id="3581" name="shrimp">
 		<attribute key="primarytype" value="food"/>
@@ -17037,7 +17046,7 @@
 	<item id="6131" article="a" name="tortoise shield">
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="defense" value="26"/>
+		<attribute key="defense" value="50"/>
 		<attribute key="weight" value="5200"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="shield"/>
@@ -19268,7 +19277,7 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="7368" article="an" name="assassin star">
+	<item id="7368" article="an" name="deadly star">
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="shootType" value="redstar"/>
@@ -19543,7 +19552,7 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="7390" article="the" name="justice seeker">
+	<item id="7390" article="the" name="deadly blade">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="47"/>
@@ -19878,7 +19887,7 @@
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="7415" article="a" name="cranial basher">
+	<item id="7415" article="a" name="deadly basher">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
@@ -22241,12 +22250,20 @@
 		</attribute>
 	</item>
 	<item id="8095" name="ranger legs">
+		<attribute key="maxmanapoints" value="50"/>
+		<attribute key="maxhitpoints" value="50"/>
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="4"/>
+		<attribute key="absorbpercentphysical" value="2"/>
+		<attribute key="armor" value="27"/>
 		<attribute key="weight" value="3500"/>
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Caldera" value="base"> -->
+				<!-- <attribute key="value" value="5"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
 		<attribute key="script" value="moveevent">
+			<attribute key="level" value="100"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="8096" article="a" name="hellforged axe">
@@ -23467,40 +23484,76 @@
 	</item>
 	<item id="8862" article="a" name="yalahari armor">
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="absorbpercentdeath" value="3"/>
-		<attribute key="armor" value="16"/>
+		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="80"/>
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
 	<item id="8863" article="a" name="yalahari leg piece">
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="absorbpercentdeath" value="5"/>
 		<attribute key="skilldist" value="2"/>
-		<attribute key="armor" value="8"/>
+		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="6500"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="life leech">
+				<attribute key="value" value="1"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="life leech">
+				<attribute key="value" value="1"/>
+			</attribute>
+			<attribute key="Deadly Caldera" value="mana leech">
+				<attribute key="value" value="1"/>
+			</attribute>
+			<attribute key="Deadly Core" value="mana leech">
+				<attribute key="value" value="1"/>
+			</attribute>
+			<attribute key="Deadly Tornador" value="mana leech">
+				<attribute key="value" value="1"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="80"/>
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
 	<item id="8864" article="a" name="yalahari mask">
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="magiclevelpoints" value="2"/>
-		<attribute key="armor" value="5"/>
+		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="3500"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="mana leech" value="3"/>
-			<attribute key="skillboost magic level" value="3"/>
+		<attribute key="augments" value="1">
+			<attribute key="Fair Wound Cleansing" value="base">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Salvation" value="base">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Ultimate Healing" value="base">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="3"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="80"/>
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
 		</attribute>
 	</item>
 	<item id="8865" article="a" name="crystal column">
@@ -46271,34 +46324,32 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item id="23476" name="void boots">
 		<attribute key="primarytype" value="boots"/>
 		<attribute key="description" value="It can only be wielded properly by players of level 150 or higher."/>
-		<attribute key="showduration" value="1"/>
 		<attribute key="showAttributes" value="1"/>
-		<attribute key="absorbpercentenergy" value="10"/>
-		<attribute key="manaticks" value="6000"/>
-		<attribute key="managain" value="12"/>
-		<attribute key="healthticks" value="6000"/>
-		<attribute key="healthgain" value="3"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="500"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="500"/>
 		<attribute key="speed" value="30"/>
-		<attribute key="duration" value="3600"/>
-		<attribute key="transformdeequipto" value="23477"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="armor" value="2"/>
+		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="1500"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="150"/>
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="feet"/>
 		</attribute>
 	</item>
-	<item id="23477" name="void boots">
+	<item id="23477" name="yalahari boots">
 		<attribute key="primarytype" value="boots"/>
-		<attribute key="description" value="It can only be wielded properly by players of level 150 or higher."/>
-		<attribute key="stopduration" value="1"/>
-		<attribute key="showduration" value="1"/>
-		<attribute key="transformequipto" value="23476"/>
-		<attribute key="armor" value="2"/>
+		<attribute key="description" value="500 Hp/Mp every 4 Secs."/>
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="manaticks" value="4000"/>
+		<attribute key="managain" value="500"/>
+		<attribute key="healthticks" value="4000"/>
+		<attribute key="healthgain" value="500"/>
+		<attribute key="speed" value="30"/>
+		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="1500"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="150"/>
+			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="feet"/>
 		</attribute>
 	</item>
@@ -70531,8 +70582,13 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<item id="37607" name="green demon legs">
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="140"/>
+		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="legs"/>
@@ -70540,8 +70596,13 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<item id="37608" name="green demon armor">
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="160"/>
+		<attribute key="armor" value="190"/>
 		<attribute key="weight" value="8000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>			
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="armor"/>
@@ -70550,8 +70611,16 @@ Granted by TibiaGoals.com"/>
 	<item id="37609" name="green demon helmet">
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="150"/>
+		<attribute key="armor" value="130"/>
 		<attribute key="weight" value="2950"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="head"/>
@@ -82914,6 +82983,14 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="50000"/>
 	</item>
+	<item id="50529" article="a" name="false exercise present" >
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="weight" value="5000000"/>
+	</item>
+	<item id="51744" article="a" name="false exercise present" >
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="weight" value="5000000"/>
+	</item>
 	<item id="52038" article="a" name="exercise present" >
 		<attribute key="description" value="Use this item and choose a weapontype."/>
 		<attribute key="primarytype" value="valuables"/>
@@ -84089,13 +84166,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Berseker" value="life leech">
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84114,13 +84191,13 @@ Granted by TibiaGoals.com"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Berseker" value="life leech">
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84139,13 +84216,13 @@ Granted by TibiaGoals.com"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Berseker" value="life leech">
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84168,13 +84245,13 @@ Granted by TibiaGoals.com"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Berseker" value="life leech">
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84195,13 +84272,13 @@ Granted by TibiaGoals.com"/>
 		<!-- <attribute key="lifeleechamount" value="400"/> -->
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Berseker" value="life leech">
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84221,13 +84298,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Nature's Embrace" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84245,13 +84322,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Nature's Embrace" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84269,13 +84346,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Nature's Embrace" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84297,13 +84374,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Nature's Embrace" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84321,13 +84398,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="20"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="1"/>
 			</attribute>
-			<attribute key="Nature's Embraceg" value="base">
-				<attribute key="value" value="10"/>
+			<attribute key="Nature's Embrace" value="base">
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84349,13 +84426,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Ultimate Healing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84373,13 +84450,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Ultimate Healing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84397,13 +84474,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Ultimate Healing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84425,13 +84502,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Ultimate Healing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84449,13 +84526,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Ultimate Healing" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="skillshield" value="20"/>
@@ -84477,7 +84554,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Caldera" value="life leech">
 				<attribute key="value" value="1"/>
@@ -84486,7 +84563,7 @@ Granted by TibiaGoals.com"/>
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84505,7 +84582,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Caldera" value="life leech">
 				<attribute key="value" value="1"/>
@@ -84514,7 +84591,7 @@ Granted by TibiaGoals.com"/>
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84533,7 +84610,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Caldera" value="life leech">
 				<attribute key="value" value="1"/>
@@ -84542,7 +84619,7 @@ Granted by TibiaGoals.com"/>
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84565,7 +84642,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Caldera" value="life leech">
 				<attribute key="value" value="1"/>
@@ -84574,7 +84651,7 @@ Granted by TibiaGoals.com"/>
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -84595,7 +84672,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="25"/>
+				<attribute key="value" value="15"/>
 			</attribute>
 			<attribute key="Deadly Caldera" value="life leech">
 				<attribute key="value" value="1"/>
@@ -84604,7 +84681,7 @@ Granted by TibiaGoals.com"/>
 				<attribute key="value" value="1"/>
 			</attribute>
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="10"/>
+				<attribute key="value" value="5"/>
 			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
@@ -85724,4 +85801,178 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
+	
+	<!-- pociones lvl  -->
+	<item id="51247" article="an" name="demonic mana potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 500 or higher"/>
+		<attribute key="weight" value="360"/>
+	</item>
+	
+	<item id="51138" article="an" name="divine spirit potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by paladins of level 500 or higher"/>
+		<attribute key="weight" value="360"/>
+	</item>
+	
+	<item id="51246" article="a" name="angelic health potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by knights of level 500 or higher"/>
+		<attribute key="weight" value="400"/>
+	</item>
+	
+	<!-- pociones lvl  -->
+	
+	<item id="50966" article="an" name="extreme mana potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 1000 or higher"/>
+		<attribute key="weight" value="370"/>
+	</item>
+	
+	<item id="50965" article="an" name="extreme spirit potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by paladins of level 1000 or higher"/>
+		<attribute key="weight" value="375"/>
+	</item>
+	
+	<item id="50967" article="a" name="extreme health potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by knights of level 1000 or higher"/>
+		<attribute key="weight" value="415"/>
+	</item>
+	
+	<!-- pociones lvl  -->
+	
+	
+	<item id="51704" article="an" name="obscure mana potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 2500 or higher"/>
+		<attribute key="weight" value="370"/>
+	</item>
+	
+	<item id="51701" article="an" name="obscure spirit potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by paladins of level 2500 or higher"/>
+		<attribute key="weight" value="375"/>
+	</item>
+	
+	<item id="51702" article="a" name="obscure health potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by knights of level 2500 or higher"/>
+		<attribute key="weight" value="415"/>
+	</item>
+	
+	
+	<!-- pociones lvl  -->
+	
+	
+	<item id="53143" article="an" name="eternal mana potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 5000 or higher"/>
+		<attribute key="weight" value="370"/>
+	</item>
+	
+	<item id="53142" article="an" name="eternal spirit potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by paladins of level 5000 or higher"/>
+		<attribute key="weight" value="375"/>
+	</item>
+	
+	<item id="53144" article="a" name="eternal health potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by knights of level 5000 or higher"/>
+		<attribute key="weight" value="415"/>
+	</item>
+	
+	
+	<!-- pociones lvl  -->
+	
+	
+	<item id="50382" article="an" name="legendary mana potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 10000 or higher"/>
+		<attribute key="weight" value="370"/>
+	</item>
+	
+	<item id="50383" article="an" name="legendary spirit potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by paladins of level 10000 or higher"/>
+		<attribute key="weight" value="375"/>
+	</item>
+	
+	<item id="50384" article="a" name="legendary health potion">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="This potion can only be consumed by knights of level 10000 or higher"/>
+		<attribute key="weight" value="415"/>
+	</item>
+	
+	<!-- dark demon set -->
+	<item id="51700" name="dark demon legs">
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="armor" value="150"/>
+		<attribute key="weight" value="7000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Caldera" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="legs"/>
+		</attribute>
+	</item>
+	<item id="51699" name="dark demon armor">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="armor" value="190"/>
+		<attribute key="weight" value="8000"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Berseker" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>			
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="armor"/>
+		</attribute>
+	</item>
+	<item id="51698" name="dark demon helmet">
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="description" value="You hear an evil whispering from inside"/>
+		<attribute key="armor" value="130"/>
+		<attribute key="weight" value="2950"/>
+		<attribute key="augments" value="1">
+			<attribute key="Deadly Core" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+			<attribute key="Deadly Tornado" value="base">
+				<attribute key="value" value="15"/>
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="head"/>
+		</attribute>
+	</item>
+	<item id="51696" name="dark demon boots">
+		<attribute key="primarytype" value="boots"/>
+		<attribute key="weight" value="600"/>
+		<attribute key="armor" value="50"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="feet"/>
+		</attribute>
+	</item>
+	<item id="51695" article="a" name="dark demon shield">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="defense" value="50"/>
+		<attribute key="skillshield" value="5"/>
+		<attribute key="weight" value="3200"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="5000"/>
+			<attribute key="slot" value="shield"/>
+		</attribute>
+	</item>
+	
 </items>

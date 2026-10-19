@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling elite"
-monster.experience = 8000000
+monster.experience = 6000000000
 monster.outfit = {
 	lookType = 441,
 	lookHead = 0,
@@ -85,7 +85,6 @@ monster.loot = {
 	{ name = "great health potion", chance = 25000 },
 	{ name = "eye of a deepling", chance = 25000 },
 	{ name = "deepling filet", chance = 25000 },
-	{ name = "vortex bolt", chance = 24800, maxCount = 5 },
 	{ name = "deepling warts", chance = 24400 },
 	{ name = "great mana potion", chance = 24200 },
 	{ name = "deeptags", chance = 20600 },
@@ -96,6 +95,7 @@ monster.loot = {
 	{ name = "fish fin", chance = 2300 },
 	{ name = "warrior's shield", chance = 1534 },
 	{ name = "warrior's axe", chance = 820 },
+	{ name = "foxtail", chance = 15 },
 }
 
 monster.attacks = {
@@ -131,3 +131,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

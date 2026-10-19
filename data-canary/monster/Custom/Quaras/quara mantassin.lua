@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara mantassin"
 monster.description = "a quara mantassin"
-monster.experience = 800000
+monster.experience = 1600000000
 monster.outfit = {
 	lookType = 72,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 40000
-monster.maxHealth = 40000
+monster.health = 50000
+monster.maxHealth = 50000
 monster.runHealth = 40
 monster.race = "blood"
 monster.corpse = 6064
@@ -103,6 +103,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

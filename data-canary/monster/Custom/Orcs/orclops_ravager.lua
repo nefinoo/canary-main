@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Orclops Ravager")
+﻿local mType = Game.createMonsterType("Orclops Ravager")
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 1000
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -132,3 +132,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

@@ -422,7 +422,7 @@ maxMarketOffersAtATimePerPlayer = 100
 -- MySQL
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = "root"
+mysqlPass = ""
 mysqlDatabase = "nefi"
 mysqlDatabaseBackup = false
 mysqlPort = 3306
@@ -463,7 +463,7 @@ minDelayBetweenConditions = 0
 -- configure maximum value of critical imbuement
 criticalChance = 100
 inventoryGlowOnFiveBless = true
-adventurersBlessingLevel = 500
+adventurersBlessingLevel = 250
 skulledDeathLoseStoreItem = false
 experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
@@ -508,7 +508,7 @@ sortLootByChance = true
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
 rateUseStages = true
-lowLevelBonusExp = 100
+lowLevelBonusExp = 10000
 rateExp = 1000
 rateSkill = 100
 rateLoot = 1
@@ -554,7 +554,7 @@ deSpawnRange = 2
 deSpawnRadius = 50
 
 -- Stamina
-staminaSystem = true
+staminaSystem = false
 
 -- Scripts
 warnUnsafeScripts = true

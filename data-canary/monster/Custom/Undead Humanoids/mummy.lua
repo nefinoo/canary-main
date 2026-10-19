@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "mummy"
 monster.description = "a mummy"
-monster.experience = 15000
+monster.experience = 15000000
 monster.outfit = {
 	lookType = 65,
 	lookHead = 20,
@@ -84,8 +84,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1225, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -1165, maxDamage = -1225, range = 1, radius = 1, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -965, maxDamage = -1025, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -965, maxDamage = -1525, range = 1, radius = 1, target = true},
 	{name ="speed", interval = 1000, chance = 8, speed = {min = -600, max = -600}, duration = 10000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
@@ -95,12 +95,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 80},
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 50000, maxCount = 5},
 	{id = 3046, chance = 1818},
 	{name = "yellow piece of cloth", chance = 5000},
+	{id = 12413, chance = 12250},
+	{id = 3399, chance = 300},
+	{id = 8095, chance = 300},
+	{id = 3408, chance = 300},
 }
 
 mType:register(monster)
+
 
 
 

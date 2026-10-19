@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Deepsea Blood Crab")
+﻿local mType = Game.createMonsterType("Deepsea Blood Crab")
 local monster = {}
 
 monster.description = "a deepsea blood crab"
-monster.experience = 180
+monster.experience = 180000
 monster.outfit = {
 	lookType = 200,
 	lookHead = 0,
@@ -113,3 +113,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

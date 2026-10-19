@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Dragonling")
+﻿local mType = Game.createMonsterType("Dragonling")
 local monster = {}
 
 monster.description = "a dragonling"
-monster.experience = 2200
+monster.experience = 2200000
 monster.outfit = {
 	lookType = 505,
 	lookHead = 0,
@@ -126,3 +126,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

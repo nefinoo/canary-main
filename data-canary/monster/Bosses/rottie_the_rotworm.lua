@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Rottie the Rotworm"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 26,
 	lookHead = 0,
@@ -110,3 +110,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

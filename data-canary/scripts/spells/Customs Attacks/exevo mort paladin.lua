@@ -144,7 +144,7 @@ function spell.onCastSpell(creature, variant)
         return false
     end
 
-	costmana = player:getMaxMana() * 0.015
+	local costmana = 160 + math.floor(player:getMaxMana() * 0.195)
 	
     -- Mana
     if player:getMana() < costmana then
@@ -152,11 +152,24 @@ function spell.onCastSpell(creature, variant)
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
+	local weapon = player:getSlotItem(CONST_SLOT_LEFT)
 
-    local a = config.baseA / 2
-    local b = config.baseB / 2
-    local c = config.baseC / 2
-    local d = config.baseD / 2
+	local bonusPercent = 0
+
+	if weapon then
+		local attack = ItemType(weapon:getId()):getAttack()
+
+		if attack and attack > 0 then
+			bonusPercent = attack / 10 -- 190 attack = 19%
+		end
+	end
+	
+	local multiplier = 1 + (bonusPercent / 100)
+
+	local a = (config.baseA / 2) * multiplier
+	local b = (config.baseB / 2) * multiplier
+	local c = (config.baseC / 2) * multiplier
+	local d = (config.baseD / 2) * multiplier
 
     config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
 

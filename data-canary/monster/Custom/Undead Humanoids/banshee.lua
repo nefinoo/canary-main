@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dementor"
 monster.description = "a dementor"
-monster.experience = 20500
+monster.experience = 13500000
 monster.outfit = {
 	lookType = 78,
 	lookHead = 20,
@@ -41,9 +41,9 @@ monster.flags = {
 	staticAttackChance = 90,
 	targetDistance = 1,
 	healthHidden = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -85,9 +85,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -990, maxDamage = -1200, condition = {type = CONDITION_POISON, startDamage = 150, interval = 5000}},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -500, maxDamage = -1000, condition = {type = CONDITION_POISON, startDamage = 150, interval = 5000}},
 	{name ="speed", interval = 1000, chance = 50, speed = {min = -600, max = -600}, duration = 20000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 1000, chance = 95, type = COMBAT_PHYSICALDAMAGE, minDamage = -990, maxDamage = -1200, radius = 4, target = false, effect = CONST_ME_SOUND_RED}
+	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -990, maxDamage = -1200, radius = 4, target = false, effect = CONST_ME_SOUND_RED}
 }
 
 monster.defenses = {
@@ -97,24 +97,33 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 15},
-	{name = "platinum coin", chance = 70000, maxCount = 20},
-	{name = "experience scroll", chance = 2500, maxCount = 2},
-	{id = 7366, chance = 100},
-	{id = 7426, chance = 100}, 
-	{id = 7420, chance = 100}, 
-	{id = 3296, chance = 100},
-	{id = 7437, chance = 100},
-	{name = "magic sword", chance = 200},
-	{ id = 3319, chance = 200 }, 
-	{ id = 3309, chance = 200 }, 
-	{id = 3341, chance = 200},
-	{name = "throwing star", chance = 200},
+	{name = "platinum coin", chance = 100000, maxCount = 4},
+	{name = "platinum coin", chance = 70000, maxCount = 7},
+	{name = "experience scroll", chance = 500, maxCount = 2},
+	-- {id = 7366, chance = 100},
+	-- {id = 7426, chance = 100}, 
+	-- {id = 7420, chance = 100}, 
+	-- {id = 3296, chance = 100},
+	-- {id = 7437, chance = 100},
+	-- {name = "magic sword", chance = 200},
+	-- { id = 3319, chance = 200 }, 
+	-- { id = 3309, chance = 200 }, 
+	-- {id = 3341, chance = 200},
+	-- {name = "throwing star", chance = 200},
+	{id = 3039, chance = 2500}, -- redgem
+	{name = "crown armor", chance = 1500},
+	{name = "crown legs", chance = 1000},
+	{name = "crown helmet", chance = 2000},
+	{name = "crown shield", chance = 2250},
+	{name = "fire axe", chance = 1500},
+	{name = "yellow gem", chance = 3500},
+	{name = "green gem", chance = 2000},
 	{id = 3082, chance = 5500},
 	{name = "demonic essence", chance = 1818},
 }
 
 mType:register(monster)
+
 
 
 

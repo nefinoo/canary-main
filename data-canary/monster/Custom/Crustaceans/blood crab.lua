@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "blood crab"
 monster.description = "a blood crab"
-monster.experience = 180000
+monster.experience = 46500000
 monster.outfit = {
 	lookType = 200,
 	lookHead = 0,
@@ -87,15 +87,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 6},
-	{name = "platinum coin", chance = 50000, maxCount = 20},
-	{id = 3578, chance = 50000, maxCount = 4},--fish
-	{name = "experience scroll", chance = 3000},
-	{name = "salmon", chance = 35000, maxCount = 2},
-	{name = "green perch", chance = 10000, maxCount = 2}
+	{name = "experience scroll", chance = 10000},
+	{id = 3578, chance = 60430, maxCount = 20},--fish
+	{name = "salmon", chance = 42430, maxCount = 10},
+	{id = 3581, chance = 10000, maxCount = 2},
+	{name = "small diamond", chance = 75000, maxCount = 3},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 64000, maxCount = 15},
+	{name = "platinum coin", chance = 44000, maxCount = 15},
 }
 
 mType:register(monster)
+
 
 
 

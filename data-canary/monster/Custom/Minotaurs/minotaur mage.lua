@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur mage"
 monster.description = "a minotaur mage"
-monster.experience = 150
+monster.experience = 150000
 monster.outfit = {
 	lookType = 23,
 	lookHead = 20,
@@ -13,6 +13,23 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 23
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mintwallin, Maze of Lost Souls, Dark Pyramid, Folda (hidden cave), \z
+		Kazordoon (The Horned Fox's hideout), the Plains of Havoc, Point of No Return south of Outlaw Camp, \z
+		Elvenbane, the depths of Fibula Dungeon (level 50+), cave east from Dwarf Bridge, Foreigner Quarter, \z
+		Rookgaard Minotaur Hell (not reachable).",
+}
+
 
 monster.health = 155
 monster.maxHealth = 155
@@ -98,20 +115,22 @@ monster.loot = {
 	{name = "leather helmet", chance = 8000},
 	{name = "leather legs", chance = 8000},
 	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of cosmic energy", chance = 1333},
-			{name = "combat knife", chance = 10000},
-			{name = "carrot of doom", chance = 20000, maxCount = 5},
-			{id = 3998, chance = 10000},
-			{name = "heavy magic missile rune", chance = 2857},
-			{name = "brass armor", chance = 4000},
-			{name = "chain legs", chance = 4000},
-			{name = "taurus mace", chance = 1000}
-		}
-	}
+	{name = "wand of cosmic energy", chance = 1333},
+	{name = "combat knife", chance = 10000},
+	{name = "carrot of doom", chance = 20000, maxCount = 5},
+	{id = 3998, chance = 10000},
+	{name = "heavy magic missile rune", chance = 2857},
+	{name = "brass armor", chance = 4000},
+	{name = "chain legs", chance = 4000},
+	{name = "taurus mace", chance = 1000},
+	{id = 12413, chance = 3000},
+	{id = 3399, chance = 60},
+	{id = 8095, chance = 60},
+	{id = 3408, chance = 60},
 }
 
 mType:register(monster)
+
 
 
 

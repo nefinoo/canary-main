@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops"
 monster.description = "a cyclops"
-monster.experience = 150
+monster.experience = 150000
 monster.outfit = {
 	lookType = 22,
 	lookHead = 0,
@@ -13,6 +13,21 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 22
+monster.Bestiary = {
+	class = "Giant",
+	race = BESTY_RACE_GIANT,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Plains of Havoc, Mount Sternum, Femor Hills, Cyclops Camp, Cyclopolis, Ancient Temple, Shadowthorn, \z
+	Orc Fort, Mistrock, Foreigner Quarter, Outlaw Camp and in the Cyclops version of the Forsaken Mine. ",
+}
+
 
 monster.health = 260
 monster.maxHealth = 260
@@ -99,17 +114,19 @@ monster.loot = {
 	{name = "dark helmet", chance = 4000},
 	{id = 3012, chance = 6666},
 	{name = "meat", chance = 33333, maxCount = 3},
-	{id = 2853, chance = 100000, child = {
-			{name = "battle shield", chance = 2500},
-			{name = "brass shield", chance = 2857},
-			{name = "halberd", chance = 5000},
-			{name = "gold coin", chance = 20000, maxCount = 10},
-			{name = "ham", chance = 33333, maxCount = 3}
-		}
-	}
+	{name = "battle shield", chance = 2500},
+	{name = "brass shield", chance = 2857},
+	{name = "halberd", chance = 5000},
+	{name = "gold coin", chance = 20000, maxCount = 10},
+	{name = "ham", chance = 33333, maxCount = 3},
+	{id = 12413, chance = 3000},
+	{id = 3399, chance = 65},
+	{id = 8095, chance = 65},
+	{id = 3408, chance = 65},
 }
 
 mType:register(monster)
+
 
 
 

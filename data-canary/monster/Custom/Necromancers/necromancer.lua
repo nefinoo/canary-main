@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead mage"
 monster.description = "an undead mage"
-monster.experience = 19650
+monster.experience = 30650000
 monster.outfit = {
 	lookType = 9,
 	lookHead = 20,
@@ -101,20 +101,17 @@ monster.summons = {
 monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 5},
 	{name = "platinum coin", chance = 50000, maxCount = 10},
-	{id = 7366, chance = 50},
-	{id = 7426, chance = 50 }, 
-	{id = 7420, chance = 50 }, 
-	{id = 3296, chance = 50},
-	{id = 7437, chance = 50},
-	{name = "magic sword", chance = 100},
-	{ id = 3319, chance = 100 }, 
-	{ id = 3309, chance = 100 }, 
-	{id = 3341, chance = 100},
-	{name = "throwing star", chance = 100},
-	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{name = "experience scroll", chance = 950, maxCount = 2},
+	{name = "golden legs", chance = 300},
+    {name = "demon shield", chance = 500},
+    {name = "gold ring", chance = 800},    
+    {name = "giant sword", chance = 728},
+	{name = "yellow gem", chance = 3500},
+	{name = "green gem", chance = 2000},
 }
 
 mType:register(monster)
+
 
 
 

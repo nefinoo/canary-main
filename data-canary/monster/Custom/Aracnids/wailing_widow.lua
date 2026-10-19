@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Wailing Widow")
+﻿local mType = Game.createMonsterType("Wailing Widow")
 local monster = {}
 
 monster.description = "a wailing widow"
-monster.experience = 1450
+monster.experience = 1450000
 monster.outfit = {
 	lookType = 347,
 	lookHead = 0,
@@ -122,3 +122,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

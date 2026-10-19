@@ -1,9 +1,9 @@
 -- Restrinccion de acceso
 
 local config = {
-    teleportAid = 9005,
+    teleportAid = 9003,
 
-    storage = 46001,
+    storage = 46002,
     storageValue = 1
 }
 
@@ -33,9 +33,9 @@ moveEvent:register()
 
 
 local config = {
-    teleportAid = 9006,
+    teleportAid = 9004,
 
-    storage = 46001,
+    storage = 46002,
     storageValue = 1
 }
 

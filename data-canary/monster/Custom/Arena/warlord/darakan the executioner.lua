@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Darakan the Executioner"
 monster.description = "darakan the executioner"
-monster.experience = 1600
+monster.experience = 1600000
 monster.outfit = {
 	lookType = 255,
 	lookHead = 78,
@@ -96,6 +96,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

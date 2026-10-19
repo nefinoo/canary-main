@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc leader"
 monster.description = "a orc leader"
-monster.experience = 270
+monster.experience = 360000
 monster.outfit = {
 	lookType = 59,
 	lookHead = 20,
@@ -12,6 +12,19 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
+}
+
+monster.raceId = 59
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
 monster.health = 450
@@ -94,9 +107,13 @@ monster.loot = {
 	{name = "gold coin", chance = 2857},
 	{name = "meat", chance = 33333, maxCount = 2},
 	{id = 12413, chance = 2000},
+	{id = 3399, chance = 40},
+	{id = 8095, chance = 40},
+	{id = 3408, chance = 40},
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari defender"
 monster.description = "a salazaari defender"
-monster.experience = 11500
+monster.experience = 11500000
 monster.outfit = {
 	lookType = 62,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 9400
-monster.maxHealth = 9400
+monster.health = 7400
+monster.maxHealth = 7400
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6003
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW},
-	{name ="Berserk", interval = 2000, chance = 35, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW},
+	{name ="Berserk", interval = 6000, chance = 35, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -97,18 +97,36 @@ monster.defenses = {
 monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 3},
 	{name = "platinum coin", chance = 50000, maxCount = 5},
-	{name = "magic sword", chance = 100},
-	{ id = 3319, chance = 100 }, 
-	{ id = 3309, chance = 100 }, 
-	{name = "crown armor", chance = 3000},
-	{name = "crown legs", chance = 2000},
-	{name = "crown helmet", chance = 2500},
-	{name = "crown shield", chance = 3500},
-	{name = "experience scroll", chance = 2000},
+	{id = 3039, chance = 2500}, -- redgem
+	{name = "crown armor", chance = 1500},
+	{name = "crown legs", chance = 1000},
+	{name = "crown helmet", chance = 2000},
+	{name = "crown shield", chance = 2250},
+	{name = "experience scroll", chance = 500},
 	{ id = 5921, chance = 940 }, -- heaven blossom
+	{id = 12413, chance = 12000},
+	{id = 3399, chance = 250},
+	{id = 8095, chance = 250},
+	{id = 3408, chance = 250},
 }
 
+monster.raceId = 62
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Yalahar Foreigner Quarter and Trade Quarter, Maze of Lost Souls, Orc Fort (unreachable), \z
+		Hellgate, Shadowthorn, Ab'Dendriel elf caves, Elvenbane, north of Thais.",
+}
+
+
 mType:register(monster)
+
 
 
 

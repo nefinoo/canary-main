@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Calaca"
-monster.experience = 150
+monster.experience = 150000
 monster.outfit = {
 	lookType = 1889,
 	lookHead = 0,
@@ -119,6 +119,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

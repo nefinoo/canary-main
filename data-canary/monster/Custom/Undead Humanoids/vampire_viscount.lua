@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Vampire Viscount")
+﻿local mType = Game.createMonsterType("Vampire Viscount")
 local monster = {}
 
 monster.description = "a vampire viscount"
-monster.experience = 55000
+monster.experience = 55000000
 monster.outfit = {
 	lookType = 555,
 	lookHead = 0,
@@ -130,3 +130,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
