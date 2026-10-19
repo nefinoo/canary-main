@@ -5,10 +5,10 @@ local monster = {}
 
 monster.name = "undead mage"
 monster.description = "a undead mage"
-monster.experience = 25000000
+monster.experience = 28000000
 monster.outfit = {lookType = 99, lookHead = 0, lookBody = 0, lookLegs = 0, lookFeet = 0, lookAddons = 0, lookMount = 0}
-monster.health = 15500
-monster.maxHealth = 15500
+monster.health = 17000
+monster.maxHealth = 17000
 monster.runHealth = 0
 monster.race = "undead"
 monster.corpse = 6028
@@ -52,9 +52,9 @@ monster.immunities = {
 
 monster.attacks = {
 	{name = "melee", interval = 2000, chance = 100, minDamage = -650, maxDamage = -850},
-	{name = "combat", interval = 3000, chance = 60, type = COMBAT_DEATHDAMAGE, minDamage = -1200, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
+	{name = "combat", interval = 3000, chance = 50, type = COMBAT_DEATHDAMAGE, minDamage = -1200, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
 	{name = "combat", interval = 4000, chance = 40, type = COMBAT_ENERGYDAMAGE, minDamage = -950, maxDamage = -1300, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
-	{name = "combat", interval = 5000, chance = 35, type = COMBAT_MANADRAIN, minDamage = -350, maxDamage = -550, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_BLUE},
+	{name = "combat", interval = 5000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -350, maxDamage = -550, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_BLUE},
 }
 
 monster.defenses = {
@@ -70,9 +70,9 @@ monster.loot = {
 	{name = "violet gem", chance = 2100},
 	{id = 12413, chance = 14000},
 	{id = 3366, chance = 900},
-	{id = 3399, chance = 180},
-	{id = 8095, chance = 180},
-	{id = 3408, chance = 220},
+	{id = 3399, chance = 120},
+	{id = 8095, chance = 220},
+	{id = 3408, chance = 350},
 }
 
 mType:register(monster)

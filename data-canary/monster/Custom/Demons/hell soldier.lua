@@ -5,10 +5,10 @@ local monster = {}
 
 monster.name = "hell soldier"
 monster.description = "a hell soldier"
-monster.experience = 24500000
+monster.experience = 26000000
 monster.outfit = {lookType = 243, lookHead = 0, lookBody = 0, lookLegs = 0, lookFeet = 0, lookAddons = 0, lookMount = 0}
-monster.health = 17500
-monster.maxHealth = 17500
+monster.health = 18500
+monster.maxHealth = 18500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6324
@@ -52,7 +52,7 @@ monster.immunities = {
 
 monster.attacks = {
 	{name = "melee", interval = 2000, chance = 100, minDamage = -1150, maxDamage = -1500},
-	{name = "combat", interval = 3000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -850, maxDamage = -1150, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name = "combat", interval = 3000, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -850, maxDamage = -1150, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name = "combat", interval = 6000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -650, maxDamage = -900, radius = 2, target = false, effect = CONST_ME_HITAREA},
 }
 
@@ -68,9 +68,9 @@ monster.loot = {
 	{name = "red gem", chance = 2100},
 	{id = 12413, chance = 13500},
 	{id = 3366, chance = 900},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 180},
-	{id = 3408, chance = 180},
+	{id = 3399, chance = 350},
+	{id = 8095, chance = 150},
+	{id = 3408, chance = 120},
 }
 
 mType:register(monster)
