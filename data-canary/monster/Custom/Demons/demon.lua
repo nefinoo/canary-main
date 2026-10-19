@@ -136,9 +136,6 @@ monster.loot = {
 	{name = "mastermind shield", chance = 500},
 	{name = "demon horn", chance = 800},
 	{id = 12413, chance = 5000},
-	{id = 3399, chance = 130},
-	{id = 8095, chance = 130},
-	{id = 3408, chance = 130},
 }
 
 mType:register(monster)

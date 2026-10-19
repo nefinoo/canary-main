@@ -128,9 +128,6 @@ monster.loot = {
 	{name = "dragon lance", chance = 409},
 	{name = "red dragon scale", chance = 5000},
 	{id = 12413, chance = 4000},
-	{id = 3399, chance = 100},
-	{id = 8095, chance = 100},
-	{id = 3408, chance = 100},
 }
 
 mType:register(monster)

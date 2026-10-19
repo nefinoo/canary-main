@@ -108,9 +108,6 @@ monster.loot = {
 	{name = "experience scroll", chance = 750},
 	{ name = "holy orchid", chance = 2100 },
 	{id = 12413, chance = 12000},
-	{id = 3399, chance = 250},
-	{id = 8095, chance = 250},
-	{id = 3408, chance = 250},
 }
 
 monster.raceId = 63

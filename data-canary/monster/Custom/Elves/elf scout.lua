@@ -106,9 +106,6 @@ monster.loot = {
 	{name = "experience scroll", chance = 600},
 	{ id = 5921, chance = 1130 }, -- heaven blossom
 	{id = 12413, chance = 12000},
-	{id = 3399, chance = 250},
-	{id = 8095, chance = 250},
-	{id = 3408, chance = 250},
 }
 
 

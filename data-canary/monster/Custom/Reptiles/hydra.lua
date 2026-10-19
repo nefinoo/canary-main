@@ -121,9 +121,6 @@ monster.loot = {
 	{name = "royal helmet", chance = 1000, description2 = "royal helmet"},
 	{name = "boots of haste", chance = 850, description2 = "boots of haste"},
 	{id = 12413, chance = 4000},
-	{id = 3399, chance = 89},
-	{id = 8095, chance = 89},
-	{id = 3408, chance = 89},
 		
 }
 

@@ -113,9 +113,6 @@ monster.summons = {
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 20},
 	{id = 12413, chance = 2000},
-	{id = 3399, chance = 20},
-	{id = 8095, chance = 20},
-	{id = 3408, chance = 20},
 }
 
 mType:register(monster)

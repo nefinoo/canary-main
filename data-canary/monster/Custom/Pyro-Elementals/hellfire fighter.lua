@@ -117,9 +117,6 @@ monster.loot = {
 	{name = "soul orb", chance = 2222},
 	{name = "magma coat", chance = 500},
 	{id = 12413, chance = 7000},
-	{id = 3399, chance = 165},
-	{id = 8095, chance = 165},
-	{id = 3408, chance = 165},
 }
 
 mType:register(monster)
