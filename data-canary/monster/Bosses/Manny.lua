@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a ancestral mammoth"
-monster.experience = 160000
+monster.experience = 160
 monster.outfit = {
 	lookType = 199,
 	lookHead = 0,
@@ -117,7 +117,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

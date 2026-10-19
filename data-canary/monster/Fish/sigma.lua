@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a strange thick shape"
-monster.experience = 110000000000
+monster.experience = 110000000
 monster.outfit = {
 	lookType = 1562,
 }
@@ -118,7 +118,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

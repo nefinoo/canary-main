@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Mephistopheles"
 monster.description = "mephistopheles"
-monster.experience = 20000000000
+monster.experience = 20000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 22,
@@ -103,12 +103,11 @@ monster.loot = {
 	{name = "crystal coin", chance = 100000, maxCount = 50},
 	{name = "fire axe", chance = 10000},
 	{id = 6529, chance = 5000},
-	{name = "deadly blade", chance = 5000},
+	{name = "justice seeker", chance = 5000},
 	{name = "experience scroll", chance = 10000}
 }
 
 mType:register(monster)
-
 
 
 

@@ -24,29 +24,29 @@ local waterMonsters = {
 	[5] = {name = "Sigma", level = 1000000, fishing = 115, chance = 750, key = 27, scroll = true, bowlable = true, serverBC = true, broadcast = "The sea rumbles in chaos as |PLAYERNAME| awakens Sigma, the mechanical god of the abyss!"},
 	[6] = {name = "Shesha", level = 900000, fishing = 110, chance = 1000, key = 26, scroll = true, bowlable = true, serverBC = true, broadcast = "The waters coil as the cosmic serpent Shesha emerges, summoned by |PLAYERNAME|!"},
 	[7] = {name = "Leaviathan", level = 800000, fishing = 105, chance = 1334, key = 25, scroll = true, bowlable = true, serverBC = true, broadcast = "The seas split apart as |PLAYERNAME| has awoken the great Leaviathan!"},
-	[8] = {name = "Escila", level = 700000, fishing = 90, chance = 1667, key = 24, scroll = true, bowlable = true, serverBC = true, broadcast = "Screams echo across the shore as Escila, the terror of sailors, surfaces to devour |PLAYERNAME|!"},
-	[9] = {name = "Caribdis", level = 100000, fishing = 85, chance = 2000, key = 23, scroll = true, bowlable = true, serverBC = true, broadcast = "A massive whirlpool forms! Caribdis rises, dragging |PLAYERNAME| toward the abyss!"},
-	[10] = {name = "Ryujin", level = 7500, fishing = 80, chance = 3000, key = 22, scroll = false, bowlable = true, serverBC = true, broadcast = "Lightning strikes the waves as |PLAYERNAME| summons Ryujin, the Dragon God of the Sea!"},
-	[11] = {name = "Sea Serpent", level = 5000, fishing = 77, chance = 3500, key = 21, scroll = false, bowlable = true, serverBC = true, broadcast = "The ocean churns violently as |PLAYERNAME| has disturbed the mighty Sea Serpent!"},
-    [12] = {name = "Wyrm", level = 3500, fishing = 75, chance = 4000, key = 20, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-	[13] = {name = "Deepling Elite", level = 3000, fishing = 72, chance = 4200, key = 19, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [14] = {name = "Deepling Guard", level = 2800, fishing = 70, chance = 4400, key = 18, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [15] = {name = "Deepling Spellsinger", level = 2600, fishing =68, chance = 4600, key = 17, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [16] = {name = "Deepling Brawler", level = 2400, fishing = 65, chance = 4800, key = 16, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [17] = {name = "Deepling Scout", level = 2200, fishing = 63, chance = 5000, key = 15, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [18] = {name = "Quara Predator", level = 2000, fishing = 60, chance = 11000, key = 14, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [19] = {name = "Quara Pincher", level = 1750, fishing = 58, chance = 13500, key = 13, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [20] = {name = "Quara Mantassin", level = 1500, fishing = 55, chance = 15000, key = 12, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [21] = {name = "Quara Hydromancer", level = 1300, fishing = 50, chance = 16500, key = 11, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [22] = {name = "Quara Constrictor", level = 1000, fishing = 45, chance = 18000, key = 10, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [23] = {name = "Massive Water Elemental", level = 750, fishing = 40, chance = 22500, key = 9, scroll = false, bowlable = false, serverBC = false, broadcast = "A monstrous wave rises as |PLAYERNAME| has unleashed the wrath of the Massive Water Elemental!"},
-	[24] = {name = "Blood crab", level = 650, fishing = 38, chance = 24000, key = 8, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [25] = {name = "Water Elemental", level = 500, fishing = 34, chance = 24500, key = 7, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [26] = {name = "Crab", level = 350, fishing = 30, chance = 25000, key = 6, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [27] = {name = "Shark", level = 250, fishing = 24, chance = 33500, key = 5, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [28] = {name = "Jellyfish", level = 150, fishing = 17, chance = 34000, key = 4, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [29] = {name = "Northern Pike", level = 100, fishing = 15, chance = 34500, key = 3, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [30] = {name = "Calamary", level = 50, fishing = 12, chance = 35000, key = 2, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+	[8] = {name = "Escila", level = 700000, fishing = 100, chance = 1667, key = 24, scroll = true, bowlable = true, serverBC = true, broadcast = "Screams echo across the shore as Escila, the terror of sailors, surfaces to devour |PLAYERNAME|!"},
+	[9] = {name = "Caribdis", level = 600000, fishing = 95, chance = 2000, key = 23, scroll = true, bowlable = true, serverBC = true, broadcast = "A massive whirlpool forms! Caribdis rises, dragging |PLAYERNAME| toward the abyss!"},
+	[10] = {name = "Ryujin", level = 20000, fishing = 90, chance = 3000, key = 22, scroll = false, bowlable = true, serverBC = true, broadcast = "Lightning strikes the waves as |PLAYERNAME| summons Ryujin, the Dragon God of the Sea!"},
+	[11] = {name = "Sea Serpent", level = 10000, fishing = 85, chance = 3500, key = 21, scroll = false, bowlable = true, serverBC = true, broadcast = "The ocean churns violently as |PLAYERNAME| has disturbed the mighty Sea Serpent!"},
+    [12] = {name = "Wyrm", level = 5000, fishing = 80, chance = 4000, key = 20, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [13] = {name = "Deepling Elite", level = 4000, fishing = 75, chance = 4200, key = 19, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [14] = {name = "Deepling Guard", level = 3800, fishing = 75, chance = 4400, key = 18, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [15] = {name = "Deepling Spellsinger", level = 3600, fishing = 75, chance = 4600, key = 17, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [16] = {name = "Deepling Brawler", level = 3400, fishing = 70, chance = 4800, key = 16, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [17] = {name = "Deepling Scout", level = 3200, fishing = 70, chance = 5000, key = 15, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [18] = {name = "Quara Predator", level = 3000, fishing = 65, chance = 13000, key = 14, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [19] = {name = "Quara Pincher", level = 1600, fishing = 60, chance = 13500, key = 13, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [20] = {name = "Quara Mantassin", level = 1500, fishing = 60, chance = 14000, key = 12, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [21] = {name = "Quara Hydromancer", level = 1250, fishing = 55, chance = 14500, key = 11, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [22] = {name = "Quara Constrictor", level = 1000, fishing = 55, chance = 15000, key = 10, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [23] = {name = "Massive Water Elemental", level = 700, fishing = 50, chance = 23500, key = 9, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [24] = {name = "Blood crab", level = 600, fishing = 45, chance = 24000, key = 8, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [25] = {name = "Water Elemental", level = 400, fishing = 40, chance = 24500, key = 7, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [26] = {name = "Crab", level = 200, fishing = 30, chance = 25000, key = 6, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [27] = {name = "Shark", level = 50, fishing = 25, chance = 33500, key = 5, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [28] = {name = "Jellyfish", level = 40, fishing = 20, chance = 34000, key = 4, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [29] = {name = "Northern Pike", level = 30, fishing = 15, chance = 34500, key = 3, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [30] = {name = "Calamary", level = 20, fishing = 10, chance = 35000, key = 2, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
     [31] = {name = "Fish", level = 8, fishing = 10, chance = 45000, key = 1, scroll = false, bowlable = false, serverBC = false, broadcast = ""}
 }
 
@@ -140,9 +140,6 @@ end
 
 local function addCatchAndBroadcast(player, monster, position)
     local MONS = Game.createMonster(monster.name, player:getPosition(), true, false)
-	if not MONS then
-        return false
-    end
     if MONS then
         player:addCatch(monster.key, 1)
         if monster.broadcast then
@@ -159,20 +156,10 @@ local function addCatchAndBroadcast(player, monster, position)
         end
         FISHINGMONSTERS[MONS:getId()] = {owner = player:getName(), status = 1}
     end
-	return true
 end
 
 function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if not target or not target.itemid then 
-        return false 
-    end
-
-    local wormId = 3492
-
-    if player:getItemCount(wormId) < 1 then
-        player:sendTextMessage(MESSAGE_FAILURE, "You need a worm to fish.")
-        return true
-    end
+    if not target or not target.itemid then return false end
 
     if Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) then
         return player:sendTextMessage(MESSAGE_FAILURE, "You cannot fish in protection zones.")
@@ -188,8 +175,8 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     end
 
     local effect = castEffects[item.itemid][fishingType]
-    local difficulty = 2.10
-    local skillModifier = player:getSkillLevel(SKILL_FISHING) / 100
+    local difficulty = 2.00
+    local skillModifier = player:getSkillLevel(SKILL_FISHING) >= 100 and (100 / player:getSkillLevel(SKILL_FISHING)) or 0.0
     difficulty = difficulty - math.abs(skillModifier)
 
     if item.itemid == 9306 then
@@ -198,53 +185,27 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
     local realMonsterChance = catchMonstersRandom * difficulty
     local finalchance = math.random(1, realMonsterChance)
-	local caughtMonster = false
-	local caughtFish = false
-	
-    -- for _, monster in ipairs(fishingMonsters) do
-		-- if player:getLevel() >= monster.level and player:getSkillLevel(SKILL_FISHING) >= monster.fishing and finalchance <= monster.chance then
-			-- addCatchAndBroadcast(player, monster, toPosition)
-			-- player:removeItem(wormId, 1)
-			-- caughtMonster = true
-			-- break
-		-- end
-	-- end
-	
-	for _, monster in ipairs(fishingMonsters) do
-		if player:getLevel() >= monster.level and player:getSkillLevel(SKILL_FISHING) >= monster.fishing and finalchance <= monster.chance then
-			if addCatchAndBroadcast(player, monster, toPosition) then
-				caughtMonster = true
-			end
-			break
-		end
-	end
 
-    -- if fishingType == "water" and player:getStorageValue(15000) == 1 and not MONS then
-    if fishingType == "water" and not caughtMonster then
-		local roll = math.random(1, 100)
+    for _, monster in ipairs(fishingMonsters) do
+        if player:getLevel() >= monster.level and player:getSkillLevel(SKILL_FISHING) >= monster.fishing and finalchance <= monster.chance then
+            addCatchAndBroadcast(player, monster, toPosition)
+            break
+        end
+    end
 
-		if roll <= 1 then
-			player:addItem(32043, 1, true) -- 1%
-			caughtFish = true
+    if fishingType == "water" and player:getStorageValue(15000) == 1 and not MONS then
+        local fishChances = {35, 10, 1}
+        local fishItems = {34701, 34700, 34699}
+        for i, chance in ipairs(fishChances) do
+            if math.random(1, 100) <= chance then
+                player:addSkillTries(SKILL_FISHING, 1)
+                player:addItem(fishItems[i], 1, true)
+                break
+            end
+        end
+    end
 
-		elseif roll <= 11 then
-			player:addItem(32044, 1, true) -- 10%
-			caughtFish = true
-
-		elseif roll <= 46 then
-			player:addItem(32045, 1, true) -- 35%
-			caughtFish = true
-		else
-			player:removeItem(wormId, 1) -- 54% pierde el worm
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "The fish stole your worm and escaped.")
-		end
-	end
-	
-	if caughtMonster or caughtFish then
-		player:addSkillTries(SKILL_FISHING, 2)
-		player:removeItem(wormId, 1)
-	end
-	
+    player:addSkillTries(SKILL_FISHING, 1)
     toPosition:sendMagicEffect(effect)
     return true
 end
@@ -253,240 +214,3 @@ fishing:allowFarUse(true)
 -- fishing:id(3483, 9306, 52053)
 fishing:id(3483, 9306, 52053)
 fishing:register()
-
-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-local testFish = TalkAction("/testfish")
-
--- CONFIG
-local fishingBase = 20
-local fishingMultiplier = 1.1
-local minSkillLevel = 10
-
--- EXPERIENCE FUNCTIONS
-local function getExpForLevel(level)
-    return math.floor(((50 * level ^ 3) - (150 * level ^ 2) + (400 * level)) / 3)
-end
-
-local function getLevelByExp(exp)
-    local low = 1
-    local high = 100000
-
-    while low <= high do
-        local mid = math.floor((low + high) / 2)
-
-        if getExpForLevel(mid) <= exp then
-            low = mid + 1
-        else
-            high = mid - 1
-        end
-    end
-
-    return high
-end
-
-local function getStageMultiplier(level)
-    if level >= 50001 then
-        return 100
-    elseif level >= 40001 then
-        return 200
-    elseif level >= 30001 then
-        return 300
-    elseif level >= 20001 then
-        return 450
-    elseif level >= 10001 then
-        return 600
-    else
-        return 1000
-    end
-end
-
-
--- FISHING FUNCTIONS
-local function getReqFishingTries(level)
-    if level <= minSkillLevel then
-        return 0
-    end
-
-    return math.floor(
-        fishingBase *
-        (fishingMultiplier ^ (level - (minSkillLevel + 1)))
-    )
-end
-
-local function getTotalFishingTries(level)
-    local total = 0
-
-    for i = minSkillLevel, level do
-        total = total + getReqFishingTries(i)
-    end
-
-    return total
-end
-
-local function getFishingLevelByTries(tries)
-    local level = minSkillLevel
-
-    while getTotalFishingTries(level + 1) <= tries do
-        level = level + 1
-    end
-
-    return level
-end
-
-
-function testFish.onSay(player, words, param)
-
-    local split = param:split(",")
-
-    local startLevel = tonumber(split[1])
-    local startFishing = tonumber(split[2])
-    local attempts = tonumber(split[3])
-
-    if not startLevel or not startFishing or not attempts then
-        player:sendCancelMessage("Usage: /testfish level,fishing,attempts")
-        return false
-    end
-
-
-    -- Estado simulado
-    local playerExp = getExpForLevel(startLevel)
-    local fishingTries = getTotalFishingTries(startFishing)
-
-    local currentLevel = startLevel
-    local currentFishing = startFishing
-
-    local results = {}
-    local totalExpGained = 0
-
-    -- Fórmula real de pesca
-    local difficulty = 2.10
-    local skillModifier = currentFishing / 100
-    difficulty = difficulty - math.abs(skillModifier)
-
-    local realMonsterChance = catchMonstersRandom * difficulty
-
-
-    for i = 1, attempts do
-
-        -- Gana 1 try por intento
-        fishingTries = fishingTries + 1
-
-        local newFishing = getFishingLevelByTries(fishingTries)
-
-        if newFishing > currentFishing then
-            currentFishing = newFishing
-
-            -- Al subir fishing cambia la dificultad
-            skillModifier = currentFishing / 100
-            difficulty = 2.10 - math.abs(skillModifier)
-            realMonsterChance = catchMonstersRandom * difficulty
-        end
-
-
-        local finalChance = math.random(1, realMonsterChance)
-
-        local caught = false
-
-        for _, monster in ipairs(waterMonsters) do
-
-            if currentLevel >= monster.level
-            and currentFishing >= monster.fishing
-            and finalChance <= monster.chance then
-
-
-                results[monster.name] = (results[monster.name] or 0) + 1
-
-
-                local mType = MonsterType(monster.name)
-
-                if mType then
-
-                    local monsterExp = 0
-
-                    if mType.getExperience then
-                        monsterExp = mType:getExperience()
-                    elseif mType.experience then
-                        monsterExp = mType:experience()
-                    end
-
-
-                    local stage = getStageMultiplier(currentLevel)
-
-                    local gained = monsterExp * stage
-
-                    playerExp = playerExp + gained
-                    totalExpGained = totalExpGained + gained
-
-                    currentLevel = getLevelByExp(playerExp)
-
-                end
-
-                caught = true
-                break
-            end
-        end
-
-
-        if not caught then
-            results["Nothing"] = (results["Nothing"] or 0) + 1
-        end
-    end
-
-
-    -- Ordenar resultados
-    local sorted = {}
-
-    for name, amount in pairs(results) do
-        table.insert(sorted, {
-            name = name,
-            amount = amount
-        })
-    end
-
-    table.sort(sorted, function(a, b)
-        return a.amount > b.amount
-    end)
-
-
-    local text = "=== Fishing Simulator ===\n"
-    text = text .. "Attempts: " .. attempts .. "\n\n"
-
-    text = text .. "Level:\n"
-    text = text .. startLevel .. " -> " .. currentLevel .. "\n\n"
-
-    text = text .. "Fishing:\n"
-    text = text .. startFishing .. " -> " .. currentFishing .. "\n\n"
-
-    text = text .. "Experience Gained:\n"
-    text = text .. math.floor(totalExpGained) .. "\n\n"
-
-    text = text .. "Catches:\n"
-
-    for _, data in ipairs(sorted) do
-        local percent = string.format(
-            "%.4f",
-            (data.amount / attempts) * 100
-        )
-
-        text = text ..
-            data.name ..
-            ": " ..
-            data.amount ..
-            " (" ..
-            percent ..
-            "%)\n"
-    end
-
-
-    player:showTextDialog(1950, text)
-
-    return false
-end
-
-
-testFish:separator(" ")
-testFish:groupType("god")
-testFish:register()

@@ -1,17 +1,6 @@
 math.randomseed(os.time())
 dofile(DATA_DIRECTORY .. "/lib/lib.lua")
 
-db.query([[
-CREATE TABLE IF NOT EXISTS `player_catchs` (
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(255) NOT NULL,
-    `key` INT NOT NULL,
-    `value` INT NOT NULL DEFAULT 0,
-    PRIMARY KEY (`id`),
-    UNIQUE KEY `player_key` (`name`, `key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-]])
-
 FISHINGMONSTERS = {}
 
 function isRealPlayer(name)

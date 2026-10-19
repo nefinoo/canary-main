@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur guard"
 monster.description = "a minotaur guard"
-monster.experience = 160000
+monster.experience = 160
 monster.outfit = {
 	lookType = 29,
 	lookHead = 20,
@@ -13,22 +13,6 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
-
-monster.raceId = 29
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
-	Locations = "Ancient Temple, Mintwallin, Minotaur Pyramid, Maze of Lost Souls, Folda, Cyclopolis, \z
-		Deeper Fibula Dungeon (level 50+ to open the door), Hero Cave, underground of Elvenbane, \z
-		Plains of Havoc, Kazordoon Minotaur Cave, Foreigner Quarter.",
-}
-
 
 monster.health = 185
 monster.maxHealth = 185
@@ -111,20 +95,18 @@ monster.loot = {
 	{name = "double axe", chance = 5000},
 	{name = "leather legs", chance = 10000},
 	{name = "minotaur leather", chance = 5000},
-	{id = 3274, chance = 6666},
-	{name = "fishing rod", chance = 5000},
-	{name = "chain legs", chance = 5000},
-	{name = "chain helmet", chance = 10000},
-	{name = "brass armor", chance = 2500},
-	{name = "battle shield", chance = 10000},
-	{id = 12413, chance = 3000},
-	{id = 3399, chance = 65},
-	{id = 8095, chance = 65},
-	{id = 3408, chance = 65},
+	{id = 2853, chance = 100000, child = {
+			{id = 3274, chance = 6666},
+			{name = "fishing rod", chance = 5000},
+			{name = "chain legs", chance = 5000},
+			{name = "chain helmet", chance = 10000},
+			{name = "brass armor", chance = 2500},
+			{name = "battle shield", chance = 10000}
+		}
+	}
 }
 
 mType:register(monster)
-
 
 
 

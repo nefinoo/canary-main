@@ -73,7 +73,7 @@ npcConfig.shop = {
 	{ itemName = "watch", clientId = 2906, buy = 20, sell = 6 },
 	{ itemName = "waterskin of water", clientId = 2901, buy = 10, count = 1 },
 	{ itemName = "wooden hammer", clientId = 3459, sell = 15 },
-	{ itemName = "worm", clientId = 3492, buy = 10 },
+	{ itemName = "worm", clientId = 3492, buy = 1 },
 }
 
 -- Create keywordHandler and npcHandler

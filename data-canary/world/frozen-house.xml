@@ -100,7 +100,7 @@
 	<house name="Unnamed House #98" houseid="98" entryx="479" entryy="791" entryz="6" rent="0" townid="1" size="7" clientid="0" beds="0" />
 	<house name="Unnamed House #99" houseid="99" entryx="483" entryy="791" entryz="6" rent="0" townid="1" size="9" clientid="0" beds="0" />
 	<house name="Unnamed House #100" houseid="100" entryx="522" entryy="761" entryz="7" rent="0" guildhall="true" townid="1" size="192" clientid="0" beds="0" />
-	<house name="Unnamed House #101" houseid="101" entryx="401" entryy="686" entryz="6" rent="0" guildhall="true" townid="1" size="561" clientid="0" beds="0" />
+	<house name="Unnamed House #101" houseid="101" entryx="401" entryy="686" entryz="6" rent="0" guildhall="true" townid="1" size="577" clientid="0" beds="0" />
 	<house name="Unnamed House #102" houseid="102" entryx="349" entryy="618" entryz="7" rent="0" townid="1" size="704" clientid="0" beds="0" />
 	<house name="Unnamed House #103" houseid="103" entryx="535" entryy="757" entryz="7" rent="0" townid="1" size="13" clientid="0" beds="0" />
 	<house name="Unnamed House #104" houseid="104" entryx="535" entryy="760" entryz="7" rent="0" townid="1" size="10" clientid="0" beds="0" />
@@ -118,9 +118,9 @@
 	<house name="Unnamed House #116" houseid="116" entryx="632" entryy="572" entryz="5" rent="0" townid="1" size="34" clientid="0" beds="0" />
 	<house name="Unnamed House #117" houseid="117" entryx="632" entryy="572" entryz="4" rent="0" townid="1" size="17" clientid="0" beds="0" />
 	<house name="Unnamed House #118" houseid="118" entryx="611" entryy="577" entryz="7" rent="0" townid="1" size="160" clientid="0" beds="0" />
-	<house name="Unnamed House #119" houseid="119" entryx="602" entryy="577" entryz="7" rent="0" townid="1" size="88" clientid="0" beds="0" />
-	<house name="Unnamed House #120" houseid="120" entryx="593" entryy="577" entryz="7" rent="0" townid="1" size="166" clientid="0" beds="0" />
-	<house name="Unnamed House #121" houseid="121" entryx="582" entryy="577" entryz="7" rent="0" townid="1" size="108" clientid="0" beds="0" />
+	<house name="Unnamed House #119" houseid="119" entryx="602" entryy="577" entryz="7" rent="0" townid="1" size="89" clientid="0" beds="0" />
+	<house name="Unnamed House #120" houseid="120" entryx="593" entryy="577" entryz="7" rent="0" townid="1" size="167" clientid="0" beds="0" />
+	<house name="Unnamed House #121" houseid="121" entryx="582" entryy="577" entryz="7" rent="0" townid="1" size="110" clientid="0" beds="0" />
 	<house name="Unnamed House #122" houseid="122" entryx="614" entryy="574" entryz="7" rent="0" townid="1" size="16" clientid="0" beds="0" />
 	<house name="Unnamed House #123" houseid="123" entryx="617" entryy="574" entryz="7" rent="0" townid="1" size="16" clientid="0" beds="0" />
 	<house name="Unnamed House #124" houseid="124" entryx="613" entryy="560" entryz="7" rent="0" townid="1" size="16" clientid="0" beds="0" />

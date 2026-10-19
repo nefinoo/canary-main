@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc berserker"
 monster.description = "a orc berserker"
-monster.experience = 195000
+monster.experience = 195
 monster.outfit = {
 	lookType = 8,
 	lookHead = 20,
@@ -13,20 +13,6 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
-
-monster.raceId = 8
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 1000,
-	FirstUnlock = 50,
-	SecondUnlock = 500,
-	CharmsPoints = 25,
-	Stars = 3,
-	Occurrence = 0,
-	Locations = "Orc Fort, Dwacatra, Orc Peninsula, Elvenbane, Edron Orc Cave, Plains of Havoc, below Point of No Return in Outlaw Camp, Maze of Lost Souls, Cyclopolis, Desert Dungeon, Ancient Temple, Foreigner Quarter, Zao Orc Land.",
-}
-
 
 monster.health = 210
 monster.maxHealth = 210
@@ -93,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -35, maxDamage = -230}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -30, maxDamage = -200}
 }
 
 monster.defenses = {
@@ -107,13 +93,9 @@ monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 15},
 	{name = "meat", chance = 33333, maxCount = 3},
 	{id = 12413, chance = 2000},
-	{id = 3399, chance = 30},
-	{id = 8095, chance = 30},
-	{id = 3408, chance = 30},
 }
 
 mType:register(monster)
-
 
 
 

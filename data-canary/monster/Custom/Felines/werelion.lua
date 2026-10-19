@@ -1,43 +1,8 @@
-﻿local mType = Game.createMonsterType("Werelion")
+local mType = Game.createMonsterType("Werelion")
 local monster = {}
 
--- Entra en furia una sola vez al bajar de 30% de vida.
-local berserkState = {}
-local werelionBerserk = CreatureEvent("WerelionLevel10000Berserk")
-
-function werelionBerserk.onThink(creature, interval)
-	local lion = creature:getMonster()
-	if not lion then
-		return true
-	end
-
-	local lionId = lion:getId()
-	if berserkState[lionId] then
-		return true
-	end
-
-	if lion:getHealth() <= math.floor(lion:getMaxHealth() * 0.30) then
-		berserkState[lionId] = true
-		lion:changeSpeed(80)
-		lion:say("THE HUNT ENDS NOW!", TALKTYPE_MONSTER_YELL)
-		lion:getPosition():sendMagicEffect(CONST_ME_FIREAREA)
-	end
-
-	return true
-end
-
-werelionBerserk:register()
-
-local werelionBerserkDeath = CreatureEvent("WerelionLevel10000BerserkDeath")
-function werelionBerserkDeath.onDeath(creature)
-	berserkState[creature:getId()] = nil
-	return true
-end
-werelionBerserkDeath:register()
-
-
 monster.description = "a werelion"
-monster.experience = 5500000000
+monster.experience = 2200000
 monster.outfit = {
 	lookType = 1301,
 	lookHead = 58,
@@ -61,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Lion Sanctum.",
 }
 
-monster.health = 2400000
-monster.maxHealth = 2400000
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 33825
-monster.speed = 125
+monster.speed = 110
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -129,17 +94,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1800, chance = 100, minDamage = -25000, maxDamage = -55000 },
-	{ name = "werelion wave", interval = 2000, chance = 20, minDamage = -25000, maxDamage = -48000, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -42000, maxDamage = -65000, range = 3, effect = CONST_ME_HOLYAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -35000, maxDamage = -58000, range = 3, shootEffect = CONST_ANI_HOLY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -30000 },
+	{ name = "werelion wave", interval = 2000, chance = 20, minDamage = -150, maxDamage = -25000, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -30000, maxDamage = -41000, range = 3, effect = CONST_ME_HOLYAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -17000, maxDamage = -35000, range = 3, shootEffect = CONST_ANI_HOLY, target = true },
 }
 
 monster.defenses = {
-	defense = 65,
-	armor = 85,
-	mitigation = 2.30,
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HEALING, minDamage = 30000, maxDamage = 60000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	defense = 40,
+	armor = 38,
+	mitigation = 0.91,
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HEALING, minDamage = 100, maxDamage = 150, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
@@ -155,11 +120,6 @@ monster.elements = {
 	{ type = COMBAT_DEATHDAMAGE, percent = 45 },
 }
 
-monster.events = {
-	"WerelionLevel10000Berserk",
-	"WerelionLevel10000BerserkDeath",
-}
-
 monster.immunities = {
 	{ type = "paralyze", condition = true },
 	{ type = "outfit", condition = false },
@@ -168,4 +128,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

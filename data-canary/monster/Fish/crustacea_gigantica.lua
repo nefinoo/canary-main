@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a crustacea gigantica"
-monster.experience = 1800000
+monster.experience = 1800
 monster.outfit = {
 	lookType = 383,
 	lookHead = 0,
@@ -120,4 +120,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

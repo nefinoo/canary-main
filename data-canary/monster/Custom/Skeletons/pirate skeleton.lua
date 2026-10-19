@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "pirate skeleton"
 monster.description = "a pirate skeleton"
-monster.experience = 1500000000
+monster.experience = 85
 monster.outfit = {
 	lookType = 195,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 185000
-monster.maxHealth = 185000
+monster.health = 190
+monster.maxHealth = 190
 monster.runHealth = 20
 monster.race = "blood"
 monster.corpse = 6070
@@ -78,7 +78,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -7500, maxDamage = -11000}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -10, maxDamage = -80}
 }
 
 monster.defenses = {
@@ -87,27 +87,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 10},
-	{name = "platinum coin", chance = 75000, maxCount = 15},
-	{name = "platinum coin", chance = 50000, maxCount = 18},
-	{name = "experience scroll", chance = 2800, maxCount = 3},
-	{ name = "hook", chance = 520 },
-	{ name = "eye patch", chance = 530 },
-	{ name = "peg leg", chance = 520 },
-	{name = "green gem", chance = 1850},
-	{name = "blue gem", chance = 1750},
-	{name = "green gem", chance = 1500},
-	{name = "violet gem", chance = 750},
-	{name = "demon helmet", chance = 750},
-	{name = "demon legs", chance = 750},
-	{name = "demon shield", chance = 750},
-	{id = 6529, chance = 750}, -- soft boots
-	-- Reward Box
-	{id = 50854, chance = 15},
+	{name = "gold coin", chance = 40000, maxCount = 25},
+	{id = 3114, chance = 9727, maxCount = 2},
+	{name = "big bone", chance = 4000},
+	{name = "pirate shirt", chance = 5000},
+	{name = "pirate bag", chance = 100000, child = {
+			{id = 3264, chance = 18402},
+			{name = "bone club", chance = 8491}
+		}
+	}
 }
 
 mType:register(monster)
-
 
 
 

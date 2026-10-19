@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a mage outfit"
-monster.experience = 45000
+monster.experience = 45
 monster.outfit = {
 	lookType = 130,
 	lookHead = 0,
@@ -96,7 +96,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

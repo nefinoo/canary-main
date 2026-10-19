@@ -9,7 +9,7 @@ function playerLoginGlobal.onLogin(player)
 	local loginStr
 	if player:getLastLoginSaved() == 0 then
 		loginStr = "Please choose your outfit."
-		-- player:sendOutfitWindow()
+		player:sendOutfitWindow()
 		local startStreakLevel = configManager.getNumber(configKeys.START_STREAK_LEVEL)
 		if startStreakLevel > 0 then
 			player:setStreakLevel(startStreakLevel)

@@ -15,7 +15,7 @@ local config = {
         to = Position(341, 1639, 7),
     },
     teleportTimer = 900, -- 15 minutos
-    cooldownTimer = 1 * 60 * 60, -- 2 horas
+    cooldownTimer = 2 * 60 * 60, -- 2 horas
     storage = 10010,
 
     -- 🔥 NUEVO

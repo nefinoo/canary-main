@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "enter the teleport and challenge the most fearsome bosses in this world.."
-monster.experience = 45000
+monster.experience = 45
 monster.outfit = {
 	lookType = 15,
 	lookHead = 0,
@@ -15,7 +15,7 @@ monster.outfit = {
 
 monster.health = 65
 monster.maxHealth = 65
-monster.race = "blood"
+monster.race = "venom"
 monster.corpse = 5988
 monster.speed = 72
 monster.manaCost = 310
@@ -98,7 +98,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

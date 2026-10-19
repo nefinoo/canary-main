@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Dawnfire Asura")
+local mType = Game.createMonsterType("Dawnfire Asura")
 local monster = {}
 
 monster.description = "a dawnfire asura"
-monster.experience = 9250000000
+monster.experience = 11000000
 monster.outfit = {
 	lookType = 150,
 	lookHead = 114,
@@ -93,20 +93,41 @@ monster.loot = {
 	{ id = 5911, chance = 2340 }, -- red piece of cloth
 	{ id = 3016, chance = 800 }, -- ruby necklace
 	{ id = 5944, chance = 14560 }, -- soul orb
-	{name = "platinum coin", chance = 100000, maxCount = 35},
-	{name = "platinum coin", chance = 100000, maxCount = 40},
-	{name = "platinum coin", chance = 35000, maxCount = 45},
-	{name = "experience scroll", chance = 2750, maxCount = 4},
+	
+	{name = "platinum coin", chance = 100000, maxCount = 75},
+	{name = "platinum coin", chance = 100000, maxCount = 100},
+	{name = "crystal coin", chance = 50000, maxCount = 3},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 500},
+	{id = 895, chance = 500}, 
+	{id = 7390, chance = 500}, 
+	{id = 7415, chance = 500},
+	{id = 3303, chance = 500},
+	-- weapons lvl 500	
+	{id = 7366, chance = 600},
+	{id = 7426, chance = 600}, 
+	{id = 7420, chance = 600}, 
+	{id = 3296, chance = 600},
+	{id = 7437, chance = 600},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 800},
+	{ id = 3319, chance = 800 }, 
+	{ id = 3309, chance = 800 }, 
+	{id = 3341, chance = 800},
+	{name = "throwing star", chance = 800},
+	
 	--demon green set
 	{id = 37607, chance = 150},
 	{id = 37608, chance = 150},
 	{id = 37609, chance = 150},
 	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
 	{name = "demon helmet", chance = 1000},
 	{name = "demon legs", chance = 1000},
 	{name = "demon shield", chance = 1000},
 	{id = 6529, chance = 1000}, -- soft boots
-	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
@@ -146,4 +167,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

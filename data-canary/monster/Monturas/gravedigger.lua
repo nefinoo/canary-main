@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Gravedigger")
+local mType = Game.createMonsterType("Gravedigger")
 local monster = {}
 
 monster.description = "a gravedigger"
-monster.experience = 950000
+monster.experience = 950
 monster.outfit = {
 	lookType = 558,
 	lookHead = 0,
@@ -131,4 +131,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

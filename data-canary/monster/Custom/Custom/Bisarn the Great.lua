@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Bisarn the Great"
 monster.description = "bisarn the great"
-monster.experience = 12500000000
+monster.experience = 12500000
 monster.outfit = {
 	lookType = 253,
 	lookHead = 88,
@@ -95,7 +95,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

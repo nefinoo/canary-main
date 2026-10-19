@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hand of cursed fate"
 monster.description = "a hand of cursed fate"
-monster.experience = 3850000
+monster.experience = 3850
 monster.outfit = {
 	lookType = 230,
 	lookHead = 0,
@@ -106,7 +106,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

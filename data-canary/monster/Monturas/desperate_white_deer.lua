@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Desperate White Deer")
+local mType = Game.createMonsterType("Desperate White Deer")
 local monster = {}
 
 monster.description = "a desperate white deer"
-monster.experience = 35000
+monster.experience = 35
 monster.outfit = {
 	lookType = 400,
 	lookHead = 0,
@@ -99,4 +99,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

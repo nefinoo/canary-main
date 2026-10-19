@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "The Deathwalker"
 monster.description = "a deathwalker"
-monster.experience = 20000000000
+monster.experience = 20000000
 monster.outfit = {
 	lookType = 232,
 	lookHead = 0,
@@ -95,7 +95,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

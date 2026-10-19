@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling scout"
-monster.experience = 3000000000
+monster.experience = 1500000
 monster.outfit = {
 	lookType = 413,
 	lookHead = 0,
@@ -84,6 +84,7 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "gold coin", chance = 75000, maxCount = 50 },
+	{ name = "hunting spear", chance = 15185, maxCount = 3 },
 	{ id = 3052, chance = 2127 }, -- life ring
 	{ name = "rusted armor", chance = 925 },
 	{ name = "heavy trident", chance = 505 },
@@ -91,7 +92,6 @@ monster.loot = {
 	{ name = "fish fin", chance = 310 },
 	{ name = "small emerald", chance = 121 },
 	{ name = "flask of rust remover", chance = 111 },
-	{ name = "foxtail", chance = 10 },
 }
 
 monster.attacks = {
@@ -126,4 +126,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "toxic slimebeast"
 monster.description = "the toxic slimebeast"
-monster.experience = 16000000000
+monster.experience = 16000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 114,
@@ -99,12 +99,11 @@ monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 5},
 	{name = "fire axe", chance = 10000},
 	{id = 6529, chance = 5000},
-	{name = "deadly star", chance = 5000},
+	{name = "assassin star", chance = 5000},
 	{name = "experience scroll", chance = 10000},
 }
 
 mType:register(monster)
-
 
 
 

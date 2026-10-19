@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hellfire fighter"
 monster.description = "a hellfire fighter"
-monster.experience = 5000000
+monster.experience = 5000
 monster.outfit = {
 	lookType = 243,
 	lookHead = 0,
@@ -13,20 +13,6 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
-
-monster.raceId = 295
-monster.Bestiary = {
-	class = "Demon",
-	race = BESTY_RACE_DEMON,
-	toKill = 2500,
-	FirstUnlock = 100,
-	SecondUnlock = 1000,
-	CharmsPoints = 50,
-	Stars = 4,
-	Occurrence = 0,
-	Locations = "Pits of Inferno, Demon Forge, Fury Dungeon.",
-}
-
 
 monster.health = 8000
 monster.maxHealth = 8000
@@ -104,26 +90,24 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small diamond", chance = 15000},
-	{name = "blank rune", chance = 13500},
-	{id = 3264, chance = 12500},
-	{name = "fire sword", chance = 3550},
-	{name = "fire axe", chance = 700},
+	{id = 2853, chance = 100000, child = {
+			{name = "small diamond", chance = 15000},
+			{name = "blank rune", chance = 13500},
+			{id = 3264, chance = 12500},
+			{name = "fire sword", chance = 3550},
+			{name = "fire axe", chance = 700}
+		}
+	},
 	{name = "demonbone amulet", chance = 1666},
 	{name = "small ruby", chance = 8888, maxCount = 4},
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "wand of inferno", chance = 3111},
 	{name = "burnt scroll", chance = 20000},
 	{name = "soul orb", chance = 2222},
-	{name = "magma coat", chance = 500},
-	{id = 12413, chance = 7000},
-	{id = 3399, chance = 165},
-	{id = 8095, chance = 165},
-	{id = 3408, chance = 165},
+	{name = "magma coat", chance = 500}
 }
 
 mType:register(monster)
-
 
 
 

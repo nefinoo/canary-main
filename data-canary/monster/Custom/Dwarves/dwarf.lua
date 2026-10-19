@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed warrior"
 monster.description = "an outlawed warrior"
-monster.experience = 7500000
+monster.experience = 5500
 monster.outfit = {
 	lookType = 69,
 	lookHead = 20,
@@ -12,20 +12,6 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
-}
-
-monster.raceId = 69
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
-	Locations = "Kazordoon Dwarf Mines, Dwarf Bridge, deep Elvenbane, Tiquanda Dwarf Cave, Cormaya Dwarf Cave, \z
-		Island of Destiny (Knights area), Beregar.",
 }
 
 monster.health = 4200
@@ -93,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -318, maxDamage = -474 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -518, maxDamage = -674 },
 }
 
 monster.defenses = {
@@ -104,21 +90,19 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "small diamond", chance = 75000, maxCount = 3},
-	{name = "yellow gem", chance = 2000},
+	{name = "yellow gem", chance = 25000},
 	{name = "platinum coin", chance = 25000, maxCount = 3},
-	{name = "boots of haste", chance = 550},
+	{name = "boots of haste", chance = 1250},
+	{name = "magic sword", chance = 100},
+	{ id = 3319, chance = 100 }, --stonecutter
+	{ id = 3309, chance = 100 }, --thunder hammer
 	{name = "magic plate armor", chance = 250},
 	{name = "mastermind shield", chance = 250},
 	{name = "experience scroll", chance = 500},
 	{ name = "iron ore", chance = 1400 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)
-
 
 
 

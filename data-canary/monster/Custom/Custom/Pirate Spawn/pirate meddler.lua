@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Pirate Meddler"
 monster.description = "pirate meddler"
-monster.experience = 1350000000
+monster.experience = 575000
 monster.outfit = {
 	lookType = 98,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 175000
-monster.maxHealth = 175000
+monster.health = 145000
+monster.maxHealth = 145000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -91,27 +91,39 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 10},
-	{name = "platinum coin", chance = 75000, maxCount = 15},
-	{name = "platinum coin", chance = 50000, maxCount = 18},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 75000, maxCount = 50},
+	{name = "platinum coin", chance = 50000, maxCount = 80},
 	{name = "experience scroll", chance = 2500, maxCount = 3},
-	{ name = "hook", chance = 520 },
-	{ name = "eye patch", chance = 530 },
-	{ name = "peg leg", chance = 520 },
-	{name = "green gem", chance = 1850},
-	{name = "blue gem", chance = 1750},
-	{name = "green gem", chance = 1500},
-	{name = "violet gem", chance = 750},
+	{ name = "hook", chance = 600 },
+	{ name = "eye patch", chance = 500 },
+	{ name = "peg leg", chance = 600 },
+	-- weapons lvl 1000
+	{id = 7368, chance = 250},
+	{id = 895, chance = 250}, 
+	{id = 7390, chance = 250}, 
+	{id = 7415, chance = 250},
+	{id = 3303, chance = 250},
+	-- weapons lvl 500	
+	{id = 7366, chance = 350},
+	{id = 7426, chance = 350}, 
+	{id = 7420, chance = 350}, 
+	{id = 3296, chance = 350},
+	{id = 7437, chance = 350},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 500},
+	{ id = 3319, chance = 500 }, 
+	{ id = 3309, chance = 500 }, 
+	{id = 3341, chance = 500},
+	{name = "throwing star", chance = 500},
+	
 	{name = "demon helmet", chance = 750},
 	{name = "demon legs", chance = 750},
 	{name = "demon shield", chance = 750},
-	{id = 6529, chance = 750}, -- soft boots
-	-- Reward Box
-	{id = 50854, chance = 15},
+	{id = 6529, chance = 750}, -- soft boots	
 }
 
 mType:register(monster)
-
 
 
 

@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Bonelord")
+local mType = Game.createMonsterType("Bonelord")
 local monster = {}
 
 monster.description = "a bonelord"
-monster.experience = 170000
+monster.experience = 170
 monster.outfit = {
 	lookType = 17,
 	lookHead = 0,
@@ -144,4 +144,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

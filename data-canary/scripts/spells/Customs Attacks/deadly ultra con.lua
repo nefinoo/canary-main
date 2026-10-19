@@ -26,19 +26,16 @@ function spell.onCastSpell(creature, variant)
         return false
     end
 
-	-- costmana = player:getMaxMana() * 0.1
-	costmana = 400
-	 
     -- Check mana (200 mana como en tu ejemplo)
-    if player:getMana() < costmana then
+    if player:getMana() < 200 then
         player:sendCancelMessage("You do not have enough mana.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
 
     -- Deduct mana
-    player:addMana(-costmana)
-    player:addManaSpent(costmana)
+    player:addMana(-200)
+    player:addManaSpent(200)
 
     -- Determine if it's a distance attack
     local combatType = (variant:getNumber() ~= 0) and distanceCombat or closeCombat
@@ -54,7 +51,7 @@ spell:id(100) -- Cambia este ID por uno único
 spell:cooldown(2 * 1000)
 spell:groupCooldown(2 * 1000)
 spell:level(250)
-spell:mana(55)
+spell:mana(200)
 spell:isPremium(true)
 spell:needTarget(true)
 spell:isAggressive(true)

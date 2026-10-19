@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara predator"
 monster.description = "a quara predator"
-monster.experience = 2500000000
+monster.experience = 1200000
 monster.outfit = {
 	lookType = 20,
 	lookHead = 0,
@@ -101,11 +101,10 @@ monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 80},
 	{name = "platinum coin", chance = 70000, maxCount = 100},
 	{name = "experience scroll", chance = 3000, maxCount = 3},
-	{id = 893, chance = 5}
+	-- {id = 893, chance = 5}
 }
 
 mType:register(monster)
-
 
 
 

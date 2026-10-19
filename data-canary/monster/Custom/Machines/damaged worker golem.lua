@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Damaged Worker Golem"
 monster.description = "a damaged worker golem"
-monster.experience = 95000
+monster.experience = 95
 monster.outfit = {
 	lookType = 304,
 	lookHead = 0,
@@ -103,7 +103,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

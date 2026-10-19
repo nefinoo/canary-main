@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a titan goddess of water"
-monster.experience = 160000000000
+monster.experience = 160000000
 monster.outfit = {
 	lookType = 463,
 	lookHead = 94,
@@ -125,7 +125,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

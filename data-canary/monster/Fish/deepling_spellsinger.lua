@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling spellsinger"
-monster.experience = 4750000000
+monster.experience = 4000000
 monster.outfit = {
 	lookType = 443,
 	lookHead = 0,
@@ -89,11 +89,11 @@ monster.loot = {
 	{ id = 3578, chance = 3448 }, -- fish
 	{ name = "small sapphire", chance = 2934 },
 	{ name = "eye of a deepling", chance = 2540 },
+	{ id = 3052, chance = 2459 }, -- life ring
 	{ name = "deepling staff", chance = 2020 },
 	{ name = "necklace of the deep", chance = 790 },
 	{ name = "fish fin", chance = 520 },
 	{ name = "ornate crossbow", chance = 220 },
-	{ name = "foxtail", chance = 10 },
 }
 
 monster.attacks = {
@@ -132,4 +132,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

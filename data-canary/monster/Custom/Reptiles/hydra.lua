@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hydra"
 monster.description = "a hydra"
-monster.experience = 1700000
+monster.experience = 700
 monster.outfit = {
 	lookType = 121,
 	lookHead = 0,
@@ -14,24 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.raceId = 121
-monster.Bestiary = {
-	class = "Dragon",
-	race = BESTY_RACE_DRAGON,
-	toKill = 1000,
-	FirstUnlock = 50,
-	SecondUnlock = 500,
-	CharmsPoints = 25,
-	Stars = 3,
-	Occurrence = 0,
-	Locations = "Northern Hydra Mountain in east Tiquanda, southern Hydra Mountain, Hydra Egg Quest in Tiquanda \z
-	north-east of the Elephant Tusk Quest, Forbidden Lands hydra cave, Deeper Banuta, Talahu surface, \z
-	Ferumbras Citadel, Yalahar Arena and Zoo Quarter, Yalahar Foreigner Quarter (Crystal Lake), Oramond Hydra/Bog Raider Cave.",
-}
-
-
-monster.health = 1600
-monster.maxHealth = 1600
+monster.health = 1340
+monster.maxHealth = 1340
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 6048
@@ -84,14 +68,14 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = -15},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_ENERGYDAMAGE, percent = -10},
 	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 40},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 100},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 40},
-	{type = COMBAT_HOLYDAMAGE , percent = -25},
+	{type = COMBAT_HOLYDAMAGE , percent = 25},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
@@ -105,7 +89,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 35,
 	armor = 25,
-	{name ="combat", interval = 4000, chance = 45, type = COMBAT_HEALING, minDamage = 150, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 3000, chance = 45, type = COMBAT_HEALING, minDamage = 100, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
@@ -117,18 +101,14 @@ monster.loot = {
 	{name = "life crystal", chance = 500, description2 = "life crystal"},
 	{name = "small sapphire", chance = 7500, maxCount = 3, description2 = "small sapphire"},
 	{name = "hydra egg", chance = 200, description2 = "hydra egg"},
-	{name = "medusa shield", chance = 1500, description2 = "medusa shield"},
-	{name = "royal helmet", chance = 1000, description2 = "royal helmet"},
-	{name = "boots of haste", chance = 850, description2 = "boots of haste"},
-	{id = 12413, chance = 4000},
-	{id = 3399, chance = 89},
-	{id = 8095, chance = 89},
-	{id = 3408, chance = 89},
+	{name = "medusa shield", chance = 1000, description2 = "medusa shield"},
+	{name = "royal helmet", chance = 500, description2 = "royal helmet"},
+	{name = "boots of haste", chance = 350, description2 = "boots of haste"},
+	{id = 12413, chance = 3000},
 		
 }
 
 mType:register(monster)
-
 
 
 

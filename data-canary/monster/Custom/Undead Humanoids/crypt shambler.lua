@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "deathwalker"
 monster.description = "a deathwalker"
-monster.experience = 15000000
+monster.experience = 15000
 monster.outfit = {
 	lookType = 100,
 	lookHead = 20,
@@ -82,8 +82,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -907, maxDamage = -1149},
-	{name ="combat", interval = 4000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -907, maxDamage = -1349, range = 1, radius = 1, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1107, maxDamage = -1349},
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1107, maxDamage = -1349, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
@@ -94,18 +94,21 @@ monster.defenses = {
 monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 3},
 	{name = "platinum coin", chance = 50000, maxCount = 8},
-	{name = "experience scroll", chance = 850},
-	{name = "golden legs", chance = 300},
-    {name = "demon shield", chance = 500},
-    {name = "gold ring", chance = 800},    
-    {name = "giant sword", chance = 728},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
-	{id = 12413, chance = 12250},
-	{id = 3399, chance = 300},
-	{id = 8095, chance = 300},
-	{id = 3408, chance = 300},
-}   	
+	{id = 7366, chance = 50},
+	{id = 7426, chance = 50 }, 
+	{id = 7420, chance = 50 }, 
+	{id = 3296, chance = 50},
+	{id = 7437, chance = 50},
+	{name = "magic sword", chance = 100},
+	{ id = 3319, chance = 100 }, 
+	{ id = 3309, chance = 100 }, 
+	{id = 3341, chance = 100},
+	{name = "throwing star", chance = 100},
+	{name = "experience scroll", chance = 2500},
+}
+
 mType:register(monster)
+
+
 
 

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Rey vivo"
-monster.experience = 150000
+monster.experience = 150
 monster.outfit = {
 	lookType = 1891,
 	lookHead = 0,
@@ -119,7 +119,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

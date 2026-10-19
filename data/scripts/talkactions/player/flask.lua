@@ -1,34 +1,19 @@
 local flask = TalkAction("!flask")
 
-local FLASK_STORAGE = 45010
-
 function flask.onSay(player, words, param)
-	param = param:lower()
-
-	if param == "on" then
-		player:setStorageValue(FLASK_STORAGE, 1)
-
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			"You will not receive flasks!"
-		)
-
-		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
-
-	elseif param == "off" then
-		player:setStorageValue(FLASK_STORAGE, 0)
-
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			"You will receive flasks."
-		)
-
-		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
-
-	else
-		player:sendCancelMessage("Usage: !flask on/off")
+	if param == "" then
+		player:sendCancelMessage("You need to specify on/off param.")
+		return true
 	end
-
+	if param == "on" then
+		player:kv():set("talkaction.potions.flask", true)
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You will not receive flasks!")
+		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
+	elseif param == "off" then
+		player:kv():remove("talkaction.potions.flask")
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You will receive flasks.")
+		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
+	end
 	return true
 end
 

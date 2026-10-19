@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Orclops Doomhauler")
+local mType = Game.createMonsterType("Orclops Doomhauler")
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 4500000
+monster.experience = 4500
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
@@ -25,7 +25,6 @@ monster.Bestiary = {
 	Occurrence = 0,
 	Locations = "Desecrated Glade, Edron Orc Cave",
 }
-
 
 monster.health = 7000
 monster.maxHealth = 7000
@@ -101,10 +100,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -458, maxDamage = -600 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -217, maxDamage = -420, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -258, maxDamage = -300 },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -117, maxDamage = -220, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 	-- curse
-	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 50, minDamage = -200, maxDamage = -400, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
+	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 50, minDamage = -100, maxDamage = -200, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
 }
 
 monster.defenses = {
@@ -135,4 +134,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

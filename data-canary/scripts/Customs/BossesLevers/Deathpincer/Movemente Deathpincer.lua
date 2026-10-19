@@ -1,10 +1,10 @@
 -- Restrinccion de acceso
 
 local config = {
-    teleportentrada = 9001,
-    teleportacceso = 9002,
+    teleportentrada = 9011,
+    teleportacceso = 9012,
 
-    storage = 46001,
+    storage = 46003,
     storageValue = 1
 }
 -- Darle el acceso al player
@@ -42,8 +42,8 @@ function moveEvent.onStepIn(creature, item, position, fromPosition)
     if creature:getStorageValue(config.storage) < config.storageValue then
 		creature:setStorageValue(config.storage, config.storageValue)
 		creature:sendTextMessage(
-			MESSAGE_LOOK,
-			"You have unlocked access to the deathpincer hideout."
+			MESSAGE_EVENT_ADVANCE,
+			"You have unlocked access to the dabura hideout."
 		)
 		return true
 	end

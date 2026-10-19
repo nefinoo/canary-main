@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Naberious"
 monster.description = "naberious"
-monster.experience = 30000000000
+monster.experience = 30000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 57,
@@ -105,15 +105,14 @@ monster.loot = {
 	{name = "warlord sword", chance = 5000},
 	{id = 6529, chance = 5000},
 	{id = 3673, chance = 5000},
-	{name = "deadly star", chance = 5000},
-	{name = "deadly blade", chance = 5000},
+	{name = "assassin star", chance = 5000},
+	{name = "justice seeker", chance = 5000},
 	{id = 7426, chance = 5000},
 	{name = "experience scroll", chance = 10000},
 	{name = "deadly wand", chance = 5000}
 }
 
 mType:register(monster)
-
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "spectre"
 monster.description = "a spectre"
-monster.experience = 7250000000
+monster.experience = 8250000
 monster.outfit = {
 	lookType = 235,
 	lookHead = 20,
@@ -98,23 +98,44 @@ monster.loot = {
 	{name = "demonic essence", chance = 2857},
 	{name = "soul orb", chance = 1429},
 	{name = "demonbone amulet", chance = 909},
-	{name = "platinum coin", chance = 100000, maxCount = 30},
-	{name = "platinum coin", chance = 100000, maxCount = 35},
-	{name = "platinum coin", chance = 35000, maxCount = 40},
-	{name = "experience scroll", chance = 2500, maxCount = 4},
+	
+	{name = "platinum coin", chance = 100000, maxCount = 75},
+	{name = "platinum coin", chance = 100000, maxCount = 100},
+	{name = "crystal coin", chance = 50000, maxCount = 2},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 350},
+	{id = 895, chance = 350}, 
+	{id = 7390, chance = 350}, 
+	{id = 7415, chance = 350},
+	{id = 3303, chance = 350},
+	-- weapons lvl 500	
+	{id = 7366, chance = 450},
+	{id = 7426, chance = 450}, 
+	{id = 7420, chance = 450}, 
+	{id = 3296, chance = 450},
+	{id = 7437, chance = 450},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 750},
+	{ id = 3319, chance = 750 }, 
+	{ id = 3309, chance = 750 }, 
+	{id = 3341, chance = 750},
+	{name = "throwing star", chance = 750},
+	
+	--demon green set
 	{id = 37607, chance = 150},
 	{id = 37608, chance = 150},
 	{id = 37609, chance = 150},
-	{id = 37610, chance = 150},	
-	{name = "demon helmet", chance = 800},
-	{name = "demon legs", chance = 800},
-	{name = "demon shield", chance = 800},
-	{id = 6529, chance = 800}, -- soft boots
-	{id = 50854, chance = 15},	
+	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
+	{name = "demon helmet", chance = 1000},
+	{name = "demon legs", chance = 1000},
+	{name = "demon shield", chance = 1000},
+	{id = 6529, chance = 1000}, -- soft boots
 }
 
 mType:register(monster)
-
 
 
 

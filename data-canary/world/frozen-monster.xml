@@ -183,7 +183,6 @@
 		<monster name="Pirate Scavenger" x="-6" y="13" z="2" spawntime="60" />
 		<monster name="Pirate Meddler" x="7" y="16" z="2" spawntime="60" />
 		<monster name="Pirate Ravager" x="5" y="18" z="2" spawntime="60" />
-		<monster name="Lost Pirate" x="-8" y="20" z="2" spawntime="30" />
 		<monster name="Pirate Scavenger" x="7" y="20" z="2" spawntime="60" />
 	</monster>
 	<monster centerx="144" centery="352" centerz="3" radius="5">
@@ -340,13 +339,13 @@
 		<monster name="Draken Warmaster" x="-2" y="1" z="4" spawntime="60" />
 	</monster>
 	<monster centerx="471" centery="437" centerz="4" radius="2">
-		<monster name="salazaari windwalker" x="-2" y="-2" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="0" y="-2" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="2" y="-2" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="-2" y="-1" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="-2" y="1" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="0" y="1" z="4" spawntime="30" />
-		<monster name="salazaari windwalker" x="1" y="1" z="4" spawntime="30" />
+		<monster name="salazaari windwalker" x="-2" y="-2" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="0" y="-2" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="2" y="-2" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="-2" y="-1" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="-2" y="1" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="0" y="1" z="4" spawntime="10" />
+		<monster name="salazaari windwalker" x="1" y="1" z="4" spawntime="10" />
 	</monster>
 	<monster centerx="336" centery="477" centerz="4" radius="8">
 		<monster name="valick" x="-3" y="-2" z="4" spawntime="60" />
@@ -895,12 +894,12 @@
 		<monster name="Kongra" x="-1" y="0" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="471" centery="437" centerz="5" radius="2">
-		<monster name="salazaari ranger" x="-2" y="-2" z="5" spawntime="30" />
-		<monster name="salazaari ranger" x="0" y="-2" z="5" spawntime="30" />
-		<monster name="salazaari ranger" x="2" y="-2" z="5" spawntime="30" />
-		<monster name="salazaari ranger" x="-2" y="0" z="5" spawntime="30" />
-		<monster name="salazaari ranger" x="0" y="0" z="5" spawntime="30" />
-		<monster name="salazaari ranger" x="2" y="0" z="5" spawntime="30" />
+		<monster name="salazaari ranger" x="-2" y="-2" z="5" spawntime="10" />
+		<monster name="salazaari ranger" x="0" y="-2" z="5" spawntime="10" />
+		<monster name="salazaari ranger" x="2" y="-2" z="5" spawntime="10" />
+		<monster name="salazaari ranger" x="-2" y="0" z="5" spawntime="10" />
+		<monster name="salazaari ranger" x="0" y="0" z="5" spawntime="10" />
+		<monster name="salazaari ranger" x="2" y="0" z="5" spawntime="10" />
 	</monster>
 	<monster centerx="147" centery="462" centerz="5" radius="3">
 		<monster name="Sibang" x="-2" y="0" z="5" spawntime="60" />
@@ -908,20 +907,21 @@
 		<monster name="Kongra" x="0" y="1" z="5" spawntime="60" />
 	</monster>
 	<monster centerx="340" centery="479" centerz="5" radius="5">
+		<monster name="Necropharus" x="0" y="-4" z="5" spawntime="30" />
 		<monster name="undead mage" x="-4" y="-2" z="5" spawntime="60" />
-		<monster name="undead mage" x="4" y="-2" z="5" spawntime="30" />
+		<monster name="undead mage" x="4" y="-2" z="5" spawntime="10" />
 		<monster name="undead mage" x="-4" y="-1" z="5" spawntime="60" />
 		<monster name="valick" x="0" y="-1" z="5" spawntime="30" />
-		<monster name="undead mage" x="4" y="-1" z="5" spawntime="30" />
+		<monster name="undead mage" x="4" y="-1" z="5" spawntime="10" />
 		<monster name="undead mage" x="-4" y="0" z="5" spawntime="60" />
 		<monster name="undead mage" x="4" y="0" z="5" spawntime="60" />
 		<monster name="undead mage" x="-4" y="1" z="5" spawntime="60" />
-		<monster name="valick" x="-1" y="1" z="5" spawntime="30" />
+		<monster name="valick" x="-1" y="1" z="5" spawntime="10" />
 		<monster name="valick" x="0" y="1" z="5" spawntime="256" />
-		<monster name="valick" x="1" y="1" z="5" spawntime="30" />
-		<monster name="undead mage" x="4" y="1" z="5" spawntime="30" />
+		<monster name="valick" x="1" y="1" z="5" spawntime="10" />
+		<monster name="undead mage" x="4" y="1" z="5" spawntime="10" />
 		<monster name="undead mage" x="-4" y="2" z="5" spawntime="60" />
-		<monster name="undead mage" x="4" y="2" z="5" spawntime="30" />
+		<monster name="undead mage" x="4" y="2" z="5" spawntime="10" />
 	</monster>
 	<monster centerx="415" centery="572" centerz="5" radius="2">
 		<monster name="Lizard Legionnaire" x="1" y="1" z="5" spawntime="60" />
@@ -1588,9 +1588,9 @@
 		<monster name="dementor" x="0" y="1" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="499" centery="425" centerz="6" radius="5">
-		<monster name="salazaari windwalker" x="0" y="-2" z="6" spawntime="30" />
-		<monster name="salazaari windwalker" x="-5" y="2" z="6" spawntime="30" />
-		<monster name="salazaari windwalker" x="5" y="2" z="6" spawntime="30" />
+		<monster name="salazaari windwalker" x="0" y="-2" z="6" spawntime="20" />
+		<monster name="salazaari windwalker" x="-5" y="2" z="6" spawntime="20" />
+		<monster name="salazaari windwalker" x="5" y="2" z="6" spawntime="20" />
 	</monster>
 	<monster centerx="167" centery="433" centerz="6" radius="6">
 		<monster name="Kongra" x="-2" y="-4" z="6" spawntime="60" />
@@ -1604,12 +1604,12 @@
 		<monster name="dementor" x="1" y="1" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="471" centery="437" centerz="6" radius="2">
-		<monster name="salazaari defender" x="-2" y="-2" z="6" spawntime="30" />
-		<monster name="salazaari defender" x="0" y="-2" z="6" spawntime="30" />
-		<monster name="salazaari defender" x="2" y="-2" z="6" spawntime="30" />
-		<monster name="salazaari defender" x="-2" y="1" z="6" spawntime="30" />
-		<monster name="salazaari defender" x="0" y="1" z="6" spawntime="30" />
-		<monster name="salazaari defender" x="2" y="1" z="6" spawntime="30" />
+		<monster name="salazaari defender" x="-2" y="-2" z="6" spawntime="10" />
+		<monster name="salazaari defender" x="0" y="-2" z="6" spawntime="10" />
+		<monster name="salazaari defender" x="2" y="-2" z="6" spawntime="10" />
+		<monster name="salazaari defender" x="-2" y="1" z="6" spawntime="10" />
+		<monster name="salazaari defender" x="0" y="1" z="6" spawntime="10" />
+		<monster name="salazaari defender" x="2" y="1" z="6" spawntime="10" />
 	</monster>
 	<monster centerx="150" centery="441" centerz="6" radius="2">
 		<monster name="Sibang" x="-2" y="-1" z="6" spawntime="60" />
@@ -1626,8 +1626,8 @@
 		<monster name="dementor" x="0" y="1" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="497" centery="447" centerz="6" radius="2">
-		<monster name="salazaari windwalker" x="1" y="-1" z="6" spawntime="30" />
-		<monster name="salazaari windwalker" x="0" y="2" z="6" spawntime="30" />
+		<monster name="salazaari windwalker" x="1" y="-1" z="6" spawntime="20" />
+		<monster name="salazaari windwalker" x="0" y="2" z="6" spawntime="20" />
 	</monster>
 	<monster centerx="169" centery="450" centerz="6" radius="3">
 		<monster name="Kongra" x="0" y="-1" z="6" spawntime="60" />
@@ -1674,13 +1674,13 @@
 	</monster>
 	<monster centerx="334" centery="477" centerz="6" radius="2">
 		<monster name="valick" x="0" y="-2" z="6" spawntime="30" />
-		<monster name="undead mage" x="1" y="-2" z="6" spawntime="30" />
+		<monster name="undead mage" x="1" y="-2" z="6" spawntime="10" />
 		<monster name="valick" x="-1" y="-1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="0" y="2" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="344" centery="477" centerz="6" radius="5">
 		<monster name="hell soldier" x="-2" y="-2" z="6" spawntime="30" />
-		<monster name="valick" x="-2" y="-1" z="6" spawntime="30" />
+		<monster name="valick" x="-2" y="-1" z="6" spawntime="10" />
 		<monster name="hell soldier" x="-1" y="0" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="5" z="6" spawntime="30" />
 	</monster>
@@ -1690,13 +1690,13 @@
 		<monster name="salazaari ranger" x="7" y="-2" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="342" centery="484" centerz="6" radius="5">
-		<monster name="valick" x="-1" y="0" z="6" spawntime="30" />
+		<monster name="valick" x="-1" y="0" z="6" spawntime="10" />
 		<monster name="undead mage" x="-4" y="1" z="6" spawntime="30" />
 		<monster name="hell soldier" x="1" y="1" z="6" spawntime="30" />
 		<monster name="undead mage" x="-3" y="2" z="6" spawntime="30" />
 		<monster name="undead mage" x="-4" y="3" z="6" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="3" z="6" spawntime="30" />
-		<monster name="valick" x="-1" y="4" z="6" spawntime="30" />
+		<monster name="valick" x="-1" y="4" z="6" spawntime="10" />
 	</monster>
 	<monster centerx="333" centery="486" centerz="6" radius="1">
 		<monster name="hell soldier" x="1" y="-1" z="6" spawntime="60" />
@@ -1704,7 +1704,7 @@
 	</monster>
 	<monster centerx="349" centery="487" centerz="6" radius="2">
 		<monster name="deathwalker" x="-1" y="-1" z="6" spawntime="30" />
-		<monster name="valick" x="1" y="0" z="6" spawntime="30" />
+		<monster name="valick" x="1" y="0" z="6" spawntime="10" />
 		<monster name="deathwalker" x="0" y="2" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="420" centery="570" centerz="6" radius="4">
@@ -1758,12 +1758,6 @@
 	</monster>
 	<monster centerx="413" centery="633" centerz="6" radius="2">
 		<monster name="Dragon" x="-1" y="1" z="6" spawntime="30" />
-	</monster>
-	<monster centerx="488" centery="635" centerz="6" radius="15">
-		<monster name="Bug" x="2" y="-8" z="6" spawntime="60" />
-		<monster name="Bug" x="-10" y="0" z="6" spawntime="60" />
-		<monster name="Bug" x="1" y="0" z="6" spawntime="60" />
-		<monster name="Bug" x="13" y="0" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="899" centery="637" centerz="6" radius="5">
 		<monster name="Training Monk" x="1" y="0" z="6" spawntime="60" />
@@ -1922,7 +1916,6 @@
 	</monster>
 	<monster centerx="384" centery="755" centerz="6" radius="8">
 		<monster name="Wolf" x="0" y="-6" z="6" spawntime="60" />
-		<monster name="Werewolf" x="0" y="0" z="6" spawntime="60" direction="2" />
 		<monster name="Wolf" x="-5" y="2" z="6" spawntime="60" />
 		<monster name="Wolf" x="3" y="4" z="6" spawntime="60" />
 	</monster>
@@ -1990,6 +1983,8 @@
 	</monster>
 	<monster centerx="475" centery="882" centerz="6" radius="3">
 		<monster name="Black Sheep" x="-1" y="-1" z="6" spawntime="60" />
+		<monster name="Black Sheep" x="-1" y="1" z="6" spawntime="60" />
+		<monster name="Black Sheep" x="1" y="1" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="133" centery="895" centerz="6" radius="8">
 		<monster name="Enraged Frostbeast" x="-3" y="-5" z="6" spawntime="30" />
@@ -2510,60 +2505,60 @@
 		<monster name="Satanic Minion" x="3" y="1" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="71" centery="31" centerz="7" radius="5">
-		<monster name="valick" x="0" y="-4" z="7" spawntime="60" />
-		<monster name="Mummy" x="-3" y="-3" z="7" spawntime="60" />
-		<monster name="Mummy" x="3" y="-3" z="7" spawntime="60" />
-		<monster name="deathwalker" x="-5" y="0" z="7" spawntime="60" />
-		<monster name="deathwalker" x="5" y="0" z="7" spawntime="60" />
-		<monster name="valick" x="-3" y="3" z="7" spawntime="60" />
-		<monster name="valick" x="3" y="3" z="7" spawntime="60" />
-		<monster name="valick" x="0" y="5" z="7" spawntime="60" />
+		<monster name="Orshabaal" x="0" y="-4" z="7" spawntime="20" />
+		<monster name="Orshabaal" x="-3" y="-3" z="7" spawntime="20" />
+		<monster name="Orshabaal" x="3" y="-3" z="7" spawntime="20" />
+		<monster name="Orshabaal" x="-5" y="0" z="7" spawntime="20" />
+		<monster name="Orshabaal" x="5" y="0" z="7" spawntime="20" />
+		<monster name="frozenhell guard" x="-3" y="3" z="7" spawntime="30" />
+		<monster name="frozenhell guard" x="3" y="3" z="7" spawntime="30" />
+		<monster name="Orshabaal" x="0" y="5" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="36" centery="45" centerz="7" radius="24">
-		<monster name="Demon" x="-8" y="-24" z="7" spawntime="30" />
-		<monster name="Demon" x="4" y="-24" z="7" spawntime="30" />
-		<monster name="Demon" x="13" y="-23" z="7" spawntime="30" />
-		<monster name="Demon" x="-14" y="-22" z="7" spawntime="30" />
-		<monster name="Demon" x="-4" y="-21" z="7" spawntime="30" />
-		<monster name="Demon" x="2" y="-21" z="7" spawntime="30" />
-		<monster name="Demon" x="9" y="-19" z="7" spawntime="30" />
-		<monster name="Demon" x="-6" y="-18" z="7" spawntime="30" />
-		<monster name="Demon" x="-12" y="-17" z="7" spawntime="30" />
-		<monster name="Demon" x="-3" y="-16" z="7" spawntime="30" />
-		<monster name="Demon" x="2" y="-16" z="7" spawntime="30" />
-		<monster name="Demon" x="-8" y="-15" z="7" spawntime="30" />
-		<monster name="Demon" x="6" y="-13" z="7" spawntime="30" />
-		<monster name="Demon" x="-5" y="-11" z="7" spawntime="30" />
-		<monster name="Demon" x="6" y="-11" z="7" spawntime="30" />
-		<monster name="Demon" x="12" y="-9" z="7" spawntime="30" />
-		<monster name="Demon" x="-7" y="-8" z="7" spawntime="30" />
-		<monster name="Demon" x="3" y="-8" z="7" spawntime="30" />
-		<monster name="Demon" x="-14" y="-7" z="7" spawntime="30" />
-		<monster name="Demon" x="6" y="-6" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-1" y="-4" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-11" y="-3" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="4" y="-1" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="16" y="-1" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="10" y="0" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-14" y="1" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="7" y="3" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-6" y="4" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="0" y="4" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-11" y="9" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="9" y="9" z="7" spawntime="30" />
-		<monster name="Juggernaut" x="-4" y="10" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="13" y="13" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-8" y="14" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="1" y="14" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-11" y="15" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="8" y="15" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="2" y="17" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="10" y="17" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-14" y="19" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-4" y="20" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="11" y="20" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="-10" y="22" z="7" spawntime="30" />
-		<monster name="Dragon Lord" x="4" y="22" z="7" spawntime="30" />
+		<monster name="Demon" x="-8" y="-24" z="7" spawntime="20" />
+		<monster name="Demon" x="4" y="-24" z="7" spawntime="20" />
+		<monster name="Demon" x="13" y="-23" z="7" spawntime="20" />
+		<monster name="Demon" x="-14" y="-22" z="7" spawntime="20" />
+		<monster name="Demon" x="-4" y="-21" z="7" spawntime="20" />
+		<monster name="Demon" x="2" y="-21" z="7" spawntime="20" />
+		<monster name="Demon" x="9" y="-19" z="7" spawntime="20" />
+		<monster name="Demon" x="-6" y="-18" z="7" spawntime="20" />
+		<monster name="Demon" x="-12" y="-17" z="7" spawntime="20" />
+		<monster name="Demon" x="-3" y="-16" z="7" spawntime="20" />
+		<monster name="Demon" x="2" y="-16" z="7" spawntime="20" />
+		<monster name="Demon" x="-8" y="-15" z="7" spawntime="20" />
+		<monster name="Demon" x="6" y="-13" z="7" spawntime="20" />
+		<monster name="Demon" x="-5" y="-11" z="7" spawntime="20" />
+		<monster name="Demon" x="6" y="-11" z="7" spawntime="20" />
+		<monster name="Demon" x="12" y="-9" z="7" spawntime="20" />
+		<monster name="Demon" x="-7" y="-8" z="7" spawntime="20" />
+		<monster name="Demon" x="3" y="-8" z="7" spawntime="20" />
+		<monster name="Demon" x="-14" y="-7" z="7" spawntime="20" />
+		<monster name="Demon" x="6" y="-6" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-1" y="-4" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-11" y="-3" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="4" y="-1" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="16" y="-1" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="10" y="0" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-14" y="1" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="7" y="3" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-6" y="4" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="0" y="4" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-11" y="9" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="9" y="9" z="7" spawntime="20" />
+		<monster name="Juggernaut" x="-4" y="10" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="13" y="13" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-8" y="14" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="1" y="14" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-11" y="15" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="8" y="15" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="2" y="17" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="10" y="17" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-14" y="19" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-4" y="20" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="11" y="20" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="-10" y="22" z="7" spawntime="20" />
+		<monster name="Dragon Lord" x="4" y="22" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="1713" centery="70" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="-1" z="7" spawntime="60" />
@@ -3535,41 +3530,41 @@
 		<monster name="dementor" x="12" y="10" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="489" centery="424" centerz="7" radius="30">
-		<monster name="salazaari ranger" x="-18" y="-11" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-18" y="-9" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-28" y="-6" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="2" y="-5" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-3" y="-4" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-28" y="-3" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-2" y="-3" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-16" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-16" y="0" z="7" spawntime="30" />
-		<monster name="Orshabaal" x="12" y="0" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-3" y="1" z="7" spawntime="30" />
-		<monster name="Orshabaal" x="6" y="1" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-1" y="7" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-19" y="8" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-21" y="9" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="15" y="9" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="2" y="10" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="15" y="11" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-14" y="13" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="7" y="14" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-20" y="15" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="1" y="18" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-1" y="19" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-24" y="20" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-27" y="22" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="-18" y="-11" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-18" y="-9" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-28" y="-6" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="2" y="-5" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-3" y="-4" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-28" y="-3" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="-2" y="-3" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-16" y="-2" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-16" y="0" z="7" spawntime="10" />
+		<monster name="Orshabaal" x="12" y="0" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-3" y="1" z="7" spawntime="20" />
+		<monster name="Orshabaal" x="6" y="1" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-1" y="7" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-19" y="8" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-21" y="9" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="15" y="9" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="2" y="10" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="15" y="11" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-14" y="13" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="7" y="14" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-20" y="15" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="1" y="18" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-1" y="19" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-24" y="20" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-27" y="22" z="7" spawntime="10" />
 		<monster name="salazaari ranger" x="7" y="22" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="9" y="22" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="25" y="22" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-16" y="23" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="25" y="22" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-16" y="23" z="7" spawntime="10" />
 		<monster name="salazaari ranger" x="9" y="23" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-13" y="25" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-29" y="27" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-24" y="27" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-23" y="28" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-23" y="29" z="7" spawntime="30" />
+		<monster name="salazaari windwalker" x="-13" y="25" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-29" y="27" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="-24" y="27" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-23" y="28" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="-23" y="29" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="167" centery="433" centerz="7" radius="5">
 		<monster name="Kongra" x="-4" y="-4" z="7" spawntime="60" />
@@ -3622,36 +3617,36 @@
 		<monster name="Sibang" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="441" centery="438" centerz="7" radius="18">
-		<monster name="salazaari ranger" x="5" y="-15" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="1" y="-14" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-3" y="-11" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="6" y="-10" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="10" y="-9" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-6" y="-7" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="14" y="-6" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-9" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-5" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-1" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="10" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-6" y="1" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="9" y="2" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-9" y="3" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-7" y="3" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-5" y="3" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-3" y="3" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-1" y="3" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="10" y="4" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="0" y="6" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="6" y="6" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-9" y="7" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="10" y="8" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-5" y="9" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="3" y="9" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="5" y="9" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="0" y="10" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="0" y="13" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="6" y="13" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="15" y="17" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="5" y="-15" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="1" y="-14" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-3" y="-11" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="6" y="-10" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="10" y="-9" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="-6" y="-7" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="14" y="-6" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-9" y="-2" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-5" y="-2" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-1" y="-2" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="10" y="-2" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-6" y="1" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="9" y="2" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-9" y="3" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-7" y="3" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-5" y="3" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-3" y="3" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="-1" y="3" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="10" y="4" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="0" y="6" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="6" y="6" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="-9" y="7" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="10" y="8" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="-5" y="9" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="3" y="9" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="5" y="9" z="7" spawntime="10" />
+		<monster name="salazaari defender" x="0" y="10" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="0" y="13" z="7" spawntime="10" />
+		<monster name="salazaari ranger" x="6" y="13" z="7" spawntime="10" />
+		<monster name="salazaari windwalker" x="15" y="17" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="150" centery="440" centerz="7" radius="3">
 		<monster name="Kongra" x="1" y="1" z="7" spawntime="60" />
@@ -3814,113 +3809,113 @@
 		<monster name="Sibang" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="342" centery="478" centerz="7" radius="2">
-		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="30" />
-		<monster name="valick" x="1" y="-1" z="7" spawntime="30" />
-		<monster name="undead mage" x="1" y="0" z="7" spawntime="30" />
+		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="10" />
+		<monster name="valick" x="1" y="-1" z="7" spawntime="10" />
+		<monster name="undead mage" x="1" y="0" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="350" centery="478" centerz="7" radius="5">
-		<monster name="valick" x="-1" y="1" z="7" spawntime="30" />
-		<monster name="valick" x="1" y="1" z="7" spawntime="30" />
-		<monster name="undead mage" x="1" y="2" z="7" spawntime="30" />
+		<monster name="valick" x="-1" y="1" z="7" spawntime="10" />
+		<monster name="valick" x="1" y="1" z="7" spawntime="10" />
+		<monster name="undead mage" x="1" y="2" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="157" centery="479" centerz="7" radius="1">
 		<monster name="Kongra" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="550" centery="483" centerz="7" radius="30">
-		<monster name="salazaari ranger" x="-20" y="-27" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-19" y="-25" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-25" y="-8" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-24" y="-6" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-24" y="0" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-21" y="0" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-22" y="1" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-26" y="14" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-21" y="14" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-27" y="20" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-20" y="21" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-27" y="27" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-21" y="28" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="-20" y="-27" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-19" y="-25" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-25" y="-8" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-24" y="-6" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-24" y="0" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-21" y="0" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-22" y="1" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-26" y="14" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-21" y="14" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-27" y="20" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-20" y="21" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-27" y="27" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-21" y="28" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="334" centery="484" centerz="7" radius="2">
-		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="30" />
+		<monster name="undead mage" x="-1" y="-1" z="7" spawntime="10" />
 		<monster name="valick" x="-2" y="0" z="7" spawntime="30" />
-		<monster name="valick" x="1" y="0" z="7" spawntime="30" />
+		<monster name="valick" x="1" y="0" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="342" centery="485" centerz="7" radius="2">
 		<monster name="hell soldier" x="1" y="-1" z="7" spawntime="30" />
-		<monster name="valick" x="1" y="0" z="7" spawntime="30" />
-		<monster name="undead mage" x="0" y="1" z="7" spawntime="30" />
+		<monster name="valick" x="1" y="0" z="7" spawntime="10" />
+		<monster name="undead mage" x="0" y="1" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="489" centery="485" centerz="7" radius="30">
-		<monster name="salazaari ranger" x="-5" y="-30" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="0" y="-29" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="3" y="-27" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="10" y="-27" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="30" y="-24" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="26" y="-23" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-14" y="-21" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="4" y="-20" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="15" y="-20" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-13" y="-19" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-6" y="-17" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="15" y="-13" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-11" y="-12" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-9" y="-11" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="13" y="-11" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-28" y="-10" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="12" y="-8" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="17" y="-8" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="1" y="-6" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="6" y="-5" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="6" y="-4" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-25" y="-3" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="12" y="-3" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-21" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-24" y="0" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="28" y="0" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-16" y="2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="18" y="2" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="18" y="4" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-12" y="6" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-7" y="6" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-14" y="11" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-9" y="11" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="30" y="12" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-14" y="18" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-8" y="19" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-24" y="20" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="1" y="20" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="2" y="20" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="21" y="20" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-24" y="21" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="20" y="21" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-5" y="24" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-22" y="25" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="30" y="25" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-2" y="26" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="11" y="26" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="12" y="26" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-24" y="27" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="-5" y="-30" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="0" y="-29" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="3" y="-27" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="10" y="-27" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="30" y="-24" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="26" y="-23" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-14" y="-21" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="4" y="-20" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="15" y="-20" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-13" y="-19" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-6" y="-17" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="15" y="-13" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-11" y="-12" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-9" y="-11" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="13" y="-11" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-28" y="-10" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="12" y="-8" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="17" y="-8" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="1" y="-6" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="6" y="-5" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="6" y="-4" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-25" y="-3" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="12" y="-3" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-21" y="-2" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-24" y="0" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="28" y="0" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-16" y="2" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="18" y="2" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="18" y="4" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-12" y="6" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-7" y="6" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-14" y="11" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-9" y="11" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="30" y="12" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-14" y="18" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-8" y="19" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-24" y="20" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="1" y="20" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="2" y="20" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="21" y="20" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-24" y="21" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="20" y="21" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-5" y="24" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-22" y="25" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="30" y="25" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-2" y="26" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="11" y="26" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="12" y="26" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-24" y="27" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="350" centery="487" centerz="7" radius="5">
-		<monster name="undead mage" x="1" y="-1" z="7" spawntime="30" />
-		<monster name="valick" x="0" y="1" z="7" spawntime="30" />
+		<monster name="undead mage" x="1" y="-1" z="7" spawntime="10" />
+		<monster name="valick" x="0" y="1" z="7" spawntime="10" />
 		<monster name="hell soldier" x="2" y="4" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-3" y="5" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="359" centery="487" centerz="7" radius="5">
-		<monster name="valick" x="-3" y="-1" z="7" spawntime="30" />
-		<monster name="undead mage" x="-2" y="-1" z="7" spawntime="30" />
+		<monster name="valick" x="-3" y="-1" z="7" spawntime="10" />
+		<monster name="undead mage" x="-2" y="-1" z="7" spawntime="10" />
 		<monster name="hell soldier" x="4" y="-1" z="7" spawntime="30" />
-		<monster name="valick" x="5" y="0" z="7" spawntime="30" />
-		<monster name="undead mage" x="5" y="1" z="7" spawntime="30" />
+		<monster name="valick" x="5" y="0" z="7" spawntime="10" />
+		<monster name="undead mage" x="5" y="1" z="7" spawntime="10" />
 		<monster name="hell soldier" x="-3" y="2" z="7" spawntime="30" />
 		<monster name="Fire Elemental" x="1" y="4" z="7" spawntime="30" />
 		<monster name="Fire Elemental" x="2" y="4" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="5" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="356" centery="493" centerz="7" radius="5">
-		<monster name="undead mage" x="-5" y="0" z="7" spawntime="30" />
+		<monster name="undead mage" x="-5" y="0" z="7" spawntime="10" />
 		<monster name="Fire Elemental" x="1" y="0" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-5" y="1" z="7" spawntime="30" />
 		<monster name="hell soldier" x="0" y="1" z="7" spawntime="30" />
@@ -3935,7 +3930,7 @@
 		<monster name="hell soldier" x="-4" y="-3" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-1" y="-3" z="7" spawntime="30" />
 		<monster name="hell soldier" x="2" y="-3" z="7" spawntime="30" />
-		<monster name="undead mage" x="1" y="-2" z="7" spawntime="30" />
+		<monster name="undead mage" x="1" y="-2" z="7" spawntime="10" />
 		<monster name="Fire Elemental" x="1" y="0" z="7" spawntime="30" />
 		<monster name="hell soldier" x="-2" y="3" z="7" spawntime="30" />
 		<monster name="hell soldier" x="0" y="3" z="7" spawntime="30" />
@@ -3945,17 +3940,17 @@
 		<monster name="hell soldier" x="0" y="-1" z="7" spawntime="30" />
 		<monster name="Fire Elemental" x="-1" y="0" z="7" spawntime="30" />
 		<monster name="hell soldier" x="0" y="1" z="7" spawntime="30" />
-		<monster name="undead mage" x="1" y="1" z="7" spawntime="30" />
+		<monster name="undead mage" x="1" y="1" z="7" spawntime="10" />
 	</monster>
 	<monster centerx="334" centery="503" centerz="7" radius="5">
 		<monster name="hell soldier" x="-1" y="-1" z="7" spawntime="30" />
 		<monster name="Fire Elemental" x="1" y="0" z="7" spawntime="30" />
-		<monster name="undead mage" x="2" y="0" z="7" spawntime="30" />
+		<monster name="undead mage" x="2" y="0" z="7" spawntime="10" />
 		<monster name="hell soldier" x="-1" y="3" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="358" centery="503" centerz="7" radius="5">
 		<monster name="hell soldier" x="-1" y="-3" z="7" spawntime="30" />
-		<monster name="undead mage" x="2" y="-1" z="7" spawntime="30" />
+		<monster name="undead mage" x="2" y="-1" z="7" spawntime="10" />
 		<monster name="Fire Elemental" x="1" y="0" z="7" spawntime="30" />
 		<monster name="hell soldier" x="3" y="0" z="7" spawntime="30" />
 		<monster name="hell soldier" x="1" y="3" z="7" spawntime="30" />
@@ -3997,8 +3992,8 @@
 		<monster name="Infested Human" x="24" y="27" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="428" centery="515" centerz="7" radius="30">
-		<monster name="salazaari ranger" x="27" y="-27" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="29" y="-26" z="7" spawntime="30" />
+		<monster name="salazaari ranger" x="27" y="-27" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="29" y="-26" z="7" spawntime="20" />
 		<monster name="venom" x="4" y="-15" z="7" spawntime="30" />
 		<monster name="venom" x="-11" y="-9" z="7" spawntime="30" />
 		<monster name="venom" x="19" y="-1" z="7" spawntime="30" />
@@ -4210,10 +4205,6 @@
 		<monster name="Training Monk" x="-1" y="-1" z="7" spawntime="60" />
 		<monster name="Training Monk" x="1" y="-1" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="492" centery="618" centerz="7" radius="5">
-		<monster name="Hunter" x="3" y="0" z="7" spawntime="60" />
-		<monster name="Hunter" x="-5" y="4" z="7" spawntime="60" />
-	</monster>
 	<monster centerx="415" centery="630" centerz="7" radius="2">
 		<monster name="Dragon" x="1" y="0" z="7" spawntime="30" />
 		<monster name="Dragon" x="-2" y="2" z="7" spawntime="30" />
@@ -4224,24 +4215,21 @@
 		<monster name="War Wolf" x="3" y="4" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="480" centery="654" centerz="7" radius="30">
-		<monster name="Hunter" x="30" y="-25" z="7" spawntime="60" />
 		<monster name="Donkey" x="28" y="-24" z="7" spawntime="60" />
-		<monster name="Hunter" x="-15" y="-19" z="7" spawntime="60" />
+		<monster name="Donkey" x="-15" y="-17" z="7" spawntime="60" />
 		<monster name="Hunter" x="-4" y="-10" z="7" spawntime="60" />
-		<monster name="Hunter" x="-30" y="-5" z="7" spawntime="60" />
 		<monster name="Hunter" x="-12" y="-3" z="7" spawntime="30" />
 		<monster name="Hunter" x="2" y="1" z="7" spawntime="30" />
 		<monster name="Donkey" x="17" y="1" z="7" spawntime="60" />
+		<monster name="Donkey" x="-30" y="4" z="7" spawntime="60" />
 		<monster name="Hunter" x="-23" y="4" z="7" spawntime="30" />
 		<monster name="Hunter" x="29" y="4" z="7" spawntime="30" />
 		<monster name="Hunter" x="24" y="6" z="7" spawntime="30" />
-		<monster name="Hunter" x="-11" y="8" z="7" spawntime="60" />
+		<monster name="Donkey" x="-11" y="8" z="7" spawntime="60" />
 		<monster name="Hunter" x="16" y="13" z="7" spawntime="30" />
 		<monster name="Hunter" x="-7" y="15" z="7" spawntime="30" />
-		<monster name="Donkey" x="11" y="18" z="7" spawntime="60" />
 		<monster name="Donkey" x="-22" y="26" z="7" spawntime="60" />
 		<monster name="Giant Spider" x="25" y="28" z="7" spawntime="60" />
-		<monster name="Hunter" x="-10" y="30" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="362" centery="670" centerz="7" radius="21">
 		<monster name="Orc Leader" x="9" y="-11" z="7" spawntime="30" />
@@ -4291,31 +4279,25 @@
 		<monster name="outlawed warrior" x="-1" y="0" z="7" spawntime="30" />
 		<monster name="outlawed warrior" x="1" y="1" z="7" spawntime="30" />
 	</monster>
-	<monster centerx="478" centery="693" centerz="7" radius="1">
-		<monster name="outlawed warrior" x="0" y="0" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="451" centery="700" centerz="7" radius="1">
-		<monster name="outlawed warrior" x="0" y="0" z="7" spawntime="60" />
-	</monster>
 	<monster centerx="428" centery="701" centerz="7" radius="15">
-		<monster name="Fish" x="-3" y="-9" z="7" spawntime="60" />
-		<monster name="Fish" x="12" y="-9" z="7" spawntime="60" />
-		<monster name="Fish" x="0" y="3" z="7" spawntime="60" />
+		<monster name="Fish" x="12" y="-10" z="7" spawntime="60" />
+		<monster name="Fish" x="-3" y="-7" z="7" spawntime="60" />
+		<monster name="Fish" x="4" y="5" z="7" spawntime="60" />
 		<monster name="Fish" x="-13" y="6" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="237" centery="706" centerz="7" radius="13">
-		<monster name="salazaari defender" x="-3" y="-12" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-2" y="-11" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="1" y="-8" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-1" y="-7" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-3" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="0" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="3" y="-2" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="0" y="4" z="7" spawntime="30" />
-		<monster name="salazaari windwalker" x="-1" y="8" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="-2" y="10" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="-2" y="11" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="1" y="12" z="7" spawntime="30" />
+		<monster name="salazaari defender" x="-3" y="-12" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-2" y="-11" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="1" y="-8" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-1" y="-7" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-3" y="-2" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="0" y="-2" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="3" y="-2" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="0" y="4" z="7" spawntime="20" />
+		<monster name="salazaari windwalker" x="-1" y="8" z="7" spawntime="20" />
+		<monster name="salazaari defender" x="-2" y="10" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="-2" y="11" z="7" spawntime="20" />
+		<monster name="salazaari ranger" x="1" y="12" z="7" spawntime="20" />
 	</monster>
 	<monster centerx="390" centery="706" centerz="7" radius="2">
 		<monster name="Minotaur" x="-1" y="1" z="7" spawntime="90" />
@@ -4453,10 +4435,9 @@
 	<monster centerx="430" centery="743" centerz="7" radius="1">
 		<monster name="Minotaur Archer" x="0" y="-1" z="7" spawntime="90" />
 	</monster>
-	<monster centerx="493" centery="745" centerz="7" radius="3">
-		<monster name="Seagull" x="3" y="-3" z="7" spawntime="60" />
-		<monster name="Seagull" x="-1" y="-1" z="7" spawntime="90" />
-		<monster name="Seagull" x="-3" y="3" z="7" spawntime="90" />
+	<monster centerx="492" centery="746" centerz="7" radius="3">
+		<monster name="Seagull" x="0" y="-2" z="7" spawntime="90" />
+		<monster name="Seagull" x="-2" y="2" z="7" spawntime="90" />
 	</monster>
 	<monster centerx="431" centery="748" centerz="7" radius="1">
 		<monster name="Minotaur" x="0" y="0" z="7" spawntime="60" />
@@ -4467,17 +4448,9 @@
 	</monster>
 	<monster centerx="576" centery="756" centerz="7" radius="15">
 		<monster name="Giant Spider" x="-8" y="-7" z="7" spawntime="60" />
-		<monster name="Hydra" x="-4" y="-7" z="7" spawntime="60" />
-		<monster name="Cyclops Drone" x="4" y="-7" z="7" spawntime="60" />
-		<monster name="Minotaur" x="8" y="-7" z="7" spawntime="60" />
-		<monster name="Dragon" x="-15" y="-3" z="7" spawntime="60" />
-		<monster name="Orc" x="15" y="-3" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="392" centery="763" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="375" centery="766" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Dragon" x="-4" y="-7" z="7" spawntime="60" />
+		<monster name="Hydra" x="4" y="-7" z="7" spawntime="60" />
+		<monster name="Orc" x="8" y="-7" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="432" centery="766" centerz="7" radius="5">
 		<monster name="Bear" x="-2" y="-1" z="7" spawntime="60" />
@@ -4503,27 +4476,15 @@
 		<monster name="deathpincer" x="-7" y="11" z="7" spawntime="60" />
 		<monster name="Deidara" x="7" y="11" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="394" centery="775" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
-	</monster>
 	<monster centerx="373" centery="777" centerz="7" radius="3">
 		<monster name="Smuggler" x="1" y="-2" z="7" spawntime="60" />
 		<monster name="Smuggler" x="-2" y="-1" z="7" spawntime="60" />
 		<monster name="Smuggler" x="-1" y="1" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="383" centery="781" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="419" centery="781" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
-	</monster>
 	<monster centerx="408" centery="783" centerz="7" radius="3">
 		<monster name="Bandit" x="-1" y="-3" z="7" spawntime="60" />
 		<monster name="Bandit" x="-3" y="-2" z="7" spawntime="60" />
 		<monster name="Bandit" x="-1" y="2" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="379" centery="785" centerz="7" radius="1">
-		<monster name="Spider" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="834" centery="801" centerz="7" radius="15">
 		<monster name="frozenhell guard" x="-2" y="-9" z="7" spawntime="30" />
@@ -4545,14 +4506,13 @@
 		<monster name="Demon" x="10" y="9" z="7" spawntime="30" />
 		<monster name="Demon" x="1" y="11" z="7" spawntime="30" />
 	</monster>
-	<monster centerx="525" centery="840" centerz="7" radius="1">
-		<monster name="Monsters" x="0" y="0" z="7" spawntime="60" />
+	<monster centerx="533" centery="842" centerz="7" radius="10">
+		<monster name="Monsters" x="-8" y="-2" z="7" spawntime="60" />
+		<monster name="Training Monks" x="-8" y="0" z="7" spawntime="60" />
+		<monster name="Training Monks" x="8" y="2" z="7" spawntime="60" />
 	</monster>
-	<monster centerx="525" centery="842" centerz="7" radius="1">
-		<monster name="Training Monks" x="0" y="0" z="7" spawntime="60" />
-	</monster>
-	<monster centerx="540" centery="844" centerz="7" radius="1">
-		<monster name="Training Monks" x="1" y="0" z="7" spawntime="60" />
+	<monster centerx="509" centery="844" centerz="7" radius="1">
+		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="581" centery="848" centerz="7" radius="5">
 		<monster name="Cyclops" x="1" y="-5" z="7" spawntime="60" />
@@ -5439,9 +5399,10 @@
 		<monster name="Pirate Hatcheteer" x="1" y="7" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="6" y="7" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="-17" y="12" z="7" spawntime="30" />
+		<monster name="Lost Pirate" x="23" y="12" z="7" spawntime="30" />
 		<monster name="Pirate Scavenger" x="-2" y="13" z="7" spawntime="30" />
+		<monster name="Lost Pirate" x="21" y="13" z="7" spawntime="30" />
 		<monster name="Captain Jackson" x="21" y="14" z="7" spawntime="30" />
-		<monster name="Lost Pirate" x="22" y="14" z="7" spawntime="30" />
 		<monster name="Pirate Scavenger" x="-9" y="15" z="7" spawntime="30" />
 		<monster name="Pirate Hatcheteer" x="-15" y="16" z="7" spawntime="30" />
 		<monster name="Pirate Ravager" x="-7" y="16" z="7" spawntime="60" />
@@ -6066,10 +6027,10 @@
 		<monster name="little puppy" x="4" y="14" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="498" centery="423" centerz="8" radius="10">
-		<monster name="valick" x="-6" y="-4" z="8" spawntime="30" />
-		<monster name="valick" x="9" y="-4" z="8" spawntime="30" />
-		<monster name="valick" x="-8" y="5" z="8" spawntime="30" />
-		<monster name="valick" x="0" y="5" z="8" spawntime="30" />
+		<monster name="valick" x="-6" y="-4" z="8" spawntime="10" />
+		<monster name="valick" x="9" y="-4" z="8" spawntime="10" />
+		<monster name="valick" x="-8" y="5" z="8" spawntime="10" />
+		<monster name="valick" x="0" y="5" z="8" spawntime="10" />
 	</monster>
 	<monster centerx="704" centery="437" centerz="8" radius="5">
 		<monster name="Ghoul" x="-1" y="-2" z="8" spawntime="30" />
@@ -6081,9 +6042,9 @@
 		<monster name="valick" x="-16" y="-2" z="8" spawntime="30" />
 		<monster name="valick" x="14" y="-2" z="8" spawntime="30" />
 		<monster name="valick" x="-9" y="9" z="8" spawntime="30" />
-		<monster name="little puppy" x="1" y="12" z="8" spawntime="30" />
-		<monster name="little puppy" x="12" y="12" z="8" spawntime="30" />
-		<monster name="little puppy" x="1" y="16" z="8" spawntime="30" />
+		<monster name="little puppy" x="1" y="12" z="8" spawntime="10" />
+		<monster name="little puppy" x="12" y="12" z="8" spawntime="10" />
+		<monster name="little puppy" x="1" y="16" z="8" spawntime="10" />
 	</monster>
 	<monster centerx="125" centery="461" centerz="8" radius="5">
 		<monster name="Sibang" x="-4" y="-4" z="8" spawntime="60" />
@@ -6161,13 +6122,13 @@
 		<monster name="Sibang" x="2" y="1" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="501" centery="477" centerz="8" radius="15">
-		<monster name="little puppy" x="6" y="-7" z="8" spawntime="30" />
-		<monster name="little puppy" x="13" y="-2" z="8" spawntime="30" />
-		<monster name="little puppy" x="9" y="5" z="8" spawntime="30" />
-		<monster name="little puppy" x="-12" y="7" z="8" spawntime="30" />
-		<monster name="little puppy" x="-4" y="9" z="8" spawntime="30" />
-		<monster name="little puppy" x="4" y="10" z="8" spawntime="30" />
-		<monster name="little puppy" x="-1" y="14" z="8" spawntime="30" />
+		<monster name="little puppy" x="6" y="-7" z="8" spawntime="10" />
+		<monster name="little puppy" x="13" y="-2" z="8" spawntime="10" />
+		<monster name="little puppy" x="9" y="5" z="8" spawntime="10" />
+		<monster name="little puppy" x="-12" y="7" z="8" spawntime="10" />
+		<monster name="little puppy" x="-4" y="9" z="8" spawntime="10" />
+		<monster name="little puppy" x="4" y="10" z="8" spawntime="10" />
+		<monster name="little puppy" x="-1" y="14" z="8" spawntime="10" />
 	</monster>
 	<monster centerx="164" centery="478" centerz="8" radius="1">
 		<monster name="Kongra" x="0" y="0" z="8" spawntime="60" />
@@ -6291,16 +6252,16 @@
 		<monster name="Kongra" x="-4" y="4" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="523" centery="518" centerz="8" radius="10">
-		<monster name="salazaari ranger" x="3" y="-6" z="8" spawntime="30" />
-		<monster name="salazaari windwalker" x="-6" y="-4" z="8" spawntime="30" />
-		<monster name="salazaari ranger" x="-4" y="-1" z="8" spawntime="30" />
-		<monster name="salazaari windwalker" x="5" y="-1" z="8" spawntime="30" />
-		<monster name="salazaari ranger" x="3" y="3" z="8" spawntime="30" />
-		<monster name="salazaari windwalker" x="-6" y="4" z="8" spawntime="30" />
-		<monster name="salazaari ranger" x="-5" y="6" z="8" spawntime="30" />
-		<monster name="salazaari ranger" x="3" y="6" z="8" spawntime="30" />
-		<monster name="salazaari windwalker" x="-5" y="7" z="8" spawntime="30" />
-		<monster name="salazaari windwalker" x="4" y="7" z="8" spawntime="30" />
+		<monster name="salazaari ranger" x="3" y="-6" z="8" spawntime="20" />
+		<monster name="salazaari windwalker" x="-6" y="-4" z="8" spawntime="20" />
+		<monster name="salazaari ranger" x="-4" y="-1" z="8" spawntime="20" />
+		<monster name="salazaari windwalker" x="5" y="-1" z="8" spawntime="20" />
+		<monster name="salazaari ranger" x="3" y="3" z="8" spawntime="20" />
+		<monster name="salazaari windwalker" x="-6" y="4" z="8" spawntime="20" />
+		<monster name="salazaari ranger" x="-5" y="6" z="8" spawntime="20" />
+		<monster name="salazaari ranger" x="3" y="6" z="8" spawntime="20" />
+		<monster name="salazaari windwalker" x="-5" y="7" z="8" spawntime="20" />
+		<monster name="salazaari windwalker" x="4" y="7" z="8" spawntime="20" />
 	</monster>
 	<monster centerx="443" centery="536" centerz="8" radius="19">
 		<monster name="venom" x="-12" y="-13" z="8" spawntime="30" />
@@ -6496,20 +6457,20 @@
 		<monster name="Dragon" x="0" y="1" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="483" centery="621" centerz="8" radius="15">
-		<monster name="Scarab" x="5" y="-10" z="8" spawntime="30" />
-		<monster name="Scarab" x="-4" y="-8" z="8" spawntime="30" />
-		<monster name="Scarab" x="10" y="-4" z="8" spawntime="30" />
-		<monster name="Scarab" x="-9" y="-2" z="8" spawntime="30" />
-		<monster name="Scarab" x="-3" y="-2" z="8" spawntime="30" />
-		<monster name="Scarab" x="7" y="-2" z="8" spawntime="30" />
-		<monster name="Scarab" x="14" y="-1" z="8" spawntime="30" />
-		<monster name="Scarab" x="-12" y="2" z="8" spawntime="30" />
-		<monster name="Scarab" x="1" y="3" z="8" spawntime="30" />
-		<monster name="Scarab" x="14" y="4" z="8" spawntime="30" />
-		<monster name="Scarab" x="-5" y="6" z="8" spawntime="30" />
-		<monster name="Scarab" x="5" y="6" z="8" spawntime="30" />
-		<monster name="Scarab" x="11" y="8" z="8" spawntime="30" />
-		<monster name="Scarab" x="8" y="10" z="8" spawntime="30" />
+		<monster name="Scarab" x="5" y="-10" z="8" spawntime="20" />
+		<monster name="Scarab" x="-4" y="-8" z="8" spawntime="20" />
+		<monster name="Scarab" x="10" y="-4" z="8" spawntime="20" />
+		<monster name="Scarab" x="-9" y="-2" z="8" spawntime="20" />
+		<monster name="Scarab" x="-3" y="-2" z="8" spawntime="20" />
+		<monster name="Scarab" x="7" y="-2" z="8" spawntime="20" />
+		<monster name="Scarab" x="14" y="-1" z="8" spawntime="20" />
+		<monster name="Scarab" x="-12" y="2" z="8" spawntime="20" />
+		<monster name="Scarab" x="1" y="3" z="8" spawntime="20" />
+		<monster name="Scarab" x="14" y="4" z="8" spawntime="20" />
+		<monster name="Scarab" x="-5" y="6" z="8" spawntime="20" />
+		<monster name="Scarab" x="5" y="6" z="8" spawntime="20" />
+		<monster name="Scarab" x="11" y="8" z="8" spawntime="20" />
+		<monster name="Scarab" x="8" y="10" z="8" spawntime="20" />
 	</monster>
 	<monster centerx="409" centery="630" centerz="8" radius="5">
 		<monster name="Dragon" x="5" y="0" z="8" spawntime="30" />
@@ -6595,10 +6556,11 @@
 		<monster name="Bonelord" x="0" y="0" z="8" spawntime="90" />
 	</monster>
 	<monster centerx="467" centery="692" centerz="8" radius="5">
-		<monster name="outlawed warrior" x="0" y="-4" z="8" spawntime="30" />
-		<monster name="outlawed warrior" x="-3" y="0" z="8" spawntime="30" />
+		<monster name="outlawed warrior" x="-2" y="-3" z="8" spawntime="30" />
+		<monster name="outlawed warrior" x="-3" y="-2" z="8" spawntime="30" />
 		<monster name="outlawed warrior" x="4" y="0" z="8" spawntime="30" />
-		<monster name="outlawed warrior" x="2" y="2" z="8" spawntime="30" />
+		<monster name="outlawed warrior" x="2" y="1" z="8" spawntime="30" />
+		<monster name="outlawed warrior" x="-3" y="3" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="269" centery="694" centerz="8" radius="3">
 		<monster name="Gazer" x="-2" y="1" z="8" spawntime="90" />
@@ -6778,18 +6740,18 @@
 		<monster name="Orc Berserker" x="0" y="0" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="872" centery="777" centerz="8" radius="30">
-		<monster name="frozenhell guard" x="4" y="-29" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="0" y="-28" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="4" y="-25" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-12" y="-23" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-22" y="-17" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-20" y="-2" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="19" y="2" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="8" y="7" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-26" y="9" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="9" y="11" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-9" y="20" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-26" y="23" z="8" spawntime="30" />
+		<monster name="frozenhell guard" x="4" y="-29" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="0" y="-28" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="4" y="-25" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-12" y="-23" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-22" y="-17" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-20" y="-2" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="19" y="2" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="8" y="7" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-26" y="9" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="9" y="11" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-9" y="20" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-26" y="23" z="8" spawntime="10" />
 	</monster>
 	<monster centerx="541" centery="783" centerz="8" radius="1">
 		<monster name="Crustacea Gigantica" x="0" y="0" z="8" spawntime="60" />
@@ -6798,16 +6760,16 @@
 		<monster name="Sea Serpent" x="0" y="0" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="811" centery="784" centerz="8" radius="30">
-		<monster name="frozenhell guard" x="-5" y="-18" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="4" y="-12" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-1" y="-8" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="12" y="3" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-16" y="12" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-12" y="17" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-21" y="19" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="-15" y="21" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="29" y="21" z="8" spawntime="30" />
-		<monster name="frozenhell guard" x="4" y="26" z="8" spawntime="30" />
+		<monster name="frozenhell guard" x="-5" y="-18" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="4" y="-12" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-1" y="-8" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="12" y="3" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-16" y="12" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-12" y="17" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-21" y="19" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="-15" y="21" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="29" y="21" z="8" spawntime="10" />
+		<monster name="frozenhell guard" x="4" y="26" z="8" spawntime="10" />
 	</monster>
 	<monster centerx="539" centery="785" centerz="8" radius="1">
 		<monster name="Ryujin" x="0" y="0" z="8" spawntime="60" />
@@ -7966,22 +7928,22 @@
 		<monster name="Hellraiser" x="-14" y="30" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="690" centery="384" centerz="9" radius="5">
-		<monster name="dementor" x="5" y="-3" z="9" spawntime="30" />
+		<monster name="dementor" x="5" y="-3" z="9" spawntime="10" />
 		<monster name="Hydra" x="3" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="0" y="2" z="9" spawntime="30" />
+		<monster name="dementor" x="0" y="2" z="9" spawntime="10" />
 		<monster name="Mummy" x="2" y="3" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="698" centery="384" centerz="9" radius="5">
-		<monster name="dementor" x="2" y="1" z="9" spawntime="30" />
+		<monster name="dementor" x="2" y="1" z="9" spawntime="10" />
 		<monster name="arch angel" x="-1" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="717" centery="384" centerz="9" radius="5">
 		<monster name="bloody mary" x="1" y="1" z="9" spawntime="30" />
-		<monster name="dementor" x="4" y="1" z="9" spawntime="30" />
+		<monster name="dementor" x="4" y="1" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="726" centery="384" centerz="9" radius="5">
 		<monster name="bloody mary" x="-3" y="1" z="9" spawntime="30" />
-		<monster name="dementor" x="-1" y="1" z="9" spawntime="30" />
+		<monster name="dementor" x="-1" y="1" z="9" spawntime="10" />
 		<monster name="bloody mary" x="1" y="1" z="9" spawntime="30" />
 		<monster name="Scorpion" x="-2" y="5" z="9" spawntime="30" />
 	</monster>
@@ -7998,12 +7960,12 @@
 	<monster centerx="723" centery="391" centerz="9" radius="5">
 		<monster name="Scorpion" x="-2" y="0" z="9" spawntime="30" />
 		<monster name="Scorpion" x="-1" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="-1" y="2" z="9" spawntime="30" />
+		<monster name="dementor" x="-1" y="2" z="9" spawntime="10" />
 		<monster name="Mummy" x="1" y="3" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="695" centery="393" centerz="9" radius="5">
 		<monster name="Mummy" x="-1" y="-3" z="9" spawntime="30" />
-		<monster name="dementor" x="1" y="-3" z="9" spawntime="30" />
+		<monster name="dementor" x="1" y="-3" z="9" spawntime="10" />
 		<monster name="Poison Spider" x="3" y="0" z="9" spawntime="30" />
 		<monster name="Mummy" x="1" y="1" z="9" spawntime="30" />
 		<monster name="Mummy" x="2" y="5" z="9" spawntime="30" />
@@ -8011,22 +7973,22 @@
 	<monster centerx="743" centery="406" centerz="9" radius="5">
 		<monster name="Scarab" x="-2" y="0" z="9" spawntime="30" />
 		<monster name="Scarab" x="4" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="-4" y="5" z="9" spawntime="30" />
+		<monster name="dementor" x="-4" y="5" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="752" centery="407" centerz="9" radius="5">
-		<monster name="dementor" x="-3" y="-2" z="9" spawntime="30" />
+		<monster name="dementor" x="-3" y="-2" z="9" spawntime="10" />
 		<monster name="dementor" x="3" y="3" z="9" spawntime="60" />
 		<monster name="dementor" x="4" y="4" z="9" spawntime="60" />
-		<monster name="dementor" x="3" y="5" z="9" spawntime="30" />
+		<monster name="dementor" x="3" y="5" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="673" centery="411" centerz="9" radius="5">
 		<monster name="Lich" x="0" y="-2" z="9" spawntime="30" />
-		<monster name="dementor" x="2" y="-2" z="9" spawntime="30" />
-		<monster name="dementor" x="-2" y="1" z="9" spawntime="30" />
+		<monster name="dementor" x="2" y="-2" z="9" spawntime="10" />
+		<monster name="dementor" x="-2" y="1" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="694" centery="411" centerz="9" radius="5">
 		<monster name="Mummy" x="2" y="-4" z="9" spawntime="30" />
-		<monster name="dementor" x="0" y="-1" z="9" spawntime="30" />
+		<monster name="dementor" x="0" y="-1" z="9" spawntime="10" />
 		<monster name="deathwalker" x="-1" y="0" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="723" centery="412" centerz="9" radius="5">
@@ -8034,7 +7996,7 @@
 		<monster name="Mummy" x="-4" y="-2" z="9" spawntime="30" />
 		<monster name="Cobra" x="0" y="-2" z="9" spawntime="30" />
 		<monster name="Mummy" x="2" y="-1" z="9" spawntime="30" />
-		<monster name="dementor" x="4" y="-1" z="9" spawntime="30" />
+		<monster name="dementor" x="4" y="-1" z="9" spawntime="10" />
 		<monster name="Mummy" x="1" y="4" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="742" centery="415" centerz="9" radius="5">
@@ -8043,11 +8005,11 @@
 	</monster>
 	<monster centerx="752" centery="415" centerz="9" radius="5">
 		<monster name="Scarab" x="-4" y="1" z="9" spawntime="30" />
-		<monster name="dementor" x="-4" y="2" z="9" spawntime="30" />
+		<monster name="dementor" x="-4" y="2" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="687" centery="425" centerz="9" radius="5">
 		<monster name="hell soldier" x="-1" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="3" y="1" z="9" spawntime="30" />
+		<monster name="dementor" x="3" y="1" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="326" centery="426" centerz="9" radius="30">
 		<monster name="deathwalker" x="-16" y="-26" z="9" spawntime="30" />
@@ -8105,20 +8067,20 @@
 		<monster name="deathwalker" x="29" y="21" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="656" centery="434" centerz="9" radius="5">
-		<monster name="dementor" x="0" y="-2" z="9" spawntime="30" />
+		<monster name="dementor" x="0" y="-2" z="9" spawntime="10" />
 		<monster name="undead mage" x="-3" y="-1" z="9" spawntime="30" />
-		<monster name="dementor" x="0" y="2" z="9" spawntime="30" />
+		<monster name="dementor" x="0" y="2" z="9" spawntime="10" />
 		<monster name="undead mage" x="-3" y="3" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="85" centery="435" centerz="9" radius="5">
 		<monster name="Hellraiser" x="2" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="725" centery="436" centerz="9" radius="5">
-		<monster name="dementor" x="-1" y="-5" z="9" spawntime="30" />
+		<monster name="dementor" x="-1" y="-5" z="9" spawntime="10" />
 		<monster name="Mummy" x="1" y="-4" z="9" spawntime="30" />
 		<monster name="Gazer" x="3" y="-2" z="9" spawntime="30" />
 		<monster name="The Evil Eye" x="-1" y="1" z="9" spawntime="30" />
-		<monster name="dementor" x="5" y="2" z="9" spawntime="30" />
+		<monster name="dementor" x="5" y="2" z="9" spawntime="10" />
 		<monster name="Gazer" x="5" y="4" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="199" centery="437" centerz="9" radius="26">
@@ -8136,10 +8098,10 @@
 	<monster centerx="692" centery="437" centerz="9" radius="50">
 		<monster name="Mummy" x="3" y="-36" z="9" spawntime="30" />
 		<monster name="Mummy" x="30" y="-36" z="9" spawntime="30" />
-		<monster name="dementor" x="31" y="-33" z="9" spawntime="30" />
+		<monster name="dementor" x="31" y="-33" z="9" spawntime="10" />
 		<monster name="Mummy" x="15" y="-27" z="9" spawntime="30" />
 		<monster name="Mummy" x="39" y="-27" z="9" spawntime="30" />
-		<monster name="dementor" x="17" y="-26" z="9" spawntime="30" />
+		<monster name="dementor" x="17" y="-26" z="9" spawntime="10" />
 		<monster name="Mummy" x="-5" y="-25" z="9" spawntime="30" />
 		<monster name="Mummy" x="20" y="-25" z="9" spawntime="30" />
 		<monster name="Mummy" x="42" y="-25" z="9" spawntime="30" />
@@ -8151,38 +8113,38 @@
 		<monster name="Mummy" x="32" y="-10" z="9" spawntime="30" />
 		<monster name="Mummy" x="30" y="-7" z="9" spawntime="30" />
 		<monster name="deathwalker" x="-10" y="-5" z="9" spawntime="30" />
-		<monster name="dementor" x="10" y="-3" z="9" spawntime="30" />
+		<monster name="dementor" x="10" y="-3" z="9" spawntime="10" />
 		<monster name="Gazer" x="27" y="-2" z="9" spawntime="30" />
 		<monster name="deathwalker" x="-15" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="-13" y="0" z="9" spawntime="30" />
-		<monster name="dementor" x="27" y="0" z="9" spawntime="30" />
+		<monster name="dementor" x="-13" y="0" z="9" spawntime="10" />
+		<monster name="dementor" x="27" y="0" z="9" spawntime="10" />
 		<monster name="deathwalker" x="-9" y="1" z="9" spawntime="30" />
-		<monster name="dementor" x="9" y="3" z="9" spawntime="30" />
+		<monster name="dementor" x="9" y="3" z="9" spawntime="10" />
 		<monster name="Gazer" x="27" y="3" z="9" spawntime="30" />
 		<monster name="undead mage" x="-39" y="4" z="9" spawntime="30" />
-		<monster name="dementor" x="-37" y="5" z="9" spawntime="30" />
-		<monster name="dementor" x="-9" y="6" z="9" spawntime="30" />
+		<monster name="dementor" x="-37" y="5" z="9" spawntime="10" />
+		<monster name="dementor" x="-9" y="6" z="9" spawntime="10" />
 		<monster name="Ghoul" x="-10" y="7" z="9" spawntime="30" />
 		<monster name="Ghoul" x="-9" y="12" z="9" spawntime="30" />
-		<monster name="dementor" x="21" y="14" z="9" spawntime="30" />
-		<monster name="dementor" x="15" y="16" z="9" spawntime="30" />
+		<monster name="dementor" x="21" y="14" z="9" spawntime="10" />
+		<monster name="dementor" x="15" y="16" z="9" spawntime="10" />
 		<monster name="deathwalker" x="-11" y="19" z="9" spawntime="30" />
 		<monster name="dementor" x="-3" y="23" z="9" spawntime="30" />
 		<monster name="dementor" x="7" y="23" z="9" spawntime="30" />
 		<monster name="undead mage" x="-11" y="24" z="9" spawntime="30" />
-		<monster name="dementor" x="22" y="26" z="9" spawntime="30" />
-		<monster name="dementor" x="43" y="26" z="9" spawntime="30" />
-		<monster name="dementor" x="38" y="27" z="9" spawntime="30" />
+		<monster name="dementor" x="22" y="26" z="9" spawntime="10" />
+		<monster name="dementor" x="43" y="26" z="9" spawntime="10" />
+		<monster name="dementor" x="38" y="27" z="9" spawntime="10" />
 		<monster name="Hydra" x="41" y="28" z="9" spawntime="30" />
 		<monster name="Hydra" x="45" y="28" z="9" spawntime="30" />
-		<monster name="dementor" x="48" y="29" z="9" spawntime="30" />
-		<monster name="dementor" x="19" y="30" z="9" spawntime="30" />
-		<monster name="dementor" x="43" y="41" z="9" spawntime="30" />
-		<monster name="dementor" x="0" y="43" z="9" spawntime="30" />
-		<monster name="dementor" x="23" y="45" z="9" spawntime="30" />
-		<monster name="dementor" x="26" y="46" z="9" spawntime="30" />
-		<monster name="dementor" x="24" y="47" z="9" spawntime="30" />
-		<monster name="dementor" x="1" y="48" z="9" spawntime="30" />
+		<monster name="dementor" x="48" y="29" z="9" spawntime="10" />
+		<monster name="dementor" x="19" y="30" z="9" spawntime="10" />
+		<monster name="dementor" x="43" y="41" z="9" spawntime="10" />
+		<monster name="dementor" x="0" y="43" z="9" spawntime="10" />
+		<monster name="dementor" x="23" y="45" z="9" spawntime="10" />
+		<monster name="dementor" x="26" y="46" z="9" spawntime="10" />
+		<monster name="dementor" x="24" y="47" z="9" spawntime="10" />
+		<monster name="dementor" x="1" y="48" z="9" spawntime="10" />
 	</monster>
 	<monster centerx="82" centery="439" centerz="9" radius="30">
 		<monster name="Hellraiser" x="-5" y="-24" z="9" spawntime="30" />
@@ -8621,11 +8583,11 @@
 		<monster name="Scarab" x="-28" y="0" z="9" spawntime="30" />
 		<monster name="Scarab" x="12" y="1" z="9" spawntime="30" />
 		<monster name="Scarab" x="-25" y="3" z="9" spawntime="30" />
-		<monster name="Scarab" x="7" y="4" z="9" spawntime="30" />
+		<monster name="Scarab" x="7" y="4" z="9" spawntime="20" />
 		<monster name="Scarab" x="16" y="6" z="9" spawntime="30" />
 		<monster name="Scarab" x="7" y="8" z="9" spawntime="30" />
-		<monster name="Scarab" x="-10" y="10" z="9" spawntime="30" />
-		<monster name="Scarab" x="-6" y="10" z="9" spawntime="30" />
+		<monster name="Scarab" x="-10" y="10" z="9" spawntime="20" />
+		<monster name="Scarab" x="-6" y="10" z="9" spawntime="20" />
 		<monster name="Scarab" x="-25" y="14" z="9" spawntime="30" />
 		<monster name="Scarab" x="20" y="14" z="9" spawntime="30" />
 		<monster name="Scarab" x="-30" y="15" z="9" spawntime="30" />
@@ -8663,9 +8625,8 @@
 		<monster name="Dragon Lord" x="-2" y="0" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="496" centery="663" centerz="9" radius="2">
-		<monster name="outlawed ranger" x="0" y="0" z="9" spawntime="60" />
 		<monster name="outlawed elite guard" x="1" y="1" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="0" y="2" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="0" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="290" centery="666" centerz="9" radius="3">
 		<monster name="Braindeath" x="-2" y="-2" z="9" spawntime="90" />
@@ -8700,45 +8661,44 @@
 		<monster name="Dragon Lord" x="0" y="2" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="461" centery="672" centerz="9" radius="30">
-		<monster name="outlawed warrior" x="19" y="-30" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="23" y="-29" z="9" spawntime="60" />
-		<monster name="outlawed elite guard" x="25" y="-28" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="19" y="-30" z="9" spawntime="30" />
+		<monster name="outlawed sorcerer" x="23" y="-29" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="0" y="-27" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="12" y="-27" z="9" spawntime="30" />
-		<monster name="outlawed warrior" x="19" y="-27" z="9" spawntime="60" />
 		<monster name="outlawed ranger" x="23" y="-26" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="18" y="-25" z="9" spawntime="30" />
 		<monster name="Hydra" x="-12" y="-20" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="5" y="-19" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="22" y="-16" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="24" y="-15" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="-25" y="-13" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="23" y="-13" z="9" spawntime="60" />
-		<monster name="outlawed warrior" x="-20" y="-12" z="9" spawntime="60" />
-		<monster name="outlawed elite guard" x="-25" y="-9" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="-25" y="-13" z="9" spawntime="30" />
+		<monster name="outlawed ranger" x="-22" y="-13" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="23" y="-13" z="9" spawntime="30" />
+		<monster name="outlawed ranger" x="-25" y="-10" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="2" y="-9" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="4" y="-9" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="17" y="-9" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="-9" y="-8" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="-23" y="-7" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="-20" y="-7" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="5" y="-7" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="17" y="-9" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-24" y="-8" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-9" y="-8" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="4" y="-7" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-20" y="-6" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="5" y="-3" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="-13" y="0" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="17" y="0" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="27" y="3" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="-16" y="7" z="9" spawntime="60" />
-		<monster name="outlawed ranger" x="21" y="7" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="-14" y="0" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="17" y="0" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="26" y="3" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="-16" y="6" z="9" spawntime="30" />
+		<monster name="outlawed elite guard" x="21" y="7" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="21" y="8" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="22" y="8" z="9" spawntime="30" />
 		<monster name="Carniphila" x="-19" y="9" z="9" spawntime="30" />
-		<monster name="outlawed elite guard" x="-16" y="9" z="9" spawntime="60" />
+		<monster name="outlawed sorcerer" x="-17" y="9" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="-7" y="15" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="2" y="15" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="-5" y="19" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="6" y="19" z="9" spawntime="30" />
 		<monster name="outlawed ranger" x="7" y="20" z="9" spawntime="30" />
 		<monster name="outlawed warrior" x="1" y="21" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="0" y="28" z="9" spawntime="60" />
+		<monster name="outlawed elite guard" x="0" y="28" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="254" centery="674" centerz="9" radius="1">
 		<monster name="Elder Bonelord" x="0" y="0" z="9" spawntime="90" />
@@ -8755,9 +8715,9 @@
 	<monster centerx="502" centery="681" centerz="9" radius="10">
 		<monster name="Gazer" x="0" y="-2" z="9" spawntime="30" />
 		<monster name="beholder" x="3" y="-2" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="-7" y="-1" z="9" spawntime="60" />
+		<monster name="outlawed sorcerer" x="-7" y="-1" z="9" spawntime="30" />
 		<monster name="Gazer" x="4" y="-1" z="9" spawntime="30" />
-		<monster name="outlawed ranger" x="-7" y="0" z="9" spawntime="60" />
+		<monster name="outlawed sorcerer" x="-7" y="0" z="9" spawntime="30" />
 		<monster name="elder beholder" x="7" y="0" z="9" spawntime="30" />
 		<monster name="Gazer" x="1" y="2" z="9" spawntime="30" />
 		<monster name="beholder" x="3" y="2" z="9" spawntime="30" />
@@ -8849,10 +8809,10 @@
 		<monster name="Giant Spider" x="-6" y="4" z="9" spawntime="30" />
 	</monster>
 	<monster centerx="184" centery="719" centerz="9" radius="12">
-		<monster name="Ghazbaran" x="1" y="-11" z="9" spawntime="30" />
-		<monster name="Ghazbaran" x="9" y="-11" z="9" spawntime="30" />
-		<monster name="Ghazbaran" x="-7" y="11" z="9" spawntime="30" />
-		<monster name="Ghazbaran" x="0" y="11" z="9" spawntime="30" />
+		<monster name="Ghazbaran" x="1" y="-11" z="9" spawntime="20" />
+		<monster name="Ghazbaran" x="9" y="-11" z="9" spawntime="20" />
+		<monster name="Ghazbaran" x="-7" y="11" z="9" spawntime="20" />
+		<monster name="Ghazbaran" x="0" y="11" z="9" spawntime="20" />
 	</monster>
 	<monster centerx="424" centery="755" centerz="9" radius="5">
 		<monster name="Dark Monk" x="-2" y="0" z="9" spawntime="60" />
@@ -8904,36 +8864,36 @@
 		<monster name="Medusa" x="0" y="-1" z="9" spawntime="60" />
 	</monster>
 	<monster centerx="854" centery="885" centerz="9" radius="40">
-		<monster name="Hellfire Fighter" x="-19" y="-31" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-19" y="-31" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="-29" y="-29" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-5" y="-29" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="9" y="-29" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-16" y="-28" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-16" y="-28" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="29" y="-27" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="2" y="-26" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="22" y="-24" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="-19" y="-23" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-6" y="-23" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="31" y="-22" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-29" y="-21" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="11" y="-21" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-17" y="-19" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-6" y="-23" z="9" spawntime="10" />
+		<monster name="Hellfire Fighter" x="31" y="-22" z="9" spawntime="10" />
+		<monster name="Hellfire Fighter" x="-29" y="-21" z="9" spawntime="10" />
+		<monster name="Hellfire Fighter" x="11" y="-21" z="9" spawntime="10" />
+		<monster name="Hellfire Fighter" x="-17" y="-19" z="9" spawntime="10" />
 		<monster name="The Imperor" x="2" y="-19" z="9" spawntime="30" />
 		<monster name="The Imperor" x="5" y="-19" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="20" y="-17" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-30" y="-16" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="34" y="-16" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-10" y="-13" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="3" y="-10" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="3" y="-10" z="9" spawntime="10" />
 		<monster name="Juggernaut" x="7" y="-9" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="29" y="-8" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="29" y="-8" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="37" y="-6" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-20" y="-5" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="7" y="-4" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="15" y="-4" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="15" y="-4" z="9" spawntime="10" />
 		<monster name="Juggernaut" x="22" y="-4" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="-29" y="-2" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-25" y="0" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-25" y="0" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="-10" y="0" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="-17" y="2" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="8" y="2" z="9" spawntime="30" />
@@ -8941,20 +8901,20 @@
 		<monster name="Juggernaut" x="14" y="7" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="39" y="7" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-7" y="8" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="21" y="9" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="30" y="9" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="21" y="9" z="9" spawntime="10" />
+		<monster name="Hellfire Fighter" x="30" y="9" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="-28" y="10" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-29" y="14" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-29" y="14" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="-11" y="15" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="37" y="15" z="9" spawntime="30" />
 		<monster name="Juggernaut" x="27" y="16" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="20" y="17" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-28" y="21" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="-14" y="22" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="-14" y="22" z="9" spawntime="10" />
 		<monster name="Hellfire Fighter" x="-2" y="22" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="-17" y="25" z="9" spawntime="30" />
 		<monster name="Hellfire Fighter" x="32" y="26" z="9" spawntime="30" />
-		<monster name="Hellfire Fighter" x="37" y="26" z="9" spawntime="30" />
+		<monster name="Hellfire Fighter" x="37" y="26" z="9" spawntime="10" />
 		<monster name="Juggernaut" x="40" y="26" z="9" spawntime="60" />
 		<monster name="Juggernaut" x="37" y="28" z="9" spawntime="60" />
 		<monster name="Juggernaut" x="-34" y="30" z="9" spawntime="30" />
@@ -9841,9 +9801,9 @@
 		<monster name="deathwalker" x="7" y="4" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="693" centery="442" centerz="10" radius="5">
-		<monster name="dementor" x="-2" y="-1" z="10" spawntime="30" />
-		<monster name="dementor" x="4" y="0" z="10" spawntime="30" />
-		<monster name="dementor" x="-3" y="1" z="10" spawntime="30" />
+		<monster name="dementor" x="-2" y="-1" z="10" spawntime="10" />
+		<monster name="dementor" x="4" y="0" z="10" spawntime="10" />
+		<monster name="dementor" x="-3" y="1" z="10" spawntime="10" />
 	</monster>
 	<monster centerx="156" centery="443" centerz="10" radius="20">
 		<monster name="outlawed elite guard" x="-7" y="-18" z="10" spawntime="30" />
@@ -9895,10 +9855,10 @@
 		<monster name="outlawed elite guard" x="-11" y="18" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="684" centery="458" centerz="10" radius="5">
-		<monster name="dementor" x="-2" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="2" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="-1" y="4" z="10" spawntime="30" />
-		<monster name="dementor" x="2" y="4" z="10" spawntime="30" />
+		<monster name="dementor" x="-2" y="-2" z="10" spawntime="10" />
+		<monster name="dementor" x="2" y="-2" z="10" spawntime="10" />
+		<monster name="dementor" x="-1" y="4" z="10" spawntime="10" />
+		<monster name="dementor" x="2" y="4" z="10" spawntime="10" />
 	</monster>
 	<monster centerx="105" centery="461" centerz="10" radius="11">
 		<monster name="Hellraiser" x="1" y="0" z="10" spawntime="30" />
@@ -9906,23 +9866,23 @@
 		<monster name="Hellraiser" x="1" y="6" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="464" centery="497" centerz="10" radius="10">
-		<monster name="Orshabaal" x="-6" y="0" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="5" y="0" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="10" y="0" z="10" spawntime="30" />
+		<monster name="Orshabaal" x="-2" y="-2" z="10" spawntime="10" />
+		<monster name="Orshabaal" x="6" y="-2" z="10" spawntime="10" />
+		<monster name="Orshabaal" x="-2" y="3" z="10" spawntime="10" />
+		<monster name="Orshabaal" x="6" y="3" z="10" spawntime="10" />
 	</monster>
 	<monster centerx="499" centery="499" centerz="10" radius="10">
-		<monster name="dementor" x="0" y="-4" z="10" spawntime="30" />
+		<monster name="dementor" x="-3" y="-4" z="10" spawntime="30" />
+		<monster name="Orshabaal" x="3" y="-4" z="10" spawntime="20" />
 		<monster name="dementor" x="-4" y="-2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-2" y="-2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="1" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="3" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="-6" y="0" z="10" spawntime="30" />
-		<monster name="dementor" x="5" y="0" z="10" spawntime="60" />
+		<monster name="Orshabaal" x="0" y="-2" z="10" spawntime="20" />
+		<monster name="dementor" x="-5" y="-1" z="10" spawntime="30" />
+		<monster name="dementor" x="-4" y="-1" z="10" spawntime="30" />
+		<monster name="dementor" x="0" y="1" z="10" spawntime="30" />
 		<monster name="dementor" x="-4" y="2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-2" y="2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="1" y="2" z="10" spawntime="30" />
-		<monster name="dementor" x="3" y="2" z="10" spawntime="30" />
-		<monster name="dementor" x="0" y="4" z="10" spawntime="30" />
+		<monster name="Orshabaal" x="-3" y="2" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-2" y="2" z="10" spawntime="20" />
+		<monster name="dementor" x="-1" y="4" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="398" centery="544" centerz="10" radius="5">
 		<monster name="venom" x="1" y="0" z="10" spawntime="30" />
@@ -9935,84 +9895,52 @@
 		<monster name="arch angel" x="0" y="0" z="10" spawntime="60" />
 		<monster name="arch angel" x="1" y="1" z="10" spawntime="60" />
 	</monster>
-	<monster centerx="517" centery="627" centerz="10" radius="30">
-		<monster name="Scarab" x="-30" y="-15" z="10" spawntime="30" />
-		<monster name="Scarab" x="12" y="-12" z="10" spawntime="30" />
-		<monster name="Scarab" x="-27" y="-11" z="10" spawntime="30" />
-		<monster name="Scarab" x="-6" y="-10" z="10" spawntime="30" />
-		<monster name="Scarab" x="1" y="-8" z="10" spawntime="30" />
-		<monster name="Scarab" x="15" y="-8" z="10" spawntime="30" />
-		<monster name="Scarab" x="-28" y="-6" z="10" spawntime="30" />
-		<monster name="Scarab" x="-10" y="-3" z="10" spawntime="30" />
-		<monster name="Scarab" x="5" y="-3" z="10" spawntime="30" />
-		<monster name="Scarab" x="11" y="-2" z="10" spawntime="30" />
-		<monster name="Scarab" x="-26" y="-1" z="10" spawntime="30" />
-		<monster name="Scarab" x="-7" y="-1" z="10" spawntime="30" />
-		<monster name="Scarab" x="5" y="1" z="10" spawntime="30" />
-		<monster name="Scarab" x="-13" y="2" z="10" spawntime="30" />
-		<monster name="Scarab" x="-19" y="4" z="10" spawntime="30" />
-		<monster name="Scarab" x="10" y="4" z="10" spawntime="30" />
-		<monster name="Scarab" x="-22" y="5" z="10" spawntime="30" />
-		<monster name="Scarab" x="14" y="6" z="10" spawntime="30" />
-		<monster name="Scarab" x="-15" y="8" z="10" spawntime="30" />
-		<monster name="Scarab" x="14" y="8" z="10" spawntime="30" />
-		<monster name="Scarab" x="14" y="11" z="10" spawntime="30" />
-		<monster name="Scarab" x="-17" y="12" z="10" spawntime="30" />
-		<monster name="Scarab" x="-13" y="12" z="10" spawntime="30" />
-		<monster name="Scarab" x="-8" y="16" z="10" spawntime="30" />
+	<monster centerx="510" centery="632" centerz="10" radius="30">
+		<monster name="Scarab" x="-23" y="-20" z="10" spawntime="30" />
+		<monster name="Scarab" x="-24" y="-18" z="10" spawntime="30" />
+		<monster name="Scarab" x="19" y="-17" z="10" spawntime="30" />
+		<monster name="Scarab" x="-20" y="-16" z="10" spawntime="30" />
+		<monster name="Scarab" x="1" y="-15" z="10" spawntime="30" />
+		<monster name="Scarab" x="8" y="-13" z="10" spawntime="30" />
+		<monster name="Scarab" x="22" y="-13" z="10" spawntime="30" />
+		<monster name="Scarab" x="-21" y="-11" z="10" spawntime="30" />
+		<monster name="Scarab" x="-3" y="-8" z="10" spawntime="30" />
+		<monster name="Scarab" x="12" y="-8" z="10" spawntime="30" />
+		<monster name="Scarab" x="18" y="-7" z="10" spawntime="30" />
+		<monster name="Scarab" x="-19" y="-6" z="10" spawntime="30" />
+		<monster name="Scarab" x="0" y="-6" z="10" spawntime="30" />
+		<monster name="Scarab" x="12" y="-4" z="10" spawntime="30" />
+		<monster name="Scarab" x="-6" y="-3" z="10" spawntime="30" />
+		<monster name="Scarab" x="-12" y="-1" z="10" spawntime="30" />
+		<monster name="Scarab" x="17" y="-1" z="10" spawntime="30" />
+		<monster name="Scarab" x="-15" y="0" z="10" spawntime="30" />
+		<monster name="Scarab" x="21" y="1" z="10" spawntime="30" />
+		<monster name="Scarab" x="-8" y="3" z="10" spawntime="30" />
+		<monster name="Scarab" x="21" y="3" z="10" spawntime="30" />
+		<monster name="Scarab" x="21" y="6" z="10" spawntime="30" />
+		<monster name="Scarab" x="-10" y="7" z="10" spawntime="30" />
+		<monster name="Scarab" x="-6" y="7" z="10" spawntime="30" />
+		<monster name="Scarab" x="-1" y="11" z="10" spawntime="30" />
+		<monster name="Scarab" x="-2" y="14" z="10" spawntime="30" />
 		<monster name="Scarab" x="-9" y="19" z="10" spawntime="30" />
-		<monster name="Scarab" x="-16" y="24" z="10" spawntime="30" />
-		<monster name="Scarab" x="-14" y="24" z="10" spawntime="30" />
-		<monster name="outlawed elite guard" x="2" y="25" z="10" spawntime="60" />
-		<monster name="Scarab" x="-15" y="28" z="10" spawntime="30" />
-		<monster name="outlawed elite guard" x="4" y="28" z="10" spawntime="60" />
+		<monster name="Scarab" x="-7" y="19" z="10" spawntime="30" />
+		<monster name="Scarab" x="-8" y="23" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="172" centery="660" centerz="10" radius="13">
-		<monster name="Orshabaal" x="-6" y="-7" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="9" y="-5" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-7" y="-3" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-11" y="-1" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="6" y="1" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="0" y="8" z="10" spawntime="30" />
+		<monster name="Orshabaal" x="-6" y="-7" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="9" y="-5" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-7" y="-3" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-11" y="-1" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="6" y="1" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="0" y="8" z="10" spawntime="20" />
 	</monster>
 	<monster centerx="199" centery="671" centerz="10" radius="13">
-		<monster name="Orshabaal" x="-4" y="3" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="1" y="3" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-9" y="4" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-10" y="7" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-9" y="10" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-4" y="12" z="10" spawntime="30" />
-	</monster>
-	<monster centerx="485" centery="678" centerz="10" radius="30">
-		<monster name="outlawed elite guard" x="-2" y="-20" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="4" y="-20" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="5" y="-16" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="29" y="-8" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="4" y="-6" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="26" y="-6" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-26" y="-5" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-22" y="-4" z="10" spawntime="60" />
-		<monster name="outlawed sorcerer" x="-27" y="-2" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-9" y="-2" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-7" y="-2" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-24" y="-1" z="10" spawntime="60" />
-		<monster name="outlawed sorcerer" x="9" y="-1" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="7" y="1" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="12" y="1" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="9" y="2" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="24" y="6" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-10" y="14" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-13" y="16" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="17" y="17" z="10" spawntime="60" />
-		<monster name="outlawed sorcerer" x="15" y="19" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="12" y="20" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="11" y="21" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-24" y="25" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-28" y="26" z="10" spawntime="60" />
-		<monster name="outlawed sorcerer" x="-30" y="29" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-26" y="29" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-7" y="29" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="-5" y="29" z="10" spawntime="60" />
+		<monster name="Orshabaal" x="-4" y="3" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="1" y="3" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-9" y="4" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-10" y="7" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-9" y="10" z="10" spawntime="20" />
+		<monster name="Orshabaal" x="-4" y="12" z="10" spawntime="20" />
 	</monster>
 	<monster centerx="443" centery="681" centerz="10" radius="5">
 		<monster name="Swamp Troll" x="3" y="-3" z="10" spawntime="30" />
@@ -10022,16 +9950,6 @@
 		<monster name="Swamp Troll" x="-1" y="1" z="10" spawntime="30" />
 		<monster name="Swamp Troll" x="3" y="2" z="10" spawntime="30" />
 		<monster name="Swamp Troll" x="-3" y="3" z="10" spawntime="30" />
-	</monster>
-	<monster centerx="511" centery="683" centerz="10" radius="30">
-		<monster name="outlawed elite guard" x="12" y="-22" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="12" y="-20" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="19" y="5" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="24" y="5" z="10" spawntime="60" />
-		<monster name="outlawed sorcerer" x="27" y="7" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="22" y="9" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="6" y="14" z="10" spawntime="60" />
-		<monster name="outlawed elite guard" x="8" y="14" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="422" centery="753" centerz="10" radius="5">
 		<monster name="Cyclops" x="-2" y="0" z="10" spawntime="60" />
@@ -10741,21 +10659,18 @@
 		<monster name="Fire Elemental" x="-1" y="2" z="12" spawntime="30" />
 		<monster name="Fire Devil" x="1" y="3" z="12" spawntime="30" />
 	</monster>
-	<monster centerx="212" centery="728" centerz="12" radius="22">
-		<monster name="Minishabaal" x="-6" y="-13" z="12" spawntime="60" />
-		<monster name="Minishabaal" x="-12" y="-9" z="12" spawntime="60" />
-		<monster name="Minishabaal" x="6" y="-5" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="-17" y="-3" z="12" spawntime="60" />
-		<monster name="Minishabaal" x="0" y="-2" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="12" y="-2" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="-6" y="2" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="6" y="2" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="16" y="3" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="-3" y="8" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="15" y="11" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="2" y="16" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="7" y="16" z="12" spawntime="30" />
-		<monster name="Minishabaal" x="13" y="18" z="12" spawntime="30" />
+	<monster centerx="218" centery="735" centerz="12" radius="13">
+		<monster name="Minishabaal" x="0" y="-12" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="-6" y="-9" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="6" y="-9" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="-12" y="-5" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="0" y="-5" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="10" y="-4" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="-9" y="1" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="9" y="4" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="-4" y="9" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="1" y="9" z="12" spawntime="20" />
+		<monster name="Minishabaal" x="7" y="11" z="12" spawntime="20" />
 	</monster>
 	<monster centerx="665" centery="743" centerz="12" radius="30">
 		<monster name="Infernalist" x="1" y="-14" z="12" spawntime="60" />
@@ -10995,14 +10910,14 @@
 		<monster name="arch angel" x="0" y="1" z="14" spawntime="60" />
 	</monster>
 	<monster centerx="745" centery="555" centerz="14" radius="4">
-		<monster name="frozenhell guard" x="2" y="-4" z="14" spawntime="30" />
-		<monster name="frozenhell guard" x="-2" y="-3" z="14" spawntime="30" />
+		<monster name="frozenhell guard" x="2" y="-4" z="14" spawntime="10" />
+		<monster name="frozenhell guard" x="-2" y="-3" z="14" spawntime="10" />
 		<monster name="Sandstone Scorpion" x="-4" y="-1" z="14" spawntime="60" />
 		<monster name="frozenhell guard" x="-3" y="0" z="14" spawntime="60" />
 		<monster name="frozenhell guard" x="0" y="0" z="14" spawntime="60" />
 		<monster name="frozenhell guard" x="2" y="0" z="14" spawntime="60" />
-		<monster name="frozenhell guard" x="-2" y="3" z="14" spawntime="30" />
-		<monster name="frozenhell guard" x="1" y="3" z="14" spawntime="30" />
+		<monster name="frozenhell guard" x="-2" y="3" z="14" spawntime="10" />
+		<monster name="frozenhell guard" x="1" y="3" z="14" spawntime="10" />
 	</monster>
 	<monster centerx="501" centery="1690" centerz="14" radius="15">
 		<monster name="Evil Counselor" x="0" y="-6" z="14" spawntime="60" />

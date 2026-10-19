@@ -1,14 +1,8 @@
 local bowl = Action()
 
 local monsters = {
-    [1] = {name = "Ryujin", aid = 28001, plural = "a Ryujin"},
-    [2] = {name = "Caribdis", aid = 28002, plural = "an Caribdis"},
-    [3] = {name = "Escila", aid = 28003, plural = "an Escila"},
-    [4] = {name = "Leaviathan", aid = 28004, plural = "an Leaviathan"},
-    [5] = {name = "Shesha", aid = 28005, plural = "an Shesha"},
-    [6] = {name = "Sigma", aid = 28006, plural = "an Sigma"},
-    [7] = {name = "Cicno", aid = 28007, plural = "an Cicno"},
-    [8] = {name = "Oceanus", aid = 28008, plural = "an Oceanus"},
+    [1] = {name = "Fish", aid = 2000, plural = "a Fish"},
+    [2] = {name = "Aegaeus", aid = 2001, plural = "an Aegaeus"},
 }
 
 function bowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
@@ -42,7 +36,7 @@ function bowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     FISHINGMONSTERS[target:getId()] = nil
     target:remove()
     item:transform(5929)
-	item:setAttribute("description", "It contains "..MONS.plural..".\nOwner: "..player:getName())
+    item:setAttribute("description", "It contains "..MONS.plural..".")
     item:setAttribute("aid", MONS.aid)
     return true
 end
@@ -52,13 +46,6 @@ bowl:register()
 
 local unBowl = Action()
 function unBowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-
-	local description = item:getAttribute(ITEM_ATTRIBUTE_DESCRIPTION)
-
-	if not description or not description:find("Owner: "..player:getName()) then
-		return player:sendCancelMessage("You are not the owner of this bowl.")
-	end
-	
     local MONS = nil
     for i = 1, #monsters do
         if item.actionid == monsters[i].aid then

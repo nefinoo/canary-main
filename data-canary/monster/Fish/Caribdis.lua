@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a caribdis"
-monster.experience = 300000000000
+monster.experience = 35000000
 monster.outfit = {
 	lookType = 593,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.outfit = {
 	-- bossRace = RARITY_NEMESIS,
 -- }
 
-monster.health = 25000000
-monster.maxHealth = 25000000
+monster.health = 3000000
+monster.maxHealth = 3000000
 monster.race = "blood"
 monster.corpse = 20163
 monster.speed = 180
@@ -141,7 +141,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

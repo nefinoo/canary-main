@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Weretiger")
+local mType = Game.createMonsterType("Weretiger")
 local monster = {}
 
 monster.description = "a weretiger"
-monster.experience = 7000000000
+monster.experience = 4500000
 monster.outfit = {
 	lookType = 1646,
 	lookHead = 97,
@@ -26,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Murky Caverns",
 }
 
-monster.health = 3500000
-monster.maxHealth = 3500000
+monster.health = 1500000
+monster.maxHealth = 1500000
 monster.race = "blood"
 monster.corpse = 43669
-monster.speed = 120
+monster.speed = 125
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -89,17 +89,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -25000, maxDamage = -50000 },
-	{ name = "energy chain", interval = 3300, chance = 20, minDamage = -35000, maxDamage = -55000, range = 3, target = true },
-	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -55000, length = 5, spread = 2, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
-	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -30000, maxDamage = -50000, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -17500, maxDamage = -25000 },
+	{ name = "energy chain", interval = 3300, chance = 20, minDamage = -17500, maxDamage = -37500, range = 3, target = true },
+	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -20000, maxDamage = -37500, length = 5, spread = 2, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
+	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -17500, maxDamage = -32500, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
 }
 
 monster.defenses = {
-	defense = 90,
-	armor = 130,
-	mitigation = 3.00,
-	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50000, maxDamage = 90000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	defense = 30,
+	armor = 76,
+	mitigation = 2.16,
+	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
@@ -123,4 +123,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

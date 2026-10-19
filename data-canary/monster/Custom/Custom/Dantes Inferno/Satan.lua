@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Satan"
 monster.description = "the adversary"
-monster.experience = 50000000000
+monster.experience = 50000000
 monster.outfit = {
 	lookType = 248,
 	lookHead = 0,
@@ -12,10 +12,6 @@ monster.outfit = {
 	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0
-}
-
-monster.events = {
-    "satanDeath"
 }
 
 monster.health = 11500000
@@ -100,7 +96,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

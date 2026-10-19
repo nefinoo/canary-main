@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc rider"
 monster.description = "a orc rider"
-monster.experience = 180000
+monster.experience = 130
 monster.outfit = {
 	lookType = 4,
 	lookHead = 20,
@@ -13,20 +13,6 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
-
-monster.raceId = 4
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
-	Locations = "Orc Fort, Orc Peninsula, near Dark Cathedral, Zao Orc Land.",
-}
-
 
 monster.health = 180
 monster.maxHealth = 180
@@ -104,21 +90,24 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "obsidian lance", chance = 2000},
-	{name = "orcish axe", chance = 2500},
-	{name = "battle shield", chance = 6666},
-	{name = "gold coin", chance = 20000},
+	{id = 2853, chance = 100000, child = {
+			{name = "obsidian lance", chance = 2000},
+			{name = "orcish axe", chance = 2500},
+			-- {name = "legion helmet", chance = 10000},
+			{name = "battle shield", chance = 6666}
+		}
+	},
+	{name = "backpack", chance = 20000, child = {
+			{name = "gold coin", chance = 20000}
+		}
+	},
 	{id = 3012, chance = 10000},
 	{name = "gold coin", chance = 100000, maxCount = 20},
 	{name = "meat", chance = 50000, maxCount = 3},
 	{id = 12413, chance = 2000},
-	{id = 3399, chance = 25},
-	{id = 8095, chance = 25},
-	{id = 3408, chance = 25},
 }
 
 mType:register(monster)
-
 
 
 

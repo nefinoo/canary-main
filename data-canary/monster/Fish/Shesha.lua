@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a serpentine demigod"
-monster.experience = 90000000000
+monster.experience = 90000000
 monster.outfit = {
 	lookType = 1539,
 	lookHead = 0,
@@ -117,7 +117,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

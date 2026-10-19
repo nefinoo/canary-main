@@ -10,9 +10,9 @@ local STORAGE_CLAIMED_PREFIX = storageBase
 -- Para cada nivel: puede contener items = {{id = X, count = Y}, ...}, money = cantidad (en gold),
 -- exp = cantidad de experiencia (opcional), text = texto que el jugador verá al recibirlo.
 local levelRewards = {
-    [20] = { items = {{id = 3043, count = 3}}, money = 0, exp = 0, text = "Congratulations on reaching level 20. Keep it up." },
-    [50] = { items = {{id = 3043, count = 8}}, money = 0, exp = 0, text = "Congratulations on reaching level 50, here's a reward for your bravery." },
-    [100] = { items = {{id = 3043, count = 15}}, money = 0, exp = 0, text = "Level 100 reached: Now you're on your own!. Level up, collect gold coins, defeat bosses, and become more powerful. P.S. Don't forget to fish!" },
+    [20] = { items = {{id = 3043, count = 1}}, money = 0, exp = 0, text = "Reward for reaching level 50." },
+    [50] = { items = {{id = 3043, count = 5}}, money = 0, exp = 0, text = "Congratulations on reaching level 50 — here's a reward for you." },
+    [100] = { items = {{id = 3043, count = 10}}, money = 0, exp = 0, text = "Level 100 reached: keep it up!" },
     -- Agrega más niveles según necesites
 }
 
@@ -54,7 +54,7 @@ function rewardsEvent.onAdvance(player, skill, oldLevel, newLevel)
                 end
 
                 -- mensaje
-                player:sendTextMessage(MESSAGE_LOOK, reward.text or ("Has ganado la recompensa del nivel ".. level))
+                player:sendTextMessage(MESSAGE_EVENT_ADVANCE, reward.text or ("Has ganado la recompensa del nivel ".. level))
 
                 -- marcar como entregado
                 player:setStorageValue(storage, 1)

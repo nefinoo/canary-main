@@ -1,4 +1,3 @@
-
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITAREA)
@@ -6,22 +5,13 @@ combat:setParameter(COMBAT_PARAM_BLOCKARMOR, 1)
 combat:setParameter(COMBAT_PARAM_USECHARGES, 1)
 combat:setArea(createCombatArea(AREA_SQUARE1X1))
 
-local config = {
-    damageMultiplier = 1.10,
-    granBonus = 1.30
-}
-
 function onGetFormulaValues(player, skill, attack, factor)
-    local level = player:getLevel()
+	local level = player:getLevel()
 
-    local min = (level / 5) + (skill + attack) * 0.5
-    local max = (level / 5) + (skill + attack) * 1.5
+	local min = (level / 5) + (skill + 2 * attack) * 1.1
+	local max = (level / 5) + (skill + 2 * attack) * 3
 
-    local multiplier =
-        config.damageMultiplier * config.granBonus
-
-    return -min * multiplier,
-           -max * multiplier
+	return -min * 1.1, -max * 1.1 -- TODO : Use New Real Formula instead of an %
 end
 
 combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
@@ -29,7 +19,7 @@ combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-    return combat:execute(creature, var)
+	return combat:execute(creature, var)
 end
 
 spell:group("attack")

@@ -247,21 +247,6 @@ function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
 		player:addAchievementProgress("Happy Farmer", 200)
 		return true
 	end
-	-- Satan Quest Tree
-	if target:getActionId() == 44999 and item:getActionId() == 666 then
-		local pos = target:getPosition()
-
-		target:remove()
-
-		addEvent(function(position)
-			local tree = Game.createItem(2720, 1, position)
-			if tree then
-				tree:setActionId(44999)
-			end
-		end, 60000, pos)
-
-		return true
-	end
 	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 

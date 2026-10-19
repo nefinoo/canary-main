@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "elder beholder"
 monster.description = "a elder beholder"
-monster.experience = 280000
+monster.experience = 280
 monster.outfit = {
 	lookType = 108,
 	lookHead = 20,
@@ -125,7 +125,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

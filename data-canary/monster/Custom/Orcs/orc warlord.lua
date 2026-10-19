@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warlord"
 monster.description = "a orc warlord"
-monster.experience = 670000
+monster.experience = 670
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -12,19 +12,6 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
-}
-
-monster.raceId = 2
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 1000,
-	FirstUnlock = 50,
-	SecondUnlock = 500,
-	CharmsPoints = 25,
-	Stars = 3,
-	Occurrence = 0,
-	Locations = "Orc Teleport.",
 }
 
 monster.health = 950
@@ -109,13 +96,9 @@ monster.loot = {
 	{name = "gold coin", chance = 50000, maxCount = 70},
 	{name = "meat", chance = 20000, maxCount = 3},
 	{id = 12413, chance = 2000},
-	{id = 3399, chance = 50},
-	{id = 8095, chance = 50},
-	{id = 3408, chance = 50},
 }
 
 mType:register(monster)
-
 
 
 

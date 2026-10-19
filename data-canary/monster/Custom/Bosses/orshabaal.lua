@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Orshabaal"
 monster.description = "Orshabaal"
-monster.experience = 15500000
+monster.experience = 38000
 monster.outfit = {
 	lookType = 201,
 	lookHead = 0,
@@ -20,8 +20,8 @@ monster.outfit = {
 -- }
 
 
-monster.health = 20500
-monster.maxHealth = 20500
+monster.health = 32600
+monster.maxHealth = 32600
 monster.runHealth = 2500
 monster.race = "fire"
 monster.corpse = 5995
@@ -89,12 +89,12 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -420, maxDamage = -1110},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_PHYSICALDAMAGE, minDamage = -320, maxDamage = -910, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 6, type = COMBAT_PHYSICALDAMAGE, minDamage = -310, maxDamage = -740, radius = 5, target = false, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1300, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1510, maxDamage = -1874},
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 6, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, radius = 5, target = false, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1300, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -1510, maxDamage = -1874, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
@@ -111,34 +111,33 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "purple tome", chance = 260},
-	{name = "golden mug", chance = 750},
-	{name = "experience scroll", chance = 700, maxCount = 2},
-	-- {name = "crystal necklace", chance = 1500},
+	{name = "purple tome", chance = 2600},
+	{name = "golden mug", chance = 7500},
+	{name = "crystal necklace", chance = 1500},
 	{id = 3025, chance = 3500},
-	{name = "white pearl", chance = 1250, maxCount = 15},
-	{name = "black pearl", chance = 1500, maxCount = 15},
-	{name = "small diamond", chance = 950, maxCount = 5},
-	{name = "small sapphire", chance = 1350, maxCount = 10},
-	{name = "small emerald", chance = 1550, maxCount = 10},
-	{name = "small amethyst", chance = 1350, maxCount = 20},
-	{name = "talon", chance = 1400, maxCount = 7},
-	{name = "green gem", chance = 750},
-	{name = "blue gem", chance = 750},
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "platinum coin", chance = 70000, maxCount = 10},
+	{name = "white pearl", chance = 12500, maxCount = 15},
+	{name = "black pearl", chance = 15000, maxCount = 15},
+	{name = "small diamond", chance = 9500, maxCount = 5},
+	{name = "small sapphire", chance = 13500, maxCount = 10},
+	{name = "small emerald", chance = 15500, maxCount = 10},
+	{name = "small amethyst", chance = 13500, maxCount = 20},
+	{name = "talon", chance = 14000, maxCount = 7},
+	{name = "green gem", chance = 1500},
+	{name = "blue gem", chance = 1500},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 70000, maxCount = 20},
 	{name = "strange symbol", chance = 2500},
 	{name = "orb", chance = 12000},
 	{name = "life crystal", chance = 1000},
 	{name = "mind stone", chance = 4000},
-	{name = "gold ring", chance = 600},
+	{name = "gold ring", chance = 800},
 	{name = "snakebite rod", chance = 3500},
 	{name = "necrotic rod", chance = 3500},
 	{name = "moonlight rod", chance = 3500},
 	{name = "wand of decay", chance = 2500},
-	{name = "boots of haste", chance = 400},
-	{name = "stone skin amulet", chance = 50},
-	{name = "giant sword", chance = 750},
+	{name = "boots of haste", chance = 4000},
+	{name = "stone skin amulet", chance = 400},
+	{name = "giant sword", chance = 1250},
 	{name = "ice rapier", chance = 750},
 	{name = "silver dagger", chance = 1550},
 	{name = "golden sickle", chance = 450},
@@ -147,12 +146,11 @@ monster.loot = {
 	{name = "skull staff", chance = 500},
 	{name = "golden legs", chance = 500},
 	{name = "magic plate armor", chance = 300},
-	{name = "mastermind shield", chance = 350},
+	{name = "mastermind shield", chance = 750},
 	{name = "demon shield", chance = 1550},
 }
 
 mType:register(monster)
-
 
 
 

@@ -81,7 +81,7 @@ function offer_talkAction.onSay(player, words, param)
             end
         end
   
-        if tonumber(t[4]) < 1 or tonumber(t[3]) < 1 then
+        if iftonumber(t[4]) < 1 or tonumber(t[3]) < 1 then
             player:sendTextMessage(MESSAGE_ADMINISTRATOR, "You have to type a number higher than 0.")
             return true
         end

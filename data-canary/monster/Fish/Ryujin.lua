@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a power of the sea"
-monster.experience = 150000000000
+monster.experience = 25000000
 monster.outfit = {
 	lookType = 675,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.outfit = {
 	-- bossRace = RARITY_NEMESIS,
 -- }
 
-monster.health = 12500000
-monster.maxHealth = 12500000
+monster.health = 20000000
+monster.maxHealth = 20000000
 monster.race = "venom"
 monster.corpse = 21893
 monster.speed = 250
@@ -150,7 +150,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

@@ -4,7 +4,7 @@
 local bpWorms = Action()
 
 -- Unique ID configurado en items.xml o mapa: 1001
-local COST = 2000000 -- 1kk gold
+local COST = 1000000 -- 1kk gold
 local BP_ID = 5949 -- ID del backpack
 local WORM_ID = 3492 -- ID del worm
 local STACK_COUNT = 100 -- cantidad por stack

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "massive water elemental"
 monster.description = "a massive water elemental"
-monster.experience = 91950000
+monster.experience = 250000
 monster.outfit = {
 	lookType = 11,
 	lookHead = 20,
@@ -78,37 +78,28 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -1200, maxDamage = -1800},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_EARTHDAMAGE, minDamage = -760, maxDamage = -1140, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 1000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -840, maxDamage = -1340, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1250, maxDamage = -1800, range = 7, radius = 6, target = false, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -800, maxDamage = -1600},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_EARTHDAMAGE, minDamage = -560, maxDamage = -940, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 1000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -640, maxDamage = -1040, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1050, maxDamage = -1500, range = 7, radius = 6, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
 	defense = 22,
 	armor = 20,
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 2000, maxDamage = 4000, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 3000, maxDamage = 5000, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "experience scroll", chance = 3000, maxCount = 6},
-	{id = 3578, chance = 60430, maxCount = 20},--fish
-	{name = "salmon", chance = 42430, maxCount = 10},
-	{id = 3581, chance = 10000, maxCount = 2},
-	{name = "small diamond", chance = 75000, maxCount = 5},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 64000, maxCount = 15},
-	{name = "platinum coin", chance = 44000, maxCount = 25},
-	{name = "golden legs", chance = 500},
-	{name = "magic plate armor", chance = 350},
-	{name = "mastermind shield", chance = 435},
-	{name = "demon shield", chance = 855},
-	{id = 3082, chance = 25000},
+	{name = "experience scroll", chance = 3000, maxCount = 2},
+	{id = 3578, chance = 60000, maxCount = 3},--fish
+	{name = "salmon", chance = 40000, maxCount = 2},
+	{name = "green perch", chance = 15000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 20},
 }
 
 mType:register(monster)
-
 
 
 

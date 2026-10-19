@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Mil Ojos"
-monster.experience = 150000
+monster.experience = 150
 monster.outfit = {
 	lookType = 1858,
 	lookHead = 0,
@@ -120,7 +120,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

@@ -6,7 +6,7 @@ function levelTile.onStepIn(creature, item, position, fromPosition)
         return true
     end
 
-    local levelRequired = item.actionid - 100
+    local levelRequired = item.actionid - 1000
     local playerLevel = player:getLevel()
 
     if item.itemid == 8282 or item.itemid == 8886 then

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a calamary"
-monster.experience = 1900000
+monster.experience = 1950
 monster.outfit = {
 	lookType = 451,
 	lookHead = 0,
@@ -76,19 +76,14 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 3578, chance = 15430, maxCount = 10}, -- fish
-	{ name = "salmon", chance = 4270, maxCount = 5},	
-	{name = "gold coin", chance = 100000, maxCount = 90},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 74000, maxCount = 5},
-	{name = "experience scroll", chance = 2450},
+	{ name = "shrimp", chance = 12270, maxCount = 2 },	
+	{name = "gold coin", chance = 100000, maxCount = 24},
+	{name = "experience scroll", chance = 250},
 }
 
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -171, maxDamage = -231},
-	{name ="combat", interval = 4000, chance = 40, type = COMBAT_DROWNDAMAGE, minDamage = -201, maxDamage = -261, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_REDSTAR, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -201, maxDamage = -261, length = 8, spread = 3, effect = CONST_ME_MAGIC_RED}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -30, maxDamage = -200}
 }
 
 
@@ -119,7 +114,6 @@ monster.immunities = {
 }
 
 mType:register(monster)
-
 
 
 

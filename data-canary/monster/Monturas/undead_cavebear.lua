@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Undead Cavebear")
+local mType = Game.createMonsterType("Undead Cavebear")
 local monster = {}
 
 monster.description = "an undead cavebear"
-monster.experience = 600000
+monster.experience = 600
 monster.outfit = {
 	lookType = 384,
 	lookHead = 0,
@@ -113,4 +113,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

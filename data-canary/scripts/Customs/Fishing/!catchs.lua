@@ -91,7 +91,7 @@ function catchs.onSay(player, words, param)
         text = text .. "[" .. monsters[i].name .. "]: " .. info .. "\n"
     end
 
-    player:showTextDialog(32043, text)
+    player:showTextDialog(2580, text)
     return false
 end
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Sea Serpent"
 monster.description = "a sea serpent"
-monster.experience = 90000000000
+monster.experience = 15000000
 monster.outfit = {
 	lookType = 275,
 	lookHead = 0,
@@ -20,9 +20,9 @@ monster.outfit = {
 -- }
 
 
-monster.health = 8000000
-monster.maxHealth = 8000000
-monster.runHealth = 50000
+monster.health = 15000000
+monster.maxHealth = 15000000
+monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 949
 monster.speed = 658
@@ -87,9 +87,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -9000, maxDamage = -20000, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ICEDAMAGE, minDamage = -8000, maxDamage = -10000, length = 9, spread = 3, effect = CONST_ME_ICEAREA},
-	{name ="combat", interval = 4000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -10000, maxDamage = -11500, radius = 4, target = true, effect = CONST_ME_LOSEENERGY}
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -9000, maxDamage = -20000, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 2000, chance = 60, type = COMBAT_ICEDAMAGE, minDamage = -10000, maxDamage = -11000, length = 9, spread = 3, effect = CONST_ME_ICEAREA},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2000, maxDamage = -3000, radius = 4, target = true, effect = CONST_ME_LOSEENERGY}
 }
 
 monster.defenses = {
@@ -125,7 +125,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

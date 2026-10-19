@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed ranger"
 monster.description = "an outlawed ranger"
-monster.experience = 7500000
+monster.experience = 5500
 monster.outfit = {
 	lookType = 71,
 	lookHead = 20,
@@ -12,20 +12,6 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
-}
-
-monster.raceId = 71
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
-	Locations = "Kazordoon Dwarf Mines, Cyclopolis, Dwacatra, Ferngrims Gate, Dwarf Bridge, \z
-		Mount Sternum Undead Cave, Beregar, Tiquanda Dwarf Cave, Cormaya Dwarf Cave.",
 }
 
 monster.health = 4700
@@ -93,9 +79,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 6000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 5000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -105,7 +91,7 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "small ruby", chance = 75000, maxCount = 3},
-	{id = 3039, chance = 2100},
+	{name = "violet gem", chance = 25000},
 	{name = "platinum coin", chance = 35000, maxCount = 3},
 	{name = "throwing star", chance = 300},
 	{name = "dragon lance", chance = 250},
@@ -114,14 +100,9 @@ monster.loot = {
 	{name = "demon shield", chance = 250},
 	{name = "experience scroll", chance = 600},
 	{ name = "iron ore", chance = 700 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)
-
 
 
 

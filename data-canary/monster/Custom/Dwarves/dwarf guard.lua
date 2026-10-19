@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed elite guard"
 monster.description = "an outlawed elite guard"
-monster.experience = 7500000
+monster.experience = 5500
 monster.outfit = {
 	lookType = 70,
 	lookHead = 20,
@@ -12,20 +12,6 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
-}
-
-monster.raceId = 70
-monster.Bestiary = {
-	class = "Humanoid",
-	race = BESTY_RACE_HUMANOID,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
-	Locations = "Kazordoon Dwarf Mines, Dwacatra, Ferngrims Gate, Cyclopolis, Mount Sternum Undead Cave, \z
-		Stonehome Rotworm cave (near Edron), Maze of Lost Souls, Tiquanda Dwarf Cave, Beregar, Cormaya Dwarf Cave.",
 }
 
 monster.health = 5300
@@ -93,8 +79,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -518, maxDamage = -674, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -105,21 +91,19 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "small sapphire", chance = 75000, maxCount = 5},
-	{name = "green gem", chance = 2500},
+	{name = "green gem", chance = 25000},
 	{name = "platinum coin", chance = 50000, maxCount = 3},
 	{name = "boots of haste", chance = 250},
+	{name = "magic sword", chance = 100},
+	{ id = 3319, chance = 100 }, 
+	{ id = 3309, chance = 100 }, 
 	{name = "golden legs", chance = 250},
 	{name = "magic plate armor", chance = 250},
 	{name = "experience scroll", chance = 800},
 	{ name = "iron ore", chance = 1050 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)
-
 
 
 

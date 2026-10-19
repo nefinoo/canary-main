@@ -1,8 +1,8 @@
-﻿local mType = Game.createMonsterType("Draptor")
+local mType = Game.createMonsterType("Draptor")
 local monster = {}
 
 monster.description = "a draptor"
-monster.experience = 2400000
+monster.experience = 2400
 monster.outfit = {
 	lookType = 382,
 	lookHead = 0,
@@ -125,4 +125,3 @@ monster.immunities = {
 }
 
 mType:register(monster)
-

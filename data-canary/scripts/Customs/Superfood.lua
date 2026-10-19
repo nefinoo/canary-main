@@ -1,56 +1,56 @@
 local superFoods = {
-    [3578] = { -- fish
-		hp = 50,
-		mana = 50,
-		hpPercent = 1,
-		manaPercent = 1,
+    [3578] = {
+        hp = 1000,
+        mana = 1000,
+        hpPercent = 1,
+        manaPercent = 1,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
-        says = "ah."
+        exhaustedTime = 1, -- 3 seconds
+        says = "Aaahhh..."
     },
     [3579] = {--salmon
-        hp = 200,
-		mana = 200,
-		hpPercent = 3,
-		manaPercent = 3,	
+        hp = 4500,
+        mana = 4500,
+        hpPercent = 2,
+        manaPercent = 2,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
-        says = "ahh.."
+        exhaustedTime = 1, -- 3 seconds
+        says = "Aaahhh..."
     },
     [3580] = {--northern pike
-        hp = 150,
-		mana = 100,
-		hpPercent = 2,
-		manaPercent = 1.5,
+        hp = 2500,
+        mana = 2500,
+        hpPercent = 2,
+        manaPercent = 2,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
-        says = "aahh.."
+        exhaustedTime = 1, -- 3 seconds
+        says = "Aaahhh..."
     },
     [3581] = {--shrim
-        hp = 400,
-		mana = 250,
-		hpPercent = 4,
-		manaPercent = 2.5,
+        hp = 2500,
+        mana = 2500,
+        hpPercent = 1.5,
+        manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
-        says = "Ahhh..."
+        exhaustedTime = 1, -- 3 seconds
+        says = "Aaahhh..."
     },
-    [7159] = { --green perch
-        hp = 350,
-		mana = 500,
-		hpPercent = 3.5,
-		manaPercent = 5,
+    [7158] = { --green perch
+        hp = 7000,
+        mana = 7000,
+        hpPercent = 3,
+        manaPercent = 3,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
-        says = "Aahhh..."
+        exhaustedTime = 1, -- 3 seconds
+        says = "Aaahhh..."
     },
-    [7158] = { --rainbow trout
-        hp = 550,
-		mana = 550,
-		hpPercent = 6,
-		manaPercent = 6,
+    [7159] = { --rainbow trout
+        hp = 10000,
+        mana = 10000,
+        hpPercent = 3.5,
+        manaPercent = 3.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1.5, -- 3 seconds
+        exhaustedTime = 1, -- 3 seconds
         says = "Aaahhh..."
     }
 }
@@ -109,7 +109,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         exhausteds[playerId] = os.time() + food.exhaustedTime
     end
 
-    player:getPosition():sendMagicEffect(570)
+    player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
     player:say(food.says, TALKTYPE_MONSTER_SAY)
     player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have been fed, You recover %s%s.", (gainHp > 0 and string.format("%d hit points", gainHp) or ""), (gainMana > 0 and string.format("%s%s", (gainHp > 0 and " and " or ""), string.format("%d mana points", gainMana)) or "")))
     return true

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops smith"
 monster.description = "a cyclops smith"
-monster.experience = 255000
+monster.experience = 255
 monster.outfit = {
 	lookType = 277,
 	lookHead = 0,
@@ -13,21 +13,6 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
-
-monster.raceId = 389
-monster.Bestiary = {
-	class = "Giant",
-	race = BESTY_RACE_GIANT,
-	toKill = 1000,
-	FirstUnlock = 50,
-	SecondUnlock = 500,
-	CharmsPoints = 25,
-	Stars = 3,
-	Occurrence = 0,
-	Locations = "Cyclopolis second floor and below, Mistrock, Mount Sternum, \z
-		Cyclops Camp second floor and in the Cyclops version of the Forsaken Mine.",
-}
-
 
 monster.health = 435
 monster.maxHealth = 435
@@ -114,15 +99,10 @@ monster.loot = {
 	{name = "meat", chance = 5000, maxCount = 3},
 	{name = "plate shield", chance = 2000},
 	{name = "heavy machete", chance = 2000},
-	{id = 7398, chance = 1500},
-	{id = 12413, chance = 3000},
-	{id = 3399, chance = 80},
-	{id = 8095, chance = 80},
-	{id = 3408, chance = 80},
+	{id = 7398, chance = 1500}
 }
 
 mType:register(monster)
-
 
 
 

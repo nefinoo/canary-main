@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "overcharged energy elemental"
 monster.description = "an orvercharged energy elemental"
-monster.experience = 1300000
+monster.experience = 1300
 monster.outfit = {
 	lookType = 290,
 	lookHead = 0,
@@ -99,7 +99,6 @@ monster.loot = {
 }
 
 mType:register(monster)
-
 
 
 

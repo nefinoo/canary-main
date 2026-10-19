@@ -55,26 +55,6 @@ local potions = {
 	[23374] = { health = { 420, 580 }, mana = { 250, 350 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 130, flask = 284, description = "Only paladins of level 130 or above may drink this fluid." },
 	[23375] = { health = { 875, 1125 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 200, flask = 284, description = "Only knights of level 200 or above may drink this fluid." },
 	[35563] = { vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 14, func = magicshield, effect = CONST_ME_ENERGYAREA, description = "Only sorcerers and druids of level 14 or above may drink this potion." },
-	--------------------------------------level 500---------------------------------------------------------------------
-	[51247] = { mana = { 725, 875 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 500, flask = 284, description = "Only druids and sorcerers of level 500 or above may drink this fluid." },
-	[51138] = { health = { 720, 880 }, mana = { 450, 550 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 500, flask = 284, description = "Only paladins of level 500 or above may drink this fluid." },
-	[51246] = { health = { 1875, 2025 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 500, flask = 284, description = "Only knights of level 500 or above may drink this fluid." },
-	--------------------------------------level 1000---------------------------------------------------------------------
-	[50966] = { mana = { 1025, 1275 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 1000, flask = 284, description = "Only druids and sorcerers of level 1000 or above may drink this fluid." },
-	[50967] = { health = { 1020, 1320 }, mana = { 550, 650 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 1000, flask = 284, description = "Only paladins of level 1000 or above may drink this fluid." },
-	[50965] = { health = { 2575, 2925 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 1000, flask = 284, description = "Only knights of level 1000 or above may drink this fluid." },
-	--------------------------------------level 2500--------------------------------------------------------------------
-	[51704] = { mana = { 2025, 2375 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 2500, flask = 284, description = "Only druids and sorcerers of level 2500 or above may drink this fluid." },
-	[51701] = { health = { 2020, 2350 }, mana = { 1050, 1150 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 2500, flask = 284, description = "Only paladins of level 2500 or above may drink this fluid." },
-	[51702] = { health = { 4875, 5125 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 2500, flask = 284, description = "Only knights of level 2500 or above may drink this fluid." },
-	-------------------------------------level 5000----------------------------------------------------------------------
-	[53143] = { mana = { 3425, 3575 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 5000, flask = 284, description = "Only druids and sorcerers of level 5000 or above may drink this fluid." },
-	[53142] = { health = { 3420, 3600 }, mana = { 1550, 1670 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 5000, flask = 284, description = "Only paladins of level 5000 or above may drink this fluid." },
-	[53144] = { health = { 6875, 7125 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 5000, flask = 284, description = "Only knights of level 5000 or above may drink this fluid." },
-	-------------------------------------level 10000----------------------------------------------------------------------
-	[50382] = { mana = { 5425, 5575 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 10000, flask = 284, description = "Only druids and sorcerers of level 10000 or above may drink this fluid." },
-	[50383] = { health = { 5420, 5680 }, mana = { 2500, 2850 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 10000, flask = 284, description = "Only paladins of level 10000 or above may drink this fluid." },
-	[50384] = { health = { 10875, 11125 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 10000, flask = 284, description = "Only knights of level 10000 or above may drink this fluid." },
 }
 
 local flaskPotion = Action()
@@ -110,9 +90,8 @@ function flaskPotion.onUse(player, item, fromPosition, target, toPosition, isHot
 		player:addAchievementProgress("Potion Addict", 100000)
 		target:say("Aaaah...", MESSAGE_POTION)
 
-		local deactivatedFlasks = player:getStorageValue(45010)
-
-		if deactivatedFlasks ~= 1 then
+		local deactivatedFlasks = player:kv():get("talkaction.potions.flask") or false
+		if not deactivatedFlasks then
 			if fromPosition.x == CONTAINER_POSITION then
 				player:addItem(potion.flask, 1)
 			else
