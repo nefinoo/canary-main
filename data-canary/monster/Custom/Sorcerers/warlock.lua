@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1935
-monster.maxHealth = 1935
+monster.health = 3000
+monster.maxHealth = 3000
 monster.runHealth = 800
 monster.race = "blood"
 monster.corpse = 6080
@@ -83,7 +83,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -20},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 15},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
