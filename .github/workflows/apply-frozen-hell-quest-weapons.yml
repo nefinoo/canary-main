@@ -9,6 +9,7 @@ on:
       - balance_report/apply_knight_augments.py
       - balance_report/apply_outlawed_dwarf_augments.py
       - balance_report/apply_elven_stage4.py
+      - balance_report/apply_elven_stage5.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -32,6 +33,10 @@ jobs:
         run: python3 balance_report/apply_outlawed_dwarf_augments.py --apply
       - name: Apply level-650 Elven set and remove premature drops
         run: python3 balance_report/apply_elven_stage4.py --apply
+      - name: Apply level-850 rare gear and 850-1000 combat balancing
+        run: python3 balance_report/apply_elven_stage5.py --apply
+      - name: Validate Frozen Hell level-850 progression
+        run: python3 balance_report/validate_phase5.py
       - name: Commit stage-4 changes (only if changed)
         shell: bash
         run: |
@@ -42,5 +47,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "balance: apply staged Elven set augments and progression loot gating"
+          git commit -m "balance: apply staged rare gear and phase 5 monster progression"
           git push origin HEAD:balance-frozen-hell-knight-100-200
