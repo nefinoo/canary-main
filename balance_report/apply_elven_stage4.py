@@ -57,8 +57,8 @@ def patch_items(text: str) -> tuple[str, list[int]]:
         if re.search(r'\bname="' + re.escape(expected_name) + r'"', block[:250]) is None:
             raise ValueError(f"ID {item_id}: name mismatch")
         if MARK in block:
-            if '<attribute key="level" value="650"/>' not in block:
-                raise ValueError(f"ID {item_id}: marker present, level 650 missing")
+            if not re.search(r'<attribute key="level" value="(?:650|850)"/>', block):
+                raise ValueError(f"ID {item_id}: marker present, expected level 650 or 850")
             continue
         if block.count('<attribute key="level" value="100"/>') != 1:
             raise ValueError(f"ID {item_id}: expected level 100 exactly once")
