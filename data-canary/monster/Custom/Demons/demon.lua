@@ -28,8 +28,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 8200
-monster.maxHealth = 8200
+monster.health = 4600
+monster.maxHealth = 4600
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5995
@@ -107,7 +107,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 55,
 	armor = 50,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 90, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_HEALING, minDamage = 90, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE},
 	{name ="speed", interval = 1000, chance = 15, speed = {min = 200, max = 200}, duration = 20000, effect = CONST_ME_MAGIC_RED}
 }
 
