@@ -8613,7 +8613,6 @@
 			<attribute key="level" value="100"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
-			<attribute key="weaponType" value="distance"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
@@ -8628,6 +8627,7 @@
 			<attribute key="level" value="100"/>
 			<attribute key="unproperly" value="false"/>
 			<attribute key="slot" value="hand"/>
+			<attribute key="weaponType" value="sword"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
@@ -9430,7 +9430,6 @@
 			<attribute key="wandtype" value="energy"/>
 			<attribute key="fromdamage" value="40"/>
 			<attribute key="todamage" value="60"/>
-			<attribute key="weaponType" value="wand"/>
 			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
 		</attribute>			
 	</item>
