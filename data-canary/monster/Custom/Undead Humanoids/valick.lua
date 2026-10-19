@@ -96,8 +96,8 @@ monster.elements = {
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -965, maxDamage = -1025},
 	{name ="combat", interval = 4000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -965, maxDamage = -1625, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="speed", interval = 2000, chance = 12, speed = {min = -600, max = -600}, duration = 60000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 4000, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -965, maxDamage = -1425, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
+	{name ="speed", interval = 4000, chance = 12, speed = {min = -450, max = -450}, duration = 10000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED},
+	{name ="combat", interval = 4000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -965, maxDamage = -1425, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
 }
 
 monster.defenses = {
@@ -105,14 +105,14 @@ monster.defenses = {
 	armor = 40,
 	{name = "outfit", interval = 1500, chance = 60, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "bat" },
 	{name = "outfit", interval = 1500, chance = 50, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "vampire" },
-	{name ="speed", interval = 1500, chance = 100, speed = {min = 300, max = 300}, duration = 30000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{name ="speed", interval = 6000, chance = 35, speed = {min = 200, max = 200}, duration = 8000, range = 7, radius = 1, target = false, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 3},
 	{name = "platinum coin", chance = 50000, maxCount = 8},
 	{name = "experience scroll", chance = 850},
-	{name = "magic plate armor", chance = 130},
+	{name = "magic plate armor", chance = 750}, -- armadura alcanzable sin depender del set raro
 	{name = "fire axe", chance = 1500},
 	{name = "yellow gem", chance = 3500},
 	{name = "green gem", chance = 2000},
@@ -120,9 +120,9 @@ monster.loot = {
 	{name = "demonrage sword", chance = 410},
 	{id = 5905, chance = 120},
 	{id = 12413, chance = 12500},
-	{id = 3399, chance = 350},
-	{id = 8095, chance = 350},
-	{id = 3408, chance = 350},
+	{id = 3399, chance = 125},
+	{id = 8095, chance = 125},
+	{id = 3408, chance = 125},
 }
 
 mType:register(monster)

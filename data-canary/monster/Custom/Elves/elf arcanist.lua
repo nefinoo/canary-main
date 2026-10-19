@@ -14,7 +14,7 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 5200
+monster.health = 7200
 monster.maxHealth = 7200
 monster.runHealth = 0
 monster.race = "blood"
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
-	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -420, maxDamage = -600 },
+	{name ="combat", interval = 4000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -520, maxDamage = -780, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
+	{name ="combat", interval = 6000, chance = 40, type = COMBAT_DEATHDAMAGE, minDamage = -750, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {
@@ -102,7 +102,8 @@ monster.loot = {
 	{name = "yellow gem", chance = 2000},
 	{name = "crown armor", chance = 1500},
 	{name = "crown legs", chance = 1000},
-	{name = "crown helmet", chance = 2000},
+	{name = "crown helmet", chance = 2400},
+	{id = 3392, chance = 650}, -- royal helmet
 	{name = "crown shield", chance = 2250},
 	{name = "experience scroll", chance = 750},
 	{ name = "holy orchid", chance = 2100 },
