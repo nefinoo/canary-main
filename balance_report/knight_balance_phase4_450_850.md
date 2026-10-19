@@ -1,5 +1,8 @@
 # Frozen Hell — Fase 4: Salazaari 450 → Valick/Mummy/Deathwalker 650 → Hell Soldier/Undead Mage 850
 
+> **Actualizacion fase 5:** el requisito final del Elven Set raro ahora es **nivel 850**, con +950 HP y +600 mana entre sus tres piezas. Los numeros de equipamiento nivel 650 descritos abajo son **historicos** y quedan sustituidos por `balance_report/knight_balance_phase5_850_1000.md`.
+
+
 Rama de pruebas: \`balance-frozen-hell-knight-100-200\`. Pendiente de pruebas reales y aprobación de merge. Solo Knight **normal**, sin promoción; se conserva la experiencia Mid–High y las quests de armas. No se modifica \`Custom/Custom/Deathwalker.lua\`: ese archivo es **The Deathwalker**, un monstruo de quest de seis millones de HP.
 
 ## Estadísticas resultantes
