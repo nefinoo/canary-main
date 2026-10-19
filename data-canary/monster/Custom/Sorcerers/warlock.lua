@@ -97,13 +97,13 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -287, maxDamage = -374},
-	{name ="combat", interval = 1000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_MANADRAIN, minDamage = -287, maxDamage = -374, range = 7, radius = 1, target = true},
-	{name ="speed", interval = 1000, chance = 12, speed = {min = -600, max = -600}, duration = 40000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_BURSTARROW, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 1000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -287, maxDamage = -374, range = 7, radius = 1, target = true},
+	{name ="speed", interval = 1000, chance = 12, speed = {min = -600, max = -600}, duration = 12000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_BURSTARROW, effect = CONST_ME_FIREAREA},
 	{name ="firefield", interval = 1000, chance = 20, range = 7, radius = 2, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -287, maxDamage = -374, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
-	{name ="speed", interval = 6000, chance = 10, speed = {min = -600, max = -600}, duration = 20000, range = 5, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{name ="combat", interval = 2000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -287, maxDamage = -374, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
+	{name ="speed", interval = 6000, chance = 10, speed = {min = -600, max = -600}, duration = 10000, range = 5, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
