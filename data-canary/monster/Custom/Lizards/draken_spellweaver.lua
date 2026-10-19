@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Draken Spellweaver")
+﻿local mType = Game.createMonsterType("Draken Spellweaver")
 local monster = {}
 
 monster.description = "a draken spellweaver"
-monster.experience = 2050000
+monster.experience = 4500000000
 monster.outfit = {
 	lookType = 340,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Zao Palace, Razachai, and Zzaion.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10399
 monster.speed = 168
@@ -76,12 +76,8 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 195 },
-	{ name = "meat", chance = 26940 },
-	{ name = "platinum coin", chance = 23800, maxCount = 5 },
 	{ name = "weaver's wandtip", chance = 18450 },
 	{ name = "small ruby", chance = 6640, maxCount = 5 },
-	{ name = "great mana potion", chance = 5350 },
 	{ name = "draken sulphur", chance = 4610 },
 	{ name = "luminous orb", chance = 2580 },
 	{ name = "green gem", chance = 1290 },
@@ -95,17 +91,30 @@ monster.loot = {
 	{ name = "bamboo leaves", chance = 180 },
 	{ name = "harness", chance = 30 },
 	{ name = "draken trophy", chance = 10 },
+	{name = "platinum coin", chance = 100000, maxCount = 28},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 35000, maxCount = 34},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -8653, maxDamage = -112490, range = 7, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT, target = true },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 4, effect = CONST_ME_POFF, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -20306, maxDamage = -263980, range = 7, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT, target = true },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, radius = 4, effect = CONST_ME_POFF, target = true },
 	{ name = "soulfire rune", interval = 2000, chance = 10, target = false },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, shootEffect = CONST_ANI_POISON, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -20306, maxDamage = -26398, shootEffect = CONST_ANI_POISON, target = true },
 }
 
 monster.defenses = {
@@ -137,3 +146,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

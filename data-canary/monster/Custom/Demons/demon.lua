@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "demon"
 monster.description = "a demon"
-monster.experience = 5000
+monster.experience = 3500000
 monster.outfit = {
 	lookType = 35,
 	lookHead = 0,
@@ -13,6 +13,20 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 35
+monster.Bestiary = {
+	class = "Demon",
+	race = BESTY_RACE_DEMON,
+	toKill = 2500,
+	FirstUnlock = 100,
+	SecondUnlock = 1000,
+	CharmsPoints = 50,
+	Stars = 4,
+	Occurrence = 0,
+	Locations = "Hero Cave, Ferumbras' Citadel, Goroma, Ghostlands Warlock area unreachable, Liberty Bay hidden underground passage unreachable, Razachai, deep in Pits of Inferno (found in every throneroom except Verminor's), deep Formorgar Mines, Demon Forge, Alchemist Quarter, Magician Quarter, Chyllfroest, Oramond Dungeon, Abandoned Sewers, Hell Hub and Halls of Ascension.",
+}
+
 
 monster.health = 8200
 monster.maxHealth = 8200
@@ -104,31 +118,31 @@ monster.summons = {
 
 monster.loot = {
 	{name = "purple tome", chance = 1300},
-	{id = 2853, chance = 100000, child = {
-			{name = "talon", chance = 4000, maxCount = 4},
-			{name = "platinum amulet", chance = 50000, maxCount = 80},
-			{name = "gold ring", chance = 1100},
-			-- {id = 3098, chance = 500},
-			{name = "ice rapier", chance = 600},
-			{name = "golden legs", chance = 400},
-			{name = "demon shield", chance = 700},
-			{name = "coconut", chance = 10000, maxCount = 3},
-			{name = "fire mushroom", chance = 20000, maxCount = 6},
-			{name = "demonrage sword", chance = 4100}
-		}
-	},
-	{name = "platinum coin", chance = 70000, maxCount = 50},
-	-- {id = 3049, chance = 1400},
+	{name = "talon", chance = 4000, maxCount = 4},
+	{name = "platinum amulet", chance = 2400},
+	{name = "gold ring", chance = 800},
+	{name = "ice rapier", chance = 400},
+	{name = "golden legs", chance = 300},
+	{name = "demon shield", chance = 500},
+	{name = "coconut", chance = 10000, maxCount = 3},
+	{name = "fire mushroom", chance = 20000, maxCount = 6},
+	{name = "demonrage sword", chance = 410},
+	{name = "platinum coin", chance = 100000, maxCount = 2},
+	{name = "platinum coin", chance = 50000, maxCount = 4},
 	{name = "orb", chance = 3000},
-	{name = "giant sword", chance = 1428},
-	{name = "fire axe", chance = 1200},
+	{name = "giant sword", chance = 728},
+	{name = "fire axe", chance = 1500},
 	{name = "magic plate armor", chance = 130},
 	{name = "mastermind shield", chance = 500},
-	{id = 5906, chance = 500},
-	{name = "demon horn", chance = 1000}
+	{name = "demon horn", chance = 800},
+	{id = 12413, chance = 5000},
+	{id = 3399, chance = 130},
+	{id = 8095, chance = 130},
+	{id = 3408, chance = 130},
 }
 
 mType:register(monster)
+
 
 
 

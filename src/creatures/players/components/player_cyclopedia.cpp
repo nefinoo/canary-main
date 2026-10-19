@@ -61,7 +61,7 @@ void PlayerCyclopedia::loadDeathHistory(uint16_t page, uint16_t entriesPerPage) 
 			std::string killed_by = result->getString("killed_by");
 			std::string mostdamage_by = result->getString("mostdamage_by");
 
-			std::string cause = fmt::format("Died at Level {}", result->getNumber<uint32_t>("level"));
+			std::string cause = fmt::format("Died at Level {}", result->getNumber<uint64_t>("level"));
 
 			if (!killed_by.empty()) {
 				cause.append(fmt::format(" by{}", formatWithArticle(killed_by)));

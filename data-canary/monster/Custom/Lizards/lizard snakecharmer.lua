@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard snakecharmer"
 monster.description = "a lizard snakecharmer"
-monster.experience = 2050000
+monster.experience = 3750000000
 monster.outfit = {
 	lookType = 115,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.runHealth = 15
 monster.race = "blood"
 monster.corpse = 6041
@@ -80,9 +80,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{name ="condition", interval = 1000, chance = 10, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
+	{name ="condition", interval = 1000, chance = 10, type = CONDITION_POISON, startDamage = 0, tick = 4000, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {
@@ -98,25 +98,52 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 25},
 	{name = "yellow gem", chance = 555},
 	{name = "wand of dragonbreath", chance = 400},
 	{name = "snakebite rod", chance = 1333},
-	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "lizard leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "terra rod", chance = 1333},
-			{name = "gold coin", chance = 100000, maxCount = 50},
-			{name = "small amethyst", chance = 4000, maxCount = 4},
-			{name = "cape", chance = 20000},
-			{name = "lizard scale", chance = 5000}
-		}
-	}
+	{name = "terra rod", chance = 1333},
+	{name = "small amethyst", chance = 4000, maxCount = 4},
+	{name = "lizard scale", chance = 5000},
+	
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 100000, maxCount = 80},
+	{name = "crystal coin", chance = 35000, maxCount = 2},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 350},
+	{id = 895, chance = 350}, 
+	{id = 7390, chance = 350}, 
+	{id = 7415, chance = 350},
+	{id = 3303, chance = 350},
+	-- weapons lvl 500	
+	{id = 7366, chance = 450},
+	{id = 7426, chance = 450}, 
+	{id = 7420, chance = 450}, 
+	{id = 3296, chance = 450},
+	{id = 7437, chance = 450},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 550},
+	{ id = 3319, chance = 550 }, 
+	{ id = 3309, chance = 550 }, 
+	{id = 3341, chance = 550},
+	{name = "throwing star", chance = 550},
+	
+	--demon green set
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "prisoner"
 monster.description = "a prisoner"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 232,
 	lookHead = 0,
@@ -93,24 +93,21 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{name = "worm", chance = 20000, maxCount = 30, description2 = "worm"},
 	{name = "rotten meat", chance = 20000, description2 = "rotten meat"},
 	{name = "blank rune", chance = 10000, description2 = "blank rune"},
-	{name = "legion helmet", chance = 6667, description2 = "legion helmet"},
+	{name = "legion helmet", chance = 667, description2 = "legion helmet"},
 	{id = 5806, chance = 1000, description2 = "silver goblet"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "plate armor", chance = 3333, description2 = "plate armor"},
-			{name = "scale armor", chance = 10000, description2 = "scale armor"},
-			{name = "titan axe", chance = 800, description2 = "titan axe"},
-			{name = "skeleton decoration", chance = 2000, description2 = "skeleton decoration"},
-			{id = 5801, chance = 1538, description2 = "key ring"},
-			{name = "stone skin amulet", chance = 2200, maxCount = 5, description2 = "stone skin amulet"}
-		}
-	}
+	{name = "plate armor", chance = 3333, description2 = "plate armor"},
+	{name = "scale armor", chance = 10000, description2 = "scale armor"},
+	{name = "titan axe", chance = 800, description2 = "titan axe"},
+	{name = "skeleton decoration", chance = 2000, description2 = "skeleton decoration"},
+	{id = 5801, chance = 1538},
 }
 
 mType:register(monster)
+
 
 
 

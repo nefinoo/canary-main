@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Lizard High Guard")
+﻿local mType = Game.createMonsterType("Lizard High Guard")
 local monster = {}
 
 monster.description = "a lizard high guard"
-monster.experience = 2050000
+monster.experience = 3750000000
 monster.outfit = {
 	lookType = 337,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Corruption Hole, Razachai, Temple of Equilibrium, Northern Zao Plantations.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10355
 monster.speed = 119
@@ -77,16 +77,11 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 32000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 27 },
 	{ name = "small emerald", chance = 2520, maxCount = 4 },
 	{ name = "platinum coin", chance = 4900, maxCount = 2 },
 	{ name = "tower shield", chance = 1040 },
 	{ name = "lizard leather", chance = 1000 },
 	{ name = "lizard scale", chance = 970 },
-	{ name = "strong health potion", chance = 11925 },
-	{ name = "great health potion", chance = 7070 },
 	{ name = "red lantern", chance = 1220 },
 	{ name = "bunch of ripe rice", chance = 4950 },
 	{ name = "zaoan armor", chance = 80 },
@@ -95,10 +90,23 @@ monster.loot = {
 	{ name = "spiked iron ball", chance = 7000 },
 	{ name = "high guard flag", chance = 2990 },
 	{ name = "high guard shoulderplates", chance = 8150 },
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1500, chance = 100, minDamage = -8653, maxDamage = -11249 },
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -20306, maxDamage = -26398 },
 }
 
 monster.defenses = {
@@ -130,3 +138,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

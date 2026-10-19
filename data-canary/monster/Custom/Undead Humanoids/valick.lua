@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "valick"
 monster.description = "a valick"
-monster.experience = 15500
+monster.experience = 15500000
 monster.outfit = {
 	lookType = 68,
 	lookHead = 20,
@@ -94,10 +94,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1425},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1165, maxDamage = -1425, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -965, maxDamage = -1025},
+	{name ="combat", interval = 4000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -965, maxDamage = -1625, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
 	{name ="speed", interval = 2000, chance = 12, speed = {min = -600, max = -600}, duration = 60000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1165, maxDamage = -1425, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
+	{name ="combat", interval = 4000, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -965, maxDamage = -1425, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
 }
 
 monster.defenses = {
@@ -109,13 +109,24 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{id = 7366, chance = 50},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 50000, maxCount = 8},
+	{name = "experience scroll", chance = 850},
+	{name = "magic plate armor", chance = 130},
+	{name = "fire axe", chance = 1500},
+	{name = "yellow gem", chance = 3500},
+	{name = "green gem", chance = 2000},
+	{name = "violet gem", chance = 500},
+	{name = "demonrage sword", chance = 410},
+	{id = 5905, chance = 120},
+	{id = 12413, chance = 12500},
+	{id = 3399, chance = 350},
+	{id = 8095, chance = 350},
+	{id = 3408, chance = 350},
 }
 
 mType:register(monster)
+
 
 
 

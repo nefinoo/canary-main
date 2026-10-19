@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc leader"
 monster.description = "a orc leader"
-monster.experience = 270
+monster.experience = 360000
 monster.outfit = {
 	lookType = 59,
 	lookHead = 20,
@@ -12,6 +12,19 @@ monster.outfit = {
 	lookFeet = 50,
 	lookAddons = 0,
 	lookMount = 0
+}
+
+monster.raceId = 59
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
 monster.health = 450
@@ -91,31 +104,16 @@ monster.defenses = {
 monster.loot = {
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "gold coin", chance = 100000, maxCount = 30},
-	{name = "throwing knife", chance = 50000, maxCount = 2},
-	{id = 3307, chance = 10000},
-	{name = "plate shield", chance = 5000},
-	{id = 3578, chance = 20000},
-	{name = "plate legs", chance = 1818},
-	{name = "broadsword", chance = 2857},
-	{name = "backpack", chance = 20000, child = {
-			{name = "gold coin", chance = 2857}
-		}
-	},
-	{id = 2853, chance = 100000, child = {
-			{id = 3091, chance = 2000},
-			{name = "royal spear", chance = 2000, maxCount = 2},
-			{name = "meat", chance = 33333, maxCount = 2},
-			{name = "dagger", chance = 6666},
-			{id = 3369, chance = 1000},
-			{name = "longsword", chance = 10000},
-			{name = "green tunic", chance = 2500},
-			{name = "brass legs", chance = 2857},
-			{name = "plate armor", chance = 1818}
-		}
-	}
+	{name = "gold coin", chance = 2857},
+	{name = "meat", chance = 33333, maxCount = 2},
+	{id = 12413, chance = 2000},
+	{id = 3399, chance = 40},
+	{id = 8095, chance = 40},
+	{id = 3408, chance = 40},
 }
 
 mType:register(monster)
+
 
 
 

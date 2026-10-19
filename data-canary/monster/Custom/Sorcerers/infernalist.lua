@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infernalist"
 monster.description = "an infernalist"
-monster.experience = 3000000
+monster.experience = 3000000000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 78,
@@ -99,13 +99,14 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "orange backpack", chance = 100},
-	{name = "crystal coin", chance = 10000, maxCount = 10},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 10000, maxCount = 10},
+	{name = "experience scroll", chance = 1500},
 	{id = 3006, chance = 2600 },
 	{ name = "magic sulphur", chance = 600 },
 }
 
 mType:register(monster)
+
 
 
 

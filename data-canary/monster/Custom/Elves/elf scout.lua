@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari ranger"
 monster.description = "a salazaari ranger"
-monster.experience = 11500
+monster.experience = 11500000
 monster.outfit = {
 	lookType = 64,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 8000
-monster.maxHealth = 8000
+monster.health = 6000
+monster.maxHealth = 6000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6012
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
+	{name ="combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 6000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -95,17 +95,39 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 5},
-	{name = "throwing star", chance = 100},
-	{name = "crown armor", chance = 2500},
-	{name = "crown legs", chance = 2500},
-	{name = "crown helmet", chance = 2500},
-	{name = "experience scroll", chance = 2000},
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 50000, maxCount = 5},
+	{name = "green gem", chance = 2500},
+	{name = "crown armor", chance = 1500},
+	{name = "crown legs", chance = 1000},
+	{name = "crown helmet", chance = 2000},
+	{name = "crown shield", chance = 2250},
+	{name = "experience scroll", chance = 600},
 	{ id = 5921, chance = 1130 }, -- heaven blossom
-	-- {id = 9743, chance = 2500}
+	{id = 12413, chance = 12000},
+	{id = 3399, chance = 250},
+	{id = 8095, chance = 250},
+	{id = 3408, chance = 250},
+}
+
+
+monster.raceId = 64
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Yalahar Foreigner Quarter, Shadowthorn, northwest of Ab'Dendriel, north and west of Mount Sternum, \z
+		Hellgate, Maze of Lost Souls, near Knightwatch Tower in the Plains of Havoc. \z
+		Two may also spawn when a Desperate White Deer or an Enraged White Deer is killed.",
 }
 
 mType:register(monster)
+
 
 
 

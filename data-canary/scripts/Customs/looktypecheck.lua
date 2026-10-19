@@ -1,45 +1,128 @@
 local looktypes = TalkAction("!look")
 
--- keep it ordered
-local invalidTypes = {
-    1, 135, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173,
-    174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188,
-    189, 190, 191, 411, 415, 424, 439, 440, 468, 469, 474, 475, 476, 477, 478,
-    479, 480, 481, 482, 483, 484, 485, 501, 518, 519, 520, 524, 525, 536, 543,
-    549, 576, 581, 582, 597, 616, 623, 625, 638, 639, 640, 641, 642, 643, 645,
-    646, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663
+local config = {
+    minLookType = 2,
+    maxLookType = 2207,
+
+    -- true = bloquear IDs de la lista negra
+    -- false = permitir probar cualquier ID del rango
+    useBlacklist = false
 }
 
-function looktypes.onSay(player, words, param)
-     if not player:getGroup():getAccess() then
-         return true
-     end
+-- Lista de lookTypes bloqueados
+local invalidTypes = {
+    1, 135, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170,
+    171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+    182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+    411, 415, 424, 439, 440, 468, 469, 474, 475, 476,
+    477, 478, 479, 480, 481, 482, 483, 484, 485,
+    501, 518, 519, 520, 524, 525, 536, 543, 549,
+    576, 581, 582, 597, 616, 623, 625, 638, 639,
+    640, 641, 642, 643, 645, 646, 652, 653, 654,
+    655, 656, 657, 658, 659, 660, 661, 662, 663
+}
 
-     local t = param:split(",")
-     local lookType = tonumber(t[1])
-     if not lookType then
-         lookType = MonsterType(t[1]) and MonsterType(t[1]):getOutfit().lookType
-         if not lookType then
-             player:sendCancelMessage("A monster with that name does not exist.")
-             return false
-         end
-     end
-     if t[2] then
-         playerx, player = player, Player(t[2]:gsub("^%s*(.-)%s*$", "%1"))
-         if not player then
-             playerx:sendCancelMessage("A player with that name does not exist or is not online.")
-             return false
-         end
-     end
-     if lookType >= 0 and lookType ~= 1 and lookType ~= 135 and lookType ~= 411 and lookType ~= 415 and lookType ~= 424 and (lookType <= 160 or lookType >= 192) and lookType ~= 439 and lookType ~= 440 and lookType ~= 468 and lookType ~= 469 and (lookType < 474 or lookType > 485) and lookType ~= 501 and lookType ~= 518 and lookType ~= 519 and lookType ~= 520 and lookType ~= 524 and lookType ~= 525 and lookType ~= 536 and lookType ~= 543 and lookType ~= 549 and lookType ~= 576 and lookType ~= 581 and lookType ~= 582 and lookType ~= 595 then
-         local playerOutfit = player:getOutfit()
-         playerOutfit.lookType = lookType
-         player:setOutfit(playerOutfit)
-     else
-         player = playerx or player
-         player:sendCancelMessage("A look type with that id does not exist.")
-     end
-     return false
+-- Convertir lista en tabla de busqueda
+local blacklist = {}
+
+for _, id in ipairs(invalidTypes) do
+    blacklist[id] = true
+end
+
+function looktypes.onSay(player, words, param)
+
+    if not player:getGroup():getAccess() then
+        return true
+    end
+
+    if not param or param == "" then
+        player:sendCancelMessage(
+            "Usage: !look lookType or !look lookType, playerName"
+        )
+        return true
+    end
+
+    local params = param:split(",")
+
+    local input = params[1]:match("^%s*(.-)%s*$")
+    local lookType = tonumber(input)
+
+    -- Permitir nombres de monstruos
+    if not lookType then
+        local monster = MonsterType(input)
+
+        if not monster then
+            player:sendCancelMessage(
+                "A monster with that name does not exist."
+            )
+            return true
+        end
+
+        local outfit = monster:getOutfit()
+
+        if not outfit then
+            player:sendCancelMessage(
+                "This monster does not have an outfit."
+            )
+            return true
+        end
+
+        lookType = outfit.lookType
+    end
+
+    -- Verificar rango permitido
+    if not lookType
+    or lookType % 1 ~= 0
+    or lookType < config.minLookType
+    or lookType > config.maxLookType then
+
+        player:sendCancelMessage(
+            "LookType must be between " ..
+            config.minLookType .. " and " ..
+            config.maxLookType .. "."
+        )
+
+        return true
+    end
+
+    -- Verificar lista negra
+    if config.useBlacklist and blacklist[lookType] then
+        player:sendCancelMessage(
+            "LookType " .. lookType .. " is blacklisted."
+        )
+        return true
+    end
+
+    -- Seleccionar jugador
+    local targetPlayer = player
+
+    if params[2] then
+        local playerName = params[2]:match("^%s*(.-)%s*$")
+
+        targetPlayer = Player(playerName)
+
+        if not targetPlayer then
+            player:sendCancelMessage(
+                "A player with that name does not exist or is not online."
+            )
+            return true
+        end
+    end
+
+    -- Aplicar lookType
+    local outfit = targetPlayer:getOutfit()
+
+    outfit.lookType = lookType
+
+    targetPlayer:setOutfit(outfit)
+
+    player:sendTextMessage(
+        MESSAGE_EVENT_ADVANCE,
+        "Attempted to apply LookType " .. lookType ..
+        " to " .. targetPlayer:getName() .. "."
+    )
+
+    return true
 end
 
 looktypes:separator(" ")

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="Dromedaries have been sighted moving through the desert." />
+	<announce delay="120000" type="event" message="The dromedaries are wandering freely across the sands." />
+
+	<!-- AREARESPAWN -->
+	<areaspawn delay="2000" fromx="636" fromy="355" fromz="7" tox="657" toy="374" toz="7">
+		<monster name="Dromedary" amount="3" />
+	</areaspawn>
+</raid>

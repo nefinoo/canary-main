@@ -188,18 +188,33 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif target.itemid == 17950 then -- swamp digging
 		if not player:hasExhaustion("swamp-digging") then
 			local chance = math.random(1, 100)
-			if chance <= 42 then
+			if chance <= 32 then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a dead snake.")
 				player:addItem(4259)
-			elseif chance >= 43 and chance <= 79 then
+			elseif chance >= 33 and chance <= 39 then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small diamond.")
 				player:addItem(3028)
+			elseif chance >= 40 and chance <= 49 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small sapphire.")
+				player:addItem(3029)
+			elseif chance >= 50 and chance <= 59 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small ruby.")
+				player:addItem(3030)
+			elseif chance >= 60 and chance <= 69 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small emerald.")
+				player:addItem(3032)
+			elseif chance >= 70 and chance <= 79 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small amethyst.")
+				player:addItem(3033)
+			elseif chance >= 80 and chance <= 90 then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small amethyst.")
+				player:addItem(3033)
 			else
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a leech.")
 				player:addItem(17858)
 			end
-
-			player:setExhaustion("swamp-digging", 7 * 24 * 60 * 60)
+			
+			player:setExhaustion("swamp-digging", 2 * 60 * 60)
 			player:getPosition():sendMagicEffect(CONST_ME_GREEN_RINGS)
 		end
 	elseif table.contains(sandIds, groundId) then
@@ -221,7 +236,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3453, 9596 }, item.itemid) then
+	if not table.contains({ 3453, 9596, 52042 }, item.itemid) then
 		return false
 	end
 
@@ -232,18 +247,32 @@ function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
 		player:addAchievementProgress("Happy Farmer", 200)
 		return true
 	end
+	-- Satan Quest Tree
+	if target:getActionId() == 44999 and item:getActionId() == 666 then
+		local pos = target:getPosition()
+
+		target:remove()
+
+		addEvent(function(position)
+			local tree = Game.createItem(2720, 1, position)
+			if tree then
+				tree:setActionId(44999)
+			end
+		end, 60000, pos)
+
+		return true
+	end
 	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseSickle(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3293, 3306 }, item.itemid) then
+	if not table.contains({ 3293, 3306, 52042 }, item.itemid) then
 		return false
 	end
-
-	if target.itemid == 5464 then -- burning sugar cane
-		target:transform(5463)
+	if target.itemid == 5463 then
+		target:transform(5462)
 		target:decay()
-		Game.createItem(5466, 1, toPosition) -- bunch of sugar cane
+		Game.createItem(5466, 1, toPosition)
 		player:addAchievementProgress("Natural Sweetener", 50)
 		return true
 	end
@@ -251,14 +280,14 @@ function onUseSickle(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3304, 9598 }, item.itemid) then
+	if not table.contains({ 3304, 9598, 52042 }, item.itemid) then
 		return false
 	end
 	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3469, 9594, 9598 }, item.itemid) then
+	if not table.contains({ 3469, 9594, 9598, 52042 }, item.itemid) then
 		return false
 	end
 
@@ -272,7 +301,7 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 end
 
 function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
-	if not table.contains({ 3468, 3470 }, item.itemid) then
+	if not table.contains({ 3468, 3470, 52042 }, item.itemid) then
 		return false
 	end
 	return false

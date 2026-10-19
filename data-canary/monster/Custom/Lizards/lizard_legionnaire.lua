@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Lizard Legionnaire")
+﻿local mType = Game.createMonsterType("Lizard Legionnaire")
 local monster = {}
 
 monster.description = "a lizard legionnaire"
-monster.experience = 2050000
+monster.experience = 4100000000
 monster.outfit = {
 	lookType = 338,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Corruption Hole, Razachai, Temple of Equilibrium, Northern Zao Plantations.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10359
 monster.speed = 133
@@ -75,12 +75,8 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "small diamond", chance = 1001, maxCount = 2 },
-	{ name = "gold coin", chance = 44000, maxCount = 100 },
-	{ name = "gold coin", chance = 54000, maxCount = 65 },
 	{ name = "lizard leather", chance = 970 },
 	{ name = "lizard scale", chance = 980, maxCount = 3 },
-	{ name = "strong health potion", chance = 3880 },
 	{ name = "red lantern", chance = 530 },
 	{ name = "bunch of ripe rice", chance = 1950 },
 	{ name = "zaoan armor", chance = 70 },
@@ -90,11 +86,24 @@ monster.loot = {
 	{ name = "legionnaire flags", chance = 1940 },
 	{ name = "broken halberd", chance = 14940 },
 	{ name = "lizard trophy", chance = 20 },
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_SPEAR, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_SPEAR, target = true },
 }
 
 monster.defenses = {
@@ -124,3 +133,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

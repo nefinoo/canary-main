@@ -1,0 +1,120 @@
+local internalNpcName = "Edala"
+local npcType = Game.createNpcType(internalNpcName)
+local npcConfig = {}
+
+npcConfig.name = internalNpcName
+npcConfig.description = internalNpcName
+
+npcConfig.health = 100
+npcConfig.maxHealth = npcConfig.health
+npcConfig.walkInterval = 2000
+npcConfig.walkRadius = 2
+
+npcConfig.outfit = {
+	lookType = 63,
+}
+
+npcConfig.flags = {
+	floorchange = false,
+}
+
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+
+npcType.onThink = function(npc, interval)
+	npcHandler:onThink(npc, interval)
+end
+
+npcType.onAppear = function(npc, creature)
+	npcHandler:onAppear(npc, creature)
+end
+
+npcType.onDisappear = function(npc, creature)
+	npcHandler:onDisappear(npc, creature)
+end
+
+npcType.onMove = function(npc, creature, fromPosition, toPosition)
+	npcHandler:onMove(npc, creature, fromPosition, toPosition)
+end
+
+npcType.onSay = function(npc, creature, type, message)
+	npcHandler:onSay(npc, creature, type, message)
+end
+
+npcType.onCloseChannel = function(npc, creature)
+	npcHandler:onCloseChannel(npc, creature)
+end
+
+local config = {
+	[1] = "Ashari, |PLAYERNAME|. How... nice to see a human taking interest in a beautiful art such as music.",
+	[2] = "Ashari, |PLAYERNAME|... that sound was.. interesting.",
+	[3] = "Ashari, |PLAYERNAME|. You've made some... progress playing the lyre, haven't you..? I want to believe you have.",
+	[4] = "|PLAYERNAME|. My regular visitor. I certainly... appreciate your efforts to entertain me, but let me assure you, I'm quite comfortable up here by myself. Alone. In silence.",
+	[5] = "Ashari, |PLAYERNAME|. I'm starting to feel a little sorry... for your lyre. Being forced to produce such noise must be a tragic fate.",
+	[6] = "|PLAYERNAME|! You're driving me insane! I beg you, take your lyre away from this sacred and peaceful place.",
+	[7] = "|PLAYERNAME|! My ears! I'd prefer listening to drunken dwarves rambling all day to the sound of your lyre! Please, at least get it tuned. Here, you can have this elvish diapason.",
+}
+
+local function greetCallback(npc, creature)
+	Storage.Diapason.Lyre = 7500
+	Storage.Diapason.Edala = 7501
+	Storage.Diapason.EdalaTimer = 7502
+	
+	local playerId = creature:getId()
+	local player = Player(creature)
+	local lyreProgress = player:getStorageValue(Storage.Diapason.Lyre)
+	local greetMessage = config[lyreProgress]
+	if greetMessage and player:getStorageValue(Storage.Diapason.Edala) == 1 and player:getStorageValue(Storage.Diapason.EdalaTimer) < os.time() then
+		player:setStorageValue(Storage.Diapason.Edala, 0)
+		player:setStorageValue(Storage.Diapason.EdalaTimer, os.time() + 86400)
+		if lyreProgress == 7 then
+			player:setStorageValue(Storage.Diapason.Lyre, 8)
+			player:addItem(12547, 1)
+		end
+		npcHandler:setMessage(MESSAGE_GREET, greetMessage)
+	else
+		npcHandler:setMessage(MESSAGE_GREET, "Ashari, |PLAYERNAME|.")
+	end
+	return true
+end
+
+-- Healing
+local function addHealKeyword(text, condition, effect)
+	keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, text = text }, function(player)
+		return player:getCondition(condition) ~= nil
+	end, function(player)
+		player:removeCondition(condition)
+		player:getPosition():sendMagicEffect(effect)
+	end)
+end
+
+addHealKeyword("You are burning. Let me quench those flames.", CONDITION_FIRE, CONST_ME_MAGIC_GREEN)
+addHealKeyword("You are poisoned. Let me soothe your pain.", CONDITION_POISON, CONST_ME_MAGIC_RED)
+addHealKeyword("You are electrified, my child. Let me help you to stop trembling.", CONDITION_ENERGY, CONST_ME_MAGIC_GREEN)
+
+keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, text = "You are hurt, my child. I will heal your wounds." }, function(player)
+	return player:getHealth() < 40
+end, function(player)
+	local health = player:getHealth()
+	if health < 40 then
+		player:addHealth(40 - health)
+	end
+	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
+end)
+keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, text = "You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here." })
+
+
+-- Greeting message
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
+--Farewell message
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|." })
+
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
+
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi, |PLAYERNAME|!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi, |PLAYERNAME|!")
+
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
+-- npcType registering the npcConfig table
+npcType:register(npcConfig)

@@ -402,3 +402,5 @@ database_backup
 cmake-build-*
 Auto_Restarter.bat
 config.lua
+config.lua
+data/stages.lua

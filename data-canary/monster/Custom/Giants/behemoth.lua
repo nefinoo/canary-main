@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "behemoth"
 monster.description = "a behemoth"
-monster.experience = 2050000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 55,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 540000
+monster.maxHealth = 540000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5999
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -8653, maxDamage = -11249},
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -11249, maxDamage = -19037},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -19037, maxDamage = -24748, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
@@ -93,35 +93,30 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{name = "crystal necklace", chance = 300},
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "strange talisman", chance = 3333},
-			{name = "wand of decay", chance = 1000},
-			{name = "crowbar", chance = 15000},
-			{name = "plate armor", chance = 2000},
-			{name = "dark armor", chance = 3000},
-			{id = 3456, chance = 6000},
-			{name = "steel boots", chance = 400},
-			{name = "meat", chance = 40000, maxCount = 6},
-			{name = "perfect behemoth fang", chance = 1200},
-			{name = "behemoth claw", chance = 1500}
-		}
-	},
-	{id = 2893, chance = 11000},
-	{name = "gold coin", chance = 100000, maxCount = 70},
-	{name = "small amethyst", chance = 4000, maxCount = 2},
-	{name = "strange symbol", chance = 800},
-	{name = "big bone", chance = 7000},
-	{name = "two handed sword", chance = 4000},
-	{name = "double axe", chance = 2000},
-	{name = "giant sword", chance = 688},
+	{name = "strange talisman", chance = 2000},
+	{name = "steel boots", chance = 300},
+	{name = "perfect behemoth fang", chance = 400},
+	{name = "small amethyst", chance = 12000, maxCount = 2},
+	{name = "giant sword", chance = 388},
 	{name = "war axe", chance = 488},
-	{name = "ham", chance = 10000, maxCount = 3},
-	{name = "behemoth claw", chance = 400}
+	{name = "behemoth claw", chance = 400},	
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 75000, maxCount = 20},
+	{name = "platinum coin", chance = 35000, maxCount = 25},
+	{name = "experience scroll", chance = 3000, maxCount = 3},
+	{id = 37607, chance = 100},
+	{id = 37608, chance = 100},
+	{id = 37609, chance = 100},
+	{id = 37610, chance = 100},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots	
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "energy overlord"
 monster.description = "an energy overlord"
-monster.experience = 2800
+monster.experience = 2800000
 monster.outfit = {
 	lookType = 290,
 	lookHead = 0,
@@ -94,6 +94,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

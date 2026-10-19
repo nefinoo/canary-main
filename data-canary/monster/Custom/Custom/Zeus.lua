@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Zeus"
 monster.description = "a shining light"
-monster.experience = 225000
+monster.experience = 250000000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 57,
@@ -108,19 +108,24 @@ monster.summons = {
 }
 
 monster.loot = {
-	{id = 3063, chance = 10},
-	{name = "crystal coin", chance = 100000, maxCount = 15},
-	{name = "crystal coin", chance = 70000, maxCount = 45},
-	{name = "crystal coin", chance = 50000, maxCount = 70},
-	{name = "crystal coin", chance = 20000, maxCount = 100},
-	{name = "assassin star", chance = 5},
-	{name = "justice seeker", chance = 5},
-	{name = "experience scroll", chance = 3000},
-	{name = "deadly wand", chance = 5},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 5},
+	{name = "platinum coin", chance = 75000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 750, maxCount = 2},
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)
+
 
 
 

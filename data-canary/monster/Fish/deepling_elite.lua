@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling elite"
-monster.experience = 8000000
+monster.experience = 6000000000
 monster.outfit = {
 	lookType = 441,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja (Tanjis lair).",
 }
 
-monster.health = 3200
-monster.maxHealth = 3200
+monster.health = 3200000
+monster.maxHealth = 3200000
 monster.race = "blood"
 monster.corpse = 13713
 monster.speed = 165
@@ -85,7 +85,6 @@ monster.loot = {
 	{ name = "great health potion", chance = 25000 },
 	{ name = "eye of a deepling", chance = 25000 },
 	{ name = "deepling filet", chance = 25000 },
-	{ name = "vortex bolt", chance = 24800, maxCount = 5 },
 	{ name = "deepling warts", chance = 24400 },
 	{ name = "great mana potion", chance = 24200 },
 	{ name = "deeptags", chance = 20600 },
@@ -96,18 +95,19 @@ monster.loot = {
 	{ name = "fish fin", chance = 2300 },
 	{ name = "warrior's shield", chance = 1534 },
 	{ name = "warrior's axe", chance = 820 },
+	{ name = "foxtail", chance = 15 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -300, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -290, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -13000, effect = CONST_ME_DRAWBLOOD },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -10000, maxDamage = -13000, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 }
 
 monster.defenses = {
 	defense = 45,
 	armor = 45,
 	mitigation = 1.37,
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 150, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 13000, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
@@ -131,3 +131,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

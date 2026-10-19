@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "blue djinn"
 monster.description = "a blue djinn"
-monster.experience = 5000000
+monster.experience = 5750000000
 monster.outfit = {
 	lookType = 80,
 	lookHead = 20,
@@ -69,23 +69,23 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 50},
-	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 80},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = 20},
-	{type = COMBAT_DEATHDAMAGE , percent = -10}
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -15000},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -20000, maxDamage = -30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="condition", interval = 1000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -14999, maxDamage = -25383},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="condition", interval = 1000, chance = 34, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
 	{name ="drunk", interval = 1000, chance = 15, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
 	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 20000, outfitMonster = "rabbit" },
 }
@@ -96,22 +96,29 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "royal spear", chance = 2000, maxCount = 2},
 	{name = "small sapphire", chance = 6666, maxCount = 4},
 	{name = "mystic turban", chance = 1111},
 	{name = "blue rose", chance = 1000},
 	{id = 3595, chance = 50000, maxCount = 5},
-	{id = 2853, chance = 100000, child = {
-			{id = 1971, chance = 10000},
-			{id = 2914, chance = 20000},
-			{name = "small oil lamp", chance = 7500},
-			{name = "blue piece of cloth", chance = 5000}
-		}
-	}
+	{name = "small oil lamp", chance = 7500},
+	{name = "blue piece of cloth", chance = 5000},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 35000, maxCount = 35},
+	{name = "experience scroll", chance = 3300, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

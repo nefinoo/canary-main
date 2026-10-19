@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Lizard Dragon Priest")
+﻿local mType = Game.createMonsterType("Lizard Dragon Priest")
 local monster = {}
 
 monster.description = "a lizard dragon priest"
-monster.experience = 2050000
+monster.experience = 4000000000
 monster.outfit = {
 	lookType = 339,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Temple of Equilibrium, Northern Zao Plantations.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10363
 monster.speed = 128
@@ -82,30 +82,37 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 5000, maxCount = 100 },
-	{ name = "gold coin", chance = 4400, maxCount = 88 },
 	{ name = "small amethyst", chance = 4900, maxCount = 3 },
-	{ name = "platinum coin", chance = 4090, maxCount = 2 },
 	{ name = "yellow gem", chance = 1000 },
-	{ id = 3052, chance = 770 }, -- life ring
 	{ name = "terra rod", chance = 1001 },
 	{ name = "wand of inferno", chance = 1480 },
 	{ name = "lizard leather", chance = 980 },
 	{ name = "lizard scale", chance = 1130 },
-	{ name = "strong mana potion", chance = 12110 },
-	{ name = "great mana potion", chance = 7940 },
 	{ name = "focus cape", chance = 660 },
 	{ name = "bunch of ripe rice", chance = 960 },
 	{ name = "zaoan shoes", chance = 450 },
 	{ name = "zaoan robe", chance = 300 },
 	{ name = "dragon priest's wandtip", chance = 9910 },
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK, target = true },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 15, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 15, minDamage = -20306, maxDamage = -26398, range = 7, radius = 1, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
 }
 
 monster.defenses = {
@@ -138,3 +145,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

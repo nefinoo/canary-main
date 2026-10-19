@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="The jungle whispers in anger... Tiquandas Revenge has risen." />
+	<announce delay="12000" type="event" message="The spirits of the jungle roar... Tiquandas Revenge walks again." />
+		<singlespawn delay="20000" name="Tiquandas Revenge" x="216" y="279" z="4" />
+</raid>

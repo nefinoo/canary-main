@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "tiquandas revenge"
 monster.description = "a tiquandas revenge"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 120,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2000
-monster.maxHealth = 2000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.runHealth = 400
 monster.race = "venom"
 monster.corpse = 6047
@@ -79,15 +79,15 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 70, attack = 40, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -200, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -600, maxDamage = -2000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
 	{name ="speed", interval = 1000, chance = 34, speed = {min = -850, max = -850}, duration = 30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -40, maxDamage = -130, radius = 3, target = false, effect = CONST_ME_POISONAREA}
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -1300, radius = 3, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
 	defense = 31,
 	armor = 30,
-	{name ="ultimate healing", interval = 1200, chance = 35, minDamage = 600, maxDamage = 800}
+	{name ="ultimate healing", interval = 1200, chance = 35, minDamage = 6000, maxDamage = 8000}
 }
 
 monster.loot = {
@@ -98,10 +98,12 @@ monster.loot = {
 	{name = "small diamond", chance = 33333, maxCount = 3},
 	{name = "seeds", chance = 4000},
 	{name = "mandrake", chance = 1000, unique = true},
+	{id = 12311, chance = 100},
 	{name = "worm", chance = 50000, maxCount = 10}
 }
 
 mType:register(monster)
+
 
 
 

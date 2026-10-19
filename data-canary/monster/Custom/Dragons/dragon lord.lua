@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon lord"
 monster.description = "a dragon lord"
-monster.experience = 2250
+monster.experience = 2250000
 monster.outfit = {
 	lookType = 39,
 	lookHead = 20,
@@ -13,6 +13,26 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 39
+monster.Bestiary = {
+	class = "Dragon",
+	race = BESTY_RACE_DRAGON,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Ankrahmun Dragon Lairs, Banshee Quest final room (level 60+ to open the door), \z
+	Deeper Cyclopolis past the Dragon Spawn (level 30+ to open the door), Draconia, Edron Dragon Lair, \z
+	Fibula Dungeon (level 50+ to open the door), Maze of Lost Souls (level 30+ to open the door), \z
+	Pits of Inferno Dragon Lair, Dragon Lord hole in Plains of Havoc, Carlin Dragon Lair, \z
+	Thais Dragon Lair, Goroma Dragon Lairs, Hot Spot, Venore Dragon Lair, Arena and Zoo Quarter(Yalahar), \z
+	beneath Fenrock, Darashia Dragon Lair, Razachai, Dragonblaze Peaks, Ferumbras Citadel, Fury Dungeon, \z
+	Lower Spike, Krailos Steppe.",
+}
+
 
 monster.health = 2150
 monster.maxHealth = 2150
@@ -67,15 +87,15 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = 90},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 50},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 80},
 	{type = COMBAT_FIREDAMAGE, percent = 100},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 30},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
@@ -93,32 +113,28 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "gold coin", chance = 100000, maxCount = 30},
 	{name = "dragon ham", chance = 20000, maxCount = 2},
-	{name = "golden mug", chance = 1818},
-	{id = 2842, chance = 3333},
-	{name = "broadsword", chance = 5000},
 	{name = "royal helmet", chance = 588},
-	{id = 3361, chance = 333},
-	{name = "royal spear", chance = 2000, maxCount = 2},
-	-- {id = 3449, chance = 2500, maxCount = 5},
-	-- {name = "power bolt", chance = 2222, maxCount = 10},
 	{name = "green mushroom", chance = 6666},
 	{name = "red dragon leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "small emerald", chance = 833, maxCount = 2},
-			{name = "fire sword", chance = 1428},
-			{name = "small sapphire", chance = 2222, maxCount = 2},
-			{name = "tower shield", chance = 1333},
-			{name = "dragon slayer", chance = 1033},
-			{name = "dragon lance", chance = 909},
-			{name = "red dragon scale", chance = 5000}
-		}
-	}
+	{name = "gold coin", chance = 100000, maxCount = 25},
+	{name = "small emerald", chance = 833, maxCount = 2},
+	{name = "fire sword", chance = 1428},
+	{name = "small sapphire", chance = 2222, maxCount = 2},
+	{name = "tower shield", chance = 533},
+	{name = "dragon slayer", chance = 333},
+	{name = "dragon scale mail", chance = 100},
+	{name = "dragon lance", chance = 409},
+	{name = "red dragon scale", chance = 5000},
+	{id = 12413, chance = 4000},
+	{id = 3399, chance = 100},
+	{id = 8095, chance = 100},
+	{id = 3408, chance = 100},
 }
 
 mType:register(monster)
+
 
 
 

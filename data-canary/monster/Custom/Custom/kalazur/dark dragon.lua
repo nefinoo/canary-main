@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dark dragon"
 monster.description = "a dark dragon"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -97,22 +97,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{id = 3049, chance = 10000},
-			{name = "demon shield", chance = 7000},
-			{name = "demon shield", chance = 7600}
-		}
-	},
+	{name = "demon shield", chance = 7000},
+	{name = "demon shield", chance = 7600},
 	{name = "small amethyst", chance = 5515, maxCount = 20},
-	{name = "crystal coin", chance = 100000, maxCount = 100},
-	{name = "crystal coin", chance = 100000, maxCount = 50},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 100000, maxCount = 5},
 	{name = "fire axe", chance = 10000},
 	{id = 6529, chance = 5000},
-	{name = "assassin star", chance = 5000},
-	{name = "experience scroll", chance = 10000}
+	{name = "deadly star", chance = 5000},
+	{name = "experience scroll", chance = 1000}
 }
 
 mType:register(monster)
+
 
 
 

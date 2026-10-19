@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc shaman"
 monster.description = "a orc shaman"
-monster.experience = 165
+monster.experience = 165000
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -13,6 +13,21 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 6
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Edron Orc Cave, Temple of Xayepocax, below Point of No Return in Outlaw Camp, Venore Orc Cave, \z
+		Maze of Lost Souls, Orc Fort, north west of Thais, Elvenbane, Plains Of Havoc, Foreigner Quarter, Zao Orc Land.",
+}
+
 
 monster.health = 115
 monster.maxHealth = 115
@@ -97,19 +112,14 @@ monster.summons = {
 
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 3289, chance = 2222},
-	{name = "chain helmet", chance = 2222},
-	{id = 2853, chance = 100000, child = {
-			{id = 3998, chance = 5000},
-			{name = "spear", chance = 4000},
-			-- {id = 15827, chance = 3333},
-			{name = "wand of vortex", chance = 1538},
-			{name = "wand of decay", chance = 1000}
-		}
-	}
+	{id = 12413, chance = 2000},
+	{id = 3399, chance = 20},
+	{id = 8095, chance = 20},
+	{id = 3408, chance = 20},
 }
 
 mType:register(monster)
+
 
 
 

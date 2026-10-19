@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "spectre"
 monster.description = "a spectre"
-monster.experience = 7000000
+monster.experience = 7250000000
 monster.outfit = {
 	lookType = 235,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1250000
-monster.maxHealth = 1250000
+monster.health = 1150000
+monster.maxHealth = 1150000
 monster.runHealth = 0
 monster.race = "undead"
 monster.corpse = 6348
@@ -67,23 +67,23 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 60},
-	{type = COMBAT_ENERGYDAMAGE, percent = -20},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = -23},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 55},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
-	{type = COMBAT_DEATHDAMAGE , percent = 100}
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -35000, maxDamage = -50000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -18749, maxDamage = -31729},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -31729, maxDamage = -41248, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_SOUND_RED},
 	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_POISON},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -31729, maxDamage = -41248, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
@@ -93,27 +93,28 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 33333, maxCount = 3},
-	{name = "blank rune", chance = 6667},
-	{name = "blank rune", chance = 3333},
 	{name = "white piece of cloth", chance = 2222},
-	{name = "silver brooch", chance = 2857},
-	{name = "sandals", chance = 5000},
-	{id = 3260, chance = 1818},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of cosmic energy", chance = 1333},
-			{name = "demonic essence", chance = 2857},
-			{name = "soul orb", chance = 1429},
-			{id = 6299, chance = 1000},
-			{name = "demonbone amulet", chance = 909}
-		}
-	}
+	{name = "wand of cosmic energy", chance = 1333},
+	{name = "demonic essence", chance = 2857},
+	{name = "soul orb", chance = 1429},
+	{name = "demonbone amulet", chance = 909},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 100000, maxCount = 35},
+	{name = "platinum coin", chance = 35000, maxCount = 40},
+	{name = "experience scroll", chance = 2500, maxCount = 4},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `players` (
     `name` varchar(255) NOT NULL,
     `group_id` int(11) NOT NULL DEFAULT '1',
     `account_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
-    `level` int(11) NOT NULL DEFAULT '1',
+    `level` bigint(20) NOT NULL DEFAULT '1',
     `vocation` int(11) NOT NULL DEFAULT '0',
     `health` int(11) NOT NULL DEFAULT '150',
     `healthmax` int(11) NOT NULL DEFAULT '150',
@@ -577,7 +577,7 @@ CREATE TABLE IF NOT EXISTS `player_charms` (
 CREATE TABLE IF NOT EXISTS `player_deaths` (
     `player_id` int(11) NOT NULL,
     `time` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-    `level` int(11) NOT NULL DEFAULT '1',
+    `level` bigint(20) NOT NULL DEFAULT '1',
     `killed_by` varchar(255) NOT NULL,
     `is_player` tinyint(1) NOT NULL DEFAULT '1',
     `mostdamage_by` varchar(100) NOT NULL,

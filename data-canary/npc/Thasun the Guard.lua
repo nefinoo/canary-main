@@ -108,7 +108,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings |PLAYERNAME|!, did you wanna {pass} the {gate}?.")
+npcHandler:setMessage(MESSAGE_GREET, "Greetings |PLAYERNAME|!, did you wanna {pass} the {gate}?, you need a {torch}.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Always be on guard, |PLAYERNAME|!")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "This ungraceful haste is most suspicious!")
 

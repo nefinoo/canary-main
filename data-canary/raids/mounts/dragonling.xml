@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="A dragonling has been sighted near the rocky hills." />
+	<announce delay="120000" type="event" message="The dragonling is roaming freely through the area." />
+
+
+	<!-- AREARESPAWN -->
+	<singlespawn delay="2000" name="Dragonling" x="402" y="600" z="7"/>
+	<singlespawn delay="4000" name="Dragonling" x="415" y="603" z="7"/>
+	<singlespawn delay="6000" name="Dragonling" x="435" y="595" z="7"/>
+	<singlespawn delay="8000" name="Dragonling" x="442" y="582" z="7"/>
+	<singlespawn delay="10000" name="Dragonling" x="437" y="566" z="7"/>
+</raid>

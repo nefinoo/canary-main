@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "carniphila"
 monster.description = "a carniphila"
-monster.experience = 150
+monster.experience = 1500000
 monster.outfit = {
 	lookType = 120,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 255
-monster.maxHealth = 255
+monster.health = 2550
+monster.maxHealth = 2550
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6047
@@ -78,10 +78,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 40, attack = 40, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -90, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
+	{name ="melee", interval = 2000, chance = 100, skill = 80, attack = 80, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -160, maxDamage = -190, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
 	{name ="speed", interval = 1000, chance = 34, speed = {min = -850, max = -850}, duration = 30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -40, maxDamage = -130, radius = 3, target = false, effect = CONST_ME_POISONAREA}
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -830, radius = 3, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -90,16 +90,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "meat", chance = 33333, maxCount = 5},
-	{name = "ham", chance = 20000, maxCount = 4},
-	{name = "brass armor", chance = 5000},
-	{name = "iron helmet", chance = 4000},
-	{name = "red robe", chance = 500},
-	{name = "worm", chance = 50000, maxCount = 10}
+	{ name = "gold coin", chance = 90000, maxCount = 40 },
+	{ name = "corncob", chance = 890 },
+	{ name = "dark mushroom", chance = 7692 },
+	{ name = "sling herb", chance = 446, maxCount = 2 },
+	{ name = "shadow herb", chance = 880 },
+	{ name = "seeds", chance = 490 },
+	{ name = "carniphila seeds", chance = 4166 },
+	{ name = "carrot on a stick", chance = 1700 },
 }
 
 mType:register(monster)
+
 
 
 

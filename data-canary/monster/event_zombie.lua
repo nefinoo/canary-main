@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a event zombie"
-monster.experience = 500
+monster.experience = 500000
 monster.outfit = {
 	lookType = 311,
 	lookHead = 0,
@@ -100,3 +100,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

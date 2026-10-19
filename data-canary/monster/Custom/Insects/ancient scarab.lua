@@ -3,15 +3,15 @@ local monster = {}
 
 monster.name = "deathpincer"
 monster.description = "a deathpincer"
-monster.experience = 30000
+monster.experience = 300000000
 monster.outfit = {
-	lookType = 79,
-	lookHead = 20,
-	lookBody = 30,
-	lookLegs = 40,
-	lookFeet = 50,
+	lookType = 1055,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
-	lookMount = 0
+	lookMount = 0,
 }
 
 monster.bosstiary = {
@@ -19,8 +19,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 75000
-monster.maxHealth = 75000
+monster.health = 215000
+monster.maxHealth = 215000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -97,14 +97,31 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "crystal coin", chance = 50000, maxCount = 20 },
-	{ name = "experience scroll", chance = 2500, maxCount = 2 },
-	{ name = "silver token", chance = 1500, maxCount = 1 },
-	{ id = 37609, chance = 1250, unique = true}, -- sorcerer helmet
-	{ id = 37608, chance = 1150, unique = true}, -- sorcerer armor
-	{ id = 37607, chance = 1000, unique = true}, -- sorcerer legs
-	{ id = 37610, chance = 750, unique = true}, -- sorcerer boots
-	{ id = 6390, chance = 500, unique = true}, -- sorcerer shield
+	{ name = "crystal coin", chance = 100000, maxCount = 2},
+	{ name = "crystal coin", chance = 50000, maxCount = 4},
+	{ id = 51670, chance = 25000, maxCount = 5},
+	{ id = 51671, chance = 17500, maxCount = 3},
+	{ id = 51673, chance = 10000, maxCount = 2},
+	{ id = 51672, chance = 5000, maxCount = 1},
+	{ name = "silver token", chance = 15000, maxCount = 1},	
+	--maximiluis montura
+	{id = 12304, chance = 1500},	
+	
+	{id = 5879, chance = 50000, maxCount = 3},	--spider silk
+	{ name = "holy orchid", chance = 21000, maxCount = 3 },
+	{ id = 5921, chance = 9400, maxCount = 3 }, -- heaven blossom
+	{ name = "iron ore", chance = 14000, maxCount = 3 },
+	{id = 5925, chance = 12500, maxCount = 3}, -- hardbone
+	{name = "red dragon scale", chance = 25000, maxCount = 3},
+	{name = "red dragon leather", chance = 25000, maxCount = 3},
+	{name = "green dragon scale", chance = 25000, maxCount = 3},
+	{name = "green dragon leather", chance = 20000, maxCount = 3},
+	
+	{ id = 37609, chance = 5000, unique = true}, -- green demon helmet
+	{ id = 37608, chance = 5000, unique = true}, -- green demon armor
+	{ id = 37607, chance = 5000, unique = true}, -- green demon legs
+	{ id = 37610, chance = 5000, unique = true}, -- green demon boots
+	{ id = 6390, chance = 5000, unique = true}, -- green demon shield
 	
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor
@@ -134,6 +151,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

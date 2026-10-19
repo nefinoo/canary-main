@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc"
 monster.description = "a orc"
-monster.experience = 160
+monster.experience = 90000
 monster.outfit = {
 	lookType = 5,
 	lookHead = 0,
@@ -13,6 +13,21 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 5
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ulderek's Rock, Edron Orc Cave, Ancient Temple, Ice Islands, Venore Orc Cave, \z
+		Rookgaard Orc Fortress, Rookgaard main cave, Fibula Dungeon, Elvenbane, Foreigner Quarter, Zao Orc Land.",
+}
+
 
 monster.health = 70
 monster.maxHealth = 70
@@ -90,20 +105,16 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "gold coin", chance = 100000, maxCount = 12},
 	{name = "meat", chance = 33333, maxCount = 2},
-	{name = "studded armor", chance = 10000},
-	-- {name = "legion helmet", chance = 10000},
-	{name = "sabre", chance = 10000},
-	{id = 2853, chance = 100000, child = {
-			{name = "studded shield", chance = 10000},
-			{id = 3274, chance = 10000}
-		}
-	}
+	{id = 12413, chance = 2000},
+	{id = 3399, chance = 10},
+	{id = 8095, chance = 10},
+	{id = 3408, chance = 10},
 }
 
 mType:register(monster)
+
 
 
 

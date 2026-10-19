@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed assassin"
 monster.description = "an outlawed assassin"
-monster.experience = 1250000
+monster.experience = 1250000000
 monster.outfit = {
 	lookType = 160,
 	lookHead = 58,
@@ -93,16 +93,18 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "golden bag", chance = 100000, child = {
-			{name = "elven brooch", chance = 100000}
-		}
-	},
-	{id = 3043, chance = 100000, maxCount = 5},
-	{ name = "iron ore", chance = 1050, maxCount = 3},
-	{name = "assassin star", chance = 8000}
+	{name = "elven brooch", chance = 100000},
+	{id = 3043, chance = 100000, maxCount = 2},
+	{ name = "iron ore", chance = 2050, maxCount = 3},
+	{name = "throwing star", chance = 300},
+	{name = "magic sword", chance = 100},
+	{ id = 3319, chance = 100 }, 
+	{ id = 3309, chance = 100 }, 
+	{id = 3341, chance = 300},
 }
 
 mType:register(monster)
+
 
 
 

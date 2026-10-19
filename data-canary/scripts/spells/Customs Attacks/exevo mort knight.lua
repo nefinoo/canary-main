@@ -41,9 +41,9 @@ local deadlyReckoning = {
         combat = Combat(),
         area = createCombatArea(AREA_SQUARE2X2),
 
-        baseA = -3.5,
+        baseA = -3.2,
         baseB = 0,
-        baseC = -3.85,
+        baseC = -3.4,
         baseD = 0
     },
 
@@ -143,26 +143,39 @@ function spell.onCastSpell(creature, variant)
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
-
+	
+	-- local costmana = math.min(1000, 340 + math.floor(player:getMaxMana() * 0.03))
+	local costmana = 340 + math.floor(player:getMaxMana() * 0.03)
+	
     -- Mana
-    if config.mana and player:getMana() < config.mana then
+    if player:getMana() < costmana then
         player:sendCancelMessage("You do not have enough mana.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return false
     end
+	local weapon = player:getSlotItem(CONST_SLOT_LEFT)
 
-    local a = config.baseA / 2
-    local b = config.baseB / 2
-    local c = config.baseC / 2
-    local d = config.baseD / 2
+	local bonusPercent = 0
+
+	if weapon then
+		local attack = ItemType(weapon:getId()):getAttack()
+
+		if attack and attack > 0 then
+			bonusPercent = attack / 10 -- 190 attack = 19%
+		end
+	end
+	
+	local multiplier = 1 + (bonusPercent / 100)
+
+	local a = (config.baseA / 2) * multiplier
+	local b = (config.baseB / 2) * multiplier
+	local c = (config.baseC / 2) * multiplier
+	local d = (config.baseD / 2) * multiplier
 
     config.combat:setFormula(COMBAT_FORMULA_LEVELMAGIC, a, b, c, d)
 
-    -- Consumir mana
-    if config.mana then
-        player:addMana(-config.mana)
-        player:addManaSpent(2000)
-    end
+	player:addMana(-costmana)
+	player:addManaSpent(costmana)
 
     return config.combat:execute(creature, variant)
 end

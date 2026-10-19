@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "the wishmaster"
 monster.description = "the wishmaster"
-monster.experience = 17000000
+monster.experience = 17000000000
 monster.outfit = {
 	lookType = 104,
 	lookHead = 20,
@@ -107,23 +107,21 @@ monster.summons = {
 monster.loot = {
 	{name = "blue gem", chance = 300},
 	{id = 2659, chance = 2500},
-	{name = "gold coin", chance = 100000, maxCount = 50},
+	{name = "platinum coin", chance = 100000, maxCount = 5},
 	{name = "heavy machete", chance = 5000},
 	{name = "hailstorm rod", chance = 1000},
 	{name = "blue piece of cloth", chance = 5000, maxCount = 2},
-	{id = 2853, chance = 100000, child = {
-			{id = 2948, chance = 300},
-			{name = "magma monocle", chance = 500},
-			{name = "gold coin", chance = 100000, maxCount = 14},
-			{name = "small sapphire", chance = 7000, maxCount = 3},
-			{name = "small oil lamp", chance = 3333},
-			{name = "blueberry", chance = 20000, maxCount = 4},
-			{name = "life crystal", chance = 10000}
-		}
-	}
+	{id = 2948, chance = 300},
+	{name = "magma monocle", chance = 500},
+	{name = "gold coin", chance = 100000, maxCount = 14},
+	{name = "small sapphire", chance = 7000, maxCount = 3},
+	{name = "small oil lamp", chance = 3333},
+	{name = "blueberry", chance = 20000, maxCount = 4},
+	{name = "life crystal", chance = 10000},
 }
 
 mType:register(monster)
+
 
 
 

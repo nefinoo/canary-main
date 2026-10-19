@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "crystann"
 monster.description = "crystann"
-monster.experience = 16000000
+monster.experience = 16000000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 0,
@@ -106,19 +106,17 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 12, description2 = "crystal coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 12, description2 = "crystal coin"},
 	{name = "mastermind shield", chance = 18000, description2 = "mastermind shield"},
 	{id = 6299, chance = 12000, description2 = "death ring"},
 	{name = "Morgaroth's heart", chance = 7000, description2 = "Morgaroth's heart"},
-	{name = "grey backpack", chance = 100000, description2 = "grey backpack", child = {
-			{name = "demonbone", chance = 6000, description2 = "demonbone"},
-			{name = "giant sword", chance = 60000, description2 = "giant sword"},
-			{name = "boots of haste", chance = 14033, description2 = "boots of haste"}
-		}
-	}
+	{name = "demonbone", chance = 6000, description2 = "demonbone"},
+	{name = "giant sword", chance = 60000, description2 = "giant sword"},
+	{name = "boots of haste", chance = 14033, description2 = "boots of haste"},
 }
 
 mType:register(monster)
+
 
 
 

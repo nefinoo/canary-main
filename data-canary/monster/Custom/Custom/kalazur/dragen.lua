@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragen"
 monster.description = "a dragen"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 39,
 	lookHead = 20,
@@ -93,32 +93,28 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{name = "dragon ham", chance = 20000, maxCount = 2},
 	{name = "golden mug", chance = 1818},
-	{id = 2842, chance = 3333},
 	{name = "broadsword", chance = 5000},
 	{name = "royal helmet", chance = 588},
 	{id = 3361, chance = 333},
 	{name = "royal spear", chance = 2000, maxCount = 2},
-	{id = 3449, chance = 2500, maxCount = 5},
 	{name = "power bolt", chance = 2222, maxCount = 10},
 	{name = "green mushroom", chance = 6666},
 	{name = "red dragon leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "small emerald", chance = 833, maxCount = 2},
-			{name = "fire sword", chance = 1428},
-			{name = "small sapphire", chance = 2222, maxCount = 2},
-			{name = "tower shield", chance = 1333},
-			{name = "dragon slayer", chance = 1033},
-			{name = "dragon lance", chance = 909},
-			{name = "red dragon scale", chance = 5000}
-		}
-	}
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "small emerald", chance = 833, maxCount = 2},
+	{name = "fire sword", chance = 1428},
+	{name = "small sapphire", chance = 2222, maxCount = 2},
+	{name = "tower shield", chance = 1333},
+	{name = "dragon slayer", chance = 1033},
+	{name = "dragon lance", chance = 909},
+	{name = "red dragon scale", chance = 5000},
 }
 
 mType:register(monster)
+
 
 
 

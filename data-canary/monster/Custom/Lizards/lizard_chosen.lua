@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Lizard Chosen")
+﻿local mType = Game.createMonsterType("Lizard Chosen")
 local monster = {}
 
 monster.description = "a lizard chosen"
-monster.experience = 2050000
+monster.experience = 3750000000
 monster.outfit = {
 	lookType = 344,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Temple of Equilibrium (Zao) Hidden stairs, Fire Dragon Dojo, Corruption Hole, Razzachai.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10371
 monster.speed = 136
@@ -77,14 +77,9 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "small diamond", chance = 2550, maxCount = 5 },
-	{ name = "gold coin", chance = 33000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 100 },
-	{ name = "gold coin", chance = 32000, maxCount = 36 },
-	{ name = "platinum coin", chance = 2920, maxCount = 5 },
 	{ name = "tower shield", chance = 1100 },
 	{ name = "lizard leather", chance = 2000 },
 	{ name = "lizard scale", chance = 980, maxCount = 3 },
-	{ name = "great health potion", chance = 5350, maxCount = 3 },
 	{ name = "zaoan armor", chance = 980 },
 	{ name = "zaoan helmet", chance = 140 },
 	{ name = "zaoan shoes", chance = 810 },
@@ -93,14 +88,27 @@ monster.loot = {
 	{ name = "corrupted flag", chance = 3350 },
 	{ name = "cursed shoulder spikes", chance = 5800 },
 	{ name = "scale of corruption", chance = 2870 },
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 20, minDamage = -8653, maxDamage = -11249, length = 3, spread = 2, effect = CONST_ME_POISONAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, length = 8, spread = 3, effect = CONST_ME_GREEN_RINGS, target = false },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 20, minDamage = -20306, maxDamage = -26398, length = 3, spread = 2, effect = CONST_ME_POISONAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, length = 8, spread = 3, effect = CONST_ME_GREEN_RINGS, target = false },
 }
 
 monster.defenses = {
@@ -132,3 +140,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

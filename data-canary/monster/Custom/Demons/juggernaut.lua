@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "juggernaut"
 monster.description = "a juggernaut"
-monster.experience = 5500
+monster.experience = 4000000
 monster.outfit = {
 	lookType = 244,
 	lookHead = 0,
@@ -13,6 +13,22 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 296
+monster.Bestiary = {
+	class = "Demon",
+	race = BESTY_RACE_DEMON,
+	toKill = 2500,
+	FirstUnlock = 100,
+	SecondUnlock = 1000,
+	CharmsPoints = 50,
+	Stars = 4,
+	Occurrence = 0,
+	Locations = "Deep in Pits of Inferno (Apocalypse's throne room), The Dark Path, The Blood Halls, \z
+	The Vats, The Hive, The Shadow Nexus, a room deep in Formorgar Mines, Roshamuul Prison, \z
+	Oramond Dungeon, Grounds of Destruction and Halls of Ascension.",
+}
+
 
 monster.health = 20000
 monster.maxHealth = 20000
@@ -93,26 +109,28 @@ monster.defenses = {
 
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 80},
-	{name = "platinum coin", chance = 100000, maxCount = 80},
 	{name = "meat", chance = 20000, maxCount = 8},
 	{name = "dragon ham", chance = 10000, maxCount = 3},
 	{name = "dirty fur", chance = 10000},
-	{id = 3113, chance = 5000},
 	{name = "heavy mace", chance = 444},
-	{id = 6558, chance = 2500},
-	{id = 6558, chance = 2500},
 	{name = "demonic essence", chance = 1429},
-	{id = 2853, chance = 100000, child = {
-			{name = "soul orb", chance = 1333},
-			{name = "dragon hammer", chance = 1667},
-			{name = "golden armor", chance = 333},
-			{name = "golden legs", chance = 400},
-			{name = "spiked squelcher", chance = 600}
-		}
-	}
+	{name = "soul orb", chance = 1333},
+	{name = "dragon hammer", chance = 867},
+	{name = "golden armor", chance = 433},
+	{name = "golden legs", chance = 350},
+	{name = "spiked squelcher", chance = 1100},
+	{name = "mastermind shield", chance = 500},
+	{name = "giant sword", chance = 1028},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
+	{name = "platinum coin", chance = 70000, maxCount = 18},
+	{id = 12413, chance = 8000},
+	{id = 3399, chance = 175},
+	{id = 8095, chance = 175},
+	{id = 3408, chance = 175},
 }
 
 mType:register(monster)
+
 
 
 

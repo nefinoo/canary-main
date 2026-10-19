@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon"
 monster.description = "a dragon"
-monster.experience = 1700
+monster.experience = 1700000
 monster.outfit = {
 	lookType = 34,
 	lookHead = 20,
@@ -13,6 +13,25 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 34
+monster.Bestiary = {
+	class = "Dragon",
+	race = BESTY_RACE_DRAGON,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Thais Ancient Temple, Darashia Dragon Lair, Mount Sternum Dragon Cave, Mintwallin, \z
+		deep in Fibula Dungeon, Kazordoon Dragon Lair (near Dwarf Bridge), Plains of Havoc, Elven Bane castle, \z
+		Maze of Lost Souls, southern cave and dragon tower in Shadowthorn, Orc Fortress, Venore Dragon Lair, \z
+		Pits of Inferno, Behemoth Quest room in Edron, Hero Cave, deep Cyclopolis, Edron Dragon Lair, Goroma, \z
+		Ankrahmun Dragon Lairs, Draconia, Dragonblaze Peaks, some Ankrahmun Tombs, \z
+		underground of Fenrock (on the way to Beregar), Krailos Steppe and Crystal Lakes.",
+}
+
 
 monster.health = 1720
 monster.maxHealth = 1720
@@ -67,15 +86,15 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 50},
+	{type = COMBAT_ENERGYDAMAGE, percent = -30},
 	{type = COMBAT_EARTHDAMAGE, percent = 80},
 	{type = COMBAT_FIREDAMAGE, percent = 100},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = -30},
+	{type = COMBAT_HOLYDAMAGE , percent = 30},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
@@ -94,33 +113,25 @@ monster.defenses = {
 monster.loot = {
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "dragon ham", chance = 20000, maxCount = 2},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "mace", chance = 20000},
-	{id = 3349, chance = 6666},
+	{name = "gold coin", chance = 100000, maxCount = 25},
 	{name = "dragon hammer", chance = 1333},
-	{name = "steel shield", chance = 1818},
-	{name = "short sword", chance = 20000},
-	{name = "plate legs", chance = 2222},
-	{name = "steel helmet", chance = 3333},
-	{name = "double axe", chance = 4000},
 	{name = "dragonbone staff", chance = 4000},
-	{name = "longsword", chance = 5000},
-	-- {id = 3449, chance = 4000, maxCount = 10},
-	{name = "green dragon leather", chance = 4000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of inferno", chance = 1111},
-			{name = "gold coin", chance = 100000, maxCount = 25},
-			{name = "dragon shield", chance = 600},
-			{name = "small diamond", chance = 1538, maxCount = 3},
-			{name = "life crystal", chance = 2000},
-			{name = "broadsword", chance = 6666},
-			{name = "serpent sword", chance = 509},
-			{name = "green dragon scale", chance = 5000}
-		}
-	}
+	{name = "green dragon leather", chance = 3500},
+	{name = "wand of inferno", chance = 1611},
+	{name = "gold coin", chance = 100000, maxCount = 25},
+	{name = "dragon shield", chance = 600},
+	{name = "small diamond", chance = 1538, maxCount = 3},
+	{name = "life crystal", chance = 2000},
+	{name = "serpent sword", chance = 509},
+	{name = "green dragon scale", chance = 5000},
+	{id = 12413, chance = 4000},
+	{id = 3399, chance = 100},
+	{id = 8095, chance = 100},
+	{id = 3408, chance = 100},
 }
 
 mType:register(monster)
+
 
 
 

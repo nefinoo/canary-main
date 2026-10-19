@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "little puppy"
 monster.description = "a little puppy"
-monster.experience = 13500
+monster.experience = 14500000
 monster.outfit = {
 	lookType = 32,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 22000
-monster.maxHealth = 22000
+monster.health = 18500
+monster.maxHealth = 18500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5971
@@ -93,13 +93,34 @@ monster.defenses = {
 }
 
 monster.loot = {
-	-- {id = 9743, chance = 2500},
-	{name = "ham", chance = 50000, maxCount = 100},
-	{name = "crystal coin", chance = 50000, maxCount = 20},
-	{name = "experience scroll", chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 4},
+	{name = "platinum coin", chance = 70000, maxCount = 8},
+	{name = "experience scroll", chance = 500, maxCount = 2},
+	-- {id = 7366, chance = 100},
+	-- {id = 7426, chance = 100}, 
+	-- {id = 7420, chance = 100}, 
+	-- {id = 3296, chance = 100},
+	-- {id = 7437, chance = 100},
+	-- {name = "magic sword", chance = 200},
+	-- { id = 3319, chance = 200 }, 
+	-- { id = 3309, chance = 200 }, 
+	-- {id = 3341, chance = 200},
+	-- {name = "throwing star", chance = 200},
+	{id = 3082, chance = 5500},
+	{id = 28537, chance = 250}, --ritual sword
+	{name = "crown armor", chance = 1500},
+	{name = "crown legs", chance = 1000},
+	{name = "crown helmet", chance = 2000},
+	{name = "crown shield", chance = 2250},
+	{name = "demonic essence", chance = 1818},
+	{name = "fire axe", chance = 1500},
+	{name = "yellow gem", chance = 3500},
+	{name = "green gem", chance = 2000},
+	{name = "demonrage sword", chance = 410},
 }
 
 mType:register(monster)
+
 
 
 

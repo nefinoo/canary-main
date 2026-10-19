@@ -1,12 +1,12 @@
 local config = {
 	items = {
-		{ id = 35284, charges = 50000 },
-		{ id = 35279, charges = 50000 },
-		{ id = 35281, charges = 50000 },
-		{ id = 35283, charges = 50000 },
-		{ id = 35282, charges = 50000 },
-		{ id = 35280, charges = 50000 },
-		{ id = 44066, charges = 50000 },
+		{ id = 35284, charges = 1500 },
+		{ id = 35279, charges = 1500 },
+		{ id = 35281, charges = 1500 },
+		{ id = 35283, charges = 1500 },
+		{ id = 35282, charges = 1500 },
+		{ id = 35280, charges = 1500 },
+		{ id = 44066, charges = 1500 },
 	},
 	storage = 95112, -- storage key, player can only win once
 }

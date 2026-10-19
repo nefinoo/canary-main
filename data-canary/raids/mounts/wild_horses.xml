@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="Wild Horses have been spotted running wildly near the plains." />
+	<announce delay="120000" type="event" message="The Wild Horses are charging toward the surrounding lands!" />
+
+	<!-- AREARESPAWN -->
+	<areaspawn delay="2000" fromx="510" fromy="765" fromz="7" tox="525" toy="779" toz="7">
+		<monster name="Wild Horse" amount="1" />
+	</areaspawn>
+	<areaspawn delay="2000" fromx="473" fromy="860" fromz="7" tox="491" toy="875" toz="7">
+		<monster name="Wild Horse" amount="1" />
+	</areaspawn>
+	<areaspawn delay="2000" fromx="590" fromy="899" fromz="7" tox="609" toy="913" toz="7">
+		<monster name="Wild Horse" amount="1" />
+	</areaspawn>
+</raid>

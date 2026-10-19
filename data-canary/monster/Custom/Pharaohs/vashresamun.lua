@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "vashresamun"
 monster.description = "a vashresamun"
-monster.experience = 2950
+monster.experience = 2950000
 monster.outfit = {
 	lookType = 90,
 	lookHead = 20,
@@ -100,28 +100,26 @@ monster.summons = {
 monster.loot = {
 	{name = "gold coin", chance = 100000, maxCount = 100},
 	{name = "orb", chance = 2000},
-	{name = "silver mace", chance = 400},
 	{name = "gold coin", chance = 100000, maxCount = 100},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 70},
-			{name = "scythe", chance = 10000},
-			{name = "candy cane", chance = 4000, maxCount = 5},
-			{name = "scarab shield", chance = 900},
-			{name = "phoenix shield", chance = 200},
-			{name = "griffin shield", chance = 400},
-			{name = "noble armor", chance = 300},
-			{name = "white dress", chance = 100},
-			{name = "crystal mace", chance = 600},
-			{name = "wand of cosmic energy", chance = 800},
-			{name = "small ruby", chance = 4000, maxCount = 2},
-			{name = "coconut", chance = 4000, maxCount = 4},
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "roll", chance = 4000, maxCount = 4}
-		}
-	}
+	{name = "gold coin", chance = 100000, maxCount = 70},
+	{name = "scythe", chance = 10000},
+	{name = "candy cane", chance = 4000, maxCount = 5},
+	{name = "scarab shield", chance = 900},
+	{name = "phoenix shield", chance = 200},
+	{name = "griffin shield", chance = 400},
+	{name = "noble armor", chance = 300},
+	{name = "white dress", chance = 100},
+	{name = "crystal mace", chance = 600},
+	{name = "wand of cosmic energy", chance = 800},
+	{name = "small ruby", chance = 4000, maxCount = 2},
+	{name = "coconut", chance = 4000, maxCount = 4},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "roll", chance = 4000, maxCount = 4},
+	{name = "scorpion sceptre", chance = 400},
 }
 
 mType:register(monster)
+
 
 
 

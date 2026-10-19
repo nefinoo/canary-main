@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur"
 monster.description = "a minotaur"
-monster.experience = 50
+monster.experience = 50000
 monster.outfit = {
 	lookType = 25,
 	lookHead = 20,
@@ -13,6 +13,23 @@ monster.outfit = {
 	lookAddons = 0,
 	lookMount = 0
 }
+
+monster.raceId = 25
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Mino Hell (Rookgaard), Two outside Bear Room Quest, (Rookgaard) and also 2x on the premium side, \z
+		Mintwallin, Folda, Minotaur Pyramid, Outlaw Camp, Kazordoon minotaur cave, Plains of Havoc, Elven Bane, \z
+		Deeper Fibula Dungeon (level 50+ to open the door), Ancient Temple, Maze of Lost Souls, \z
+		Thais Minotaur Camp, Foreigner Quarter.",
+}
+
 
 monster.health = 100
 monster.maxHealth = 100
@@ -94,19 +111,20 @@ monster.loot = {
 	{id = 3274, chance = 10000},
 	{name = "leather legs", chance = 10000},
 	{id = 3457, chance = 10000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "chain helmet", chance = 10000},
-			{name = "gold coin", chance = 20000, maxCount = 5},
-			{name = "brass helmet", chance = 10000},
-			{name = "plate shield", chance = 10000},
-			{name = "mace", chance = 10000},
-			{name = "bronze amulet", chance = 2500}
-		}
-	}
+	{name = "minotaur leather", chance = 10000},
+	{name = "chain helmet", chance = 10000},
+	{name = "gold coin", chance = 20000, maxCount = 5},
+	{name = "brass helmet", chance = 10000},
+	{name = "plate shield", chance = 10000},
+	{name = "mace", chance = 10000},
+	{id = 12413, chance = 3000},
+	{id = 3399, chance = 45},
+	{id = 8095, chance = 45},
+	{id = 3408, chance = 45},
 }
 
 mType:register(monster)
+
 
 
 

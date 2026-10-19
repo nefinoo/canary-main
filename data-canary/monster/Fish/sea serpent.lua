@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Sea Serpent"
 monster.description = "a sea serpent"
-monster.experience = 15000000
+monster.experience = 90000000000
 monster.outfit = {
 	lookType = 275,
 	lookHead = 0,
@@ -20,9 +20,9 @@ monster.outfit = {
 -- }
 
 
-monster.health = 1000000
-monster.maxHealth = 1000000
-monster.runHealth = 300
+monster.health = 8000000
+monster.maxHealth = 8000000
+monster.runHealth = 50000
 monster.race = "blood"
 monster.corpse = 949
 monster.speed = 658
@@ -81,15 +81,15 @@ monster.elements = {
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 100},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -9000, maxDamage = -20000, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 2000, chance = 60, type = COMBAT_ICEDAMAGE, minDamage = -10000, maxDamage = -11000, length = 9, spread = 3, effect = CONST_ME_ICEAREA},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_FIREDAMAGE, minDamage = -2000, maxDamage = -3000, radius = 4, target = true, effect = CONST_ME_LOSEENERGY}
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_EARTHDAMAGE, minDamage = -9000, maxDamage = -20000, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ICEDAMAGE, minDamage = -8000, maxDamage = -10000, length = 9, spread = 3, effect = CONST_ME_ICEAREA},
+	{name ="combat", interval = 4000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -10000, maxDamage = -11500, radius = 4, target = true, effect = CONST_ME_LOSEENERGY}
 }
 
 monster.defenses = {
@@ -104,11 +104,28 @@ monster.loot = {
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
-	{name = "experience scroll", chance = 3000},
-	{id = 893, chance = 5}
+	{name = "experience scroll", chance = 3000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 30},
+	{name = "platinum coin", chance = 50000, maxCount = 60},
+	{id = 893, chance = 5},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 300},
+	{ id = 3319, chance = 300 }, 
+	{ id = 3309, chance = 300 }, 
+	{id = 3341, chance = 300},
+	{name = "throwing star", chance = 300},
+	
+	{name = "demon helmet", chance = 300},
+	{name = "demon legs", chance = 300},
+	{name = "demon shield", chance = 300},
+	{id = 6529, chance = 500}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)
+
 
 
 
