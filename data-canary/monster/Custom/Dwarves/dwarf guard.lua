@@ -94,7 +94,7 @@ monster.elements = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 4000, chance = 65, type = COMBAT_ENERGYDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -108,8 +108,8 @@ monster.loot = {
 	{name = "green gem", chance = 2500},
 	{name = "platinum coin", chance = 50000, maxCount = 3},
 	{name = "boots of haste", chance = 250},
-	{name = "golden legs", chance = 250},
-	{name = "magic plate armor", chance = 250},
+	{name = "golden legs", chance = 500},
+	{name = "magic plate armor", chance = 450},
 	{name = "experience scroll", chance = 800},
 	{ name = "iron ore", chance = 1050 },
 	{id = 12413, chance = 10000},

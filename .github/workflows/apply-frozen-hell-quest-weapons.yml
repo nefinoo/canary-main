@@ -7,6 +7,7 @@ on:
     paths:
       - balance_report/fix_level100_quest_weapons.py
       - balance_report/apply_knight_augments.py
+      - balance_report/apply_outlawed_dwarf_augments.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -26,6 +27,8 @@ jobs:
         run: python3 balance_report/fix_level100_quest_weapons.py --apply
       - name: Apply ID-validated equipment augments
         run: python3 balance_report/apply_knight_augments.py --apply
+      - name: Apply Outlawed Dwarf equipment augments
+        run: python3 balance_report/apply_outlawed_dwarf_augments.py --apply
       - name: Commit items.xml (only if changed)
         shell: bash
         run: |
