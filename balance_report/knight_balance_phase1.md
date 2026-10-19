@@ -7,7 +7,7 @@
 - Fist Fighting NO progresa libremente: item temporal habilita subir Fist y con ello mejora temporalmente la velocidad de ataque. No tocar esa mecanica.
 - Rat, Cave Rat, Slime, Orc, demas criaturas iniciales y Hydra: conservar datos vanilla/configurados.
 - La experiencia mid-high, stages, loot y poison field del Slime no se modifican.
-- Primera dificultad custom posterior a Hydra: Dragon, Dragon Lord, Giant Spider y Warlock. Dragon y Dragon Lord se mantienen en esta primera iteracion para tener referencias comparables.
+- Primera dificultad custom posterior a Hydra: Giant Spider, Dragon, Dragon Lord y Warlock. Dragon y Dragon Lord se ajustaron tras los modelos ofensivos.
 - Combatir principalmente en solitario. Equipo normal debe funcionar; equipo mejorado otorga margen de seguridad y eficiencia.
 - No usar Exori Min en la rotacion inicial. Solo Exori y Exori Gran; Exori Gran mantiene 30% mas dano bruto por objetivo antes de augments y mitigacion.
 
@@ -24,11 +24,11 @@
 | Warlock ralentizacion 1 | 40000 ms | 12000 ms | Menos castigo prolongado |
 | Warlock ralentizacion 2 | 20000 ms | 10000 ms | Menos castigo prolongado |
 
-Sin cambio: HP, experiencia, loot, resistencias y armor de los monstruos; valores de dano por impacto de cada ataque; cooldowns y formulas de spells.
+Sin cambio: experiencia y armor de los monstruos; valores de dano por impacto de cada ataque; cooldowns y formulas de spells. En la segunda iteracion SI se cambiaron HP, resistencias fisicas y dos probabilidades de loot.
 
 ## Equipos: augments nativos, SIN introducir armor nuevo
 
-El archivo data/items/items.xml es voluminoso; el cambio se entrega mediante el script idempotente balance_report/apply_knight_augments.ps1 que modifica los seis items **localmente** tras checkout de esta rama, valida IDs/nombres, respalda el XML y no altera otras propiedades. El XML aun no esta modificado en la rama GitHub hasta que se aplique el script y se haga commit.
+Los seis augments YA ESTAN APLICADOS en data/items/items.xml en la rama de balance. Se incorporaron automaticamente mediante el script seguro balance_report/apply_knight_augments.py y el workflow .github/workflows/apply-frozen-hell-quest-weapons.yml. El script local PowerShell balance_report/apply_knight_augments.ps1 queda disponible solo como alternativa: NO hace falta ejecutarlo ni hacer otro commit del XML.
 
 | ID | Item | Augment(s) propuestos |
 | --- | --- | --- |
@@ -64,14 +64,36 @@ Los augments no son equivalentes a imbuements. En este C++:
 - Giant Spider HP1720: dano melee bruto esperado **si cada golpe alcanza** aprox. 231 por 1s antes, 154 por 1.5s despues; veneno e invocaciones adicionales.
 - Warlock HP1935: conserva ataque fuerte, mana drain, fuego, energia, paralyze, invisibilidad y summons. Sigue siendo una pelea exigente.
 
-## Aplicar XML localmente (Windows, PowerShell 5.1)
-1. Cambiar a rama balance-frozen-hell-knight-100-200 en GitHub Desktop.
-2. Desde la raiz del repositorio, ejecutar previsualizacion:
-   powershell -ExecutionPolicy Bypass -File .\balance_report\apply_knight_augments.ps1
-3. Aplicar:
-   powershell -ExecutionPolicy Bypass -File .\balance_report\apply_knight_augments.ps1 -Apply
-4. Revisar diff en GitHub Desktop y commit de items.xml cuando las pruebas esten listas.
-5. El script deja una copia local llamada items.xml.frozen-hell-backup.xml; no subirla al repositorio. El script es idempotente: volver a ejecutarlo no duplica los augments.
+## XML en GitHub
+- Los cambios de armas de quest nivel 100 y los seis augments estan incluidos en la rama. Solo hay que hacer fetch/checkout de la rama en GitHub Desktop para recibirlos.
+- Las modificaciones son por ID y usan la codificacion ISO-8859-1. El workflow automatizado ya dejo el XML actualizado; nunca ejecutarlo por duplicado manualmente.
+- El usuario no ha autorizado fusionar el PR a pr-level-limit. El PR #2 sigue en borrador.
+
+
+## Iteracion 2: orden de los teleports y diferencias aprobadas
+El orden confirmado para estas etapas es Giant Spider (quest armas Knight 100), Dragon/Dragon Lord (quest arma magos 100), Warlock (quest arma Paladin 100), Demon/Juggernaut, Outlawed Dwarfs, Salazaari Elfs y posteriores.
+
+| Monstruo | Antes | Ahora | Resist. fisica antes / ahora | Loot | 
+| --- | --- | --- | --- | --- |
+| Giant Spider | HP 1720 | HP 1720 | -30% / -30% | Sin cambios: Knight Armor, Knight Legs, rarezas |
+| Dragon | HP 1720 | HP 1950 | 50% / 20% | Dragon Shield 600/100000 => 1500/100000 |
+| Dragon Lord | HP 2150 | HP 2450 | 50% / 25% | Dragon Scale Mail 100/100000 => 900/100000 |
+| Warlock | HP 1935 | HP 3000 | -20% / 15% | Sin cambios; Golden Armor existente |
+
+- Se preservan las probabilidades y configuracion de las armas de quest: NINGUNA arma nivel 100 fue agregada al loot regular.
+- Demon, Juggernaut, Dwarfs, Elfs, Slime, Rat, Orc, Hydra, exp, stages y la quest de The Deathwalker NO cambiaron.
+- Los tiempos matematicos calculados son orientativos antes de tener la simulacion real de ataque/defensa/healing/invisibilidad.
+
+## Armas de quest nivel 100: cinco IDs revisados en items.xml
+| ID | Arma | Vocacion normal | Atk / dano | Cambio |
+| --- | --- | --- | --- | --- |
+| 3341 | Arcane Staff | Sorcerer y Druid | wand, energy 40-60 | Registrada como weapon, nivel 100, sin ataque melee erroneo |
+| 3287 | Throwing Star | Paladin | ataque 30, distancia 5 | Registrada como weapon, nivel 100 |
+| 3288 | Magic Sword | Knight (sword) | ataque 48 | Registro weaponType, nivel 100, no uso con penalizacion bajo nivel |
+| 3319 | Stonecutter Axe | Knight (axe) | ataque 50 | Slot hand, nivel 100, no uso con penalizacion bajo nivel |
+| 3309 | Thunder Hammer | Knight (club) | ataque 52 | Registro weaponType, nivel 100, no uso con penalizacion bajo nivel |
+
+Los cinco IDs fueron actualizados previamente por el workflow y se confirmaron en el XML real de la rama de balance.
 
 ## Validacion requerida antes del merge
 - Ejecutar en entorno de pruebas, no en el servidor en produccion.
