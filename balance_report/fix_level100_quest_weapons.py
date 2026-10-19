@@ -23,11 +23,40 @@ def exactly_once(text: str, old: str, new: str, item_id: int) -> str:
     return text.replace(old, new, 1)
 
 
+def normalize_weapon_type(item_id: int, block: str, nl: str) -> str:
+    """Keep exactly one nested weaponType: Canary parses the nested script attributes."""
+    expected = {
+        3341: "wand",
+        3287: "distance",
+        3288: "sword",
+        3319: "axe",
+        3309: "club",
+    }[item_id]
+    needle = '\t\t\t<attribute key="weaponType" value="' + expected + '"/>'
+    seen = False
+    filtered = []
+    for line in block.splitlines(keepends=True):
+        if line.rstrip("\r\n") == needle:
+            if seen:
+                continue
+            seen = True
+        filtered.append(line)
+    block = "".join(filtered)
+    if not seen:
+        match = re.search(r'(?m)^\t\t\t<attribute key="vocation"', block)
+        if not match:
+            raise ValueError(f"ID {item_id}: no vocation line to insert weaponType before")
+        block = block[:match.start()] + needle + nl + block[match.start():]
+    if block.count(needle) != 1:
+        raise ValueError(f"ID {item_id}: weaponType must appear exactly once within script")
+    return block
+
+
 def transform(item_id: int, block: str, nl: str) -> str:
     if item_id == 3341:
         # Wand damage is read from fromdamage/todamage, NOT item attack.
         if 'value="moveevent;weapon"' in block and 'key="fromdamage"' in block:
-            return block
+            return normalize_weapon_type(item_id, block, nl)
         block = exactly_once(block, '\t\t<attribute key="attack" value="50"/>' + nl, "", item_id)
         block = exactly_once(block, 'key="script" value="moveevent"', 'key="script" value="moveevent;weapon"', item_id)
         block = exactly_once(
@@ -46,7 +75,7 @@ def transform(item_id: int, block: str, nl: str) -> str:
     elif item_id == 3287:
         # Moveevent limits who can equip the star; weapon registers ranged attacks.
         if 'value="moveevent;weapon"' in block and block.count('key="weaponType" value="distance"') >= 2:
-            return block
+            return normalize_weapon_type(item_id, block, nl)
         block = exactly_once(block, 'key="script" value="moveevent"', 'key="script" value="moveevent;weapon"', item_id)
         block = exactly_once(
             block,
@@ -72,7 +101,7 @@ def transform(item_id: int, block: str, nl: str) -> str:
                 '\t\t\t<attribute key="slot" value="hand"/>',
                 item_id,
             )
-    return block
+    return normalize_weapon_type(item_id, block, nl)
 
 
 def update(xml: str) -> tuple[str, list[int]]:
