@@ -9708,6 +9708,12 @@
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="9"/>
 		<attribute key="weight" value="5600"/>
+		<!-- FROZEN_HELL_OUTLAWED_DWARFS_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
@@ -9742,6 +9748,15 @@
 			<attribute key="elemental protection ice" value="3"/>
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<!-- FROZEN_HELL_OUTLAWED_DWARFS_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="7"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="7"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
@@ -10353,6 +10368,12 @@
 			<attribute key="elemental protection holy" value="3"/>
 			<attribute key="skillboost shielding" value="3"/>
 		</attribute>
+		<!-- FROZEN_HELL_OUTLAWED_DWARFS_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="6"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="shield"/>
 		</attribute>
@@ -10449,6 +10470,12 @@
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
 			<attribute key="skillboost shielding" value="3"/>
+		</attribute>
+		<!-- FROZEN_HELL_OUTLAWED_DWARFS_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="6"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="shield"/>
