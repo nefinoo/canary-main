@@ -8,6 +8,7 @@ on:
       - balance_report/fix_level100_quest_weapons.py
       - balance_report/apply_knight_augments.py
       - balance_report/apply_outlawed_dwarf_augments.py
+      - balance_report/apply_elven_stage4.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -29,15 +30,17 @@ jobs:
         run: python3 balance_report/apply_knight_augments.py --apply
       - name: Apply Outlawed Dwarf equipment augments
         run: python3 balance_report/apply_outlawed_dwarf_augments.py --apply
-      - name: Commit items.xml (only if changed)
+      - name: Apply level-650 Elven set and remove premature drops
+        run: python3 balance_report/apply_elven_stage4.py --apply
+      - name: Commit stage-4 changes (only if changed)
         shell: bash
         run: |
-          git add data/items/items.xml
+          git add data/items/items.xml data-canary/monster/Custom
           if git diff --cached --quiet; then
-            echo "items.xml already has the approved weapons and augments."
+            echo "Quest weapons, equipment and staged loot are already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "balance(items): quest weapons and Knight augments"
+          git commit -m "balance: apply staged Elven set augments and progression loot gating"
           git push origin HEAD:balance-frozen-hell-knight-100-200
