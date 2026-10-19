@@ -1,0 +1,37 @@
+name: Apply Frozen Hell level-100 quest weapon fixes
+
+on:
+  push:
+    branches:
+      - balance-frozen-hell-knight-100-200
+    paths:
+      - balance_report/fix_level100_quest_weapons.py
+      - .github/workflows/apply-frozen-hell-quest-weapons.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-items-xml:
+    if: github.ref == 'refs/heads/balance-frozen-hell-knight-100-200'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out balance branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Apply ID-validated quest weapon corrections
+        run: python3 balance_report/fix_level100_quest_weapons.py --apply
+      - name: Commit items.xml (only if changed)
+        shell: bash
+        run: |
+          git add data/items/items.xml
+          if git diff --cached --quiet; then
+            echo "items.xml already has the approved corrections."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "fix(items): activate level-100 quest weapons in items.xml"
+          git push origin HEAD:balance-frozen-hell-knight-100-200
