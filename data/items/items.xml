@@ -9663,6 +9663,18 @@
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
 		</attribute>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="8"/>
+			</attribute>
+			<attribute key="fierce berserk" value="critical extra damage">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="fierce berserk" value="mana leech">
+				<attribute key="value" value="3"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
@@ -9782,6 +9794,12 @@
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
 		</attribute>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
@@ -9791,6 +9809,12 @@
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="8"/>
 		<attribute key="weight" value="7000"/>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="4"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="legs"/>
 			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
@@ -9949,6 +9973,15 @@
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
 		</attribute>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="5"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="5"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
 			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
@@ -10040,6 +10073,12 @@
 			<attribute key="skillboost club" value="3"/>
 			<attribute key="skillboost shielding" value="3"/>
 			<attribute key="skillboost distance" value="3"/>
+		</attribute>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="cooldown">
+				<attribute key="value" value="500"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="head"/>
@@ -10340,6 +10379,12 @@
 			<attribute key="elemental protection energy" value="3"/>
 			<attribute key="elemental protection holy" value="3"/>
 			<attribute key="skillboost shielding" value="3"/>
+		</attribute>
+		<!-- FROZEN_HELL_KNIGHT_AUGMENTS_V1 -->
+		<attribute key="augments" value="1">
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="5"/>
+			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="shield"/>
