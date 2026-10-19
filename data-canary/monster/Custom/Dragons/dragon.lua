@@ -33,8 +33,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1720
-monster.maxHealth = 1720
+monster.health = 1950
+monster.maxHealth = 1950
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 5973
@@ -86,7 +86,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 50},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 20},
 	{type = COMBAT_ENERGYDAMAGE, percent = -30},
 	{type = COMBAT_EARTHDAMAGE, percent = 80},
 	{type = COMBAT_FIREDAMAGE, percent = 100},
@@ -119,7 +119,7 @@ monster.loot = {
 	{name = "green dragon leather", chance = 3500},
 	{name = "wand of inferno", chance = 1611},
 	{name = "gold coin", chance = 100000, maxCount = 25},
-	{name = "dragon shield", chance = 600},
+	{name = "dragon shield", chance = 1500},
 	{name = "small diamond", chance = 1538, maxCount = 3},
 	{name = "life crystal", chance = 2000},
 	{name = "serpent sword", chance = 509},
