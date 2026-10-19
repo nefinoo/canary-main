@@ -34,8 +34,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 2150
-monster.maxHealth = 2150
+monster.health = 2450
+monster.maxHealth = 2450
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 5984
@@ -87,7 +87,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 50},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 25},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 80},
 	{type = COMBAT_FIREDAMAGE, percent = 100},
@@ -124,7 +124,7 @@ monster.loot = {
 	{name = "small sapphire", chance = 2222, maxCount = 2},
 	{name = "tower shield", chance = 533},
 	{name = "dragon slayer", chance = 333},
-	{name = "dragon scale mail", chance = 100},
+	{name = "dragon scale mail", chance = 900},
 	{name = "dragon lance", chance = 409},
 	{name = "red dragon scale", chance = 5000},
 	{id = 12413, chance = 4000},
