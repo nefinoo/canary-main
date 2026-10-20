@@ -10,6 +10,8 @@ on:
       - balance_report/apply_outlawed_dwarf_augments.py
       - balance_report/apply_elven_stage4.py
       - balance_report/apply_elven_stage5.py
+      - balance_report/apply_green_demon_stage10.py
+      - balance_report/validate_phase10.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -35,6 +37,10 @@ jobs:
         run: python3 balance_report/apply_elven_stage4.py --apply
       - name: Apply level-850 rare gear and 850-1000 combat balancing
         run: python3 balance_report/apply_elven_stage5.py --apply
+      - name: Apply level-1000 universal Green Demon equipment
+        run: python3 balance_report/apply_green_demon_stage10.py --apply
+      - name: Validate level-1000 boss and universal gear
+        run: python3 balance_report/validate_phase10.py
       - name: Validate Frozen Hell level-850 progression
         run: python3 balance_report/validate_phase5.py
       - name: Commit stage-4 changes (only if changed)
