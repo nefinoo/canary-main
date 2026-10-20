@@ -22,7 +22,7 @@ La reducción de inmunidades completas evita bloquear en exceso vocaciones y ele
 
 ## DPS bruto teórico, NO DPS real
 
-Estimar para cada ataque directo `media de |min|max| × chance/100 × 1000/interval_ms`. Para los siete ataques nuevos la suma es aproximadamente **1 279.5 DPS bruto** cuando todos impactan el objetivo. El daño real puede ser menor (defensa, resistencias, dirección y zonas), y los ataques pueden no sumarse de forma independiente según las reglas internas del engine. No utilizar esta cifra para afirmar supervivencia garantizada.
+Estimar para cada ataque directo `media de |min|max| × chance/100 × 1000/interval_ms`. Para los siete ataques nuevos la suma es aproximadamente **1 279.75 DPS bruto** cuando todos impactan el objetivo. El daño real puede ser menor (defensa, resistencias, dirección y zonas), y los ataques pueden no sumarse de forma independiente según las reglas internas del engine. No utilizar esta cifra para afirmar supervivencia garantizada.
 
 ### Knight lvl1800, ML10 (referencia para test, no ML verificado)
 - `exura med ico`, script vanilla `fair_wound_cleansing.lua`: min = (1800×0.2 + 10×4 + 25)×2 = **850**; max = (1800×0.2 + 10×7.95 + 51)×2 = **981**; promedio aproximado **915.5**, cooldown 1s.
@@ -34,6 +34,20 @@ Estimar para cada ataque directo `media de |min|max| × chance/100 × 1000/inter
 ## Loot controlado
 Eliminadas las entradas que entregaban directamente cinco armas de quest lvl100 (por IDs/nombres: 3287 throwing star, 3288 magic sword, 3309 thunder hammer, 3319 stonecutter axe, 3341 arcane staff). Estas armas se reservan para sus quests.
 Añadidas crystal coins hasta 2 con chance 35 000/100 000; demonic essence queda con una sola entrada de chance 11 000/100 000. Se preservan otros drops originales y equipo normal.
+
+## Curva objetivo propuesta para las cinco cacerías pre-boss
+
+Estas cifras **NO están implementadas** salvo la fila de Undead Dragon y el Undead Mage ya existente. Son objetivos para los scripts locales que todavía faltan por identificar.
+
+| Criatura | Tramo | HP objetivo | EXP objetivo | DPS bruto directo objetivo |
+|---|---:|---:|---:|---:|
+| Undead Mage | 1000–1150 (ya es lvl850) | 17k (existente) | 28M (existente) | ~735 (estimado) |
+| Frozenhell Guard | 1200–1350 | 28k | 44M | ~800–900 |
+| Dementor | 1400–1550 | 40k | 64M | ~950–1050 |
+| Arch Angel | 1600–1750 | 54k | 89M | ~1100–1200 |
+| Undead Dragon | 1800–1999 | **72k (aplicado)** | **118M (aplicado)** | **~1280 (estimado)** |
+
+Evitar hacer a todos más peligrosos únicamente mediante daño: cada uno debe tener una mecánica distinta, telegráfica y evitable. El daño real y el tiempo para matar deben decidir el ajuste definitivo.
 
 ## Ritmo y advertencia sobre stages
 En esta rama, `config.lua` declara `rateUseStages = true` y `data/stages.lua` tiene un stage abierto `minlevel=1, multiplier=1`. Por lo tanto, para estimaciones **no asumir que `rateExp=1000` aplica**: es el fallback que el config reserva cuando los stages están deshabilitados. Se preservan stages sin cambios por acuerdo previo. Confirmar experiencia efectiva in-game.
