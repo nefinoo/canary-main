@@ -3062,6 +3062,9 @@
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
+			<attribute key="wandtype" value="energy"/>
+			<attribute key="fromdamage" value="250"/>
+			<attribute key="todamage" value="350"/>
 			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
 		</attribute>
 	</item>
@@ -8830,7 +8833,7 @@
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="110"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="script" value="moveevent;weapon">
@@ -19347,9 +19350,9 @@
 		<attribute key="maxhitchance" value="100"/>
 		<attribute key="hitchance" value="100"/>
 		<attribute key="range" value="5"/>
-		<attribute key="attack" value="250"/>
+		<attribute key="attack" value="100"/>
 		<attribute key="weight" value="200"/>
-		<attribute key="script" value="moveevent">
+		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="distance"/>
@@ -19618,7 +19621,7 @@
 	<item id="7390" article="the" name="deadly blade">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="110"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="weight" value="5000"/>
@@ -19955,7 +19958,7 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="110"/>
 		<!-- <attribute key="extradef" value="-2"/> -->
 		<attribute key="defense" value="20"/>
 		<attribute key="weight" value="7800"/>
