@@ -111,7 +111,6 @@ monster.loot = {
 	{ name = "red piece of cloth", chance = 2006 },
 	{id = 3082, chance = 5500},
 	{id = 5925, chance = 2500},
-	{name = "demonic essence", chance = 1818},
 	
 }
 
