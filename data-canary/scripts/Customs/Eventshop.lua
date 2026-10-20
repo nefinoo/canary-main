@@ -92,26 +92,28 @@ function eventShop.onUse(player, item, fromPosition, target, toPosition, isHotke
         player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return true
     end
-    -- 5) Cobrar
-    player:removeItem(TOKEN_ID, entry.cost)
-	
-	local amount = item:getCharges()
-	
-	if amount <= 0 then
-		amount = 1 * entry.amount
-	end
-    -- 6) Dar EXACTAMENTE el item del top del tile
+    -- Deliver exactly the configured amount, not a mutable item's charges.
+    -- Grant first so players never lose event tokens due to missing capacity.
+    local amount = entry.amount
     local rewardItem = player:addItem(topItem:getId(), amount)
-
-    if rewardItem then
-        player:sendTextMessage(MESSAGE_LOOK,
-            "You bought " .. entry.amount .. "x " .. rewardItem:getName() ..
-            " for " .. entry.cost .. " tokens."
-        )
-        player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-    else
-        player:sendCancelMessage("Not enough capacity to receive this item.")
+    if not rewardItem then
+        player:sendCancelMessage("Not enough capacity to receive this item. No event tokens were charged.")
+        return true
     end
+
+    -- Tokens are consumed only after a successful delivery. Undo the reward
+    -- if the inventory changed before payment could be completed.
+    if not player:removeItem(TOKEN_ID, entry.cost) then
+        rewardItem:remove(amount)
+        player:sendCancelMessage("Event token payment failed. The purchase was cancelled.")
+        return true
+    end
+
+    player:sendTextMessage(MESSAGE_LOOK,
+        "You bought " .. amount .. "x " .. rewardItem:getName() ..
+        " for " .. entry.cost .. " tokens."
+    )
+    player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 
     return true
 end
