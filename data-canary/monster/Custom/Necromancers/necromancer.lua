@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead mage"
 monster.description = "an undead mage"
-monster.experience = 19650
+monster.experience = 32000000
 monster.outfit = {
 	lookType = 9,
 	lookHead = 20,
@@ -81,8 +81,8 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -980, maxDamage = -1274, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="combat", interval = 2000, chance = 55, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -91,18 +91,24 @@ monster.defenses = {
 	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE}
 }
 
-monster.maxSummons = 4
+-- Limit combat pressure; unlike Ghost, Zombie can be killed with physical damage.
+-- Custom Ghoul/Mummy have far too much HP and damage for a regular summon.
+monster.maxSummons = 1
 monster.summons = {
-	{name = "ghost", chance = 15, interval = 1000, max = 4},
-	{name = "ghoul", chance = 17, interval = 1000, max = 4},
-	{name = "mummy", chance = 13, interval = 1000, max = 4}
+	{name = "zombie", chance = 15, interval = 6000, max = 1}
 }
 
+-- Frozen Hell: harder Knight hunt at levels 750-1000.
+-- ~6,950 gp expected NPC-sale loot per kill. Arcane Staff is a level-100 quest weapon.
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 5},
-	{id = 3341, chance = 100},
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "crystal coin", chance = 35000},
 	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	{name = "blue robe", chance = 700},
+	{name = "yellow gem", chance = 5000},
+	{name = "green gem", chance = 3000},
+	{name = "gold ring", chance = 1000},
 }
 
 mType:register(monster)
