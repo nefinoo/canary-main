@@ -198,6 +198,10 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     end
     fishingCastCooldown[playerId] = now + 2
 
+    -- Frozen Hell economy: every valid cast uses a worm, including misses on lava,
+    -- swamp and tar. Without this, players can make unlimited free rare-monster rolls.
+    player:removeItem(wormId, 1)
+
     local effect = castEffects[item.itemid][fishingType]
     local difficulty = 2.10
     local skillModifier = player:getSkillLevel(SKILL_FISHING) / 100
@@ -247,14 +251,13 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:addItem(32045, 1, true) -- 35%
 			caughtFish = true
 		else
-			player:removeItem(wormId, 1) -- 54% pierde el worm
+			-- The worm was already consumed when the cast began.
 			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "The fish stole your worm and escaped.")
 		end
 	end
 	
 	if caughtMonster or caughtFish then
 		player:addSkillTries(SKILL_FISHING, 2)
-		player:removeItem(wormId, 1)
 	end
 	
     toPosition:sendMagicEffect(effect)
