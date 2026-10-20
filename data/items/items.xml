@@ -70675,6 +70675,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weight" value="730"/>
 	</item>
 	<item id="37607" name="green demon legs">
+		<!-- FROZEN_HELL_GREEN_DEMON_PHASE10 -->
+		<attribute key="maxhitpoints" value="400"/>
+		<attribute key="maxmanapoints" value="350"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="7000"/>
@@ -70689,6 +70692,9 @@ Granted by TibiaGoals.com"/>
 		</attribute>
 	</item>
 	<item id="37608" name="green demon armor">
+		<!-- FROZEN_HELL_GREEN_DEMON_PHASE10 -->
+		<attribute key="maxhitpoints" value="650"/>
+		<attribute key="maxmanapoints" value="100"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="190"/>
 		<attribute key="weight" value="8000"/>
@@ -70703,6 +70709,9 @@ Granted by TibiaGoals.com"/>
 		</attribute>
 	</item>
 	<item id="37609" name="green demon helmet">
+		<!-- FROZEN_HELL_GREEN_DEMON_PHASE10 -->
+		<attribute key="maxhitpoints" value="250"/>
+		<attribute key="maxmanapoints" value="250"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
 		<attribute key="armor" value="130"/>
@@ -70721,6 +70730,9 @@ Granted by TibiaGoals.com"/>
 		</attribute>
 	</item>
 	<item id="37610" name="green demon slippers">
+		<!-- FROZEN_HELL_GREEN_DEMON_PHASE10 -->
+		<attribute key="maxhitpoints" value="150"/>
+		<attribute key="maxmanapoints" value="200"/>
 		<attribute key="primarytype" value="boots"/>
 		<attribute key="weight" value="600"/>
 		<attribute key="armor" value="50"/>
