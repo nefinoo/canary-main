@@ -111,10 +111,12 @@ local tarMonsters = {
 
 -- Chance to catch monster is (catchMonsterRandom / difficulty) [[Difficulty shown below]]
 local catchMonstersRandom = 100000
+local fishingCastCooldown = {} -- seconds, per player; prevents rapid monster spawning
 
 local castEffects = {
     [3483] = {water = CONST_ME_LOSEENERGY, lava = CONST_ME_HITBYFIRE, swamp = CONST_ME_ENERGYHIT, tar = CONST_ME_LOSEENERGY},
-    [9306] = {water = CONST_ME_WATERSPLASH, lava = CONST_ME_FIREAREA, swamp = CONST_ME_ENERGYAREA, tar = CONST_ME_WATERSPLASH}
+    [9306] = {water = CONST_ME_WATERSPLASH, lava = CONST_ME_FIREAREA, swamp = CONST_ME_ENERGYAREA, tar = CONST_ME_WATERSPLASH},
+    [52053] = {water = CONST_ME_WATERSPLASH, lava = CONST_ME_FIREAREA, swamp = CONST_ME_ENERGYAREA, tar = CONST_ME_WATERSPLASH}
 }
 
 local function getFishingMonsters(targetId)
@@ -187,6 +189,15 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         return player:sendTextMessage(MESSAGE_FAILURE, "You cannot fish here until level " .. (fishingType == "tar" and 140 or 120) .. " fishing.")
     end
 
+    -- Minimum two-second interval between fishing attempts.
+    local playerId = player:getId()
+    local now = os.time()
+    if (fishingCastCooldown[playerId] or 0) > now then
+        player:sendCancelMessage("You must wait before fishing again.")
+        return true
+    end
+    fishingCastCooldown[playerId] = now + 2
+
     local effect = castEffects[item.itemid][fishingType]
     local difficulty = 2.10
     local skillModifier = player:getSkillLevel(SKILL_FISHING) / 100
@@ -196,7 +207,8 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         difficulty = difficulty - 0.25
     end
 
-    local realMonsterChance = catchMonstersRandom * difficulty
+    -- Keep math.random integer-safe even at high fishing skill levels.
+    local realMonsterChance = math.max(1, math.floor(catchMonstersRandom * math.max(0.50, difficulty)))
     local finalchance = math.random(1, realMonsterChance)
 	local caughtMonster = false
 	local caughtFish = false

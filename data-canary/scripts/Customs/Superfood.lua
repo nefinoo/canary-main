@@ -50,7 +50,7 @@ local superFoods = {
 		hpPercent = 6,
 		manaPercent = 6,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1.5, -- 3 seconds
+        exhaustedTime = 2, -- whole seconds; os.time() does not track half-seconds
         says = "Aaahhh..."
     }
 }
@@ -86,7 +86,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         if playerHealth < playerMaxHealth then
             gainHp = food.hp or 0
             gainHp = gainHp + (player:getMaxHealth() / 100 * (food.hpPercent or 0))
-            gainHp = math.min(gainHp, playerMaxHealth - playerHealth)
+            gainHp = math.floor(math.min(gainHp, playerMaxHealth - playerHealth))
             player:addHealth(gainHp)
         end
     end
@@ -96,7 +96,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         if playerMana < playerMaxMana then
             gainMana = food.mana or 0
             gainMana = gainMana + (player:getMaxMana() / 100 * (food.manaPercent or 0))
-            gainMana = math.min(gainMana, playerMaxMana - playerMana)
+            gainMana = math.floor(math.min(gainMana, playerMaxMana - playerMana))
             player:addMana(gainMana)
         end
     end
