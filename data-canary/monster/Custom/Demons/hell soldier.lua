@@ -65,6 +65,7 @@ monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 9},
 	{name = "platinum coin", chance = 60000, maxCount = 12},
 	{name = "experience scroll", chance = 1000},
+	{name = "crystal coin", chance = 30000, maxCount = 1}, -- nivel 850+, premio monetario ocasional
 	{name = "red gem", chance = 2100},
 	{id = 12413, chance = 13500},
 	{id = 3366, chance = 900},
