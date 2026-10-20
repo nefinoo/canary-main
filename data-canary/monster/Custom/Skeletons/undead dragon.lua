@@ -5,7 +5,7 @@ local monster = {}
 
 monster.name = "undead dragon"
 monster.description = "a undead dragon"
-monster.experience = 118000000
+monster.experience = 145000000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
