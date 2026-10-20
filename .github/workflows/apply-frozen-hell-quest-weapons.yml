@@ -13,6 +13,10 @@ on:
       - balance_report/apply_elven_stage5.py
       - balance_report/apply_green_demon_stage10.py
       - balance_report/validate_phase10.py
+      - balance_report/apply_equipment_phase14.py
+      - balance_report/validate_phase14.py
+      - balance_report/validate_phase5.py
+      - balance_report/apply_elven_stage5.py
       - .github/workflows/apply-frozen-hell-quest-weapons.yml
   workflow_dispatch:
 
@@ -40,6 +44,10 @@ jobs:
         run: python3 balance_report/apply_elven_stage5.py --apply
       - name: Apply level-1000 universal Green Demon equipment
         run: python3 balance_report/apply_green_demon_stage10.py --apply
+      - name: Remove unused Deadly augments, fix set progression and gate lvl1000 quest weapons
+        run: python3 balance_report/apply_equipment_phase14.py --apply
+      - name: Validate final set progression and quest weapon requirements
+        run: python3 balance_report/validate_phase14.py
       - name: Validate level-1000 boss and universal gear
         run: python3 balance_report/validate_phase10.py
       - name: Validate Frozen Hell level-850 progression
