@@ -106,7 +106,7 @@ monster.loot = {
 	{id = 3420, chance = 500}, -- demon shield: equipo de transicion
 	{id = 12413, chance = 12250},
 	{id = 3399, chance = 100},
-	{id = 8095, chance = 100},
+	{id = 8095, chance = 750}, -- Frozen Hell: primary rare drop (Ranger Legs), 0.75%
 	{id = 3408, chance = 100},
 }
 
