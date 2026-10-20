@@ -70632,6 +70632,15 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="7000"/>
+		<!-- FROZEN_HELL_GREEN_DEMON_KNIGHT: retains and slightly improves lvl-850 Berserk augments. -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="7"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="7"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="legs"/>
@@ -70644,6 +70653,15 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="190"/>
 		<attribute key="weight" value="8000"/>
+		<!-- FROZEN_HELL_GREEN_DEMON_KNIGHT: retains and slightly improves lvl-850 Berserk augments. -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="10"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="armor"/>
@@ -70657,6 +70675,15 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
 		<attribute key="armor" value="130"/>
 		<attribute key="weight" value="2950"/>
+		<!-- FROZEN_HELL_GREEN_DEMON_KNIGHT: retains and slightly improves lvl-850 Berserk augments. -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="4"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="4"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="head"/>
@@ -70669,6 +70696,15 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="boots"/>
 		<attribute key="weight" value="600"/>
 		<attribute key="armor" value="50"/>
+		<!-- FROZEN_HELL_GREEN_DEMON_KNIGHT: retains and slightly improves lvl-850 Berserk augments. -->
+		<attribute key="augments" value="1">
+			<attribute key="berserk" value="increased damage">
+				<attribute key="value" value="3"/>
+			</attribute>
+			<attribute key="fierce berserk" value="increased damage">
+				<attribute key="value" value="3"/>
+			</attribute>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="feet"/>
