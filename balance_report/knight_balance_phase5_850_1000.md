@@ -1,5 +1,7 @@
 # Frozen Hell — Fase 5: nivel 850–1000, set raro y preparacion para Deathpincer
 
+> **Actualización Fase 14 (2026-10-20):** las armaduras lvl850 fueron corregidas a 135/115/90, ranger legs mana 350 y bonelord mana 450. Los augments de Deadly Spells dejaron de utilizarse y fueron retirados de items.xml. Los valores inferiores y notas Deadly de esta fase5 son **históricos**, sustituidos por `knight_balance_phase14_gear_no_deadly.md`.
+
 **Rama de pruebas:** `balance-frozen-hell-knight-100-200` (PR #2 en borrador). Esta fase no altera `pr-level-limit` ni fusiona el PR.
 
 ## Decision
