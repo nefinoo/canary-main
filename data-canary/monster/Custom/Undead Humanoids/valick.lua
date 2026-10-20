@@ -120,7 +120,7 @@ monster.loot = {
 	{name = "demonrage sword", chance = 410},
 	{id = 5905, chance = 120},
 	{id = 12413, chance = 12500},
-	{id = 3399, chance = 125},
+	{id = 3399, chance = 750}, -- Frozen Hell: primary rare drop (Elven Mail), 0.75%
 	{id = 8095, chance = 125},
 	{id = 3408, chance = 125},
 }
