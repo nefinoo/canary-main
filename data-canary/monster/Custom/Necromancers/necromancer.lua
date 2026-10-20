@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead mage"
 monster.description = "an undead mage"
-monster.experience = 30650000
+monster.experience = 19650
 monster.outfit = {
 	lookType = 9,
 	lookHead = 20,
@@ -80,9 +80,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -650, maxDamage = -950, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
-	{name ="combat", interval = 2000, chance = 90, type = COMBAT_PHYSICALDAMAGE, minDamage = -550, maxDamage = -850, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -650, maxDamage = -950, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -980, maxDamage = -1274, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
+	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -91,26 +91,21 @@ monster.defenses = {
 	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE}
 }
 
-monster.maxSummons = 1
+monster.maxSummons = 4
 monster.summons = {
-	{name = "ghost", chance = 15, interval = 6000, max = 1},
-	{name = "ghoul", chance = 10, interval = 7000, max = 1},
+	{name = "ghost", chance = 15, interval = 1000, max = 4},
+	{name = "ghoul", chance = 17, interval = 1000, max = 4},
+	{name = "mummy", chance = 13, interval = 1000, max = 4}
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "platinum coin", chance = 50000, maxCount = 10},
-	{name = "experience scroll", chance = 950, maxCount = 2},
-	{name = "golden legs", chance = 300},
-    {name = "demon shield", chance = 500},
-    {name = "gold ring", chance = 800},    
-    {name = "giant sword", chance = 728},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
+	{name = "crystal coin", chance = 100000, maxCount = 5},
+	{id = 3341, chance = 100},
+	{name = "experience scroll", chance = 2500},
+	-- {id = 9743, chance = 2500}
 }
 
 mType:register(monster)
-
 
 
 
