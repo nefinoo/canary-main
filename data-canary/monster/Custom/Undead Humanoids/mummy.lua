@@ -95,10 +95,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 3},
-	{name = "platinum coin", chance = 50000, maxCount = 5},
+	{name = "platinum coin", chance = 100000, maxCount = 5},
+	{name = "platinum coin", chance = 50000, maxCount = 8},
 	{id = 3046, chance = 1818},
 	{name = "yellow piece of cloth", chance = 5000},
+	-- Frozen Hell: normal loot supports 650-750 Knight potion costs without increasing rare-set rates.
+	{name = "small diamond", chance = 60000, maxCount = 3},
+	{name = "green gem", chance = 1500},
+	{name = "crystal coin", chance = 8000},
 	{id = 3420, chance = 500}, -- demon shield: equipo de transicion
 	{id = 12413, chance = 12250},
 	{id = 3399, chance = 100},
