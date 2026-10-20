@@ -121,6 +121,9 @@ monster.loot = {
 	{name = "demon shield", chance = 400},
 	{name = "magic plate armor", chance = 300},
 	{id = 6529, chance = 30}, -- soft boots
+	-- Yalahari level-2500 chase drop: ultra-rare alternative to 550 event tokens.
+	-- 3 / 100000 = 0.003% nominal; does not bypass item level requirements.
+	{id = 8864, chance = 3}, -- yalahari mask
 }
 
 mType:register(monster)
