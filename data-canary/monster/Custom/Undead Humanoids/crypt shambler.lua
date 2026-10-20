@@ -104,7 +104,7 @@ monster.loot = {
 	{id = 12413, chance = 12250},
 	{id = 3399, chance = 300},
 	{id = 8095, chance = 300},
-	{id = 3408, chance = 300},
+	{id = 3408, chance = 750}, -- Frozen Hell: primary rare drop (Bonelord Helmet), 0.75%
 }   	
 mType:register(monster)
 
