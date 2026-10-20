@@ -80,9 +80,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -980, maxDamage = -1274, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -650, maxDamage = -950, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
+	{name ="combat", interval = 2000, chance = 90, type = COMBAT_PHYSICALDAMAGE, minDamage = -550, maxDamage = -850, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
+	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -650, maxDamage = -950, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -91,11 +91,10 @@ monster.defenses = {
 	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE}
 }
 
-monster.maxSummons = 4
+monster.maxSummons = 1
 monster.summons = {
-	{name = "ghost", chance = 15, interval = 1000, max = 4},
-	{name = "ghoul", chance = 17, interval = 1000, max = 4},
-	{name = "mummy", chance = 13, interval = 1000, max = 4}
+	{name = "ghost", chance = 15, interval = 6000, max = 1},
+	{name = "ghoul", chance = 10, interval = 7000, max = 1},
 }
 
 monster.loot = {
