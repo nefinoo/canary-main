@@ -14,7 +14,7 @@ local bonusLoot = {
         { id = 51670, chance = 1000 }, -- experience scroll
         { id = 3387, chance = 120 }, -- demon helmet (older equipment)
     },
-    ["demontorn"] = {
+    ["dementor"] = {
         { id = 3037, chance = 3000 }, -- yellow gem
         { id = 6529, chance = 100 }, -- soft boots
         { id = 3389, chance = 90 }, -- demon legs
