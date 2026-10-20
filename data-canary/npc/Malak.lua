@@ -79,6 +79,27 @@ local unlockedPotions = {
 	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1779 }
 }
 
+-- Custom potions unlock by character level; STORAGE_RUNE_UNLOCK remains exclusive to custom runes.
+-- Keep requirements synchronized with data/scripts/actions/items/potions.lua.
+local customPotionRequiredLevel = {
+	[50382] = 10000,
+	[50383] = 10000,
+	[50384] = 10000,
+	[50965] = 1000,
+	[50966] = 1000,
+	[50967] = 1000,
+	[51138] = 500,
+	[51246] = 500,
+	[51247] = 500,
+	[51701] = 2500,
+	[51702] = 2500,
+	[51704] = 2500,
+	[53142] = 5000,
+	[53143] = 5000,
+	[53144] = 5000,
+}
+
+
 local itemsTable = {
 	["foods"] = {
 		{ itemName = "brown mushroom", clientId = 3725, buy = 10 },
@@ -249,9 +270,11 @@ local function creatureSayCallback(npc, player, type, message)
             table.insert(tempTable, item)
         end
 
-        -- Si el jugador tiene el storage → agregar las nuevas runas
-        if player:getStorageValue(STORAGE_RUNE_UNLOCK) == 1 then
-            for _, item in ipairs(unlockedPotions) do
+        -- Custom potions depend on level, not on the custom-rune quest (storage 60000).
+        -- The potion action still checks vocation and minimum level on use.
+        local playerLevel = player:getLevel()
+        for _, item in ipairs(unlockedPotions) do
+            if playerLevel >= (customPotionRequiredLevel[item.clientId] or math.huge) then
                 table.insert(tempTable, item)
             end
         end
