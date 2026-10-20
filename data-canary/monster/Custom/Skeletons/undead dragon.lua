@@ -97,21 +97,30 @@ monster.defenses = {
 }
 
 monster.loot = {
-	-- Equipo de quests lvl100 no aparece en loot normal: solo armas comunes y materiales.
-	{name = "crystal coin", chance = 35000, maxCount = 2},
-	{name = "demonic essence", chance = 11000},
+	-- Frozen Hell: level ~1800 solo hunt, weapons from quests remain quest-exclusive.
+	-- Consistent currency + materials; equipment is rare, not an alternate quest farm.
+	{name = "crystal coin", chance = 80000, maxCount = 2},
 	{name = "platinum coin", chance = 100000, maxCount = 10},
 	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "demonic essence", chance = 11000},
 	{name = "experience scroll", chance = 2500, maxCount = 2},
-	{id = 7366, chance = 100},
-	{id = 7426, chance = 100}, 
-	{id = 7420, chance = 100}, 
-	{id = 3296, chance = 100},
-	{id = 7437, chance = 100},
-	{ name = "red piece of cloth", chance = 2006 },
+	{name = "small diamond", chance = 40000, maxCount = 3},
+	{name = "green gem", chance = 1500},
+	{name = "yellow gem", chance = 3000},
+	{name = "iron ore", chance = 10000, maxCount = 3},
+	{name = "red piece of cloth", chance = 2006},
 	{id = 3082, chance = 5500},
 	{id = 5925, chance = 2500},
-	
+	-- Legacy healing-food supplements; fishing remains the principal food source.
+	{name = "salmon", chance = 10000, maxCount = 2},
+	{id = 3581, chance = 4500},
+	-- Very rare loot from the earlier Demon tier (no level-500 quest weapons).
+	{name = "demon helmet", chance = 150},
+	{name = "demon armor", chance = 100},
+	{name = "demon legs", chance = 130},
+	{name = "demon shield", chance = 400},
+	{name = "magic plate armor", chance = 300},
+	{id = 6529, chance = 30}, -- soft boots
 }
 
 mType:register(monster)
