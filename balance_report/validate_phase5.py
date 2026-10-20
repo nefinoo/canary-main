@@ -25,8 +25,8 @@ def require(source: str, fragment: str, label: str) -> None:
 for item_id, field, value in [
     (3399, "maxhitpoints", 600),
     (8095, "maxhitpoints", 350),
-    (8095, "maxmanapoints", 250),
-    (3408, "maxmanapoints", 350),
+    (8095, "maxmanapoints", 350),
+    (3408, "maxmanapoints", 450),
 ]:
     item = item_block(item_id)
     require(item, f'<attribute key="{field}" value="{value}"/>', f"item {item_id}")
