@@ -14,7 +14,7 @@ local monsters = {
     [11] = {name = "Quara Hydromancer", level = 1300, fishing = 50, scroll = false},
     [12] = {name = "Quara Mantassin", level = 1500, fishing = 55, scroll = false},
     [13] = {name = "Quara Pincher", level = 1750, fishing = 58, scroll = false},
-    [14] = {name = "Quara Predator", level = 2000, fishing = 60, scroll = false},
+    [14] = {name = "Quara Predator", level = 2000, fishing = 65, scroll = false},
     [15] = {name = "Deepling Scout", level = 2200, fishing = 63, scroll = false},
     [16] = {name = "Deepling Brawler", level = 2400, fishing = 65, scroll = false},
     [17] = {name = "Deepling Spellsinger", level = 2600, fishing = 68, scroll = false},
