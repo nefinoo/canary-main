@@ -3,6 +3,8 @@
 
 Dry-run by default; use --apply only in the balance branch.
 Item records are matched by ID, never by display name alone.
+Stage 5 now accepts phase-14 final mana bonuses (350/450), so the workflow
+can be rerun without reverting the latest approved progression.
 File encodings and original newlines remain unchanged.
 """
 from __future__ import annotations
@@ -23,11 +25,11 @@ ITEM_EDITS = {
     )),
     8095: ("ranger legs", (
         ('<attribute key="maxhitpoints" value="50"/>', '<attribute key="maxhitpoints" value="350"/>'),
-        ('<attribute key="maxmanapoints" value="50"/>', '<attribute key="maxmanapoints" value="250"/>'),
+        ('<attribute key="maxmanapoints" value="50"/>', '<attribute key="maxmanapoints" value="350"/>'),
         ('<attribute key="level" value="650"/>', '<attribute key="level" value="850"/>'),
     )),
     3408: ("bonelord helmet", (
-        ('<attribute key="maxmanapoints" value="100"/>', '<attribute key="maxmanapoints" value="350"/>'),
+        ('<attribute key="maxmanapoints" value="100"/>', '<attribute key="maxmanapoints" value="450"/>'),
         ('<attribute key="level" value="650"/>', '<attribute key="level" value="850"/>'),
     )),
 }
