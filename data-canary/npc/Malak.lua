@@ -54,7 +54,7 @@ local STORAGE_RUNE_UNLOCK = 60000
 
 local unlockedRunes = {		
     { itemName = "mana rune", clientId = 3157, buy = 1000000 },
-    { itemName = "knight mana rune", clientId = 3170, buy = 1250000 }
+    { itemName = "knight healing rune", clientId = 3170, buy = 1250000 }
 }
 
 local unlockedPotions = {		
@@ -63,20 +63,20 @@ local unlockedPotions = {
 	{ itemName = "angelic health potion", clientId = 51246, buy = 738 },
 
 	{ itemName = "extreme mana potion", clientId = 50966, buy = 938 },
-	{ itemName = "extreme health potion", clientId = 50967, buy = 1179 },
-	{ itemName = "extreme spirit potion", clientId = 50965, buy = 938 },
+	{ itemName = "extreme health potion", clientId = 50967, buy = 938 },
+	{ itemName = "extreme spirit potion", clientId = 50965, buy = 1179 },
 
 	{ itemName = "obscure mana potion", clientId = 51704, buy = 1138 },
-	{ itemName = "obscure health potion", clientId = 51702, buy = 1379 },
-	{ itemName = "obscure spirit potion", clientId = 51701, buy = 1138 },
+	{ itemName = "obscure health potion", clientId = 51702, buy = 1138 },
+	{ itemName = "obscure spirit potion", clientId = 51701, buy = 1379 },
 
 	{ itemName = "eternal mana potion", clientId = 53143, buy = 1338 },
-	{ itemName = "eternal health potion", clientId = 53144, buy = 1579 },
-	{ itemName = "eternal spirit potion", clientId = 53142, buy = 1338 },
+	{ itemName = "eternal health potion", clientId = 53144, buy = 1338 },
+	{ itemName = "eternal spirit potion", clientId = 53142, buy = 1579 },
 
 	{ itemName = "legendary mana potion", clientId = 50382, buy = 1538 },
-	{ itemName = "legendary health potion", clientId = 50384, buy = 1779 },
-	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1538 }
+	{ itemName = "legendary health potion", clientId = 50384, buy = 1538 },
+	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1779 }
 }
 
 local itemsTable = {

@@ -61,8 +61,8 @@ local potions = {
 	[51246] = { health = { 1875, 2025 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 500, flask = 284, description = "Only knights of level 500 or above may drink this fluid." },
 	--------------------------------------level 1000---------------------------------------------------------------------
 	[50966] = { mana = { 1025, 1275 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 1000, flask = 284, description = "Only druids and sorcerers of level 1000 or above may drink this fluid." },
-	[50967] = { health = { 1020, 1320 }, mana = { 550, 650 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 1000, flask = 284, description = "Only paladins of level 1000 or above may drink this fluid." },
-	[50965] = { health = { 2575, 2925 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 1000, flask = 284, description = "Only knights of level 1000 or above may drink this fluid." },
+	[50965] = { health = { 1020, 1320 }, mana = { 550, 650 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 1000, flask = 284, description = "Only paladins of level 1000 or above may drink this fluid." },
+	[50967] = { health = { 2575, 2925 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 1000, flask = 284, description = "Only knights of level 1000 or above may drink this fluid." },
 	--------------------------------------level 2500--------------------------------------------------------------------
 	[51704] = { mana = { 2025, 2375 }, vocations = { VOCATION.BASE_ID.SORCERER, VOCATION.BASE_ID.DRUID }, level = 2500, flask = 284, description = "Only druids and sorcerers of level 2500 or above may drink this fluid." },
 	[51701] = { health = { 2020, 2350 }, mana = { 1050, 1150 }, vocations = { VOCATION.BASE_ID.PALADIN }, level = 2500, flask = 284, description = "Only paladins of level 2500 or above may drink this fluid." },

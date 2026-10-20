@@ -333,7 +333,7 @@ npcConfig.shop = {
 	{ itemName = "eldritch crystal", clientId = 36835, sell = 48000 },
 	{ itemName = "fiery tear", clientId = 39040, sell = 1070000 },
 	{ itemName = "gemmed figurine", clientId = 24392, sell = 3500 },
-	{ itemName = "giant amethyst", clientId = 30061, sell = 60000 },
+	{ itemName = "giant amethyst", clientId = 32622, sell = 60000 },
 	{ itemName = "giant emerald", clientId = 30060, sell = 90000 },
 	{ itemName = "giant ruby", clientId = 30059, sell = 70000 },
 	{ itemName = "giant sapphire", clientId = 30061, sell = 50000 },
@@ -376,7 +376,7 @@ npcConfig.shop = {
 	{ itemName = "white silk flower", clientId = 34008, sell = 9000 },
 	{ itemName = "wedding ring", clientId = 3004, sell = 100 },
 	{ itemName = "white pearl", clientId = 3026, sell = 160 },
-	{ itemName = "orichalcum pearl", clientId = 3026, sell = 80 },
+	{ itemName = "orichalcum pearl", clientId = 5021, sell = 80 },
 	
 	--lailene--
 	{ itemName = "batwing hat", clientId = 9103, sell = 8000 },
@@ -660,7 +660,6 @@ npcConfig.shop = {
 	{ itemName = "vial", clientId = 2874, sell = 5 },
 	{ itemName = "viking helmet", clientId = 3367, sell = 66 },
 	{ itemName = "viking shield", clientId = 3431, sell = 85 },
-	{ itemName = "war hammer", clientId = 3279, sell = 470 },
 	{ itemName = "warrior's axe", clientId = 14040, sell = 11000 },
 	{ itemName = "warrior's shield", clientId = 14042, sell = 9000 },
 	{ itemName = "waspoid claw", clientId = 14080, sell = 320 },
@@ -1040,7 +1039,7 @@ npcConfig.shop = {
 	{ itemName = "lion crest", clientId = 34160, sell = 270 },
 	{ itemName = "lion seal", clientId = 34163, sell = 210 },
 	{ itemName = "lion's mane", clientId = 9691, sell = 60 },
-	{ itemName = "little bowl of myrrh", clientId = 25697, sell = 500 },
+	{ itemName = "little bowl of myrrh", clientId = 25702, sell = 500 },
 	{ itemName = "lizard essence", clientId = 11680, sell = 300 },
 	{ itemName = "lizard heart", clientId = 31340, sell = 530 },
 	{ itemName = "lizard leather", clientId = 5876, sell = 150 },
@@ -1183,7 +1182,7 @@ npcConfig.shop = {
 	{ itemName = "rorc feather", clientId = 18993, sell = 70 },
 	{ itemName = "rotten heart", clientId = 31589, sell = 74000 },
 	{ itemName = "rotten piece of cloth", clientId = 10291, sell = 30 },
-	{ itemName = "rotten vermin ichor", clientId = 43849, sell = 4500 },
+	{ itemName = "rotten vermin ichor", clientId = 43847, sell = 4500 },
 	{ itemName = "rotten roots", clientId = 43849, sell = 3800 },
 	{ itemName = "sabretooth", clientId = 10311, sell = 400 },
 	{ itemName = "sabretooth fur", clientId = 39378, sell = 2500 },
@@ -1213,7 +1212,7 @@ npcConfig.shop = {
 	{ itemName = "silver foxmouse coin", clientId = 43733, sell = 11000 },
 	{ itemName = "silver moon coin", clientId = 43732, sell = 11000 },
 	{ itemName = "silver hand mirror", clientId = 32772, sell = 10000 },
-	{ itemName = "single human eye", clientId = 25696, sell = 1000 },
+	{ itemName = "single human eye", clientId = 25701, sell = 1000 },
 	{ itemName = "skeleton decoration", clientId = 6525, sell = 3000 },
 	{ itemName = "skull belt", clientId = 11480, sell = 80 },
 	{ itemName = "skull fetish", clientId = 22191, sell = 250 },
@@ -1372,8 +1371,8 @@ npcConfig.shop = {
 	{ itemName = "silver token", clientId = 22516, sell = 100000 },	
 	
 	{ itemName = "bonelord helmet", clientId = 3408, sell = 100000 },
-	{ itemName = "elven mail", clientId = 3408, sell = 100000 },
-	{ itemName = "ranger legs", clientId = 3408, sell = 100000 },
+	{ itemName = "elven mail", clientId = 3399, sell = 100000 },
+	{ itemName = "ranger legs", clientId = 8095, sell = 100000 },
 	
 	
 	{ itemName = "arcane staff", clientId = 3341, sell = 100000 },	
