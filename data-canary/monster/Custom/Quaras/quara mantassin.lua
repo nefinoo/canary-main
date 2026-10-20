@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara mantassin"
 monster.description = "a quara mantassin"
-monster.experience = 1600000000
+monster.experience = 175000000
 monster.outfit = {
 	lookType = 72,
 	lookHead = 0,
@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2500, maxDamage = -6000, range = 1, radius = 1, target = true}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1500, maxDamage = -2300, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
@@ -94,8 +94,8 @@ monster.loot = {
 	{name = "northern pike", chance = 2000},
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "fish fin", chance = 2000},
-	{name = "rainbow trout", chance = 2000},
-	{name = "green perch", chance = 2000},
+	{name = "rainbow trout", chance = 7000},
+	{name = "green perch", chance = 9000},
 	{name = "platinum coin", chance = 100000, maxCount = 30},
 	{name = "platinum coin", chance = 70000, maxCount = 40},
 	{name = "experience scroll", chance = 3000, maxCount = 2},

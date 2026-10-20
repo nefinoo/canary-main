@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara predator"
 monster.description = "a quara predator"
-monster.experience = 2500000000
+monster.experience = 285000000
 monster.outfit = {
 	lookType = 20,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 200000
-monster.maxHealth = 200000
+monster.health = 105000
+monster.maxHealth = 105000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6067
@@ -80,24 +80,24 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -5000, maxDamage = -6000, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -1000, maxDamage = -1500, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ICETORNADO},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_ICEDAMAGE, minDamage = -1000, maxDamage = -2000, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_FIREWORK_BLUE}
+	{name ="combat", interval = 2000, chance = 80, type = COMBAT_ENERGYDAMAGE, minDamage = -2600, maxDamage = -3400, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 3000, chance = 65, type = COMBAT_DEATHDAMAGE, minDamage = -1300, maxDamage = -1800, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ICETORNADO},
+	{name ="combat", interval = 4000, chance = 60, type = COMBAT_ICEDAMAGE, minDamage = -1300, maxDamage = -2100, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_FIREWORK_BLUE}
 }
 
 monster.defenses = {
 	defense = 45,
 	armor = 40,
 	{name ="speed", interval = 10000, chance = 40, speed = {min = 210, max = 210}, duration = 20000, effect = CONST_ME_MAGIC_GREEN},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 15000, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 4000, chance = 30, type = COMBAT_HEALING, minDamage = 1200, maxDamage = 1800, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
 	{name = "salmon", chance = 2000},
 	{name = "northern pike", chance = 2000},
 	{name = "worm", chance = 5000, maxCount = 25},
-	{name = "rainbow trout", chance = 2000},
-	{name = "green perch", chance = 2000},
+	{name = "rainbow trout", chance = 11000},
+	{name = "green perch", chance = 13000},
 	{name = "platinum coin", chance = 100000, maxCount = 80},
 	{name = "platinum coin", chance = 70000, maxCount = 100},
 	{name = "experience scroll", chance = 3000, maxCount = 3},

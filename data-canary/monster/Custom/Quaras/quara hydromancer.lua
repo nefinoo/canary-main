@@ -85,8 +85,8 @@ monster.elements = {
 
 monster.attacks = {
 	-- {name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -865, maxDamage = -1100, length = 8, spread = 10, effect = CONST_ME_BUBBLES},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ICEDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 3, target = false, effect = CONST_ME_BUBBLES}
+	{name ="combat", interval = 2000, chance = 65, type = COMBAT_HOLYDAMAGE, minDamage = -865, maxDamage = -1100, length = 8, spread = 10, effect = CONST_ME_BUBBLES},
+	{name ="combat", interval = 2000, chance = 70, type = COMBAT_ICEDAMAGE, minDamage = -1300, maxDamage = -1900, range = 7, radius = 3, target = false, effect = CONST_ME_BUBBLES}
 }
 
 monster.defenses = {
@@ -99,8 +99,8 @@ monster.loot = {
 	{name = "northern pike", chance = 2000},
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "fish fin", chance = 2000},
-	{name = "rainbow trout", chance = 2000},
-	{name = "green perch", chance = 2000},
+	{name = "rainbow trout", chance = 5000},
+	{name = "green perch", chance = 6500},
 	{name = "platinum coin", chance = 100000, maxCount = 20},
 	{name = "platinum coin", chance = 50000, maxCount = 30},
 	{name = "experience scroll", chance = 3000, maxCount = 2},
