@@ -3059,6 +3059,7 @@
 		<attribute key="range" value="4"/>
 		<attribute key="weight" value="3500"/>
 		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
@@ -8833,6 +8834,7 @@
 		<attribute key="defense" value="22"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="1000"/>
 			<attribute key="weaponType" value="axe"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -10008,14 +10010,6 @@
 		<attribute key="description" value="You hear an evil whispering from inside"/>
 		<attribute key="armor" value="70"/>
 		<attribute key="weight" value="2950"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="head"/>
@@ -10026,11 +10020,6 @@
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="100"/>
 		<attribute key="weight" value="8000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="armor"/>
@@ -10042,11 +10031,6 @@
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="85"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="legs"/>
@@ -10190,7 +10174,7 @@
 	<item id="3399" article="an" name="elven mail">
 		<attribute key="maxhitpoints" value="600"/>
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="35"/>
+		<attribute key="armor" value="135"/>
 		<attribute key="absorbpercentphysical" value="3"/>
 		<attribute key="weight" value="9000"/>
 		<!-- FROZEN_HELL_ELVEN_SET_PHASE4 -->
@@ -10281,20 +10265,14 @@
 		</attribute>
 	</item>
 	<item id="3408" article="a" name="bonelord helmet">
-		<attribute key="maxmanapoints" value="350"/>
+		<attribute key="maxmanapoints" value="450"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="absorbpercentphysical" value="2"/>
-		<attribute key="armor" value="25"/>
+		<attribute key="armor" value="90"/>
 		<attribute key="weight" value="4600"/>
 		<!-- FROZEN_HELL_ELVEN_SET_PHASE4 -->
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
 			<attribute key="fierce berserk" value="increased damage">
 				<attribute key="value" value="3"/>
 			</attribute>
@@ -19645,7 +19623,8 @@
 		<attribute key="defense" value="24"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="unproperly" value="true"/>
+			<attribute key="level" value="1000"/>
+			<attribute key="unproperly" value="false"/>
 			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -19981,8 +19960,8 @@
 		<attribute key="defense" value="20"/>
 		<attribute key="weight" value="7800"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="60"/>
-			<attribute key="unproperly" value="true"/>
+			<attribute key="level" value="1000"/>
+			<attribute key="unproperly" value="false"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -22335,11 +22314,11 @@
 		</attribute>
 	</item>
 	<item id="8095" name="ranger legs">
-		<attribute key="maxmanapoints" value="250"/>
+		<attribute key="maxmanapoints" value="350"/>
 		<attribute key="maxhitpoints" value="350"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="absorbpercentphysical" value="2"/>
-		<attribute key="armor" value="27"/>
+		<attribute key="armor" value="115"/>
 		<attribute key="weight" value="3500"/>
 		<!-- <attribute key="augments" value="1"> -->
 			<!-- <attribute key="Deadly Caldera" value="base"> -->
@@ -23580,20 +23559,6 @@
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="5"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="5"/>
-			</attribute>
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="5"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="5"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="armor"/>
@@ -23604,23 +23569,6 @@
 		<attribute key="skilldist" value="2"/>
 		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="6500"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="2500"/>
 			<attribute key="slot" value="legs"/>
@@ -70681,11 +70629,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="legs"/>
@@ -70698,11 +70641,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="190"/>
 		<attribute key="weight" value="8000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>			
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="armor"/>
@@ -70716,14 +70654,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
 		<attribute key="armor" value="130"/>
 		<attribute key="weight" value="2950"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="1000"/>
 			<attribute key="slot" value="head"/>
@@ -83996,12 +83926,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84020,12 +83944,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84044,12 +83962,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84072,12 +83984,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84097,12 +84003,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84124,15 +84024,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84152,15 +84043,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84180,15 +84062,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84212,15 +84085,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84242,15 +84106,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="20"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84271,12 +84126,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84296,12 +84145,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84321,12 +84164,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84350,12 +84187,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<!-- <attribute key="lifeleechamount" value="200"/> -->
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84377,12 +84208,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<!-- <attribute key="lifeleechamount" value="400"/> -->
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84403,12 +84228,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84427,12 +84246,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84451,12 +84264,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84479,12 +84286,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84503,12 +84304,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornador" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84531,12 +84326,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84555,12 +84344,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84579,12 +84362,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84607,12 +84384,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84631,12 +84402,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84659,15 +84424,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84687,15 +84443,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84715,15 +84462,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84747,15 +84485,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84777,15 +84506,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="5"/>
 			</attribute>
@@ -84806,12 +84526,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84830,12 +84544,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84854,12 +84562,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84882,12 +84584,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84908,12 +84604,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84934,12 +84624,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84958,12 +84642,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -84982,12 +84660,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85010,12 +84682,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85034,12 +84700,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="25"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85063,12 +84723,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85088,12 +84742,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85113,12 +84761,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85142,12 +84784,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="5"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85166,12 +84802,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Core" value="mana leech">
-				<attribute key="value" value="10"/>
-			</attribute>
 			<attribute key="Ultimate Healing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85194,15 +84824,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85222,15 +84843,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85250,15 +84862,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85282,15 +84885,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85312,15 +84906,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85341,12 +84926,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85365,12 +84944,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85389,12 +84962,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85417,12 +84984,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85442,12 +85003,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="life leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Fair Wound Cleansing" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85469,12 +85024,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85493,12 +85042,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85517,12 +85060,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85545,12 +85082,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="500"/>
 		<attribute key="criticalhitdamage" value="500"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85569,12 +85100,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="40"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="mana leech">
-				<attribute key="value" value="1"/>
-			</attribute>
 			<attribute key="Nature's Embrace" value="base">
 				<attribute key="value" value="10"/>
 			</attribute>
@@ -85611,11 +85136,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="8000"/>				
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
 			<attribute key="slot" value="armor"/>
@@ -85627,11 +85147,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="critical extra damage">
-				<attribute key="value" value="100"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
 			<attribute key="slot" value="legs"/>
@@ -85693,9 +85208,6 @@ Granted by TibiaGoals.com"/>
 			<attribute key="Salvation" value="base">
 				<attribute key="value" value="100"/>
 			</attribute>
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
@@ -85711,9 +85223,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weight" value="7000"/>
 		<attribute key="augments" value="1">
 			<attribute key="Salvation" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
-			<attribute key="Deadly Caldera" value="critical extra damage">
 				<attribute key="value" value="100"/>
 			</attribute>
 		</attribute>
@@ -85778,9 +85287,6 @@ Granted by TibiaGoals.com"/>
 			<attribute key="fair wound cleansing" value="base">
 				<attribute key="value" value="100"/>
 			</attribute>
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
 		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
@@ -85795,9 +85301,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weight" value="7000"/>
 		<attribute key="augments" value="1">
 			<attribute key="fair wound cleansing" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
-			<attribute key="Deadly Berseker" value="critical extra damage">
 				<attribute key="value" value="100"/>
 			</attribute>
 		</attribute>
@@ -85855,11 +85358,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="8000"/>				
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="100"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
 			<attribute key="slot" value="armor"/>
@@ -85871,11 +85369,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="800"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Tornado" value="critical extra damage">
-				<attribute key="value" value="100"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="30000"/>
 			<attribute key="slot" value="legs"/>
@@ -86017,11 +85510,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="legs"/>
 		<attribute key="armor" value="150"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="5000"/>
 			<attribute key="slot" value="legs"/>
@@ -86031,11 +85519,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="armor" value="190"/>
 		<attribute key="weight" value="8000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>			
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="5000"/>
 			<attribute key="slot" value="armor"/>
@@ -86046,14 +85529,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
 		<attribute key="armor" value="130"/>
 		<attribute key="weight" value="2950"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="15"/>
-			</attribute>
-		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="5000"/>
 			<attribute key="slot" value="head"/>
