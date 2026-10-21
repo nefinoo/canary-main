@@ -46,15 +46,9 @@ local bonusLoot = {
     },
 }
 
--- Yalahari remains primarily obtainable from the event-token shop.
--- Only the late hunting tiers can obtain one random piece per lucky kill.
--- Requiring level 2500 prevents farming this reward on earlier characters.
-local yalahariChance = {
-    ["hellraiser"] = 10,        -- 0.010% / kill
-    ["frozenhell guard"] = 20, -- 0.020% / kill
-    ["venom"] = 35,            -- 0.035% / kill
-}
-local yalahariIds = { 8864, 8862, 8863, 3423, 23477 }
+-- Yalahari drop rates are defined exclusively in the monster's own loot
+-- (Hellraiser, Frozenhell Guard, Venom and other designated high-level mobs).
+-- This callback grants only supplementary ordinary loot: no second Yalahari roll.
 
 local callback = EventCallback("FrozenHellPost1000HuntLoot")
 
@@ -89,11 +83,6 @@ function callback.monsterPostDropLoot(monster, corpse)
         if math.random(1, 100000) <= drop.chance then
             addItem(drop.id, 1)
         end
-    end
-
-    local chance = yalahariChance[monsterName]
-    if chance and player:getLevel() >= 2500 and math.random(1, 100000) <= chance then
-        addItem(yalahariIds[math.random(1, #yalahariIds)], 1)
     end
 
     if next(result) then
