@@ -36,8 +36,15 @@ end
 
 local function writeRow(values)
     local line = csvRow(values)
+    local existing = io.open(CFG.file, "r")
+    local headerNeeded = not existing
+    if existing then
+        headerNeeded = (existing:seek("end") == 0)
+        existing:close()
+    end
     local file = io.open(CFG.file, "a")
     if file then
+        if headerNeeded then file:write(csvRow(cols) .. "\n") end
         file:write(line .. "\n")
         file:close()
     else
