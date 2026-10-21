@@ -1398,11 +1398,11 @@ npcConfig.shop = {
 	{ itemName = "demon legs", clientId = 3389, sell = 200000 },
 	{ itemName = "pair of soft boots", clientId = 6529, sell = 200000 },
 	
-	{ itemName = "green demon helmet", clientId = 37609, sell = 300000 },	
-	{ itemName = "green demon armor", clientId = 37608, sell = 300000 },
-	{ itemName = "green demon legs", clientId = 37607, sell = 300000 },
-	{ itemName = "green demon slippers", clientId = 37610, sell = 300000 },
-	{ itemName = "nightmare shield", clientId = 6390, sell = 300000 },
+	{ itemName = "green demon helmet", clientId = 37609, sell = 150000 },	
+	{ itemName = "green demon armor", clientId = 37608, sell = 150000 },
+	{ itemName = "green demon legs", clientId = 37607, sell = 150000 },
+	{ itemName = "green demon slippers", clientId = 37610, sell = 150000 },
+	{ itemName = "nightmare shield", clientId = 6390, sell = 150000 },
 }
 
 -- On buy npc shop message
