@@ -94,7 +94,7 @@ monster.elements = {
 -- Frozen Hell Knight progression; Venom
 monster.attacks = {
 	{name = "melee", interval = 1500, chance = 100, minDamage = -2650, maxDamage = -3500},
-	{name = "combat", interval = 2500, chance = 95, type = COMBAT_LIFEDRAIN, minDamage = -3300, maxDamage = -4850, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA},
+	{name = "combat", interval = 2800, chance = 80, type = COMBAT_LIFEDRAIN, minDamage = -3300, maxDamage = -4650, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA},
 	{name = "combat", interval = 5000, chance = 80, type = COMBAT_EARTHDAMAGE, minDamage = -2100, maxDamage = -2850, radius = 3, target = false, effect = CONST_ME_POISONAREA}
 }
 
