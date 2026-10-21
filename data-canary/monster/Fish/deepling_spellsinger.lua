@@ -93,11 +93,11 @@ monster.loot = {
 	{ name = "necklace of the deep", chance = 790 },
 	{ name = "fish fin", chance = 520 },
 	{ name = "ornate crossbow", chance = 220 },
-	{ name = "foxtail", chance = 10 },,
+	{ name = "foxtail", chance = 10 },
 	-- Frozen Hell: catch reward finances consumables and produces Super Foods.
 	{name = "crystal coin", chance = 100000, maxCount = 10},
 	{name = "salmon", chance = 100000, maxCount = 3},
-	{id = 3581, chance = 45000, maxCount = 2}, -- shrimp,
+	{id = 3581, chance = 45000, maxCount = 2}, -- shrimp
 	{name = "rainbow trout", chance = 35000},
 	{name = "green perch", chance = 35000}
 }
