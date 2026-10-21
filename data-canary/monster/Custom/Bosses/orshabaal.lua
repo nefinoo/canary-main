@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Orshabaal"
 monster.description = "Orshabaal"
-monster.experience = 15500000
+monster.experience = 288000000
 monster.outfit = {
 	lookType = 201,
 	lookHead = 0,
@@ -20,8 +20,8 @@ monster.outfit = {
 -- }
 
 
-monster.health = 20500
-monster.maxHealth = 20500
+monster.health = 150000
+monster.maxHealth = 150000
 monster.runHealth = 2500
 monster.race = "fire"
 monster.corpse = 5995
@@ -88,67 +88,41 @@ monster.elements = {
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
+-- Frozen Hell Knight progression; Orshabaal
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -420, maxDamage = -1110},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_PHYSICALDAMAGE, minDamage = -320, maxDamage = -910, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 6, type = COMBAT_PHYSICALDAMAGE, minDamage = -310, maxDamage = -740, radius = 5, target = false, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1300, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1300, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name = "melee", interval = 1500, chance = 100, minDamage = -1650, maxDamage = -2300},
+	{name = "combat", interval = 2500, chance = 70, type = COMBAT_PHYSICALDAMAGE, minDamage = -1700, maxDamage = -2350, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name = "combat", interval = 4000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -1700, maxDamage = -2250, radius = 3, target = false, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
-	defense = 111,
-	armor = 90,
-	{name ="combat", interval = 1000, chance = 9, type = COMBAT_HEALING, minDamage = 1500, maxDamage = 2500, effect = CONST_ME_MAGIC_BLUE},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 600, maxDamage = 1000, effect = CONST_ME_MAGIC_BLUE},
-	{name ="speed", interval = 1000, chance = 5, speed = {min = 1901, max = 1901}, duration = 7000, effect = CONST_ME_MAGIC_RED}
+	defense = 70,
+	armor = 65,
+	{name = "combat", interval = 2000, chance = 20, type = COMBAT_HEALING, minDamage = 400, maxDamage = 700, effect = CONST_ME_MAGIC_BLUE}
 }
 
-monster.maxSummons = 4
+monster.maxSummons = 1
 monster.summons = {
-	{name = "demon", chance = 10, interval = 1000, max = 4}
+	{name = "demon", chance = 12, interval = 8000, max = 1}
 }
 
+-- Nephy resale and ultra-rare Yalahari; Eventshop remains the primary option.
 monster.loot = {
-	{name = "purple tome", chance = 260},
-	{name = "golden mug", chance = 750},
-	{name = "experience scroll", chance = 700, maxCount = 2},
-	-- {name = "crystal necklace", chance = 1500},
-	{id = 3025, chance = 3500},
-	{name = "white pearl", chance = 1250, maxCount = 15},
-	{name = "black pearl", chance = 1500, maxCount = 15},
-	{name = "small diamond", chance = 950, maxCount = 5},
-	{name = "small sapphire", chance = 1350, maxCount = 10},
-	{name = "small emerald", chance = 1550, maxCount = 10},
-	{name = "small amethyst", chance = 1350, maxCount = 20},
-	{name = "talon", chance = 1400, maxCount = 7},
-	{name = "green gem", chance = 750},
-	{name = "blue gem", chance = 750},
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "platinum coin", chance = 70000, maxCount = 10},
-	{name = "strange symbol", chance = 2500},
-	{name = "orb", chance = 12000},
-	{name = "life crystal", chance = 1000},
-	{name = "mind stone", chance = 4000},
-	{name = "gold ring", chance = 600},
-	{name = "snakebite rod", chance = 3500},
-	{name = "necrotic rod", chance = 3500},
-	{name = "moonlight rod", chance = 3500},
-	{name = "wand of decay", chance = 2500},
-	{name = "boots of haste", chance = 400},
-	{name = "stone skin amulet", chance = 50},
-	{name = "giant sword", chance = 750},
-	{name = "ice rapier", chance = 750},
-	{name = "silver dagger", chance = 1550},
-	{name = "golden sickle", chance = 450},
-	{name = "fire axe", chance = 1700},
-	{name = "dragon hammer", chance = 450},
-	{name = "skull staff", chance = 500},
-	{name = "golden legs", chance = 500},
-	{name = "magic plate armor", chance = 300},
-	{name = "mastermind shield", chance = 350},
-	{name = "demon shield", chance = 1550},
+	{name = "crystal coin", chance = 100000, maxCount = 7},
+	{name = "platinum coin", chance = 100000, maxCount = 35},
+	{name = "experience scroll", chance = 2400},
+	{name = "demonic essence", chance = 12000, maxCount = 2},
+	{name = "small diamond", chance = 40000, maxCount = 5},
+	{name = "violet gem", chance = 2000},
+	{name = "green gem", chance = 3500},
+	{name = "magic plate armor", chance = 700},
+	{name = "demon shield", chance = 1100},
+	{name = "demonrage sword", chance = 450},
+	{name = "blue robe", chance = 850},
+	{name = "gold ring", chance = 1000},
+	{id = 8864, chance = 8}, -- Yalahari mask, 0.008%,
+	{id = 8863, chance = 7}, -- Yalahari legs, 0.007%,
+	{id = 3423, chance = 5}, -- Yalahari shield, 0.005%
 }
 
 mType:register(monster)
