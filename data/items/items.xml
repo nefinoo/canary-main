@@ -46409,12 +46409,12 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	</item>
 	<item id="23477" name="yalahari boots">
 		<attribute key="primarytype" value="boots"/>
-		<attribute key="description" value="500 Hp/Mp every 4 Secs."/>
+		<attribute key="description" value="Regenerates 180 HP and 160 mana every 4 seconds."/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="manaticks" value="4000"/>
-		<attribute key="managain" value="500"/>
+		<attribute key="managain" value="160"/>
 		<attribute key="healthticks" value="4000"/>
-		<attribute key="healthgain" value="500"/>
+		<attribute key="healthgain" value="180"/>
 		<attribute key="speed" value="30"/>
 		<attribute key="armor" value="200"/>
 		<attribute key="weight" value="1500"/>
