@@ -256,8 +256,12 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 	end
 	
+	-- Every valid cast trains fishing slightly; catches give twice the progress.
+	-- A worm is already consumed once per attempt above, even on failure.
 	if caughtMonster or caughtFish then
 		player:addSkillTries(SKILL_FISHING, 2)
+	else
+		player:addSkillTries(SKILL_FISHING, 1)
 	end
 	
     toPosition:sendMagicEffect(effect)
