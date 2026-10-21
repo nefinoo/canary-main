@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling elite"
-monster.experience = 6000000000
+monster.experience = 2100000000
 monster.outfit = {
 	lookType = 441,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja (Tanjis lair).",
 }
 
-monster.health = 3200000
-monster.maxHealth = 3200000
+monster.health = 330000
+monster.maxHealth = 330000
 monster.race = "blood"
 monster.corpse = 13713
 monster.speed = 165
@@ -95,19 +95,26 @@ monster.loot = {
 	{ name = "fish fin", chance = 2300 },
 	{ name = "warrior's shield", chance = 1534 },
 	{ name = "warrior's axe", chance = 820 },
-	{ name = "foxtail", chance = 15 },
+	{ name = "foxtail", chance = 15 },,
+	-- Frozen Hell: catch reward finances consumables and produces Super Foods.
+	{name = "crystal coin", chance = 100000, maxCount = 14},
+	{name = "salmon", chance = 100000, maxCount = 4},
+	{id = 3581, chance = 65000, maxCount = 2}, -- shrimp,
+	{name = "rainbow trout", chance = 55000},
+	{name = "green perch", chance = 55000}
 }
 
+-- Frozen Hell: high-value Fishing catch, adjusted for a solo Knight.
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -10000, maxDamage = -13000, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -10000, maxDamage = -13000, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{name = "melee", interval = 2000, chance = 100, minDamage = -4400, maxDamage = -6000, effect = CONST_ME_DRAWBLOOD},
+	{name = "combat", interval = 3000, chance = 70, type = COMBAT_PHYSICALDAMAGE, minDamage = -3000, maxDamage = -4000, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true}
 }
 
 monster.defenses = {
 	defense = 45,
 	armor = 45,
 	mitigation = 1.37,
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 10000, maxDamage = 13000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{name = "combat", interval = 4000, chance = 30, type = COMBAT_HEALING, minDamage = 2000, maxDamage = 3500, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.elements = {
