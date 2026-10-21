@@ -120,6 +120,10 @@ monster.loot = {
 	{name = "demon legs", chance = 130},
 	{name = "demon shield", chance = 400},
 	{name = "magic plate armor", chance = 300},
+	-- Very rare hand-me-down gear from the level-850 hunting tier; quest items remain exclusive.
+	{id = 3399, chance = 60}, -- Elven Mail, 0.06%
+	{id = 8095, chance = 60}, -- Ranger Legs, 0.06%
+	{id = 3408, chance = 60}, -- Bonelord Helmet, 0.06%
 	{id = 6529, chance = 30}, -- soft boots
 	-- Yalahari level-2500 chase drop: ultra-rare alternative to 550 event tokens.
 	-- 3 / 100000 = 0.003% nominal; does not bypass item level requirements.
