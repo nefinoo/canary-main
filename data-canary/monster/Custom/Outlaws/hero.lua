@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "frozenhell guard"
 monster.description = "a frozenhell guard"
-monster.experience = 65000000
+monster.experience = 687000000
 monster.outfit = {
 	lookType = 73,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 245000
+monster.maxHealth = 245000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -81,39 +81,38 @@ monster.elements = {
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
+-- Frozen Hell Knight progression; Frozenhell Guard
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -865, maxDamage = -1100},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1730, maxDamage = -2250, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name = "melee", interval = 1300, chance = 100, minDamage = -2350, maxDamage = -3100},
+	{name = "combat", interval = 2500, chance = 80, type = COMBAT_PHYSICALDAMAGE, minDamage = -2550, maxDamage = -3300, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_STUN},
+	{name = "combat", interval = 4000, chance = 75, type = COMBAT_ICEDAMAGE, minDamage = -2300, maxDamage = -2900, range = 7, radius = 2, target = true, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEATTACK}
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 30,
-	{name ="combat", interval = 1000, chance = 40, type = COMBAT_HEALING, minDamage = 750, maxDamage = 1000, effect = 567}
+	defense = 32,
+	armor = 45,
+	{name = "combat", interval = 3000, chance = 25, type = COMBAT_HEALING, minDamage = 650, maxDamage = 1000, effect = 567}
 }
 
+-- Nephy resale and ultra-rare Yalahari; Eventshop remains the primary option.
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 6},
-	{name = "platinum coin", chance = 70000, maxCount = 10},
-	{name = "experience scroll", chance = 750, maxCount = 2},
-	{ name = "red piece of cloth", chance = 2006 },
-	{name = "green gem", chance = 750},
-	{name = "blue gem", chance = 750},
-	{name = "boots of haste", chance = 400},
-	{name = "stone skin amulet", chance = 50},
-	{name = "giant sword", chance = 750},
-	{name = "ice rapier", chance = 750},
-	{name = "silver dagger", chance = 1550},
-	{name = "golden sickle", chance = 450},
-	{name = "fire axe", chance = 1700},
-	{name = "dragon hammer", chance = 450},
-	{name = "skull staff", chance = 500},
-	{name = "golden legs", chance = 500},
-	{name = "magic plate armor", chance = 300},
-	{name = "mastermind shield", chance = 350},
-	{name = "demon shield", chance = 1550},
-	{id = 3082, chance = 2500}
+	{name = "crystal coin", chance = 100000, maxCount = 12},
+	{name = "platinum coin", chance = 100000, maxCount = 55},
+	{name = "experience scroll", chance = 4000},
+	{name = "silver token", chance = 400},
+	{name = "magic plate armor", chance = 900},
+	{name = "mastermind shield", chance = 950},
+	{name = "golden legs", chance = 800},
+	{name = "small diamond", chance = 50000, maxCount = 6},
+	{name = "violet gem", chance = 2800},
+	{name = "green gem", chance = 3800},
+	{name = "blue gem", chance = 3000},
+	{name = "iron ore", chance = 19000, maxCount = 4},
+	{id = 8864, chance = 18}, -- Yalahari mask, 0.018%,
+	{id = 8862, chance = 15}, -- Yalahari armor,
+	{id = 8863, chance = 15}, -- Yalahari legs,
+	{id = 23477, chance = 12}, -- Yalahari boots,
+	{id = 3423, chance = 10} -- Yalahari shield
 }
 
 mType:register(monster)
