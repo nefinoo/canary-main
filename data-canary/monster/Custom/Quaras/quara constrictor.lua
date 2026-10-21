@@ -92,7 +92,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "salmon", chance = 2000},
+	{name = "salmon", chance = 20000, maxCount = 4},
 	{name = "northern pike", chance = 2000},
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "fish fin", chance = 2000},
