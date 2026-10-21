@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling guard"
-monster.experience = 5000000000
+monster.experience = 1700000000
 monster.outfit = {
 	lookType = 442,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Also may spawn during the gemcutting mission. Many more spawns in almost all areas of Deepling stage 2 and 3.",
 }
 
-monster.health = 1900000
-monster.maxHealth = 1900000
+monster.health = 280000
+monster.maxHealth = 280000
 monster.race = "blood"
 monster.corpse = 13750
 monster.speed = 135
@@ -96,20 +96,27 @@ monster.loot = {
 	{ name = "deepling squelcher", chance = 751 },
 	{ name = "deepling backpack", chance = 333 },
 	{ name = "ornate crossbow", chance = 362 },
-	{ name = "foxtail", chance = 10 },
+	{ name = "foxtail", chance = 10 },,
+	-- Frozen Hell: catch reward finances consumables and produces Super Foods.
+	{name = "crystal coin", chance = 100000, maxCount = 12},
+	{name = "salmon", chance = 100000, maxCount = 4},
+	{id = 3581, chance = 55000, maxCount = 2}, -- shrimp,
+	{name = "rainbow trout", chance = 45000},
+	{name = "green perch", chance = 45000}
 }
 
+-- Frozen Hell: high-value Fishing catch, adjusted for a solo Knight.
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -7500 , maxDamage = -11000, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -7500, maxDamage = -11000, range = 7, shootEffect = CONST_ANI_WHIRLWINDSWORD, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -7500, maxDamage = -11000, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
+	{name = "melee", interval = 2000, chance = 100, minDamage = -3800, maxDamage = -5000, effect = CONST_ME_DRAWBLOOD},
+	{name = "combat", interval = 3000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -2600, maxDamage = -3800, range = 7, shootEffect = CONST_ANI_WHIRLWINDSWORD, target = true},
+	{name = "combat", interval = 4000, chance = 50, type = COMBAT_DROWNDAMAGE, minDamage = -2200, maxDamage = -3100, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true}
 }
 
 monster.defenses = {
 	defense = 35,
 	armor = 53,
 	mitigation = 1.57,
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 7500, maxDamage = 11000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{name = "combat", interval = 4000, chance = 30, type = COMBAT_HEALING, minDamage = 1500, maxDamage = 2500, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.elements = {
