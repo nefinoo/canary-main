@@ -49,10 +49,10 @@ local superFoods = {
     }
 }
 
--- Shared with data/scripts/actions/items/potions.lua.
+-- Shared 1.5-second recovery with data/scripts/actions/items/potions.lua.
 local consumableExhaustSubId = 620096
 local consumableExhaust = Condition(CONDITION_EXHAUST_HEAL, CONDITIONID_COMBAT, consumableExhaustSubId)
-consumableExhaust:setParameter(CONDITION_PARAM_TICKS, 2000)
+consumableExhaust:setParameter(CONDITION_PARAM_TICKS, 1500)
 
 local action = Action()
 
