@@ -77,10 +77,10 @@ local potions = {
 	[50384] = { health = { 10875, 11125 }, vocations = { VOCATION.BASE_ID.KNIGHT }, level = 10000, flask = 284, description = "Only knights of level 10000 or above may drink this fluid." },
 }
 
--- Shared 2 second recovery for HP/mana potions and Super Food.
+-- Shared 1.5-second recovery for HP/mana potions and Super Food (Knight combat balance).
 local consumableExhaustSubId = 620096
 local consumableExhaust = Condition(CONDITION_EXHAUST_HEAL, CONDITIONID_COMBAT, consumableExhaustSubId)
-consumableExhaust:setParameter(CONDITION_PARAM_TICKS, 2000)
+consumableExhaust:setParameter(CONDITION_PARAM_TICKS, 1500)
 
 local flaskPotion = Action()
 
