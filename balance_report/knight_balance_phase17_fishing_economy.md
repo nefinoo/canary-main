@@ -43,7 +43,7 @@ Las cifras son probabilidades del selector, **no capturas completadas ni EXP por
 
 ## 4. Auditoría y límites
 - `balance_report/validate_phase13.py` ya no compara Undead Dragon contra 72000 HP, 118M EXP y siete ataques. Ahora comprueba 105000/188M/cuatro ataques/DPS bruto 1950–2100.
-- La ruta del Undead Mage histórico **no existe en la rama inspeccionada**. Por eso el validador informa NOTICE y omite solo la validación cruzada de ese archivo ausente; no convierte la ausencia en una aprobación.
+- **Corrección de identificación (23-oct-2026):** Undead Mage sí está registrado como `Game.createMonsterType("undead mage")` dentro de `data-canary/monster/Custom/Necromancers/necromancer.lua`, no en `Undead Humanoids/undead mage.lua`. El archivo real tiene **11750 HP / 32M EXP** (diferente del objetivo histórico 17000/28M). `validate_phase13.py` ahora comprueba ese registro y sus estadísticas reales, y no omite la revisión. Las estadísticas de Undead Mage no se modificaron; revisar su progresión de combate en un paso posterior.
 - No se encontró una condición de ejecución que aplique `monster.scroll` en Fishing; los flags `scroll=true` todavía **no están imponiendo un requisito efectivo**. Identificar el storage/uso verdadero del scroll antes de habilitar ese bloqueo.
 - Pesca de agua usa prioridades distintas; no se tocó ni se reestimó el valor de Super Food en esta fase.
 - Confirmar si el usuario ha subido todas las variantes locales de los nueve monstruos. No sustituir scripts locales sin revisar.
