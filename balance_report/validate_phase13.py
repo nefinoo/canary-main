@@ -59,9 +59,9 @@ if mage is not None:
     require_stat(mage, "health", 17000)
     require_stat(mage, "experience", 28000000)
 else:
-    print("NOTICE: Undead Mage source absent from branch; cannot validate this stage here.")
+    print("NOTICE: Undead Mage source absent from this checkout; its stage is NOT validated.")
 assert 'Game.createMonsterType("deathpincer")' in boss
 require_stat(boss, "health", 135000)
 require_stat(boss, "experience", 300000000)
 
-print(f"PASS phase 13: Undead Dragon 1800, theoretical raw {dps:.1f} DPS, protected quest loot and earlier stages.")
+print(f"PASS phase 13: Undead Dragon 1800, theoretical raw {dps:.1f} DPS, protected quest loot and Deathpincer.")
