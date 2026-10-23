@@ -85,5 +85,6 @@ print(f"\nTotal unresolved names in this map: {len(all_unresolved)}")
 print("CAUTION: MISSING is a static-audit finding, not proof the type fails at runtime.")
 print("Check startup logs and alternate/dynamic monster loading before creating new Lua files.")
 
-# Undead Mage is a known unresolved historical stage; do not fail a balance test
-# solely because the audit finds it. Its status must be resolved explicitly.
+# Undead Mage is registered as 'undead mage' in
+# data-canary/monster/Custom/Necromancers/necromancer.lua.
+# Always compare Game.createMonsterType names, not file basenames.
