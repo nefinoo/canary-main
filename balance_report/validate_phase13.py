@@ -9,11 +9,12 @@ import re
 
 ROOT = Path(__file__).resolve().parent.parent
 DRAGON = ROOT / "data-canary/monster/Custom/Skeletons/undead dragon.lua"
-MAGE = ROOT / "data-canary/monster/Custom/Undead Humanoids/undead mage.lua"
+MAGE = ROOT / "data-canary/monster/Custom/Necromancers/necromancer.lua"
 BOSS = ROOT / "data-canary/monster/Custom/Insects/ancient scarab.lua"
 
 dragon = DRAGON.read_text(encoding="utf-8-sig")
-mage = MAGE.read_text(encoding="utf-8-sig") if MAGE.is_file() else None
+assert MAGE.is_file(), f"Undead Mage registry missing at its actual source path: {MAGE}"
+mage = MAGE.read_text(encoding="utf-8-sig")
 boss = BOSS.read_text(encoding="utf-8-sig")
 
 def require_stat(source, key, value):
@@ -54,14 +55,13 @@ for quest_name in ("magic sword", "throwing star"):
 assert len(re.findall(r'\bname\s*=\s*"demonic essence"', loot)) == 1
 
 # Keep the prior 850 zone and the 1000 transition boss untouched.
-if mage is not None:
-    assert 'Game.createMonsterType("undead mage")' in mage
-    require_stat(mage, "health", 17000)
-    require_stat(mage, "experience", 28000000)
-else:
-    print("NOTICE: Undead Mage source absent from this checkout; its stage is NOT validated.")
+assert 'Game.createMonsterType("undead mage")' in mage
+assert 'monster.name = "undead mage"' in mage
+require_stat(mage, "health", 11750)
+require_stat(mage, "maxHealth", 11750)
+require_stat(mage, "experience", 32000000)
 assert 'Game.createMonsterType("deathpincer")' in boss
 require_stat(boss, "health", 135000)
 require_stat(boss, "experience", 300000000)
 
-print(f"PASS phase 13: Undead Dragon 1800, theoretical raw {dps:.1f} DPS, protected quest loot and Deathpincer.")
+print(f"PASS phase 13: Undead Dragon 1800, theoretical raw {dps:.1f} DPS, protected quest loot, Undead Mage actual registration and Deathpincer.")
