@@ -79,30 +79,30 @@ local lavaMonsters = {
 }
 
 local swampMonsters = {
-    [1] = {name = "Hibernal Moth", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [2] = {name = "Ladybug", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [3] = {name = "Lisa", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [4] = {name = "The Welter", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [5] = {name = "Fleshslicer", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [6] = {name = "Evil Mastermind", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [7] = {name = "Shlorg", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [8] = {name = "Plagueroot", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [9] = {name = "Sulphur Scuttler", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [10] = {name = "Fleshcrawler", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [11] = {name = "The Old Widow", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [12] = {name = "The Evil Eye", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [13] = {name = "Poisonous Carnisylvan", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [14] = {name = "Empowered Glooth Horror", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [15] = {name = "Rot Elemental", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [16] = {name = "Elder Bonelord", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [17] = {name = "Bonelord", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [18] = {name = "Gazer", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [19] = {name = "Devourer", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [20] = {name = "Sulphur Spouter", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [21] = {name = "Acid Blob", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [22] = {name = "Undertaker", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [23] = {name = "Blemished Spawn", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
-    [24] = {name = "Parasite", level = 1000, fishing = 120, chance = 100000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"}
+    [1] = {name = "Hibernal Moth", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [2] = {name = "Ladybug", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [3] = {name = "Lisa", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [4] = {name = "The Welter", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [5] = {name = "Fleshslicer", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [6] = {name = "Evil Mastermind", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [7] = {name = "Shlorg", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [8] = {name = "Plagueroot", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [9] = {name = "Sulphur Scuttler", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [10] = {name = "Fleshcrawler", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [11] = {name = "The Old Widow", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [12] = {name = "The Evil Eye", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [13] = {name = "Poisonous Carnisylvan", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [14] = {name = "Empowered Glooth Horror", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [15] = {name = "Rot Elemental", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [16] = {name = "Elder Bonelord", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [17] = {name = "Bonelord", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [18] = {name = "Gazer", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [19] = {name = "Devourer", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [20] = {name = "Sulphur Spouter", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [21] = {name = "Acid Blob", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [22] = {name = "Undertaker", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [23] = {name = "Blemished Spawn", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"},
+    [24] = {name = "Parasite", level = 1000, fishing = 120, chance = 20000, key = 60, scroll = true, bowlable = true, serverBC = false, broadcast = "|PLAYERNAME| has caught an Swamp Blob!"}
 }
 
 local tarMonsters = {
@@ -125,6 +125,28 @@ local function getFishingMonsters(targetId)
     if isInArray(swampIds, targetId) then return swampMonsters, "swamp" end
     if isInArray(tarIds, targetId) then return tarMonsters, "tar" end
     return nil
+end
+
+-- For tied chance thresholds (lava/swamp), choose fairly among the eligible
+-- creatures. Unique water thresholds keep their existing first-match behavior.
+local function selectCaughtMonster(monsters, level, skill, roll)
+    local firstChance = nil
+    local ties = {}
+    for _, monster in ipairs(monsters) do
+        if level >= monster.level and skill >= monster.fishing and roll <= monster.chance then
+            if not firstChance then
+                firstChance = monster.chance
+            end
+            if monster.chance ~= firstChance then
+                break
+            end
+            ties[#ties + 1] = monster
+        end
+    end
+    if #ties == 0 then
+        return nil
+    end
+    return ties[math.random(1, #ties)]
 end
 
 local function broadcastMessage(player, message, serverBC)
@@ -226,14 +248,10 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		-- end
 	-- end
 	
-	for _, monster in ipairs(fishingMonsters) do
-		if player:getLevel() >= monster.level and player:getSkillLevel(SKILL_FISHING) >= monster.fishing and finalchance <= monster.chance then
-			if addCatchAndBroadcast(player, monster, toPosition) then
-				caughtMonster = true
-			end
-			break
-		end
-	end
+	local selectedMonster = selectCaughtMonster(fishingMonsters, player:getLevel(), player:getSkillLevel(SKILL_FISHING), finalchance)
+    if selectedMonster then
+        caughtMonster = addCatchAndBroadcast(player, selectedMonster, toPosition)
+    end
 
     -- if fishingType == "water" and player:getStorageValue(15000) == 1 and not MONS then
     if fishingType == "water" and not caughtMonster then
