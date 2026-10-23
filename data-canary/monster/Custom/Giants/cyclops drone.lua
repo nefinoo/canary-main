@@ -114,9 +114,6 @@ monster.loot = {
 	{name = "heavy machete", chance = 2000},
 	{name = "strong health potion", chance = 2000},
 	{id = 12413, chance = 3000},
-	{id = 3399, chance = 75},
-	{id = 8095, chance = 75},
-	{id = 3408, chance = 75},
 }
 
 mType:register(monster)

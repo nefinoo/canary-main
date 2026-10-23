@@ -30,8 +30,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 20000
-monster.maxHealth = 20000
+monster.health = 6000
+monster.maxHealth = 6000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6336
@@ -84,7 +84,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 40},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 15},
 	{type = COMBAT_ENERGYDAMAGE, percent = -20},
 	{type = COMBAT_EARTHDAMAGE, percent = 30},
 	{type = COMBAT_FIREDAMAGE, percent = 30},
@@ -97,8 +97,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -288, maxDamage = -800},
-	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -800},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
@@ -124,9 +124,6 @@ monster.loot = {
 	{name = "platinum coin", chance = 100000, maxCount = 8},
 	{name = "platinum coin", chance = 70000, maxCount = 18},
 	{id = 12413, chance = 8000},
-	{id = 3399, chance = 175},
-	{id = 8095, chance = 175},
-	{id = 3408, chance = 175},
 }
 
 mType:register(monster)

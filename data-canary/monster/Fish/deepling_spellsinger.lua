@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling spellsinger"
-monster.experience = 4750000000
+monster.experience = 1400000000
 monster.outfit = {
 	lookType = 443,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja.",
 }
 
-monster.health = 850000
-monster.maxHealth = 850000
+monster.health = 230000
+monster.maxHealth = 230000
 monster.race = "blood"
 monster.corpse = 13771
 monster.speed = 95
@@ -94,15 +94,21 @@ monster.loot = {
 	{ name = "fish fin", chance = 520 },
 	{ name = "ornate crossbow", chance = 220 },
 	{ name = "foxtail", chance = 10 },
+	-- Frozen Hell: catch reward finances consumables and produces Super Foods.
+	{name = "crystal coin", chance = 100000, maxCount = 10},
+	{name = "salmon", chance = 100000, maxCount = 3},
+	{id = 3581, chance = 45000, maxCount = 2}, -- shrimp
+	{name = "rainbow trout", chance = 35000},
+	{name = "green perch", chance = 35000}
 }
 
+-- Frozen Hell: high-value Fishing catch, adjusted for a solo Knight.
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -4500, maxDamage = -8000, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -2300, maxDamage = -3000, length = 10, spread = 3, effect = CONST_ME_ICETORNADO, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_DROWNDAMAGE, minDamage = -2300, maxDamage = -3000, radius = 4, effect = CONST_ME_BUBBLES, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -2300, maxDamage = -3000, range = 7, effect = CONST_ME_SMALLPLANTS, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -2300, maxDamage = -3000, range = 7, effect = CONST_ME_SMALLPLANTS, target = false },
-	{ name = "deepling spellsinger skill reducer", interval = 2000, chance = 5, range = 5, target = false },
+	{name = "melee", interval = 2000, chance = 100, minDamage = -3500, maxDamage = -4500, effect = CONST_ME_DRAWBLOOD},
+	{name = "combat", interval = 3000, chance = 45, type = COMBAT_ICEDAMAGE, minDamage = -1800, maxDamage = -2600, length = 6, spread = 2, effect = CONST_ME_ICETORNADO, target = false},
+	{name = "combat", interval = 4000, chance = 60, type = COMBAT_DROWNDAMAGE, minDamage = -2200, maxDamage = -3000, radius = 3, effect = CONST_ME_BUBBLES, target = true},
+	{name = "combat", interval = 5000, chance = 60, type = COMBAT_LIFEDRAIN, minDamage = -1800, maxDamage = -2500, range = 7, effect = CONST_ME_SMALLPLANTS, target = true},
+	{name = "combat", interval = 5000, chance = 35, type = COMBAT_MANADRAIN, minDamage = -500, maxDamage = -850, range = 7, effect = CONST_ME_SMALLPLANTS, target = true}
 }
 
 monster.defenses = {

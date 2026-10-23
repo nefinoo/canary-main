@@ -54,7 +54,7 @@ local STORAGE_RUNE_UNLOCK = 60000
 
 local unlockedRunes = {		
     { itemName = "mana rune", clientId = 3157, buy = 1000000 },
-    { itemName = "knight mana rune", clientId = 3170, buy = 1250000 }
+    { itemName = "knight healing rune", clientId = 3170, buy = 1250000 }
 }
 
 local unlockedPotions = {		
@@ -63,21 +63,42 @@ local unlockedPotions = {
 	{ itemName = "angelic health potion", clientId = 51246, buy = 738 },
 
 	{ itemName = "extreme mana potion", clientId = 50966, buy = 938 },
-	{ itemName = "extreme health potion", clientId = 50967, buy = 1179 },
-	{ itemName = "extreme spirit potion", clientId = 50965, buy = 938 },
+	{ itemName = "extreme health potion", clientId = 50967, buy = 938 },
+	{ itemName = "extreme spirit potion", clientId = 50965, buy = 1179 },
 
 	{ itemName = "obscure mana potion", clientId = 51704, buy = 1138 },
-	{ itemName = "obscure health potion", clientId = 51702, buy = 1379 },
-	{ itemName = "obscure spirit potion", clientId = 51701, buy = 1138 },
+	{ itemName = "obscure health potion", clientId = 51702, buy = 1138 },
+	{ itemName = "obscure spirit potion", clientId = 51701, buy = 1379 },
 
 	{ itemName = "eternal mana potion", clientId = 53143, buy = 1338 },
-	{ itemName = "eternal health potion", clientId = 53144, buy = 1579 },
-	{ itemName = "eternal spirit potion", clientId = 53142, buy = 1338 },
+	{ itemName = "eternal health potion", clientId = 53144, buy = 1338 },
+	{ itemName = "eternal spirit potion", clientId = 53142, buy = 1579 },
 
 	{ itemName = "legendary mana potion", clientId = 50382, buy = 1538 },
-	{ itemName = "legendary health potion", clientId = 50384, buy = 1779 },
-	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1538 }
+	{ itemName = "legendary health potion", clientId = 50384, buy = 1538 },
+	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1779 }
 }
+
+-- Custom potions unlock by character level; STORAGE_RUNE_UNLOCK remains exclusive to custom runes.
+-- Keep requirements synchronized with data/scripts/actions/items/potions.lua.
+local customPotionRequiredLevel = {
+	[50382] = 10000,
+	[50383] = 10000,
+	[50384] = 10000,
+	[50965] = 1000,
+	[50966] = 1000,
+	[50967] = 1000,
+	[51138] = 500,
+	[51246] = 500,
+	[51247] = 500,
+	[51701] = 2500,
+	[51702] = 2500,
+	[51704] = 2500,
+	[53142] = 5000,
+	[53143] = 5000,
+	[53144] = 5000,
+}
+
 
 local itemsTable = {
 	["foods"] = {
@@ -249,9 +270,11 @@ local function creatureSayCallback(npc, player, type, message)
             table.insert(tempTable, item)
         end
 
-        -- Si el jugador tiene el storage → agregar las nuevas runas
-        if player:getStorageValue(STORAGE_RUNE_UNLOCK) == 1 then
-            for _, item in ipairs(unlockedPotions) do
+        -- Custom potions depend on level, not on the custom-rune quest (storage 60000).
+        -- The potion action still checks vocation and minimum level on use.
+        local playerLevel = player:getLevel()
+        for _, item in ipairs(unlockedPotions) do
+            if playerLevel >= (customPotionRequiredLevel[item.clientId] or math.huge) then
                 table.insert(tempTable, item)
             end
         end

@@ -5,7 +5,6 @@ local superFoods = {
 		hpPercent = 1,
 		manaPercent = 1,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
         says = "ah."
     },
     [3579] = {--salmon
@@ -14,7 +13,6 @@ local superFoods = {
 		hpPercent = 3,
 		manaPercent = 3,	
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
         says = "ahh.."
     },
     [3580] = {--northern pike
@@ -23,7 +21,6 @@ local superFoods = {
 		hpPercent = 2,
 		manaPercent = 1.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
         says = "aahh.."
     },
     [3581] = {--shrim
@@ -32,7 +29,6 @@ local superFoods = {
 		hpPercent = 4,
 		manaPercent = 2.5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
         says = "Ahhh..."
     },
     [7159] = { --green perch
@@ -41,7 +37,6 @@ local superFoods = {
 		hpPercent = 3.5,
 		manaPercent = 5,
         removable = true, -- remove food when is used?
-        exhaustedTime = 2, -- 3 seconds
         says = "Aahhh..."
     },
     [7158] = { --rainbow trout
@@ -50,12 +45,14 @@ local superFoods = {
 		hpPercent = 6,
 		manaPercent = 6,
         removable = true, -- remove food when is used?
-        exhaustedTime = 1.5, -- 3 seconds
         says = "Aaahhh..."
     }
 }
 
-local exhausteds = {}
+-- Shared 1.5-second recovery with data/scripts/actions/items/potions.lua.
+local consumableExhaustSubId = 620096
+local consumableExhaust = Condition(CONDITION_EXHAUST_HEAL, CONDITIONID_COMBAT, consumableExhaustSubId)
+consumableExhaust:setParameter(CONDITION_PARAM_TICKS, 1500)
 
 local action = Action()
 
@@ -65,12 +62,10 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         return false
     end
 
-    local playerId = player:getId()
-    local exhausted = exhausteds[playerId]
-    if exhausted and os.time() < exhausted then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are exhausted.")
-		return true
-	end
+    if player:getCondition(CONDITION_EXHAUST_HEAL, CONDITIONID_COMBAT, consumableExhaustSubId) then
+        player:sendCancelMessage(RETURNVALUE_YOUAREEXHAUSTED)
+        return true
+    end
 
     local playerHealth = player:getHealth()
     local playerMaxHealth = player:getMaxHealth()
@@ -86,7 +81,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         if playerHealth < playerMaxHealth then
             gainHp = food.hp or 0
             gainHp = gainHp + (player:getMaxHealth() / 100 * (food.hpPercent or 0))
-            gainHp = math.min(gainHp, playerMaxHealth - playerHealth)
+            gainHp = math.floor(math.min(gainHp, playerMaxHealth - playerHealth))
             player:addHealth(gainHp)
         end
     end
@@ -96,7 +91,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         if playerMana < playerMaxMana then
             gainMana = food.mana or 0
             gainMana = gainMana + (player:getMaxMana() / 100 * (food.manaPercent or 0))
-            gainMana = math.min(gainMana, playerMaxMana - playerMana)
+            gainMana = math.floor(math.min(gainMana, playerMaxMana - playerMana))
             player:addMana(gainMana)
         end
     end
@@ -105,9 +100,7 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
         item:remove(1)
     end
 
-    if food.exhaustedTime then
-        exhausteds[playerId] = os.time() + food.exhaustedTime
-    end
+    player:addCondition(consumableExhaust)
 
     player:getPosition():sendMagicEffect(570)
     player:say(food.says, TALKTYPE_MONSTER_SAY)

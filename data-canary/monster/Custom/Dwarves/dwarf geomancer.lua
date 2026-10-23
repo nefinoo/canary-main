@@ -98,13 +98,13 @@ monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
 	{name ="combat", interval = 4000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -318, maxDamage = -574, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 	{name ="combat", interval = 4000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -550, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK},
-	{name ="combat", interval = 4000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -318, maxDamage = -520, range = 7, radius = 1, target = true}
+	{name ="combat", interval = 4000, chance = 30, type = COMBAT_MANADRAIN, minDamage = -318, maxDamage = -520, range = 7, radius = 1, target = true}
 }
 
 monster.defenses = {
 	defense = 15,
 	armor = 15,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 200, maxDamage = 300, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 200, maxDamage = 300, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
@@ -113,14 +113,11 @@ monster.loot = {
 	{name = "platinum coin", chance = 50000, maxCount = 3},
 	{name = "boots of haste", chance = 250},
 	{name = "giant sword", chance = 250},
-	{name = "royal helmet", chance = 250},
-	{name = "steel boots", chance = 250},
+	{name = "royal helmet", chance = 500},
+	{name = "steel boots", chance = 500},
 	{name = "experience scroll", chance = 800},
 	{ name = "iron ore", chance = 1200 },
 	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)

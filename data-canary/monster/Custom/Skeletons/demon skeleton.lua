@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hell soldier"
 monster.description = "a hell soldier"
-monster.experience = 30650000
+monster.experience = 25000000
 monster.outfit = {
 	lookType = 37,
 	lookHead = 20,
@@ -87,30 +87,20 @@ monster.defenses = {
 	armor = 25
 }
 
+-- Frozen Hell: Knight level 750-1000; ~5,075 gp expected NPC-sale loot per kill.
+-- Throwing Star (item 3287) remains exclusive to the level-100 weapon quest.
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "platinum coin", chance = 50000, maxCount = 10},
-	-- {id = 7366, chance = 50},
-	-- {id = 7426, chance = 50 }, 
-	-- {id = 7420, chance = 50 }, 
-	-- {id = 3296, chance = 50},
-	-- {id = 7437, chance = 50},
-	-- {name = "magic sword", chance = 100},
-	-- { id = 3319, chance = 100 }, 
-	-- { id = 3309, chance = 100 }, 
-	-- {id = 3341, chance = 100},
-	-- {name = "throwing star", chance = 100},
-	{name = "experience scroll", chance = 950, maxCount = 2},
-	{name = "magic plate armor", chance = 130},
-	{name = "fire axe", chance = 1500},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
-	{name = "violet gem", chance = 500},
-	{name = "demonrage sword", chance = 410},
+	{name = "platinum coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "crystal coin", chance = 25000},
+	{name = "experience scroll", chance = 1000},
+	{name = "fire axe", chance = 1000},
+	{name = "green gem", chance = 2500},
+	{name = "yellow gem", chance = 6000},
+	{name = "demon shield", chance = 700},
 }
 
 mType:register(monster)
-
 
 
 

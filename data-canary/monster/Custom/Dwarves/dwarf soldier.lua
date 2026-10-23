@@ -94,8 +94,8 @@ monster.elements = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 6000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{name ="combat", interval = 4000, chance = 85, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 6000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -107,17 +107,13 @@ monster.loot = {
 	{name = "small ruby", chance = 75000, maxCount = 3},
 	{id = 3039, chance = 2100},
 	{name = "platinum coin", chance = 35000, maxCount = 3},
-	{name = "throwing star", chance = 300},
 	{name = "dragon lance", chance = 250},
-	{name = "golden armor", chance = 250},
-	{name = "magic plate armor", chance = 250},
+	{name = "golden armor", chance = 450},
+	{name = "magic plate armor", chance = 400},
 	{name = "demon shield", chance = 250},
 	{name = "experience scroll", chance = 600},
 	{ name = "iron ore", chance = 700 },
 	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)

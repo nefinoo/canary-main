@@ -107,14 +107,11 @@ monster.loot = {
 	{name = "yellow gem", chance = 2000},
 	{name = "platinum coin", chance = 25000, maxCount = 3},
 	{name = "boots of haste", chance = 550},
-	{name = "magic plate armor", chance = 250},
-	{name = "mastermind shield", chance = 250},
+	{name = "magic plate armor", chance = 500},
+	{name = "mastermind shield", chance = 400},
 	{name = "experience scroll", chance = 500},
 	{ name = "iron ore", chance = 1400 },
 	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 mType:register(monster)

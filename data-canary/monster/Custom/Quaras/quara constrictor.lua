@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara constrictor"
 monster.description = "a quara constrictor"
-monster.experience = 650000000
+monster.experience = 85000000
 monster.outfit = {
 	lookType = 46,
 	lookHead = 0,
@@ -83,7 +83,7 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -865, maxDamage = -1200, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -865, maxDamage = -1100, range = 1, radius = 3, target = false, effect = CONST_ME_HITAREA}
+	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -865, maxDamage = -1100, range = 1, radius = 3, target = false, effect = CONST_ME_HITAREA}
 }
 
 monster.defenses = {
@@ -92,12 +92,12 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "salmon", chance = 2000},
+	{name = "salmon", chance = 20000, maxCount = 4},
 	{name = "northern pike", chance = 2000},
 	{name = "worm", chance = 5000, maxCount = 25},
 	{name = "fish fin", chance = 2000},
-	{name = "rainbow trout", chance = 2000},
-	{name = "green perch", chance = 2000},
+	{name = "rainbow trout", chance = 7000},
+	{name = "green perch", chance = 8000},
 	{name = "experience scroll", chance = 3000, maxCount = 2},
 	{name = "platinum coin", chance = 100000, maxCount = 20},
 	{name = "platinum coin", chance = 50000, maxCount = 30},

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "venom"
 monster.description = "a venom"
-monster.experience = 100000000
+monster.experience = 902000000
 monster.outfit = {
 	lookType = 285,
 	lookHead = 0,
@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Lower Spike, Truffels Garden and Mushroom Gardens.",
 }
 
-monster.health = 60000
-monster.maxHealth = 60000
+monster.health = 330000
+monster.maxHealth = 330000
 monster.runHealth = 100
 monster.race = "undead"
 monster.corpse = 8105
@@ -91,9 +91,11 @@ monster.elements = {
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
+-- Frozen Hell Knight progression; Venom
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -3600, maxDamage = -4200},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_LIFEDRAIN, minDamage = -29000, maxDamage = -36000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA}
+	{name = "melee", interval = 1500, chance = 100, minDamage = -2650, maxDamage = -3500},
+	{name = "combat", interval = 2800, chance = 80, type = COMBAT_LIFEDRAIN, minDamage = -3300, maxDamage = -4650, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_CARNIPHILA},
+	{name = "combat", interval = 5000, chance = 80, type = COMBAT_EARTHDAMAGE, minDamage = -2100, maxDamage = -2850, radius = 3, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -101,30 +103,26 @@ monster.defenses = {
 	armor = 30
 }
 
+-- Nephy resale and ultra-rare Yalahari; Eventshop remains the primary option.
 monster.loot = {
-	{name = "backpack of holding", chance = 50},
-	{name = "camouflage backpack", chance = 500},
-	{name = "pirate backpack", chance = 500},
-	{name = "beach backpack", chance = 500},
-	{name = "fur backpack", chance = 500},
-	{name = "platinum coin", chance = 100000, maxCount = 10},
-	{name = "platinum coin", chance = 70000, maxCount = 15},
-	{name = "experience scroll", chance = 800, maxCount = 3},
-	{name = "green gem", chance = 750},
-	{name = "blue gem", chance = 750},
-	{name = "boots of haste", chance = 400},
-	{name = "stone skin amulet", chance = 50},
-	{name = "giant sword", chance = 750},
-	{name = "ice rapier", chance = 750},
-	{name = "silver dagger", chance = 1550},
-	{name = "golden sickle", chance = 450},
-	{name = "fire axe", chance = 1700},
-	{name = "dragon hammer", chance = 450},
-	{name = "skull staff", chance = 500},
-	{name = "golden legs", chance = 500},
-	{name = "magic plate armor", chance = 300},
-	{name = "mastermind shield", chance = 350},
-	{name = "demon shield", chance = 1550},
+	{name = "crystal coin", chance = 100000, maxCount = 16},
+	{name = "platinum coin", chance = 100000, maxCount = 80},
+	{name = "experience scroll", chance = 5000, maxCount = 2},
+	{name = "silver token", chance = 700},
+	{name = "demonic essence", chance = 19000, maxCount = 4},
+	{name = "small diamond", chance = 55000, maxCount = 7},
+	{name = "violet gem", chance = 3200},
+	{name = "green gem", chance = 4500},
+	{name = "blue gem", chance = 3700},
+	{name = "golden legs", chance = 1100},
+	{name = "magic plate armor", chance = 1000},
+	{name = "mastermind shield", chance = 1300},
+	{name = "iron ore", chance = 25000, maxCount = 5},
+	{id = 8864, chance = 35}, -- Yalahari mask, 0.035%,
+	{id = 8862, chance = 30}, -- Yalahari armor,
+	{id = 8863, chance = 30}, -- Yalahari legs,
+	{id = 23477, chance = 30}, -- Yalahari boots,
+	{id = 3423, chance = 20} -- Yalahari shield
 }
 
 mType:register(monster)

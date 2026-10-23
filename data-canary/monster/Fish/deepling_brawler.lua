@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepling brawler"
-monster.experience = 4000000000
+monster.experience = 1050000000
 monster.outfit = {
 	lookType = 470,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja.",
 }
 
-monster.health = 380000
-monster.maxHealth = 380000
+monster.health = 190000
+monster.maxHealth = 190000
 monster.race = "blood"
 monster.corpse = 12685
 monster.speed = 85
@@ -88,11 +88,18 @@ monster.loot = {
 	{ name = "heavy trident", chance = 2720 },
 	{ name = "fish fin", chance = 680 },
 	{ name = "foxtail", chance = 10 },
+	-- Frozen Hell: catch reward finances consumables and produces Super Foods.
+	{name = "crystal coin", chance = 100000, maxCount = 8},
+	{name = "salmon", chance = 100000, maxCount = 3},
+	{id = 3581, chance = 45000, maxCount = 2}, -- shrimp
+	{name = "rainbow trout", chance = 25000},
+	{name = "green perch", chance = 25000}
 }
 
+-- Frozen Hell: high-value Fishing catch, adjusted for a solo Knight.
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -3460, maxDamage = -4500, effect = CONST_ME_DRAWBLOOD },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DROWNDAMAGE, minDamage = -3460, maxDamage = -4500, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true },
+	{name = "melee", interval = 2000, chance = 100, minDamage = -3000, maxDamage = -4300, effect = CONST_ME_DRAWBLOOD},
+	{name = "combat", interval = 3000, chance = 70, type = COMBAT_DROWNDAMAGE, minDamage = -2500, maxDamage = -3600, range = 7, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_LOSEENERGY, target = true}
 }
 
 monster.defenses = {

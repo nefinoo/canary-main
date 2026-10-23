@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "massive water elemental"
 monster.description = "a massive water elemental"
-monster.experience = 91950000
+monster.experience = 55000000
 monster.outfit = {
 	lookType = 11,
 	lookHead = 20,
@@ -93,7 +93,7 @@ monster.defenses = {
 monster.loot = {
 	{name = "experience scroll", chance = 3000, maxCount = 6},
 	{id = 3578, chance = 60430, maxCount = 20},--fish
-	{name = "salmon", chance = 42430, maxCount = 10},
+	{name = "salmon", chance = 65000, maxCount = 16},
 	{id = 3581, chance = 10000, maxCount = 2},
 	{name = "small diamond", chance = 75000, maxCount = 5},
 	{name = "gold coin", chance = 100000, maxCount = 100},

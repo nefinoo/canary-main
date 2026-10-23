@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hydra"
 monster.description = "a hydra"
-monster.experience = 1700000
+monster.experience = 1900000
 monster.outfit = {
 	lookType = 121,
 	lookHead = 0,
@@ -30,8 +30,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1600
-monster.maxHealth = 1600
+monster.health = 2200
+monster.maxHealth = 2200
 monster.runHealth = 300
 monster.race = "blood"
 monster.corpse = 6048
@@ -96,10 +96,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -85},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -201, maxDamage = -281},
 	{name ="speed", interval = 1000, chance = 17, speed = {min = -600, max = -600}, duration = 15000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
-	{name ="combat", interval = 3000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -87, maxDamage = -113, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -100, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -220, maxDamage = -350, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -230, maxDamage = -330, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -121,9 +121,6 @@ monster.loot = {
 	{name = "royal helmet", chance = 1000, description2 = "royal helmet"},
 	{name = "boots of haste", chance = 850, description2 = "boots of haste"},
 	{id = 12413, chance = 4000},
-	{id = 3399, chance = 89},
-	{id = 8095, chance = 89},
-	{id = 3408, chance = 89},
 		
 }
 

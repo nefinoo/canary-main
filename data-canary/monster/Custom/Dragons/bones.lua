@@ -78,9 +78,6 @@ monster.loot = {
 	{ name = "demonic essence", chance = 1538 },
 	{ name = "dragonbone staff", chance = 50000 },
 	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
 }
 
 monster.attacks = {

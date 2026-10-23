@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dementor"
 monster.description = "a dementor"
-monster.experience = 13500000
+monster.experience = 91000000
 monster.outfit = {
 	lookType = 78,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 18500
-monster.maxHealth = 18500
+monster.health = 50000
+monster.maxHealth = 50000
 monster.runHealth = 500
 monster.race = "blood"
 monster.corpse = 6019
@@ -84,10 +84,11 @@ monster.elements = {
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
+-- Frozen Hell / Knight progression: Dementor
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -500, maxDamage = -1000, condition = {type = CONDITION_POISON, startDamage = 150, interval = 5000}},
-	{name ="speed", interval = 1000, chance = 50, speed = {min = -600, max = -600}, duration = 20000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -990, maxDamage = -1200, radius = 4, target = false, effect = CONST_ME_SOUND_RED}
+	{name = "melee", interval = 1800, chance = 100, minDamage = -1150, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 50, interval = 5000}},
+	{name = "combat", interval = 2200, chance = 70, type = COMBAT_PHYSICALDAMAGE, minDamage = -1300, maxDamage = -1850, radius = 3, target = false, effect = CONST_ME_SOUND_RED},
+	{name = "speed", interval = 5000, chance = 20, speed = {min = -350, max = -350}, duration = 3500, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
@@ -96,30 +97,21 @@ monster.defenses = {
 	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 250, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
 }
 
+-- Frozen Hell: common NPC resale drops plus extremely rare old-set pieces.
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 4},
-	{name = "platinum coin", chance = 70000, maxCount = 7},
-	{name = "experience scroll", chance = 500, maxCount = 2},
-	-- {id = 7366, chance = 100},
-	-- {id = 7426, chance = 100}, 
-	-- {id = 7420, chance = 100}, 
-	-- {id = 3296, chance = 100},
-	-- {id = 7437, chance = 100},
-	-- {name = "magic sword", chance = 200},
-	-- { id = 3319, chance = 200 }, 
-	-- { id = 3309, chance = 200 }, 
-	-- {id = 3341, chance = 200},
-	-- {name = "throwing star", chance = 200},
-	{id = 3039, chance = 2500}, -- redgem
-	{name = "crown armor", chance = 1500},
-	{name = "crown legs", chance = 1000},
-	{name = "crown helmet", chance = 2000},
-	{name = "crown shield", chance = 2250},
-	{name = "fire axe", chance = 1500},
-	{name = "yellow gem", chance = 3500},
+	{name = "crystal coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "experience scroll", chance = 1700},
+	{name = "crown armor", chance = 1400},
+	{name = "crown legs", chance = 1200},
+	{name = "crown helmet", chance = 1600},
 	{name = "green gem", chance = 2000},
-	{id = 3082, chance = 5500},
-	{name = "demonic essence", chance = 1818},
+	{name = "yellow gem", chance = 4500},
+	{name = "demonic essence", chance = 3800},
+	{name = "gold ring", chance = 650},
+	{id = 3399, chance = 40},
+	{id = 8095, chance = 40},
+	{id = 3408, chance = 40}
 }
 
 mType:register(monster)

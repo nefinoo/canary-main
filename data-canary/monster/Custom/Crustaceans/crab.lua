@@ -90,7 +90,7 @@ monster.defenses = {
 monster.loot = {
 	{name = "experience scroll", chance = 5000},
 	{id = 3578, chance = 55430, maxCount = 20},--fish
-	{name = "salmon", chance = 35430, maxCount = 10},
+	{name = "salmon", chance = 55000, maxCount = 16},
 	{id = 3581, chance = 5000, maxCount = 2},
 	{name = "small diamond", chance = 75000, maxCount = 3},
 	{name = "gold coin", chance = 100000, maxCount = 90},

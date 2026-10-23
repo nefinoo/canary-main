@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 6000
-monster.maxHealth = 6000
+monster.health = 6800
+monster.maxHealth = 6800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6012
@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 6000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -460, maxDamage = -620 },
+	{name ="combat", interval = 3000, chance = 55, type = COMBAT_PHYSICALDAMAGE, minDamage = -550, maxDamage = -750, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 5000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -550, maxDamage = -750, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -99,15 +99,13 @@ monster.loot = {
 	{name = "platinum coin", chance = 50000, maxCount = 5},
 	{name = "green gem", chance = 2500},
 	{name = "crown armor", chance = 1500},
-	{name = "crown legs", chance = 1000},
+	{name = "crown legs", chance = 1800},
+	{id = 3364, chance = 450}, -- golden legs
 	{name = "crown helmet", chance = 2000},
 	{name = "crown shield", chance = 2250},
 	{name = "experience scroll", chance = 600},
 	{ id = 5921, chance = 1130 }, -- heaven blossom
 	{id = 12413, chance = 12000},
-	{id = 3399, chance = 250},
-	{id = 8095, chance = 250},
-	{id = 3408, chance = 250},
 }
 
 

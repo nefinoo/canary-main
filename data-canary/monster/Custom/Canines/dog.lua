@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "little puppy"
 monster.description = "a little puppy"
-monster.experience = 14500000
+monster.experience = 146000000
 monster.outfit = {
 	lookType = 32,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 18500
-monster.maxHealth = 18500
+monster.health = 70000
+monster.maxHealth = 70000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5971
@@ -79,12 +79,11 @@ monster.elements = {
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
+-- Frozen Hell / Knight progression: Little Puppy
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1307, maxDamage = -1350},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA},
-	{name ="combat", interval = 3000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, length = 8, spread = 3, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1307, maxDamage = -1350, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{name = "melee", interval = 1500, chance = 100, minDamage = -1300, maxDamage = -1750},
+	{name = "combat", interval = 3000, chance = 70, type = COMBAT_PHYSICALDAMAGE, minDamage = -1450, maxDamage = -1950, length = 5, spread = 2, effect = CONST_ME_POISONAREA},
+	{name = "combat", interval = 4000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -1350, maxDamage = -1750, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA}
 }
 
 monster.defenses = {
@@ -92,31 +91,22 @@ monster.defenses = {
 	armor = 25
 }
 
+-- Frozen Hell: common NPC resale drops plus extremely rare old-set pieces.
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 4},
-	{name = "platinum coin", chance = 70000, maxCount = 8},
-	{name = "experience scroll", chance = 500, maxCount = 2},
-	-- {id = 7366, chance = 100},
-	-- {id = 7426, chance = 100}, 
-	-- {id = 7420, chance = 100}, 
-	-- {id = 3296, chance = 100},
-	-- {id = 7437, chance = 100},
-	-- {name = "magic sword", chance = 200},
-	-- { id = 3319, chance = 200 }, 
-	-- { id = 3309, chance = 200 }, 
-	-- {id = 3341, chance = 200},
-	-- {name = "throwing star", chance = 200},
-	{id = 3082, chance = 5500},
-	{id = 28537, chance = 250}, --ritual sword
-	{name = "crown armor", chance = 1500},
-	{name = "crown legs", chance = 1000},
-	{name = "crown helmet", chance = 2000},
-	{name = "crown shield", chance = 2250},
-	{name = "demonic essence", chance = 1818},
-	{name = "fire axe", chance = 1500},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
-	{name = "demonrage sword", chance = 410},
+	{name = "crystal coin", chance = 100000, maxCount = 4},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "experience scroll", chance = 1800},
+	{name = "crown armor", chance = 1700},
+	{name = "crown legs", chance = 1400},
+	{name = "magic plate armor", chance = 500},
+	{name = "demonrage sword", chance = 500},
+	{name = "green gem", chance = 2300},
+	{name = "yellow gem", chance = 4000},
+	{name = "demonic essence", chance = 4600},
+	{name = "small diamond", chance = 22000, maxCount = 4},
+	{id = 3399, chance = 45},
+	{id = 8095, chance = 45},
+	{id = 3408, chance = 45}
 }
 
 mType:register(monster)
