@@ -83174,7 +83174,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="skillsword" value="10"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="181"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83194,7 +83194,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="skillclub" value="10"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="189"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="weight" value="7800"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83214,7 +83214,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="skillaxe" value="10"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="185"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83310,7 +83310,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="skillsword" value="20"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="235"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="weight" value="5000"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83330,7 +83330,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="skillclub" value="20"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="246"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="weight" value="7800"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83350,7 +83350,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="skillaxe" value="20"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="240"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="weight" value="9000"/>
 		<attribute key="lifeleechchance" value="500"/>
@@ -83444,7 +83444,7 @@ Granted by TibiaGoals.com"/>
 	<item id="53050" article="the" name="ornamented seeker">
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="142"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="criticalhitchance" value="500"/>
@@ -83462,7 +83462,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="148"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="criticalhitchance" value="500"/>
@@ -83480,7 +83480,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="145"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="criticalhitchance" value="500"/>
@@ -83571,7 +83571,7 @@ Granted by TibiaGoals.com"/>
 	<item id="50970" article="the" name="gladiator seeker">
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="284"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83590,7 +83590,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="297"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83609,7 +83609,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="290"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83700,7 +83700,7 @@ Granted by TibiaGoals.com"/>
 	<item id="51922" article="the" name="golden seeker">
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="333"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83719,7 +83719,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="348"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83738,7 +83738,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="340"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83830,7 +83830,7 @@ Granted by TibiaGoals.com"/>
 	<item id="53284" article="the" name="undyeing seeker">
 		<attribute key="description" value="This sword is only granted to a warlord of the Svargrond arena"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="47"/>
+		<attribute key="attack" value="412"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83849,7 +83849,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This club is only granted to a scrapper of the Svargrond arena"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="430"/>
 		<attribute key="defense" value="20"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
@@ -83868,7 +83868,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="A masterpiece of a dwarven smith"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="420"/>
 		<attribute key="defense" value="22"/>
 		<attribute key="lifeleechchance" value="500"/>
 		<attribute key="manaleechchance" value="500"/>
