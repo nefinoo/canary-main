@@ -6736,6 +6736,11 @@ bool Player::isPromoted() const {
 }
 
 uint32_t Player::getAttackSpeed() const {
+	// Frozen Hell V2: keep Knight and Elite Knight on a stable auto-attack cadence.
+	// Fist skill must not shorten the weapon swing for base vocation 4 (Knight).
+	if (vocation->getBaseId() == 4) {
+		return vocation->getAttackSpeed();
+	}
 	bool onFistAttackSpeed = g_configManager().getBoolean(TOGGLE_ATTACK_SPEED_ONFIST);
 	uint32_t MAX_ATTACK_SPEED = g_configManager().getNumber(MAX_SPEED_ATTACKONFIST);
 	if (onFistAttackSpeed) {
