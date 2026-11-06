@@ -5,6 +5,7 @@ Example:
  python balance_report/v2_knight_ttk.py --level 1000 --skill 95 --attack 110 --ml 8 --exit-level 1500 --exit-skill 110 --exit-attack 160
 
 Inputs describe the CURRENT gear at respawn entrance and at respawn exit.
+The normal Fist skill is locked; --fist-bonus and --fist-buff-seconds model the temporary item effect without modifying the engine.
 40 s is the entrance target; 20 s is the exit target. The same creature HP must
 satisfy both. Adjust target resistance, healing and incoming damage when known.
 """
@@ -25,7 +26,7 @@ SPELLS = {
 HEALTH_POTS = (
     (0, 150, None), (50, 300, None), (80, 500, None),
     (130, 750, None), (200, 1000, None), (500, 1950, 738),
-    (1000, 2750, 999), (2500, 5000, 1379),
+    (1000, 2750, 938), (2500, 5000, 1379),
     (5000, 7000, 1579), (10000, 11000, 1779),
 )
 HEALS = {
@@ -62,6 +63,7 @@ def simulate(p, seconds=40, target_hp=float("inf"), taken_dps=0, monster_hps=0,
     spell_ready, heal_ready = {}, {}
     attack_group, heal_group, supply_next = 0.0, 0.0, 0.0
     damage, min_hp, hp_used, mp_used, attacks, heals = 0.0, hp, 0, 0, 0, 0
+    next_autoattack = 0.0
     dead, killed, elapsed = False, False, 0.0
     boost = damage_multiplier * (1 + augment_pct / 100.0)
     # Nominal normal melee assumes attackFactor=1, one swing/s, no crit/leech.
@@ -69,12 +71,12 @@ def simulate(p, seconds=40, target_hp=float("inf"), taken_dps=0, monster_hps=0,
     max_hit = round(.085 * p["attack"] * p["skill"] + p["level"] / 5) * 1.10
     auto = (min_hit + max_hit) / 2 * damage_multiplier
 
-    for tick in range(int(seconds * 2)):
-        t = tick / 2
-        elapsed = t + .5
-        hp -= taken_dps * .5
-        mp = min(mpmax, mp + 2 / 6 * .5)
-        hp = min(hpmax, hp + 1 / 6 * .5)
+    for tick in range(int(seconds * 10)):
+        t = tick / 10
+        elapsed = t + .1
+        hp -= taken_dps * .1
+        mp = min(mpmax, mp + 2 / 6 * .1)
+        hp = min(hpmax, hp + 1 / 6 * .1)
         if hp <= 0:
             dead = True
             break
@@ -111,8 +113,13 @@ def simulate(p, seconds=40, target_hp=float("inf"), taken_dps=0, monster_hps=0,
                 heals += 1
                 break
 
-        if tick % 2 == 0:
+        # Fist is trained only via the temporary buff item (ordinary training is blocked).
+        # Its current value affects the original Canary automatic attack interval.
+        current_fist = p["fist"] + (p["fist_bonus"] if t < p["fist_buff_seconds"] else 0)
+        interval = max(100, 1000 - 5 * current_fist) / 1000.0
+        if t + 1e-9 >= next_autoattack:
             damage += auto
+            next_autoattack += interval
 
         # Prioritize biggest eligible single-target spell; attack group 2 s.
         if t >= attack_group:
@@ -146,12 +153,18 @@ def main():
     ap.add_argument("--skill", type=int, required=True)
     ap.add_argument("--attack", type=int, required=True, help="Weapon attack")
     ap.add_argument("--ml", type=int, default=8)
+    ap.add_argument("--fist", type=int, default=10, help="Base Fist skill (not trainable normally)")
+    ap.add_argument("--fist-bonus", type=int, default=0, help="Temporary Fist added by the item")
+    ap.add_argument("--fist-buff-seconds", type=float, default=0, help="Duration of the Fist boost")
     ap.add_argument("--hp-gear", type=int, default=0)
     ap.add_argument("--mana-gear", type=int, default=0)
     ap.add_argument("--exit-level", type=int)
     ap.add_argument("--exit-skill", type=int)
     ap.add_argument("--exit-attack", type=int)
     ap.add_argument("--exit-ml", type=int)
+    ap.add_argument("--exit-fist", type=int)
+    ap.add_argument("--exit-fist-bonus", type=int)
+    ap.add_argument("--exit-fist-buff-seconds", type=float)
     ap.add_argument("--incoming-dps", type=float, default=0)
     ap.add_argument("--monster-hps", type=float, default=0)
     ap.add_argument("--damage-multiplier", type=float, default=1.0,
@@ -164,22 +177,31 @@ def main():
     if not 0 < args.damage_multiplier <= 2:
         ap.error("--damage-multiplier must be in (0,2]")
     p = dict(level=args.level, skill=args.skill, attack=args.attack,
-             ml=args.ml, hp_gear=args.hp_gear, mana_gear=args.mana_gear)
+             ml=args.ml, hp_gear=args.hp_gear, mana_gear=args.mana_gear,
+             fist=args.fist, fist_bonus=args.fist_bonus, fist_buff_seconds=args.fist_buff_seconds)
     q = dict(p)
     for attr, key in [("exit_level", "level"), ("exit_skill", "skill"),
-                      ("exit_attack", "attack"), ("exit_ml", "ml")]:
+                      ("exit_attack", "attack"), ("exit_ml", "ml"),
+                      ("exit_fist", "fist"), ("exit_fist_bonus", "fist_bonus"),
+                      ("exit_fist_buff_seconds", "fist_buff_seconds")]:
         value = getattr(args, attr)
         if value is not None:
             q[key] = value
     opts = dict(taken_dps=args.incoming_dps, monster_hps=args.monster_hps,
                 damage_multiplier=args.damage_multiplier,
                 augment_pct=args.augment_pct)
+    if p["fist"] < 0 or p["fist_bonus"] < 0 or p["fist_buff_seconds"] < 0:
+        ap.error("Fist values and buff duration must be nonnegative")
+    if q["fist"] < 0 or q["fist_bonus"] < 0 or q["fist_buff_seconds"] < 0:
+        ap.error("Exit Fist values and buff duration must be nonnegative")
     start = simulate(p, 40, **opts)
     hp = max(1, round(start["net_damage"]))
     end = simulate(q, 240, target_hp=hp, **opts)
     print("FROZEN HELL V2 | KNIGHT (OFFLINE ESTIMATE)")
     print("Entry: level={level} skill={skill} weaponAtk={attack} ML={ml}".format(**p))
     print("Exit:  level={level} skill={skill} weaponAtk={attack} ML={ml}".format(**q))
+    print(f"Fist boost: entry {p['fist']}+{p['fist_bonus']} for {p['fist_buff_seconds']}s; "
+          f"exit {q['fist']}+{q['fist_bonus']} for {q['fist_buff_seconds']}s")
     print(f"Entry damage in 40 s: {start['damage']:,.0f} (after selected multiplier)")
     print(f"PROPOSED monster HP: {hp:,} (monster healing subtracted)")
     print(f"Entry sustain: alive={start['alive']} minHP={start['min_hp']:,.0f} "
