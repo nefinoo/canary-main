@@ -63,7 +63,7 @@ local unlockedPotions = {
 	{ itemName = "angelic health potion", clientId = 51246, buy = 738 },
 
 	{ itemName = "extreme mana potion", clientId = 50966, buy = 938 },
-	{ itemName = "extreme health potion", clientId = 50967, buy = 999 },
+	{ itemName = "extreme health potion", clientId = 50967, buy = 1179 },
 	{ itemName = "extreme spirit potion", clientId = 50965, buy = 938 },
 
 	{ itemName = "obscure mana potion", clientId = 51704, buy = 1138 },
