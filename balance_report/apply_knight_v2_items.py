@@ -2,7 +2,7 @@
 """Frozen Hell V2: apply Knight quest weapon balance to the large items.xml.
 
 Runs automatically on GitHub Actions when this file changes. Users do not
-need to run commands. Changes are limited to 3 Knight-only weapon IDs.
+need to run commands. Changes are limited to 21 Knight-only weapon IDs across seven level tiers.
 """
 from pathlib import Path
 import re
@@ -13,9 +13,34 @@ FILE = ROOT / "data/items/items.xml"
 
 # id -> (original attack, new attack, level)
 WEAPONS = {
-    3303: (52, 110, 1000),   # Deadly Axe
-    7415: (44, 112, 1000),   # Deadly Basher
-    7390: (47, 108, 1000),   # Deadly Blade
+    # Level 1000 quest weapons.
+    3303: (52, 110, 1000),    # Deadly Axe
+    7415: (44, 112, 1000),    # Deadly Basher
+    7390: (47, 108, 1000),    # Deadly Blade
+    # Level 2500.
+    53049: (52, 145, 2500),  # Ornamented Axe
+    53048: (44, 148, 2500),  # Ornamented Basher
+    53050: (47, 142, 2500),  # Ornamented Seeker
+    # Level 5000.
+    52365: (52, 185, 5000),  # Black Knight Axe
+    52366: (44, 189, 5000),  # Black Knight Basher
+    52376: (47, 181, 5000),  # Black Knight Seeker
+    # Level 10000.
+    51069: (52, 240, 10000), # Frozen Axe
+    51066: (44, 246, 10000), # Frozen Basher
+    51064: (47, 235, 10000), # Frozen Seeker
+    # Level 15000.
+    50972: (52, 290, 15000), # Gladiator Axe
+    50977: (44, 297, 15000), # Gladiator Basher
+    50970: (47, 284, 15000), # Gladiator Seeker
+    # Level 20000.
+    51918: (52, 340, 20000), # Golden Axe
+    51920: (44, 348, 20000), # Golden Basher
+    51922: (47, 333, 20000), # Golden Seeker
+    # Level 30000.
+    53280: (52, 420, 30000), # Undyeing Axe
+    50819: (44, 430, 30000), # Undyeing Basher
+    53284: (47, 412, 30000), # Undyeing Seeker
 }
 
 
@@ -83,8 +108,8 @@ def main() -> None:
     ET.fromstring(changed)
     if changed != before:
         FILE.write_bytes(changed)
-    print("Checked Knight quest weapon IDs 3303 / 7415 / 7390; XML syntax valid.")
-    print("Attack values now 110 / 112 / 108; required levels 1000.")
+    print(f"Checked {len(WEAPONS)} Knight weapon IDs across seven tiers; XML syntax valid.")
+    print("All weapon attacks and required levels match the V2 progression table.")
 
 
 if __name__ == "__main__":
