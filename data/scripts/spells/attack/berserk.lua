@@ -6,18 +6,14 @@ combat:setParameter(COMBAT_PARAM_BLOCKARMOR, 1)
 combat:setParameter(COMBAT_PARAM_USECHARGES, 1)
 combat:setArea(createCombatArea(AREA_SQUARE1X1))
 
-local config = {
-    damageMultiplier = 1.10
-}
-
+-- Frozen Hell V2: damage grows with level AND the equipped weapon (skill * attack).
+-- This makes future loot and weapon upgrades directly affect time-to-kill.
 function onGetFormulaValues(player, skill, attack, factor)
     local level = player:getLevel()
-
-    local min = (level / 5) + (skill + attack) * 0.5
-    local max = (level / 5) + (skill + attack) * 1.5
-
-    return -min * config.damageMultiplier,
-           -max * config.damageMultiplier
+    local gear = math.max(0, skill) * math.max(0, attack)
+    local minimum = (level * 0.11 + gear * 0.048 + 20) * 1.00
+    local maximum = (level * 0.17 + gear * 0.074 + 32) * 1.00
+    return -minimum, -maximum
 end
 
 combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
@@ -34,11 +30,11 @@ spell:name("Berserk")
 spell:words("exori")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_BERSERK)
 spell:level(35)
-spell:mana(115)
+spell:mana(65)
 spell:isPremium(true)
 spell:needWeapon(true)
-spell:cooldown(4 * 1000)
-spell:groupCooldown(2 * 1000)
+spell:cooldown(4000)
+spell:groupCooldown(2000)
 spell:needLearn(false)
 spell:vocation("knight;true", "elite knight;true")
 spell:register()
