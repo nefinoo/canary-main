@@ -1,12 +1,22 @@
 # Frozen Hell — ESTADO MAESTRO DEL BALANCEO V2
 
-**ÚLTIMA ACTUALIZACIÓN:** 2026-11-05
+**ÚLTIMA ACTUALIZACIÓN:** 2026-11-06
 **Repositorio:** https://github.com/nefinoo/canary-main
 **Rama ACTIVA de balanceo:** `balance-v2-knight-foundation`
 **Rama de origen:** `pr-level-limit`
 **Ramas anteriores/históricas (NO utilizar para el nuevo balance):** `balance-frozen-hell-knight-100-200`, PR #2. `main` NO se ha modificado.
 **Etapa actual:** V2.1 — fundamento de combate del Knight implementado en la rama, pendiente de validación completa en Canary.
 **Seguridad:** no hacer merge, desplegar ni modificar monstruos de quest sin aprobación explícita. Nunca atribuir resultados reales a simulaciones.
+
+## 0. PREFERENCIA DE TRABAJO (06-nov-2026)
+
+- El usuario **NO quiere ejecutar Python, validadores, simuladores ni comandos de terminal**. No volver a pedirle ejecutarlos ni ponerlos como condición para continuar.
+- Quiere que el asistente **edite los archivos de monstruos o ítems directamente en GitHub**, y que informe los cambios confirmados. Para la V2, la prioridad inmediata son **ítems/armas del Knight**; no crear monstruos hasta que el usuario indique el nivel del primer respawn.
+- El usuario podrá actualizar archivos por GitHub Desktop si decide usarlos. Evitar instrucciones de terminal.
+- El archivo `data/items/items.xml` ocupa ~3.65 millones de caracteres; al intentar actualizarlo con el conector GitHub se recibió un error de transporte `h2 protocol error`. **NO se aplicó el cambio**: SHA original verificado `4ba5e46fa29096aba643c5f98dfb67c915b5aa2f`. No afirmar que las armas fueron alteradas.
+- Auditoría realizada en el XML original: las armas Knight de nivel 2500/5000/10000/15000/20000/30000 mantienen ataque base de ~44/47/52. Las armas Deadly de quest de nivel 1000 (IDs 3303/7415/7390) siguen con ATK 52/44/47; además no todas tienen nivel 1000 correcto. Es un problema de progresión que debemos solucionar en una edición de items.xml efectivamente confirmada.
+- Borrador de ataque escalonado (todavía NO aplicado): nivel 1000 [axe 3303=110, club 7415=112, sword 7390=108]; 2500 [53049=145, 53048=148, 53050=142]; 5000 [52365=185, 52366=189, 52376=181]; 10000 [51069=240, 51066=246, 51064=235]; 15000 [50972=290, 50977=297, 50970=284]; 20000 [51918=340, 51920=348, 51922=333]; 30000 [53280=420, 50819=430, 53284=412]. Mantener IDs/vocaciones/drops/quest; revisar impactos antes de dar el balance por cerrado.
+- Los informes y simulaciones anteriores siguen disponibles como referencia técnica **interna**, pero el usuario no debe ejecutar herramientas ni escribir comandos.
 
 ## 1. VISIÓN DEL USUARIO — LEER EN CADA NUEVO CHAT
 
@@ -103,11 +113,12 @@ Archivo principal `data/scripts/actions/items/potions.lua`; objetivo de vida pro
 
 ## 4. SIGUIENTE ACCIÓN EXACTA
 
-**V2.2 — Validación Knight en vivo y perfiles de equipo.** Empezar por:
-1. Confirmar que la rama actual ha pasado validación estructural y de sintaxis.
-2. Probar fórmulas, mana, cooldowns y ráfaga del Fist con un Knight no promovido; documentar FPS/TTK, buffs reales, curas y consumibles.
-3. Inventariar armas/armaduras por ID para elegir progresión de equipo y medir DPS en nivel de entrada/salida. Primero solo Knight.
-4. Cuando el usuario pida el primer respawn, crearlo totalmente NUEVO y ajustar su HP según el TTK real, con loot/equipo acordes.
+**V2.2 — Edición directa de ítems Knight y luego monstruos nuevos.** No pedir al usuario ejecutar Python ni comandos.
+1. Resolver método de escritura fiable del archivo grande `data/items/items.xml` (la llamada directa al conector falló; no hay cambios confirmados en este XML).
+2. Aplicar primero armas de nivel 1000 y siguientes tiers con nivel y ATK coherentes; conservar IDs de quest, vocaciones y rarezas; verificar SHA/commit y leer de vuelta los valores.
+3. Revisar armaduras, piernas, cascos, botas, escudos y augments existentes para Knight; priorizar piezas utilizables por Knight sin modificar el balance de las demás vocaciones.
+4. Cuando el usuario indique un nivel concreto, crear un monstruo **totalmente nuevo** y ajustar su HP/defensas/loot para el objetivo 40 s al entrar y 20 s cuando el Knight mejore equipo y nivel. La medición real no se ha confirmado.
+5. Registrar **solo cambios realmente guardados** en GitHub en este archivo.
 
 ## 5. CÓMO RETOMAR ESTE PROYECTO EN UN CHAT NUEVO
 
