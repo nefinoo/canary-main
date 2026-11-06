@@ -55,6 +55,10 @@ local superFoods = {
     }
 }
 
+-- Same storage as the Knight potion action: a shared 2-second supply budget.
+local KNIGHT_SUPPLY_STORAGE = 935110
+local KNIGHT_SUPPLY_DELAY = 2
+
 local exhausteds = {}
 
 local action = Action()
@@ -63,6 +67,12 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
     local food = superFoods[item.itemid]
     if not food then
         return false
+    end
+
+    local isKnight = player:getVocation():getBaseId() == VOCATION.BASE_ID.KNIGHT
+    if isKnight and player:getStorageValue(KNIGHT_SUPPLY_STORAGE) > os.time() then
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait before using another potion or Super Food.")
+        return true
     end
 
     local playerId = player:getId()
@@ -107,6 +117,10 @@ function action.onUse(player, item, fromPos, target, toPos, isHotkey)
 
     if food.exhaustedTime then
         exhausteds[playerId] = os.time() + food.exhaustedTime
+    end
+
+    if isKnight then
+        player:setStorageValue(KNIGHT_SUPPLY_STORAGE, os.time() + KNIGHT_SUPPLY_DELAY)
     end
 
     player:getPosition():sendMagicEffect(570)
