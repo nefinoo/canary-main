@@ -1,3 +1,7 @@
+-- FROZEN HELL / KNIGHT REWORK v1: spell anterior deshabilitada, codigo original conservado.
+-- Quitar las dos lineas de proteccion para restaurarla.
+if true then return end
+
 -- Shield of Enforcement Spell
 -- Crea un escudo con 10 cargas si el jugador tiene mana máxima y 250 soul points.
 

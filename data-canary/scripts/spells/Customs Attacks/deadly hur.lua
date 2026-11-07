@@ -1,3 +1,7 @@
+-- FROZEN HELL / KNIGHT REWORK v1: spell anterior deshabilitada, codigo original conservado.
+-- Quitar las dos lineas de proteccion para restaurarla.
+if true then return end
+
 local spell = Spell("instant")
 
 -- Create combat objects during loading
