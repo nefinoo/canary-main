@@ -123,6 +123,6 @@ spell:isSelfTarget(true)
 spell:vocation("sorcerer;true")
 spell:vocation("druid;true")
 spell:vocation("paladin;true")
-spell:vocation("knight;true")
+-- Frozen Hell Knight Rework: acceso Knight retirado; las otras vocaciones se conservan.
 
 spell:register()
