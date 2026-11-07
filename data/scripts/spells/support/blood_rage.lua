@@ -1,3 +1,7 @@
+-- FROZEN HELL / KNIGHT REWORK v1: spell vanilla deshabilitada, codigo original conservado.
+-- Quitar las dos lineas de proteccion para restaurarla.
+if true then return end
+
 local condition = Condition(CONDITION_ATTRIBUTES)
 condition:setParameter(CONDITION_PARAM_SUBID, AttrSubId_BloodRageProtector)
 condition:setParameter(CONDITION_PARAM_TICKS, 10000)
