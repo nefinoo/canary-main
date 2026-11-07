@@ -1,3 +1,7 @@
+-- FROZEN HELL / KNIGHT REWORK v1: spell vanilla deshabilitada, codigo original conservado.
+-- Quitar las dos lineas de proteccion para restaurarla.
+if true then return end
+
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_WEAPONTYPE)
