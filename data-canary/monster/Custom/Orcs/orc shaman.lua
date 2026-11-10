@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 115
-monster.maxHealth = 115
+monster.health = 75
+monster.maxHealth = 75
 monster.runHealth = 15
 monster.race = "blood"
 monster.corpse = 5978
@@ -95,8 +95,8 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 13},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -20, maxDamage = -30, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -5, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -3, maxDamage = -16, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -3, maxDamage = -18, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
