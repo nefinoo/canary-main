@@ -90,6 +90,12 @@ monster.loot = {
 	{ name = "bonelord shield", chance = 15 }, -- equipo muy raro
 }
 
+monster.defenses = {
+	defense = 5,
+	armor = 12,
+	mitigation = 0.25,
+}
+
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 90 },
