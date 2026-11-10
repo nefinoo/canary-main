@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Dwacatra, Orc Peninsula, Elvenbane, Edron Orc Cave, Plains of Havoc, below Point of No Return in Outlaw Camp, Maze of Lost Souls, Cyclopolis, Desert Dungeon, Ancient Temple, Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 115
-monster.maxHealth = 115
+monster.health = 210
+monster.maxHealth = 210
 monster.race = "blood"
 monster.corpse = 5980
 monster.speed = 125
@@ -88,7 +88,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -38 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200 },
 }
 
 monster.defenses = {

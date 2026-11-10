@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 85
-monster.maxHealth = 85
+monster.health = 125
+monster.maxHealth = 125
 monster.race = "blood"
 monster.corpse = 5979
 monster.speed = 95
@@ -91,7 +91,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -28 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -60 },
 }
 
 monster.defenses = {

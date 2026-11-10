@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 450
+monster.maxHealth = 450
 monster.race = "blood"
 monster.corpse = 6001
 monster.speed = 115
@@ -76,19 +76,17 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "steel helmet", chance = 15 }, -- Frozenhell: 0.015%
-	{ name = "bonelord shield", chance = 10 }, -- Frozenhell: 0.01%
 	{ name = "gold coin", chance = 28000, maxCount = 35 },
 	{ id = 3091, chance = 3920 }, -- sword ring
 	{ name = "longsword", chance = 2800 },
 	{ name = "throwing knife", chance = 9950, maxCount = 4 },
 	{ name = "broadsword", chance = 610 },
 	{ id = 3307, chance = 1860 }, -- scimitar
-	{ name = "plate armor", chance = 10 },
+	{ name = "plate armor", chance = 1650 },
 	{ name = "warrior helmet", chance = 180 },
 	{ name = "brass legs", chance = 3100 },
 	{ name = "plate shield", chance = 1650 },
-	{ name = "plate legs", chance = 10 },
+	{ name = "plate legs", chance = 440 },
 	{ id = 3578, chance = 29400 }, -- fish
 	{ name = "brown mushroom", chance = 9650 },
 	{ name = "royal spear", chance = 2400 },
@@ -99,8 +97,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -40 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -24, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -185 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -70, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = false },
 }
 
 monster.defenses = {

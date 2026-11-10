@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Orc Peninsula, near Dark Cathedral, Zao Orc Land.",
 }
 
-monster.health = 100
-monster.maxHealth = 100
+monster.health = 180
+monster.maxHealth = 180
 monster.race = "blood"
 monster.corpse = 6010
 monster.speed = 130
@@ -90,7 +90,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -30 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -130 },
 }
 
 monster.defenses = {
