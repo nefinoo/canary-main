@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Warlord")
 local monster = {}
 
 monster.description = "an orc warlord"
-monster.experience = 120
+monster.experience = 670
 monster.outfit = {
 	lookType = 2,
 	lookHead = 0,
@@ -112,9 +112,10 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 6,
-	mitigation = 0,
+	defense = 35,
+	armor = 28,
+	mitigation = 1.46,
+	{ name = "invisible", interval = 2000, chance = 5, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.elements = {
