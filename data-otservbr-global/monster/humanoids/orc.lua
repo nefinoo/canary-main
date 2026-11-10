@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Rookgaard Orc Fortress, Rookgaard main cave, Fibula Dungeon, Elvenbane, Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 70
-monster.maxHealth = 70
+monster.health = 55
+monster.maxHealth = 55
 monster.race = "blood"
 monster.corpse = 5966
 monster.speed = 75
@@ -90,13 +90,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -35 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 4,
-	mitigation = 0.20,
+	defense = 3,
+	armor = 1,
+	mitigation = 0,
 }
 
 monster.elements = {
