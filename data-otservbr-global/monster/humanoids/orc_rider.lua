@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Rider")
 local monster = {}
 
 monster.description = "an orc rider"
-monster.experience = 110
+monster.experience = 60
 monster.outfit = {
 	lookType = 4,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Orc Peninsula, near Dark Cathedral, Zao Orc Land.",
 }
 
-monster.health = 180
-monster.maxHealth = 180
+monster.health = 100
+monster.maxHealth = 100
 monster.race = "blood"
 monster.corpse = 6010
 monster.speed = 130
@@ -90,13 +90,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -130 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -30 },
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 9,
-	mitigation = 0.51,
+	defense = 6,
+	armor = 3,
+	mitigation = 0,
 	{ name = "speed", interval = 2000, chance = 15, speedChange = 200, effect = CONST_ME_MAGIC_RED, target = false, duration = 5000 },
 }
 
