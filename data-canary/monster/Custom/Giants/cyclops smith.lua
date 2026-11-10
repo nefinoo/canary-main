@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 435
-monster.maxHealth = 435
+monster.health = 650
+monster.maxHealth = 650
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 656
@@ -96,8 +96,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 70, attack = 50},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -46, maxDamage = -74, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_WHIRLWINDCLUB},
+	{name ="melee", interval = 2000, chance = 100, skill = 55, attack = 40},
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -18, maxDamage = -65, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_WHIRLWINDCLUB},
 	{name ="drunk", interval = 1000, chance = 10, drunkenness = 25, duration = 10000}
 }
 
@@ -107,18 +107,15 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "battle shield", chance = 1500},
-	{name = "dark helmet", chance = 200},
-	{name = "gold coin", chance = 4000, maxCount = 70},
-	{name = "ham", chance = 2000},
-	{name = "meat", chance = 5000, maxCount = 3},
-	{name = "plate shield", chance = 2000},
-	{name = "heavy machete", chance = 2000},
-	{id = 7398, chance = 1500},
-	{id = 12413, chance = 3000},
-	{id = 3399, chance = 80},
-	{id = 8095, chance = 80},
-	{id = 3408, chance = 80},
+	{ name = "gold coin", chance = 100000, maxCount = 155 },
+	{ name = "ham", chance = 60000, maxCount = 3 },
+	{ name = "health potion", chance = 7000 },
+	{ name = "mana potion", chance = 6000 },
+	{ id = 12413, chance = 6500 }, -- bolsa de materiales de addon
+	{ name = "plate armor", chance = 1250 },
+	{ name = "plate legs", chance = 1250 },
+	{ name = "steel helmet", chance = 1250 },
+	{ name = "bonelord shield", chance = 1250 },
 }
 
 mType:register(monster)
