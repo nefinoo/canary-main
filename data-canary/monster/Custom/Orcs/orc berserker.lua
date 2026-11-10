@@ -28,8 +28,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 210
-monster.maxHealth = 210
+monster.health = 115
+monster.maxHealth = 115
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5980
@@ -93,7 +93,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -35, maxDamage = -230}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -7, maxDamage = -44}
 }
 
 monster.defenses = {
