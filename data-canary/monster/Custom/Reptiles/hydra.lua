@@ -30,9 +30,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1600
-monster.maxHealth = 1600
-monster.runHealth = 300
+monster.health = 850
+monster.maxHealth = 850
+monster.runHealth = 110
 monster.race = "blood"
 monster.corpse = 6048
 monster.speed = 260
@@ -96,35 +96,44 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -85},
-	{name ="speed", interval = 1000, chance = 17, speed = {min = -600, max = -600}, duration = 15000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
-	{name ="combat", interval = 3000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -87, maxDamage = -113, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -100, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -25, maxDamage = -58},
+	{name ="speed", interval = 1000, chance = 12, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
+	{name ="combat", interval = 3000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -20, maxDamage = -65, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -20, maxDamage = -52, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
 	defense = 35,
 	armor = 25,
-	{name ="combat", interval = 4000, chance = 45, type = COMBAT_HEALING, minDamage = 150, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 4000, chance = 8, type = COMBAT_HEALING, minDamage = 25, maxDamage = 45, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 24000, maxCount = 90, description2 = "gold coin"},
-	{name = "gold coin", chance = 24000, maxCount = 80, description2 = "gold coin"},
-	{name = "meat", chance = 37500, maxCount = 4, description2 = "meat"},
-	{name = "ham", chance = 25000, maxCount = 4, description2 = "ham"},
-	{name = "strong mana potion", chance = 200, description2 = "strong mana potion"},
-	{name = "life crystal", chance = 500, description2 = "life crystal"},
-	{name = "small sapphire", chance = 7500, maxCount = 3, description2 = "small sapphire"},
-	{name = "hydra egg", chance = 200, description2 = "hydra egg"},
-	{name = "medusa shield", chance = 1500, description2 = "medusa shield"},
-	{name = "royal helmet", chance = 1000, description2 = "royal helmet"},
-	{name = "boots of haste", chance = 850, description2 = "boots of haste"},
-	{id = 12413, chance = 4000},
-	{id = 3399, chance = 89},
-	{id = 8095, chance = 89},
-	{id = 3408, chance = 89},
-		
+	{ name = "gold coin", chance = 85000, maxCount = 70 },
+	{ name = "meat", chance = 35000, maxCount = 3 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 7000 },
+	{ name = "strong health potion", chance = 2000 },
+	{ name = "strong mana potion", chance = 1500 },
+	{ name = "hydra head", chance = 4000 }, -- creature product: conserva el valor de NPC
+	{ name = "hydra egg", chance = 500 }, -- loot especial conservado
+	{ id = 12413, chance = 7500 }, -- bolsa de objetos aleatorios de addon
+	-- Plate Set: raro en esta etapa (2.6% por pieza)
+	{ name = "plate armor", chance = 2600 },
+	{ name = "plate legs", chance = 2600 },
+	{ name = "steel helmet", chance = 2600 },
+	{ name = "bonelord shield", chance = 2600 },
+	-- Knight Set: muy raro; piezas clasicas del set
+	{ name = "knight armor", chance = 200 },
+	{ name = "knight legs", chance = 200 },
+	{ name = "knight axe", chance = 250 },
+	{ name = "devil helmet", chance = 180 },
+	{ name = "tower shield", chance = 130 },
+	-- Armas para la progresion de axe, club y sword
+	{ name = "barbarian axe", chance = 3200 },
+	{ name = "clerical mace", chance = 2600 },
+	{ name = "crimson sword", chance = 2600 },
 }
 
 mType:register(monster)
