@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 70
+monster.maxHealth = 70
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6009
@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 39, attack = 24}
+	{name ="melee", interval = 2000, chance = 100, skill = 39, attack = 11}
 }
 
 monster.defenses = {
