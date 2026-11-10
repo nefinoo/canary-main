@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orclops Doomhauler")
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 150
+monster.experience = 1450
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
@@ -111,9 +111,9 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 11,
-	armor = 7,
-	mitigation = 0,
+	defense = 25,
+	armor = 35,
+	mitigation = 1.32,
 	{ name = "speed", interval = 2000, chance = 10, speedChange = 336, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
 }
 
