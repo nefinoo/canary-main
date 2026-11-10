@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade",
 }
 
-monster.health = 2000
-monster.maxHealth = 2000
+monster.health = 260
+monster.maxHealth = 260
 monster.race = "blood"
 monster.corpse = 25074
 monster.speed = 100
@@ -78,6 +78,10 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "steel helmet", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "bonelord shield", chance = 5 }, -- Frozen Hell: 0.005%
 	{ id = 3035, chance = 50320, maxCount = 20 }, -- platinum coin
 	{ id = 236, chance = 50320 }, -- strong health potion
 	{ id = 3078, chance = 50320 }, -- mysterious fetish
@@ -99,8 +103,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -240 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -220, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -58 },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -30, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 }
 
 monster.defenses = {
