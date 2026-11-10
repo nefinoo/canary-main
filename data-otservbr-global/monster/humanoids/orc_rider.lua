@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Rider")
 local monster = {}
 
 monster.description = "an orc rider"
-monster.experience = 60
+monster.experience = 110
 monster.outfit = {
 	lookType = 4,
 	lookHead = 0,
@@ -94,9 +94,9 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 6,
-	armor = 3,
-	mitigation = 0,
+	defense = 15,
+	armor = 9,
+	mitigation = 0.51,
 	{ name = "speed", interval = 2000, chance = 15, speedChange = 200, effect = CONST_ME_MAGIC_RED, target = false, duration = 5000 },
 }
 
