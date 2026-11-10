@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Berserker")
 local monster = {}
 
 monster.description = "an orc berserker"
-monster.experience = 195
+monster.experience = 75
 monster.outfit = {
 	lookType = 8,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Dwacatra, Orc Peninsula, Elvenbane, Edron Orc Cave, Plains of Havoc, below Point of No Return in Outlaw Camp, Maze of Lost Souls, Cyclopolis, Desert Dungeon, Ancient Temple, Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 210
-monster.maxHealth = 210
+monster.health = 115
+monster.maxHealth = 115
 monster.race = "blood"
 monster.corpse = 5980
 monster.speed = 125
@@ -88,13 +88,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -38 },
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 12,
-	mitigation = 0.30,
+	defense = 7,
+	armor = 4,
+	mitigation = 0,
 	{ name = "speed", interval = 2000, chance = 15, speedChange = 290, effect = CONST_ME_MAGIC_RED, target = false, duration = 6000 },
 }
 
