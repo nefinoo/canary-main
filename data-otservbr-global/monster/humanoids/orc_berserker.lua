@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Berserker")
 local monster = {}
 
 monster.description = "an orc berserker"
-monster.experience = 75
+monster.experience = 195
 monster.outfit = {
 	lookType = 8,
 	lookHead = 0,
@@ -92,9 +92,9 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 7,
-	armor = 4,
-	mitigation = 0,
+	defense = 15,
+	armor = 12,
+	mitigation = 0.30,
 	{ name = "speed", interval = 2000, chance = 15, speedChange = 290, effect = CONST_ME_MAGIC_RED, target = false, duration = 6000 },
 }
 
