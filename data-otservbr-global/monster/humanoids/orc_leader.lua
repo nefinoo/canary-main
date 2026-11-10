@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Leader")
 local monster = {}
 
 monster.description = "an orc leader"
-monster.experience = 95
+monster.experience = 270
 monster.outfit = {
 	lookType = 59,
 	lookHead = 0,
@@ -104,9 +104,9 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 8,
-	armor = 5,
-	mitigation = 0,
+	defense = 25,
+	armor = 20,
+	mitigation = 1.18,
 }
 
 monster.elements = {
