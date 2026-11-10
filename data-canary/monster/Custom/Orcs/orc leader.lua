@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
-monster.health = 450
-monster.maxHealth = 450
+monster.health = 140
+monster.maxHealth = 140
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6001
@@ -92,8 +92,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 48},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -70, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
+	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 10},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -6, maxDamage = -28, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
 }
 
 monster.defenses = {
@@ -102,6 +102,10 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 10 }, -- Frozen Hell rare equipment
+	{ name = "plate legs", chance = 10 }, -- Frozen Hell rare equipment
+	{ name = "steel helmet", chance = 15 }, -- Frozen Hell rare equipment
+	{ name = "bonelord shield", chance = 10 }, -- Frozen Hell rare equipment
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "gold coin", chance = 100000, maxCount = 30},
 	{name = "gold coin", chance = 2857},
