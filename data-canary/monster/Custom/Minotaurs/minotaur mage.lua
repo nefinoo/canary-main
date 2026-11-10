@@ -115,10 +115,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 3500 },
 	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
 	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 25 }, -- equipo muy raro
-	{ name = "plate legs", chance = 25 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 30 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 20 }, -- equipo muy raro
+	{ name = "plate armor", chance = 650 }, -- equipo muy raro
+	{ name = "plate legs", chance = 650 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 650 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 650 }, -- equipo muy raro
 }
 
 mType:register(monster)

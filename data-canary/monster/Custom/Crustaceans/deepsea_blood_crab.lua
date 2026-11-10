@@ -80,10 +80,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 4000 },
 	{ name = "bloody pincers", chance = 6980 }, -- material de addon conservado
 	{ id = 12413, chance = 3500 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 30 }, -- equipo muy raro
-	{ name = "plate legs", chance = 30 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 35 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 25 }, -- equipo muy raro
+	{ name = "plate armor", chance = 1200 }, -- equipo muy raro
+	{ name = "plate legs", chance = 1200 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 1200 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 1200 }, -- equipo muy raro
 }
 
 monster.attacks = {
