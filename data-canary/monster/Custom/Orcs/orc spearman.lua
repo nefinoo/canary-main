@@ -111,7 +111,7 @@ monster.loot = {
 	{ name = "steel helmet", chance = 90 }, -- Frozen Hell stage Orc equipment
 	{ name = "bonelord shield", chance = 90 }, -- Frozen Hell stage Orc equipment
 	{ id = 12413, chance = 250 }, -- bolsa de items de addon aleatorios (0.250%)
-	{ name = "gold coin", chance = 90000, maxCount = 14 },
+	{ name = "gold coin", chance = 75000, maxCount = 7 },
 	{ name = "meat", chance = 30000, maxCount = 2 },
 	{ name = "health potion", chance = 700 },
 	{ name = "mana potion", chance = 800 },

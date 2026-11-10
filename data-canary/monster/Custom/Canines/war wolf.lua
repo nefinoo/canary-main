@@ -95,7 +95,7 @@ monster.loot = {
 	{ name = "bonelord shield", chance = 70 }, -- Frozen Hell stage Orc equipment
 	{ id = 12413, chance = 200 }, -- bolsa de items de addon aleatorios (0.200%)
 	{ name = "wolf paw", chance = 6666 }, -- material para addon de Druid (loot original)
-	{ name = "gold coin", chance = 60000, maxCount = 12 },
+	{ name = "gold coin", chance = 60000, maxCount = 6 },
 	{ name = "ham", chance = 45000, maxCount = 2 },
 	{ name = "health potion", chance = 500 },
 	{ name = "mana potion", chance = 500 },
