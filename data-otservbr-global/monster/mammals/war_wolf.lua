@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, the Orc Peninsula, Magician Tower and northwest tower or south underground of Thais, Zao steppe encaged, Vengoth.",
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 70
+monster.maxHealth = 70
 monster.race = "blood"
 monster.corpse = 6009
 monster.speed = 132
@@ -81,7 +81,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -50 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -25 },
 }
 
 monster.defenses = {

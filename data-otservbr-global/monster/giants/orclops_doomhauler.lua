@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade, Edron Orc Cave",
 }
 
-monster.health = 1700
-monster.maxHealth = 1700
+monster.health = 200
+monster.maxHealth = 200
 monster.race = "blood"
 monster.corpse = 25078
 monster.speed = 120
@@ -80,6 +80,10 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "plate legs", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "steel helmet", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "bonelord shield", chance = 5 }, -- Frozenhell: 0.005%
 	{ id = 3031, chance = 50320, maxCount = 185 }, -- gold coin
 	{ id = 3724, chance = 50320, maxCount = 3 }, -- red mushroom
 	{ id = 236, chance = 50320 }, -- strong health potion
@@ -102,10 +106,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -300 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -117, maxDamage = -220, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
-	-- curse
-	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 50, minDamage = -100, maxDamage = -200, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -52 },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -2, maxDamage = -25, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 }
 
 monster.defenses = {

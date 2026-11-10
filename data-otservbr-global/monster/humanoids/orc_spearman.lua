@@ -29,8 +29,8 @@ monster.Bestiary = {
 		Also found in Rookgaard West plains, Zao Orc Land.",
 }
 
-monster.health = 105
-monster.maxHealth = 105
+monster.health = 65
+monster.maxHealth = 65
 monster.race = "blood"
 monster.corpse = 5996
 monster.speed = 88
@@ -89,8 +89,8 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -25 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -30, range = 7, shootEffect = CONST_ANI_SPEAR, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -16 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -18, range = 7, shootEffect = CONST_ANI_SPEAR, target = false },
 }
 
 monster.defenses = {
