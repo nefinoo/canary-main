@@ -81,6 +81,7 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ id = 12413, chance = 2000 }, -- bolsa de items de addon aleatorios (2.000%)
 	{ name = "gold coin", chance = 100000, maxCount = 150 },
 	{ name = "ham", chance = 45000, maxCount = 3 },
 	{ name = "health potion", chance = 3500 },

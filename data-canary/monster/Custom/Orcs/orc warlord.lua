@@ -106,6 +106,7 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ id = 12413, chance = 1100 }, -- bolsa de items de addon aleatorios (1.100%)
 	{ name = "gold coin", chance = 100000, maxCount = 45 },
 	{ name = "ham", chance = 35000, maxCount = 2 },
 	{ name = "health potion", chance = 2500 },

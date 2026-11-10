@@ -89,6 +89,8 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ id = 12413, chance = 200 }, -- bolsa de items de addon aleatorios (0.200%)
+	{ name = "wolf paw", chance = 6666 }, -- material para addon de Druid (loot original)
 	{ name = "gold coin", chance = 60000, maxCount = 12 },
 	{ name = "ham", chance = 45000, maxCount = 2 },
 	{ name = "health potion", chance = 500 },

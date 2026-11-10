@@ -111,6 +111,7 @@ monster.summons = {
 }
 
 monster.loot = {
+	{ id = 12413, chance = 500 }, -- bolsa de items de addon aleatorios (0.500%)
 	{ name = "gold coin", chance = 95000, maxCount = 18 },
 	{ name = "meat", chance = 25000, maxCount = 2 },
 	{ name = "health potion", chance = 1000 },
