@@ -27,8 +27,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 7000
-monster.maxHealth = 7000
+monster.health = 200
+monster.maxHealth = 200
 monster.race = "blood"
 monster.corpse = 25078
 monster.speed = 100
@@ -81,6 +81,10 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "steel helmet", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "bonelord shield", chance = 5 }, -- Frozen Hell: 0.005%
 	{ id = 3035, chance = 50320, maxCount = 35 }, -- gold coin
 	{ id = 3724, chance = 50320, maxCount = 3 }, -- red mushroom
 	{ id = 236, chance = 50320 }, -- strong health potion
@@ -101,10 +105,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -458, maxDamage = -600 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -217, maxDamage = -420, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -56 },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -4, maxDamage = -28, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 	-- curse
-	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 50, minDamage = -200, maxDamage = -400, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
+	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 5, minDamage = -1, maxDamage = -3, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
 }
 
 monster.defenses = {
