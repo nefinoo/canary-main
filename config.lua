@@ -508,11 +508,11 @@ sortLootByChance = true
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
 rateUseStages = true
-lowLevelBonusExp = 10000
-rateExp = 1000
-rateSkill = 100
+lowLevelBonusExp = 0
+rateExp = 1
+rateSkill = 1
 rateLoot = 1
-rateMagic = 50
+rateMagic = 1
 rateSpawn = 1
 
 -- Killing in the name of Quest

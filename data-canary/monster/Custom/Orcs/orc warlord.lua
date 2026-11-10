@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warlord"
 monster.description = "a orc warlord"
-monster.experience = 670000
+monster.experience = 5000
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -32,7 +32,7 @@ monster.maxHealth = 950
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6008
-monster.speed = 290
+monster.speed = 90
 monster.summonCost = 0
 
 monster.changeTarget = {

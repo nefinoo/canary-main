@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 4500000
+monster.experience = 15000
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
@@ -31,7 +31,7 @@ monster.health = 7000
 monster.maxHealth = 7000
 monster.race = "blood"
 monster.corpse = 25078
-monster.speed = 120
+monster.speed = 100
 monster.manaCost = 0
 
 monster.changeTarget = {

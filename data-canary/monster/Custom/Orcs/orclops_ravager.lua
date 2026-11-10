@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 1000000
+monster.experience = 10000
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -30,7 +30,7 @@ monster.health = 2000
 monster.maxHealth = 2000
 monster.race = "blood"
 monster.corpse = 25074
-monster.speed = 130
+monster.speed = 100
 monster.manaCost = 0
 
 monster.changeTarget = {
