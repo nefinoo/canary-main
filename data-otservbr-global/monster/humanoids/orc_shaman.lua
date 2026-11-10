@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Shaman")
 local monster = {}
 
 monster.description = "an orc shaman"
-monster.experience = 110
+monster.experience = 60
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		Maze of Lost Souls, Orc Fort, north west of Thais, Elvenbane, Plains Of Havoc, Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 115
-monster.maxHealth = 115
+monster.health = 75
+monster.maxHealth = 75
 monster.race = "blood"
 monster.corpse = 5978
 monster.speed = 70
@@ -97,15 +97,15 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -15 },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -20, maxDamage = -31, range = 7, shootEffect = CONST_ANI_ENERGYBALL, target = false },
-	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_FIREDAMAGE, minDamage = -5, maxDamage = -43, range = 7, radius = 1, shootEffect = CONST_ANI_FIRE, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -12 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -2, maxDamage = -18, range = 7, shootEffect = CONST_ANI_ENERGYBALL, target = false },
+	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_FIREDAMAGE, minDamage = -2, maxDamage = -20, range = 7, radius = 1, shootEffect = CONST_ANI_FIRE, target = true },
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 8,
-	mitigation = 0.25,
+	defense = 4,
+	armor = 2,
+	mitigation = 0,
 	{ name = "combat", interval = 2000, chance = 60, type = COMBAT_HEALING, minDamage = 27, maxDamage = 43, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
