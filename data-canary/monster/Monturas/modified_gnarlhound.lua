@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "South of Stonehome, deep under Telas's house.",
 }
 
-monster.health = 1500
-monster.maxHealth = 1500
+monster.health = 450
+monster.maxHealth = 450
 monster.race = "blood"
 monster.corpse = 10333
 monster.speed = 225
@@ -45,7 +45,7 @@ monster.strategiesTarget = {
 monster.flags = {
 	summonable = false,
 	attackable = true,
-	hostile = false,
+	hostile = true,
 	convinceable = false,
 	pushable = false,
 	rewardBoss = false,
@@ -53,7 +53,7 @@ monster.flags = {
 	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
-	targetDistance = 4,
+	targetDistance = 1,
 	runHealth = 25,
 	healthHidden = false,
 	isBlockable = false,
@@ -74,16 +74,24 @@ monster.voices = {
 	{ text = "Gnarllll!", yell = false },
 }
 
-monster.loot = {}
+monster.attacks = {
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -6, maxDamage = -42 },
+}
 
-monster.defenses = {
-	defense = 5,
-	armor = 200,
-	mitigation = 4.26,
+monster.loot = {
+	{ name = "gold coin", chance = 100000, maxCount = 65 },
+	{ name = "ham", chance = 40000, maxCount = 2 },
+	{ name = "health potion", chance = 2500 },
+	{ name = "mana potion", chance = 2500 },
+	{ id = 12413, chance = 2500 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 20 }, -- equipo muy raro
+	{ name = "plate legs", chance = 20 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 20 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 15 }, -- equipo muy raro
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 90 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 90 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
 	{ type = COMBAT_FIREDAMAGE, percent = 90 },

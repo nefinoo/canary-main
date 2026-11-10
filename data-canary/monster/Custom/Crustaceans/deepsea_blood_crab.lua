@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Svargrond Sea Serpent Area, Drefia. There is also one under Rookgaard Academy, however it is unreachable.",
 }
 
-monster.health = 320
-monster.maxHealth = 320
+monster.health = 600
+monster.maxHealth = 600
 monster.race = "blood"
 monster.corpse = 6075
 monster.speed = 190
@@ -74,16 +74,20 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 87000, maxCount = 20 },
-	{ id = 3578, chance = 10450 }, -- fish
-	{ name = "bloody pincers", chance = 6980 },
-	{ name = "chain armor", chance = 5020 },
-	{ name = "brass legs", chance = 2720 },
-	{ name = "white pearl", chance = 620 },
+	{ name = "gold coin", chance = 100000, maxCount = 105 },
+	{ name = "fish", chance = 45000, maxCount = 2 },
+	{ name = "health potion", chance = 4000 },
+	{ name = "mana potion", chance = 4000 },
+	{ name = "bloody pincers", chance = 6980 }, -- material de addon conservado
+	{ id = 12413, chance = 3500 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 30 }, -- equipo muy raro
+	{ name = "plate legs", chance = 30 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 35 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 25 }, -- equipo muy raro
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -115, effect = CONST_ME_DRAWBLOOD },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -75, effect = CONST_ME_DRAWBLOOD },
 }
 
 monster.defenses = {

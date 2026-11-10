@@ -30,8 +30,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 185
-monster.maxHealth = 185
+monster.health = 510
+monster.maxHealth = 510
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5983
@@ -96,7 +96,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 35}
+	{name ="melee", interval = 2000, chance = 100, skill = 43, attack = 28}
 }
 
 monster.defenses = {
@@ -105,22 +105,16 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "meat", chance = 70000, maxCount = 3},
-	{name = "double axe", chance = 5000},
-	{name = "leather legs", chance = 10000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 3274, chance = 6666},
-	{name = "fishing rod", chance = 5000},
-	{name = "chain legs", chance = 5000},
-	{name = "chain helmet", chance = 10000},
-	{name = "brass armor", chance = 2500},
-	{name = "battle shield", chance = 10000},
-	{id = 12413, chance = 3000},
-	{id = 3399, chance = 65},
-	{id = 8095, chance = 65},
-	{id = 3408, chance = 65},
+	{ name = "gold coin", chance = 100000, maxCount = 80 },
+	{ name = "ham", chance = 50000, maxCount = 3 },
+	{ name = "health potion", chance = 3500 },
+	{ name = "mana potion", chance = 2500 },
+	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
+	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 30 }, -- equipo muy raro
+	{ name = "plate legs", chance = 30 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 35 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 25 }, -- equipo muy raro
 }
 
 mType:register(monster)

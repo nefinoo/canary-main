@@ -29,8 +29,8 @@ monster.Bestiary = {
 		Hero Cave, Foreigner Quarter and Elvenbane.",
 }
 
-monster.health = 100
-monster.maxHealth = 100
+monster.health = 320
+monster.maxHealth = 320
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 5982
@@ -96,7 +96,7 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 15},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -45, maxDamage = -85, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
+	{name ="combat", interval = 1000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -10, maxDamage = -48, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
 }
 
 monster.defenses = {
@@ -105,23 +105,16 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 28},
-	{name = "bolt", chance = 70000, maxCount = 18},
-	{name = "meat", chance = 50000, maxCount = 3},
-	{name = "scale armor", chance = 10000},
-	{name = "soldier helmet", chance = 6666},
-	{name = "minotaur leather", chance = 5000},
-	{id = 3349, chance = 6666},
-	{name = "piercing bolt", chance = 6000, maxCount = 8},
-	{name = "brass armor", chance = 5000},
-	{name = "chain armor", chance = 10000},
-	{name = "chain legs", chance = 4000},
-	{name = "chain helmet", chance = 10000},
-	{id = 12413, chance = 3000},
-	{id = 3399, chance = 50},
-	{id = 8095, chance = 50},
-	{id = 3408, chance = 50},
+	{ name = "gold coin", chance = 100000, maxCount = 48 },
+	{ name = "meat", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 2000 },
+	{ name = "mana potion", chance = 2200 },
+	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
+	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 18 }, -- equipo muy raro
+	{ name = "plate legs", chance = 18 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 20 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 15 }, -- equipo muy raro
 }
 
 mType:register(monster)
