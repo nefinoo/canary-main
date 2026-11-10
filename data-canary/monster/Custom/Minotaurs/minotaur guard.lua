@@ -105,7 +105,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 80 },
+	{ name = "gold coin", chance = 90000, maxCount = 32 },
 	{ name = "ham", chance = 50000, maxCount = 3 },
 	{ name = "health potion", chance = 3500 },
 	{ name = "mana potion", chance = 2500 },

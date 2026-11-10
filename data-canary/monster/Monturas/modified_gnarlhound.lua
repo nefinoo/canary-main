@@ -79,7 +79,7 @@ monster.attacks = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 65 },
+	{ name = "gold coin", chance = 85000, maxCount = 27 },
 	{ name = "ham", chance = 40000, maxCount = 2 },
 	{ name = "health potion", chance = 2500 },
 	{ name = "mana potion", chance = 2500 },
