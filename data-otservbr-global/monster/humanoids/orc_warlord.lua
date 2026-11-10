@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Warlord")
 local monster = {}
 
 monster.description = "an orc warlord"
-monster.experience = 670
+monster.experience = 120
 monster.outfit = {
 	lookType = 2,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Orc Fortress, Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 950
-monster.maxHealth = 950
+monster.health = 165
+monster.maxHealth = 165
 monster.race = "blood"
 monster.corpse = 6008
 monster.speed = 117
@@ -79,6 +79,8 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ name = "steel helmet", chance = 15 }, -- Frozenhell: 0.015%
+	{ name = "bonelord shield", chance = 10 }, -- Frozenhell: 0.01%
 	{ name = "gold coin", chance = 18000, maxCount = 45 },
 	{ id = 3049, chance = 90 }, -- stealth ring
 	{ name = "gold ring", chance = 30 },
@@ -88,11 +90,11 @@ monster.loot = {
 	{ id = 3307, chance = 3450 }, -- scimitar
 	{ name = "orcish axe", chance = 5400 },
 	{ name = "dragon hammer", chance = 320 },
-	{ name = "plate armor", chance = 5210 },
+	{ name = "plate armor", chance = 20 },
 	{ name = "brass armor", chance = 740 },
 	{ name = "dark helmet", chance = 1260 },
 	{ name = "crusader helmet", chance = 280 },
-	{ name = "plate legs", chance = 4280 },
+	{ name = "plate legs", chance = 20 },
 	{ id = 3578, chance = 10800, maxCount = 2 }, -- fish
 	{ name = "hunting spear", chance = 5260 },
 	{ id = 7395, chance = 50 }, -- orc trophy
@@ -105,14 +107,14 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -250 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -200, range = 7, shootEffect = CONST_ANI_THROWINGSTAR, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -45 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -28, range = 7, shootEffect = CONST_ANI_THROWINGSTAR, target = false },
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 28,
-	mitigation = 1.46,
+	defense = 10,
+	armor = 6,
+	mitigation = 0,
 	{ name = "invisible", interval = 2000, chance = 5, effect = CONST_ME_MAGIC_BLUE },
 }
 
