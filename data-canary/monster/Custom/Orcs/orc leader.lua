@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 290
+monster.maxHealth = 290
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6001

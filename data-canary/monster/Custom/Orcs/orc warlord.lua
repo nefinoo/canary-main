@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Teleport.",
 }
 
-monster.health = 165
-monster.maxHealth = 165
+monster.health = 390
+monster.maxHealth = 390
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6008

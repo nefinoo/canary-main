@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 55
-monster.maxHealth = 55
+monster.health = 95
+monster.maxHealth = 95
 monster.runHealth = 15
 monster.race = "blood"
 monster.corpse = 5966

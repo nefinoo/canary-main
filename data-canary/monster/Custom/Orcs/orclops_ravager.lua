@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade",
 }
 
-monster.health = 260
-monster.maxHealth = 260
+monster.health = 900
+monster.maxHealth = 900
 monster.race = "blood"
 monster.corpse = 25074
 monster.speed = 100
