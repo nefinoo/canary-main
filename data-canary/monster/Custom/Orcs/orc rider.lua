@@ -104,17 +104,10 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "obsidian lance", chance = 2000},
-	{name = "orcish axe", chance = 2500},
-	{name = "battle shield", chance = 6666},
-	{name = "gold coin", chance = 20000},
-	{id = 3012, chance = 10000},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "meat", chance = 50000, maxCount = 3},
-	{id = 12413, chance = 2000},
-	{id = 3399, chance = 25},
-	{id = 8095, chance = 25},
-	{id = 3408, chance = 25},
+	{ name = "gold coin", chance = 95000, maxCount = 20 },
+	{ name = "meat", chance = 35000, maxCount = 2 },
+	{ name = "health potion", chance = 1200 },
+	{ name = "mana potion", chance = 1200 },
 }
 
 mType:register(monster)

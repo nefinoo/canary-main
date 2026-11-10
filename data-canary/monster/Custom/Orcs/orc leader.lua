@@ -102,18 +102,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "plate armor", chance = 10 }, -- Frozen Hell rare equipment
-	{ name = "plate legs", chance = 10 }, -- Frozen Hell rare equipment
-	{ name = "steel helmet", chance = 15 }, -- Frozen Hell rare equipment
-	{ name = "bonelord shield", chance = 10 }, -- Frozen Hell rare equipment
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 30},
-	{name = "gold coin", chance = 2857},
-	{name = "meat", chance = 33333, maxCount = 2},
-	{id = 12413, chance = 2000},
-	{id = 3399, chance = 40},
-	{id = 8095, chance = 40},
-	{id = 3408, chance = 40},
+	{ name = "gold coin", chance = 100000, maxCount = 35 },
+	{ name = "ham", chance = 35000, maxCount = 2 },
+	{ name = "health potion", chance = 1800 },
+	{ name = "mana potion", chance = 1200 },
+	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.010%
+	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.010%
+	{ name = "steel helmet", chance = 15 }, -- Frozen Hell: 0.015%
+	{ name = "bonelord shield", chance = 10 }, -- Frozen Hell: 0.010%
 }
 
 mType:register(monster)

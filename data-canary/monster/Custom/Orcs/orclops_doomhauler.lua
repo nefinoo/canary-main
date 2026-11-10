@@ -81,27 +81,14 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.01%
-	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.01%
-	{ name = "steel helmet", chance = 10 }, -- Frozen Hell: 0.01%
+	{ name = "gold coin", chance = 100000, maxCount = 150 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 3500 },
+	{ name = "mana potion", chance = 3000 },
+	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.010%
+	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.010%
+	{ name = "steel helmet", chance = 10 }, -- Frozen Hell: 0.010%
 	{ name = "bonelord shield", chance = 5 }, -- Frozen Hell: 0.005%
-	{ id = 3035, chance = 50320, maxCount = 35 }, -- gold coin
-	{ id = 3724, chance = 50320, maxCount = 3 }, -- red mushroom
-	{ id = 236, chance = 50320 }, -- strong health potion
-	{ id = 3078, chance = 20000 }, -- mysterious fetish
-	{ id = 3316, chance = 50320 }, -- orcish axe
-	{ id = 24380, chance = 20000 }, -- bone toothpick
-	{ id = 24381, chance = 4900 }, -- beetle carapace
-	{ id = 24382, chance = 1800, maxCount = 2 }, -- bug meat
-	{ id = 3027, chance = 12750, maxCount = 2 }, -- black pearl
-	{ id = 3030, chance = 2510, maxCount = 3 }, -- small ruby
-	{ id = 7452, chance = 1940 }, -- spiked squelcher
-	{ id = 8015, chance = 1000, maxCount = 2 }, -- onion
-	{ id = 9057, chance = 8870, maxCount = 3 }, -- small topaz
-	{ id = 16123, chance = 9700 }, -- brown crystal splinter
-	{ id = 17828, chance = 15290, maxCount = 3 }, -- pair of iron fists
-	{ id = 2966, chance = 910 }, -- war drum
-	{ id = 23811, chance = 300 }, -- reinvigorating seeds
 }
 
 monster.attacks = {
