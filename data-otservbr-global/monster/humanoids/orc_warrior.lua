@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Warrior")
 local monster = {}
 
 monster.description = "an orc warrior"
-monster.experience = 50
+monster.experience = 45
 monster.outfit = {
 	lookType = 7,
 	lookHead = 0,
@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Foreigner Quarter, Zao Orc Land.",
 }
 
-monster.health = 125
-monster.maxHealth = 125
+monster.health = 85
+monster.maxHealth = 85
 monster.race = "blood"
 monster.corpse = 5979
 monster.speed = 95
@@ -91,13 +91,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -60 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -28 },
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 8,
-	mitigation = 0.36,
+	defense = 5,
+	armor = 3,
+	mitigation = 0,
 }
 
 monster.elements = {
