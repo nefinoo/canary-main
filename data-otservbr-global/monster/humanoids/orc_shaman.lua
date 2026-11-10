@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Shaman")
 local monster = {}
 
 monster.description = "an orc shaman"
-monster.experience = 60
+monster.experience = 110
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -103,10 +103,10 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 4,
-	armor = 2,
-	mitigation = 0,
-	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_HEALING, minDamage = 2, maxDamage = 5, effect = CONST_ME_MAGIC_BLUE, target = false },
+	defense = 10,
+	armor = 8,
+	mitigation = 0.25,
+	{ name = "combat", interval = 2000, chance = 60, type = COMBAT_HEALING, minDamage = 27, maxDamage = 43, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
