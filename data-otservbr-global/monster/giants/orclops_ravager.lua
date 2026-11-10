@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orclops Ravager")
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 200
+monster.experience = 1100
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -110,11 +110,11 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 12,
-	armor = 9,
-	mitigation = 0,
+	defense = 25,
+	armor = 35,
+	mitigation = 1.24,
 	{ name = "speed", interval = 2000, chance = 10, speedChange = 336, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
-	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_HEALING, minDamage = 5, maxDamage = 10, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_HEALING, minDamage = 80, maxDamage = 150, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
