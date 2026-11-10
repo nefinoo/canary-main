@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orclops Ravager")
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 1100
+monster.experience = 200
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade",
 }
 
-monster.health = 1200
-monster.maxHealth = 1200
+monster.health = 260
+monster.maxHealth = 260
 monster.race = "blood"
 monster.corpse = 25074
 monster.speed = 130
@@ -78,6 +78,10 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "plate legs", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "steel helmet", chance = 10 }, -- Frozenhell: 0.01%
+	{ name = "bonelord shield", chance = 5 }, -- Frozenhell: 0.005%
 	{ id = 3031, chance = 50320, maxCount = 120 }, -- gold coin
 	{ id = 3035, chance = 50320 }, -- platinum coin
 	{ id = 236, chance = 50320 }, -- strong health potion
@@ -101,16 +105,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -240 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -220, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -60 },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -2, maxDamage = -30, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 35,
-	mitigation = 1.24,
+	defense = 12,
+	armor = 9,
+	mitigation = 0,
 	{ name = "speed", interval = 2000, chance = 10, speedChange = 336, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
-	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_HEALING, minDamage = 80, maxDamage = 150, effect = CONST_ME_MAGIC_BLUE, target = false },
+	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_HEALING, minDamage = 5, maxDamage = 10, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
