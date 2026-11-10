@@ -86,10 +86,10 @@ monster.loot = {
 	{ name = "ham", chance = 45000, maxCount = 3 },
 	{ name = "health potion", chance = 3500 },
 	{ name = "mana potion", chance = 3000 },
-	{ name = "plate armor", chance = 10 }, -- Frozen Hell: 0.010%
-	{ name = "plate legs", chance = 10 }, -- Frozen Hell: 0.010%
-	{ name = "steel helmet", chance = 10 }, -- Frozen Hell: 0.010%
-	{ name = "bonelord shield", chance = 5 }, -- Frozen Hell: 0.005%
+	{ name = "plate armor", chance = 500 }, -- Frozen Hell: 0.010%
+	{ name = "plate legs", chance = 500 }, -- Frozen Hell: 0.010%
+	{ name = "steel helmet", chance = 500 }, -- Frozen Hell: 0.010%
+	{ name = "bonelord shield", chance = 500 }, -- Frozen Hell: 0.005%
 }
 
 monster.attacks = {
