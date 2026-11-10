@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Teleport.",
 }
 
-monster.health = 950
-monster.maxHealth = 950
+monster.health = 165
+monster.maxHealth = 165
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6008
@@ -95,8 +95,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -40, maxDamage = -200},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -100, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -48},
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -26, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
 }
 
 monster.defenses = {
@@ -106,6 +106,10 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ name = "plate armor", chance = 20 }, -- Frozen Hell rare equipment
+	{ name = "plate legs", chance = 20 }, -- Frozen Hell rare equipment
+	{ name = "steel helmet", chance = 15 }, -- Frozen Hell rare equipment
+	{ name = "bonelord shield", chance = 10 }, -- Frozen Hell rare equipment
 	{name = "gold coin", chance = 50000, maxCount = 70},
 	{name = "meat", chance = 20000, maxCount = 3},
 	{id = 12413, chance = 2000},
