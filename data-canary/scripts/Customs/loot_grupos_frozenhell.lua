@@ -6,6 +6,7 @@
 local simulateLoot = TalkAction("/balance")
 
 local npcPrices = {
+	{ itemName = "talon", clientId = 3034, sell = 320 },
 	-- Frozen Hell: sincronizado con Nephy.lua; Crimson Sword no tiene precio de reventa NPC
 	{ itemName = "barbarian axe", clientId = 3317, sell = 185 },
 	{ itemName = "clerical mace", clientId = 3311, sell = 170 },

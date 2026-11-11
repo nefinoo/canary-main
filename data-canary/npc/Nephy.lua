@@ -79,6 +79,8 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {
+	-- Talon de Warlock (precio de venta documentado en Tibia Wiki)
+	{ itemName = "talon", clientId = 3034, sell = 320 },
 	-- Armas nivel 20: precios de Tibia Wiki (venta al NPC / compra al NPC)
 	{ itemName = "barbarian axe", clientId = 3317, sell = 185 },
 	{ itemName = "clerical mace", clientId = 3311, sell = 170 },
