@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 15000
-monster.maxHealth = 15000
+monster.health = 5900
+monster.maxHealth = 5900
 monster.runHealth = 0
 monster.race = "fire"
 monster.corpse = 8635
@@ -80,48 +80,58 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -375 },
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, length = 4, spread = 2, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -55, maxDamage = -160 },
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -40, maxDamage = -135, range = 1, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK},
+	{name ="combat", interval = 2000, chance = 18, type = COMBAT_FIREDAMAGE, minDamage = -45, maxDamage = -150, range = 7, radius = 6, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -165, length = 4, spread = 2, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 15,
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_HEALING, minDamage = 175, maxDamage = 505, effect = CONST_ME_MAGIC_BLUE},
-	{name ="speed", interval = 2000, chance = 12, speed = {min = 380, max = 380}, duration = 4000, effect = CONST_ME_MAGIC_RED},
-	{name ="invisible", interval = 3000, chance = 20, duration = 5000, effect = CONST_ME_MAGIC_RED}
+	defense = 24,
+	armor = 28,
+	{ name = "combat", interval = 4000, chance = 10, type = COMBAT_HEALING, minDamage = 45, maxDamage = 85, effect = CONST_ME_MAGIC_BLUE },
+	{ name = "speed", interval = 2000, chance = 10, speed = { min = 380, max = 380 }, duration = 4000, effect = CONST_ME_MAGIC_RED },
+	{ name = "invisible", interval = 3000, chance = 8, duration = 3000, effect = CONST_ME_MAGIC_RED },
 }
 
 monster.maxSummons = 2
 monster.summons = {
-	{name = "diabolic imp", chance = 30, interval = 5500, max = 2}
+	{name = "diabolic imp", chance = 10, interval = 5500, max = 2}
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 79},
-	{id = 2920, chance = 15000},
-	{id = 6558, chance = 2222},
-	{name = "blank rune", chance = 18000},
-	{name = "imperor's trident", chance = 100000},
-	{id = 6299, chance = 999},
-	{name = "brass armor", chance = 6577},
-	{id = 2853, chance = 100000, child = {
-			{id = 3451, chance = 20000},
-			{name = "infernal bolt", chance = 5000, maxCount = 5},
-			{name = "brass armor", chance = 6577},
-			{name = "necrotic rod", chance = 833},
-			{name = "chain armor", chance = 7887},
-			{name = "soul orb", chance = 5666},
-			{name = "magma coat", chance = 2000},
-			{name = "magma monocle", chance = 2000},
-			{name = "magma boots", chance = 2000},
-			{name = "demonic essence", chance = 7777},
-			{name = "small amethyst", chance = 8888},
-			{id = 3049, chance = 4555}
-		}
-	}
+	-- Oro y consumibles nivel 69
+	{ name = "gold coin", chance = 90000, maxCount = 175 },
+	{ name = "ham", chance = 65000, maxCount = 3 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 4500 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Materiales de addon originales
+	{ name = "demonic essence", chance = 10000 },
+	{ name = "soul orb", chance = 7000 },
+	{ id = 12413, chance = 28000 },
+	-- Plate Set: progresion mejorada
+	{ name = "plate armor", chance = 12500 },
+	{ name = "plate legs", chance = 12000 },
+	{ name = "steel helmet", chance = 13000 },
+	{ name = "bonelord shield", chance = 12000 },
+	-- Knight Set
+	{ name = "knight armor", chance = 6500 },
+	{ name = "knight legs", chance = 6000 },
+	{ name = "knight axe", chance = 5200 },
+	{ name = "devil helmet", chance = 4800 },
+	{ name = "tower shield", chance = 4300 },
+	-- Crown Set: muy raro
+	{ name = "crown armor", chance = 750 },
+	{ name = "crown legs", chance = 750 },
+	{ name = "crown helmet", chance = 900 },
+	{ name = "crown shield", chance = 650 },
+	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 3600 },
+	{ name = "fire axe", chance = 4100 },
+	{ name = "dragonbone staff", chance = 3600 },
+	{ name = "imperor's trident", chance = 100000 }, -- recompensa unica original preservada
 }
 
 mType:register(monster)

@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 95000
-monster.maxHealth = 95000
+monster.health = 7800
+monster.maxHealth = 7800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6332
@@ -79,35 +79,52 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -560, maxDamage = -875 },
-	{name ="combat", interval = 1500, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -875, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 1000, chance = 150, type = COMBAT_EARTHDAMAGE, minDamage = -220, maxDamage = -875, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -305, maxDamage = -875, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -335, maxDamage = -875, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -70, maxDamage = -185 },
+	{name ="combat", interval = 1500, chance = 22, type = COMBAT_ENERGYDAMAGE, minDamage = -55, maxDamage = -165, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 2000, chance = 23, type = COMBAT_EARTHDAMAGE, minDamage = -65, maxDamage = -165, length = 8, spread = 3, effect = CONST_ME_POISONAREA},
+	{name ="combat", interval = 2000, chance = 18, type = COMBAT_PHYSICALDAMAGE, minDamage = -60, maxDamage = -170, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="combat", interval = 3000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -65, maxDamage = -180, range = 7, radius = 6, target = false, effect = CONST_ME_LOSEENERGY}
 }
 
 monster.defenses = {
-	defense = 55,
-	armor = 50,
-	mitigation = 2.00,
-	{ name = "combat", interval = 3500, chance = 50, type = COMBAT_HEALING, minDamage = 1200, maxDamage = 2000, effect = CONST_ME_MAGIC_BLUE, target = false },
+	defense = 38,
+	armor = 35,
+	mitigation = 0.8,
+	{ name = "combat", interval = 5000, chance = 8, type = COMBAT_HEALING, minDamage = 50, maxDamage = 110, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "gold coin", chance = 50000, maxCount = 90 },
-	{ id = 3091, chance = 10000 }, -- sword ring
-	{ name = "broadsword", chance = 4000 },
-	{ name = "magic plate armor", chance = 2000 },
-	{ name = "skull helmet", chance = 50000 },
-	{ name = "soul orb", chance = 10000 },
-	{ id = 6299, chance = 4000 }, -- death ring
-	{ name = "demonic essence", chance = 1538 },
-	{ name = "dragonbone staff", chance = 50000 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
+	-- Oro y consumibles nivel 69
+	{ name = "gold coin", chance = 90000, maxCount = 220 },
+	{ name = "ham", chance = 70000, maxCount = 3 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 4500 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Materiales de addon originales
+	{ name = "demonic essence", chance = 12000 },
+	{ name = "soul orb", chance = 12000 },
+	{ id = 12413, chance = 34000 },
+	-- Plate Set: progresion mejorada
+	{ name = "plate armor", chance = 14000 },
+	{ name = "plate legs", chance = 13500 },
+	{ name = "steel helmet", chance = 14500 },
+	{ name = "bonelord shield", chance = 13500 },
+	-- Knight Set
+	{ name = "knight armor", chance = 7200 },
+	{ name = "knight legs", chance = 6800 },
+	{ name = "knight axe", chance = 6000 },
+	{ name = "devil helmet", chance = 5500 },
+	{ name = "tower shield", chance = 4800 },
+	-- Crown Set: muy raro
+	{ name = "crown armor", chance = 950 },
+	{ name = "crown legs", chance = 950 },
+	{ name = "crown helmet", chance = 1200 },
+	{ name = "crown shield", chance = 850 },
+	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 4500 },
+	{ name = "fire axe", chance = 4700 },
+	{ name = "dragonbone staff", chance = 4000 },
 }
 
 mType:register(monster)
