@@ -150,10 +150,6 @@ monster.loot = {
 	{ name = "crown legs", chance = 180 },
 	{ name = "crown helmet", chance = 240 },
 	{ name = "crown shield", chance = 180 },
-	-- Equipamiento especial original, muy raro
-	{ name = "skull staff", chance = 850 },
-	{ name = "golden armor", chance = 180 },
-	{ name = "ring of the sky", chance = 65 },
 }
 
 mType:register(monster)
