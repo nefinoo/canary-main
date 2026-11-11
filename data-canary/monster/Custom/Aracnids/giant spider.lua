@@ -34,8 +34,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1720
-monster.maxHealth = 1720
+monster.health = 980
+monster.maxHealth = 980
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -98,8 +98,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -201, maxDamage = -261},
-	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -24, maxDamage = -78},
+	{name ="poisonfield", interval = 1000, chance = 12, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
 }
 
 monster.defenses = {
@@ -110,23 +110,42 @@ monster.defenses = {
 
 monster.maxSummons = 2
 monster.summons = {
-	{name = "poison spider", chance = 30, interval = 1000, max = 2}
+	{name = "poison spider", chance = 12, interval = 3000, max = 2}
 }
 
 monster.loot = {
-	-- {id = 3053, chance = 700},
-	{name = "gold coin", chance = 100000, maxCount = 50},
-	{name = "plate armor", chance = 4000},
-	{name = "platinum amulet", chance = 2000},
-	{id = 5879, chance = 5000},
-	{name = "gold coin", chance = 100000, maxCount = 40},
-	{name = "steel helmet", chance = 5000},
-	{name = "knight armor", chance = 2000},
-	{name = "knight legs", chance = 1800},
-	{id = 12413, chance = 4000},
-	{id = 3399, chance = 100},
-	{id = 8095, chance = 100},
-	{id = 3408, chance = 100},
+	-- Gold y consumibles: progresion nivel 50
+	{ name = "gold coin", chance = 90000, maxCount = 65 },
+	{ name = "meat", chance = 42000, maxCount = 3 },
+	{ name = "ham", chance = 25000, maxCount = 2 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 9000 },
+	{ name = "strong health potion", chance = 2800 },
+	{ name = "strong mana potion", chance = 2200 },
+	-- Addon / objetos existentes
+	{ id = 5879, chance = 7000 }, -- spider silk: material de addon conservado (antes 5000)
+	{ name = "platinum amulet", chance = 2000 },
+	{ id = 12413, chance = 9500 }, -- bag de objetos de addon
+	-- Plate Set: comun respecto a Knight y Crown
+	{ name = "plate armor", chance = 6500 },
+	{ name = "plate legs", chance = 6000 },
+	{ name = "steel helmet", chance = 7000 },
+	{ name = "bonelord shield", chance = 6000 },
+	-- Armas (progresion de nivel 50)
+	{ name = "barbarian axe", chance = 6000 },
+	{ name = "clerical mace", chance = 5500 },
+	{ name = "crimson sword", chance = 5500 },
+	-- Knight Set: aumenta frente al loot anterior
+	{ name = "knight armor", chance = 2500 },
+	{ name = "knight legs", chance = 2300 },
+	{ name = "knight axe", chance = 1500 },
+	{ name = "devil helmet", chance = 1200 },
+	{ name = "tower shield", chance = 1000 },
+	-- Crown Set: muy raro
+	{ name = "crown armor", chance = 95 },
+	{ name = "crown legs", chance = 95 },
+	{ name = "crown helmet", chance = 130 },
+	{ name = "crown shield", chance = 85 },
 }
 
 mType:register(monster)
