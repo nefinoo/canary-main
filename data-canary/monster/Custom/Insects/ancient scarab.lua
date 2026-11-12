@@ -84,10 +84,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -435, maxDamage = -1050, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000} },
-	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -400, maxDamage = -1080, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -310, maxDamage = -720, condition = {type = CONDITION_POISON, startDamage = 50, interval = 5000} },
+	{ name = "combat", interval = 3000, chance = 28, type = COMBAT_PHYSICALDAMAGE, minDamage = -315, maxDamage = -760, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
 	{ name = "speed", interval = 2000, chance = 10, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY },
-	{ name = "condition", interval = 4000, chance = 15, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -170, maxDamage = -490, radius = 3, target = false, effect = CONST_ME_POISONAREA }
+	{ name = "condition", interval = 4000, chance = 12, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -80, maxDamage = -220, radius = 3, target = false, effect = CONST_ME_POISONAREA }
 }
 
 monster.defenses = {
