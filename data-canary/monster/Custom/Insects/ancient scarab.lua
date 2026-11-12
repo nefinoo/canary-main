@@ -84,8 +84,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -420, maxDamage = -1020, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000} },
-	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -390, maxDamage = -1050, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -435, maxDamage = -1050, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000} },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -400, maxDamage = -1080, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
 	{ name = "speed", interval = 2000, chance = 10, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY },
 	{ name = "condition", interval = 4000, chance = 15, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -170, maxDamage = -490, radius = 3, target = false, effect = CONST_ME_POISONAREA }
 }
@@ -136,6 +136,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 2100 },
 	{ name = "crown helmet", chance = 2600 },
 	{ name = "crown shield", chance = 2000 },
+	{ id = 3055, chance = 6500 }, -- Platinum Amulet (Crown Set)
 	{ id = 10386, chance = 2000 }, -- Zaoan Shoes
 
 	-- { id = 51230, chance = 1250}, -- paladin helmet
