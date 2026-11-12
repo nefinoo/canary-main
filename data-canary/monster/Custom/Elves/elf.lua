@@ -83,9 +83,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -400 },
-	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -150, maxDamage = -420, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW },
-	{ name = "Berserk", interval = 6000, chance = 20, minDamage = -230, maxDamage = -460, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -215, maxDamage = -430 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -160, maxDamage = -450, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW },
+	{ name = "Berserk", interval = 6000, chance = 20, minDamage = -245, maxDamage = -490, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
 }
 
 monster.defenses = {
@@ -124,6 +124,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 340 },
 	{ name = "crown helmet", chance = 450 },
 	{ name = "crown shield", chance = 330 },
+	{ id = 3055, chance = 4000 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 850 },
 	{ name = "fire axe", chance = 1000 },
