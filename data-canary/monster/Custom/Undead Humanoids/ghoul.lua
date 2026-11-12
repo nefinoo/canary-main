@@ -20,7 +20,7 @@ monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5976
 monster.speed = 144
-monster.summonCost = 450
+monster.summonCost = 0
 
 monster.changeTarget = {
 	interval = 2000,
@@ -30,8 +30,8 @@ monster.changeTarget = {
 monster.flags = {
 	attackable = true,
 	hostile = true,
-	summonable = true,
-	convinceable = true,
+	summonable = false,
+	convinceable = false,
 	illusionable = true,
 	boss = false,
 	ignoreSpawnBlock = false,
@@ -78,13 +78,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1425},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_LIFEDRAIN, minDamage = -1165, maxDamage = -1425, range = 1, radius = 1, target = true}
+	{name = "melee", interval = 2000, chance = 100, minDamage = -205, maxDamage = -445},
+	{name = "combat", interval = 3000, chance = 22, type = COMBAT_LIFEDRAIN, minDamage = -100, maxDamage = -240, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
-	defense = 17,
-	armor = 8,
+	defense = 24,
+	armor = 22,
 	{name ="combat", interval = 1000, chance = 13, type = COMBAT_HEALING, minDamage = 9, maxDamage = 15, effect = CONST_ME_MAGIC_BLUE}
 }
 
