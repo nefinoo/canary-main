@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2550
-monster.maxHealth = 2550
+monster.health = 3400
+monster.maxHealth = 3400
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6047
@@ -78,10 +78,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 80, attack = 80, condition = {type = CONDITION_POISON, startDamage = 95, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -160, maxDamage = -190, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
-	{name ="speed", interval = 1000, chance = 34, speed = {min = -850, max = -850}, duration = 30000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -830, radius = 3, target = false, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, skill = 72, attack = 48, condition = {type = CONDITION_POISON, startDamage = 35, interval = 4000}},
+	{name ="combat", interval = 1000, chance = 22, type = COMBAT_EARTHDAMAGE, minDamage = -55, maxDamage = -155, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
+	{name ="speed", interval = 1000, chance = 15, speed = {min = -400, max = -400}, duration = 7000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_HITBYPOISON},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -85, maxDamage = -220, radius = 3, target = false, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
@@ -90,7 +90,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 90000, maxCount = 40 },
+	{ name = "gold coin", chance = 90000, maxCount = 65 },
 	{ name = "corncob", chance = 890 },
 	{ name = "dark mushroom", chance = 7692 },
 	{ name = "sling herb", chance = 446, maxCount = 2 },
@@ -98,6 +98,32 @@ monster.loot = {
 	{ name = "seeds", chance = 490 },
 	{ name = "carniphila seeds", chance = 4166 },
 	{ name = "carrot on a stick", chance = 1700 },
+	-- Curacion, recursos y addon bag (etapa 100+)
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 10000 },
+	{ name = "strong health potion", chance = 3500 },
+	{ name = "strong mana potion", chance = 3500 },
+	{ id = 12413, chance = 11000 },
+	-- Plate Set: loot frecuente
+	{ name = "plate armor", chance = 6000 },
+	{ name = "plate legs", chance = 6000 },
+	{ name = "steel helmet", chance = 6500 },
+	{ name = "bonelord shield", chance = 6000 },
+	-- Knight Set
+	{ name = "knight armor", chance = 3400 },
+	{ name = "knight legs", chance = 3300 },
+	{ name = "knight axe", chance = 2900 },
+	{ name = "devil helmet", chance = 2600 },
+	{ name = "tower shield", chance = 2200 },
+	-- Crown Set: muy raro
+	{ name = "crown armor", chance = 400 },
+	{ name = "crown legs", chance = 400 },
+	{ name = "crown helmet", chance = 450 },
+	{ name = "crown shield", chance = 350 },
+	-- Armas raras
+	{ name = "fire sword", chance = 2500 },
+	{ name = "fire axe", chance = 2800 },
+	{ name = "dragonbone staff", chance = 2200 },
 }
 
 mType:register(monster)
