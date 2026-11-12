@@ -75,7 +75,7 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "gold coin", chance = 95000, maxCount = 45 },
-	{ name = "fish", chance = 45000, maxCount = 2 },
+	{ id = 3578, chance = 45000, maxCount = 2 },
 	{ name = "health potion", chance = 4000 },
 	{ name = "mana potion", chance = 4000 },
 	{ name = "bloody pincers", chance = 6980 }, -- material de addon conservado
