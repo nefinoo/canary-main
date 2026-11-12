@@ -120,6 +120,8 @@ monster.loot = {
 	{name = "green gem", chance = 2000},
 	{id = 3082, chance = 5500},
 	{name = "demonic essence", chance = 1818},
+	-- Botas de progresion por set
+	{ id = 10386, chance = 1000 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)

@@ -143,6 +143,9 @@ monster.loot = {
 	{ name = "crown legs", chance = 110 },
 	{ name = "crown helmet", chance = 150 },
 	{ name = "crown shield", chance = 100 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1200 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 100 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)

@@ -122,6 +122,9 @@ monster.loot = {
 	{ name = "fire sword", chance = 1650 },
 	{ name = "fire axe", chance = 2200 },
 	{ name = "dragonbone staff", chance = 1300 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1700 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 900 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
