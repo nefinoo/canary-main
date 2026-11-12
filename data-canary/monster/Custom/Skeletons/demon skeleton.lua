@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 15500
-monster.maxHealth = 15500
+monster.health = 22500
+monster.maxHealth = 22500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5963
@@ -78,35 +78,50 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1223, maxDamage = -1500},
-	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -1223, maxDamage = -1500, range = 1, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -330, maxDamage = -820 },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -360, maxDamage = -900, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 25
+	defense = 34,
+	armor = 42
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "platinum coin", chance = 50000, maxCount = 10},
-	-- {id = 7366, chance = 50},
-	-- {id = 7426, chance = 50 }, 
-	-- {id = 7420, chance = 50 }, 
-	-- {id = 3296, chance = 50},
-	-- {id = 7437, chance = 50},
-	-- {name = "magic sword", chance = 100},
-	-- { id = 3319, chance = 100 }, 
-	-- { id = 3309, chance = 100 }, 
-	-- {id = 3341, chance = 100},
-	-- {name = "throwing star", chance = 100},
-	{name = "experience scroll", chance = 950, maxCount = 2},
-	{name = "magic plate armor", chance = 130},
-	{name = "fire axe", chance = 1500},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
-	{name = "violet gem", chance = 500},
-	{name = "demonrage sword", chance = 410},
+	-- Dinero y consumibles; una sola tirada principal de moneda
+	{ name = "platinum coin", chance = 90000, maxCount = 7 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 15000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 10000 },
+	-- Gemas originales y materiales de addon (si aplica)
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ name = "violet gem", chance = 500 },
+	{ id = 12413, chance = 16000 }, -- bolsa de addon
+	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
+	{ name = "experience scroll", chance = 280 },
+	-- Plate Set
+	{ name = "plate armor", chance = 3000 },
+	{ name = "plate legs", chance = 2800 },
+	{ name = "steel helmet", chance = 3100 },
+	{ name = "bonelord shield", chance = 2600 },
+	-- Knight Set
+	{ name = "knight armor", chance = 2500 },
+	{ name = "knight legs", chance = 2400 },
+	{ name = "knight axe", chance = 2200 },
+	{ name = "devil helmet", chance = 1950 },
+	{ name = "tower shield", chance = 1700 },
+	-- Crown Set
+	{ name = "crown armor", chance = 1000 },
+	{ name = "crown legs", chance = 1000 },
+	{ name = "crown helmet", chance = 1300 },
+	{ name = "crown shield", chance = 900 },
+	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
+	{ name = "fire sword", chance = 1650 },
+	{ name = "fire axe", chance = 2200 },
+	{ name = "dragonbone staff", chance = 1300 },
 }
 
 mType:register(monster)
