@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 8000
-monster.maxHealth = 8000
+monster.health = 8800
+monster.maxHealth = 8800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5993
@@ -81,8 +81,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name = "melee", interval = 2000, chance = 100, minDamage = -155, maxDamage = -320},
-	{name = "combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -160, range = 1, radius = 1, target = true}
+	{name = "melee", interval = 2000, chance = 100, minDamage = -175, maxDamage = -355},
+	{name = "combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -70, maxDamage = -175, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
@@ -91,6 +91,25 @@ monster.defenses = {
 }
 
 monster.loot = {
+
+	-- Moneda y consumibles (nivel 450; 44 ghosts en el respawn)
+	{ name = "platinum coin", chance = 75000, maxCount = 2 },
+	{ name = "strong health potion", chance = 8000 },
+	{ name = "strong mana potion", chance = 8000 },
+	-- Knight Set: poco frecuente
+	{ name = "knight armor", chance = 800 },
+	{ name = "knight legs", chance = 750 },
+	{ name = "knight axe", chance = 650 },
+	{ name = "devil helmet", chance = 600 },
+	{ name = "tower shield", chance = 550 },
+	{ id = 3079, chance = 550 }, -- Boots of Haste
+	-- Crown Set: muy raro
+	{ name = "crown armor", chance = 250 },
+	{ name = "crown legs", chance = 240 },
+	{ name = "crown helmet", chance = 300 },
+	{ name = "crown shield", chance = 220 },
+	{ id = 10386, chance = 220 }, -- Zaoan Shoes
+	{ id = 3055, chance = 3000 }, -- Platinum Amulet
 	{name = "gold coin", chance = 100000, maxCount = 15},
 	{name = "sandals", chance = 10000},
 	{name = "combat knife", chance = 10000},
