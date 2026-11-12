@@ -109,10 +109,8 @@ monster.loot = {
 	{ id = 10386, chance = 300 }, -- Zaoan Shoes
 	{ id = 3055, chance = 3500 }, -- Platinum Amulet
 	{name = "platinum coin", chance = 80000, maxCount = 2},
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 30},
-	{id = 2920, chance = 20000},
-	{name = "brown piece of cloth", chance = 2500},
+	{ name = "platinum coin", chance = 80000, maxCount = 2 },
+	{ name = "brown piece of cloth", chance = 2500 }, -- material original conservado
 }
 
 mType:register(monster)
