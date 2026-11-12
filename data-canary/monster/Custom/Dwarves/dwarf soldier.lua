@@ -93,9 +93,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -45, maxDamage = -120 },
-	{name ="combat", interval = 4000, chance = 48, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -165, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -55, maxDamage = -190, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -50, maxDamage = -135 },
+	{name ="combat", interval = 4000, chance = 48, type = COMBAT_PHYSICALDAMAGE, minDamage = -55, maxDamage = -185, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -60, maxDamage = -215, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -117,7 +117,7 @@ monster.loot = {
 	{ id = 12413, chance = 13000 },
 	-- Gemas originales de la zona
 	{ name = "small ruby", chance = 6500, maxCount = 2 },
-	{ name = "red gem", chance = 350 },
+	{ id = 3039, chance = 350 },
 	-- Equipo progresivo
 	{ name = "plate armor", chance = 5800 },
 	{ name = "plate legs", chance = 5500 },
@@ -133,6 +133,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 350 },
 	{ name = "crown helmet", chance = 450 },
 	{ name = "crown shield", chance = 320 },
+	{ id = 3055, chance = 3000 }, -- Platinum Amulet (Crown Set)
 	-- Armas raras
 	{ name = "fire sword", chance = 1600 },
 	{ name = "fire axe", chance = 1400 },
