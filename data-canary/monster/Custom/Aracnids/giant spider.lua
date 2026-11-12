@@ -135,7 +135,7 @@ monster.loot = {
 	-- Armas (progresion de nivel 50)
 	{ name = "barbarian axe", chance = 6000 },
 	{ name = "clerical mace", chance = 5500 },
-	{ name = "crimson sword", chance = 5500 },
+	{ id = 7385, chance = 5500 },
 	-- Knight Set: aumenta frente al loot anterior
 	{ name = "knight armor", chance = 2500 },
 	{ name = "knight legs", chance = 2300 },
