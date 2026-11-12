@@ -149,6 +149,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 180 },
 	{ name = "crown helmet", chance = 240 },
 	{ name = "crown shield", chance = 180 },
+	{ id = 3055, chance = 2000 }, -- Platinum Amulet (Crown Set)
 	-- Botas de progresion por set
 	{ id = 3079, chance = 1600 }, -- Boots of Haste: Knight Set
 	{ id = 10386, chance = 180 }, -- Zaoan Shoes: Crown Set
