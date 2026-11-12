@@ -122,6 +122,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 950 },
 	{ name = "crown helmet", chance = 1200 },
 	{ name = "crown shield", chance = 850 },
+	{ id = 3055, chance = 3000 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 4500 },
 	{ name = "fire axe", chance = 4700 },
