@@ -133,7 +133,7 @@ monster.loot = {
 	-- Armas para la progresion de axe, club y sword
 	{ name = "barbarian axe", chance = 3200 },
 	{ name = "clerical mace", chance = 2600 },
-	{ name = "crimson sword", chance = 2600 },
+	{ id = 7385, chance = 2600 },
 	-- Botas de progresion por set
 	{ id = 3079, chance = 130 }, -- Boots of Haste: Knight Set
 }
