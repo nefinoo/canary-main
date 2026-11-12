@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Stonehome Rotworm cave (near Edron), Maze of Lost Souls, Tiquanda Dwarf Cave, Beregar, Cormaya Dwarf Cave.",
 }
 
-monster.health = 5300
-monster.maxHealth = 5300
+monster.health = 6500
+monster.maxHealth = 6500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6013
@@ -93,8 +93,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -230 },
+	{name ="combat", interval = 4000, chance = 38, type = COMBAT_ENERGYDAMAGE, minDamage = -60, maxDamage = -160, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -104,18 +104,39 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small sapphire", chance = 75000, maxCount = 5},
-	{name = "green gem", chance = 2500},
-	{name = "platinum coin", chance = 50000, maxCount = 3},
-	{name = "boots of haste", chance = 250},
-	{name = "golden legs", chance = 250},
-	{name = "magic plate armor", chance = 250},
-	{name = "experience scroll", chance = 800},
-	{ name = "iron ore", chance = 1050 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 160 },
+	{ name = "ham", chance = 50000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 4200 },
+	{ name = "experience scroll", chance = 180 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 16000 },
+	-- Gemas originales de la zona
+	{ name = "small sapphire", chance = 8000, maxCount = 2 },
+	{ name = "green gem", chance = 180 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 7500 },
+	{ name = "plate legs", chance = 7000 },
+	{ name = "steel helmet", chance = 8000 },
+	{ name = "bonelord shield", chance = 7000 },
+	{ name = "knight armor", chance = 4700 },
+	{ name = "knight legs", chance = 4300 },
+	{ name = "knight axe", chance = 3500 },
+	{ name = "devil helmet", chance = 3300 },
+	{ name = "tower shield", chance = 3000 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 650 },
+	{ name = "crown legs", chance = 650 },
+	{ name = "crown helmet", chance = 800 },
+	{ name = "crown shield", chance = 600 },
+	-- Armas raras
+	{ name = "fire sword", chance = 1900 },
+	{ name = "fire axe", chance = 2000 },
+	{ name = "dragonbone staff", chance = 1600 },
 }
 
 mType:register(monster)

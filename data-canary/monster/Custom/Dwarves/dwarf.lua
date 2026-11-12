@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Island of Destiny (Knights area), Beregar.",
 }
 
-monster.health = 4200
-monster.maxHealth = 4200
+monster.health = 4600
+monster.maxHealth = 4600
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6007
@@ -93,7 +93,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -318, maxDamage = -474 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -65, maxDamage = -175 },
 }
 
 monster.defenses = {
@@ -103,18 +103,39 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small diamond", chance = 75000, maxCount = 3},
-	{name = "yellow gem", chance = 2000},
-	{name = "platinum coin", chance = 25000, maxCount = 3},
-	{name = "boots of haste", chance = 550},
-	{name = "magic plate armor", chance = 250},
-	{name = "mastermind shield", chance = 250},
-	{name = "experience scroll", chance = 500},
-	{ name = "iron ore", chance = 1400 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 105 },
+	{ name = "meat", chance = 42000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 3000 },
+	{ name = "experience scroll", chance = 80 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 12000 },
+	-- Gemas originales de la zona
+	{ name = "small diamond", chance = 6000, maxCount = 2 },
+	{ name = "yellow gem", chance = 300 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 5500 },
+	{ name = "plate legs", chance = 5200 },
+	{ name = "steel helmet", chance = 6000 },
+	{ name = "bonelord shield", chance = 5200 },
+	{ name = "knight armor", chance = 3500 },
+	{ name = "knight legs", chance = 3100 },
+	{ name = "knight axe", chance = 2700 },
+	{ name = "devil helmet", chance = 2400 },
+	{ name = "tower shield", chance = 2100 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 300 },
+	{ name = "crown legs", chance = 300 },
+	{ name = "crown helmet", chance = 400 },
+	{ name = "crown shield", chance = 280 },
+	-- Armas raras
+	{ name = "fire sword", chance = 1400 },
+	{ name = "fire axe", chance = 1500 },
+	{ name = "dragonbone staff", chance = 1300 },
 }
 
 mType:register(monster)

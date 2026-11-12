@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Tiquanda Dwarf Cave, Cormaya Dwarven Cave, Beregar Mines.",
 }
 
-monster.health = 4500
-monster.maxHealth = 4500
+monster.health = 4650
+monster.maxHealth = 4650
 monster.runHealth = 150
 monster.race = "blood"
 monster.corpse = 6015
@@ -95,32 +95,52 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -318, maxDamage = -574, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 4000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -550, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK},
-	{name ="combat", interval = 4000, chance = 50, type = COMBAT_MANADRAIN, minDamage = -318, maxDamage = -520, range = 7, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -40, maxDamage = -115 },
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -205, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -45, maxDamage = -165, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK},
+	{name ="combat", interval = 4000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -25, maxDamage = -110, range = 7, radius = 1, target = true}
 }
 
 monster.defenses = {
 	defense = 15,
 	armor = 15,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 200, maxDamage = 300, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 4000, chance = 10, type = COMBAT_HEALING, minDamage = 25, maxDamage = 70, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "small amethyst", chance = 75000, maxCount = 5},
-	{id = 3039, chance = 2500},
-	{name = "platinum coin", chance = 50000, maxCount = 3},
-	{name = "boots of haste", chance = 250},
-	{name = "giant sword", chance = 250},
-	{name = "royal helmet", chance = 250},
-	{name = "steel boots", chance = 250},
-	{name = "experience scroll", chance = 800},
-	{ name = "iron ore", chance = 1200 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 130 },
+	{ name = "dark mushroom", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 3500 },
+	{ name = "experience scroll", chance = 140 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 14500 },
+	-- Gemas originales de la zona
+	{ name = "small amethyst", chance = 6000, maxCount = 2 },
+	{ name = "red gem", chance = 300 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 5400 },
+	{ name = "plate legs", chance = 5100 },
+	{ name = "steel helmet", chance = 5900 },
+	{ name = "bonelord shield", chance = 5100 },
+	{ name = "knight armor", chance = 3900 },
+	{ name = "knight legs", chance = 3500 },
+	{ name = "knight axe", chance = 2900 },
+	{ name = "devil helmet", chance = 2700 },
+	{ name = "tower shield", chance = 2400 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 430 },
+	{ name = "crown legs", chance = 430 },
+	{ name = "crown helmet", chance = 520 },
+	{ name = "crown shield", chance = 390 },
+	-- Armas raras
+	{ name = "fire sword", chance = 1300 },
+	{ name = "fire axe", chance = 1300 },
+	{ name = "dragonbone staff", chance = 1900 },
 }
 
 mType:register(monster)

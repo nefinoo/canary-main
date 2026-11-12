@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Mount Sternum Undead Cave, Beregar, Tiquanda Dwarf Cave, Cormaya Dwarf Cave.",
 }
 
-monster.health = 4700
-monster.maxHealth = 4700
+monster.health = 5000
+monster.maxHealth = 5000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6014
@@ -93,9 +93,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 6000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -45, maxDamage = -120 },
+	{name ="combat", interval = 4000, chance = 48, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -165, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -55, maxDamage = -190, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -104,20 +104,39 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small ruby", chance = 75000, maxCount = 3},
-	{id = 3039, chance = 2100},
-	{name = "platinum coin", chance = 35000, maxCount = 3},
-	{name = "throwing star", chance = 300},
-	{name = "dragon lance", chance = 250},
-	{name = "golden armor", chance = 250},
-	{name = "magic plate armor", chance = 250},
-	{name = "demon shield", chance = 250},
-	{name = "experience scroll", chance = 600},
-	{ name = "iron ore", chance = 700 },
-	{id = 12413, chance = 10000},
-	{id = 3399, chance = 200},
-	{id = 8095, chance = 200},
-	{id = 3408, chance = 200},
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 115 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 2500 },
+	{ name = "experience scroll", chance = 105 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 13000 },
+	-- Gemas originales de la zona
+	{ name = "small ruby", chance = 6500, maxCount = 2 },
+	{ name = "red gem", chance = 350 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 5800 },
+	{ name = "plate legs", chance = 5500 },
+	{ name = "steel helmet", chance = 6100 },
+	{ name = "bonelord shield", chance = 5500 },
+	{ name = "knight armor", chance = 3700 },
+	{ name = "knight legs", chance = 3500 },
+	{ name = "knight axe", chance = 2900 },
+	{ name = "devil helmet", chance = 2700 },
+	{ name = "tower shield", chance = 2400 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 350 },
+	{ name = "crown legs", chance = 350 },
+	{ name = "crown helmet", chance = 450 },
+	{ name = "crown shield", chance = 320 },
+	-- Armas raras
+	{ name = "fire sword", chance = 1600 },
+	{ name = "fire axe", chance = 1400 },
+	{ name = "dragonbone staff", chance = 1600 },
 }
 
 mType:register(monster)
