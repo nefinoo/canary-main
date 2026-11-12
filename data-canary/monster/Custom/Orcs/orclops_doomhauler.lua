@@ -81,6 +81,13 @@ monster.voices = {
 }
 
 monster.loot = {
+	-- Materiales originales de addons y crafting recuperados
+	{ id = 24380, chance = 10000 }, -- bone toothpick
+	{ id = 24381, chance = 3500 }, -- beetle carapace
+	{ id = 24382, chance = 8000 }, -- bug meat
+	{ id = 23811, chance = 2000 }, -- reinvigorating seeds
+	{ id = 2966, chance = 800 }, -- war drum
+	{ id = 17828, chance = 300 }, -- pair of iron fists
 	{ id = 12413, chance = 2000 }, -- bolsa de items de addon aleatorios (2.000%)
 	{ name = "gold coin", chance = 100000, maxCount = 34 },
 	{ name = "ham", chance = 45000, maxCount = 3 },

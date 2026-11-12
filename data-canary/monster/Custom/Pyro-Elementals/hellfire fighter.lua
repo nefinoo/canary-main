@@ -104,6 +104,8 @@ monster.defenses = {
 }
 
 monster.loot = {
+	-- Materiales originales de addons y crafting recuperados
+	{ name = "burnt scroll", chance = 5000 },
 	-- Oro y consumibles nivel 69
 	{ name = "gold coin", chance = 90000, maxCount = 95 },
 	{ name = "ham", chance = 40000, maxCount = 3 },
