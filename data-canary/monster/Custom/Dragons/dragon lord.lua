@@ -133,7 +133,7 @@ monster.loot = {
 	-- Armas de la etapa
 	{ name = "barbarian axe", chance = 7000 },
 	{ name = "clerical mace", chance = 6500 },
-	{ name = "crimson sword", chance = 6500 },
+	{ id = 7385, chance = 6500 },
 	-- Knight Set: raro
 	{ name = "knight armor", chance = 3200 },
 	{ name = "knight legs", chance = 3000 },
