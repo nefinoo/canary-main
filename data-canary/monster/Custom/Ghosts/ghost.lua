@@ -110,20 +110,7 @@ monster.loot = {
 	{ name = "crown shield", chance = 220 },
 	{ id = 10386, chance = 220 }, -- Zaoan Shoes
 	{ id = 3055, chance = 3000 }, -- Platinum Amulet
-	{name = "gold coin", chance = 100000, maxCount = 15},
-	{name = "sandals", chance = 10000},
-	{name = "combat knife", chance = 10000},
-	{name = "white piece of cloth", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "morning star", chance = 6666},
-			{name = "shadow herb", chance = 20000, maxCount = 2},
-			{name = "ancient shield", chance = 1666},
-			{name = "snakebite rod", chance = 1333},
-			{id = 3049, chance = 1538},
-			{name = "clerical mace", chance = 10000},
-			{id = 1962, chance = 5000}
-		}
-	}
+	{ name = "white piece of cloth", chance = 5000 }, -- material original conservado
 }
 
 mType:register(monster)
