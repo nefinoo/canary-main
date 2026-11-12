@@ -113,10 +113,8 @@ monster.defenses = {
 	{name ="invisible", interval = 5000, chance = 7, duration = 3000, effect = CONST_ME_MAGIC_RED}
 }
 
-monster.maxSummons = 1
-monster.summons = {
-	{name = "stone golem", chance = 6, interval = 3000, max = 1}
-}
+monster.maxSummons = 0
+monster.summons = {}
 
 monster.loot = {
 	{ name = "experience scroll", chance = 40 }, -- Bronze ID 51670; venta a Nephy 50000 gp
