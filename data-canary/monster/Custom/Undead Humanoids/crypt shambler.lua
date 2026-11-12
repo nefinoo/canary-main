@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 10200
-monster.maxHealth = 10200
+monster.health = 11500
+monster.maxHealth = 11500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6029
@@ -82,29 +82,49 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -907, maxDamage = -1149},
-	{name ="combat", interval = 4000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -907, maxDamage = -1349, range = 1, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -220, maxDamage = -520 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -260, maxDamage = -620, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 15
+	defense = 28,
+	armor = 27
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 3},
-	{name = "platinum coin", chance = 50000, maxCount = 8},
-	{name = "experience scroll", chance = 850},
-	{name = "golden legs", chance = 300},
-    {name = "demon shield", chance = 500},
-    {name = "gold ring", chance = 800},    
-    {name = "giant sword", chance = 728},
-	{name = "yellow gem", chance = 3500},
-	{name = "green gem", chance = 2000},
-	{id = 12413, chance = 12250},
-	{id = 3399, chance = 300},
-	{id = 8095, chance = 300},
-	{id = 3408, chance = 300},
+	-- Una sola tirada de moneda para equilibrar la economia
+	{ name = "platinum coin", chance = 85000, maxCount = 4 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 9000 },
+	-- Gemas y materiales originales de addon
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ id = 12413, chance = 13000 }, -- bag aleatoria de addon
+	-- Bronze Experience Scroll (ID 51670): extremadamente raro
+	{ name = "experience scroll", chance = 160 },
+	-- Plate Set
+	{ name = "plate armor", chance = 2100 },
+	{ name = "plate legs", chance = 2000 },
+	{ name = "steel helmet", chance = 2300 },
+	{ name = "bonelord shield", chance = 1900 },
+	-- Knight Set
+	{ name = "knight armor", chance = 1400 },
+	{ name = "knight legs", chance = 1350 },
+	{ name = "knight axe", chance = 1150 },
+	{ name = "devil helmet", chance = 1100 },
+	{ name = "tower shield", chance = 950 },
+	-- Crown Set: recompensas raras de zona
+	{ name = "crown armor", chance = 400 },
+	{ name = "crown legs", chance = 420 },
+	{ name = "crown helmet", chance = 500 },
+	{ name = "crown shield", chance = 380 },
+	-- Armas raras
+	{ name = "fire sword", chance = 1300 },
+	{ name = "fire axe", chance = 1450 },
+	{ name = "dragonbone staff", chance = 1250 },
 }   	
 mType:register(monster)
 
