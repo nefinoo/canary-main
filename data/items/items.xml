@@ -8620,7 +8620,7 @@
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="It's the Sword of Valor"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="48"/>
+		<attribute key="attack" value="44"/>
 		<attribute key="defense" value="40"/>
 		<attribute key="weight" value="4200"/>
 		<attribute key="script" value="moveevent;weapon">
@@ -8898,7 +8898,7 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="It is blessed by the gods of Tibia"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="52"/>
+		<attribute key="attack" value="46"/>
 		<attribute key="extradef" value="1"/>
 		<attribute key="defense" value="35"/>
 		<attribute key="weight" value="12500"/>
@@ -9067,7 +9067,7 @@
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="You feel the power of this mighty axe"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="50"/>
+		<attribute key="attack" value="45"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="30"/>
 		<attribute key="weight" value="9900"/>
@@ -9874,7 +9874,7 @@
 	</item>
 	<item id="3381" article="a" name="crown armor">
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="13"/>
+		<attribute key="armor" value="14"/>
 		<attribute key="weight" value="9900"/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="life leech" value="3"/>
@@ -9892,7 +9892,7 @@
 	</item>
 	<item id="3382" name="crown legs">
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="8"/>
+		<attribute key="armor" value="9"/>
 		<attribute key="weight" value="6500"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="legs"/>
@@ -9917,7 +9917,7 @@
 	</item>
 	<item id="3385" article="a" name="crown helmet">
 		<attribute key="primarytype" value="helmets"/>
-		<attribute key="armor" value="7"/>
+		<attribute key="armor" value="8"/>
 		<attribute key="weight" value="2950"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -9950,50 +9950,50 @@
 		</attribute>
 	</item>
 	<item id="3387" article="a" name="demon helmet">
-		<attribute key="maxmanapoints" value="500"/>
+		<!-- <attribute key="maxmanapoints" value="500"/> -->
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="70"/>
+		<attribute key="armor" value="10"/>
 		<attribute key="weight" value="2950"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Core" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-			<attribute key="Deadly Tornado" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Core" value="base"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+			<!-- <attribute key="Deadly Tornado" value="base"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
 	<item id="3388" article="a" name="demon armor">
-		<attribute key="maxhitpoints" value="500"/>
+		<!-- <attribute key="maxhitpoints" value="500"/> -->
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="100"/>
+		<attribute key="armor" value="17"/>
 		<attribute key="weight" value="8000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Berseker" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Berseker" value="base"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
 	<item id="3389" name="demon legs">
-		<attribute key="maxmanapoints" value="250"/>
-		<attribute key="maxhitpoints" value="250"/>
+		<!-- <attribute key="maxmanapoints" value="250"/> -->
+		<!-- <attribute key="maxhitpoints" value="250"/> -->
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="85"/>
+		<attribute key="armor" value="11"/>
 		<attribute key="weight" value="7000"/>
-		<attribute key="augments" value="1">
-			<attribute key="Deadly Caldera" value="base">
-				<attribute key="value" value="10"/>
-			</attribute>
-		</attribute>
+		<!-- <attribute key="augments" value="1"> -->
+			<!-- <attribute key="Deadly Caldera" value="base"> -->
+				<!-- <attribute key="value" value="10"/> -->
+			<!-- </attribute> -->
+		<!-- </attribute> -->
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="legs"/>
@@ -10370,7 +10370,7 @@
 	<item id="3419" article="a" name="crown shield">
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="defense" value="32"/>
+		<attribute key="defense" value="35"/>
 		<attribute key="weight" value="6200"/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="elemental protection death" value="3"/>
@@ -17680,11 +17680,11 @@
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="defense" value="50"/>
-		<attribute key="skillshield" value="5"/>
+		<attribute key="defense" value="39"/>
+		<!-- <attribute key="skillshield" value="5"/> -->
 		<attribute key="weight" value="3200"/>
 		<attribute key="script" value="moveevent">
-			<attribute key="level" value="1000"/>
+			<attribute key="level" value="500"/>
 			<attribute key="slot" value="shield"/>
 		</attribute>
 	</item>
