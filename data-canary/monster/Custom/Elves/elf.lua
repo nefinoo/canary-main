@@ -128,10 +128,6 @@ monster.loot = {
 	{ name = "fire sword", chance = 850 },
 	{ name = "fire axe", chance = 1000 },
 	{ name = "dragonbone staff", chance = 800 },
-	-- Objetos raros originales preservados
-	{ id = 3399, chance = 250 },
-	{ id = 8095, chance = 250 },
-	{ id = 3408, chance = 250 },
 }
 
 monster.raceId = 62
