@@ -94,10 +94,10 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -290, maxDamage = -600 },
-	{ name = "combat", interval = 4000, chance = 22, type = COMBAT_PHYSICALDAMAGE, minDamage = -310, maxDamage = -720, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -305, maxDamage = -630 },
+	{ name = "combat", interval = 4000, chance = 22, type = COMBAT_PHYSICALDAMAGE, minDamage = -325, maxDamage = -755, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED },
 	{ name = "speed", interval = 2000, chance = 8, speed = {min = -320, max = -320}, duration = 8000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED },
-	{ name = "combat", interval = 4000, chance = 28, type = COMBAT_PHYSICALDAMAGE, minDamage = -260, maxDamage = -650, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK }
+	{ name = "combat", interval = 4000, chance = 28, type = COMBAT_PHYSICALDAMAGE, minDamage = -275, maxDamage = -685, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK }
 }
 
 monster.defenses = {
@@ -140,6 +140,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 730 },
 	{ name = "crown helmet", chance = 900 },
 	{ name = "crown shield", chance = 680 },
+	{ id = 3055, chance = 5000 }, -- Platinum Amulet (Crown Set)
 	-- Armas raras
 	{ name = "fire sword", chance = 1900 },
 	{ name = "fire axe", chance = 2200 },
