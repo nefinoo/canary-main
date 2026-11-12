@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "ghost"
 monster.description = "a ghost"
-monster.experience = 7000000
+monster.experience = 5800000
 monster.outfit = {
 	lookType = 48,
 	lookHead = 20,
@@ -14,13 +14,13 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 150
-monster.maxHealth = 150
+monster.health = 8000
+monster.maxHealth = 8000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5993
 monster.speed = 160
-monster.summonCost = 100
+monster.summonCost = 0
 
 monster.changeTarget = {
 	interval = 5000,
@@ -30,8 +30,8 @@ monster.changeTarget = {
 monster.flags = {
 	attackable = true,
 	hostile = true,
-	summonable = true,
-	convinceable = true,
+	summonable = false,
+	convinceable = false,
 	illusionable = false,
 	boss = false,
 	ignoreSpawnBlock = false,
@@ -68,7 +68,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 100},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 20},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 100},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
@@ -81,13 +81,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 45, attack = 28},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -25, maxDamage = -45, range = 1, radius = 1, target = true}
+	{name = "melee", interval = 2000, chance = 100, minDamage = -155, maxDamage = -320},
+	{name = "combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -60, maxDamage = -160, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 10
+	defense = 22,
+	armor = 24
 }
 
 monster.loot = {
