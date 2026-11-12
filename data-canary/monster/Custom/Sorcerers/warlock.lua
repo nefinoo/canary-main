@@ -119,6 +119,7 @@ monster.summons = {
 }
 
 monster.loot = {
+	{ name = "experience scroll", chance = 40 }, -- Bronze ID 51670; venta a Nephy 50000 gp
 	-- Oro, comida y pociones de caceria (nivel 50)
 	{ name = "gold coin", chance = 90000, maxCount = 85 },
 	{ name = "cherry", chance = 35000, maxCount = 3 },

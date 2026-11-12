@@ -114,6 +114,7 @@ monster.summons = {
 }
 
 monster.loot = {
+	{ name = "experience scroll", chance = 25 }, -- Bronze ID 51670; venta a Nephy 50000 gp
 	-- Gold y consumibles: progresion nivel 50
 	{ name = "gold coin", chance = 90000, maxCount = 65 },
 	{ name = "meat", chance = 42000, maxCount = 3 },

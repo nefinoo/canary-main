@@ -94,6 +94,7 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ name = "experience scroll", chance = 350 }, -- Bronze ID 51670; venta a Nephy 50000 gp
 	-- Oro y consumibles nivel 69
 	{ name = "gold coin", chance = 90000, maxCount = 220 },
 	{ name = "ham", chance = 70000, maxCount = 3 },

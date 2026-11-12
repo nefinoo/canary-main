@@ -104,6 +104,7 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ name = "experience scroll", chance = 65 }, -- Bronze ID 51670; venta a Nephy 50000 gp
 	-- Materiales originales de addons y crafting recuperados
 	{ name = "burnt scroll", chance = 5000 },
 	-- Oro y consumibles nivel 69

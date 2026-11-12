@@ -90,6 +90,7 @@ monster.defenses = {
 }
 
 monster.loot = {
+	{ name = "experience scroll", chance = 120 }, -- Bronze ID 51670; venta a Nephy 50000 gp
 	{ name = "gold coin", chance = 90000, maxCount = 65 },
 	{ name = "corncob", chance = 890 },
 	{ name = "dark mushroom", chance = 7692 },
