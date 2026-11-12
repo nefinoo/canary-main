@@ -107,7 +107,7 @@ monster.loot = {
 	{ name = "strong health potion", chance = 9000 },
 	{ name = "strong mana potion", chance = 10000 },
 	-- Gemas originales y materiales de addon (si aplica)
-	{ name = "red gem", chance = 2000 },
+	{ id = 3039, chance = 2000 },
 	{ name = "violet gem", chance = 1000 },
 	{ id = 12413, chance = 25000 }, -- bolsa de addon
 	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
@@ -128,6 +128,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 2500 },
 	{ name = "crown helmet", chance = 3300 },
 	{ name = "crown shield", chance = 2200 },
+	{ id = 3055, chance = 6500 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
 	{ name = "fire sword", chance = 2800 },
 	{ name = "fire axe", chance = 3600 },
