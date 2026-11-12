@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 10000
-monster.maxHealth = 10000
+monster.health = 11000
+monster.maxHealth = 11000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5976
@@ -78,8 +78,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name = "melee", interval = 2000, chance = 100, minDamage = -205, maxDamage = -445},
-	{name = "combat", interval = 3000, chance = 22, type = COMBAT_LIFEDRAIN, minDamage = -100, maxDamage = -240, range = 1, radius = 1, target = true}
+	{name = "melee", interval = 2000, chance = 100, minDamage = -220, maxDamage = -480},
+	{name = "combat", interval = 3000, chance = 22, type = COMBAT_LIFEDRAIN, minDamage = -105, maxDamage = -250, range = 1, radius = 1, target = true}
 }
 
 monster.defenses = {
@@ -89,7 +89,26 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 64},
+
+	-- Consumibles y progresion nivel 450 (64 ghouls en el respawn)
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 8500 },
+	{ name = "mana potion", chance = 9500 },
+	-- Knight Set
+	{ name = "knight armor", chance = 1100 },
+	{ name = "knight legs", chance = 1050 },
+	{ name = "knight axe", chance = 850 },
+	{ name = "devil helmet", chance = 800 },
+	{ name = "tower shield", chance = 750 },
+	{ id = 3079, chance = 750 }, -- Boots of Haste
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 350 },
+	{ name = "crown legs", chance = 330 },
+	{ name = "crown helmet", chance = 420 },
+	{ name = "crown shield", chance = 300 },
+	{ id = 10386, chance = 300 }, -- Zaoan Shoes
+	{ id = 3055, chance = 3500 }, -- Platinum Amulet
+	{name = "platinum coin", chance = 80000, maxCount = 2},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "gold coin", chance = 100000, maxCount = 30},
 	{id = 2920, chance = 20000},
