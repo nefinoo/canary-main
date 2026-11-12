@@ -14,9 +14,9 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 450
-monster.maxHealth = 450
-monster.runHealth = 30
+monster.health = 11500
+monster.maxHealth = 11500
+monster.runHealth = 950
 monster.race = "blood"
 monster.corpse = 6027
 monster.speed = 250
@@ -83,29 +83,46 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 45, attack = 24},
-	{name ="combat", interval = 1000, chance = 24, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -110, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -300, maxDamage = -620 },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -290, maxDamage = -690, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 26,
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_HEALING, minDamage = 5, maxDamage = 15, effect = CONST_ME_MAGIC_BLUE}
+	defense = 30,
+	armor = 37,
+	{ name = "combat", interval = 4000, chance = 12, type = COMBAT_HEALING, minDamage = 30, maxDamage = 65, effect = CONST_ME_MAGIC_BLUE }
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "ham", chance = 33333, maxCount = 2},
-	{name = "meat", chance = 33333, maxCount = 3},
-	{name = "steel helmet", chance = 20000},
-	{name = "battle shield", chance = 25000},
-	{id = 3093, chance = 3333},
-	{name = "morning star", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "dark armor", chance = 2500},
-			{name = "gold coin", chance = 100000, maxCount = 5}
-		}
-	}
+	-- Moneda y consumibles para la etapa nivel 450
+	{ name = "platinum coin", chance = 85000, maxCount = 3 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 10000 },
+	{ id = 12413, chance = 16000 }, -- bolsa de addon
+	{ name = "experience scroll", chance = 250 }, -- ID 51670, muy raro
+	-- Plate Set
+	{ name = "plate armor", chance = 1000 },
+	{ name = "plate legs", chance = 950 },
+	{ name = "steel helmet", chance = 1100 },
+	{ name = "bonelord shield", chance = 900 },
+	-- Knight Set
+	{ name = "knight armor", chance = 1200 },
+	{ name = "knight legs", chance = 1150 },
+	{ name = "knight axe", chance = 1000 },
+	{ name = "devil helmet", chance = 950 },
+	{ name = "tower shield", chance = 900 },
+	-- Crown Set
+	{ name = "crown armor", chance = 700 },
+	{ name = "crown legs", chance = 680 },
+	{ name = "crown helmet", chance = 850 },
+	{ name = "crown shield", chance = 600 },
+	-- Armas de progresion
+	{ name = "fire sword", chance = 850 },
+	{ name = "fire axe", chance = 1100 },
+	{ name = "dragonbone staff", chance = 750 },
 }
 
 mType:register(monster)
