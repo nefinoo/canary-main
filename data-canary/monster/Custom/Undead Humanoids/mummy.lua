@@ -84,7 +84,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -240, maxDamage = -540, condition = {type = CONDITION_POISON, startDamage = 35, interval = 4000} },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -250, maxDamage = -565, condition = {type = CONDITION_POISON, startDamage = 35, interval = 4000} },
 	{ name = "combat", interval = 3000, chance = 18, type = COMBAT_LIFEDRAIN, minDamage = -190, maxDamage = -560, range = 1, radius = 1, target = true },
 	{ name = "speed", interval = 2000, chance = 8, speed = {min = -300, max = -300}, duration = 7000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED }
 }
@@ -123,6 +123,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 520 },
 	{ name = "crown helmet", chance = 600 },
 	{ name = "crown shield", chance = 460 },
+	{ id = 3055, chance = 4500 }, -- Platinum Amulet (Crown Set)
 	-- Armas raras
 	{ name = "fire sword", chance = 1450 },
 	{ name = "fire axe", chance = 1600 },
