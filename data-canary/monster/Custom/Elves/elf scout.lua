@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 6000
-monster.maxHealth = 6000
+monster.health = 7900
+monster.maxHealth = 7900
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6012
@@ -83,31 +83,55 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 6000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -160, maxDamage = -330 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -220, maxDamage = -430, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 6000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -410, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
 }
 
 monster.defenses = {
-	defense = 18,
-	armor = 7,
-	{name ="speed", interval = 4000, chance = 40, speed = {min = 0, max = 0}, duration = 0, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	defense = 20,
+	armor = 16,
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 250, max = 250}, duration = 7000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 3},
-	{name = "platinum coin", chance = 50000, maxCount = 5},
-	{name = "green gem", chance = 2500},
-	{name = "crown armor", chance = 1500},
-	{name = "crown legs", chance = 1000},
-	{name = "crown helmet", chance = 2000},
-	{name = "crown shield", chance = 2250},
-	{name = "experience scroll", chance = 600},
-	{ id = 5921, chance = 1130 }, -- heaven blossom
-	{id = 12413, chance = 12000},
-	{id = 3399, chance = 250},
-	{id = 8095, chance = 250},
-	{id = 3408, chance = 250},
+	-- Moneda: una sola tirada para evitar duplicacion de platinum coins
+	{ name = "platinum coin", chance = 80000, maxCount = 3 },
+	{ name = "ham", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 6500 },
+	{ name = "strong mana potion", chance = 6500 },
+	-- Gemas y materiales de addon originales
+	{ name = "green gem", chance = 2500 },
+	{ id = 5921, chance = 1200 }, -- heaven blossom
+	{ id = 12413, chance = 12000 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
+	{ name = "experience scroll", chance = 105 },
+	-- Plate Set
+	{ name = "plate armor", chance = 1800 },
+	{ name = "plate legs", chance = 1700 },
+	{ name = "steel helmet", chance = 1900 },
+	{ name = "bonelord shield", chance = 1700 },
+	-- Knight Set
+	{ name = "knight armor", chance = 1350 },
+	{ name = "knight legs", chance = 1250 },
+	{ name = "knight axe", chance = 1050 },
+	{ name = "devil helmet", chance = 950 },
+	{ name = "tower shield", chance = 850 },
+	-- Crown Set: recompensa rara de la zona
+	{ name = "crown armor", chance = 400 },
+	{ name = "crown legs", chance = 380 },
+	{ name = "crown helmet", chance = 470 },
+	{ name = "crown shield", chance = 350 },
+	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 900 },
+	{ name = "fire axe", chance = 1100 },
+	{ name = "dragonbone staff", chance = 850 },
+	-- Objetos raros originales preservados
+	{ id = 3399, chance = 250 },
+	{ id = 8095, chance = 250 },
+	{ id = 3408, chance = 250 },
 }
 
 

@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 5200
-monster.maxHealth = 7200
+monster.health = 8300
+monster.maxHealth = 8300
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6011
@@ -83,33 +83,57 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -318, maxDamage = -474 },
-	{name ="combat", interval = 4000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
-	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -318, maxDamage = -474, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -160, maxDamage = -300 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -190, maxDamage = -400, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW },
+	{ name = "combat", interval = 6000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -220, maxDamage = -450, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 15,
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE},
-	{name ="speed", interval = 4000, chance = 40, speed = {min = 0, max = 0}, duration = 0, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	defense = 23,
+	armor = 19,
+	{ name = "combat", interval = 4000, chance = 20, type = COMBAT_HEALING, minDamage = 45, maxDamage = 90, effect = CONST_ME_MAGIC_BLUE },
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 250, max = 250}, duration = 7000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 3},
-	{name = "platinum coin", chance = 50000, maxCount = 5},
-	{name = "violet gem", chance = 500},
-	{name = "yellow gem", chance = 2000},
-	{name = "crown armor", chance = 1500},
-	{name = "crown legs", chance = 1000},
-	{name = "crown helmet", chance = 2000},
-	{name = "crown shield", chance = 2250},
-	{name = "experience scroll", chance = 750},
-	{ name = "holy orchid", chance = 2100 },
-	{id = 12413, chance = 12000},
-	{id = 3399, chance = 250},
-	{id = 8095, chance = 250},
-	{id = 3408, chance = 250},
+	-- Moneda: una sola tirada para evitar duplicacion de platinum coins
+	{ name = "platinum coin", chance = 85000, maxCount = 3 },
+	{ name = "ham", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 6500 },
+	{ name = "strong mana potion", chance = 6500 },
+	-- Gemas y materiales de addon originales
+	{ name = "violet gem", chance = 500 },
+	{ name = "yellow gem", chance = 2000 },
+	{ name = "holy orchid", chance = 2400 },
+	{ id = 12413, chance = 12500 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
+	{ name = "experience scroll", chance = 145 },
+	-- Plate Set
+	{ name = "plate armor", chance = 1850 },
+	{ name = "plate legs", chance = 1750 },
+	{ name = "steel helmet", chance = 2000 },
+	{ name = "bonelord shield", chance = 1750 },
+	-- Knight Set
+	{ name = "knight armor", chance = 1550 },
+	{ name = "knight legs", chance = 1450 },
+	{ name = "knight axe", chance = 1200 },
+	{ name = "devil helmet", chance = 1100 },
+	{ name = "tower shield", chance = 950 },
+	-- Crown Set: recompensa rara de la zona
+	{ name = "crown armor", chance = 560 },
+	{ name = "crown legs", chance = 530 },
+	{ name = "crown helmet", chance = 670 },
+	{ name = "crown shield", chance = 490 },
+	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 1200 },
+	{ name = "fire axe", chance = 1300 },
+	{ name = "dragonbone staff", chance = 1100 },
+	-- Objetos raros originales preservados
+	{ id = 3399, chance = 250 },
+	{ id = 8095, chance = 250 },
+	{ id = 3408, chance = 250 },
 }
 
 monster.raceId = 63
