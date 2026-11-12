@@ -83,8 +83,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -300, maxDamage = -620 },
-	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -290, maxDamage = -690, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -315, maxDamage = -650 },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -305, maxDamage = -725, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
 }
 
 monster.defenses = {
@@ -119,6 +119,7 @@ monster.loot = {
 	{ name = "crown legs", chance = 680 },
 	{ name = "crown helmet", chance = 850 },
 	{ name = "crown shield", chance = 600 },
+	{ id = 3055, chance = 4500 }, -- Platinum Amulet (Crown Set)
 	-- Armas de progresion
 	{ name = "fire sword", chance = 850 },
 	{ name = "fire axe", chance = 1100 },
