@@ -128,6 +128,9 @@ monster.loot = {
 	{ name = "fire sword", chance = 850 },
 	{ name = "fire axe", chance = 1000 },
 	{ name = "dragonbone staff", chance = 800 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 800 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 330 }, -- Zaoan Shoes: Crown Set
 }
 
 monster.raceId = 62

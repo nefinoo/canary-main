@@ -113,10 +113,8 @@ monster.defenses = {
 	{name ="invisible", interval = 5000, chance = 7, duration = 3000, effect = CONST_ME_MAGIC_RED}
 }
 
-monster.maxSummons = 1
-monster.summons = {
-	{name = "stone golem", chance = 6, interval = 3000, max = 1}
-}
+monster.maxSummons = 0
+monster.summons = {}
 
 monster.loot = {
 	{ name = "experience scroll", chance = 40 }, -- Bronze ID 51670; venta a Nephy 50000 gp
@@ -151,6 +149,9 @@ monster.loot = {
 	{ name = "crown legs", chance = 180 },
 	{ name = "crown helmet", chance = 240 },
 	{ name = "crown shield", chance = 180 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1600 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 180 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)

@@ -133,6 +133,9 @@ monster.loot = {
 	{ name = "fire axe", chance = 4100 },
 	{ name = "dragonbone staff", chance = 3600 },
 	{ name = "imperor's trident", chance = 100000 }, -- recompensa unica original preservada
+	-- Botas de progresion por set
+	{ id = 3079, chance = 4300 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 650 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)

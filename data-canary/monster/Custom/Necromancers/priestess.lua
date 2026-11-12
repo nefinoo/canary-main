@@ -133,6 +133,9 @@ monster.loot = {
 	{ name = "fire axe", chance = 3600 },
 	{ name = "dragonbone staff", chance = 2800 },
 	{ id = 3341, chance = 100 }, -- Arcane Staff original: drop unico raro conservado
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2800 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 2200 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
