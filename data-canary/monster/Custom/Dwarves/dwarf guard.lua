@@ -122,25 +122,25 @@ monster.loot = {
 	{ name = "plate armor", chance = 7500 },
 	{ name = "plate legs", chance = 7000 },
 	{ name = "steel helmet", chance = 8000 },
-	{ name = "bonelord shield", chance = 5500 },
-	{ name = "knight armor", chance = 1750 },
-	{ name = "knight legs", chance = 1600 },
-	{ name = "knight axe", chance = 1400 },
-	{ name = "devil helmet", chance = 1350 },
-	{ name = "tower shield", chance = 850 },
+	{ name = "bonelord shield", chance = 6300 },
+	{ name = "knight armor", chance = 3800 },
+	{ name = "knight legs", chance = 3400 },
+	{ name = "knight axe", chance = 2800 },
+	{ name = "devil helmet", chance = 2600 },
+	{ name = "tower shield", chance = 2400 },
 	-- Crown Set: raro
-	{ name = "crown armor", chance = 420 },
-	{ name = "crown legs", chance = 400 },
-	{ name = "crown helmet", chance = 520 },
-	{ name = "crown shield", chance = 380 },
-	{ id = 3055, chance = 2200 }, -- Platinum Amulet (Crown Set)
+	{ name = "crown armor", chance = 550 },
+	{ name = "crown legs", chance = 550 },
+	{ name = "crown helmet", chance = 700 },
+	{ name = "crown shield", chance = 500 },
+	{ id = 3055, chance = 2800 }, -- Platinum Amulet (Crown Set)
 	-- Armas raras
 	{ name = "fire sword", chance = 1900 },
-	{ name = "fire axe", chance = 1000 },
+	{ name = "fire axe", chance = 1600 },
 	{ name = "dragonbone staff", chance = 1600 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 320 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 380 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 2000 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 500 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
