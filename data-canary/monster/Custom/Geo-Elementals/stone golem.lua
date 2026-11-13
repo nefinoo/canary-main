@@ -99,19 +99,19 @@ monster.loot = {
 	{ name = "small stone", chance = 30000, maxCount = 5 },
 	{ id = 12413, chance = 12500 }, -- bolsa de materiales de addon
 	-- Knight Set
-	{ name = "knight armor", chance = 1400 },
-	{ name = "knight legs", chance = 1350 },
-	{ name = "knight axe", chance = 1100 },
-	{ name = "devil helmet", chance = 1000 },
-	{ name = "tower shield", chance = 950 },
-	{ id = 3079, chance = 950 }, -- Boots of Haste
+	{ name = "knight armor", chance = 6550 },
+	{ name = "knight legs", chance = 6157 },
+	{ name = "knight axe", chance = 5109 },
+	{ name = "devil helmet", chance = 4781 },
+	{ name = "tower shield", chance = 4520 },
+	{ id = 3079, chance = 2817 }, -- Boots of Haste
 	-- Crown Set
-	{ name = "crown armor", chance = 550 },
-	{ name = "crown legs", chance = 500 },
-	{ name = "crown helmet", chance = 650 },
-	{ name = "crown shield", chance = 500 },
-	{ id = 10386, chance = 500 }, -- Zaoan Shoes
-	{ id = 3055, chance = 4000 }, -- Platinum Amulet
+	{ name = "crown armor", chance = 1820 },
+	{ name = "crown legs", chance = 1747 },
+	{ name = "crown helmet", chance = 2184 },
+	{ name = "crown shield", chance = 1638 },
+	{ id = 10386, chance = 1638 }, -- Zaoan Shoes
+	{ id = 3055, chance = 6000 }, -- Platinum Amulet
 	-- Bolsa de objetos originales
 	{ id = 2853, chance = 100000, child = {
 		{ id = 1781, chance = 10000 },
