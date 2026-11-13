@@ -125,31 +125,24 @@ monster.loot = {
 	{ name = "strong mana potion", chance = 2200 },
 	-- Addon / objetos existentes
 	{ id = 5879, chance = 7000 }, -- spider silk: material de addon conservado (antes 5000)
-	{ name = "platinum amulet", chance = 1600 },
 	{ id = 12413, chance = 9500 }, -- bag de objetos de addon
 	-- Plate Set: comun respecto a Knight y Crown
 	{ name = "plate armor", chance = 5900 },
-	{ name = "plate legs", chance = 5400 },
-	{ name = "steel helmet", chance = 6300 },
-	{ name = "bonelord shield", chance = 5400 },
+	{ name = "plate legs", chance = 5664 },
+	{ name = "steel helmet", chance = 6313 },
+	{ name = "bonelord shield", chance = 5664 },
 	-- Armas (progresion de nivel 50)
 	{ name = "barbarian axe", chance = 6000 },
 	{ name = "clerical mace", chance = 5500 },
 	{ id = 7385, chance = 5500 },
 	-- Knight Set: aumenta frente al loot anterior
-	{ name = "knight armor", chance = 2000 },
-	{ name = "knight legs", chance = 1800 },
-	{ name = "knight axe", chance = 1200 },
-	{ name = "devil helmet", chance = 950 },
-	{ name = "tower shield", chance = 800 },
-	-- Crown Set: muy raro
-	{ name = "crown armor", chance = 80 },
-	{ name = "crown legs", chance = 80 },
-	{ name = "crown helmet", chance = 110 },
-	{ name = "crown shield", chance = 70 },
+	{ name = "knight armor", chance = 2050 },
+	{ name = "knight legs", chance = 1927 },
+	{ name = "knight axe", chance = 1599 },
+	{ name = "devil helmet", chance = 1497 },
+	{ name = "tower shield", chance = 1414 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 650 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 70 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 882 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)
