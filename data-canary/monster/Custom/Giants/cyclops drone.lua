@@ -111,10 +111,10 @@ monster.loot = {
 	{ name = "health potion", chance = 6000 },
 	{ name = "mana potion", chance = 5000 },
 	{ id = 12413, chance = 5000 }, -- bolsa de materiales de addon
-	{ name = "plate armor", chance = 850 },
-	{ name = "plate legs", chance = 850 },
-	{ name = "steel helmet", chance = 850 },
-	{ name = "bonelord shield", chance = 850 },
+	{ name = "plate armor", chance = 849 },
+	{ name = "plate legs", chance = 849 },
+	{ name = "steel helmet", chance = 849 },
+	{ name = "bonelord shield", chance = 849 },
 }
 
 mType:register(monster)
