@@ -111,10 +111,10 @@ monster.summons = {
 }
 
 monster.loot = {
-	{ name = "plate armor", chance = 100 }, -- Frozen Hell stage Orc equipment
-	{ name = "plate legs", chance = 100 }, -- Frozen Hell stage Orc equipment
-	{ name = "steel helmet", chance = 100 }, -- Frozen Hell stage Orc equipment
-	{ name = "bonelord shield", chance = 100 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate armor", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 248 }, -- Frozen Hell stage Orc equipment
 	{ id = 12413, chance = 500 }, -- bolsa de items de addon aleatorios (0.500%)
 	{ name = "gold coin", chance = 80000, maxCount = 9 },
 	{ name = "meat", chance = 25000, maxCount = 2 },
