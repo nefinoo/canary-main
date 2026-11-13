@@ -95,19 +95,19 @@ monster.loot = {
 	{ name = "strong mana potion", chance = 8500 },
 	{ name = "mana potion", chance = 9500 },
 	-- Knight Set
-	{ name = "knight armor", chance = 1100 },
-	{ name = "knight legs", chance = 1050 },
-	{ name = "knight axe", chance = 850 },
-	{ name = "devil helmet", chance = 800 },
-	{ name = "tower shield", chance = 750 },
-	{ id = 3079, chance = 750 }, -- Boots of Haste
+	{ name = "knight armor", chance = 6450 },
+	{ name = "knight legs", chance = 6063 },
+	{ name = "knight axe", chance = 5031 },
+	{ name = "devil helmet", chance = 4709 },
+	{ name = "tower shield", chance = 4451 },
+	{ id = 3079, chance = 2774 }, -- Boots of Haste
 	-- Crown Set: raro
-	{ name = "crown armor", chance = 350 },
-	{ name = "crown legs", chance = 330 },
-	{ name = "crown helmet", chance = 420 },
-	{ name = "crown shield", chance = 300 },
-	{ id = 10386, chance = 300 }, -- Zaoan Shoes
-	{ id = 3055, chance = 3500 }, -- Platinum Amulet
+	{ name = "crown armor", chance = 1770 },
+	{ name = "crown legs", chance = 1699 },
+	{ name = "crown helmet", chance = 2124 },
+	{ name = "crown shield", chance = 1593 },
+	{ id = 10386, chance = 1593 }, -- Zaoan Shoes
+	{ id = 3055, chance = 5900 }, -- Platinum Amulet
 	{ name = "platinum coin", chance = 80000, maxCount = 2 },
 	{ name = "brown piece of cloth", chance = 2500 }, -- material original conservado
 }
