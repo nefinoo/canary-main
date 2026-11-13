@@ -116,29 +116,29 @@ monster.loot = {
 	{ name = "soul orb", chance = 2222 },
 	{ id = 12413, chance = 14500 },
 	-- Plate Set: progresion mejorada
-	{ name = "plate armor", chance = 6500 },
-	{ name = "plate legs", chance = 6000 },
-	{ name = "steel helmet", chance = 7000 },
-	{ name = "bonelord shield", chance = 6500 },
+	{ name = "plate armor", chance = 8100 },
+	{ name = "plate legs", chance = 7900 },
+	{ name = "steel helmet", chance = 8300 },
+	{ name = "bonelord shield", chance = 7900 },
 	-- Knight Set
-	{ name = "knight armor", chance = 1250 },
-	{ name = "knight legs", chance = 1150 },
-	{ name = "knight axe", chance = 1050 },
-	{ name = "devil helmet", chance = 950 },
-	{ name = "tower shield", chance = 520 },
+	{ name = "knight armor", chance = 3400 },
+	{ name = "knight legs", chance = 3000 },
+	{ name = "knight axe", chance = 2600 },
+	{ name = "devil helmet", chance = 2400 },
+	{ name = "tower shield", chance = 2200 },
 	-- Crown Set: muy raro
-	{ name = "crown armor", chance = 210 },
-	{ name = "crown legs", chance = 200 },
-	{ name = "crown helmet", chance = 280 },
-	{ name = "crown shield", chance = 200 },
+	{ name = "crown armor", chance = 300 },
+	{ name = "crown legs", chance = 300 },
+	{ name = "crown helmet", chance = 400 },
+	{ name = "crown shield", chance = 290 },
 	{ id = 3055, chance = 1600 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 1500 },
-	{ name = "fire axe", chance = 1150 },
+	{ name = "fire axe", chance = 1300 },
 	{ name = "dragonbone staff", chance = 1500 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 240 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 200 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 1800 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 290 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
