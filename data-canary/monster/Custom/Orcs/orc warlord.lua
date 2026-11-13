@@ -111,10 +111,10 @@ monster.loot = {
 	{ name = "ham", chance = 35000, maxCount = 2 },
 	{ name = "health potion", chance = 2500 },
 	{ name = "mana potion", chance = 2000 },
-	{ name = "plate armor", chance = 250 }, -- Frozen Hell: 0.020%
-	{ name = "plate legs", chance = 250 }, -- Frozen Hell: 0.020%
-	{ name = "steel helmet", chance = 250 }, -- Frozen Hell: 0.015%
-	{ name = "bonelord shield", chance = 250 }, -- Frozen Hell: 0.010%
+	{ name = "plate armor", chance = 380 }, -- Frozen Hell: 0.020%
+	{ name = "plate legs", chance = 380 }, -- Frozen Hell: 0.020%
+	{ name = "steel helmet", chance = 380 }, -- Frozen Hell: 0.015%
+	{ name = "bonelord shield", chance = 380 }, -- Frozen Hell: 0.010%
 }
 
 mType:register(monster)
