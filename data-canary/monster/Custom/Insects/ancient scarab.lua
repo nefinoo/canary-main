@@ -124,20 +124,20 @@ monster.loot = {
 	
 
 	-- Knight Set (sin Plate Set)
-	{ name = "knight armor", chance = 5000 },
-	{ name = "knight legs", chance = 4700 },
-	{ name = "knight axe", chance = 4200 },
-	{ name = "devil helmet", chance = 3800 },
-	{ name = "tower shield", chance = 3500 },
-	{ id = 3079, chance = 3500 }, -- Boots of Haste
+	{ name = "knight armor", chance = 9500 },
+	{ name = "knight legs", chance = 8930 },
+	{ name = "knight axe", chance = 7410 },
+	{ name = "devil helmet", chance = 6935 },
+	{ name = "tower shield", chance = 6555 },
+	{ id = 3079, chance = 4085 }, -- Boots of Haste
 
 	-- Crown Set
-	{ name = "crown armor", chance = 2200 },
-	{ name = "crown legs", chance = 2100 },
-	{ name = "crown helmet", chance = 2600 },
-	{ name = "crown shield", chance = 2000 },
-	{ id = 3055, chance = 6500 }, -- Platinum Amulet (Crown Set)
-	{ id = 10386, chance = 2000 }, -- Zaoan Shoes
+	{ name = "crown armor", chance = 4000 },
+	{ name = "crown legs", chance = 3840 },
+	{ name = "crown helmet", chance = 4800 },
+	{ name = "crown shield", chance = 3600 },
+	{ id = 3055, chance = 8000 }, -- Platinum Amulet (Crown Set)
+	{ id = 10386, chance = 3600 }, -- Zaoan Shoes
 
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor
