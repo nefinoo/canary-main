@@ -97,19 +97,19 @@ monster.loot = {
 	{ name = "strong health potion", chance = 8000 },
 	{ name = "strong mana potion", chance = 8000 },
 	-- Knight Set: poco frecuente
-	{ name = "knight armor", chance = 800 },
-	{ name = "knight legs", chance = 750 },
-	{ name = "knight axe", chance = 650 },
-	{ name = "devil helmet", chance = 600 },
-	{ name = "tower shield", chance = 550 },
-	{ id = 3079, chance = 550 }, -- Boots of Haste
+	{ name = "knight armor", chance = 6250 },
+	{ name = "knight legs", chance = 5875 },
+	{ name = "knight axe", chance = 4875 },
+	{ name = "devil helmet", chance = 4563 },
+	{ name = "tower shield", chance = 4313 },
+	{ id = 3079, chance = 2688 }, -- Boots of Haste
 	-- Crown Set: muy raro
-	{ name = "crown armor", chance = 250 },
-	{ name = "crown legs", chance = 240 },
-	{ name = "crown helmet", chance = 300 },
-	{ name = "crown shield", chance = 220 },
-	{ id = 10386, chance = 220 }, -- Zaoan Shoes
-	{ id = 3055, chance = 3000 }, -- Platinum Amulet
+	{ name = "crown armor", chance = 1650 },
+	{ name = "crown legs", chance = 1584 },
+	{ name = "crown helmet", chance = 1980 },
+	{ name = "crown shield", chance = 1485 },
+	{ id = 10386, chance = 1485 }, -- Zaoan Shoes
+	{ id = 3055, chance = 5600 }, -- Platinum Amulet
 	{ name = "white piece of cloth", chance = 5000 }, -- material original conservado
 }
 
