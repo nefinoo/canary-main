@@ -123,13 +123,13 @@ monster.loot = {
 	{ name = "crown legs", chance = 520 },
 	{ name = "crown helmet", chance = 600 },
 	{ name = "crown shield", chance = 460 },
-	{ id = 3055, chance = 4500 }, -- Platinum Amulet (Crown Set)
+	{ id = 3055, chance = 4200 }, -- Platinum Amulet (Crown Set)
 	-- Armas raras
 	{ name = "fire sword", chance = 1450 },
 	{ name = "fire axe", chance = 1600 },
 	{ name = "dragonbone staff", chance = 1350 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 1100 }, -- Boots of Haste: Knight Set
+	{ id = 3079, chance = 950 }, -- Boots of Haste: Knight Set
 	{ id = 10386, chance = 460 }, -- Zaoan Shoes: Crown Set
 }
 
