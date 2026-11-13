@@ -113,30 +113,30 @@ monster.loot = {
 	{ name = "soul orb", chance = 7000 },
 	{ id = 12413, chance = 28000 },
 	-- Plate Set: progresion mejorada
-	{ name = "plate armor", chance = 12500 },
-	{ name = "plate legs", chance = 12000 },
-	{ name = "steel helmet", chance = 13000 },
-	{ name = "bonelord shield", chance = 12000 },
+	{ name = "plate armor", chance = 8000 },
+	{ name = "plate legs", chance = 8000 },
+	{ name = "steel helmet", chance = 8500 },
+	{ name = "bonelord shield", chance = 8500 },
 	-- Knight Set
-	{ name = "knight armor", chance = 6500 },
-	{ name = "knight legs", chance = 6000 },
-	{ name = "knight axe", chance = 5200 },
-	{ name = "devil helmet", chance = 4800 },
-	{ name = "tower shield", chance = 4300 },
+	{ name = "knight armor", chance = 2600 },
+	{ name = "knight legs", chance = 2300 },
+	{ name = "knight axe", chance = 1900 },
+	{ name = "devil helmet", chance = 1900 },
+	{ name = "tower shield", chance = 1200 },
 	-- Crown Set: muy raro
-	{ name = "crown armor", chance = 750 },
-	{ name = "crown legs", chance = 750 },
-	{ name = "crown helmet", chance = 900 },
-	{ name = "crown shield", chance = 650 },
-	{ id = 3055, chance = 3000 }, -- Platinum Amulet (Crown Set)
+	{ name = "crown armor", chance = 450 },
+	{ name = "crown legs", chance = 430 },
+	{ name = "crown helmet", chance = 560 },
+	{ name = "crown shield", chance = 390 },
+	{ id = 3055, chance = 2400 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 3600 },
-	{ name = "fire axe", chance = 4100 },
+	{ name = "fire axe", chance = 2400 },
 	{ name = "dragonbone staff", chance = 3600 },
 	{ name = "imperor's trident", chance = 100000 }, -- recompensa unica original preservada
 	-- Botas de progresion por set
-	{ id = 3079, chance = 4300 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 650 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 550 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 390 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
