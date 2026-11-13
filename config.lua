@@ -314,13 +314,13 @@ teleportSummons = false
 allowReload = true
 
 -- Stamina in Trainers
-staminaTrainer = false
-staminaTrainerDelay = 5
+staminaTrainer = true
+staminaTrainerDelay = 1
 staminaTrainerGain = 1
 -- Stamina in PZ
-staminaPz = false
+staminaPz = true
 staminaOrangeDelay = 1
-staminaGreenDelay = 5
+staminaGreenDelay = 1
 staminaPzGain = 1
 -- Max players allowed on a dummy.
 maxAllowedOnADummy = 5
@@ -554,7 +554,7 @@ deSpawnRange = 2
 deSpawnRadius = 50
 
 -- Stamina
-staminaSystem = false
+staminaSystem = true
 
 -- Scripts
 warnUnsafeScripts = true

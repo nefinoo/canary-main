@@ -154,7 +154,7 @@ function playerLoginGlobal.onLogin(player)
 		playerOutfit.lookAddons = 0
 		player:setOutfit(playerOutfit)
 	end
-
+	player:setFeature(Features.AutoLoot, 1)
 	player:initializeLoyaltySystem()
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")
