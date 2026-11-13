@@ -125,31 +125,31 @@ monster.loot = {
 	{ name = "strong mana potion", chance = 2200 },
 	-- Addon / objetos existentes
 	{ id = 5879, chance = 7000 }, -- spider silk: material de addon conservado (antes 5000)
-	{ name = "platinum amulet", chance = 2000 },
+	{ name = "platinum amulet", chance = 550 },
 	{ id = 12413, chance = 9500 }, -- bag de objetos de addon
 	-- Plate Set: comun respecto a Knight y Crown
-	{ name = "plate armor", chance = 6500 },
-	{ name = "plate legs", chance = 6000 },
-	{ name = "steel helmet", chance = 7000 },
-	{ name = "bonelord shield", chance = 6000 },
+	{ name = "plate armor", chance = 4500 },
+	{ name = "plate legs", chance = 4200 },
+	{ name = "steel helmet", chance = 4800 },
+	{ name = "bonelord shield", chance = 4200 },
 	-- Armas (progresion de nivel 50)
 	{ name = "barbarian axe", chance = 6000 },
 	{ name = "clerical mace", chance = 5500 },
 	{ id = 7385, chance = 5500 },
 	-- Knight Set: aumenta frente al loot anterior
-	{ name = "knight armor", chance = 2500 },
-	{ name = "knight legs", chance = 2300 },
-	{ name = "knight axe", chance = 1500 },
-	{ name = "devil helmet", chance = 1200 },
-	{ name = "tower shield", chance = 1000 },
+	{ name = "knight armor", chance = 500 },
+	{ name = "knight legs", chance = 400 },
+	{ name = "knight axe", chance = 450 },
+	{ name = "devil helmet", chance = 400 },
+	{ name = "tower shield", chance = 160 },
 	-- Crown Set: muy raro
-	{ name = "crown armor", chance = 95 },
-	{ name = "crown legs", chance = 95 },
-	{ name = "crown helmet", chance = 130 },
-	{ name = "crown shield", chance = 85 },
+	{ name = "crown armor", chance = 50 },
+	{ name = "crown legs", chance = 45 },
+	{ name = "crown helmet", chance = 65 },
+	{ name = "crown shield", chance = 45 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 1000 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 85 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 80 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 45 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
