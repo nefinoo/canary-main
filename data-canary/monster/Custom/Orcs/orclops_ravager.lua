@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 10000
+monster.experience = 50000
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,

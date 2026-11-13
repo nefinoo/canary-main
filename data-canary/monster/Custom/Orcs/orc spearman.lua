@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc spearman"
 monster.description = "a orc spearman"
-monster.experience = 1800
+monster.experience = 9000
 monster.outfit = {
 	lookType = 50,
 	lookHead = 20,

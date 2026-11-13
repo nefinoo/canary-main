@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a slug"
-monster.experience = 1500
+monster.experience = 7500
 monster.outfit = {
 	lookType = 407,
 	lookHead = 0,
