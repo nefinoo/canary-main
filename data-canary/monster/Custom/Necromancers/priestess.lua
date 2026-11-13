@@ -122,21 +122,21 @@ monster.loot = {
 	{ name = "knight legs", chance = 3000 },
 	{ name = "knight axe", chance = 2900 },
 	{ name = "devil helmet", chance = 2800 },
-	{ name = "tower shield", chance = 1900 },
+	{ name = "tower shield", chance = 2200 },
 	-- Crown Set
-	{ name = "crown armor", chance = 1900 },
-	{ name = "crown legs", chance = 1900 },
-	{ name = "crown helmet", chance = 2500 },
-	{ name = "crown shield", chance = 1700 },
-	{ id = 3055, chance = 5000 }, -- Platinum Amulet (Crown Set)
+	{ name = "crown armor", chance = 2100 },
+	{ name = "crown legs", chance = 2100 },
+	{ name = "crown helmet", chance = 2800 },
+	{ name = "crown shield", chance = 1900 },
+	{ id = 3055, chance = 5200 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
 	{ name = "fire sword", chance = 2800 },
 	{ name = "fire axe", chance = 2900 },
 	{ name = "dragonbone staff", chance = 2800 },
 	{ id = 3341, chance = 100 }, -- Arcane Staff original: drop unico raro conservado
 	-- Botas de progresion por set
-	{ id = 3079, chance = 1700 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 1700 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 1800 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 1900 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
