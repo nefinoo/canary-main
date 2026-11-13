@@ -126,10 +126,10 @@ monster.loot = {
 	{ name = "bonelord shield", chance = 2600 },
 	-- Knight Set: muy raro; piezas clasicas del set
 	{ name = "knight armor", chance = 200 },
-	{ name = "knight legs", chance = 200 },
-	{ name = "knight axe", chance = 250 },
-	{ name = "devil helmet", chance = 180 },
-	{ name = "tower shield", chance = 130 },
+	{ name = "knight legs", chance = 188 },
+	{ name = "knight axe", chance = 156 },
+	{ name = "devil helmet", chance = 146 },
+	{ name = "tower shield", chance = 138 },
 	-- Armas para la progresion de axe, club y sword
 	{ name = "barbarian axe", chance = 3200 },
 	{ name = "clerical mace", chance = 2600 },
