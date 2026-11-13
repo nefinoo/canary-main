@@ -111,29 +111,29 @@ monster.loot = {
 	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
 	{ name = "experience scroll", chance = 145 },
 	-- Plate Set
-	{ name = "plate armor", chance = 1850 },
-	{ name = "plate legs", chance = 1750 },
-	{ name = "steel helmet", chance = 2000 },
-	{ name = "bonelord shield", chance = 1750 },
+	{ name = "plate armor", chance = 9200 },
+	{ name = "plate legs", chance = 8832 },
+	{ name = "steel helmet", chance = 9844 },
+	{ name = "bonelord shield", chance = 8832 },
 	-- Knight Set
-	{ name = "knight armor", chance = 1550 },
-	{ name = "knight legs", chance = 1450 },
-	{ name = "knight axe", chance = 1200 },
-	{ name = "devil helmet", chance = 1100 },
-	{ name = "tower shield", chance = 950 },
+	{ name = "knight armor", chance = 4300 },
+	{ name = "knight legs", chance = 4042 },
+	{ name = "knight axe", chance = 3354 },
+	{ name = "devil helmet", chance = 3139 },
+	{ name = "tower shield", chance = 2967 },
 	-- Crown Set: recompensa rara de la zona
-	{ name = "crown armor", chance = 560 },
-	{ name = "crown legs", chance = 530 },
-	{ name = "crown helmet", chance = 670 },
-	{ name = "crown shield", chance = 490 },
-	{ id = 3055, chance = 3600 }, -- Platinum Amulet (Crown Set)
+	{ name = "crown armor", chance = 610 },
+	{ name = "crown legs", chance = 586 },
+	{ name = "crown helmet", chance = 732 },
+	{ name = "crown shield", chance = 549 },
+	{ id = 3055, chance = 3500 }, -- Platinum Amulet (Crown Set)
 	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 1200 },
 	{ name = "fire axe", chance = 1300 },
 	{ name = "dragonbone staff", chance = 1100 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 650 }, -- Boots of Haste: Knight Set
-	{ id = 10386, chance = 490 }, -- Zaoan Shoes: Crown Set
+	{ id = 3079, chance = 1849 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 549 }, -- Zaoan Shoes: Crown Set
 }
 
 monster.raceId = 63
