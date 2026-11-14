@@ -993,6 +993,8 @@
 	</monster>
 	<monster centerx="386" centery="718" centerz="5" radius="2">
 		<monster name="Minotaur Guard" x="-2" y="-2" z="5" spawntime="30" />
+		<monster name="Minotaur Archer" x="2" y="-1" z="5" spawntime="60" />
+		<monster name="Minotaur Mage" x="-1" y="2" z="5" spawntime="60" />
 		<monster name="Minotaur Guard" x="1" y="2" z="5" spawntime="30" />
 	</monster>
 	<monster centerx="1007" centery="721" centerz="5" radius="1">
@@ -1919,6 +1921,7 @@
 		<monster name="Hydra" x="-16" y="14" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="404" centery="706" centerz="6" radius="2">
+		<monster name="Minotaur Guard" x="-2" y="-1" z="6" spawntime="60" />
 		<monster name="Minotaur Archer" x="2" y="-1" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="390" centery="707" centerz="6" radius="2">
@@ -1930,6 +1933,7 @@
 		<monster name="Minotaur Archer" x="1" y="1" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="387" centery="714" centerz="6" radius="2">
+		<monster name="Minotaur Archer" x="-1" y="-1" z="6" spawntime="60" />
 		<monster name="Minotaur Guard" x="-1" y="2" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="404" centery="722" centerz="6" radius="3">
@@ -1939,6 +1943,7 @@
 	</monster>
 	<monster centerx="385" centery="729" centerz="6" radius="2">
 		<monster name="Minotaur Guard" x="-1" y="0" z="6" spawntime="30" />
+		<monster name="Minotaur Archer" x="1" y="2" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="404" centery="729" centerz="6" radius="2">
 		<monster name="Minotaur Archer" x="-1" y="-1" z="6" spawntime="30" />
@@ -1955,13 +1960,14 @@
 	<monster centerx="397" centery="737" centerz="6" radius="2">
 		<monster name="Minotaur Guard" x="-1" y="-2" z="6" spawntime="30" />
 		<monster name="Minotaur Guard" x="1" y="-1" z="6" spawntime="30" />
-		<monster name="Minotaur Guard" x="-2" y="1" z="6" spawntime="30" />
+		<monster name="Minotaur Archer" x="-2" y="1" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="425" centery="737" centerz="6" radius="1">
 		<monster name="Minotaur Guard" x="0" y="1" z="6" spawntime="30" />
 	</monster>
 	<monster centerx="389" centery="739" centerz="6" radius="2">
 		<monster name="Minotaur Guard" x="0" y="-1" z="6" spawntime="30" />
+		<monster name="Minotaur Archer" x="-2" y="0" z="6" spawntime="60" />
 	</monster>
 	<monster centerx="427" centery="741" centerz="6" radius="1">
 		<monster name="Minotaur Archer" x="-1" y="1" z="6" spawntime="30" />
@@ -4410,6 +4416,7 @@
 		<monster name="salazaari ranger" x="1" y="12" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="390" centery="706" centerz="7" radius="2">
+		<monster name="Minotaur" x="0" y="0" z="7" spawntime="60" />
 		<monster name="Minotaur" x="-1" y="1" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="397" centery="706" centerz="7" radius="2">
@@ -4418,6 +4425,7 @@
 	</monster>
 	<monster centerx="404" centery="706" centerz="7" radius="2">
 		<monster name="Minotaur" x="-1" y="0" z="7" spawntime="30" />
+		<monster name="Minotaur" x="1" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="350" centery="709" centerz="7" radius="1">
 		<monster name="Boar" x="0" y="0" z="7" spawntime="30" />
@@ -4488,10 +4496,13 @@
 		<monster name="Boar" x="0" y="0" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="384" centery="730" centerz="7" radius="3">
+		<monster name="Minotaur" x="0" y="-2" z="7" spawntime="60" />
+		<monster name="Minotaur" x="-2" y="1" z="7" spawntime="60" />
 		<monster name="Minotaur" x="1" y="2" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="402" centery="730" centerz="7" radius="3">
 		<monster name="Minotaur" x="1" y="-2" z="7" spawntime="30" />
+		<monster name="Minotaur" x="-2" y="1" z="7" spawntime="60" />
 		<monster name="Minotaur" x="1" y="2" z="7" spawntime="30" />
 	</monster>
 	<monster centerx="372" centery="734" centerz="7" radius="1">
@@ -4529,6 +4540,7 @@
 	</monster>
 	<monster centerx="390" centery="739" centerz="7" radius="1">
 		<monster name="Minotaur" x="-1" y="-1" z="7" spawntime="30" />
+		<monster name="Minotaur" x="1" y="1" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="426" centery="739" centerz="7" radius="1">
 		<monster name="Minotaur Guard" x="1" y="-1" z="7" spawntime="30" />
@@ -6913,6 +6925,7 @@
 		<monster name="Bonelord" x="0" y="0" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="386" centery="727" centerz="8" radius="1">
+		<monster name="Minotaur Archer" x="1" y="-1" z="8" spawntime="60" />
 		<monster name="Modified Gnarlhound" x="0" y="0" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="324" centery="728" centerz="8" radius="1">
@@ -6954,6 +6967,7 @@
 		<monster name="Minotaur" x="-1" y="-1" z="8" spawntime="30" />
 		<monster name="Modified Gnarlhound" x="1" y="0" z="8" spawntime="30" />
 		<monster name="Minotaur" x="3" y="0" z="8" spawntime="30" />
+		<monster name="Minotaur Archer" x="-3" y="1" z="8" spawntime="60" />
 		<monster name="Minotaur Guard" x="3" y="2" z="8" spawntime="30" />
 	</monster>
 	<monster centerx="277" centery="737" centerz="8" radius="1">
