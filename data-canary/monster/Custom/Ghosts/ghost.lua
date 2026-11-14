@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 16000
-monster.maxHealth = 16000
+monster.health = 20000
+monster.maxHealth = 20000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5993
@@ -81,13 +81,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -340, maxDamage = -760 },
-	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -150, maxDamage = -360, range = 1, radius = 1, target = true }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -410, maxDamage = -920 },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -180, maxDamage = -420, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 22,
-	armor = 24
+	defense = 26,
+	armor = 28
 }
 
 monster.loot = {

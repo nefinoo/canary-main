@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 22000
-monster.maxHealth = 22000
+monster.health = 31000
+monster.maxHealth = 31000
 monster.runHealth = 950
 monster.race = "blood"
 monster.corpse = 6027
@@ -83,13 +83,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -440, maxDamage = -960 },
-	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -400, maxDamage = -940, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -550, maxDamage = -1240 },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -1190, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 37,
+	defense = 39,
+	armor = 47,
 	{ name = "combat", interval = 4000, chance = 12, type = COMBAT_HEALING, minDamage = 30, maxDamage = 65, effect = CONST_ME_MAGIC_BLUE }
 }
 

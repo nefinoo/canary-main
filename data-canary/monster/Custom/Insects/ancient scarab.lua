@@ -19,8 +19,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 95000
-monster.maxHealth = 95000
+monster.health = 110000
+monster.maxHealth = 110000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -84,15 +84,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -485, maxDamage = -1180, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000} },
-	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -450, maxDamage = -1230, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -625, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000} },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -595, maxDamage = -1530, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
 	{ name = "speed", interval = 2000, chance = 10, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY },
-	{ name = "condition", interval = 4000, chance = 15, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -185, maxDamage = -540, radius = 3, target = false, effect = CONST_ME_POISONAREA }
+	{ name = "condition", interval = 4000, chance = 15, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -210, maxDamage = -590, radius = 3, target = false, effect = CONST_ME_POISONAREA }
 }
 
 monster.defenses = {
-	defense = 45,
-	armor = 48,
+	defense = 50,
+	armor = 55,
 	{ name = "speed", interval = 4000, chance = 15, speed = {min = 250, max = 250}, duration = 6000, effect = CONST_ME_MAGIC_RED }
 }
 
