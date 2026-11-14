@@ -8722,11 +8722,12 @@
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="Strong powers flow in this magic sword"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="53"/>
-		<attribute key="defense" value="38"/>
+		<attribute key="attack" value="56"/>
+		<attribute key="defense" value="44"/>
+		<attribute key="extradef" value="4"/>
 		<attribute key="weight" value="6400"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="120"/>
+			<attribute key="level" value="500"/>
 			<!-- <attribute key="unproperly" value="true"/> -->
 			<attribute key="weaponType" value="sword"/>
 			<attribute key="slot" value="hand"/>
@@ -19989,11 +19990,12 @@
 	</item>
 	<item id="7420" article="a" name="reaper's axe">
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="46"/>
-		<attribute key="extradef" value="2"/>
-		<attribute key="defense" value="25"/>
+		<attribute key="attack" value="60"/>
+		<attribute key="extradef" value="1"/>
+		<attribute key="defense" value="34"/>
 		<attribute key="weight" value="5900"/>
 		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="500"/>
 			<attribute key="weaponType" value="axe"/>
 			<attribute key="slot" value="hand"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
@@ -20286,11 +20288,12 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="A beautiful gem is embedded in this weapon"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="37"/>
-		<attribute key="defense" value="18"/>
+		<attribute key="attack" value="64"/>
+		<attribute key="defense" value="24"/>
+		<attribute key="extradef" value="-2"/>
 		<attribute key="weight" value="2100"/>
 		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="30"/>
+			<attribute key="level" value="500"/>
 			<attribute key="unproperly" value="true"/>
 			<attribute key="weaponType" value="club"/>
 			<attribute key="slot" value="hand"/>

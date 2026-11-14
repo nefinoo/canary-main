@@ -10215,23 +10215,23 @@
 		<monster name="Hellraiser" x="1" y="6" z="10" spawntime="30" />
 	</monster>
 	<monster centerx="464" centery="497" centerz="10" radius="10">
-		<monster name="Orshabaal" x="-6" y="0" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="5" y="0" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="10" y="0" z="10" spawntime="30" />
+		<monster name="hell soldier" x="-6" y="0" z="10" spawntime="60" />
+		<monster name="hell soldier" x="5" y="0" z="10" spawntime="60" />
+		<monster name="hell soldier" x="10" y="0" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="499" centery="499" centerz="10" radius="10">
-		<monster name="dementor" x="0" y="-4" z="10" spawntime="30" />
-		<monster name="dementor" x="-4" y="-2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-2" y="-2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="1" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="3" y="-2" z="10" spawntime="30" />
-		<monster name="dementor" x="-6" y="0" z="10" spawntime="30" />
-		<monster name="dementor" x="5" y="0" z="10" spawntime="30" />
-		<monster name="dementor" x="-4" y="2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="-2" y="2" z="10" spawntime="30" />
-		<monster name="Orshabaal" x="1" y="2" z="10" spawntime="30" />
-		<monster name="dementor" x="3" y="2" z="10" spawntime="30" />
-		<monster name="dementor" x="0" y="4" z="10" spawntime="30" />
+		<monster name="hell soldier" x="0" y="-4" z="10" spawntime="60" />
+		<monster name="hell soldier" x="-4" y="-2" z="10" spawntime="60" />
+		<monster name="undead mage" x="-2" y="-2" z="10" spawntime="60" />
+		<monster name="undead mage" x="1" y="-2" z="10" spawntime="60" />
+		<monster name="hell soldier" x="3" y="-2" z="10" spawntime="60" />
+		<monster name="hell soldier" x="-6" y="0" z="10" spawntime="60" />
+		<monster name="hell soldier" x="5" y="0" z="10" spawntime="60" />
+		<monster name="hell soldier" x="-4" y="2" z="10" spawntime="60" />
+		<monster name="undead mage" x="-2" y="2" z="10" spawntime="60" />
+		<monster name="undead mage" x="1" y="2" z="10" spawntime="60" />
+		<monster name="hell soldier" x="3" y="2" z="10" spawntime="60" />
+		<monster name="hell soldier" x="0" y="4" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="398" centery="544" centerz="10" radius="5">
 		<monster name="venom" x="1" y="0" z="10" spawntime="30" />
