@@ -57,7 +57,7 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "127.0.0.1"
+ip = "localhost"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
@@ -314,13 +314,13 @@ teleportSummons = false
 allowReload = true
 
 -- Stamina in Trainers
-staminaTrainer = false
-staminaTrainerDelay = 5
+staminaTrainer = true
+staminaTrainerDelay = 1
 staminaTrainerGain = 1
 -- Stamina in PZ
-staminaPz = false
+staminaPz = true
 staminaOrangeDelay = 1
-staminaGreenDelay = 5
+staminaGreenDelay = 1
 staminaPzGain = 1
 -- Max players allowed on a dummy.
 maxAllowedOnADummy = 5
@@ -422,7 +422,7 @@ maxMarketOffersAtATimePerPlayer = 100
 -- MySQL
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = "root"
+mysqlPass = ""
 mysqlDatabase = "nefi"
 mysqlDatabaseBackup = false
 mysqlPort = 3306
@@ -463,7 +463,7 @@ minDelayBetweenConditions = 0
 -- configure maximum value of critical imbuement
 criticalChance = 100
 inventoryGlowOnFiveBless = true
-adventurersBlessingLevel = 500
+adventurersBlessingLevel = 250
 skulledDeathLoseStoreItem = false
 experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
@@ -507,12 +507,12 @@ sortLootByChance = true
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
-rateUseStages = false
-lowLevelBonusExp = 100
-rateExp = 1000
-rateSkill = 100
+rateUseStages = true
+lowLevelBonusExp = 0
+rateExp = 1
+rateSkill = 1
 rateLoot = 1
-rateMagic = 50
+rateMagic = 1
 rateSpawn = 1
 
 -- Killing in the name of Quest

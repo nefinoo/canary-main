@@ -1,116 +1,132 @@
-﻿local mType = Game.createMonsterType("witch")
+﻿local mType = Game.createMonsterType("Witch")
 local monster = {}
 
-monster.name = "witch"
 monster.description = "a witch"
-monster.experience = 120
+monster.experience = 1200000
 monster.outfit = {
 	lookType = 54,
-	lookHead = 20,
-	lookBody = 30,
-	lookLegs = 40,
-	lookFeet = 50,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
-	lookMount = 0
+	lookMount = 0,
 }
 
-monster.health = 300
-monster.maxHealth = 300
-monster.runHealth = 30
+monster.raceId = 54
+monster.Bestiary = {
+	class = "Human",
+	race = BESTY_RACE_HUMAN,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Vandura, west of the Dwarf Mines in a small house, Amazon Tower north of Carlin, \z
+		Triangle Tower, Temple of Xayepocax, Green Claw Swamp and Amazon Camp (Venore), \z
+		Dark Cathedral (2 levels underground), Goroma Volcano (underground), west from Necromant House, \z
+		Mammoth Shearing Factory, Trade Quarter in Yalahar, The Witches' Cliff (only accessible during a quest).",
+}
+
+monster.health = 3000
+monster.maxHealth = 3000
 monster.race = "blood"
-monster.corpse = 6081
-monster.speed = 180
-monster.summonCost = 0
+monster.corpse = 18254
+monster.speed = 102
+monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 5000,
-	chance = 8
+	interval = 4000,
+	chance = 10,
+}
+
+monster.strategiesTarget = {
+	nearest = 100,
 }
 
 monster.flags = {
+	summonable = false,
 	attackable = true,
 	hostile = true,
-	summonable = false,
 	convinceable = false,
-	illusionable = true,
-	boss = false,
-	ignoreSpawnBlock = false,
 	pushable = false,
+	rewardBoss = false,
+	illusionable = true,
 	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 4,
+	runHealth = 30,
 	healthHidden = false,
-	canWalkOnEnergy = false,
+	isBlockable = false,
+	canWalkOnEnergy = true,
 	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnPoison = false,
 }
 
 monster.light = {
 	level = 0,
-	color = 0
+	color = 0,
 }
 
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{text = "Horax pokti! Hihihihi!", yell = false},
-	{text = "Herba budinia ex!", yell = false}
-}
-
-monster.immunities = {
-	{type = "paralyze", condition = true},
-	{type = "outfit", condition = false},
-	{type = "invisible", condition = true},
-	{type = "drunk", condition = true},
-	{type = "bleed", condition = false}
-}
-
-monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -14},
-	{type = COMBAT_ENERGYDAMAGE, percent = 100},
-	{type = COMBAT_EARTHDAMAGE, percent = 30},
-	{type = COMBAT_FIREDAMAGE, percent = 0},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
-	{type = COMBAT_DEATHDAMAGE , percent = -5}
-}
-
-monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 18, attack = 18},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -30, maxDamage = -75, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="firefield", interval = 1000, chance = 13, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE}
-}
-
-monster.defenses = {
-	defense = 12,
-	armor = 8
+	{ text = "Herba budinia ex!", yell = false },
+	{ text = "Horax Pokti!", yell = false },
+	{ text = "Hihihihi!", yell = false },
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 3012, chance = 10000},
-	{name = "necrotic rod", chance = 833},
-	{name = "leather boots", chance = 10000},
-	{name = "coat", chance = 5000},
-	{name = "cheese", chance = 33333},
-	{id = 2853, chance = 100000, child = {
-			{name = "sickle", chance = 5000},
-			{name = "heavy machete", chance = 1666},
-			{name = "broom", chance = 10000},
-			{name = "cape", chance = 3333},
-			{name = "golden sickle", chance = 1000},
-			{name = "garlic necklace", chance = 1428},
-			{name = "fern", chance = 1333}
-		}
-	}
+	{ id = 3012, chance = 10120 }, -- wolf tooth chain
+	{ name = "platinum coin", chance = 64000, maxCount = 4},
+	{ name = "necrotic rod", chance = 1140 },
+	{ name = "garlic necklace", chance = 1000 },
+	{ name = "silver dagger", chance = 500 },
+	{ name = "sickle", chance = 3910 },
+	{ name = "leather boots", chance = 4950 },
+	{ name = "coat", chance = 2010 },
+	{ name = "cape", chance = 4870 },
+	{ name = "cookie", chance = 29750, maxCount = 8 },
+	{ name = "star herb", chance = 8950 },
+	{ name = "witch broom", chance = 10000 },
+	{ name = "stuffed toad", chance = 10 },
+	{ name = "bag of apple slices", chance = 920},
+}
+
+monster.attacks = {
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -300, maxDamage = -750, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_HITBYFIRE, target = false },
+	{ name = "firefield", interval = 2000, chance = 10, range = 7, radius = 1, shootEffect = CONST_ANI_FIRE, target = true },
+	{ name = "outfit", interval = 2000, chance = 1, range = 5, target = true, duration = 2000, outfitMonster = "green frog" },
+}
+
+monster.defenses = {
+	defense = 15,
+	armor = 8,
+	mitigation = 0.30,
+}
+
+monster.elements = {
+	{ type = COMBAT_PHYSICALDAMAGE, percent = -5 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 100 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 20 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+}
+
+monster.immunities = {
+	{ type = "paralyze", condition = false },
+	{ type = "outfit", condition = false },
+	{ type = "invisible", condition = true },
+	{ type = "bleed", condition = false },
 }
 
 mType:register(monster)
-
-
-
 

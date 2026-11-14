@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hunter"
 monster.description = "a hunter"
-monster.experience = 150
+monster.experience = 650000
 monster.outfit = {
 	lookType = 129,
 	lookHead = 95,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 150
-monster.maxHealth = 150
+monster.health = 1500
+monster.maxHealth = 1500
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 6081
@@ -98,22 +98,17 @@ monster.loot = {
 	{name = "leather legs", chance = 10000},
 	{name = "ham", chance = 20000, maxCount = 2},
 	{name = "sniper gloves", chance = 100},
-	{id = 2853, chance = 100000, child = {
-			-- {id = 3350, chance = 6666},
-			-- {name = "arrow", chance = 10000, maxCount = 15},
-			-- {id = 3449, chance = 10000, maxCount = 5},
-			{name = "small ruby", chance = 3333, maxCount = 2},
-			{name = "orange", chance = 6666, maxCount = 4},
-			{name = "roll", chance = 6666, maxCount = 4},
-			{id = 2920, chance = 20000},
-			{name = "brass legs", chance = 3333},
-			{name = "green tunic", chance = 2222},
-			{name = "dragon necklace", chance = 2500}
-		}
-	}
+	{id = 5907, chance = 100},
+	{name = "small ruby", chance = 3333, maxCount = 2},
+	{name = "orange", chance = 6666, maxCount = 4},
+	{name = "roll", chance = 6666, maxCount = 4},
+	{name = "brass legs", chance = 3333},
+	{name = "green tunic", chance = 2222},
+	{name = "dragon necklace", chance = 2500},
 }
 
 mType:register(monster)
+
 
 
 

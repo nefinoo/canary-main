@@ -9,7 +9,7 @@ function playerLoginGlobal.onLogin(player)
 	local loginStr
 	if player:getLastLoginSaved() == 0 then
 		loginStr = "Please choose your outfit."
-		player:sendOutfitWindow()
+		-- player:sendOutfitWindow()
 		local startStreakLevel = configManager.getNumber(configKeys.START_STREAK_LEVEL)
 		if startStreakLevel > 0 then
 			player:setStreakLevel(startStreakLevel)
@@ -154,7 +154,7 @@ function playerLoginGlobal.onLogin(player)
 		playerOutfit.lookAddons = 0
 		player:setOutfit(playerOutfit)
 	end
-
+	player:setFeature(Features.AutoLoot, 1)
 	player:initializeLoyaltySystem()
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")

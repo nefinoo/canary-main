@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead mage"
 monster.description = "an undead mage"
-monster.experience = 19650
+monster.experience = 15000000
 monster.outfit = {
 	lookType = 9,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 11750
-monster.maxHealth = 11750
+monster.health = 18500
+monster.maxHealth = 18500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -80,32 +80,66 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -980, maxDamage = -1274, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -980, maxDamage = -1275, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -300, maxDamage = -760, condition = {type = CONDITION_POISON, startDamage = 45, interval = 5000} },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -270, maxDamage = -785, range = 1, radius = 1, target = true, effect = CONST_ME_DRAWBLOOD },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -340, maxDamage = -925, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 20,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE}
+	defense = 28,
+	armor = 32,
+	{ name = "combat", interval = 4000, chance = 12, type = COMBAT_HEALING, minDamage = 35, maxDamage = 85, effect = CONST_ME_MAGIC_BLUE }
 }
 
-monster.maxSummons = 4
+monster.maxSummons = 2
 monster.summons = {
-	{name = "ghost", chance = 15, interval = 1000, max = 4},
-	{name = "ghoul", chance = 17, interval = 1000, max = 4},
-	{name = "mummy", chance = 13, interval = 1000, max = 4}
+	{ name = "ghost", chance = 7, interval = 5000, max = 2 },
+	{ name = "ghoul", chance = 7, interval = 5000, max = 2 },
+	{ name = "mummy", chance = 3, interval = 6000, max = 1 }
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 5},
-	{id = 3341, chance = 100},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	-- Dinero y consumibles; una sola tirada principal de moneda
+	{ name = "platinum coin", chance = 90000, maxCount = 5 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 15000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 10000 },
+	-- Gemas originales y materiales de addon (si aplica)
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ id = 12413, chance = 14500 }, -- bolsa de addon
+	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
+	{ name = "experience scroll", chance = 240 },
+	-- Plate Set
+	{ name = "plate armor", chance = 10800 },
+	{ name = "plate legs", chance = 10368 },
+	{ name = "steel helmet", chance = 11556 },
+	{ name = "bonelord shield", chance = 10368 },
+	-- Knight Set
+	{ name = "knight armor", chance = 5500 },
+	{ name = "knight legs", chance = 5170 },
+	{ name = "knight axe", chance = 4290 },
+	{ name = "devil helmet", chance = 4015 },
+	{ name = "tower shield", chance = 3795 },
+	-- Crown Set
+	{ name = "crown armor", chance = 1230 },
+	{ name = "crown legs", chance = 1181 },
+	{ name = "crown helmet", chance = 1476 },
+	{ name = "crown shield", chance = 1107 },
+	{ id = 3055, chance = 4800 }, -- Platinum Amulet (Crown Set)
+	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
+	{ name = "fire sword", chance = 1200 },
+	{ name = "fire axe", chance = 1300 },
+	{ name = "dragonbone staff", chance = 2100 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2365 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 1107 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

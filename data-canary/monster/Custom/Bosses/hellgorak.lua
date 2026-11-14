@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hellgorak"
 monster.description = "Hellgorak"
-monster.experience = 225000
+monster.experience = 200000000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 19,
@@ -94,17 +94,26 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{id = 3046, chance = 50000},
-	{name = "crown shield", chance = 500},
-	{id = 3410, chance = 5000},
-	{name = "vampire shield", chance = 5000},
-	{name = "experience scroll", chance = 3000},
-	{name = "flask of warrior's sweat", chance = 500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 8},
+	{name = "platinum coin", chance = 70000, maxCount = 10},
+	{name = "experience scroll", chance = 1000, maxCount = 1},	
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	{name = "Huge Chunk of Crude Iron", chance = 250},
+	{name = "Damaged Steel Helmet", chance = 1300, unique = true },
+	{name = "flask of warrior's sweat", chance = 500},	
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)
+
 
 
 

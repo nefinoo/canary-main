@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Infested Rat"
 monster.description = "an infested rat"
-monster.experience = 575000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 305,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 105000
-monster.maxHealth = 105000
+monster.health = 150000
+monster.maxHealth = 150000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 8957
@@ -93,13 +93,25 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{id = 3673, chance = 50},
-	{name = "experience scroll", chance = 2000},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 12},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 2500, maxCount = 3},
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
+	{ name = "bat wing", chance = 2000, maxCount = 2},
 }
 
 mType:register(monster)
+
 
 
 

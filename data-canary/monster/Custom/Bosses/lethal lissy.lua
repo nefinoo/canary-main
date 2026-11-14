@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Lethal Lissy"
 monster.description = "Lethal Lissy"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 155,
 	lookHead = 77,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1450
-monster.maxHealth = 1450
+monster.health = 200000
+monster.maxHealth = 200000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -78,13 +78,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -150, maxDamage = -250}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -1500, maxDamage = -2500}
 }
 
 monster.defenses = {
 	defense = 50,
 	armor = 35,
-	{name ="combat", interval = 6000, chance = 65, type = COMBAT_HEALING, minDamage = 200, maxDamage = 250, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 6000, chance = 65, type = COMBAT_HEALING, minDamage = 2000, maxDamage = 2500, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.maxSummons = 4
@@ -93,16 +93,17 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "lethal lissy's shirt", chance = 1000, unique = true},
+	{name = "lethal lissy's shirt", chance = 100000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 40},
 	{name = "knight armor", chance = 1200},
 	{name = "double axe", chance = 1500},
 	{name = "plate armor", chance = 4000},
 	{name = "small diamond", chance = 100000},
-	{id = 3114, chance = 100000}
+	{id = 3114, chance = 100000},
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "mummy"
 monster.description = "a mummy"
-monster.experience = 15000
+monster.experience = 6750000
 monster.outfit = {
 	lookType = 65,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 11000
-monster.maxHealth = 11000
+monster.health = 13000
+monster.maxHealth = 13000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6004
@@ -84,23 +84,57 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1225, condition = {type = CONDITION_POISON, startDamage = 65, interval = 4000}},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_LIFEDRAIN, minDamage = -1165, maxDamage = -1225, range = 1, radius = 1, target = true},
-	{name ="speed", interval = 1000, chance = 8, speed = {min = -600, max = -600}, duration = 10000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -250, maxDamage = -565, condition = {type = CONDITION_POISON, startDamage = 35, interval = 4000} },
+	{ name = "combat", interval = 3000, chance = 18, type = COMBAT_LIFEDRAIN, minDamage = -190, maxDamage = -560, range = 1, radius = 1, target = true },
+	{ name = "speed", interval = 2000, chance = 8, speed = {min = -300, max = -300}, duration = 7000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 14
+	defense = 25,
+	armor = 25
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 80},
-	{id = 3046, chance = 1818},
-	{name = "yellow piece of cloth", chance = 5000},
+	-- Una sola tirada de moneda para equilibrar la economia
+	{ name = "platinum coin", chance = 90000, maxCount = 4 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 9000 },
+	-- Gemas y materiales originales de addon
+	{ name = "yellow piece of cloth", chance = 6500 }, -- material de addon original
+	{ id = 12413, chance = 14000 }, -- bag aleatoria de addon
+	-- Bronze Experience Scroll (ID 51670): extremadamente raro
+	{ name = "experience scroll", chance = 175 },
+	-- Plate Set
+	{ name = "plate armor", chance = 9800 },
+	{ name = "plate legs", chance = 9408 },
+	{ name = "steel helmet", chance = 10486 },
+	{ name = "bonelord shield", chance = 9408 },
+	-- Knight Set
+	{ name = "knight armor", chance = 4700 },
+	{ name = "knight legs", chance = 4418 },
+	{ name = "knight axe", chance = 3666 },
+	{ name = "devil helmet", chance = 3431 },
+	{ name = "tower shield", chance = 3243 },
+	-- Crown Set: recompensas raras de zona
+	{ name = "crown armor", chance = 760 },
+	{ name = "crown legs", chance = 730 },
+	{ name = "crown helmet", chance = 912 },
+	{ name = "crown shield", chance = 684 },
+	{ id = 3055, chance = 4041 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1450 },
+	{ name = "fire axe", chance = 1600 },
+	{ name = "dragonbone staff", chance = 1350 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2021 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 684 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

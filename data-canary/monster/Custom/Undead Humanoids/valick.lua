@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "valick"
 monster.description = "a valick"
-monster.experience = 15500
+monster.experience = 7500000
 monster.outfit = {
 	lookType = 68,
 	lookHead = 20,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Check the teleport bitch.",
 }
 
-monster.health = 13000
-monster.maxHealth = 13000
+monster.health = 15500
+monster.maxHealth = 15500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6006
@@ -94,28 +94,64 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1425},
-	{name ="combat", interval = 1000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1165, maxDamage = -1425, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="speed", interval = 2000, chance = 12, speed = {min = -600, max = -600}, duration = 60000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1165, maxDamage = -1425, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -305, maxDamage = -630 },
+	{ name = "combat", interval = 4000, chance = 22, type = COMBAT_PHYSICALDAMAGE, minDamage = -325, maxDamage = -755, range = 1, radius = 1, target = true, effect = CONST_ME_MAGIC_RED },
+	{ name = "speed", interval = 2000, chance = 8, speed = {min = -320, max = -320}, duration = 8000, radius = 6, target = false, effect = CONST_ME_MAGIC_RED },
+	{ name = "combat", interval = 4000, chance = 28, type = COMBAT_PHYSICALDAMAGE, minDamage = -275, maxDamage = -685, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK }
 }
 
 monster.defenses = {
-	defense = 23,
-	armor = 40,
-	{name = "outfit", interval = 1500, chance = 60, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "bat" },
-	{name = "outfit", interval = 1500, chance = 50, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "vampire" },
-	{name ="speed", interval = 1500, chance = 100, speed = {min = 300, max = 300}, duration = 30000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	defense = 30,
+	armor = 36,
+	{ name = "outfit", interval = 1500, chance = 60, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "bat" },
+	{ name = "outfit", interval = 1500, chance = 50, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 6000, outfitMonster = "vampire" },
+	{ name = "speed", interval = 1500, chance = 25, speed = {min = 300, max = 300}, duration = 8000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 10},
-	{id = 7366, chance = 50},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
+	-- Una sola tirada de moneda para equilibrar la economia
+	{ name = "platinum coin", chance = 90000, maxCount = 5 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 9000 },
+	-- Gemas y materiales originales de addon
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ name = "violet gem", chance = 500 },
+	{ id = 5905, chance = 2000 }, -- vampire dust: material original
+	{ id = 12413, chance = 15500 }, -- bag aleatoria de addon
+	-- Bronze Experience Scroll (ID 51670): extremadamente raro
+	{ name = "experience scroll", chance = 220 },
+	-- Plate Set
+	{ name = "plate armor", chance = 10000 },
+	{ name = "plate legs", chance = 9600 },
+	{ name = "steel helmet", chance = 10700 },
+	{ name = "bonelord shield", chance = 9600 },
+	-- Knight Set
+	{ name = "knight armor", chance = 4850 },
+	{ name = "knight legs", chance = 4559 },
+	{ name = "knight axe", chance = 3783 },
+	{ name = "devil helmet", chance = 3540 },
+	{ name = "tower shield", chance = 3346 },
+	-- Crown Set: recompensas raras de zona
+	{ name = "crown armor", chance = 840 },
+	{ name = "crown legs", chance = 806 },
+	{ name = "crown helmet", chance = 1008 },
+	{ name = "crown shield", chance = 756 },
+	{ id = 3055, chance = 4200 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1900 },
+	{ name = "fire axe", chance = 2200 },
+	{ name = "dragonbone staff", chance = 1700 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2085 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 756 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

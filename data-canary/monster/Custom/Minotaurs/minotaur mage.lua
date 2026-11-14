@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur mage"
 monster.description = "a minotaur mage"
-monster.experience = 150
+monster.experience = 27500
 monster.outfit = {
 	lookType = 23,
 	lookHead = 20,
@@ -14,8 +14,25 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 155
-monster.maxHealth = 155
+monster.raceId = 23
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mintwallin, Maze of Lost Souls, Dark Pyramid, Folda (hidden cave), \z
+		Kazordoon (The Horned Fox's hideout), the Plains of Havoc, Point of No Return south of Outlaw Camp, \z
+		Elvenbane, the depths of Fibula Dungeon (level 50+), cave east from Dwarf Bridge, Foreigner Quarter, \z
+		Rookgaard Minotaur Hell (not reachable).",
+}
+
+
+monster.health = 420
+monster.maxHealth = 420
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5981
@@ -81,9 +98,9 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 18, attack = 15},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -15, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -35, maxDamage = -95, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="energyfield", interval = 1000, chance = 12, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -7, maxDamage = -30, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -12, maxDamage = -55, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="energyfield", interval = 1000, chance = 7, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
 }
 
 monster.defenses = {
@@ -92,26 +109,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 2920, chance = 10000},
-	{name = "leather helmet", chance = 8000},
-	{name = "leather legs", chance = 8000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of cosmic energy", chance = 1333},
-			{name = "combat knife", chance = 10000},
-			{name = "carrot of doom", chance = 20000, maxCount = 5},
-			{id = 3998, chance = 10000},
-			{name = "heavy magic missile rune", chance = 2857},
-			{name = "brass armor", chance = 4000},
-			{name = "chain legs", chance = 4000},
-			{name = "taurus mace", chance = 1000}
-		}
-	}
+	{ name = "gold coin", chance = 90000, maxCount = 28 },
+	{ name = "ham", chance = 40000, maxCount = 2 },
+	{ name = "health potion", chance = 2500 },
+	{ name = "mana potion", chance = 3500 },
+	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
+	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 410 }, -- equipo muy raro
+	{ name = "plate legs", chance = 410 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 410 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 410 }, -- equipo muy raro
 }
 
 mType:register(monster)
+
 
 
 

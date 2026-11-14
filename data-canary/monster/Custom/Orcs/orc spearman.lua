@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc spearman"
 monster.description = "a orc spearman"
-monster.experience = 115
+monster.experience = 9000
 monster.outfit = {
 	lookType = 50,
 	lookHead = 20,
@@ -14,12 +14,29 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 105
-monster.maxHealth = 105
+monster.raceId = 50
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Orc Fortress, Folda Dungeon, Edron Orc Cave and around it, Ancient Temple, \z
+		Venore Orc Cave, below the Point of No Return in Outlaw Camp, Plains of Havoc, \z
+		North of Thais in the Orc Peninsula, Elvenbane and Orc Camp in Foreigner Quarter. \z
+		Also found in Rookgaard West plains, Zao Orc Land.",
+}
+
+
+monster.health = 115
+monster.maxHealth = 115
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 5996
-monster.speed = 176
+monster.speed = 85
 monster.summonCost = 310
 
 monster.changeTarget = {
@@ -79,8 +96,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 19, attack = 17},
-	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -16, maxDamage = -40, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
+	{name ="melee", interval = 2000, chance = 100, skill = 19, attack = 14},
+	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -2, maxDamage = -16, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
 }
 
 monster.defenses = {
@@ -89,19 +106,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 80000, maxCount = 10},
-	{name = "meat", chance = 80000, maxCount = 2},
-	{name = "studded legs", chance = 10000},
-	{name = "dirty fur", chance = 10000},
-	{id = 2853, chance = 100000, child = {
-			{name = "machete", chance = 10000},
-			{name = "spear", chance = 6666}
-		}
-	}
+	{ name = "plate armor", chance = 117 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 117 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 117 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 117 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 250 }, -- bolsa de items de addon aleatorios (0.250%)
+	{ name = "gold coin", chance = 75000, maxCount = 7 },
+	{ name = "meat", chance = 30000, maxCount = 2 },
+	{ name = "health potion", chance = 700 },
+	{ name = "mana potion", chance = 800 },
 }
 
 mType:register(monster)
+
 
 
 

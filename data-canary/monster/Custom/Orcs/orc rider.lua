@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc rider"
 monster.description = "a orc rider"
-monster.experience = 130
+monster.experience = 10000
 monster.outfit = {
 	lookType = 4,
 	lookHead = 20,
@@ -14,12 +14,26 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 180
-monster.maxHealth = 180
+monster.raceId = 4
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Orc Fort, Orc Peninsula, near Dark Cathedral, Zao Orc Land.",
+}
+
+
+monster.health = 175
+monster.maxHealth = 175
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6010
-monster.speed = 340
+monster.speed = 90
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -80,7 +94,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 20}
+	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 15}
 }
 
 monster.defenses = {
@@ -90,23 +104,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{name = "obsidian lance", chance = 2000},
-			{name = "orcish axe", chance = 2500},
-			-- {name = "legion helmet", chance = 10000},
-			{name = "battle shield", chance = 6666}
-		}
-	},
-	{name = "backpack", chance = 20000, child = {
-			{name = "gold coin", chance = 20000}
-		}
-	},
-	{id = 3012, chance = 10000},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "meat", chance = 50000, maxCount = 3}
+	{ name = "plate armor", chance = 144 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 144 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 144 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 144 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 450 }, -- bolsa de items de addon aleatorios (0.450%)
+	{ name = "gold coin", chance = 80000, maxCount = 9 },
+	{ name = "meat", chance = 35000, maxCount = 2 },
+	{ name = "health potion", chance = 1200 },
+	{ name = "mana potion", chance = 1200 },
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "kongra"
 monster.description = "a kongra"
-monster.experience = 2050000
+monster.experience = 3000000000
 monster.outfit = {
 	lookType = 116,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 690000
+monster.maxHealth = 690000
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 6043
@@ -81,7 +81,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -8653, maxDamage = -11249},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11249, maxDamage = -19037},
 }
 
 monster.defenses = {
@@ -92,13 +92,25 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 20000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 65},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 75000, maxCount = 26},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3000, maxCount = 3},
+	{id = 37607, chance = 100},
+	{id = 37608, chance = 100},
+	{id = 37609, chance = 100},
+	{id = 37610, chance = 100},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots	
 	{name = "small stone", chance = 2500, maxCount = 3},
-	{name = "ape fur", chance = 1000, maxCount = 2},
+	{name = "ape fur", chance = 1150, maxCount = 2},
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

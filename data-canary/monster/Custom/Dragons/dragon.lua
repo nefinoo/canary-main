@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon"
 monster.description = "a dragon"
-monster.experience = 1700
+monster.experience = 350000
 monster.outfit = {
 	lookType = 34,
 	lookHead = 20,
@@ -14,9 +14,28 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1720
-monster.maxHealth = 1720
-monster.runHealth = 300
+monster.raceId = 34
+monster.Bestiary = {
+	class = "Dragon",
+	race = BESTY_RACE_DRAGON,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Thais Ancient Temple, Darashia Dragon Lair, Mount Sternum Dragon Cave, Mintwallin, \z
+		deep in Fibula Dungeon, Kazordoon Dragon Lair (near Dwarf Bridge), Plains of Havoc, Elven Bane castle, \z
+		Maze of Lost Souls, southern cave and dragon tower in Shadowthorn, Orc Fortress, Venore Dragon Lair, \z
+		Pits of Inferno, Behemoth Quest room in Edron, Hero Cave, deep Cyclopolis, Edron Dragon Lair, Goroma, \z
+		Ankrahmun Dragon Lairs, Draconia, Dragonblaze Peaks, some Ankrahmun Tombs, \z
+		underground of Fenrock (on the way to Beregar), Krailos Steppe and Crystal Lakes.",
+}
+
+
+monster.health = 880
+monster.maxHealth = 880
+monster.runHealth = 100
 monster.race = "blood"
 monster.corpse = 5973
 monster.speed = 180
@@ -68,59 +87,63 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_ENERGYDAMAGE, percent = -30},
 	{type = COMBAT_EARTHDAMAGE, percent = 80},
 	{type = COMBAT_FIREDAMAGE, percent = 100},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = -30},
+	{type = COMBAT_HOLYDAMAGE , percent = 30},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -201, maxDamage = -261},
-	{name ="combat", interval = 4000, chance = 60, type = COMBAT_FIREDAMAGE, minDamage = -201, maxDamage = -261, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 3000, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -201, maxDamage = -261, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -28, maxDamage = -72},
+	{name ="combat", interval = 4000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -22, maxDamage = -65, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -25, maxDamage = -72, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
 	defense = 18,
 	armor = 25,
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_HEALING, minDamage = 34, maxDamage = 56, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 3000, chance = 8, type = COMBAT_HEALING, minDamage = 12, maxDamage = 25, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "dragon ham", chance = 20000, maxCount = 2},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "mace", chance = 20000},
-	{id = 3349, chance = 6666},
-	{name = "dragon hammer", chance = 1333},
-	{name = "steel shield", chance = 1818},
-	{name = "short sword", chance = 20000},
-	{name = "plate legs", chance = 2222},
-	{name = "steel helmet", chance = 3333},
-	{name = "double axe", chance = 4000},
-	{name = "dragonbone staff", chance = 4000},
-	{name = "longsword", chance = 5000},
-	-- {id = 3449, chance = 4000, maxCount = 10},
-	{name = "green dragon leather", chance = 4000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of inferno", chance = 1111},
-			{name = "gold coin", chance = 100000, maxCount = 25},
-			{name = "dragon shield", chance = 600},
-			{name = "small diamond", chance = 1538, maxCount = 3},
-			{name = "life crystal", chance = 2000},
-			{name = "broadsword", chance = 6666},
-			{name = "serpent sword", chance = 509},
-			{name = "green dragon scale", chance = 5000}
-		}
-	}
+	{ name = "experience scroll", chance = 30 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Oro, comida y pociones de caceria (nivel 50)
+	{ name = "gold coin", chance = 90000, maxCount = 55 },
+	{ name = "dragon ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 7500 },
+	{ name = "strong health potion", chance = 2700 },
+	{ name = "strong mana potion", chance = 2300 },
+	-- Materiales originales de criatura y bag de addon
+	{ name = "green dragon leather", chance = 3500 },
+	{ name = "green dragon scale", chance = 5000 },
+	{ id = 12413, chance = 9000 },
+	-- Plate Set: frecuente comparado con Knight y Crown
+	{ name = "plate armor", chance = 5500 },
+	{ name = "plate legs", chance = 5280 },
+	{ name = "steel helmet", chance = 5885 },
+	{ name = "bonelord shield", chance = 5280 },
+	-- Armas de la etapa
+	{ name = "barbarian axe", chance = 6500 },
+	{ name = "clerical mace", chance = 5500 },
+	{ id = 7385, chance = 5500 },
+	-- Knight Set: raro
+	{ name = "knight armor", chance = 1900 },
+	{ name = "knight legs", chance = 1786 },
+	{ name = "knight axe", chance = 1482 },
+	{ name = "devil helmet", chance = 1387 },
+	{ name = "tower shield", chance = 1311 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 817 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)
+
 
 
 

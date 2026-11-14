@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "bloody mary"
 monster.description = "a bloody mary"
-monster.experience = 20000
+monster.experience = 25000000
 monster.outfit = {
 	lookType = 58,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 15000
-monster.maxHealth = 15000
+monster.health = 33000
+monster.maxHealth = 33000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -81,30 +81,66 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 25, attack = 20, condition = {type = CONDITION_POISON, startDamage = 250, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -400, maxDamage = -1200, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_MANADRAIN, minDamage = -200, maxDamage = -300, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -320, maxDamage = -900, condition = {type = CONDITION_POISON, startDamage = 55, interval = 5000} },
+	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_PHYSICALDAMAGE, minDamage = -350, maxDamage = -980, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -70, maxDamage = -180, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.defenses = {
-	defense = 19,
-	armor = 10,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 100, maxDamage = 150, effect = CONST_ME_MAGIC_BLUE}
+	defense = 36,
+	armor = 45,
+	{ name = "combat", interval = 4000, chance = 12, type = COMBAT_HEALING, minDamage = 75, maxDamage = 145, effect = CONST_ME_MAGIC_BLUE }
 }
 
 monster.maxSummons = 2
 monster.summons = {
-	{name = "ghoul", chance = 8, interval = 1000, max = 2}
+	{ name = "ghoul", chance = 6, interval = 4000, max = 2 }
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 5},
-	{id = 3341, chance = 100},
-	{name = "experience scroll", chance = 2500},
---	{id = 9743, chance = 2500}
+	-- Dinero y consumibles; una sola tirada principal de moneda
+	{ name = "platinum coin", chance = 100000, maxCount = 10 },
+	{ name = "crystal coin", chance = 2000, maxCount = 1 }, -- moneda extra excepcional
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 15000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 10000 },
+	-- Gemas originales y materiales de addon (si aplica)
+	{ id = 3039, chance = 2000 },
+	{ name = "violet gem", chance = 1000 },
+	{ id = 12413, chance = 25000 }, -- bolsa de addon
+	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
+	{ name = "experience scroll", chance = 750 },
+	-- Plate Set
+	{ name = "plate armor", chance = 11500 },
+	{ name = "plate legs", chance = 11040 },
+	{ name = "steel helmet", chance = 12305 },
+	{ name = "bonelord shield", chance = 11040 },
+	-- Knight Set
+	{ name = "knight armor", chance = 6000 },
+	{ name = "knight legs", chance = 5640 },
+	{ name = "knight axe", chance = 4680 },
+	{ name = "devil helmet", chance = 4380 },
+	{ name = "tower shield", chance = 4140 },
+	-- Crown Set
+	{ name = "crown armor", chance = 1550 },
+	{ name = "crown legs", chance = 1488 },
+	{ name = "crown helmet", chance = 1860 },
+	{ name = "crown shield", chance = 1395 },
+	{ id = 3055, chance = 5200 }, -- Platinum Amulet (Crown Set)
+	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
+	{ name = "fire sword", chance = 2800 },
+	{ name = "fire axe", chance = 2900 },
+	{ name = "dragonbone staff", chance = 2800 },
+	{ id = 3341, chance = 100 }, -- Arcane Staff original: drop unico raro conservado
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2580 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 1395 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

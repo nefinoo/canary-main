@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Grim Reaper"
 monster.description = "a grim reaper"
-monster.experience = 4500
+monster.experience = 4500000
 monster.outfit = {
 	lookType = 300,
 	lookHead = 0,
@@ -116,6 +116,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

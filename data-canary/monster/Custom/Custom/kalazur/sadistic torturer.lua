@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "sadistic torturer"
 monster.description = "a sadistic torturer"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 234,
 	lookHead = 0,
@@ -92,23 +92,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 76, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
 	{name = "ham", chance = 33333, maxCount = 5, description2 = "ham"},
 	{name = "golden legs", chance = 2000, description2 = "golden legs"},
-	{id = 6299, chance = 2066, description2 = "death ring"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "battle shield", chance = 9999, description2 = "battle shield"},
-			{name = "demonic essence", chance = 4555, maxCount = 3, description2 = "demonic essence"},
-			{id = 3305, chance = 12000, description2 = "carpenter hammer"},
-			{id = 3461, chance = 11000, description2 = "saw"},
-			{name = "soul orb", chance = 5555, description2 = "soul orb"},
-			{id = 5801, chance = 1800, description2 = "key ring"},
-			{name = "cat's paw", chance = 1666, description2 = "cat's paw"}
-		}
-	}
+	{name = "battle shield", chance = 9999, description2 = "battle shield"},
+	{name = "demonic essence", chance = 4555, maxCount = 3, description2 = "demonic essence"},
+	{id = 3305, chance = 12000, description2 = "carpenter hammer"},
+	{id = 3461, chance = 11000, description2 = "saw"},
+	{name = "soul orb", chance = 5555, description2 = "soul orb"},
+	{id = 5801, chance = 1800},
+	{name = "cat's paw", chance = 1666, description2 = "cat's paw"},
 }
 
 mType:register(monster)
+
 
 
 

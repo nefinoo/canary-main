@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Draken Abomination")
+﻿local mType = Game.createMonsterType("Draken Abomination")
 local monster = {}
 
 monster.description = "a draken abomination"
-monster.experience = 2050000
+monster.experience = 5000000000
 monster.outfit = {
 	lookType = 357,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Razachai including the Inner Sanctum.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "venom"
 monster.corpse = 11667
 monster.speed = 135
@@ -84,14 +84,8 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 50000, maxCount = 100 },
-	{ name = "gold coin", chance = 47000, maxCount = 98 },
-	{ name = "platinum coin", chance = 50590, maxCount = 8 },
 	{ name = "meat", chance = 50450, maxCount = 4 },
-	{ name = "great mana potion", chance = 9950, maxCount = 3 },
 	{ name = "terra hood", chance = 8730 },
-	{ name = "great spirit potion", chance = 4905, maxCount = 3 },
-	{ name = "ultimate health potion", chance = 9400, maxCount = 3 },
 	{ name = "wand of voodoo", chance = 1020 },
 	{ name = "small topaz", chance = 2900, maxCount = 4 },
 	{ name = "zaoan armor", chance = 470 },
@@ -104,13 +98,26 @@ monster.loot = {
 	{ name = "draken boots", chance = 540 },
 	{ name = "snake god's wristguard", chance = 10 },
 	{ name = "bamboo leaves", chance = 360 },
+	{name = "platinum coin", chance = 100000, maxCount = 28},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 35000, maxCount = 34},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
 	{ name = "draken abomination curse", interval = 2000, chance = 10, range = 5, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_MORTAREA, target = false },
 	{ name = "drunk", interval = 2000, chance = 15, range = 7, radius = 4, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false, duration = 9000 },
 	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, range = 7, radius = 3, effect = CONST_ME_HITBYPOISON, target = false },
 }
@@ -144,3 +151,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

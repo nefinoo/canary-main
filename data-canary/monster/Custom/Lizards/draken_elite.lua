@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Draken Elite")
+﻿local mType = Game.createMonsterType("Draken Elite")
 local monster = {}
 
 monster.description = "a draken elite"
-monster.experience = 2050000
+monster.experience = 4750000000
 monster.outfit = {
 	lookType = 362,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Razachai, including the Crystal Column chambers in the Inner Sanctum.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 11653
 monster.speed = 166
@@ -75,13 +75,8 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 97220, maxCount = 187 },
-	{ name = "platinum coin", chance = 49070, maxCount = 8 },
-	{ name = "meat", chance = 34260, maxCount = 4 },
 	{ name = "broken draken mail", chance = 25000 },
 	{ name = "broken slicer", chance = 25000 },
-	{ name = "ultimate health potion", chance = 12040, maxCount = 3 },
-	{ name = "great mana potion", chance = 9260, maxCount = 3 },
 	{ name = "draken sulphur", chance = 6480 },
 	{ name = "draken wristbands", chance = 6480 },
 	{ name = "small diamond", chance = 1850, maxCount = 2 },
@@ -96,17 +91,30 @@ monster.loot = {
 	{ name = "elite draken mail", chance = 110 },
 	{ name = "blade of corruption", chance = 60 },
 	{ name = "snake god's wristguard", chance = 40 },
-	{ name = "cobra crown", chance = 0 },
+	{ name = "cobra crown", chance = 110},
+	{name = "platinum coin", chance = 100000, maxCount = 28},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 35000, maxCount = 34},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -8653, maxDamage = -11249, radius = 4, effect = CONST_ME_POFF, target = true },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -20306, maxDamage = -26398, radius = 4, effect = CONST_ME_POFF, target = true },
 	{ name = "soulfire rune", interval = 2000, chance = 10, target = false },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, range = 7, shootEffect = CONST_ANI_POISON, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -20306, maxDamage = -26398, range = 7, shootEffect = CONST_ANI_POISON, target = true },
 }
 
 monster.defenses = {
@@ -137,3 +145,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

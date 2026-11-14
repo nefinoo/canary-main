@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "war wolf"
 monster.description = "a war wolf"
-monster.experience = 55
+monster.experience = 7500
 monster.outfit = {
 	lookType = 3,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 130
+monster.maxHealth = 130
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6009
@@ -80,7 +80,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 39, attack = 24}
+	{name ="melee", interval = 2000, chance = 100, skill = 39, attack = 11}
 }
 
 monster.defenses = {
@@ -89,12 +89,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "ham", chance = 33333, maxCount = 5},
-	{name = "wolf paw", chance = 6666}
+	{ name = "plate armor", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 200 }, -- bolsa de items de addon aleatorios (0.200%)
+	{ name = "wolf paw", chance = 6666 }, -- material para addon de Druid (loot original)
+	{ name = "gold coin", chance = 60000, maxCount = 6 },
+	{ name = "ham", chance = 45000, maxCount = 2 },
+	{ name = "health potion", chance = 500 },
+	{ name = "mana potion", chance = 500 },
 }
 
 mType:register(monster)
+
 
 
 

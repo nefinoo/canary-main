@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Evil Counselor"
 monster.description = "evil counselor"
-monster.experience = 4500000
+monster.experience = 4500000000
 monster.outfit = {
 	lookType = 242,
 	lookHead = 0,
@@ -18,7 +18,7 @@ monster.health = 900000
 monster.maxHealth = 900000
 monster.runHealth = 0
 monster.race = "blood"
-monster.corpse = 1492
+monster.corpse = 2119
 monster.speed = 420
 monster.summonCost = 0
 
@@ -92,6 +92,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deranged Toxophilite"
 monster.description = "a deranged toxophilite"
-monster.experience = 325000
+monster.experience = 275000000
 monster.outfit = {
 	lookType = 137,
 	lookHead = 114,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 88000
-monster.maxHealth = 88000
+monster.health = 60000
+monster.maxHealth = 60000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4311
@@ -101,14 +101,24 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 20},
-	{name = "elven amulet", chance = 1},
-	{name = "experience scroll", chance = 3000},
-	{name = "piece of royal steel", chance = 500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 7},
+	{name = "platinum coin", chance = 75000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)
+
 
 
 

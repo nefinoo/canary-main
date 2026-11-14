@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops drone"
 monster.description = "a cyclops drone"
-monster.experience = 200
+monster.experience = 70000
 monster.outfit = {
 	lookType = 280,
 	lookHead = 0,
@@ -14,8 +14,22 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 325
-monster.maxHealth = 325
+monster.raceId = 391
+monster.Bestiary = {
+	class = "Giant",
+	race = BESTY_RACE_GIANT,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mount Sternum, Mistrock and in the Cyclops version of the Forsaken Mine.",
+}
+
+
+monster.health = 480
+monster.maxHealth = 480
 monster.runHealth = 75
 monster.race = "blood"
 monster.corpse = 771
@@ -82,8 +96,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 40},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -46, maxDamage = -74, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 2000, chance = 100, skill = 48, attack = 37},
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -12, maxDamage = -55, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
@@ -92,16 +106,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "battle shield", chance = 1500},
-	{name = "dark helmet", chance = 200},
-	{name = "gold coin", chance = 4000, maxCount = 24},
-	{name = "meat", chance = 5000, maxCount = 2},
-	{name = "plate shield", chance = 2000},
-	{name = "heavy machete", chance = 2000},
-	{name = "strong health potion", chance = 2000}
+	{ name = "gold coin", chance = 90000, maxCount = 42 },
+	{ name = "ham", chance = 55000, maxCount = 3 },
+	{ name = "health potion", chance = 6000 },
+	{ name = "mana potion", chance = 5000 },
+	{ id = 12413, chance = 5000 }, -- bolsa de materiales de addon
+	{ name = "plate armor", chance = 849 },
+	{ name = "plate legs", chance = 849 },
+	{ name = "steel helmet", chance = 849 },
+	{ name = "bonelord shield", chance = 849 },
 }
 
 mType:register(monster)
+
 
 
 

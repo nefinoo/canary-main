@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Brutus Bloodbeard"
 monster.description = "Brutus Bloodbeard"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 98,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1200
-monster.maxHealth = 1200
+monster.health = 200000
+monster.maxHealth = 200000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -78,7 +78,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -450, maxDamage = -500}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -4500, maxDamage = -5000}
 }
 
 monster.defenses = {
@@ -87,7 +87,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "brutus bloodbeard's hat", chance = 1000, unique = true},
+	{name = "brutus bloodbeard's hat", chance = 100000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 40},
 	{name = "knight armor", chance = 1200},
 	{name = "plate armor", chance = 4000},
@@ -95,6 +95,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

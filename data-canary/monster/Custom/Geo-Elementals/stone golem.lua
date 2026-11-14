@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "stone golem"
 monster.description = "a stone golem"
-monster.experience = 280
+monster.experience = 33750000
 monster.outfit = {
 	lookType = 67,
 	lookHead = 20,
@@ -14,13 +14,13 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 270
-monster.maxHealth = 270
+monster.health = 28000
+monster.maxHealth = 28000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6005
-monster.speed = 180
-monster.summonCost = 590
+monster.speed = 200
+monster.summonCost = 0
 
 monster.changeTarget = {
 	interval = 5000,
@@ -30,8 +30,8 @@ monster.changeTarget = {
 monster.flags = {
 	attackable = true,
 	hostile = true,
-	summonable = true,
-	convinceable = true,
+	summonable = false,
+	convinceable = false,
 	illusionable = true,
 	boss = false,
 	ignoreSpawnBlock = false,
@@ -78,29 +78,52 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 38}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -500, maxDamage = -1130 },
+	{ name = "combat", interval = 3000, chance = 28, type = COMBAT_PHYSICALDAMAGE, minDamage = -445, maxDamage = -1080, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK }
 }
 
 monster.defenses = {
-	defense = 18,
-	armor = 10
+	defense = 37,
+	armor = 46,
+	{ name = "combat", interval = 4000, chance = 10, type = COMBAT_HEALING, minDamage = 25, maxDamage = 55, effect = CONST_ME_MAGIC_BLUE }
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "scale armor", chance = 10000},
-	{name = "iron ore", chance = 2500, maxCount = 2},
-	{id = 2853, chance = 100000, child = {
-			{id = 1781, chance = 10000},
-			{name = "small stone", chance = 20000, maxCount = 5},
-			{name = "carlin sword", chance = 2500},
-			{id = 2920, chance = 20000},
-			{name = "fishing rod", chance = 5000}
-		}
-	}
+	-- Moneda, consumibles y materiales de piedra
+	{ name = "platinum coin", chance = 80000, maxCount = 3 },
+	{ name = "gold coin", chance = 100000, maxCount = 20 },
+	{ name = "strong health potion", chance = 8000 },
+	{ name = "strong mana potion", chance = 9000 },
+	{ name = "scale armor", chance = 1400 },
+	{ name = "iron ore", chance = 16000, maxCount = 3 },
+	{ name = "small stone", chance = 30000, maxCount = 5 },
+	{ id = 12413, chance = 12500 }, -- bolsa de materiales de addon
+	-- Knight Set
+	{ name = "knight armor", chance = 6550 },
+	{ name = "knight legs", chance = 6157 },
+	{ name = "knight axe", chance = 5109 },
+	{ name = "devil helmet", chance = 4781 },
+	{ name = "tower shield", chance = 4520 },
+	{ id = 3079, chance = 2817 }, -- Boots of Haste
+	-- Crown Set
+	{ name = "crown armor", chance = 1820 },
+	{ name = "crown legs", chance = 1747 },
+	{ name = "crown helmet", chance = 2184 },
+	{ name = "crown shield", chance = 1638 },
+	{ id = 10386, chance = 1638 }, -- Zaoan Shoes
+	{ id = 3055, chance = 6000 }, -- Platinum Amulet
+	-- Bolsa de objetos originales
+	{ id = 2853, chance = 100000, child = {
+		{ id = 1781, chance = 10000 },
+		{ name = "small stone", chance = 20000, maxCount = 5 },
+		{ name = "carlin sword", chance = 2500 },
+		{ id = 2920, chance = 20000 },
+		{ name = "fishing rod", chance = 5000 }
+	} }
 }
 
 mType:register(monster)
+
 
 
 

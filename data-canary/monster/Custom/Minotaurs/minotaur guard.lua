@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur guard"
 monster.description = "a minotaur guard"
-monster.experience = 160
+monster.experience = 32500
 monster.outfit = {
 	lookType = 29,
 	lookHead = 20,
@@ -14,8 +14,24 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 185
-monster.maxHealth = 185
+monster.raceId = 29
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple, Mintwallin, Minotaur Pyramid, Maze of Lost Souls, Folda, Cyclopolis, \z
+		Deeper Fibula Dungeon (level 50+ to open the door), Hero Cave, underground of Elvenbane, \z
+		Plains of Havoc, Kazordoon Minotaur Cave, Foreigner Quarter.",
+}
+
+
+monster.health = 510
+monster.maxHealth = 510
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5983
@@ -80,7 +96,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 35}
+	{name ="melee", interval = 2000, chance = 100, skill = 43, attack = 28}
 }
 
 monster.defenses = {
@@ -89,24 +105,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "meat", chance = 70000, maxCount = 3},
-	{name = "double axe", chance = 5000},
-	{name = "leather legs", chance = 10000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{id = 3274, chance = 6666},
-			{name = "fishing rod", chance = 5000},
-			{name = "chain legs", chance = 5000},
-			{name = "chain helmet", chance = 10000},
-			{name = "brass armor", chance = 2500},
-			{name = "battle shield", chance = 10000}
-		}
-	}
+	{ name = "gold coin", chance = 90000, maxCount = 32 },
+	{ name = "ham", chance = 50000, maxCount = 3 },
+	{ name = "health potion", chance = 3500 },
+	{ name = "mana potion", chance = 2500 },
+	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
+	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
+	{ name = "plate armor", chance = 463 }, -- equipo muy raro
+	{ name = "plate legs", chance = 463 }, -- equipo muy raro
+	{ name = "steel helmet", chance = 463 }, -- equipo muy raro
+	{ name = "bonelord shield", chance = 463 }, -- equipo muy raro
 }
 
 mType:register(monster)
+
 
 
 

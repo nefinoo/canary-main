@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc leader"
 monster.description = "a orc leader"
-monster.experience = 270
+monster.experience = 20000
 monster.outfit = {
 	lookType = 59,
 	lookHead = 20,
@@ -14,12 +14,25 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 450
-monster.maxHealth = 450
+monster.raceId = 59
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
+}
+
+monster.health = 290
+monster.maxHealth = 290
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6001
-monster.speed = 230
+monster.speed = 85
 monster.summonCost = 640
 
 monster.changeTarget = {
@@ -79,8 +92,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 48},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -70, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
+	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 10},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -6, maxDamage = -28, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
 }
 
 monster.defenses = {
@@ -89,33 +102,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 30},
-	{name = "throwing knife", chance = 50000, maxCount = 2},
-	{id = 3307, chance = 10000},
-	{name = "plate shield", chance = 5000},
-	{id = 3578, chance = 20000},
-	{name = "plate legs", chance = 1818},
-	{name = "broadsword", chance = 2857},
-	{name = "backpack", chance = 20000, child = {
-			{name = "gold coin", chance = 2857}
-		}
-	},
-	{id = 2853, chance = 100000, child = {
-			{id = 3091, chance = 2000},
-			{name = "royal spear", chance = 2000, maxCount = 2},
-			{name = "meat", chance = 33333, maxCount = 2},
-			{name = "dagger", chance = 6666},
-			{id = 3369, chance = 1000},
-			{name = "longsword", chance = 10000},
-			{name = "green tunic", chance = 2500},
-			{name = "brass legs", chance = 2857},
-			{name = "plate armor", chance = 1818}
-		}
-	}
+	{ id = 12413, chance = 850 }, -- bolsa de items de addon aleatorios (0.850%)
+	{ name = "gold coin", chance = 90000, maxCount = 15 },
+	{ name = "ham", chance = 35000, maxCount = 2 },
+	{ name = "health potion", chance = 1800 },
+	{ name = "mana potion", chance = 1200 },
+	{ name = "plate armor", chance = 323 }, -- Frozen Hell: 0.010%
+	{ name = "plate legs", chance = 323 }, -- Frozen Hell: 0.010%
+	{ name = "steel helmet", chance = 323 }, -- Frozen Hell: 0.015%
+	{ name = "bonelord shield", chance = 323 }, -- Frozen Hell: 0.010%
 }
 
 mType:register(monster)
+
 
 
 

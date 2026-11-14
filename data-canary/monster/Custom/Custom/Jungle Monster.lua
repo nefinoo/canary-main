@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Jungle Monster"
 monster.description = "a jungle monster"
-monster.experience = 325000
+monster.experience = 375000000
 monster.outfit = {
 	lookType = 216,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 88000
-monster.maxHealth = 88000
+monster.health = 75000
+monster.maxHealth = 75000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4375
@@ -88,8 +88,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -4500, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -3460, maxDamage = -4500, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
+	{name ="combat", interval = 1500, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -3460, maxDamage = -5000, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -3460, maxDamage = -5000, range = 4, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS}
 }
 
 monster.defenses = {
@@ -100,14 +100,26 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 10},
-	{name = "candy", chance = 2000},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
+	{name = "platinum coin", chance = 75000, maxCount = 11},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 	{name = "piece of draconian steel", chance = 500},
 	{name = "tribal mask", chance = 100},
 }
 
 mType:register(monster)
+
 
 
 

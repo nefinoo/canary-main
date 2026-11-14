@@ -163,7 +163,7 @@ int MoveEventFunctions::luaMoveEventLevel(lua_State* L) {
 	// moveevent:level(lvl)
 	const auto &moveevent = Lua::getUserdataShared<MoveEvent>(L, 1, "MoveEvent");
 	if (moveevent) {
-		moveevent->setRequiredLevel(Lua::getNumber<uint32_t>(L, 2));
+		moveevent->setRequiredLevel(Lua::getNumber<uint64_t>(L, 2));
 		moveevent->setWieldInfo(WIELDINFO_LEVEL);
 		Lua::pushBoolean(L, true);
 	} else {

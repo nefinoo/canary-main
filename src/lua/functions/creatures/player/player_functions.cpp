@@ -1580,7 +1580,7 @@ int PlayerFunctions::luaPlayerSetLevel(lua_State* L) {
 	// player:setLevel(level)
 	const auto &player = Lua::getUserdataShared<Player>(L, 1, "Player");
 	if (player) {
-		const uint16_t level = Lua::getNumber<uint16_t>(L, 2);
+		const uint64_t level = Lua::getNumber<uint64_t>(L, 2);
 		player->level = level;
 		player->experience = Player::getExpForLevel(level);
 		player->sendStats();

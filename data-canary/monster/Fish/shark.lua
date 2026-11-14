@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a shark"
-monster.experience = 4500
+monster.experience = 22500000
 monster.outfit = {
 	lookType = 453,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja, Seacrest Grounds, Krailos Steppe underwater cave.",
 }
 
-monster.health = 4500
-monster.maxHealth = 4500
+monster.health = 6700
+monster.maxHealth = 6700
 monster.race = "blood"
 monster.corpse = 13860
 monster.speed = 145
@@ -74,22 +74,23 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 50000, maxCount = 100 },
-	{ name = "gold coin", chance = 41000, maxCount = 38 },
-	{ id = 3578, chance = 25430, maxCount = 4 }, -- fish
-	{ name = "salmon", chance = 2430, maxCount = 2 }, -- fish
-	{ name = "deepling scales", chance = 9620 },
-	{ name = "eye of a deepling", chance = 1200 },
+	{name = "gold coin", chance = 100000, maxCount = 90},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 64000, maxCount = 10},
+	{name = "platinum coin", chance = 44000, maxCount = 12},
+	{ id = 3578, chance = 55430, maxCount = 20}, -- fish
+	{ name = "salmon", chance = 32430, maxCount = 10}, -- salmon
 	{ name = "small sapphire", chance = 1090 },
 	{ id = 281, chance = 390 }, -- giant shimmering pearl (green)
-	{name = "experience scroll", chance = 3000},
+	{name = "experience scroll", chance = 3650},
 	{ name = "fish fin", chance = 161 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -120, maxDamage = -180, effect = CONST_ME_DRAWBLOOD },
+	{name ="melee", interval = 1500, chance = 100, minDamage = -288, maxDamage = -500, effect = CONST_ME_DRAWBLOOD },
 	{name ="combat", interval = 2000, chance = 34, type = COMBAT_ENERGYDAMAGE, minDamage = -250, maxDamage = -380, range = 7, radius = 4, target = true, shootEffect = 68, effect = 176},
-	{name ="combat", interval = 3000, chance = 44, type = COMBAT_ENERGYDAMAGE, minDamage = -310, maxDamage = -500, length = 8, spread = 3, effect = 38}
+	{name ="combat", interval = 3000, chance = 44, type = COMBAT_ENERGYDAMAGE, minDamage = -310, maxDamage = -500, length = 8, spread = 3, effect = 38},
+	{name ="speed", interval = 6000, chance = 10, speed = {min = -600, max = -600}, duration = 20000, range = 5, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.defenses = {
@@ -119,6 +120,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

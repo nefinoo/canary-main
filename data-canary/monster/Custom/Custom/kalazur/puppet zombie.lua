@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "puppet zombie"
 monster.description = "a puppet zombie"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 246,
 	lookHead = 0,
@@ -92,24 +92,22 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
+	{name = "platinum coin", chance = 100000, maxCount = 20},
 	{name = "bunch of wheat", chance = 5000, maxCount = 3},
 	{id = 2920, chance = 10000},
 	{id = 3115, chance = 6666},
 	{name = "blank rune", chance = 2222},
 	{name = "honeycomb", chance = 1100},
-	{id = 2853, chance = 100000, child = {
-			{id = 3274, chance = 2000},
-			{name = "leather legs", chance = 2500},
-			{name = "demonic essence", chance = 2222, maxCount = 2},
-			{name = "soul orb", chance = 1667},
-			{name = "skull staff", chance = 909},
-			{name = "scythe", chance = 5000}
-		}
-	}
+	{id = 3274, chance = 2000},
+	{name = "leather legs", chance = 2500},
+	{name = "demonic essence", chance = 2222, maxCount = 2},
+	{name = "soul orb", chance = 1667},
+	{name = "skull staff", chance = 909},
+	{name = "scythe", chance = 5000},
 }
 
 mType:register(monster)
+
 
 
 

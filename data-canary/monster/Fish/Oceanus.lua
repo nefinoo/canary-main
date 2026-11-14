@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Oceanus"
 monster.description = "the titan goddess of water"
-monster.experience = 250000000
+monster.experience = 250000000000
 monster.outfit = {
 	lookType = 252,
 	lookHead = 87,
@@ -107,6 +107,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Fury"
 monster.description = "a fury"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 149,
 	lookHead = 94,
@@ -95,24 +95,17 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 83, description2 = "gold coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 23},
 	{name = "steel boots", chance = 400, description2 = "steel boots"},
 	{id = 6558, chance = 5555, maxCount = 3, description2 = "concentrated demonic blood"},
 	{name = "meat", chance = 25000, description2 = "meat"},
 	{name = "demonic essence", chance = 2500, description2 = "demonic essence"},
 	{name = "soul orb", chance = 8888, description2 = "soul orb"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "crown armor", chance = 600, description2 = "crown armor"},
-			{name = "terra rod", chance = 1333, description2 = "terra rod"},
-			{name = "white pearl", chance = 12000, description2 = "white pearl"},
-			{id = 3039, chance = 1900, description2 = "red gem"},
-			{name = "red piece of cloth", chance = 1800, description2 = "red piece of cloth"}
-		}
-	}
+	{name = "crown armor", chance = 600, description2 = "crown armor"},
+	{name = "terra rod", chance = 1333, description2 = "terra rod"},
+	{name = "white pearl", chance = 12000, description2 = "white pearl"},
+	{id = 3039, chance = 1900, description2 = "red gem"},
+	{name = "red piece of cloth", chance = 1800, description2 = "red piece of cloth"},
 }
 
 mType:register(monster)
-
-
-
-

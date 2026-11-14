@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Atilla the Hun"
 monster.description = "the scourge of God"
-monster.experience = 5000000
+monster.experience = 5000000000
 monster.outfit = {
 	lookType = 131,
 	lookHead = 114,
@@ -18,7 +18,7 @@ monster.health = 1000000
 monster.maxHealth = 1000000
 monster.runHealth = 0
 monster.race = "blood"
-monster.corpse = 3058
+monster.corpse = 111
 monster.speed = 5000
 monster.summonCost = 0
 
@@ -97,6 +97,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

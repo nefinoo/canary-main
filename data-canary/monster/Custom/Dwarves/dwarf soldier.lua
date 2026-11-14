@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed ranger"
 monster.description = "an outlawed ranger"
-monster.experience = 5500
+monster.experience = 2000000
 monster.outfit = {
 	lookType = 71,
 	lookHead = 20,
@@ -14,8 +14,22 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 4700
-monster.maxHealth = 4700
+monster.raceId = 71
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Kazordoon Dwarf Mines, Cyclopolis, Dwacatra, Ferngrims Gate, Dwarf Bridge, \z
+		Mount Sternum Undead Cave, Beregar, Tiquanda Dwarf Cave, Cormaya Dwarf Cave.",
+}
+
+monster.health = 5000
+monster.maxHealth = 5000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6014
@@ -79,9 +93,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
-	{name ="combat", interval = 3000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
-	{name ="combat", interval = 5000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -518, maxDamage = -674, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -50, maxDamage = -135 },
+	{name ="combat", interval = 4000, chance = 48, type = COMBAT_PHYSICALDAMAGE, minDamage = -55, maxDamage = -185, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT},
+	{name ="combat", interval = 6000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -60, maxDamage = -215, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -90,20 +104,47 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small ruby", chance = 100000, maxCount = 7},
-	{name = "violet gem", chance = 25000},
-	{name = "crystal coin", chance = 50000, maxCount = 3},
-	{name = "throwing star", chance = 100},
-	{name = "dragon lance", chance = 2500},
-	{name = "golden armor", chance = 2500},
-	{name = "magic plate armor", chance = 2500},
-	{name = "demon shield", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "iron ore", chance = 300 },
-	-- {id = 9743, chance = 2500}
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 115 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 2500 },
+	{ name = "experience scroll", chance = 105 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 13000 },
+	-- Gemas originales de la zona
+	{ name = "small ruby", chance = 6500, maxCount = 2 },
+	{ id = 3039, chance = 350 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 8100 },
+	{ name = "plate legs", chance = 7776 },
+	{ name = "steel helmet", chance = 8667 },
+	{ name = "bonelord shield", chance = 7776 },
+	{ name = "knight armor", chance = 3550 },
+	{ name = "knight legs", chance = 3337 },
+	{ name = "knight axe", chance = 2769 },
+	{ name = "devil helmet", chance = 2592 },
+	{ name = "tower shield", chance = 2449 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 340 },
+	{ name = "crown legs", chance = 326 },
+	{ name = "crown helmet", chance = 408 },
+	{ name = "crown shield", chance = 306 },
+	{ id = 3055, chance = 2550 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1600 },
+	{ name = "fire axe", chance = 1100 },
+	{ name = "dragonbone staff", chance = 1600 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1527 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 306 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

@@ -388,7 +388,7 @@ int SpellFunctions::luaSpellLevel(lua_State* L) {
 		if (lua_gettop(L) == 1) {
 			lua_pushnumber(L, spell->getLevel());
 		} else {
-			spell->setLevel(Lua::getNumber<uint32_t>(L, 2));
+			spell->setLevel(Lua::getNumber<uint64_t>(L, 2));
 			Lua::pushBoolean(L, true);
 		}
 	} else {

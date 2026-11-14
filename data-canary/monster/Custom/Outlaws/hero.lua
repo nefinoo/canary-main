@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "frozenhell guard"
 monster.description = "a frozenhell guard"
-monster.experience = 70000
+monster.experience = 65000000
 monster.outfit = {
 	lookType = 73,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 47000
-monster.maxHealth = 47000
+monster.health = 30000
+monster.maxHealth = 30000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6081
@@ -94,14 +94,30 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 25},
-	{name = "warlord sword", chance = 50},
-	{name = "experience scroll", chance = 2000},
+	{name = "platinum coin", chance = 100000, maxCount = 6},
+	{name = "platinum coin", chance = 70000, maxCount = 10},
+	{name = "experience scroll", chance = 750, maxCount = 2},
 	{ name = "red piece of cloth", chance = 2006 },
+	{name = "green gem", chance = 750},
+	{name = "blue gem", chance = 750},
+	{name = "boots of haste", chance = 400},
+	{name = "stone skin amulet", chance = 50},
+	{name = "giant sword", chance = 750},
+	{name = "ice rapier", chance = 750},
+	{name = "silver dagger", chance = 1550},
+	{name = "golden sickle", chance = 450},
+	{name = "fire axe", chance = 1700},
+	{name = "dragon hammer", chance = 450},
+	{name = "skull staff", chance = 500},
+	{name = "golden legs", chance = 500},
+	{name = "magic plate armor", chance = 300},
+	{name = "mastermind shield", chance = 350},
+	{name = "demon shield", chance = 1550},
 	{id = 3082, chance = 2500}
 }
 
 mType:register(monster)
+
 
 
 

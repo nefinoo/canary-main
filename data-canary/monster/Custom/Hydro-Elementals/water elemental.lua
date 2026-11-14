@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "water elemental"
 monster.description = "a water elemental"
-monster.experience = 12000
+monster.experience = 36000000
 monster.outfit = {
 	lookType = 286,
 	lookHead = 0,
@@ -65,24 +65,24 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 70},
-	{type = COMBAT_ENERGYDAMAGE, percent = -25},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 100},
-	{type = COMBAT_HOLYDAMAGE , percent = 30},
-	{type = COMBAT_DEATHDAMAGE , percent = 30}
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -380, maxDamage = -700, condition = { type = CONDITION_POISON, totalDamage = 1200, interval = 4000 } },
-	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_DROWNDAMAGE, minDamage = -255, maxDamage = -340, range = 7, radius = 2, effect = CONST_ME_LOSEENERGY, target = true },
-	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -250, maxDamage = -340, range = 7, shootEffect = CONST_ANI_SMALLICE, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974, condition = { type = CONDITION_POISON, totalDamage = 1200, interval = 4000 } },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_DROWNDAMAGE, minDamage = -380, maxDamage = -700, range = 7, radius = 2, effect = CONST_ME_LOSEENERGY, target = true },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -380, maxDamage = -700, range = 7, shootEffect = CONST_ANI_SMALLICE, target = false },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 35, minDamage = -255, maxDamage = -550, radius = 5, effect = CONST_ME_POISONAREA, target = false },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 35, minDamage = -380, maxDamage = -700, radius = 5, effect = CONST_ME_POISONAREA, target = false },
 }
 
 monster.defenses = {
@@ -92,13 +92,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "experience scroll", chance = 2900},
-	{id = 3578, chance = 45000, maxCount = 3},--fish
-	{name = "salmon", chance = 30000, maxCount = 2},
-	{name = "green perch", chance = 7500, maxCount = 2}
+	{name = "experience scroll", chance = 7500},
+	{id = 3578, chance = 57430, maxCount = 20},--fish
+	{name = "salmon", chance = 39430, maxCount = 10},
+	{id = 3581, chance = 8000, maxCount = 2},
+	{name = "small diamond", chance = 75000, maxCount = 3},
+	{name = "gold coin", chance = 100000, maxCount = 90},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 64000, maxCount = 12},
+	{name = "platinum coin", chance = 44000, maxCount = 15},
 }
 
 mType:register(monster)
+
 
 
 

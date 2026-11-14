@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "hell soldier"
 monster.description = "a hell soldier"
-monster.experience = 19650
+monster.experience = 12500000
 monster.outfit = {
 	lookType = 37,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 15500
-monster.maxHealth = 15500
+monster.health = 22500
+monster.maxHealth = 22500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5963
@@ -78,23 +78,58 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1223, maxDamage = -1500},
-	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -1223, maxDamage = -1500, range = 1, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -425, maxDamage = -1040 },
+	{ name = "combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -445, maxDamage = -1130, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 25
+	defense = 34,
+	armor = 42
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 5},
-	{name = "throwing star", chance = 200},
-	{name = "experience scroll", chance = 2000},
-	-- {id = 9743, chance = 2500}
+	-- Dinero y consumibles; una sola tirada principal de moneda
+	{ name = "platinum coin", chance = 90000, maxCount = 7 },
+	{ name = "ham", chance = 40000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 15000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 10000 },
+	-- Gemas originales y materiales de addon (si aplica)
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ name = "violet gem", chance = 500 },
+	{ id = 12413, chance = 16000 }, -- bolsa de addon
+	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
+	{ name = "experience scroll", chance = 280 },
+	-- Plate Set
+	{ name = "plate armor", chance = 10500 },
+	{ name = "plate legs", chance = 10080 },
+	{ name = "steel helmet", chance = 11235 },
+	{ name = "bonelord shield", chance = 10080 },
+	-- Knight Set
+	{ name = "knight armor", chance = 5350 },
+	{ name = "knight legs", chance = 5029 },
+	{ name = "knight axe", chance = 4173 },
+	{ name = "devil helmet", chance = 3905 },
+	{ name = "tower shield", chance = 3691 },
+	-- Crown Set
+	{ name = "crown armor", chance = 1100 },
+	{ name = "crown legs", chance = 1056 },
+	{ name = "crown helmet", chance = 1320 },
+	{ name = "crown shield", chance = 990 },
+	{ id = 3055, chance = 4600 }, -- Platinum Amulet (Crown Set)
+	-- Fire Sword, Fire Axe y Dragonbone Staff (raras)
+	{ name = "fire sword", chance = 1650 },
+	{ name = "fire axe", chance = 2200 },
+	{ name = "dragonbone staff", chance = 1300 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 2301 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 990 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

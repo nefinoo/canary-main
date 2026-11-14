@@ -3410,7 +3410,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 		}
 	}
 
-	const uint32_t prevLevel = level;
+	const uint64_t prevLevel = level;
 	while (experience >= nextLevelExp) {
 		++level;
 		// Player stats gain for vocations level <= 8
@@ -3504,7 +3504,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 		}
 	}
 
-	const uint32_t oldLevel = level;
+	const uint64_t oldLevel = level;
 	uint64_t currLevelExp = Player::getExpForLevel(level);
 
 	while (level > 1 && experience < currLevelExp) {
@@ -4202,7 +4202,7 @@ void Player::removePlayer(bool displayEffect, bool forced /*= true*/) {
 	}
 }
 
-uint64_t Player::getExpForLevel(const uint32_t level) {
+uint64_t Player::getExpForLevel(const uint64_t level) {
 	return (((level - 6ULL) * level + 17ULL) * level - 12ULL) / 6ULL * 100ULL;
 }
 
@@ -5755,7 +5755,7 @@ void Player::getPathSearchParams(const std::shared_ptr<Creature> &creature, Find
 uint64_t Player::getGainedExperience(const std::shared_ptr<Creature> &attacker) const {
 	if (g_configManager().getBoolean(EXPERIENCE_FROM_PLAYERS)) {
 		const auto &attackerPlayer = attacker->getPlayer();
-		if (attackerPlayer && attackerPlayer.get() != this && skillLoss && std::abs(static_cast<int32_t>(attackerPlayer->getLevel() - level)) <= g_configManager().getNumber(EXP_FROM_PLAYERS_LEVEL_RANGE)) {
+		if (attackerPlayer && attackerPlayer.get() != this && skillLoss && std::abs(static_cast<int64_t>(attackerPlayer->getLevel() - level)) <= static_cast<int64_t>(g_configManager().getNumber(EXP_FROM_PLAYERS_LEVEL_RANGE))) {
 			return std::max<uint64_t>(0, std::floor(getLostExperience() * getDamageRatio(attacker) * 0.75));
 		}
 	}

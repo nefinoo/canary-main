@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "Rottie the Rotworm"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 26,
 	lookHead = 0,
@@ -80,7 +80,7 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, skill = 30, attack = 30 },
+	{ name = "melee", interval = 2000, chance = 100, skill = 130, attack = 130 },
 }
 
 monster.defenses = {
@@ -110,3 +110,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

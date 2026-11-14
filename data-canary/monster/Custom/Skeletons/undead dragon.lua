@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "undead dragon"
 monster.description = "a undead dragon"
-monster.experience = 65000
+monster.experience = 36000000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 45000
-monster.maxHealth = 45000
+monster.health = 22000
+monster.maxHealth = 22000
 monster.runHealth = 0
 monster.race = "undead"
 monster.corpse = 6306
@@ -97,11 +97,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 35000, maxCount = 30},
-	{name = "crystal coin", chance = 15000, maxCount = 5},
-	{name = "warlord sword", chance = 50},
-	{name = "experience scroll", chance = 2000},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 50000, maxCount = 15},
+	{name = "experience scroll", chance = 2500, maxCount = 2},
+	{id = 7366, chance = 100},
+	{id = 7426, chance = 100}, 
+	{id = 7420, chance = 100}, 
+	{id = 3296, chance = 100},
+	{id = 7437, chance = 100},
+	{name = "magic sword", chance = 200},
+	{ id = 3319, chance = 200 }, 
+	{ id = 3309, chance = 200 }, 
+	{id = 3341, chance = 200},
+	{name = "throwing star", chance = 200},
 	{ name = "red piece of cloth", chance = 2006 },
 	{id = 3082, chance = 5500},
 	{id = 5925, chance = 2500},
@@ -110,6 +118,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

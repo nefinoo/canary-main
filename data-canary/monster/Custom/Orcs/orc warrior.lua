@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warrior"
 monster.description = "a orc warrior"
-monster.experience = 160
+monster.experience = 12500
 monster.outfit = {
 	lookType = 7,
 	lookHead = 20,
@@ -14,12 +14,28 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 125
-monster.maxHealth = 125
+monster.raceId = 7
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple in Thais, Orc Fort, below Point of No Return in Outlaw Camp and inside a \z
+		mountain north of it, Orc Peninsula, Folda, Edron Orc cave, Maze of Lost Souls, Elvenbane Castle, \z
+		Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 150
+monster.maxHealth = 150
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 5979
-monster.speed = 190
+monster.speed = 80
 monster.summonCost = 360
 
 monster.changeTarget = {
@@ -81,7 +97,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -30}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -28}
 }
 
 monster.defenses = {
@@ -90,22 +106,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{id = 2875, chance = 20000},
-			{name = "sabre", chance = 6666},
-			{name = "machete", chance = 5000},
-			{name = "studded club", chance = 5000},
-			{name = "chain armor", chance = 5000}
-		}
-	},
-	{name = "gold coin", chance = 100000, maxCount = 12},
-	{name = "wooden shield", chance = 10000},
-	{name = "copper shield", chance = 4000},
-	{name = "meat", chance = 40000, maxCount = 2},
-	{name = "worm", chance = 50000, maxCount = 10}
+	{ name = "plate armor", chance = 202 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 202 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 202 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 202 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 350 }, -- bolsa de items de addon aleatorios (0.350%)
+	{ name = "gold coin", chance = 80000, maxCount = 8 },
+	{ name = "meat", chance = 30000, maxCount = 2 },
+	{ name = "health potion", chance = 1000 },
+	{ name = "mana potion", chance = 1000 },
 }
 
 mType:register(monster)
+
 
 
 

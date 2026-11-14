@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed elite guard"
 monster.description = "an outlawed elite guard"
-monster.experience = 5500
+monster.experience = 2250000
 monster.outfit = {
 	lookType = 70,
 	lookHead = 20,
@@ -14,8 +14,22 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 5300
-monster.maxHealth = 5300
+monster.raceId = 70
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Kazordoon Dwarf Mines, Dwacatra, Ferngrims Gate, Cyclopolis, Mount Sternum Undead Cave, \z
+		Stonehome Rotworm cave (near Edron), Maze of Lost Souls, Tiquanda Dwarf Cave, Beregar, Cormaya Dwarf Cave.",
+}
+
+monster.health = 6500
+monster.maxHealth = 6500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6013
@@ -79,8 +93,8 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -518, maxDamage = -674 },
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_ENERGYDAMAGE, minDamage = -518, maxDamage = -674, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -85, maxDamage = -260 },
+	{name ="combat", interval = 4000, chance = 38, type = COMBAT_ENERGYDAMAGE, minDamage = -60, maxDamage = -160, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
 }
 
 monster.defenses = {
@@ -90,19 +104,47 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small sapphire", chance = 100000, maxCount = 7},
-	{name = "green gem", chance = 25000},
-	{name = "crystal coin", chance = 50000, maxCount = 3},
-	{name = "boots of haste", chance = 2500},
-	{name = "magic sword", chance = 100},
-	{name = "golden legs", chance = 2500},
-	{name = "magic plate armor", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "iron ore", chance = 510 },
-	-- {id = 9743, chance = 2500}
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 160 },
+	{ name = "ham", chance = 50000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 4200 },
+	{ name = "experience scroll", chance = 180 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 16000 },
+	-- Gemas originales de la zona
+	{ name = "small sapphire", chance = 8000, maxCount = 2 },
+	{ name = "green gem", chance = 180 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 8300 },
+	{ name = "plate legs", chance = 7968 },
+	{ name = "steel helmet", chance = 8881 },
+	{ name = "bonelord shield", chance = 7968 },
+	{ name = "knight armor", chance = 3700 },
+	{ name = "knight legs", chance = 3478 },
+	{ name = "knight axe", chance = 2886 },
+	{ name = "devil helmet", chance = 2701 },
+	{ name = "tower shield", chance = 2553 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 380 },
+	{ name = "crown legs", chance = 365 },
+	{ name = "crown helmet", chance = 456 },
+	{ name = "crown shield", chance = 342 },
+	{ id = 3055, chance = 2700 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1900 },
+	{ name = "fire axe", chance = 1600 },
+	{ name = "dragonbone staff", chance = 1600 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1591 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 342 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Ron the Ripper"
 monster.description = "Ron the Ripper"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 151,
 	lookHead = 95,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1500
-monster.maxHealth = 1500
+monster.health = 200000
+monster.maxHealth = 200000
 monster.runHealth = 250
 monster.race = "blood"
 monster.corpse = 6080
@@ -78,7 +78,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -250}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2000, maxDamage = -2500}
 }
 
 monster.defenses = {
@@ -87,7 +87,7 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "ron the ripper's sabre", chance = 1000, unique = true},
+	{name = "ron the ripper's sabre", chance = 100000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 50},
 	{name = "knight armor", chance = 1200},
 	{name = "double axe", chance = 1500},
@@ -97,6 +97,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

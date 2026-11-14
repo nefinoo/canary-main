@@ -183,7 +183,7 @@ int WeaponFunctions::luaWeaponLevel(lua_State* L) {
 	// weapon:level(lvl)
 	const WeaponShared_ptr &weapon = Lua::getUserdataShared<Weapon>(L, 1, "Weapon");
 	if (weapon) {
-		weapon->setRequiredLevel(Lua::getNumber<uint32_t>(L, 2));
+		weapon->setRequiredLevel(Lua::getNumber<uint64_t>(L, 2));
 		weapon->setWieldInfo(WIELDINFO_LEVEL);
 		Lua::pushBoolean(L, true);
 	} else {

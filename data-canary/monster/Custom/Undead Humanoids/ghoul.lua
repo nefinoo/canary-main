@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "ghoul"
 monster.description = "a ghoul"
-monster.experience = 12000
+monster.experience = 32500000
 monster.outfit = {
 	lookType = 18,
 	lookHead = 20,
@@ -14,13 +14,13 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 10000
-monster.maxHealth = 10000
+monster.health = 26000
+monster.maxHealth = 26000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5976
 monster.speed = 144
-monster.summonCost = 450
+monster.summonCost = 0
 
 monster.changeTarget = {
 	interval = 2000,
@@ -30,8 +30,8 @@ monster.changeTarget = {
 monster.flags = {
 	attackable = true,
 	hostile = true,
-	summonable = true,
-	convinceable = true,
+	summonable = false,
+	convinceable = false,
 	illusionable = true,
 	boss = false,
 	ignoreSpawnBlock = false,
@@ -78,25 +78,42 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1165, maxDamage = -1425},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_LIFEDRAIN, minDamage = -1165, maxDamage = -1425, range = 1, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -460, maxDamage = -1010 },
+	{ name = "combat", interval = 3000, chance = 22, type = COMBAT_LIFEDRAIN, minDamage = -205, maxDamage = -480, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 17,
-	armor = 8,
+	defense = 28,
+	armor = 30,
 	{name ="combat", interval = 1000, chance = 13, type = COMBAT_HEALING, minDamage = 9, maxDamage = 15, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 64},
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 30},
-	{id = 2920, chance = 20000},
-	{name = "brown piece of cloth", chance = 2500},
+
+	-- Consumibles y progresion nivel 450 (64 ghouls en el respawn)
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 8500 },
+	{ name = "mana potion", chance = 9500 },
+	-- Knight Set
+	{ name = "knight armor", chance = 6450 },
+	{ name = "knight legs", chance = 6063 },
+	{ name = "knight axe", chance = 5031 },
+	{ name = "devil helmet", chance = 4709 },
+	{ name = "tower shield", chance = 4451 },
+	{ id = 3079, chance = 2774 }, -- Boots of Haste
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 1770 },
+	{ name = "crown legs", chance = 1699 },
+	{ name = "crown helmet", chance = 2124 },
+	{ name = "crown shield", chance = 1593 },
+	{ id = 10386, chance = 1593 }, -- Zaoan Shoes
+	{ id = 3055, chance = 5900 }, -- Platinum Amulet
+	{ name = "platinum coin", chance = 80000, maxCount = 2 },
+	{ name = "brown piece of cloth", chance = 2500 }, -- material original conservado
 }
 
 mType:register(monster)
+
 
 
 

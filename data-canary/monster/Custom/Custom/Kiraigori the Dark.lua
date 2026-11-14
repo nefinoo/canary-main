@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Kiraigori the Dark"
 monster.description = "kiraigori the dark"
-monster.experience = 15000000
+monster.experience = 15000000000
 monster.outfit = {
 	lookType = 133,
 	lookHead = 116,
@@ -95,6 +95,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

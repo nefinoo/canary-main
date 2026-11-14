@@ -9,4 +9,5 @@
 	<channel id="8" name="Gamemaster" script="gamemaster.lua" />
 	<channel id="9" name="Fishing" script="fishing.lua" />
 	<channel id="11" name="Guild Leaders" script="guild_leaders.lua" />
+	<channel id="15" name="Antibot" public="1" script="antibot-channel.lua" />
 </channels>
