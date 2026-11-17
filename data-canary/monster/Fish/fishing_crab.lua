@@ -4,7 +4,7 @@ local monster = {}
 
 monster.name = "Fishing Crab"
 monster.description = "a crab"
-monster.experience = 10000000
+monster.experience = 13000000
 monster.outfit = {
 	lookType = 112,
 	lookHead = 20,
