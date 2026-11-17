@@ -3,7 +3,7 @@ local mType = Game.createMonsterType("Fishing Northern Pike")
 local monster = {}
 
 monster.description = "a northern pike"
-monster.experience = 500000
+monster.experience = 2700000
 monster.outfit = {
 	lookType = 454,
 	lookHead = 0,

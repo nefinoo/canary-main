@@ -10,11 +10,11 @@ La configuración actual del repositorio es `rateUseStages = true` y `data/stage
 ## Tabla de balance
 | Monstruo | Nivel en Fishing | HP original | HP Fishing | EXP original | EXP Fishing |
 |---|---:|---:|---:|---:|---:|
-| Fish | 8 | 400 | 320 | 500000 | 4000 |
-| Calamary | 50 | 1500 | 2900 | 1900000 | 150000 |
-| Northern Pike | 100 | 2000 | 5000 | 5100000 | 500000 |
-| Jellyfish | 150 | 3000 | 6000 | 7500000 | 1400000 |
-| Shark | 250 | 6700 | 9500 | 22500000 | 5250000 |
+| Fish | 8 | 400 | 320 | 500000 | 40000 |
+| Calamary | 50 | 1500 | 2900 | 1900000 | 1200000 |
+| Northern Pike | 100 | 2000 | 5000 | 5100000 | 2700000 |
+| Jellyfish | 150 | 3000 | 6000 | 7500000 | 4200000 |
+| Shark | 250 | 6700 | 9500 | 22500000 | 7000000 |
 | Crab | 350 | 8000 | 12000 | 28500000 | 10000000 |
 | Water Elemental | 500 | 12000 | 17500 | 36000000 | 31000000 |
 | Blood Crab | 650 | 18000 | 22000 | 46500000 | 52000000 |
@@ -46,3 +46,6 @@ La configuración actual del repositorio es `rateUseStages = true` y `data/stage
 1. Prueba de nivel 50/250/750/1500/3000; medir /simdps y tiempo de combate contra Fishing ...
 2. Ajustar escala de loot/Super Food y EXP/h.
 3. Después balancear semijefes desde Wyrm en adelante sin tocar estos monstruos normales.
+
+## Revisión de EXP inicial (16 de noviembre de 2026)
+Se corrigió la experiencia de cinco monstruos normales de Fishing, sin cambiar HP, ataques, loot ni requisitos. La comparación con monstruos regulares mostró que `outlawed warrior` tiene 4600 HP y 1750000 EXP, mientras `outlawed ranger` tiene 5000 HP y 2000000 EXP. Northern Pike capturado tiene 5000 HP, así que sus 500000 EXP eran insuficientes. Su recompensa ahora es 2700000 EXP (+54% frente a warrior, +35% frente a ranger). Se ajustaron Fish 4000→40000, Calamary 150000→1200000, Jellyfish 1400000→4200000 y Shark 5250000→7000000 para mantener una progresión ascendente hasta Crab (10000000). Estos cambios son una corrección provisional basada en HP, nivel y EXP comparables; pendientes pruebas de tiempo de captura, matanza, recursos consumidos y EXP/h.
