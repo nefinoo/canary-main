@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed warrior"
 monster.description = "an outlawed warrior"
-monster.experience = 5500
+monster.experience = 1750000
 monster.outfit = {
 	lookType = 69,
 	lookHead = 20,
@@ -14,8 +14,22 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 4200
-monster.maxHealth = 4200
+monster.raceId = 69
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Kazordoon Dwarf Mines, Dwarf Bridge, deep Elvenbane, Tiquanda Dwarf Cave, Cormaya Dwarf Cave, \z
+		Island of Destiny (Knights area), Beregar.",
+}
+
+monster.health = 4600
+monster.maxHealth = 4600
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6007
@@ -79,7 +93,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -195 },
 }
 
 monster.defenses = {
@@ -89,19 +103,47 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "small diamond", chance = 100000, maxCount = 7},
-	{name = "yellow gem", chance = 25000},
-	{name = "crystal coin", chance = 50000, maxCount = 3},
-	{name = "boots of haste", chance = 2500},
-	{name = "magic sword", chance = 100},
-	{name = "magic plate armor", chance = 2500},
-	{name = "mastermind shield", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "iron ore", chance = 700 },
-	-- {id = 9743, chance = 2500}
+	-- Oro, comida y pociones para el nivel 106
+	{ name = "gold coin", chance = 90000, maxCount = 105 },
+	{ name = "meat", chance = 42000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 5000 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 3000 },
+	{ name = "experience scroll", chance = 80 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 12000 },
+	-- Gemas originales de la zona
+	{ name = "small diamond", chance = 6000, maxCount = 2 },
+	{ name = "yellow gem", chance = 300 },
+	-- Equipo progresivo
+	{ name = "plate armor", chance = 7900 },
+	{ name = "plate legs", chance = 7584 },
+	{ name = "steel helmet", chance = 8453 },
+	{ name = "bonelord shield", chance = 7584 },
+	{ name = "knight armor", chance = 3450 },
+	{ name = "knight legs", chance = 3243 },
+	{ name = "knight axe", chance = 2691 },
+	{ name = "devil helmet", chance = 2519 },
+	{ name = "tower shield", chance = 2381 },
+	-- Crown Set: raro
+	{ name = "crown armor", chance = 300 },
+	{ name = "crown legs", chance = 288 },
+	{ name = "crown helmet", chance = 360 },
+	{ name = "crown shield", chance = 270 },
+	{ id = 3055, chance = 2400 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1400 },
+	{ name = "fire axe", chance = 1200 },
+	{ name = "dragonbone staff", chance = 1300 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1484 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 270 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
+
 
 
 

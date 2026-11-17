@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Draken Warmaster")
+﻿local mType = Game.createMonsterType("Draken Warmaster")
 local monster = {}
 
 monster.description = "a draken warmaster"
-monster.experience = 2050000
+monster.experience = 4350000000
 monster.outfit = {
 	lookType = 334,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Zao Palace, Chazorai, Razzachai, and Zzaion.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "blood"
 monster.corpse = 10190
 monster.speed = 162
@@ -75,14 +75,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 97490, maxCount = 197 },
-	{ name = "platinum coin", chance = 47640, maxCount = 5 },
-	{ name = "meat", chance = 30390 },
 	{ name = "bone shoulderplate", chance = 12840 },
 	{ name = "zaoan halberd", chance = 8930 },
 	{ name = "warmaster's wristguards", chance = 7020 },
-	{ name = "great health potion", chance = 3710, maxCount = 3 },
-	{ name = "ultimate health potion", chance = 3410 },
 	{ name = "zaoan shoes", chance = 2610 },
 	{ name = "tower shield", chance = 2310 },
 	{ name = "small ruby", chance = 1810, maxCount = 5 },
@@ -90,11 +85,24 @@ monster.loot = {
 	{ name = "zaoan armor", chance = 600 },
 	{ name = "drakinata", chance = 600 },
 	{ name = "ring of the sky", chance = 220 },
+	{name = "platinum coin", chance = 100000, maxCount = 28},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 35000, maxCount = 34},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -20306, maxDamage = -26398, length = 4, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
 }
 
 monster.defenses = {
@@ -125,3 +133,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

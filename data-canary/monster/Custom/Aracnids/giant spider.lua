@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "giant spider"
 monster.description = "a giant spider"
-monster.experience = 1700
+monster.experience = 400000
 monster.outfit = {
 	lookType = 38,
 	lookHead = 0,
@@ -14,8 +14,28 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1720
-monster.maxHealth = 1720
+monster.raceId = 38
+monster.Bestiary = {
+	class = "Vermin",
+	race = BESTY_RACE_VERMIN,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Plains of Havoc, Point of no Return in Outlaw Camp, Ghostlands, Hellgate, \z
+	Mintwallin Secret Laboratory, Mad Mage Room deep below Ancient Temple, Mount Sternum Undead Cave, \z
+	Green Claw Swamp, Maze of Lost Souls, Crusader Helmet Quest in the Dwarf Mines, Mushroom Gardens, \z
+	west Drillworm Caves, Edron Hero Cave, Edron Orc Cave, on a hill near Drefia, \z
+	on a hill north-west of Ankrahmun (inaccessible), Forbidden Lands, Deeper Banuta, Malada, Ramoa, \z
+	 Arena and Zoo Quarter, second floor up of Cemetery Quarter, beneath Fenrock, Vengoth Castle, \z
+	 Vandura Mountain, in a cave in Robson Isle, Chyllfroest, Spider Caves, second floor of Krailos Spider Lair, Caverna Exanima.",
+}
+
+
+monster.health = 980
+monster.maxHealth = 980
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -65,21 +85,21 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_PHYSICALDAMAGE, percent = -30},
+	{type = COMBAT_ENERGYDAMAGE, percent = 50},
 	{type = COMBAT_EARTHDAMAGE, percent = 100},
 	{type = COMBAT_FIREDAMAGE, percent = -10},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 6},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_ICEDAMAGE, percent = 50},
+	{type = COMBAT_HOLYDAMAGE , percent = 50},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -201, maxDamage = -261},
-	{name ="poisonfield", interval = 1000, chance = 17, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -24, maxDamage = -78},
+	{name ="poisonfield", interval = 1000, chance = 12, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
 }
 
 monster.defenses = {
@@ -90,28 +110,43 @@ monster.defenses = {
 
 monster.maxSummons = 2
 monster.summons = {
-	{name = "poison spider", chance = 30, interval = 1000, max = 2}
+	{name = "poison spider", chance = 12, interval = 3000, max = 2}
 }
 
 monster.loot = {
-	-- {id = 3053, chance = 700},
-	{name = "gold coin", chance = 100000, maxCount = 50},
-	{name = "plate armor", chance = 4000},
-	{name = "platinum amulet", chance = 400},
-	{name = "iron helmet", chance = 20000},
-	{id = 5879, chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 40},
-			{name = "steel helmet", chance = 5000},
-			{name = "knight armor", chance = 700},
-			{name = "knight legs", chance = 500},
-			{name = "brass legs", chance = 10000},
-			-- {id = 3053, chance = 800}
-		}
-	}
+	{ name = "experience scroll", chance = 25 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Gold y consumibles: progresion nivel 50
+	{ name = "gold coin", chance = 90000, maxCount = 65 },
+	{ name = "meat", chance = 42000, maxCount = 3 },
+	{ name = "ham", chance = 25000, maxCount = 2 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 9000 },
+	{ name = "strong health potion", chance = 2800 },
+	{ name = "strong mana potion", chance = 2200 },
+	-- Addon / objetos existentes
+	{ id = 5879, chance = 7000 }, -- spider silk: material de addon conservado (antes 5000)
+	{ id = 12413, chance = 9500 }, -- bag de objetos de addon
+	-- Plate Set: comun respecto a Knight y Crown
+	{ name = "plate armor", chance = 5900 },
+	{ name = "plate legs", chance = 5664 },
+	{ name = "steel helmet", chance = 6313 },
+	{ name = "bonelord shield", chance = 5664 },
+	-- Armas (progresion de nivel 50)
+	{ name = "barbarian axe", chance = 6000 },
+	{ name = "clerical mace", chance = 5500 },
+	{ id = 7385, chance = 5500 },
+	-- Knight Set: aumenta frente al loot anterior
+	{ name = "knight armor", chance = 2050 },
+	{ name = "knight legs", chance = 1927 },
+	{ name = "knight axe", chance = 1599 },
+	{ name = "devil helmet", chance = 1497 },
+	{ name = "tower shield", chance = 1414 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 882 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)
+
 
 
 

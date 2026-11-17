@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a calamary"
-monster.experience = 350
+monster.experience = 1900000
 monster.outfit = {
 	lookType = 451,
 	lookHead = 0,
@@ -76,12 +76,19 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "shrimp", chance = 12270, maxCount = 2 },
+	{ id = 3578, chance = 15430, maxCount = 10}, -- fish
+	{ name = "salmon", chance = 4270, maxCount = 5},	
+	{name = "gold coin", chance = 100000, maxCount = 90},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 74000, maxCount = 5},
+	{name = "experience scroll", chance = 2450},
 }
 
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -20, maxDamage = -100, effect = 2, target = false }
+	{name ="melee", interval = 2000, chance = 100, minDamage = -171, maxDamage = -231},
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_DROWNDAMAGE, minDamage = -201, maxDamage = -261, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_REDSTAR, effect = CONST_ME_MAGIC_RED},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -201, maxDamage = -261, length = 8, spread = 3, effect = CONST_ME_MAGIC_RED}
 }
 
 
@@ -92,13 +99,13 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -5 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
@@ -112,6 +119,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

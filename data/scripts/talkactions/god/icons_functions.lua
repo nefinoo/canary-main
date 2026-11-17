@@ -128,8 +128,8 @@ local creatureIconQuests = {
 	[20] = "QuestionMark",
 	[21] = "CancelMark",
 	[22] = "Hazard",
-	[23] = "BrownSkull",
-	[24] = "BloodDrop",
+	-- [23] = "BrownSkull",
+	-- [24] = "BloodDrop",
 }
 
 local creatureIconAction = TalkAction("/playericon")

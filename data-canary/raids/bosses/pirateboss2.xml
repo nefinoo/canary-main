@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="A single shot echoes across the land... Deadeye Devious has arrived." />
+	<announce delay="12000" type="event" message="Deadeye Devious is hunting again. No one escapes his aim." />
+		<singlespawn delay="1000" name="Deadeye Devious" x="292" y="1596" z="6" />
+</raid>

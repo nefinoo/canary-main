@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc shaman"
 monster.description = "a orc shaman"
-monster.experience = 165
+monster.experience = 15000
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -14,12 +14,27 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 115
-monster.maxHealth = 115
+monster.raceId = 6
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Edron Orc Cave, Temple of Xayepocax, below Point of No Return in Outlaw Camp, Venore Orc Cave, \z
+		Maze of Lost Souls, Orc Fort, north west of Thais, Elvenbane, Plains Of Havoc, Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 125
+monster.maxHealth = 125
 monster.runHealth = 15
 monster.race = "blood"
 monster.corpse = 5978
-monster.speed = 180
+monster.speed = 80
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -80,8 +95,8 @@ monster.elements = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 13},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -20, maxDamage = -30, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -5, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -3, maxDamage = -16, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -3, maxDamage = -18, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
@@ -96,20 +111,19 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 3289, chance = 2222},
-	{name = "chain helmet", chance = 2222},
-	{id = 2853, chance = 100000, child = {
-			{id = 3998, chance = 5000},
-			{name = "spear", chance = 4000},
-			-- {id = 15827, chance = 3333},
-			{name = "wand of vortex", chance = 1538},
-			{name = "wand of decay", chance = 1000}
-		}
-	}
+	{ name = "plate armor", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 248 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 500 }, -- bolsa de items de addon aleatorios (0.500%)
+	{ name = "gold coin", chance = 80000, maxCount = 9 },
+	{ name = "meat", chance = 25000, maxCount = 2 },
+	{ name = "health potion", chance = 1000 },
+	{ name = "mana potion", chance = 1800 },
 }
 
 mType:register(monster)
+
 
 
 

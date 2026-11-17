@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="A cold breeze carries the scent of salt and blood... Lethal Lissy is near." />
+	<announce delay="12000" type="event" message="Lethal Lissy stalks the shadows, blades ready for the kill." />
+		<singlespawn delay="1000" name="Lethal Lissy" x="331" y="1760" z="7" />
+</raid>

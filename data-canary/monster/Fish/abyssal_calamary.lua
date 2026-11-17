@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an abyssal calamary"
-monster.experience = 200
+monster.experience = 200000
 monster.outfit = {
 	lookType = 451,
 	lookHead = 0,
@@ -112,6 +112,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

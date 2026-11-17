@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari windwalker"
 monster.description = "a salazaari windwalker"
-monster.experience = 11500
+monster.experience = 4250000
 monster.outfit = {
 	lookType = 63,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 7200
-monster.maxHealth = 7200
+monster.health = 6800
+monster.maxHealth = 6800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6011
@@ -83,31 +83,76 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW},
-	{name ="combat", interval = 2000, chance = 45, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -110, maxDamage = -220 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -140, maxDamage = -290, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ARROW },
+	{ name = "combat", interval = 6000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -145, maxDamage = -310, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 15,
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_HEALING, minDamage = 42, maxDamage = 68, effect = CONST_ME_MAGIC_BLUE},
-	{name ="speed", interval = 4000, chance = 40, speed = {min = 0, max = 0}, duration = 0, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	defense = 23,
+	armor = 19,
+	{ name = "combat", interval = 4000, chance = 20, type = COMBAT_HEALING, minDamage = 45, maxDamage = 90, effect = CONST_ME_MAGIC_BLUE },
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 250, max = 250}, duration = 7000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 5},
-	{id = 3341, chance = 100},
-	{name = "crown armor", chance = 2500},
-	{name = "crown legs", chance = 2500},
-	{name = "crown helmet", chance = 2500},
-	{name = "crown shield", chance = 500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "holy orchid", chance = 2100 },
-	-- {id = 9743, chance = 2500}
+	-- Moneda: una sola tirada para evitar duplicacion de platinum coins
+	{ name = "platinum coin", chance = 85000, maxCount = 3 },
+	{ name = "ham", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 6500 },
+	{ name = "strong mana potion", chance = 6500 },
+	-- Gemas y materiales de addon originales
+	{ name = "violet gem", chance = 500 },
+	{ name = "yellow gem", chance = 2000 },
+	{ name = "holy orchid", chance = 2400 },
+	{ id = 12413, chance = 12500 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
+	{ name = "experience scroll", chance = 145 },
+	-- Plate Set
+	{ name = "plate armor", chance = 9200 },
+	{ name = "plate legs", chance = 8832 },
+	{ name = "steel helmet", chance = 9844 },
+	{ name = "bonelord shield", chance = 8832 },
+	-- Knight Set
+	{ name = "knight armor", chance = 4300 },
+	{ name = "knight legs", chance = 4042 },
+	{ name = "knight axe", chance = 3354 },
+	{ name = "devil helmet", chance = 3139 },
+	{ name = "tower shield", chance = 2967 },
+	-- Crown Set: recompensa rara de la zona
+	{ name = "crown armor", chance = 610 },
+	{ name = "crown legs", chance = 586 },
+	{ name = "crown helmet", chance = 732 },
+	{ name = "crown shield", chance = 549 },
+	{ id = 3055, chance = 3500 }, -- Platinum Amulet (Crown Set)
+	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 1200 },
+	{ name = "fire axe", chance = 1300 },
+	{ name = "dragonbone staff", chance = 1100 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1849 }, -- Boots of Haste: Knight Set
+	{ id = 10386, chance = 549 }, -- Zaoan Shoes: Crown Set
 }
 
+monster.raceId = 63
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Yalahar Foreigner Quarter, Demona, Shadowthorn, northwest of Ab'Dendriel, Maze of Lost Souls, \z
+		Cyclopolis, Elvenbane, near Mount Sternum.",
+}
+
+
 mType:register(monster)
+
 
 
 

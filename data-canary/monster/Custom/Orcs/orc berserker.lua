@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc berserker"
 monster.description = "a orc berserker"
-monster.experience = 195
+monster.experience = 17500
 monster.outfit = {
 	lookType = 8,
 	lookHead = 20,
@@ -14,12 +14,26 @@ monster.outfit = {
 	lookMount = 0
 }
 
+monster.raceId = 8
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Fort, Dwacatra, Orc Peninsula, Elvenbane, Edron Orc Cave, Plains of Havoc, below Point of No Return in Outlaw Camp, Maze of Lost Souls, Cyclopolis, Desert Dungeon, Ancient Temple, Foreigner Quarter, Zao Orc Land.",
+}
+
+
 monster.health = 210
 monster.maxHealth = 210
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5980
-monster.speed = 250
+monster.speed = 95
 monster.summonCost = 590
 
 monster.changeTarget = {
@@ -79,7 +93,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -30, maxDamage = -200}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -7, maxDamage = -44}
 }
 
 monster.defenses = {
@@ -89,20 +103,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 15},
-	{name = "meat", chance = 33333, maxCount = 3},
-	{name = "halberd", chance = 6666},
-	{id = 2853, chance = 100000, child = {
-			{name = "chain armor", chance = 10000},
-			{name = "chain helmet", chance = 10000},
-			{id = 2914, chance = 5000},
-			{name = "battle axe", chance = 5000}
-		}
-	}
+	{ name = "plate armor", chance = 288 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 288 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 288 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 288 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 650 }, -- bolsa de items de addon aleatorios (0.650%)
+	{ name = "gold coin", chance = 85000, maxCount = 11 },
+	{ name = "ham", chance = 30000, maxCount = 2 },
+	{ name = "health potion", chance = 1200 },
+	{ name = "mana potion", chance = 800 },
 }
 
 mType:register(monster)
+
 
 
 

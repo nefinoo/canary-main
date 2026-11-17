@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="A wicked laughter echoes from the docks... Ron The Ripper has come." />
+	<announce delay="12000" type="event" message="Ron The Ripper is loose, leaving only fear and corpses behind." />
+		<singlespawn delay="1000" name="Ron The Ripper" x="279" y="1772" z="2" />
+</raid>

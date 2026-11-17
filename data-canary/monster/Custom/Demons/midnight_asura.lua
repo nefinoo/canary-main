@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Midnight Asura")
+﻿local mType = Game.createMonsterType("Midnight Asura")
 local monster = {}
 
 monster.description = "a midnight asura"
-monster.experience = 7500000
+monster.experience = 9250000000
 monster.outfit = {
 	lookType = 150,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Asura Palace.",
 }
 
-monster.health = 1500000
-monster.maxHealth = 1500000
+monster.health = 1250000
+monster.maxHealth = 1250000
 monster.race = "blood"
 monster.corpse = 21988
 monster.speed = 120
@@ -79,17 +79,13 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 3031, chance = 70980, maxCount = 100 }, -- gold coin
-	{ id = 3035, chance = 80500, maxCount = 6 }, -- platinum coin
 	{ id = 3027, chance = 3670, maxCount = 2 }, -- black pearl
-	{ id = 6558, chance = 14110 }, -- flask of demonic blood
-	{ id = 6499, chance = 9950 }, -- demonic essence
+	{ id = 6499, chance = 9950, maxCount = 2 }, -- demonic essence
 	{ id = 3028, chance = 5680, maxCount = 3 }, -- small diamond
 	{ id = 3032, chance = 3240, maxCount = 1 }, -- small emerald
 	{ id = 3030, chance = 3090, maxCount = 1 }, -- small ruby
 	{ id = 3029, chance = 5550, maxCount = 3 }, -- small sapphire
 	{ id = 9057, chance = 2910, maxCount = 1 }, -- small topaz
-	{ id = 239, chance = 8450, maxCount = 2 }, -- great health potion
 	{ id = 3026, chance = 5660 }, -- white pearl
 	{ id = 3041, chance = 290 }, -- blue gem
 	{ id = 9058, chance = 140 }, -- gold ingot
@@ -97,15 +93,29 @@ monster.loot = {
 	{ id = 21975, chance = 10740 }, -- peacock feather fan
 	{ id = 5944, chance = 14580 }, -- soul orb
 	{ id = 3037, chance = 870 }, -- yellow gem
+	{name = "platinum coin", chance = 100000, maxCount = 35},
+	{name = "platinum coin", chance = 100000, maxCount = 40},
+	{name = "platinum coin", chance = 35000, maxCount = 45},
+	{name = "experience scroll", chance = 2750, maxCount = 4},
+	--demon green set
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},
+	{name = "demon helmet", chance = 1000},
+	{name = "demon legs", chance = 1000},
+	{name = "demon shield", chance = 1000},
+	{id = 6529, chance = 1000}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -35000, maxDamage = -50000 },
-	{ name = "combat", interval = 3300, chance = 10, type = COMBAT_MANADRAIN, minDamage = -35000, maxDamage = -50000, range = 7, target = true },
-	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, length = 5, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
-	{ name = "combat", interval = 4100, chance = 27, type = COMBAT_DEATHDAMAGE, minDamage = -35000, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2700, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -35000, maxDamage = -50000, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, target = true },
-	{ name = "combat", interval = 3100, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, range = 1, shootEffect = CONST_ANI_ENERGY, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22499, maxDamage = -38075 },
+	{ name = "combat", interval = 3300, chance = 10, type = COMBAT_MANADRAIN, minDamage = -38075, maxDamage = -50000, range = 7, target = true },
+	{ name = "combat", interval = 3700, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -38075, maxDamage = -50000, length = 5, spread = 0, effect = CONST_ME_PURPLEENERGY, target = false },
+	{ name = "combat", interval = 4100, chance = 27, type = COMBAT_DEATHDAMAGE, minDamage = -38075, maxDamage = -50000, length = 8, spread = 0, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2700, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -38075, maxDamage = -50000, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, target = true },
+	{ name = "combat", interval = 3100, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -38075, maxDamage = -50000, range = 1, shootEffect = CONST_ANI_ENERGY, target = true },
 	{ name = "speed", interval = 2000, chance = 20, speedChange = -800, radius = 1, shootEffect = CONST_ANI_EXPLOSION, effect = CONST_ME_SLEEP, target = true, duration = 15000 },
 }
 
@@ -119,15 +129,15 @@ monster.defenses = {
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
-	{ type = COMBAT_EARTHDAMAGE, percent = -10 },
-	{ type = COMBAT_FIREDAMAGE, percent = 10 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 100 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {
@@ -138,3 +148,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

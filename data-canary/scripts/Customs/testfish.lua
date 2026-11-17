@@ -1,0 +1,3 @@
+-- /testfish se registra una sola vez en Customs/Fishing/Fishing.lua.
+-- Este archivo anterior contenia una simulacion desconectada de las tablas locales
+-- del Fishing real. Se conserva como referencia sin registrar otra TalkAction.

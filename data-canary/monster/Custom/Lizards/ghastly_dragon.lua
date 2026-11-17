@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Ghastly Dragon")
+﻿local mType = Game.createMonsterType("Ghastly Dragon")
 local monster = {}
 
 monster.description = "a ghastly dragon"
-monster.experience = 2050000
+monster.experience = 3750000000
 monster.outfit = {
 	lookType = 351,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ghastly Dragon Lair, Corruption Hole, Razachai including the Inner Sanctum, Zao Palace, Deeper Banuta single spawn, Chyllfroest.",
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.race = "undead"
 monster.corpse = 10445
 monster.speed = 160
@@ -78,17 +78,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 99500, maxCount = 238 },
-	{ name = "plate legs", chance = 53270 },
 	{ name = "small emerald", chance = 41210, maxCount = 5 },
-	{ name = "platinum coin", chance = 33170, maxCount = 2 },
-	{ name = "great spirit potion", chance = 32659, maxCount = 2 },
-	{ name = "dark armor", chance = 30650 },
-	{ name = "great mana potion", chance = 27140, maxCount = 2 },
-	{ name = "ultimate health potion", chance = 24120 },
 	{ name = "undead heart", chance = 21610 },
 	{ name = "zaoan halberd", chance = 16580 },
-	{ id = 8896, chance = 15080 }, -- slightly rusted armor
 	{ name = "demonic essence", chance = 10550 },
 	{ name = "terra boots", chance = 10050 },
 	{ name = "twin hooks", chance = 9550 },
@@ -105,10 +97,45 @@ monster.loot = {
 	{ name = "shiny stone", chance = 830 },
 	{ name = "zaoan helmet", chance = 230 },
 	{ name = "zaoan sword", chance = 120 },
+	
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 100000, maxCount = 80},
+	{name = "crystal coin", chance = 35000, maxCount = 2},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	-- weapons lvl 1000
+	{id = 7368, chance = 350},
+	{id = 895, chance = 350}, 
+	{id = 7390, chance = 350}, 
+	{id = 7415, chance = 350},
+	{id = 3303, chance = 350},
+	-- weapons lvl 500	
+	{id = 7366, chance = 450},
+	{id = 7426, chance = 450}, 
+	{id = 7420, chance = 450}, 
+	{id = 3296, chance = 450},
+	{id = 7437, chance = 450},
+	-- weapons lvl 100
+	{name = "magic sword", chance = 550},
+	{ id = 3319, chance = 550 }, 
+	{ id = 3309, chance = 550 }, 
+	{id = 3341, chance = 550},
+	{name = "throwing star", chance = 550},
+	
+	--demon green set
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},
+	{id = 7368, chance = 150},
+	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749 },
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306 },
 	{ name = "ghastly dragon curse", interval = 2000, chance = 5, range = 5, target = false },
 	-- poison
 	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -8653, maxDamage = -11249, range = 5, effect = CONST_ME_SMALLCLOUDS, target = true },
@@ -145,3 +172,4 @@ monster.immunities = {
 }
 
 mType:register(monster)
+

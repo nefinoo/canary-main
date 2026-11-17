@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hercules"
 monster.description = "Hercules"
-monster.experience = 225000
+monster.experience = 200000000
 monster.outfit = {
 	lookType = 131,
 	lookHead = 116,
@@ -101,12 +101,20 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 100000, maxCount = 50},
-	{name = "obsidian knife", chance = 1000},
-	{name = "blessed wooden stake", chance = 1000},
-	{name = "experience scroll", chance = 3000},
-	-- {id = 9743, chance = 2500},
-	-- {id = 9743, chance = 2500}
+	{name = "platinum coin", chance = 100000, maxCount = 3},
+	{name = "platinum coin", chance = 75000, maxCount = 8},
+	{name = "platinum coin", chance = 50000, maxCount = 12},
+	{name = "experience scroll", chance = 750, maxCount = 2},
+	{name = "green gem", chance = 1850},
+	{name = "blue gem", chance = 1750},
+	{name = "green gem", chance = 1500},
+	{name = "violet gem", chance = 750},
+	{name = "demon helmet", chance = 750},
+	{name = "demon legs", chance = 750},
+	{name = "demon shield", chance = 750},
+	{id = 6529, chance = 750}, -- soft boots
+	-- Reward Box
+	{id = 50854, chance = 15},
 }
 
 mType:register(monster)

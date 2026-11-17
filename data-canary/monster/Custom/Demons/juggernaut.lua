@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "juggernaut"
 monster.description = "a juggernaut"
-monster.experience = 5500
+monster.experience = 625000
 monster.outfit = {
 	lookType = 244,
 	lookHead = 0,
@@ -14,8 +14,24 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 20000
-monster.maxHealth = 20000
+monster.raceId = 296
+monster.Bestiary = {
+	class = "Demon",
+	race = BESTY_RACE_DEMON,
+	toKill = 2500,
+	FirstUnlock = 100,
+	SecondUnlock = 1000,
+	CharmsPoints = 50,
+	Stars = 4,
+	Occurrence = 0,
+	Locations = "Deep in Pits of Inferno (Apocalypse's throne room), The Dark Path, The Blood Halls, \z
+	The Vats, The Hive, The Shadow Nexus, a room deep in Formorgar Mines, Roshamuul Prison, \z
+	Oramond Dungeon, Grounds of Destruction and Halls of Ascension.",
+}
+
+
+monster.health = 2650
+monster.maxHealth = 2650
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6336
@@ -68,7 +84,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 40},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 10},
 	{type = COMBAT_ENERGYDAMAGE, percent = -20},
 	{type = COMBAT_EARTHDAMAGE, percent = 30},
 	{type = COMBAT_FIREDAMAGE, percent = 30},
@@ -81,38 +97,51 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -288, maxDamage = -800},
-	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -42, maxDamage = -135},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -25, maxDamage = -115, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
 	defense = 15,
-	armor = 15,
-	{name ="speed", interval = 1000, chance = 12, speed = {min = 480, max = 480}, duration = 4000, effect = CONST_ME_MAGIC_RED}
+	armor = 20,
+	{ name = "speed", interval = 1000, chance = 12, speed = { min = 480, max = 480 }, duration = 4000, effect = CONST_ME_MAGIC_RED },
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 80},
-	{name = "platinum coin", chance = 100000, maxCount = 80},
-	{name = "meat", chance = 20000, maxCount = 8},
-	{name = "dragon ham", chance = 10000, maxCount = 3},
-	{name = "dirty fur", chance = 10000},
-	{id = 3113, chance = 5000},
-	{name = "heavy mace", chance = 444},
-	{id = 6558, chance = 2500},
-	{id = 6558, chance = 2500},
-	{name = "demonic essence", chance = 1429},
-	{id = 2853, chance = 100000, child = {
-			{name = "soul orb", chance = 1333},
-			{name = "dragon hammer", chance = 1667},
-			{name = "golden armor", chance = 333},
-			{name = "golden legs", chance = 400},
-			{name = "spiked squelcher", chance = 600}
-		}
-	}
+	{ name = "experience scroll", chance = 65 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Oro y consumibles nivel 69
+	{ name = "gold coin", chance = 90000, maxCount = 95 },
+	{ name = "meat", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 4500 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Materiales de addon originales
+	{ name = "dirty fur", chance = 10000 },
+	{ name = "demonic essence", chance = 1429 },
+	{ name = "soul orb", chance = 1333 },
+	{ id = 12413, chance = 11500 },
+	-- Plate Set: progresion mejorada
+	{ name = "plate armor", chance = 7000 },
+	{ name = "plate legs", chance = 6720 },
+	{ name = "steel helmet", chance = 7490 },
+	{ name = "bonelord shield", chance = 6720 },
+	-- Knight Set
+	{ name = "knight armor", chance = 2750 },
+	{ name = "knight legs", chance = 2585 },
+	{ name = "knight axe", chance = 2145 },
+	{ name = "devil helmet", chance = 2007 },
+	{ name = "tower shield", chance = 1898 },
+	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 1200 },
+	{ name = "fire axe", chance = 950 },
+	{ name = "dragonbone staff", chance = 1200 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1182 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)
+
 
 
 

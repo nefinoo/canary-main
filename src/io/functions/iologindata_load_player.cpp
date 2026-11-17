@@ -145,7 +145,7 @@ bool IOLoginDataLoad::loadPlayerBasicInfo(const std::shared_ptr<Player> &player,
 	player->quickLootFallbackToMainContainer = result->getNumber<bool>("quickloot_fallback");
 	player->setSex(static_cast<PlayerSex_t>(result->getNumber<uint16_t>("sex")));
 	player->setPronoun(static_cast<PlayerPronoun_t>(result->getNumber<uint16_t>("pronoun")));
-	player->level = std::max<uint32_t>(1, result->getNumber<uint32_t>("level"));
+	player->level = std::max<uint64_t>(1, result->getNumber<uint64_t>("level"));
 	player->soul = static_cast<uint8_t>(result->getNumber<unsigned short>("soul"));
 	player->capacity = result->getNumber<uint32_t>("cap") * 100;
 	player->mana = result->getNumber<uint32_t>("mana");

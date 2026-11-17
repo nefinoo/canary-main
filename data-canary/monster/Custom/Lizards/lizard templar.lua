@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard templar"
 monster.description = "a lizard templar"
-monster.experience = 2050000
+monster.experience = 4100000000
 monster.outfit = {
 	lookType = 113,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 4251
@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -8653, maxDamage = -11249}
+	{name ="melee", interval = 1500, chance = 100, minDamage = -20306, maxDamage = -26398}
 }
 
 monster.defenses = {
@@ -88,23 +88,30 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 70},
-	{id = 3264, chance = 20000},
 	{name = "tusk shield", chance = 300},
 	{name = "plate armor", chance = 2000},
 	{name = "lizard leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "sentinel shield", chance = 500},
-			{name = "steel helmet", chance = 3333},
-			{name = "templar scytheblade", chance = 433},
-			{name = "lizard scale", chance = 5000}
-		}
-	}
+	{name = "sentinel shield", chance = 500},
+	{name = "steel helmet", chance = 3333},
+	{name = "templar scytheblade", chance = 433},
+	{name = "lizard scale", chance = 5000},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 100000, maxCount = 27},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

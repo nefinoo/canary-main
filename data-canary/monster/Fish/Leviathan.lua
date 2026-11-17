@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Leaviathan"
 monster.description = "a guardian of the ocean"
-monster.experience = 70000000
+monster.experience = 70000000000
 monster.outfit = {
 	lookType = 1542,
 	lookAddons = 3,
@@ -135,6 +135,7 @@ mType.onAppear = function(monster, creature)
 end
 
 mType:register(monster)
+
 
 
 

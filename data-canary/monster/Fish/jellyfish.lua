@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a jellyfish"
-monster.experience = 3000
+monster.experience = 7500000
 monster.outfit = {
 	lookType = 452,
 	lookHead = 0,
@@ -79,12 +79,17 @@ monster.voices = {
 
 monster.loot = {
 	{name = "experience scroll", chance = 3000},
-	{ name = "shrimp", chance = 1500, maxCount = 3 },
+	{name = "gold coin", chance = 100000, maxCount = 90},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 74000, maxCount = 15},
+	{ id = 3578, chance = 35430, maxCount = 15}, -- fish
+	{ name = "salmon", chance = 14500, maxCount = 10},
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1500, chance = 100, minDamage = -30, maxDamage = -130, effect = CONST_ME_DRAWBLOOD },
-	{name ="combat", interval = 4000, chance = 35, type = COMBAT_ENERGYDAMAGE, minDamage = -50, maxDamage = -90, length = 8, spread = 3, effect = 38}
+	{name = "melee", interval = 1500, chance = 100, minDamage = -288, maxDamage = -375, effect = CONST_ME_DRAWBLOOD },
+	{name ="combat", interval = 4000, chance = 35, type = COMBAT_ENERGYDAMAGE, minDamage = -288, maxDamage = -375, length = 8, spread = 3, effect = 38},
+	
 }
 
 monster.defenses = {
@@ -95,13 +100,13 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -5 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
@@ -115,6 +120,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

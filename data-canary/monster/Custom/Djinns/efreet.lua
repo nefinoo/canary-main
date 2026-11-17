@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "efreet"
 monster.description = "an efreet"
-monster.experience = 6000000
+monster.experience = 6000000000
 monster.outfit = {
 	lookType = 103,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1200000
-monster.maxHealth = 1200000
+monster.health = 1500000
+monster.maxHealth = 1500000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6032
@@ -67,23 +67,23 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 60},
-	{type = COMBAT_EARTHDAMAGE, percent = 40},
-	{type = COMBAT_FIREDAMAGE, percent = 90},
-	{type = COMBAT_LIFEDRAIN, percent = 0},
-	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
-	{type = COMBAT_HOLYDAMAGE , percent = -10},
-	{type = COMBAT_DEATHDAMAGE , percent = 30}
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -15000, maxDamage = -20000},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -30000, maxDamage = -40000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -35000, maxDamage = -50000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -14999, maxDamage = -25383},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -25383, maxDamage = -32998, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SUDDENDEATH},
 	{name ="speed", interval = 1000, chance = 13, speed = {min = -650, max = -650}, duration = 15000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
 	{name ="drunk", interval = 1000, chance = 20, drunkenness = 25, duration = 10000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA},
 	{name = "outfit", interval = 1000, chance = 17, range = 5, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 30000, outfitMonster = "rat" },
@@ -103,25 +103,33 @@ monster.summons = {
 
 monster.loot = {
 	{name = "green gem", chance = 100},
-	{name = "gold coin", chance = 100000, maxCount = 60},
 	{name = "pear", chance = 6666, maxCount = 4},
-	{id = 2914, chance = 10000},
-	{id = 2853, chance = 100000, child = {
-			{name = "royal spear", chance = 2000, maxCount = 2},
-			{name = "small oil lamp", chance = 20000},
-			{name = "small emerald", chance = 7000, maxCount = 2},
-			{name = "green piece of cloth", chance = 5000, maxCount = 2},
-			{name = "magma monocle", chance = 500},
-			{name = "mystic turban", chance = 200},
-			{id = 2647, chance = 2500},
-			{name = "gold coin", chance = 80000, maxCount = 15},
-			{name = "heavy machete", chance = 2000},
-			{name = "wand of inferno", chance = 1111}
-		}
-	}
+	{name = "royal spear", chance = 2000, maxCount = 2},
+	{name = "small oil lamp", chance = 20000},
+	{name = "small emerald", chance = 7000, maxCount = 2},
+	{name = "green piece of cloth", chance = 5000, maxCount = 2},
+	{name = "magma monocle", chance = 500},
+	{name = "mystic turban", chance = 200},
+	{id = 2647, chance = 2500},
+	{name = "heavy machete", chance = 2000},
+	{name = "wand of inferno", chance = 1111},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 100000, maxCount = 35},
+	{name = "platinum coin", chance = 35000, maxCount = 35},
+	{name = "experience scroll", chance = 3350, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

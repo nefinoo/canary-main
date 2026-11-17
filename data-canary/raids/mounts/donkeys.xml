@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="A group of donkeys has been spotted wandering the plains." />
+	<announce delay="120000" type="event" message="The donkeys are roaming freely across the area." />
+
+	<!-- AREARESPAWN -->
+	<areaspawn delay="2000" fromx="454" fromy="633" fromz="7" tox="496" toy="662" toz="7">
+		<monster name="Donkey" amount="3" />
+	</areaspawn>
+</raid>

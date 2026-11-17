@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Enraged Frostbeast"
 monster.description = "an enraged frostbeast"
-monster.experience = 90000
+monster.experience = 90000000
 monster.outfit = {
 	lookType = 261,
 	lookHead = 20,
@@ -98,6 +98,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

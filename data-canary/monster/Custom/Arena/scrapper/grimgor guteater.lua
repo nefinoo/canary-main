@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Grimgor Guteater"
 monster.description = "grimgor guteater"
-monster.experience = 670
+monster.experience = 670000
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -92,6 +92,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

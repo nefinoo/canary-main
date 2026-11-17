@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "crab"
 monster.description = "a crab"
-monster.experience = 8000
+monster.experience = 28500000
 monster.outfit = {
 	lookType = 112,
 	lookHead = 20,
@@ -67,19 +67,19 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = -5},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 40},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -380, maxDamage = -600}
+	{ name = "melee", interval = 1000, chance = 100, minDamage = -518, maxDamage = -800 },
 }
 
 monster.defenses = {
@@ -88,13 +88,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "experience scroll", chance = 2500},
-	{id = 3578, chance = 40000, maxCount = 3},--fish
-	{name = "salmon", chance = 25000, maxCount = 2},
-	{name = "green perch", chance = 5000, maxCount = 2}
+	{name = "experience scroll", chance = 5000},
+	{id = 3578, chance = 55430, maxCount = 20},--fish
+	{name = "salmon", chance = 35430, maxCount = 10},
+	{id = 3581, chance = 5000, maxCount = 2},
+	{name = "small diamond", chance = 75000, maxCount = 3},
+	{name = "gold coin", chance = 100000, maxCount = 90},
+	{name = "gold coin", chance = 100000, maxCount = 100},
+	{name = "platinum coin", chance = 64000, maxCount = 10},
+	{name = "platinum coin", chance = 44000, maxCount = 12},
 }
 
 mType:register(monster)
+
 
 
 

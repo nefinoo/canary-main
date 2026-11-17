@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Unblessed Spirit"
 monster.description = "an unblessed spirit."
-monster.experience = 500000
+monster.experience = 500000000
 monster.outfit = {
 	lookType = 48,
 	lookHead = 0,
@@ -94,6 +94,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

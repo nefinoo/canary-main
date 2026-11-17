@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Fallen Mooh'tah Master Ghar"
 monster.description = "fallen mooh'tah master ghar"
-monster.experience = 4400
+monster.experience = 4400000
 monster.outfit = {
 	lookType = 29,
 	lookHead = 20,
@@ -99,6 +99,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

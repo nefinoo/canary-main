@@ -9,12 +9,18 @@ local CONFIG = {
             color = TEXTCOLOR_GOLD,
             effect = CONST_ME_MAGIC_BLUE
         },
-        -- {
-            -- position = Position(512, 851, 7),
-            -- text = "Top Level!",
-            -- color = TEXTCOLOR_RED,
-            -- effect = CONST_ME_HOLYDAMAGE
-        -- },
+        {
+            position = Position(512, 850, 7),
+            text = "Melt",
+            color = TEXTCOLOR_RED,
+            -- effect = CONST_ME_FIREATTACK
+        },
+        {
+            position = Position(512, 851, 7),
+            text = "Here",
+            color = TEXTCOLOR_RED,
+            effect = CONST_ME_FIREATTACK
+        },
         -- {
             -- position = Position(512, 852, 7),
             -- text = "Top Magic!",

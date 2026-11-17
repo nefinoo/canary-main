@@ -4,7 +4,7 @@ local expscroll = Action()
 local BOOST_PERCENT = 100         -- el bonus en %
 local BOOST_DURATION = 3600        -- minutos por uso (1 hora)
 local BOOST_LIMIT = 3            -- veces por día
-local STORAGE_LIMIT = 50000      -- storage donde guardaremos los usos por día
+local STORAGE_LIMIT = 50001      -- storage donde guardaremos los usos por día
 
 function expscroll.onUse(player, item, fromPosition, itemEx, toPosition)
 

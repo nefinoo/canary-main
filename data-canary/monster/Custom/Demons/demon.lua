@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "demon"
 monster.description = "a demon"
-monster.experience = 5000
+monster.experience = 525000
 monster.outfit = {
 	lookType = 35,
 	lookHead = 0,
@@ -14,8 +14,22 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 8200
-monster.maxHealth = 8200
+monster.raceId = 35
+monster.Bestiary = {
+	class = "Demon",
+	race = BESTY_RACE_DEMON,
+	toKill = 2500,
+	FirstUnlock = 100,
+	SecondUnlock = 1000,
+	CharmsPoints = 50,
+	Stars = 4,
+	Occurrence = 0,
+	Locations = "Hero Cave, Ferumbras' Citadel, Goroma, Ghostlands Warlock area unreachable, Liberty Bay hidden underground passage unreachable, Razachai, deep in Pits of Inferno (found in every throneroom except Verminor's), deep Formorgar Mines, Demon Forge, Alchemist Quarter, Magician Quarter, Chyllfroest, Oramond Dungeon, Abandoned Sewers, Hell Hub and Halls of Ascension.",
+}
+
+
+monster.health = 1800
+monster.maxHealth = 1800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5995
@@ -83,18 +97,18 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -288, maxDamage = -375},
-	{name ="combat", interval = 3000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -288, maxDamage = -375, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -288, maxDamage = -375, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 15, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -288, maxDamage = -375, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -32, maxDamage = -95},
+	{name ="combat", interval = 3000, chance = 8, type = COMBAT_MANADRAIN, minDamage = -5, maxDamage = -40, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -30, maxDamage = -100, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 3000, chance = 18, type = COMBAT_ENERGYDAMAGE, minDamage = -30, maxDamage = -105, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
-	defense = 55,
-	armor = 50,
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_HEALING, minDamage = 90, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE},
-	{name ="speed", interval = 1000, chance = 15, speed = {min = 200, max = 200}, duration = 20000, effect = CONST_ME_MAGIC_RED}
+	defense = 38,
+	armor = 32,
+	{ name = "combat", interval = 4000, chance = 8, type = COMBAT_HEALING, minDamage = 20, maxDamage = 45, effect = CONST_ME_MAGIC_BLUE },
+	{ name = "speed", interval = 1000, chance = 10, speed = { min = 200, max = 200 }, duration = 12000, effect = CONST_ME_MAGIC_RED },
 }
 
 monster.maxSummons = 2
@@ -103,32 +117,40 @@ monster.summons = {
 }
 
 monster.loot = {
-	{name = "purple tome", chance = 1300},
-	{id = 2853, chance = 100000, child = {
-			{name = "talon", chance = 4000, maxCount = 4},
-			{name = "platinum amulet", chance = 50000, maxCount = 80},
-			{name = "gold ring", chance = 1100},
-			-- {id = 3098, chance = 500},
-			{name = "ice rapier", chance = 600},
-			{name = "golden legs", chance = 400},
-			{name = "demon shield", chance = 700},
-			{name = "coconut", chance = 10000, maxCount = 3},
-			{name = "fire mushroom", chance = 20000, maxCount = 6},
-			{name = "demonrage sword", chance = 4100}
-		}
-	},
-	{name = "platinum coin", chance = 70000, maxCount = 50},
-	-- {id = 3049, chance = 1400},
-	{name = "orb", chance = 3000},
-	{name = "giant sword", chance = 1428},
-	{name = "fire axe", chance = 1200},
-	{name = "magic plate armor", chance = 130},
-	{name = "mastermind shield", chance = 500},
-	{id = 5906, chance = 500},
-	{name = "demon horn", chance = 1000}
+	{ name = "experience scroll", chance = 55 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Oro y consumibles nivel 69
+	{ name = "gold coin", chance = 90000, maxCount = 85 },
+	{ name = "fire mushroom", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 10000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 4500 },
+	{ name = "strong mana potion", chance = 5000 },
+	-- Materiales de addon originales
+	{ name = "talon", chance = 4000, maxCount = 4 },
+	{ name = "demonic essence", chance = 1429 },
+	{ name = "demon horn", chance = 800 },
+	{ id = 12413, chance = 10900 },
+	-- Plate Set: progresion mejorada
+	{ name = "plate armor", chance = 6600 },
+	{ name = "plate legs", chance = 6336 },
+	{ name = "steel helmet", chance = 7062 },
+	{ name = "bonelord shield", chance = 6336 },
+	-- Knight Set
+	{ name = "knight armor", chance = 2480 },
+	{ name = "knight legs", chance = 2331 },
+	{ name = "knight axe", chance = 1934 },
+	{ name = "devil helmet", chance = 1810 },
+	{ name = "tower shield", chance = 1711 },
+	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
+	{ name = "fire sword", chance = 1000 },
+	{ name = "fire axe", chance = 850 },
+	{ name = "dragonbone staff", chance = 1000 },
+	-- Botas de progresion por set
+	{ id = 3079, chance = 1066 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)
+
 
 
 

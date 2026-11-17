@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "fright"
 monster.description = "a fright"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 245,
 	lookHead = 0,
@@ -97,8 +97,8 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100, description2 = "gold coin"},
-	{name = "platinum coin", chance = 33333, maxCount = 3, description2 = "platinum coin"},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 33333, maxCount = 3},
 	{name = "meat", chance = 20000, maxCount = 3, description2 = "meat"},
 	{name = "ham", chance = 50000, maxCount = 2, description2 = "ham"},
 	{id = 3115, chance = 12500, description2 = "bone"},
@@ -106,21 +106,17 @@ monster.loot = {
 	{name = "ancient shield", chance = 4000, description2 = "ancient shield"},
 	{name = "demonic essence", chance = 2500, description2 = "demonic essence"},
 	{name = "double axe", chance = 3333, description2 = "double axe"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "dreaded cleaver", chance = 1100, description2 = "dreaded cleaver"},
-			{name = "soul orb", chance = 1818, description2 = "soul orb"},
-			{name = "steel helmet", chance = 2857, description2 = "steel helmet"},
-			{id = 6299, chance = 1429, description2 = "death ring"},
-			{name = "knight legs", chance = 3333, description2 = "knight legs"},
-			{name = "boots of haste", chance = 1800, description2 = "boots of haste"},
-			{name = "infernal bolt", chance = 1000, maxCount = 5, description2 = "infernal bolt"},
-			{name = "skeleton decoration", chance = 1333, description2 = "skeleton decoration"},
-			{name = "pirate voodoo doll", chance = 667, description2 = "pirate voodoo doll"}
-		}
-	}
+	{name = "dreaded cleaver", chance = 1100, description2 = "dreaded cleaver"},
+	{name = "soul orb", chance = 1818, description2 = "soul orb"},
+	{name = "steel helmet", chance = 2857, description2 = "steel helmet"},
+	{name = "knight legs", chance = 3333, description2 = "knight legs"},
+	{name = "boots of haste", chance = 1800, description2 = "boots of haste"},
+	{name = "skeleton decoration", chance = 1333, description2 = "skeleton decoration"},
+	{name = "pirate voodoo doll", chance = 667, description2 = "pirate voodoo doll"},
 }
 
 mType:register(monster)
+
 
 
 

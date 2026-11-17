@@ -235,7 +235,7 @@ public:
 	void addList() override;
 	void removePlayer(bool displayEffect, bool forced = true);
 
-	static uint64_t getExpForLevel(const uint32_t level);
+	static uint64_t getExpForLevel(const uint64_t level);
 
 	uint16_t getStaminaMinutes() const;
 
@@ -455,10 +455,10 @@ public:
 	void switchGhostMode() {
 		ghostMode = !ghostMode;
 	}
-	uint32_t getLevel() const {
+	uint64_t getLevel() const {
 		return level;
 	}
-	void setLevel(uint32_t newLevel) {
+	void setLevel(uint64_t newLevel) {
 		level = newLevel;
 	}
 	uint8_t getLevelPercent() const {
@@ -1533,7 +1533,7 @@ private:
 	std::bitset<ConditionType_t::CONDITION_COUNT> m_conditionImmunities;
 	std::array<uint8_t, ConditionType_t::CONDITION_COUNT> m_conditionSuppressionCount {};
 
-	uint32_t level = 1;
+	uint64_t level = 1;
 	uint32_t magLevel = 0;
 	uint32_t actionTaskEvent = 0;
 	uint32_t actionTaskEventPush = 0;

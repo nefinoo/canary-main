@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "quara mantassin"
 monster.description = "a quara mantassin"
-monster.experience = 80000
+monster.experience = 1600000000
 monster.outfit = {
 	lookType = 72,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 40000
-monster.maxHealth = 40000
+monster.health = 50000
+monster.maxHealth = 50000
 monster.runHealth = 40
 monster.race = "blood"
 monster.corpse = 6064
@@ -96,11 +96,14 @@ monster.loot = {
 	{name = "fish fin", chance = 2000},
 	{name = "rainbow trout", chance = 2000},
 	{name = "green perch", chance = 2000},
-	{name = "experience scroll", chance = 3000},
+	{name = "platinum coin", chance = 100000, maxCount = 30},
+	{name = "platinum coin", chance = 70000, maxCount = 40},
+	{name = "experience scroll", chance = 3000, maxCount = 2},
 	{id = 893, chance = 5}
 }
 
 mType:register(monster)
+
 
 
 

@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a haunted tree"
-monster.experience = 310
+monster.experience = 310000
 monster.outfit = {
 	lookType = 310,
 	lookHead = 0,
@@ -129,6 +129,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

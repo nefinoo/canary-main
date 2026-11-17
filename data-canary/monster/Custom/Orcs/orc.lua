@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc"
 monster.description = "a orc"
-monster.experience = 160
+monster.experience = 7500
 monster.outfit = {
 	lookType = 5,
 	lookHead = 0,
@@ -14,12 +14,27 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 70
-monster.maxHealth = 70
+monster.raceId = 5
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ulderek's Rock, Edron Orc Cave, Ancient Temple, Ice Islands, Venore Orc Cave, \z
+		Rookgaard Orc Fortress, Rookgaard main cave, Fibula Dungeon, Elvenbane, Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 95
+monster.maxHealth = 95
 monster.runHealth = 15
 monster.race = "blood"
 monster.corpse = 5966
-monster.speed = 150
+monster.speed = 75
 monster.summonCost = 300
 
 monster.changeTarget = {
@@ -90,20 +105,19 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 12},
-	{name = "meat", chance = 33333, maxCount = 2},
-	{name = "studded armor", chance = 10000},
-	-- {name = "legion helmet", chance = 10000},
-	{name = "sabre", chance = 10000},
-	{id = 2853, chance = 100000, child = {
-			{name = "studded shield", chance = 10000},
-			{id = 3274, chance = 10000}
-		}
-	}
+	{ name = "plate armor", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "plate legs", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "steel helmet", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ name = "bonelord shield", chance = 70 }, -- Frozen Hell stage Orc equipment
+	{ id = 12413, chance = 200 }, -- bolsa de items de addon aleatorios (0.200%)
+	{ name = "gold coin", chance = 75000, maxCount = 6 },
+	{ name = "meat", chance = 30000, maxCount = 2 },
+	{ name = "health potion", chance = 500 },
+	{ name = "mana potion", chance = 500 },
 }
 
 mType:register(monster)
+
 
 
 

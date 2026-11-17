@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="Something ancient stirs in the shadows... The Old Widow is near." />
+	<announce delay="12000" type="event" message="The air grows thick with fear... The Old Widow awakens." />
+		<singlespawn delay="20000" name="The Old Widow" x="511" y="702" z="8" />
+</raid>

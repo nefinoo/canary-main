@@ -3,15 +3,15 @@ local monster = {}
 
 monster.name = "deathpincer"
 monster.description = "a deathpincer"
-monster.experience = 30000
+monster.experience = 250000000
 monster.outfit = {
-	lookType = 79,
-	lookHead = 20,
-	lookBody = 30,
-	lookLegs = 40,
-	lookFeet = 50,
+	lookType = 1055,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
-	lookMount = 0
+	lookMount = 0,
 }
 
 monster.bosstiary = {
@@ -19,8 +19,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 75000
-monster.maxHealth = 75000
+monster.health = 110000
+monster.maxHealth = 110000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6021
@@ -39,7 +39,7 @@ monster.flags = {
 	summonable = false,
 	convinceable = false,
 	illusionable = false,
-	boss = false,
+	boss = true,
 	ignoreSpawnBlock = false,
 	pushable = false,
 	canPushItems = true,
@@ -84,28 +84,61 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1153, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 400, interval = 5000}},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -1153, maxDamage = -1500, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED},
-	{name ="speed", interval = 1000, chance = 13, speed = {min = -700, max = -700}, duration = 25000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY},
-	{name ="condition", interval = 3000, chance = 50, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -1153, maxDamage = -1500, radius = 5, target = false, effect = CONST_ME_POISONAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -625, maxDamage = -1500, condition = {type = CONDITION_POISON, startDamage = 100, interval = 5000} },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -595, maxDamage = -1530, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_FIREWORK_RED },
+	{ name = "speed", interval = 2000, chance = 10, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_YELLOWENERGY },
+	{ name = "condition", interval = 4000, chance = 15, type = CONDITION_BLEEDING, startDamage = 0, tick = 5000, minDamage = -210, maxDamage = -590, radius = 3, target = false, effect = CONST_ME_POISONAREA }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 25,
-	{name ="speed", interval = 1000, chance = 8, speed = {min = 350, max = 350}, duration = 9000, effect = CONST_ME_MAGIC_RED}
+	defense = 50,
+	armor = 55,
+	{ name = "speed", interval = 4000, chance = 15, speed = {min = 250, max = 250}, duration = 6000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{ name = "crystal coin", chance = 50000, maxCount = 20 },
-	{ name = "experience scroll", chance = 2500, maxCount = 2 },
-	{ name = "silver token", chance = 1500, maxCount = 1 },
-	{ id = 37609, chance = 1250, unique = true}, -- sorcerer helmet
-	{ id = 37608, chance = 1150, unique = true}, -- sorcerer armor
-	{ id = 37607, chance = 1000, unique = true}, -- sorcerer legs
-	{ id = 37610, chance = 750, unique = true}, -- sorcerer boots
-	{ id = 6390, chance = 500, unique = true}, -- sorcerer shield
+	{ name = "crystal coin", chance = 100000, maxCount = 3 },
+	{ id = 51670, chance = 3500, maxCount = 1},
+	{ id = 51671, chance = 1200, maxCount = 1},
+	{ id = 51673, chance = 500, maxCount = 1},
+	{ id = 51672, chance = 150, maxCount = 1},
+	{ name = "silver token", chance = 15000, maxCount = 1},	
+	--maximiluis montura
+	{id = 12304, chance = 1500},	
 	
+	{id = 5879, chance = 50000, maxCount = 3},	--spider silk
+	{ name = "holy orchid", chance = 21000, maxCount = 3 },
+	{ id = 5921, chance = 9400, maxCount = 3 }, -- heaven blossom
+	{ name = "iron ore", chance = 14000, maxCount = 3 },
+	{id = 5925, chance = 12500, maxCount = 3}, -- hardbone
+	{name = "red dragon scale", chance = 25000, maxCount = 3},
+	{name = "red dragon leather", chance = 25000, maxCount = 3},
+	{name = "green dragon scale", chance = 25000, maxCount = 3},
+	{name = "green dragon leather", chance = 20000, maxCount = 3},
+	
+	{ id = 37609, chance = 5000, unique = true}, -- green demon helmet
+	{ id = 37608, chance = 5000, unique = true}, -- green demon armor
+	{ id = 37607, chance = 5000, unique = true}, -- green demon legs
+	{ id = 37610, chance = 5000, unique = true}, -- green demon boots
+	{ id = 29420, chance = 5000, unique = true}, -- quinta pieza del set de nivel 1000 (ID solicitado)
+	
+
+	-- Knight Set (sin Plate Set)
+	{ name = "knight armor", chance = 9500 },
+	{ name = "knight legs", chance = 8930 },
+	{ name = "knight axe", chance = 7410 },
+	{ name = "devil helmet", chance = 6935 },
+	{ name = "tower shield", chance = 6555 },
+	{ id = 3079, chance = 4085 }, -- Boots of Haste
+
+	-- Crown Set
+	{ name = "crown armor", chance = 4000 },
+	{ name = "crown legs", chance = 3840 },
+	{ name = "crown helmet", chance = 4800 },
+	{ name = "crown shield", chance = 3600 },
+	{ id = 3055, chance = 8000 }, -- Platinum Amulet (Crown Set)
+	{ id = 10386, chance = 3600 }, -- Zaoan Shoes
+
 	-- { id = 51230, chance = 1250}, -- paladin helmet
 	-- { id = 51231, chance = 1250}, -- paladin armor
 	-- { id = 51232, chance = 1250}, -- paladin legs
@@ -134,6 +167,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 
