@@ -29,25 +29,25 @@ local waterMonsters = {
 	[10] = {name = "Ryujin", level = 7500, fishing = 80, chance = 3000, key = 22, scroll = false, bowlable = true, serverBC = true, broadcast = "Lightning strikes the waves as |PLAYERNAME| summons Ryujin, the Dragon God of the Sea!"},
 	[11] = {name = "Sea Serpent", level = 5000, fishing = 77, chance = 3500, key = 21, scroll = false, bowlable = true, serverBC = true, broadcast = "The ocean churns violently as |PLAYERNAME| has disturbed the mighty Sea Serpent!"},
     [12] = {name = "Wyrm", level = 3500, fishing = 75, chance = 4000, key = 20, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-	[13] = {name = "Deepling Elite", level = 3000, fishing = 72, chance = 4200, key = 19, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [14] = {name = "Deepling Guard", level = 2800, fishing = 70, chance = 4400, key = 18, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [15] = {name = "Deepling Spellsinger", level = 2600, fishing =68, chance = 4600, key = 17, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [16] = {name = "Deepling Brawler", level = 2400, fishing = 65, chance = 4800, key = 16, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [17] = {name = "Deepling Scout", level = 2200, fishing = 63, chance = 5000, key = 15, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [18] = {name = "Quara Predator", level = 2000, fishing = 60, chance = 11000, key = 14, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [19] = {name = "Quara Pincher", level = 1750, fishing = 58, chance = 13500, key = 13, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [20] = {name = "Quara Mantassin", level = 1500, fishing = 55, chance = 15000, key = 12, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [21] = {name = "Quara Hydromancer", level = 1300, fishing = 50, chance = 16500, key = 11, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [22] = {name = "Quara Constrictor", level = 1000, fishing = 45, chance = 18000, key = 10, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [23] = {name = "Massive Water Elemental", level = 750, fishing = 40, chance = 22500, key = 9, scroll = false, bowlable = false, serverBC = false, broadcast = "A monstrous wave rises as |PLAYERNAME| has unleashed the wrath of the Massive Water Elemental!"},
-	[24] = {name = "Blood crab", level = 650, fishing = 38, chance = 24000, key = 8, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [25] = {name = "Water Elemental", level = 500, fishing = 34, chance = 24500, key = 7, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [26] = {name = "Crab", level = 350, fishing = 30, chance = 25000, key = 6, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [27] = {name = "Shark", level = 250, fishing = 24, chance = 33500, key = 5, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [28] = {name = "Jellyfish", level = 150, fishing = 17, chance = 34000, key = 4, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [29] = {name = "Northern Pike", level = 100, fishing = 15, chance = 34500, key = 3, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [30] = {name = "Calamary", level = 50, fishing = 12, chance = 35000, key = 2, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
-    [31] = {name = "Fish", level = 8, fishing = 10, chance = 45000, key = 1, scroll = false, bowlable = false, serverBC = false, broadcast = ""}
+	[13] = {name = "Deepling Elite", spawnName = "Fishing Deepling Elite", level = 3000, fishing = 72, chance = 4200, key = 19, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [14] = {name = "Deepling Guard", spawnName = "Fishing Deepling Guard", level = 2800, fishing = 70, chance = 4400, key = 18, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [15] = {name = "Deepling Spellsinger", spawnName = "Fishing Deepling Spellsinger", level = 2600, fishing =68, chance = 4600, key = 17, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [16] = {name = "Deepling Brawler", spawnName = "Fishing Deepling Brawler", level = 2400, fishing = 65, chance = 4800, key = 16, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [17] = {name = "Deepling Scout", spawnName = "Fishing Deepling Scout", level = 2200, fishing = 63, chance = 5000, key = 15, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [18] = {name = "Quara Predator", spawnName = "Fishing Quara Predator", level = 2000, fishing = 60, chance = 11000, key = 14, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [19] = {name = "Quara Pincher", spawnName = "Fishing Quara Pincher", level = 1750, fishing = 58, chance = 13500, key = 13, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [20] = {name = "Quara Mantassin", spawnName = "Fishing Quara Mantassin", level = 1500, fishing = 55, chance = 15000, key = 12, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [21] = {name = "Quara Hydromancer", spawnName = "Fishing Quara Hydromancer", level = 1300, fishing = 50, chance = 16500, key = 11, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [22] = {name = "Quara Constrictor", spawnName = "Fishing Quara Constrictor", level = 1000, fishing = 45, chance = 18000, key = 10, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [23] = {name = "Massive Water Elemental", spawnName = "Fishing Massive Water Elemental", level = 750, fishing = 40, chance = 22500, key = 9, scroll = false, bowlable = false, serverBC = false, broadcast = "A monstrous wave rises as |PLAYERNAME| has unleashed the wrath of the Massive Water Elemental!"},
+	[24] = {name = "Blood crab", spawnName = "Fishing Blood Crab", level = 650, fishing = 38, chance = 24000, key = 8, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [25] = {name = "Water Elemental", spawnName = "Fishing Water Elemental", level = 500, fishing = 34, chance = 24500, key = 7, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [26] = {name = "Crab", spawnName = "Fishing Crab", level = 350, fishing = 30, chance = 25000, key = 6, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [27] = {name = "Shark", spawnName = "Fishing Shark", level = 250, fishing = 24, chance = 33500, key = 5, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [28] = {name = "Jellyfish", spawnName = "Fishing Jellyfish", level = 150, fishing = 17, chance = 34000, key = 4, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [29] = {name = "Northern Pike", spawnName = "Fishing Northern Pike", level = 100, fishing = 15, chance = 34500, key = 3, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [30] = {name = "Calamary", spawnName = "Fishing Calamary", level = 50, fishing = 12, chance = 35000, key = 2, scroll = false, bowlable = false, serverBC = false, broadcast = ""},
+    [31] = {name = "Fish", spawnName = "Fishing Fish", level = 8, fishing = 10, chance = 45000, key = 1, scroll = false, bowlable = false, serverBC = false, broadcast = ""}
 }
 
 
@@ -164,7 +164,7 @@ local function getEligibleMonsters(list, playerLevel, skill, activeScroll)
         if playerLevel >= monster.level
             and skill >= monster.fishing
             and (not monster.scroll or activeScroll)
-            and MonsterType(monster.name) then
+            and MonsterType(monster.spawnName or monster.name) then
             eligible[#eligible + 1] = monster
         end
     end
@@ -220,7 +220,7 @@ local function broadcastMessage(player, monster)
 end
 
 local function addCatchAndBroadcast(player, monster, position)
-    local caught = Game.createMonster(monster.name, player:getPosition(), true, false)
+    local caught = Game.createMonster(monster.spawnName or monster.name, player:getPosition(), true, false)
     if not caught then
         return false
     end

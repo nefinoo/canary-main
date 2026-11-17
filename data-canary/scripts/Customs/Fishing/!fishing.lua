@@ -12,7 +12,7 @@ function fishingList.onSay(player, words, param)
         local entries = cfg.tables[area]
         for i = #entries, 1, -1 do
             local entry = entries[i]
-            local available = MonsterType(entry.name) and "" or " [missing monster]"
+            local available = MonsterType(entry.spawnName or entry.name) and "" or " [missing monster]"
             output = output .. string.format("%s: %d / %d / %s%s\n",
                 entry.name, entry.level, entry.fishing, entry.scroll and "yes" or "no", available)
         end
