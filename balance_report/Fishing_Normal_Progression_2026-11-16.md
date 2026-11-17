@@ -56,3 +56,22 @@ El usuario indicó que solamente están balanceados los monstruos de los respawn
 Comparaciones confirmadas en archivos de Canary de la rama: Outlawed Warrior (4600 HP, 1750000 EXP), Salazaari Defender (6200 HP, 3750000 EXP), Valick (11500 HP, 7500000 EXP), Mummy (10000 HP, 6750000 EXP), Undead Mage / Necromancer (13500 HP, 15000000 EXP), Hell Soldier / Demon Skeleton (17500 HP, 12500000 EXP) y Deathpincer / Ancient Scarab (110000 HP, 250000000 EXP), que es un jefe especial, no un monstruo normal.
 
 Se corrigió la vida de Fishing Quara Constrictor de 25000 a 30000 (HP y maxHealth); permanecen iguales EXP 125000000, ataques, loot, Fishing requerido 45 y nivel requerido 1000. Motivo: el Quara de nivel 1000 tenía menos HP que Fishing Massive Water Elemental de nivel 750 (26000 HP) sin una ventaja mecánica que justificara esa inversión de progresión. La nueva cifra de 30000 HP es preliminar. Pendiente: medir tiempo real para matarlo, DPS entrante y EXP/h con un Knight nivel 1000 y equipamiento de su etapa.
+
+## Incremento de experiencia del 30% (16 de noviembre de 2026)
+
+Se incrementa exactamente el 30% de experiencia de los diez MonsterTypes exclusivos de Fishing con requisito de nivel 8–1000. Las criaturas normales de respawn, los semijefes desde Wyrm y las capturas de otros biomas no se modifican. Vida, ataques, loot, requisito de nivel, fishing skill y probabilidades permanecen iguales.
+
+| Monstruo Fishing | EXP anterior | EXP nueva (+30%) |
+|---|---:|---:|
+| Fish | 40000 | 52000 |
+| Calamary | 1200000 | 1560000 |
+| Northern Pike | 2700000 | 3510000 |
+| Jellyfish | 4200000 | 5460000 |
+| Shark | 7000000 | 9100000 |
+| Crab | 10000000 | 13000000 |
+| Water Elemental | 31000000 | 40300000 |
+| Blood Crab | 52000000 | 67600000 |
+| Massive Water Elemental | 78000000 | 101400000 |
+| Quara Constrictor | 125000000 | 162500000 |
+
+Pendiente: validar EXP por hora y frecuencia de capturas en el servidor.
