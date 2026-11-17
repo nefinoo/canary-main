@@ -4,7 +4,7 @@ local monster = {}
 
 monster.name = "Fishing Massive Water Elemental"
 monster.description = "a massive water elemental"
-monster.experience = 78000000
+monster.experience = 101400000
 monster.outfit = {
 	lookType = 11,
 	lookHead = 20,
