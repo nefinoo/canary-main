@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Check the teleport bitch.",
 }
 
-monster.health = 15500
-monster.maxHealth = 15500
+monster.health = 11500
+monster.maxHealth = 11500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6006

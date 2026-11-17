@@ -230,7 +230,7 @@ pvpMaxLevelDifference = 0
 -- Wheel of destiny system
 -- NOTE: set wheelSystemEnabled = false to disable the wheel of destiny
 -- NOTE: only the wheel points are modified, all other data is on the client executable and cannot be modified
-wheelSystemEnabled = false
+wheelSystemEnabled = true
 wheelPointsPerLevel = 1
 
 -- Gem Atelier

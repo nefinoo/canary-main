@@ -28,8 +28,8 @@ monster.Bestiary = {
 		Stonehome Rotworm cave (near Edron), Maze of Lost Souls, Tiquanda Dwarf Cave, Beregar, Cormaya Dwarf Cave.",
 }
 
-monster.health = 6500
-monster.maxHealth = 6500
+monster.health = 5500
+monster.maxHealth = 5500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6013

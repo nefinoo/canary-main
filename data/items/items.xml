@@ -8620,7 +8620,7 @@
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="It's the Sword of Valor"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="44"/>
+		<attribute key="attack" value="64"/>
 		<attribute key="defense" value="40"/>
 		<attribute key="weight" value="4200"/>
 		<attribute key="script" value="moveevent;weapon">
@@ -8722,7 +8722,7 @@
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="Strong powers flow in this magic sword"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="56"/>
+		<attribute key="attack" value="76"/>
 		<attribute key="defense" value="44"/>
 		<attribute key="extradef" value="4"/>
 		<attribute key="weight" value="6400"/>
@@ -8899,7 +8899,7 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="It is blessed by the gods of Tibia"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="46"/>
+		<attribute key="attack" value="66"/>
 		<attribute key="extradef" value="1"/>
 		<attribute key="defense" value="35"/>
 		<attribute key="weight" value="12500"/>
@@ -9068,7 +9068,7 @@
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="You feel the power of this mighty axe"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="45"/>
+		<attribute key="attack" value="65"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="30"/>
 		<attribute key="weight" value="9900"/>
@@ -9954,7 +9954,7 @@
 		<!-- <attribute key="maxmanapoints" value="500"/> -->
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="description" value="You hear an evil whispering from inside"/>
-		<attribute key="armor" value="10"/>
+		<attribute key="armor" value="12"/>
 		<attribute key="weight" value="2950"/>
 		<!-- <attribute key="augments" value="1"> -->
 			<!-- <attribute key="Deadly Core" value="base"> -->
@@ -9972,7 +9972,7 @@
 	<item id="3388" article="a" name="demon armor">
 		<!-- <attribute key="maxhitpoints" value="500"/> -->
 		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="17"/>
+		<attribute key="armor" value="21"/>
 		<attribute key="weight" value="8000"/>
 		<!-- <attribute key="augments" value="1"> -->
 			<!-- <attribute key="Deadly Berseker" value="base"> -->
@@ -9988,7 +9988,7 @@
 		<!-- <attribute key="maxmanapoints" value="250"/> -->
 		<!-- <attribute key="maxhitpoints" value="250"/> -->
 		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="11"/>
+		<attribute key="armor" value="14"/>
 		<attribute key="weight" value="7000"/>
 		<!-- <attribute key="augments" value="1"> -->
 			<!-- <attribute key="Deadly Caldera" value="base"> -->
@@ -17681,7 +17681,7 @@
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights"/>
 		<attribute key="weaponType" value="shield"/>
-		<attribute key="defense" value="39"/>
+		<attribute key="defense" value="47"/>
 		<!-- <attribute key="skillshield" value="5"/> -->
 		<attribute key="weight" value="3200"/>
 		<attribute key="script" value="moveevent">
@@ -19990,7 +19990,7 @@
 	</item>
 	<item id="7420" article="a" name="reaper's axe">
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="60"/>
+		<attribute key="attack" value="80"/>
 		<attribute key="extradef" value="1"/>
 		<attribute key="defense" value="34"/>
 		<attribute key="weight" value="5900"/>
@@ -20288,7 +20288,7 @@
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="A beautiful gem is embedded in this weapon"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="64"/>
+		<attribute key="attack" value="84"/>
 		<attribute key="defense" value="24"/>
 		<attribute key="extradef" value="-2"/>
 		<attribute key="weight" value="2100"/>
@@ -43933,7 +43933,7 @@ Awarded by TibiaMagazine.com.ve"/>
 	<item id="22086" article="a" name="badger boots">
 		<attribute key="primarytype" value="boots"/>
 		<attribute key="showAttributes" value="1"/>
-		<attribute key="speed" value="10"/>
+		<attribute key="speed" value="20"/>
 		<attribute key="armor" value="2"/>
 		<attribute key="weight" value="1200"/>
 		<attribute key="imbuementslot" value="1">

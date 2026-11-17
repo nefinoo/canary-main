@@ -284,10 +284,10 @@ end
 local casinoRoulette = Action()
 
 function casinoRoulette.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-    if player:getLevel() <= 25000 then
-        player:sendTextMessage(MESSAGE_LOOK, "Cassino is closed for now, We are making final adjustments...")
-        return true
-    end
+    -- if player:getLevel() <= 25000 then
+        -- player:sendTextMessage(MESSAGE_LOOK, "Cassino is closed for now, We are making final adjustments...")
+        -- return true
+    -- end
     if activeSpin or item:getId() == config.lever.right then
         player:sendTextMessage(MESSAGE_FAILURE, "Casino Roulette is currently in progress. Please wait.")
         return true

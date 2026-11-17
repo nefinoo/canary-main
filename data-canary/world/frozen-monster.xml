@@ -3949,18 +3949,15 @@
 		<monster name="salazaari defender" x="-28" y="-10" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="12" y="-8" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="17" y="-8" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="7" y="-7" z="7" spawntime="30" />
+		<monster name="salazaari defender" x="14" y="-6" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-29" y="-5" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="6" y="-4" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="17" y="-4" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-25" y="-3" z="7" spawntime="30" />
-		<monster name="salazaari defender" x="12" y="-3" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-21" y="-2" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-29" y="0" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-24" y="0" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="28" y="0" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-16" y="2" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="18" y="2" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="18" y="4" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-12" y="6" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-7" y="6" z="7" spawntime="30" />
@@ -3969,14 +3966,11 @@
 		<monster name="salazaari defender" x="-14" y="18" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-8" y="19" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-24" y="20" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="1" y="20" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="2" y="20" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="21" y="20" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="20" y="21" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-5" y="24" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="-22" y="25" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-2" y="26" z="7" spawntime="30" />
-		<monster name="salazaari ranger" x="11" y="26" z="7" spawntime="30" />
 		<monster name="salazaari defender" x="12" y="26" z="7" spawntime="30" />
 		<monster name="salazaari ranger" x="-24" y="27" z="7" spawntime="30" />
 	</monster>
