@@ -19,7 +19,7 @@ La configuración actual del repositorio es `rateUseStages = true` y `data/stage
 | Water Elemental | 500 | 12000 | 17500 | 36000000 | 31000000 |
 | Blood Crab | 650 | 18000 | 22000 | 46500000 | 52000000 |
 | Massive Water Elemental | 750 | 25000 | 26000 | 91950000 | 78000000 |
-| Quara Constrictor | 1000 | 35000 | 25000 | 650000000 | 125000000 |
+| Quara Constrictor | 1000 | 35000 | 30000 | 650000000 | 125000000 |
 | Quara Hydromancer | 1300 | 40000 | 29000 | 1100000000 | 220000000 |
 | Quara Mantassin | 1500 | 50000 | 33000 | 1600000000 | 300000000 |
 | Quara Pincher | 1750 | 65000 | 37000 | 2000000000 | 410000000 |
@@ -49,3 +49,10 @@ La configuración actual del repositorio es `rateUseStages = true` y `data/stage
 
 ## Revisión de EXP inicial (16 de noviembre de 2026)
 Se corrigió la experiencia de cinco monstruos normales de Fishing, sin cambiar HP, ataques, loot ni requisitos. La comparación con monstruos regulares mostró que `outlawed warrior` tiene 4600 HP y 1750000 EXP, mientras `outlawed ranger` tiene 5000 HP y 2000000 EXP. Northern Pike capturado tiene 5000 HP, así que sus 500000 EXP eran insuficientes. Su recompensa ahora es 2700000 EXP (+54% frente a warrior, +35% frente a ranger). Se ajustaron Fish 4000→40000, Calamary 150000→1200000, Jellyfish 1400000→4200000 y Shark 5250000→7000000 para mantener una progresión ascendente hasta Crab (10000000). Estos cambios son una corrección provisional basada en HP, nivel y EXP comparables; pendientes pruebas de tiempo de captura, matanza, recursos consumidos y EXP/h.
+
+## Límite de alcance actual: Fishing nivel 8 a 1000
+El usuario indicó que solamente están balanceados los monstruos de los respawns normales hasta nivel 1000. Por ello no se editarán criaturas de Fishing superiores a nivel 1000 ni el Yalahari Set hasta continuar la progresión principal. Este límite es de **trabajo**, no una restricción para capturar monstruos en el juego.
+
+Comparaciones confirmadas en archivos de Canary de la rama: Outlawed Warrior (4600 HP, 1750000 EXP), Salazaari Defender (6200 HP, 3750000 EXP), Valick (11500 HP, 7500000 EXP), Mummy (10000 HP, 6750000 EXP), Undead Mage / Necromancer (13500 HP, 15000000 EXP), Hell Soldier / Demon Skeleton (17500 HP, 12500000 EXP) y Deathpincer / Ancient Scarab (110000 HP, 250000000 EXP), que es un jefe especial, no un monstruo normal.
+
+Se corrigió la vida de Fishing Quara Constrictor de 25000 a 30000 (HP y maxHealth); permanecen iguales EXP 125000000, ataques, loot, Fishing requerido 45 y nivel requerido 1000. Motivo: el Quara de nivel 1000 tenía menos HP que Fishing Massive Water Elemental de nivel 750 (26000 HP) sin una ventaja mecánica que justificara esa inversión de progresión. La nueva cifra de 30000 HP es preliminar. Pendiente: medir tiempo real para matarlo, DPS entrante y EXP/h con un Knight nivel 1000 y equipamiento de su etapa.
