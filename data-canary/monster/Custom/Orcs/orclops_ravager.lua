@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 50000
+monster.experience = 6500
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade",
 }
 
-monster.health = 900
-monster.maxHealth = 900
+monster.health = 260
+monster.maxHealth = 260
 monster.race = "blood"
 monster.corpse = 25074
 monster.speed = 100
@@ -57,7 +57,7 @@ monster.flags = {
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 15,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -90,29 +90,29 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -58 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -30, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -10, maxDamage = -44 },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -6, maxDamage = -22, range = 5, shootEffect = CONST_ANI_LARGEROCK, target = true },
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 35,
-	mitigation = 1.24,
-	{ name = "speed", interval = 2000, chance = 10, speedChange = 336, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
-	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_HEALING, minDamage = 80, maxDamage = 150, effect = CONST_ME_MAGIC_BLUE, target = false },
+	defense = 9,
+	armor = 5,
+	mitigation = 0.25,
+	{ name = "speed", interval = 2000, chance = 10, speedChange = 35, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
+	{ name = "combat", interval = 5000, chance = 20, type = COMBAT_HEALING, minDamage = 10, maxDamage = 18, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 20 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 20 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 50 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 10 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

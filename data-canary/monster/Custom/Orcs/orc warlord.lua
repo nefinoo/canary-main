@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warlord"
 monster.description = "a orc warlord"
-monster.experience = 25000
+monster.experience = 4300
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Teleport.",
 }
 
-monster.health = 390
-monster.maxHealth = 390
+monster.health = 185
+monster.maxHealth = 185
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6008
@@ -95,14 +95,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -48},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -26, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -10, maxDamage = -42 },
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -22, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 22,
-	{name ="invisible", interval = 1000, chance = 4, duration = 2000, effect = CONST_ME_MAGIC_BLUE}
+	defense = 8,
+	armor = 5
 }
 
 monster.loot = {

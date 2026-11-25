@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc shaman"
 monster.description = "a orc shaman"
-monster.experience = 15000
+monster.experience = 2700
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -29,9 +29,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 125
-monster.maxHealth = 125
-monster.runHealth = 15
+monster.health = 100
+monster.maxHealth = 100
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5978
 monster.speed = 80
@@ -82,8 +82,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 50},
-	{type = COMBAT_EARTHDAMAGE, percent = -5},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -94,20 +94,15 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 13},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -3, maxDamage = -16, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -3, maxDamage = -18, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -2, maxDamage = -14 },
+	{name ="combat", interval = 2000, chance = 45, type = COMBAT_ENERGYDAMAGE, minDamage = -4, maxDamage = -14, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -4, maxDamage = -12, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 8,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 27, maxDamage = 43, effect = CONST_ME_MAGIC_BLUE}
-}
-
-monster.maxSummons = 4
-monster.summons = {
-	{name = "snake", chance = 25, interval = 1000, max = 4}
+	defense = 3,
+	armor = 2,
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_HEALING, minDamage = 5, maxDamage = 10, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {

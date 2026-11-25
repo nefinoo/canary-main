@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 75000
+monster.experience = 8000
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1100
-monster.maxHealth = 1100
+monster.health = 320
+monster.maxHealth = 320
 monster.race = "blood"
 monster.corpse = 25078
 monster.speed = 100
@@ -58,7 +58,7 @@ monster.flags = {
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 15,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -93,30 +93,30 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -56 },
-	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -4, maxDamage = -28, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -12, maxDamage = -48 },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -6, maxDamage = -26, range = 5, shootEffect = CONST_ANI_LARGEROCK, target = true },
 	-- curse
-	{ name = "condition", type = CONDITION_CURSED, interval = 2000, chance = 5, minDamage = -1, maxDamage = -3, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
+	{ name = "condition", type = CONDITION_CURSED, interval = 4000, chance = 5, minDamage = -1, maxDamage = -2, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_EXPLOSIONAREA, target = true },
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 35,
-	mitigation = 1.32,
-	{ name = "speed", interval = 2000, chance = 10, speedChange = 336, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
+	defense = 10,
+	armor = 6,
+	mitigation = 0.25,
+	{ name = "speed", interval = 2000, chance = 10, speedChange = 35, effect = CONST_ME_MAGIC_RED, target = false, duration = 2000 },
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 10 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 30 },
-	{ type = COMBAT_FIREDAMAGE, percent = 15 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 10 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

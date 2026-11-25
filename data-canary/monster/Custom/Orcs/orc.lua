@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc"
 monster.description = "a orc"
-monster.experience = 7500
+monster.experience = 1800
 monster.outfit = {
 	lookType = 5,
 	lookHead = 0,
@@ -29,9 +29,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 95
-monster.maxHealth = 95
-monster.runHealth = 15
+monster.health = 75
+monster.maxHealth = 75
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5966
 monster.speed = 75
@@ -84,8 +84,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -20},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -96,12 +96,12 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 22, attack = 13}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -4, maxDamage = -20 },
 }
 
 monster.defenses = {
-	defense = 8,
-	armor = 4
+	defense = 3,
+	armor = 2
 }
 
 monster.loot = {

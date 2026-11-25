@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc spearman"
 monster.description = "a orc spearman"
-monster.experience = 9000
+monster.experience = 2200
 monster.outfit = {
 	lookType = 50,
 	lookHead = 20,
@@ -31,9 +31,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 115
-monster.maxHealth = 115
-monster.runHealth = 10
+monster.health = 85
+monster.maxHealth = 85
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5996
 monster.speed = 85
@@ -84,8 +84,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -96,13 +96,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 19, attack = 14},
-	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -2, maxDamage = -16, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -3, maxDamage = -16 },
+	{name ="combat", interval = 2000, chance = 65, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -16, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
 }
 
 monster.defenses = {
-	defense = 12,
-	armor = 6
+	defense = 4,
+	armor = 2
 }
 
 monster.loot = {

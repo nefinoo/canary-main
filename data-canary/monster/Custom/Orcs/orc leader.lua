@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc leader"
 monster.description = "a orc leader"
-monster.experience = 20000
+monster.experience = 3700
 monster.outfit = {
 	lookType = 59,
 	lookHead = 20,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Edron Orc Cave, South of the temple in PoH, Maze of Lost Souls, Cyclopolis, Zao Orc Land.",
 }
 
-monster.health = 290
-monster.maxHealth = 290
+monster.health = 155
+monster.maxHealth = 155
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6001
@@ -80,9 +80,9 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
@@ -92,13 +92,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 10},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -6, maxDamage = -28, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -36 },
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -18, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGKNIFE}
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 20
+	defense = 7,
+	armor = 4
 }
 
 monster.loot = {

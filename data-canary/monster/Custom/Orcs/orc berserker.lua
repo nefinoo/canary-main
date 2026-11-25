@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc berserker"
 monster.description = "a orc berserker"
-monster.experience = 17500
+monster.experience = 3200
 monster.outfit = {
 	lookType = 8,
 	lookHead = 20,
@@ -28,8 +28,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 210
-monster.maxHealth = 210
+monster.health = 130
+monster.maxHealth = 130
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5980
@@ -81,8 +81,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -20},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -93,13 +93,13 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -7, maxDamage = -44}
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -8, maxDamage = -34 },
 }
 
 monster.defenses = {
-	defense = 12,
-	armor = 15,
-	{name ="speed", interval = 1000, chance = 15, speed = {min = 290, max = 290}, duration = 6000, effect = CONST_ME_MAGIC_RED}
+	defense = 4,
+	armor = 3,
+	{name ="speed", interval = 4000, chance = 10, speed = {min = 25, max = 25}, duration = 2000, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.loot = {
