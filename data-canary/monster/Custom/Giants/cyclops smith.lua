@@ -112,12 +112,15 @@ monster.loot = {
 	{ name = "mana potion", chance = 26000 },
 	{ name = "ham", chance = 60000, maxCount = 3 },
 	{ name = "cyclops toe", chance = 10280 },
-	{ name = "plate armor", chance = 1450 },
-	{ name = "paladin armor", chance = 280 },
-	{ name = "focus cape", chance = 500 },
-	{ name = "hat of the mad", chance = 1250 },
-	{ name = "spellbook of enlightenment", chance = 700 },
-	{ name = "blue legs", chance = 950 },
+	{ name = "steel helmet", chance = 1700 },
+	{ name = "plate legs", chance = 1620 },
+	{ name = "blue legs", chance = 1530 },
+	{ name = "bonelord shield", chance = 1450 },
+	{ name = "spellbook of enlightenment", chance = 1450 },
+	{ name = "plate armor", chance = 1360 },
+	{ name = "focus cape", chance = 1280 },
+	{ name = "paladin armor", chance = 1190 },
+	{ name = "hat of the mad", chance = 1700 },
 }
 
 mType:register(monster)

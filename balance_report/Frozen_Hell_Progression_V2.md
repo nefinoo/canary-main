@@ -149,3 +149,22 @@ Cambios (chance Lua, 100000=100%):
 - Custom/Giants/cyclops smith.lua: plate armor 1450, paladin armor 280, focus cape 500, spellbook of enlightenment 700.
 
 Valor esperado de equipo con precio confirmado (sin Blue Legs y Hat of the Mad): Minotaurs 6426.11 -> 2988.86 gp/vuelta; Cyclops 11604.07 -> 3916.71 gp/vuelta. Equipos medios totales (incluyendo sin precio) Minotaurs 1.87 -> 2.40, Cyclops 2.50 -> 2.38. Los cambios de esta seccion sustituyen las chances afectadas de secciones anteriores. Validar economia real y suministro por vocacion en servidor.
+
+## 06 - Precios por etapa y equidad de vocaciones
+
+El administrador autoriza modificar precios NPC y agregar los faltantes. La rareza debe depender de etapa, valor y utilidad, no de precios vanilla historicos. Primer tier (35-75): Knight 2050 gp (steel helmet 400, plate armor 650, plate legs 450, bonelord shield 550); Paladin 2200 gp (steel helmet 400, paladin armor 750, blue legs 500, bonelord shield 550); Druid/Sorcerer 2150 gp (hat of the mad 400, focus cape 700, blue legs 500, spellbook 550). No incluye botas ni armas. Los siguientes tiers se fijaran al seleccionar su equipo, no se cambian precios de equipo posterior aun.
+
+Precios sell manuales y IDs: steel helmet (3351): 400 gp; plate legs (3557): 450 gp; blue legs (645): 500 gp; bonelord shield (3418): 550 gp; spellbook of enlightenment (8072): 550 gp; plate armor (3357): 650 gp; focus cape (8043): 700 gp; paladin armor (8063): 750 gp; hat of the mad (3210): 400 gp; worm (3492): 5 gp; cheese (3607): 2 gp; meat (3577): 2 gp; ham (3582): 4 gp; fish (3578): 10 gp; carrot (3595): 1 gp; corncob (3597): 1 gp; red mushroom (3724): 2 gp; health potion (266): 25 gp; mana potion (268): 28 gp; reinvigorating seeds (23811): 120 gp; bug meat (24382): 5 gp. Gold coin no se registra por ser moneda. Los precios son propios de Frozen Hell, no valores oficiales de Tibia. Los dos archivos de Nephy se sincronizan y se eliminan duplicados de las entradas afectadas. Madara (lootpouch_buyer.lua) actualiza los precios de estos objetos que ya compra para evitar una via alternativa de pago desbalanceado. Malak vende pociones a 50/56; Nemo compra fish a 10 y worm a 5; Canary vende worm a 10: se mantienen precios compatibles. No se cambia el precio de compra de suministros.
+
+Chances de equipo sustituyen seccion 05: base por item de steel helmet 1000, plate legs 950, blue legs 900, bonelord shield 850, spellbook of enlightenment 850, plate armor 800, focus cape 750, paladin armor 700, hat of the mad 1000 (100000=100%), multiplicadores 1.0 Minotaur, 1.1 Archer, 1.2 Guard/Mage, 1.3 Gnarlhound, 1.4 Crab, 1.5 Cyclops, 1.6 Drone, 1.7 Smith; redondeo a 10. Distribucion por especie:
+- Custom/Minotaurs/minotaur.lua: steel helmet, plate legs, paladin armor, focus cape, hat of the mad
+- Custom/Minotaurs/minotaur archer.lua: paladin armor, blue legs, bonelord shield, hat of the mad
+- Custom/Minotaurs/minotaur guard.lua: plate armor, bonelord shield, plate legs, blue legs, spellbook of enlightenment
+- Custom/Minotaurs/minotaur mage.lua: focus cape, hat of the mad, spellbook of enlightenment, blue legs
+- Monturas/modified_gnarlhound.lua: steel helmet, paladin armor, spellbook of enlightenment, plate armor
+- Custom/Crustaceans/deepsea_blood_crab.lua: plate armor, paladin armor, focus cape, spellbook of enlightenment
+- Custom/Giants/cyclops.lua: steel helmet, plate legs, paladin armor, focus cape, blue legs, plate armor
+- Custom/Giants/cyclops drone.lua: plate armor, bonelord shield, blue legs, hat of the mad, spellbook of enlightenment
+- Custom/Giants/cyclops smith.lua: steel helmet, plate legs, blue legs, bonelord shield, spellbook of enlightenment, plate armor, focus cape, paladin armor, hat of the mad
+
+Valor esperado de equipo: Minotaurs 2111.48 gp, 3.98 piezas por 88; Cyclops 2511.77 gp, 4.60 piezas por 56. Se amplian fuentes de piezas de magos y plate armor para evitar depender solo de criaturas escasas. No se cambian otros drops, combate, EXP ni atributos. Pendiente validar carga de NPC, items y economia dentro del juego; no se han comprobado todos los scripts de comercio ajenos a los NPC revisados.

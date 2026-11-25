@@ -79,6 +79,22 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {
+	-- Frozen Hell: precios de reventa para etapas 1-4, por vocacion y utilidad
+	{ itemName = "blue legs", clientId = 645, sell = 500 },
+	{ itemName = "hat of the mad", clientId = 3210, sell = 400 },
+	{ itemName = "worm", clientId = 3492, sell = 5 },
+	{ itemName = "cheese", clientId = 3607, sell = 2 },
+	{ itemName = "meat", clientId = 3577, sell = 2 },
+	{ itemName = "ham", clientId = 3582, sell = 4 },
+	{ itemName = "fish", clientId = 3578, sell = 10 },
+	{ itemName = "carrot", clientId = 3595, sell = 1 },
+	{ itemName = "corncob", clientId = 3597, sell = 1 },
+	{ itemName = "red mushroom", clientId = 3724, sell = 2 },
+	{ itemName = "health potion", clientId = 266, sell = 25 },
+	{ itemName = "mana potion", clientId = 268, sell = 28 },
+	{ itemName = "reinvigorating seeds", clientId = 23811, sell = 120 },
+	{ itemName = "bug meat", clientId = 24382, sell = 5 },
+
 	-- Talon de Warlock (precio de venta documentado en Tibia Wiki)
 	{ itemName = "talon", clientId = 3034, sell = 320 },
 	-- Armas nivel 20: precios de Tibia Wiki (venta al NPC / compra al NPC)
@@ -177,7 +193,7 @@ npcConfig.shop = {
 	--nah'bob--
 	{ itemName = "angelic axe", clientId = 7436, sell = 5000 },
 	{ itemName = "blue robe", clientId = 3567, sell = 10000 },
-	{ itemName = "bonelord shield", clientId = 3418, sell = 1200 },
+	{ itemName = "bonelord shield", clientId = 3418, sell = 550 },
 	{ itemName = "boots of haste", clientId = 3079, sell = 30000 },
 	{ itemName = "broadsword", clientId = 3301, sell = 500 },
 	{ itemName = "butcher's axe", clientId = 7412, sell = 18000 },
@@ -283,7 +299,7 @@ npcConfig.shop = {
 	{ itemName = "battle shield", clientId = 3413, sell = 95 },
 	{ itemName = "dwarven shield", clientId = 3425, sell = 100 },
 	{ itemName = "morning star", clientId = 3282, sell = 100 },
-	{ itemName = "plate legs", clientId = 3557, sell = 115 },
+	{ itemName = "plate legs", clientId = 3557, sell = 450 },
 	{ itemName = "carlin sword", clientId = 3283, sell = 118 },
 	{ itemName = "battle hammer", clientId = 3305, sell = 120 },
 	{ itemName = "brass armor", clientId = 3359, sell = 150 },
@@ -291,10 +307,10 @@ npcConfig.shop = {
 	{ itemName = "spike sword", clientId = 3271, sell = 240 },
 	{ itemName = "red lantern", clientId = 10289, sell = 250 },
 	{ itemName = "double axe", clientId = 3275, sell = 260 },
-	{ itemName = "steel helmet", clientId = 3351, sell = 293 },
+	{ itemName = "steel helmet", clientId = 3351, sell = 400 },
 	{ itemName = "orcish axe", clientId = 3316, sell = 350 },
 	{ itemName = "halberd", clientId = 3269, sell = 400 },
-	{ itemName = "plate armor", clientId = 3357, sell = 400 },
+	{ itemName = "plate armor", clientId = 3357, sell = 650 },
 	{ itemName = "two handed sword", clientId = 3265, sell = 450 },
 	{ itemName = "fire sword", clientId = 3280, sell = 1000 },
 	{ itemName = "broken halberd", clientId = 10418, sell = 100 },
@@ -388,14 +404,14 @@ npcConfig.shop = {
 	--lailene--
 	{ itemName = "batwing hat", clientId = 9103, sell = 8000 },
 	{ itemName = "ethno coat", clientId = 8064, sell = 200 },
-	{ itemName = "focus cape", clientId = 8043, sell = 6000 },
+	{ itemName = "focus cape", clientId = 8043, sell = 700 },
 	{ itemName = "jade hat", clientId = 10451, sell = 9000 },
 	{ itemName = "spellweavers rob", clientId = 10438, sell = 12000 },
 	{ itemName = "spirit cloak", clientId = 8042, sell = 350 },
 	{ itemName = "zaoan robe", clientId = 10439, sell = 12000 },
 
 	--alexander--
-	{ itemName = "spellbook of enlightenment", clientId = 8072, sell = 4000 },
+	{ itemName = "spellbook of enlightenment", clientId = 8072, sell = 550 },
 	{ itemName = "spellbook of lost souls", clientId = 8075, sell = 19000 },
 	{ itemName = "spellbook of mind control", clientId = 8074, sell = 13000 },
 	{ itemName = "spellbook of warding", clientId = 8073, sell = 8000 },
@@ -507,7 +523,7 @@ npcConfig.shop = {
 	{ itemName = "orcish maul", clientId = 7392, sell = 6000 },
 	{ itemName = "oriental shoes", clientId = 21981, sell = 15000 },
 	{ itemName = "pair of iron fists", clientId = 17828, sell = 4000 },
-	{ itemName = "paladin armor", clientId = 8063, sell = 15000 },
+	{ itemName = "paladin armor", clientId = 8063, sell = 750 },
 	{ itemName = "patched boots", clientId = 3550, sell = 2000 },
 	{ itemName = "pharaoh banner", clientId = 12483, sell = 1000 },
 	{ itemName = "pharaoh sword", clientId = 3334, sell = 23000 },
@@ -634,8 +650,6 @@ npcConfig.shop = {
 	{ itemName = "ornate mace", clientId = 14001, sell = 42000 },
 	{ itemName = "ornate shield", clientId = 14000, sell = 42000 },
 	{ itemName = "pick", clientId = 3456, sell = 10 },
-	{ itemName = "plate armor", clientId = 3357, sell = 400 },
-	{ itemName = "plate legs", clientId = 3557, sell = 115 },
 	{ itemName = "plate shield", clientId = 3410, sell = 45 },
 	{ itemName = "rapier", clientId = 3272, sell = 5 },
 	{ itemName = "rope", clientId = 3003, sell = 15 },
@@ -652,7 +666,6 @@ npcConfig.shop = {
 	{ itemName = "spidris mandible", clientId = 14082, sell = 450 },
 	{ itemName = "spike sword", clientId = 3271, sell = 240 },
 	{ itemName = "spitter nose", clientId = 14078, sell = 340 },
-	{ itemName = "steel helmet", clientId = 3351, sell = 293 },
 	{ itemName = "steel shield", clientId = 3409, sell = 80 },
 	{ itemName = "studded armor", clientId = 3378, sell = 25 },
 	{ itemName = "studded club", clientId = 3336, sell = 10 },

@@ -113,10 +113,10 @@ monster.loot = {
 	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
 	{ name = "broken crossbow", chance = 15400 },
 	{ name = "piece of archer armor", chance = 15400 },
-	{ name = "paladin armor", chance = 180 },
-	{ name = "blue legs", chance = 650 },
-	{ name = "bonelord shield", chance = 650 },
-	{ name = "hat of the mad", chance = 400 },
+	{ name = "paladin armor", chance = 770 },
+	{ name = "blue legs", chance = 990 },
+	{ name = "bonelord shield", chance = 940 },
+	{ name = "hat of the mad", chance = 1100 },
 }
 
 mType:register(monster)

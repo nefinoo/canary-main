@@ -114,10 +114,10 @@ monster.loot = {
 	{ name = "carrot", chance = 45000, maxCount = 3 },
 	{ name = "minotaur leather", chance = 5000 },
 	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
-	{ name = "focus cape", chance = 350 },
-	{ name = "hat of the mad", chance = 1000 },
-	{ name = "spellbook of enlightenment", chance = 450 },
-	{ name = "blue legs", chance = 700 },
+	{ name = "focus cape", chance = 900 },
+	{ name = "hat of the mad", chance = 1200 },
+	{ name = "spellbook of enlightenment", chance = 1020 },
+	{ name = "blue legs", chance = 1080 },
 }
 
 mType:register(monster)
