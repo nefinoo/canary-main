@@ -372,7 +372,7 @@ npcConfig.shop = {
 	{ itemName = "zaoan sword", clientId = 10390, sell = 30000 },
 	{ itemName = "guardian boots", clientId = 10323, sell = 35000 },
 	{ itemName = "draken boots", clientId = 4033, sell = 40000 },
-	{ itemName = "zaoan helmet", clientId = 10385, sell = 45000 },
+	{ itemName = "zaoan helmet", clientId = 10385, sell = 1200 },
 	{ itemName = "Elite Draken Mail", clientId = 11651, sell = 50000 },
 	
 	--hanna--
@@ -496,7 +496,7 @@ npcConfig.shop = {
 	{ itemName = "divine plate", clientId = 8057, sell = 55000 },
 	{ itemName = "djinn blade", clientId = 3339, sell = 15000 },
 	{ itemName = "doll", clientId = 2991, sell = 200 },
-	{ itemName = "dragon scale mail", clientId = 3386, sell = 40000 },
+	{ itemName = "dragon scale mail", clientId = 3386, sell = 1700 },
 	{ itemName = "dragon slayer", clientId = 7402, sell = 15000 },
 	{ itemName = "dragonbone staff", clientId = 7430, sell = 3000 },
 	{ itemName = "dwarven armor", clientId = 3397, sell = 30000 },

@@ -125,7 +125,7 @@ monster.loot = {
 	{ name = "bread", chance = 25000, maxCount = 2 },
 	{ name = "talon", chance = 3500 },
 	{ name = "luminous orb", chance = 1000 },
-	{ id = 11689, chance = 720 }, -- elite draken helmet
+	{ id = 3356, chance = 720 }, -- devil helmet
 	{ id = 8060, chance = 500 }, -- master archer's armor
 	{ id = 8863, chance = 580 }, -- yalahari leg piece
 	{ id = 3428, chance = 660 }, -- tower shield

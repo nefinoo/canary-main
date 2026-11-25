@@ -124,9 +124,9 @@ monster.loot = {
 	{ name = "meat", chance = 45000, maxCount = 3 },
 	{ name = "ham", chance = 35000, maxCount = 2 },
 	{ name = "spider silk", chance = 10000 },
-	{ id = 3369, chance = 950 }, -- warrior helmet
-	{ id = 3370, chance = 650 }, -- knight armor
-	{ id = 3371, chance = 780 }, -- knight legs
+	{ id = 10385, chance = 850 }, -- zaoan helmet
+	{ id = 3386, chance = 650 }, -- dragon scale mail
+	{ id = 10387, chance = 780 }, -- zaoan legs
 	{ id = 3428, chance = 850 }, -- tower shield
 }
 
