@@ -168,3 +168,22 @@ Chances de equipo sustituyen seccion 05: base por item de steel helmet 1000, pla
 - Custom/Giants/cyclops smith.lua: steel helmet, plate legs, blue legs, bonelord shield, spellbook of enlightenment, plate armor, focus cape, paladin armor, hat of the mad
 
 Valor esperado de equipo: Minotaurs 2111.48 gp, 3.98 piezas por 88; Cyclops 2511.77 gp, 4.60 piezas por 56. Se amplian fuentes de piezas de magos y plate armor para evitar depender solo de criaturas escasas. No se cambian otros drops, combate, EXP ni atributos. Pendiente validar carga de NPC, items y economia dentro del juego; no se han comprobado todos los scripts de comercio ajenos a los NPC revisados.
+
+## 07 - Hydra (nivel 75-100)
+
+Conteo confirmado por administrador: 19 Hydras. Desde comienzo exacto nivel 75 (6489800 EXP), 485000 EXP por criatura x1 = 9215000 EXP, nivel 100 (15704800 EXP acumulada); con +50% en esta zona nivel 108. Desde acumulado normal previo (nivel 64) nivel 94; desde acumulado con +50% en todas las zonas nivel 108. Se prioriza meta nivel 100 sin bonus y no se modifica configuracion global. Si se desea meta con bonus, revisar EXP por Hydra. Definicion afecta todas las apariciones de Hydra.
+
+HP 1050, melee 32-112 cada 2s, defensa 24, armadura 15. Cono fisico 24-65 (30% cada 3s), tierra 25-75 (35% cada 3s), alcance 5 y spread 2. Ralentizacion -100 por 3s, 15% cada 6s; curacion 35-60, 15% cada 5s. No huye, resistencias principales neutrales; se conserva inmunidad life drain. Objetivo combate individual 20-40s (pendiente medir en las cuatro vocaciones). Knight exori/exori ico y exori gran desde 90; Paladin exori con, exevo mas san y exori gran con desde 90; magos strikes y curacion vanilla segun scripts. No se modifican spells ni equipos.
+
+Se reemplaza todo loot anterior: sin armas (Cyclops tampoco las tienen), Knight Set, boots of haste ni bolsa 12413. Mismos nueve equipos de Cyclops, precios de Nephy sin cambios, mayores chances por item y distribucion unica en Hydra:
+- steel helmet: 3200 (3.20%), 400 gp.
+- hat of the mad: 3200 (3.20%), 400 gp.
+- plate legs: 3000 (3.00%), 450 gp.
+- blue legs: 2900 (2.90%), 500 gp.
+- bonelord shield: 2700 (2.70%), 550 gp.
+- spellbook of enlightenment: 2700 (2.70%), 550 gp.
+- plate armor: 2500 (2.50%), 650 gp.
+- focus cape: 2350 (2.35%), 700 gp.
+- paladin armor: 2200 (2.20%), 750 gp.
+
+Gold coin 1-28 al 100%, health/mana potion 30% cada una, strong health/mana potion 20% cada una, meat 35% y ham 55% (max 3), hydra head 5% (600 gp) y hydra egg 0.8% (800 gp). Nuevos precios en ambos Nephy: hydra egg 4839 800, strong health potion 236 55, strong mana potion 237 45 (Malak buy 115/93). Loot esperado: 4.70 piezas, 2517.50 gp por equipo, 275.5 gp directos, 5.7 de cada pocion basica y 3.8 de cada strong por vuelta; sin bonos. No se ha probado en servidor. Siguiente zona por confirmar.

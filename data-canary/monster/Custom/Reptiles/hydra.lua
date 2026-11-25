@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hydra"
 monster.description = "a hydra"
-monster.experience = 125000
+monster.experience = 485000
 monster.outfit = {
 	lookType = 121,
 	lookHead = 0,
@@ -30,9 +30,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 850
-monster.maxHealth = 850
-monster.runHealth = 110
+monster.health = 1050
+monster.maxHealth = 1050
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6048
 monster.speed = 260
@@ -83,59 +83,50 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -15},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = 40},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 100},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 40},
-	{type = COMBAT_HOLYDAMAGE , percent = -25},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -25, maxDamage = -58},
-	{name ="speed", interval = 1000, chance = 12, speed = {min = -350, max = -350}, duration = 7000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
-	{name ="combat", interval = 3000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -20, maxDamage = -65, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -20, maxDamage = -52, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -32, maxDamage = -112},
+	{name ="speed", interval = 6000, chance = 15, speed = {min = -100, max = -100}, duration = 3000, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -24, maxDamage = -65, length = 5, spread = 2, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -25, maxDamage = -75, length = 5, spread = 2, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 25,
-	{name ="combat", interval = 4000, chance = 8, type = COMBAT_HEALING, minDamage = 25, maxDamage = 45, effect = CONST_ME_MAGIC_BLUE}
+	defense = 24,
+	armor = 15,
+	{name ="combat", interval = 5000, chance = 15, type = COMBAT_HEALING, minDamage = 35, maxDamage = 60, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 85000, maxCount = 70 },
+	{ name = "gold coin", chance = 100000, maxCount = 28 },
+	{ name = "health potion", chance = 30000 },
+	{ name = "mana potion", chance = 30000 },
+	{ name = "strong health potion", chance = 20000 },
+	{ name = "strong mana potion", chance = 20000 },
 	{ name = "meat", chance = 35000, maxCount = 3 },
-	{ name = "ham", chance = 45000, maxCount = 3 },
-	{ name = "health potion", chance = 8000 },
-	{ name = "mana potion", chance = 7000 },
-	{ name = "strong health potion", chance = 2000 },
-	{ name = "strong mana potion", chance = 1500 },
-	{ name = "hydra head", chance = 4000 }, -- creature product: conserva el valor de NPC
-	{ name = "hydra egg", chance = 500 }, -- loot especial conservado
-	{ id = 12413, chance = 7500 }, -- bolsa de objetos aleatorios de addon
-	-- Plate Set: raro en esta etapa (2.6% por pieza)
-	{ name = "plate armor", chance = 2600 },
-	{ name = "plate legs", chance = 2600 },
-	{ name = "steel helmet", chance = 2600 },
-	{ name = "bonelord shield", chance = 2600 },
-	-- Knight Set: muy raro; piezas clasicas del set
-	{ name = "knight armor", chance = 200 },
-	{ name = "knight legs", chance = 188 },
-	{ name = "knight axe", chance = 156 },
-	{ name = "devil helmet", chance = 146 },
-	{ name = "tower shield", chance = 138 },
-	-- Armas para la progresion de axe, club y sword
-	{ name = "barbarian axe", chance = 3200 },
-	{ name = "clerical mace", chance = 2600 },
-	{ id = 7385, chance = 2600 },
-	-- Botas de progresion por set
-	{ id = 3079, chance = 130 }, -- Boots of Haste: Knight Set
+	{ name = "ham", chance = 55000, maxCount = 3 },
+	{ name = "hydra head", chance = 5000 },
+	{ name = "hydra egg", chance = 800 },
+	{ name = "steel helmet", chance = 3200 },
+	{ name = "hat of the mad", chance = 3200 },
+	{ name = "plate legs", chance = 3000 },
+	{ name = "blue legs", chance = 2900 },
+	{ name = "bonelord shield", chance = 2700 },
+	{ name = "spellbook of enlightenment", chance = 2700 },
+	{ name = "plate armor", chance = 2500 },
+	{ name = "focus cape", chance = 2350 },
+	{ name = "paladin armor", chance = 2200 },
 }
 
 mType:register(monster)
