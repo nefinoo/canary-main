@@ -56,3 +56,23 @@ Esta revision sustituye los valores de EXP y loot de la seccion 02; HP, ataques 
 | orclops_doomhauler | 1 | 16000 | 50 | 35 | 35 | red mushroom | 55 |
 
 Loot: oro, health/mana potion basicas, comida, y creature products de los archivos vanilla equivalentes en data-otservbr-global. Se conservan sus probabilidades originales; excluidos equipos, armas, bolsa de addon 12413, gemas, trofeos, decoraciones y otros objetos no incluidos en las categorias solicitadas. Pair of iron fists es creature product en la version de referencia 12.56 (no un arma de monk). Oro medio teorico 865.5, 12.47 health potions, 13.39 mana potions por vuelta, sin precios NPC ni bonuses. No se cambia el loot de la primera zona en esta revision. Validacion in-game pendiente. Siguiente: Minotaurs, entrada 35 aprox.
+
+### 02.2 - Meta definitiva de Orcs: nivel 20-35
+
+La imagen actual confirma las 96 criaturas. El administrador solicita nivel final aproximado 20-35 y exclusivamente gold coins, health/mana potions, comida y creature products normales. Esta revision sustituye solo la EXP de 02.1; el loot de 02.1 permanece verificado, sin equipos, armas ni bolsa 12413. El combate queda como en 02. No se toca la zona anterior ni la configuracion global.
+
+| Criatura | Cantidad | EXP nueva | EXP total |
+|---|---:|---:|---:|
+| orc | 6 | 2600 | 15600 |
+| war wolf | 2 | 2800 | 5600 |
+| orc spearman | 19 | 2900 | 55100 |
+| orc warrior | 13 | 3200 | 41600 |
+| orc rider | 1 | 3600 | 3600 |
+| orc shaman | 21 | 3500 | 73500 |
+| orc berserker | 7 | 4100 | 28700 |
+| orc leader | 10 | 4700 | 47000 |
+| orc warlord | 15 | 5500 | 82500 |
+| orclops_ravager | 1 | 8300 | 8300 |
+| orclops_doomhauler | 1 | 10000 | 10000 |
+
+Total 371500 EXP a x1 por vuelta. Desde 4200 EXP de nivel 8 y 60000 EXP de ratas, nivel 31 (435700 EXP total). Con +50% en ambas zonas, nivel 35 (651450 EXP total). No se presupone loot de equipo ni armas. Siguiente zona Minotaurs, referencia nivel 31-35. Validacion de combate en servidor pendiente; revisar abastecimiento de spears en NPC, pues no caen armas en esta zona.

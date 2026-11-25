@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 16000
+monster.experience = 10000
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
