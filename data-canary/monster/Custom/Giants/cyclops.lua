@@ -112,10 +112,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 20000 },
 	{ name = "meat", chance = 50000, maxCount = 3 },
 	{ name = "cyclops toe", chance = 4930 },
-	{ name = "steel helmet", chance = 750 },
-	{ name = "plate legs", chance = 650 },
-	{ name = "paladin armor", chance = 1150 },
-	{ name = "focus cape", chance = 1150 },
+	{ name = "steel helmet", chance = 1450 },
+	{ name = "plate legs", chance = 1650 },
+	{ name = "paladin armor", chance = 260 },
+	{ name = "focus cape", chance = 480 },
 }
 
 mType:register(monster)

@@ -113,7 +113,7 @@ monster.loot = {
 	{ name = "orc tooth", chance = 2100 },
 	{ name = "broken shamanic staff", chance = 10300 },
 	{ name = "shamanic hood", chance = 6860 },
-	{ name = "orc leather", chance = 4300 },
+	{ name = "orc leather", chance = 10300 },
 }
 
 mType:register(monster)

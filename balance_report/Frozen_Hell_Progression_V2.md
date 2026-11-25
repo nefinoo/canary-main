@@ -126,3 +126,26 @@ Se reconstruye loot: oro, health/mana potions basicas, comida, cyclops toe vanil
 - Cyclops Smith: plate armor 1.25%, paladin armor 1.25%, focus cape 1.25%, hat of the mad 1.25%, spellbook of enlightenment 1.25%, blue legs 0.95%.
 
 EXP grupo 56: 2835000, salida nivel 64 desde acumulado normal de Minotaurs y 73 con +50% en todas las zonas; desde nivel 50 exacto, 67 sin bonus / 73 con +50% en esta zona. Grupo 63: 3070000, salida 65/75 desde la progresion anterior. Loot esperado grupo 56: 511 gp, 12.32 health, 11.90 mana, 2.50 piezas raras, 3.39 cyclops toes. Se conserva la seleccion de items previamente introducida; atributos/restricciones y resolucion de nombres pendientes de validar en servidor. Siguiente zona por confirmar.
+
+## 05 - Auditoria economica de loot con Nephy
+
+Regla permanente: antes de agregar o modificar loot, verificar precio sell (oro que recibe el jugador) en data-canary/npc/Nephy.lua. Dentro de cada categoria comparable, objetos mas caros tienen menor chance, con ajuste moderado segun dificultad y densidad del respawn. Mantener equipo de utilidad para las cuatro vocaciones; si un objeto caro se vuelve demasiado dificil de conseguir, considerar revisar el precio NPC con autorizacion del administrador, no aumentar automaticamente el drop. No se modifican precios NPC. Calcular valor esperado por vuelta = suma de cantidad de monstruos * probabilidad * cantidad media * precio sell. Separar oro directo, consumibles y objetos sin precio. No asignar precio cero ni inventar precio de mercado a objetos ausentes en Nephy.
+
+Precios confirmados: plate legs 115, steel helmet 293, plate armor 400, bonelord shield 1200, spellbook of enlightenment 4000, focus cape 6000, paladin armor 15000. Blue legs y hat of the mad no figuran en Nephy; se conservan sus chances y quedan pendientes de precio. Reinvigorating seeds y bug meat tampoco figuran. Rat/Cave Rat/Slime/Slug no tienen equipo ni productos con precio confirmado en Nephy; loot intacto. Se mantienen todas las especies de productos y se ajustan inversiones importantes en Orcs/Minotaurs. Pair of iron fists (4000 gp) queda como drop unico raro de ambos Orclops (sin maxCount 3). No se modifican HP, EXP, ataques, oro, comida, pociones ni NPC.
+
+Cambios (chance Lua, 100000=100%):
+- Custom/Orcs/orc shaman.lua: orc leather 10300.
+- Custom/Orcs/orc berserker.lua: orcish gear 3800.
+- Custom/Orcs/orclops_ravager.lua: #17828 350.
+- Custom/Orcs/orclops_doomhauler.lua: #17828 450.
+- Custom/Minotaurs/minotaur.lua: minotaur horn 10000, steel helmet 1000, plate legs 1200, paladin armor 150, focus cape 280.
+- Custom/Minotaurs/minotaur archer.lua: minotaur horn 5000, piece of archer armor 15400, paladin armor 180, bonelord shield 650.
+- Custom/Minotaurs/minotaur guard.lua: piece of warrior armor 8330, plate armor 950, bonelord shield 750, plate legs 1400.
+- Custom/Minotaurs/minotaur mage.lua: minotaur horn 5000, focus cape 350, spellbook of enlightenment 450.
+- Monturas/modified_gnarlhound.lua: steel helmet 1200, paladin armor 200, spellbook of enlightenment 500.
+- Custom/Crustaceans/deepsea_blood_crab.lua: plate armor 1100, paladin armor 220, focus cape 400, spellbook of enlightenment 550.
+- Custom/Giants/cyclops.lua: steel helmet 1450, plate legs 1650, paladin armor 260, focus cape 480.
+- Custom/Giants/cyclops drone.lua: plate armor 1300, bonelord shield 900, spellbook of enlightenment 650.
+- Custom/Giants/cyclops smith.lua: plate armor 1450, paladin armor 280, focus cape 500, spellbook of enlightenment 700.
+
+Valor esperado de equipo con precio confirmado (sin Blue Legs y Hat of the Mad): Minotaurs 6426.11 -> 2988.86 gp/vuelta; Cyclops 11604.07 -> 3916.71 gp/vuelta. Equipos medios totales (incluyendo sin precio) Minotaurs 1.87 -> 2.40, Cyclops 2.50 -> 2.38. Los cambios de esta seccion sustituyen las chances afectadas de secciones anteriores. Validar economia real y suministro por vocacion en servidor.

@@ -79,10 +79,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 30000 },
 	{ name = "fish", chance = 50000, maxCount = 2 },
 	{ name = "bloody pincers", chance = 6980 },
-	{ name = "plate armor", chance = 1000 },
-	{ name = "paladin armor", chance = 1000 },
-	{ name = "focus cape", chance = 1000 },
-	{ name = "spellbook of enlightenment", chance = 1000 },
+	{ name = "plate armor", chance = 1100 },
+	{ name = "paladin armor", chance = 220 },
+	{ name = "focus cape", chance = 400 },
+	{ name = "spellbook of enlightenment", chance = 550 },
 }
 
 monster.attacks = {

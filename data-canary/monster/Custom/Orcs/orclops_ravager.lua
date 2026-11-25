@@ -87,7 +87,7 @@ monster.loot = {
 	{ id = 24380, chance = 4900 }, -- bone toothpick
 	{ id = 24381, chance = 1800 }, -- beetle carapace
 	{ id = 24382, chance = 12750 }, -- bug meat
-	{ id = 17828, chance = 910 }, -- pair of iron fists
+	{ id = 17828, chance = 350 }, -- pair of iron fists
 }
 
 monster.attacks = {

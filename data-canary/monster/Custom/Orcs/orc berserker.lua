@@ -108,7 +108,7 @@ monster.loot = {
 	{ name = "mana potion", chance = 10000 },
 	{ name = "ham", chance = 40000, maxCount = 2 },
 	{ name = "orc tooth", chance = 3000 },
-	{ name = "orcish gear", chance = 9400 },
+	{ name = "orcish gear", chance = 3800 },
 	{ name = "orc leather", chance = 4000 },
 }
 

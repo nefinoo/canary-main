@@ -111,10 +111,10 @@ monster.loot = {
 	{ name = "ham", chance = 45000, maxCount = 2 },
 	{ name = "minotaur leather", chance = 5000 },
 	{ name = "minotaur horn", chance = 8330, maxCount = 2 },
-	{ name = "piece of warrior armor", chance = 5040 },
-	{ name = "plate armor", chance = 650 },
-	{ name = "bonelord shield", chance = 550 },
-	{ name = "plate legs", chance = 500 },
+	{ name = "piece of warrior armor", chance = 8330 },
+	{ name = "plate armor", chance = 950 },
+	{ name = "bonelord shield", chance = 750 },
+	{ name = "plate legs", chance = 1400 },
 	{ name = "blue legs", chance = 450 },
 }
 

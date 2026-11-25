@@ -113,10 +113,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 27000 },
 	{ name = "carrot", chance = 45000, maxCount = 3 },
 	{ name = "minotaur leather", chance = 5000 },
-	{ name = "minotaur horn", chance = 3020, maxCount = 2 },
-	{ name = "focus cape", chance = 1000 },
+	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
+	{ name = "focus cape", chance = 350 },
 	{ name = "hat of the mad", chance = 1000 },
-	{ name = "spellbook of enlightenment", chance = 900 },
+	{ name = "spellbook of enlightenment", chance = 450 },
 	{ name = "blue legs", chance = 700 },
 }
 

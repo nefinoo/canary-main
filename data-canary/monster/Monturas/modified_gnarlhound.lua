@@ -83,9 +83,9 @@ monster.loot = {
 	{ name = "health potion", chance = 22000 },
 	{ name = "mana potion", chance = 22000 },
 	{ name = "ham", chance = 45000, maxCount = 2 },
-	{ name = "steel helmet", chance = 600 },
-	{ name = "paladin armor", chance = 600 },
-	{ name = "spellbook of enlightenment", chance = 600 },
+	{ name = "steel helmet", chance = 1200 },
+	{ name = "paladin armor", chance = 200 },
+	{ name = "spellbook of enlightenment", chance = 500 },
 }
 
 monster.defenses = {
