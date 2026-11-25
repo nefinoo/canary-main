@@ -83,6 +83,12 @@ monster.loot = {
 	{ name = "paladin armor", chance = 980 },
 	{ name = "focus cape", chance = 1050 },
 	{ name = "spellbook of enlightenment", chance = 1190 },
+	{ id = 3295, chance = 1200 }, -- bright sword
+	{ id = 7456, chance = 1200 }, -- noble axe
+	{ id = 3333, chance = 1200 }, -- crystal mace
+	{ id = 7378, chance = 1200 }, -- royal spear
+	{ id = 3067, chance = 1200 }, -- hailstorm rod
+	{ id = 3071, chance = 1200 }, -- wand of inferno
 }
 
 monster.attacks = {

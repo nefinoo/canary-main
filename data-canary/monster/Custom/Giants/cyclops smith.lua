@@ -121,6 +121,12 @@ monster.loot = {
 	{ name = "focus cape", chance = 1280 },
 	{ name = "paladin armor", chance = 1190 },
 	{ name = "hat of the mad", chance = 1700 },
+	{ id = 3295, chance = 1650 }, -- bright sword
+	{ id = 7456, chance = 1650 }, -- noble axe
+	{ id = 3333, chance = 1650 }, -- crystal mace
+	{ id = 7378, chance = 1650 }, -- royal spear
+	{ id = 3067, chance = 1650 }, -- hailstorm rod
+	{ id = 3071, chance = 1650 }, -- wand of inferno
 }
 
 mType:register(monster)

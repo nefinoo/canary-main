@@ -79,6 +79,15 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {
+	-- Frozen Hell: intermediate weapons and stage 100-200 equipment
+	{ itemName = "bright sword", clientId = 3295, sell = 850 },
+	{ itemName = "royal spear", clientId = 7378, sell = 850 },
+	{ itemName = "elite draken helmet", clientId = 11689, sell = 1100 },
+	{ itemName = "master archer's armor", clientId = 8060, sell = 1700 },
+	{ itemName = "yalahari leg piece", clientId = 8863, sell = 1400 },
+	{ itemName = "yalahari mask", clientId = 8864, sell = 1100 },
+	{ itemName = "royal scale robe", clientId = 11687, sell = 1700 },
+
 	-- Frozen Hell: suministros de quests de nivel 100
 	{ itemName = "dragon ham", clientId = 3583, sell = 8 },
 	{ itemName = "cherry", clientId = 3590, sell = 1 },
@@ -142,9 +151,9 @@ npcConfig.shop = {
 	{ itemName = "dreaded cleaver", clientId = 7419, sell = 15000 },
 	{ itemName = "giant sword", clientId = 3281, sell = 17000 },
 	{ itemName = "haunted blade", clientId = 7407, sell = 8000 },
-	{ itemName = "knight armor", clientId = 3370, sell = 5000 },
+	{ itemName = "knight armor", clientId = 3370, sell = 1600 },
 	{ itemName = "knight axe", clientId = 3318, sell = 2000 },
-	{ itemName = "knight legs", clientId = 3371, sell = 5000 },
+	{ itemName = "knight legs", clientId = 3371, sell = 1300 },
 	{ itemName = "mystic turban", clientId = 3574, sell = 150 },
 	{ itemName = "onyx flail", clientId = 7421, sell = 22000 },
 	{ itemName = "ornamented axe", clientId = 7411, sell = 20000 },
@@ -153,9 +162,9 @@ npcConfig.shop = {
 	{ itemName = "skull staff", clientId = 3324, sell = 6000 },
 	{ itemName = "strange helmet", clientId = 3373, sell = 500 },
 	{ itemName = "titan axe", clientId = 7413, sell = 4000 },
-	{ itemName = "tower shield", clientId = 3428, sell = 8000 },
+	{ itemName = "tower shield", clientId = 3428, sell = 1200 },
 	{ itemName = "vampire shield", clientId = 3434, sell = 15000 },
-	{ itemName = "warrior helmet", clientId = 3369, sell = 5000 },
+	{ itemName = "warrior helmet", clientId = 3369, sell = 1000 },
 	
 	--Haroun--
 	{ itemName = "axe ring", clientId = 3092, sell = 100 },
@@ -177,7 +186,7 @@ npcConfig.shop = {
 	{ itemName = "wand of draconia", clientId = 8093, sell = 1500 },
 	{ itemName = "wand of dragonbreath", clientId = 3075, sell = 200 },
 	{ itemName = "wand of everblazing", clientId = 16115, sell = 6000 },
-	{ itemName = "wand of inferno", clientId = 3071, sell = 3000 },
+	{ itemName = "wand of inferno", clientId = 3071, sell = 850 },
 	{ itemName = "wand of starstorm", clientId = 8092, sell = 3600 },
 	{ itemName = "wand of voodoo", clientId = 8094, sell = 4400 },
 	{ itemName = "wand of vortex", clientId = 3074, sell = 100 },
@@ -236,7 +245,7 @@ npcConfig.shop = {
 	{ itemName = "dwarven ring", clientId = 3097, sell = 100 },
 	{ itemName = "energy ring", clientId = 3051, sell = 100 },
 	{ itemName = "glacial rod", clientId = 16118, sell = 6500 },
-	{ itemName = "hailstorm rod", clientId = 3067, sell = 3000 },
+	{ itemName = "hailstorm rod", clientId = 3067, sell = 850 },
 	{ itemName = "life ring", clientId = 3052, sell = 50 },
 	{ itemName = "might ring", clientId = 3048, sell = 250, count = 20 },
 	{ itemName = "moonlight rod", clientId = 3070, sell = 200 },
@@ -341,7 +350,7 @@ npcConfig.shop = {
 	{ itemName = "drachaku", clientId = 10391, sell = 10000 },
 	{ itemName = "drakinata", clientId = 10388, sell = 10000 },
 	{ itemName = "zaoan armor", clientId = 10384, sell = 14000 },
-	{ itemName = "zaoan legs", clientId = 10387, sell = 14000 },
+	{ itemName = "zaoan legs", clientId = 10387, sell = 1300 },
 	{ itemName = "sai", clientId = 10389, sell = 16500 },
 	{ itemName = "twiceslicer", clientId = 11657, sell = 28000 },
 	{ itemName = "zaoan sword", clientId = 10390, sell = 30000 },
@@ -426,7 +435,7 @@ npcConfig.shop = {
 	--alexander--
 	{ itemName = "spellbook of enlightenment", clientId = 8072, sell = 550 },
 	{ itemName = "spellbook of lost souls", clientId = 8075, sell = 19000 },
-	{ itemName = "spellbook of mind control", clientId = 8074, sell = 13000 },
+	{ itemName = "spellbook of mind control", clientId = 8074, sell = 1200 },
 	{ itemName = "spellbook of warding", clientId = 8073, sell = 8000 },
 	
 	--rashid--
@@ -451,7 +460,7 @@ npcConfig.shop = {
 	{ itemName = "composite hornbow", clientId = 8027, sell = 25000 },
 	{ itemName = "crocodile boots", clientId = 3556, sell = 1000 },
 	{ itemName = "crystal crossbow", clientId = 16163, sell = 35000 },
-	{ itemName = "crystal mace", clientId = 3333, sell = 12000 },
+	{ itemName = "crystal mace", clientId = 3333, sell = 850 },
 	{ itemName = "crystal necklace", clientId = 3008, sell = 400 },
 	{ itemName = "crystal ring", clientId = 3007, sell = 250 },
 	{ itemName = "crystal sword", clientId = 7449, sell = 600 },
@@ -530,7 +539,7 @@ npcConfig.shop = {
 	{ itemName = "mystic blade", clientId = 7384, sell = 30000 },
 	{ itemName = "naginata", clientId = 3314, sell = 2000 },
 	{ itemName = "nightmare blade", clientId = 7418, sell = 35000 },
-	{ itemName = "noble axe", clientId = 7456, sell = 10000 },
+	{ itemName = "noble axe", clientId = 7456, sell = 850 },
 	{ itemName = "norse shield", clientId = 7460, sell = 1500 },
 	{ itemName = "onyx pendant", clientId = 22195, sell = 3500 },
 	{ itemName = "orcish maul", clientId = 7392, sell = 6000 },
