@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a slug"
-monster.experience = 7500
+monster.experience = 3500
 monster.outfit = {
 	lookType = 407,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "South-east of Venore, Swamp Troll Cave.",
 }
 
-monster.health = 255
-monster.maxHealth = 255
+monster.health = 70
+monster.maxHealth = 70
 monster.race = "venom"
 monster.corpse = 12526
 monster.speed = 52
@@ -81,21 +81,21 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -44 },
-	{ name = "combat", interval = 1000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -5, maxDamage = -40, range = 7, shootEffect = CONST_ANI_POISON, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -24 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -4, maxDamage = -8, range = 3, shootEffect = CONST_ANI_POISON, target = true },
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 8,
-	mitigation = 0.64,
+	defense = 3,
+	armor = 2,
+	mitigation = 0.15,
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -10 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 50 },
-	{ type = COMBAT_FIREDAMAGE, percent = -15 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },

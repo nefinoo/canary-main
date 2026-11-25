@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "slime"
 monster.description = "a slime"
-monster.experience = 8000
+monster.experience = 2500
 monster.outfit = {
 	lookType = 19,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 150
-monster.maxHealth = 150
+monster.health = 50
+monster.maxHealth = 50
 monster.race = "venom"
 monster.corpse = 2127
 monster.speed = 120
@@ -95,12 +95,12 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 22, attack = 30, condition = {type = CONDITION_POISON, startDamage = 90, interval = 5000}}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -18 },
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 3
+	defense = 2,
+	armor = 1
 }
 
 monster.loot = {

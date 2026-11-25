@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cave rat"
 monster.description = "a cave rat"
-monster.experience = 5000
+monster.experience = 1500
 monster.outfit = {
 	lookType = 56,
 	lookHead = 20,
@@ -14,9 +14,9 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 30
-monster.maxHealth = 30
-monster.runHealth = 3
+monster.health = 35
+monster.maxHealth = 35
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5964
 monster.speed = 150
@@ -70,7 +70,7 @@ monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = -13},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
@@ -80,11 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -15, maxDamage = -21},
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -12 },
 }
 
 monster.defenses = {
-	defense = 3,
+	defense = 1,
 	armor = 1
 }
 
