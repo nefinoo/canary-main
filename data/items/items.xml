@@ -21878,7 +21878,7 @@
 	</item>
 	<item id="8060" article="a" name="master archer's armor">
 		<attribute key="skilldist" value="3"/>
-		<attribute key="armor" value="15"/>
+		<attribute key="armor" value="13"/>
 		<attribute key="weight" value="6900"/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="life leech" value="3"/>
