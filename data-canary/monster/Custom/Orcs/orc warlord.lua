@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warlord"
 monster.description = "a orc warlord"
-monster.experience = 4300
+monster.experience = 8600
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -105,15 +105,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ id = 12413, chance = 1100 }, -- bolsa de items de addon aleatorios (1.100%)
-	{ name = "gold coin", chance = 90000, maxCount = 18 },
-	{ name = "ham", chance = 35000, maxCount = 2 },
-	{ name = "health potion", chance = 2500 },
-	{ name = "mana potion", chance = 2000 },
-	{ name = "plate armor", chance = 380 }, -- Frozen Hell: 0.020%
-	{ name = "plate legs", chance = 380 }, -- Frozen Hell: 0.020%
-	{ name = "steel helmet", chance = 380 }, -- Frozen Hell: 0.015%
-	{ name = "bonelord shield", chance = 380 }, -- Frozen Hell: 0.010%
+	{ name = "gold coin", chance = 100000, maxCount = 26 },
+	{ name = "health potion", chance = 20000 },
+	{ name = "mana potion", chance = 18000 },
+	{ name = "fish", chance = 45000, maxCount = 2 },
+	{ name = "orc tooth", chance = 9640 },
+	{ name = "broken helmet", chance = 24350 },
+	{ name = "orc leather", chance = 20620 },
+	{ name = "skull belt", chance = 4610 },
 }
 
 mType:register(monster)

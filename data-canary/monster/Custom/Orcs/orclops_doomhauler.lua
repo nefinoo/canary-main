@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops doomhauler"
-monster.experience = 8000
+monster.experience = 16000
 monster.outfit = {
 	lookType = 934,
 	lookHead = 0,
@@ -81,15 +81,16 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 12413, chance = 2000 }, -- bolsa de items de addon aleatorios (2.000%)
-	{ name = "gold coin", chance = 100000, maxCount = 34 },
-	{ name = "ham", chance = 45000, maxCount = 3 },
-	{ name = "health potion", chance = 3500 },
-	{ name = "mana potion", chance = 3000 },
-	{ name = "plate armor", chance = 900 }, -- Frozen Hell: 0.500%
-	{ name = "plate legs", chance = 900 }, -- Frozen Hell: 0.500%
-	{ name = "steel helmet", chance = 900 }, -- Frozen Hell: 0.500%
-	{ name = "bonelord shield", chance = 900 }, -- Frozen Hell: 0.500%
+	{ name = "gold coin", chance = 100000, maxCount = 50 },
+	{ name = "health potion", chance = 35000 },
+	{ name = "mana potion", chance = 35000 },
+	{ name = "red mushroom", chance = 55000, maxCount = 3 },
+	{ id = 3078, chance = 20000 }, -- mysterious fetish
+	{ id = 23811, chance = 300 }, -- reinvigorating seeds
+	{ id = 24380, chance = 20000 }, -- bone toothpick
+	{ id = 24381, chance = 4900 }, -- beetle carapace
+	{ id = 24382, chance = 1800, maxCount = 2 }, -- bug meat
+	{ id = 17828, chance = 15290, maxCount = 3 }, -- pair of iron fists
 }
 
 monster.attacks = {

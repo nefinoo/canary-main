@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 6500
+monster.experience = 13000
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -78,15 +78,16 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 12413, chance = 1500 }, -- bolsa de items de addon aleatorios (1.500%)
-	{ name = "gold coin", chance = 100000, maxCount = 28 },
-	{ name = "ham", chance = 40000, maxCount = 3 },
-	{ name = "health potion", chance = 3000 },
-	{ name = "mana potion", chance = 3000 },
-	{ name = "plate armor", chance = 600 }, -- Frozen Hell: 0.500%
-	{ name = "plate legs", chance = 600 }, -- Frozen Hell: 0.500%
-	{ name = "steel helmet", chance = 600 }, -- Frozen Hell: 0.500%
-	{ name = "bonelord shield", chance = 600 }, -- Frozen Hell: 0.500%
+	{ name = "gold coin", chance = 100000, maxCount = 40 },
+	{ name = "health potion", chance = 30000 },
+	{ name = "mana potion", chance = 30000 },
+	{ name = "red mushroom", chance = 50000, maxCount = 3 },
+	{ id = 3078, chance = 50320 }, -- mysterious fetish
+	{ id = 23811, chance = 6000 }, -- reinvigorating seeds
+	{ id = 24380, chance = 4900 }, -- bone toothpick
+	{ id = 24381, chance = 1800 }, -- beetle carapace
+	{ id = 24382, chance = 12750 }, -- bug meat
+	{ id = 17828, chance = 910 }, -- pair of iron fists
 }
 
 monster.attacks = {

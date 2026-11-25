@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc shaman"
 monster.description = "a orc shaman"
-monster.experience = 2700
+monster.experience = 5400
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -106,15 +106,14 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{ name = "plate armor", chance = 248 }, -- Frozen Hell stage Orc equipment
-	{ name = "plate legs", chance = 248 }, -- Frozen Hell stage Orc equipment
-	{ name = "steel helmet", chance = 248 }, -- Frozen Hell stage Orc equipment
-	{ name = "bonelord shield", chance = 248 }, -- Frozen Hell stage Orc equipment
-	{ id = 12413, chance = 500 }, -- bolsa de items de addon aleatorios (0.500%)
-	{ name = "gold coin", chance = 80000, maxCount = 9 },
-	{ name = "meat", chance = 25000, maxCount = 2 },
-	{ name = "health potion", chance = 1000 },
-	{ name = "mana potion", chance = 1800 },
+	{ name = "gold coin", chance = 100000, maxCount = 15 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 18000 },
+	{ name = "corncob", chance = 35000, maxCount = 2 },
+	{ name = "orc tooth", chance = 2100 },
+	{ name = "broken shamanic staff", chance = 10300 },
+	{ name = "shamanic hood", chance = 6860 },
+	{ name = "orc leather", chance = 4300 },
 }
 
 mType:register(monster)

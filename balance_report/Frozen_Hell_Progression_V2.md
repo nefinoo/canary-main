@@ -36,3 +36,23 @@ Cantidades de referencia del conteo anterior del administrador, no verificadas e
 Melee 2s excepto Berserker 1.5s. Spearman conserva ataque a distancia; Shaman conserva dos ataques magicos, elimina invocaciones y reduce curacion a 5-10 con 20% cada 4s; Ravager cura 10-18 con 20% cada 5s. Se neutralizan resistencias de dano directo para las cuatro vocaciones. Rider y Berserker tienen aceleraciones reducidas; Warlord no usa invisibilidad. Orcs no huyen con poca vida. Los dos Orclops son semibosses, recomendados al final de la zona.
 
 EXP vuelta 287000 sin bonus; nivel 29 desde 64200 EXP tras primera zona; nivel 33 si ambas zonas reciben +50%. EXP x1. El menor EXP de Orcs basicos respecto a Slug refleja mayor densidad y dificultad por recorrido, no una regla de monotonía por especie. Los cambios afectan todas las apariciones de estos tipos. No se ha probado in-game; validar skills, magic level, consumo, cantidad de criaturas, disponibilidad de spears y tiempos. Siguiente: Minotaurs.
+
+### 02.1 - Revision de EXP y loot (conteo confirmado)
+
+Esta revision sustituye los valores de EXP y loot de la seccion 02; HP, ataques y defensas se mantienen. El administrador confirmo 96 criaturas y solicito salida nivel 30-40, sin armas ni equipo. La EXP se duplica a 574000 por vuelta. Desde nivel 17 con 64200 EXP: nivel 35 (638200 EXP total); si ambas zonas tienen +50%: nivel 40 (955200 EXP total). No se modifican las tasas globales.
+
+| Criatura | Cantidad | EXP nueva | Oro max (100%) | HP potion % | MP potion % | Comida | Chance comida % |
+|---|---:|---:|---:|---:|---:|---|---:|
+| orc | 6 | 3600 | 8 | 8 | 8 | meat | 30 |
+| war wolf | 2 | 4000 | 10 | 8 | 8 | ham | 35 |
+| orc spearman | 19 | 4400 | 12 | 10 | 10 | meat | 35 |
+| orc warrior | 13 | 5000 | 14 | 12 | 10 | meat | 35 |
+| orc rider | 1 | 5600 | 16 | 12 | 12 | meat | 40 |
+| orc shaman | 21 | 5400 | 15 | 8 | 18 | corncob | 35 |
+| orc berserker | 7 | 6400 | 18 | 16 | 10 | ham | 40 |
+| orc leader | 10 | 7400 | 22 | 18 | 16 | fish | 40 |
+| orc warlord | 15 | 8600 | 26 | 20 | 18 | fish | 45 |
+| orclops_ravager | 1 | 13000 | 40 | 30 | 30 | red mushroom | 50 |
+| orclops_doomhauler | 1 | 16000 | 50 | 35 | 35 | red mushroom | 55 |
+
+Loot: oro, health/mana potion basicas, comida, y creature products de los archivos vanilla equivalentes en data-otservbr-global. Se conservan sus probabilidades originales; excluidos equipos, armas, bolsa de addon 12413, gemas, trofeos, decoraciones y otros objetos no incluidos en las categorias solicitadas. Pair of iron fists es creature product en la version de referencia 12.56 (no un arma de monk). Oro medio teorico 865.5, 12.47 health potions, 13.39 mana potions por vuelta, sin precios NPC ni bonuses. No se cambia el loot de la primera zona en esta revision. Validacion in-game pendiente. Siguiente: Minotaurs, entrada 35 aprox.
