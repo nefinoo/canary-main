@@ -76,3 +76,31 @@ La imagen actual confirma las 96 criaturas. El administrador solicita nivel fina
 | orclops_doomhauler | 1 | 10000 | 10000 |
 
 Total 371500 EXP a x1 por vuelta. Desde 4200 EXP de nivel 8 y 60000 EXP de ratas, nivel 31 (435700 EXP total). Con +50% en ambas zonas, nivel 35 (651450 EXP total). No se presupone loot de equipo ni armas. Siguiente zona Minotaurs, referencia nivel 31-35. Validacion de combate en servidor pendiente; revisar abastecimiento de spears en NPC, pues no caen armas en esta zona.
+
+## 03 - Minotaurs (nivel 35-50)
+
+Conteo confirmado por imagen: 88. Entrada esperada 31-35 segun bonus anterior; zona recomendada 35+. No se presupone equipo raro ni compra de armas. Spells de referencia: Knight exori ico y exori (35), Paladin exori con y exura san (35), Druid/Sorcerer strikes elementales y exura vita (30). Se mantienen los scripts de spells y equipo vanilla sin modificar sus atributos. Armas vanilla superiores de NPC/quest son opcionales; ninguna arma ni municion se agrega al loot. Los nombres de items se verifican con referencias vanilla; items.xml del repo excede el limite de lectura, verificar atributos/restricciones reales y nombres al cargar el servidor.
+
+| Criatura | Cant | HP | EXP | Melee 2s | Def | Arm | Oro max (100%) | HP% | MP% |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Minotaur | 34 | 170 | 8000 | 10-36 | 8 | 5 | 14 | 16 | 16 |
+| Minotaur Archer | 15 | 190 | 9000 | 6-24 | 7 | 4 | 16 | 17 | 17 |
+| Minotaur Guard | 26 | 260 | 11000 | 14-52 | 13 | 8 | 20 | 21 | 17 |
+| Minotaur Mage | 8 | 220 | 10500 | 4-20 | 6 | 4 | 18 | 16 | 27 |
+| Modified Gnarlhound | 4 | 280 | 12000 | 12-54 | 10 | 7 | 20 | 22 | 22 |
+| Deepsea Blood Crab | 1 | 360 | 16000 | 16-65 | 15 | 10 | 26 | 30 | 30 |
+
+Archer: fisico 10-32, 75% cada 2s, alcance 5. Mage: energia 8-28, 50% cada 2s y fuego 10-32, 35% cada 3s, alcance 5; sin energyfield. Neutralizadas resistencias de daño directo (fisico, energia, tierra, fuego, hielo, sagrado y muerte), especialmente Gnarlhound y Crab. Crab es enemigo fuerte individual. Se elimina huida por poca vida. No se cambia comportamiento de montura/quest salvo que estas definiciones afectan todas las apariciones del tipo.
+
+### Loot
+
+Oro equivalente por criatura a Orcs (aprox 8.943181818181818 vs 9.015625), pociones algo mas frecuentes, comida. Se reconstruye loot sin armas/municion ni bolsa 12413. Se mantienen chances existentes de minotaur leather y bloody pincers; se restauran horn, broken crossbow y piezas de armadura que son creature products no equipables, con chances vanilla de data-otservbr-global. Gnarlhound vanilla no tiene creature products. Equipo raro seleccionado:
+
+- Minotaur: steel helmet 0.45%, plate legs 0.45%, paladin armor 0.40%, focus cape 0.40%.
+- Minotaur Archer: paladin armor 0.75%, blue legs 0.65%, bonelord shield 0.45%, hat of the mad 0.40%.
+- Minotaur Guard: plate armor 0.65%, bonelord shield 0.55%, plate legs 0.50%, blue legs 0.45%.
+- Minotaur Mage: focus cape 1.00%, hat of the mad 1.00%, spellbook of enlightenment 0.90%, blue legs 0.70%.
+- Modified Gnarlhound: steel helmet 0.60%, paladin armor 0.60%, spellbook of enlightenment 0.60%.
+- Deepsea Blood Crab: plate armor 1.00%, paladin armor 1.00%, focus cape 1.00%, spellbook of enlightenment 1.00%.
+
+Total esperado por vuelta: 841000 EXP, nivel 44 desde 435700 EXP y nivel 50 con +50% en todas las zonas; 787 gp, 15.91 HP potions, 15.75 MP potions, 1.87 piezas de equipo raro en promedio. Sin bonus de loot, ni venta de productos. No se cambian tasas ni otros archivos de criaturas. Validacion in-game pendiente (skills, ML, dps, TTK, abastecimiento, nombre de items y posibles restricciones de nivel). Siguiente: Cyclops.

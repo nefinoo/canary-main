@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a deepsea blood crab"
-monster.experience = 8000
+monster.experience = 16000
 monster.outfit = {
 	lookType = 200,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Svargrond Sea Serpent Area, Drefia. There is also one under Rookgaard Academy, however it is unreachable.",
 }
 
-monster.health = 600
-monster.maxHealth = 600
+monster.health = 360
+monster.maxHealth = 360
 monster.race = "blood"
 monster.corpse = 6075
 monster.speed = 190
@@ -74,37 +74,36 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 95000, maxCount = 45 },
-	{ id = 3578, chance = 45000, maxCount = 2 },
-	{ name = "health potion", chance = 4000 },
-	{ name = "mana potion", chance = 4000 },
-	{ name = "bloody pincers", chance = 6980 }, -- material de addon conservado
-	{ id = 12413, chance = 3500 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 1200 }, -- equipo muy raro
-	{ name = "plate legs", chance = 1200 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 1200 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 1200 }, -- equipo muy raro
+	{ name = "gold coin", chance = 100000, maxCount = 26 },
+	{ name = "health potion", chance = 30000 },
+	{ name = "mana potion", chance = 30000 },
+	{ name = "fish", chance = 50000, maxCount = 2 },
+	{ name = "bloody pincers", chance = 6980 },
+	{ name = "plate armor", chance = 1000 },
+	{ name = "paladin armor", chance = 1000 },
+	{ name = "focus cape", chance = 1000 },
+	{ name = "spellbook of enlightenment", chance = 1000 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -75, effect = CONST_ME_DRAWBLOOD },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -16, maxDamage = -65 },
 }
 
 monster.defenses = {
-	defense = 28,
-	armor = 28,
-	mitigation = 0.56,
+	defense = 15,
+	armor = 10,
+	mitigation = 0.25,
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 5 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = -10 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
-	{ type = COMBAT_ICEDAMAGE, percent = 100 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }

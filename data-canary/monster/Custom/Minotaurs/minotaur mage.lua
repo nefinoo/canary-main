@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur mage"
 monster.description = "a minotaur mage"
-monster.experience = 27500
+monster.experience = 10500
 monster.outfit = {
 	lookType = 23,
 	lookHead = 20,
@@ -31,8 +31,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 420
-monster.maxHealth = 420
+monster.health = 220
+monster.maxHealth = 220
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5981
@@ -85,40 +85,39 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = 15},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -5},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 18, attack = 15},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -7, maxDamage = -30, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -12, maxDamage = -55, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="energyfield", interval = 1000, chance = 7, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -4, maxDamage = -20 },
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -8, maxDamage = -28, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -10, maxDamage = -32, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 18
+	defense = 6,
+	armor = 4
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 90000, maxCount = 28 },
-	{ name = "ham", chance = 40000, maxCount = 2 },
-	{ name = "health potion", chance = 2500 },
-	{ name = "mana potion", chance = 3500 },
-	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
-	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 410 }, -- equipo muy raro
-	{ name = "plate legs", chance = 410 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 410 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 410 }, -- equipo muy raro
+	{ name = "gold coin", chance = 100000, maxCount = 18 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 27000 },
+	{ name = "carrot", chance = 45000, maxCount = 3 },
+	{ name = "minotaur leather", chance = 5000 },
+	{ name = "minotaur horn", chance = 3020, maxCount = 2 },
+	{ name = "focus cape", chance = 1000 },
+	{ name = "hat of the mad", chance = 1000 },
+	{ name = "spellbook of enlightenment", chance = 900 },
+	{ name = "blue legs", chance = 700 },
 }
 
 mType:register(monster)

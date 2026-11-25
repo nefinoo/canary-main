@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur guard"
 monster.description = "a minotaur guard"
-monster.experience = 32500
+monster.experience = 11000
 monster.outfit = {
 	lookType = 29,
 	lookHead = 20,
@@ -30,8 +30,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 510
-monster.maxHealth = 510
+monster.health = 260
+monster.maxHealth = 260
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5983
@@ -86,35 +86,36 @@ monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 20},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 43, attack = 28}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -14, maxDamage = -52 },
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 15
+	defense = 13,
+	armor = 8
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 90000, maxCount = 32 },
-	{ name = "ham", chance = 50000, maxCount = 3 },
-	{ name = "health potion", chance = 3500 },
-	{ name = "mana potion", chance = 2500 },
-	{ name = "minotaur leather", chance = 5000 }, -- material de addon conservado
-	{ id = 12413, chance = 3000 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 463 }, -- equipo muy raro
-	{ name = "plate legs", chance = 463 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 463 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 463 }, -- equipo muy raro
+	{ name = "gold coin", chance = 100000, maxCount = 20 },
+	{ name = "health potion", chance = 21000 },
+	{ name = "mana potion", chance = 17000 },
+	{ name = "ham", chance = 45000, maxCount = 2 },
+	{ name = "minotaur leather", chance = 5000 },
+	{ name = "minotaur horn", chance = 8330, maxCount = 2 },
+	{ name = "piece of warrior armor", chance = 5040 },
+	{ name = "plate armor", chance = 650 },
+	{ name = "bonelord shield", chance = 550 },
+	{ name = "plate legs", chance = 500 },
+	{ name = "blue legs", chance = 450 },
 }
 
 mType:register(monster)

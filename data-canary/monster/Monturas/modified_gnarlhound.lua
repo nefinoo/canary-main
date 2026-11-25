@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Modified Gnarlhound")
 local monster = {}
 
 monster.description = "a modified gnarlhound"
-monster.experience = 35000
+monster.experience = 12000
 monster.outfit = {
 	lookType = 515,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "South of Stonehome, deep under Telas's house.",
 }
 
-monster.health = 450
-monster.maxHealth = 450
+monster.health = 280
+monster.maxHealth = 280
 monster.race = "blood"
 monster.corpse = 10333
 monster.speed = 225
@@ -54,7 +54,7 @@ monster.flags = {
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 25,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -75,38 +75,36 @@ monster.voices = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -6, maxDamage = -42 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -12, maxDamage = -54 },
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 85000, maxCount = 27 },
-	{ name = "ham", chance = 40000, maxCount = 2 },
-	{ name = "health potion", chance = 2500 },
-	{ name = "mana potion", chance = 2500 },
-	{ id = 12413, chance = 2500 }, -- bolsa aleatoria de objetos de addon
-	{ name = "plate armor", chance = 487 }, -- equipo muy raro
-	{ name = "plate legs", chance = 487 }, -- equipo muy raro
-	{ name = "steel helmet", chance = 487 }, -- equipo muy raro
-	{ name = "bonelord shield", chance = 487 }, -- equipo muy raro
+	{ name = "gold coin", chance = 100000, maxCount = 20 },
+	{ name = "health potion", chance = 22000 },
+	{ name = "mana potion", chance = 22000 },
+	{ name = "ham", chance = 45000, maxCount = 2 },
+	{ name = "steel helmet", chance = 600 },
+	{ name = "paladin armor", chance = 600 },
+	{ name = "spellbook of enlightenment", chance = 600 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 12,
+	defense = 10,
+	armor = 7,
 	mitigation = 0.25,
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 90 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 90 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 90 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 100 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 100 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {
