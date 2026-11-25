@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "giant spider"
 monster.description = "a giant spider"
-monster.experience = 400000
+monster.experience = 850000
 monster.outfit = {
 	lookType = 38,
 	lookHead = 0,
@@ -34,8 +34,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 980
-monster.maxHealth = 980
+monster.health = 3400
+monster.maxHealth = 3400
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5977
@@ -85,64 +85,45 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -30},
-	{type = COMBAT_ENERGYDAMAGE, percent = 50},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
-	{type = COMBAT_FIREDAMAGE, percent = -10},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 50},
-	{type = COMBAT_HOLYDAMAGE , percent = 50},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -24, maxDamage = -78},
-	{name ="poisonfield", interval = 1000, chance = 12, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_POISON}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -42, maxDamage = -132 },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -35, maxDamage = -95, range = 5, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA },
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 20,
-	{name ="speed", interval = 1000, chance = 6, speed = {min = 310, max = 310}, duration = 20000, effect = CONST_ME_MAGIC_RED}
+	defense = 25,
+	armor = 16,
+	{ name = "speed", interval = 6000, chance = 10, speed = {min = 50, max = 50}, duration = 3000, effect = CONST_ME_MAGIC_RED },
 }
 
-monster.maxSummons = 2
-monster.summons = {
-	{name = "poison spider", chance = 12, interval = 3000, max = 2}
+monster.maxSummons = 0
+monster.summons = {}
 }
 
 monster.loot = {
-	{ name = "experience scroll", chance = 25 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Gold y consumibles: progresion nivel 50
-	{ name = "gold coin", chance = 90000, maxCount = 65 },
-	{ name = "meat", chance = 42000, maxCount = 3 },
-	{ name = "ham", chance = 25000, maxCount = 2 },
-	{ name = "health potion", chance = 10000 },
-	{ name = "mana potion", chance = 9000 },
-	{ name = "strong health potion", chance = 2800 },
-	{ name = "strong mana potion", chance = 2200 },
-	-- Addon / objetos existentes
-	{ id = 5879, chance = 7000 }, -- spider silk: material de addon conservado (antes 5000)
-	{ id = 12413, chance = 9500 }, -- bag de objetos de addon
-	-- Plate Set: comun respecto a Knight y Crown
-	{ name = "plate armor", chance = 5900 },
-	{ name = "plate legs", chance = 5664 },
-	{ name = "steel helmet", chance = 6313 },
-	{ name = "bonelord shield", chance = 5664 },
-	-- Armas (progresion de nivel 50)
-	{ name = "barbarian axe", chance = 6000 },
-	{ name = "clerical mace", chance = 5500 },
-	{ id = 7385, chance = 5500 },
-	-- Knight Set: aumenta frente al loot anterior
-	{ name = "knight armor", chance = 2050 },
-	{ name = "knight legs", chance = 1927 },
-	{ name = "knight axe", chance = 1599 },
-	{ name = "devil helmet", chance = 1497 },
-	{ name = "tower shield", chance = 1414 },
-	-- Botas de progresion por set
-	{ id = 3079, chance = 882 }, -- Boots of Haste: Knight Set
+	{ name = "gold coin", chance = 100000, maxCount = 36 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 16000 },
+	{ name = "strong health potion", chance = 24000 },
+	{ name = "strong mana potion", chance = 24000 },
+	{ name = "great health potion", chance = 8000 },
+	{ name = "great mana potion", chance = 8000 },
+	{ name = "great spirit potion", chance = 5000 },
+	{ name = "meat", chance = 45000, maxCount = 3 },
+	{ name = "ham", chance = 35000, maxCount = 2 },
+	{ name = "spider silk", chance = 10000 },
 }
 
 mType:register(monster)

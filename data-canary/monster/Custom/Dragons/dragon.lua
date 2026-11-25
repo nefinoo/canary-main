@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon"
 monster.description = "a dragon"
-monster.experience = 350000
+monster.experience = 720000
 monster.outfit = {
 	lookType = 34,
 	lookHead = 20,
@@ -33,9 +33,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 880
-monster.maxHealth = 880
-monster.runHealth = 100
+monster.health = 3100
+monster.maxHealth = 3100
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5973
 monster.speed = 180
@@ -87,59 +87,42 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = -30},
-	{type = COMBAT_EARTHDAMAGE, percent = 80},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -30},
-	{type = COMBAT_HOLYDAMAGE , percent = 30},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -28, maxDamage = -72},
-	{name ="combat", interval = 4000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -22, maxDamage = -65, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -25, maxDamage = -72, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -38, maxDamage = -120 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -40, maxDamage = -105, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -35, maxDamage = -90, length = 5, spread = 2, effect = CONST_ME_FIREAREA },
 }
 
 monster.defenses = {
-	defense = 18,
-	armor = 25,
-	{name ="combat", interval = 3000, chance = 8, type = COMBAT_HEALING, minDamage = 12, maxDamage = 25, effect = CONST_ME_MAGIC_BLUE}
+	defense = 24,
+	armor = 15,
+	{ name = "combat", interval = 5000, chance = 15, type = COMBAT_HEALING, minDamage = 50, maxDamage = 80, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.loot = {
-	{ name = "experience scroll", chance = 30 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Oro, comida y pociones de caceria (nivel 50)
-	{ name = "gold coin", chance = 90000, maxCount = 55 },
-	{ name = "dragon ham", chance = 40000, maxCount = 3 },
-	{ name = "health potion", chance = 8000 },
-	{ name = "mana potion", chance = 7500 },
-	{ name = "strong health potion", chance = 2700 },
-	{ name = "strong mana potion", chance = 2300 },
-	-- Materiales originales de criatura y bag de addon
-	{ name = "green dragon leather", chance = 3500 },
-	{ name = "green dragon scale", chance = 5000 },
-	{ id = 12413, chance = 9000 },
-	-- Plate Set: frecuente comparado con Knight y Crown
-	{ name = "plate armor", chance = 5500 },
-	{ name = "plate legs", chance = 5280 },
-	{ name = "steel helmet", chance = 5885 },
-	{ name = "bonelord shield", chance = 5280 },
-	-- Armas de la etapa
-	{ name = "barbarian axe", chance = 6500 },
-	{ name = "clerical mace", chance = 5500 },
-	{ id = 7385, chance = 5500 },
-	-- Knight Set: raro
-	{ name = "knight armor", chance = 1900 },
-	{ name = "knight legs", chance = 1786 },
-	{ name = "knight axe", chance = 1482 },
-	{ name = "devil helmet", chance = 1387 },
-	{ name = "tower shield", chance = 1311 },
-	-- Botas de progresion por set
-	{ id = 3079, chance = 817 }, -- Boots of Haste: Knight Set
+	{ name = "gold coin", chance = 100000, maxCount = 34 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 16000 },
+	{ name = "strong health potion", chance = 22000 },
+	{ name = "strong mana potion", chance = 24000 },
+	{ name = "great health potion", chance = 7000 },
+	{ name = "great mana potion", chance = 8000 },
+	{ name = "great spirit potion", chance = 5000 },
+	{ name = "dragon ham", chance = 50000, maxCount = 2 },
+	{ name = "dragon's tail", chance = 9680 },
+	{ name = "green dragon leather", chance = 6000 },
+	{ name = "green dragon scale", chance = 6000 },
 }
 
 mType:register(monster)

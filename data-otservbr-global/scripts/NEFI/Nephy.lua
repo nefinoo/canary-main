@@ -102,6 +102,14 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {
+	-- Frozen Hell: suministros de quests de nivel 100
+	{ itemName = "dragon ham", clientId = 3583, sell = 8 },
+	{ itemName = "cherry", clientId = 3590, sell = 1 },
+	{ itemName = "bread", clientId = 3600, sell = 2 },
+	{ itemName = "great health potion", clientId = 239, sell = 110 },
+	{ itemName = "great mana potion", clientId = 238, sell = 70 },
+	{ itemName = "great spirit potion", clientId = 7642, sell = 110 },
+
 	-- Frozen Hell: productos y suministros de Hydra
 	{ itemName = "hydra egg", clientId = 4839, sell = 800 },
 	{ itemName = "strong health potion", clientId = 236, sell = 55 },

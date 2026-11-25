@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon lord"
 monster.description = "a dragon lord"
-monster.experience = 450000
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 39,
 	lookHead = 20,
@@ -34,9 +34,9 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1180
-monster.maxHealth = 1180
-monster.runHealth = 110
+monster.health = 4400
+monster.maxHealth = 4400
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5984
 monster.speed = 240
@@ -89,59 +89,40 @@ monster.immunities = {
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
-	{type = COMBAT_EARTHDAMAGE, percent = 80},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 30},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -32, maxDamage = -90},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -28, maxDamage = -88, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 9, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -30, maxDamage = -95, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -48, maxDamage = -155 },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -135, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -45, maxDamage = -120, length = 5, spread = 2, effect = CONST_ME_FIREAREA },
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 22,
-	{name ="combat", interval = 3000, chance = 10, type = COMBAT_HEALING, minDamage = 15, maxDamage = 35, effect = CONST_ME_MAGIC_BLUE}
+	defense = 29,
+	armor = 19,
+	{ name = "combat", interval = 5000, chance = 20, type = COMBAT_HEALING, minDamage = 65, maxDamage = 110, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.loot = {
-	{ name = "experience scroll", chance = 45 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Oro, comida y pociones de caceria (nivel 50)
-	{ name = "gold coin", chance = 90000, maxCount = 75 },
-	{ name = "dragon ham", chance = 50000, maxCount = 3 },
-	{ name = "health potion", chance = 9000 },
-	{ name = "mana potion", chance = 8000 },
-	{ name = "strong health potion", chance = 3200 },
-	{ name = "strong mana potion", chance = 3000 },
-	-- Materiales originales de criatura y bag de addon
+	{ name = "gold coin", chance = 100000, maxCount = 44 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 16000 },
+	{ name = "strong health potion", chance = 28000 },
+	{ name = "strong mana potion", chance = 28000 },
+	{ name = "great health potion", chance = 10000 },
+	{ name = "great mana potion", chance = 10000 },
+	{ name = "great spirit potion", chance = 7000 },
+	{ name = "dragon ham", chance = 60000, maxCount = 2 },
 	{ name = "red dragon leather", chance = 5000 },
 	{ name = "red dragon scale", chance = 5000 },
-	{ id = 12413, chance = 10500 },
-	-- Plate Set: frecuente comparado con Knight y Crown
-	{ name = "plate armor", chance = 6300 },
-	{ name = "plate legs", chance = 6048 },
-	{ name = "steel helmet", chance = 6741 },
-	{ name = "bonelord shield", chance = 6048 },
-	-- Armas de la etapa
-	{ name = "barbarian axe", chance = 7000 },
-	{ name = "clerical mace", chance = 6500 },
-	{ id = 7385, chance = 6500 },
-	-- Knight Set: raro
-	{ name = "knight armor", chance = 2250 },
-	{ name = "knight legs", chance = 2115 },
-	{ name = "knight axe", chance = 1755 },
-	{ name = "devil helmet", chance = 1643 },
-	{ name = "tower shield", chance = 1552 },
-	-- Botas de progresion por set
-	{ id = 3079, chance = 968 }, -- Boots of Haste: Knight Set
 }
 
 mType:register(monster)

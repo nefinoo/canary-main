@@ -187,3 +187,20 @@ Se reemplaza todo loot anterior: sin armas (Cyclops tampoco las tienen), Knight 
 - paladin armor: 2200 (2.20%), 750 gp.
 
 Gold coin 1-28 al 100%, health/mana potion 30% cada una, strong health/mana potion 20% cada una, meat 35% y ham 55% (max 3), hydra head 5% (600 gp) y hydra egg 0.8% (800 gp). Nuevos precios en ambos Nephy: hydra egg 4839 800, strong health potion 236 55, strong mana potion 237 45 (Malak buy 115/93). Loot esperado: 4.70 piezas, 2517.50 gp por equipo, 275.5 gp directos, 5.7 de cada pocion basica y 3.8 de cada strong por vuelta; sin bonos. No se ha probado en servidor. Siguiente zona por confirmar.
+
+## 08 - Quests de armas nivel 100 y caza 100-200
+
+Mapa frozen: grupos de referencia 36 Giant Spiders, 18 Dragons + 24 Dragon Lords, 49 Warlocks. Coinciden con conteos previos; hay otras apariciones. Se interpreta nivel 100-200 como etapa conjunta de las 3 zonas, no cada zona individual. 127 criaturas, 114110000 EXP base, nivel 200 desde inicio exacto nivel 100 (15694800 EXP), nivel 225 con +50%. Cada ruta es alternativa de caza: una vuelta desde 100 deja nivel 142/148/157 respectivamente, requiere aprox 3.72/3.08/2.44 vueltas para 200 sin bonus. Se conservan quests y cofre AID 2005 (storage compartido). El script de cofres clona contenido del mapa y no muestra los IDs individuales; no se cambia recompensa. Definiciones afectan todas las apariciones.
+
+| Criatura | Cant | HP | EXP | Def | Arm |
+|---|---:|---:|---:|---:|---:|
+| Giant Spider | 36 | 3400 | 850000 | 25 | 16 |
+| Dragon | 18 | 3100 | 720000 | 24 | 15 |
+| Dragon Lord | 24 | 4400 | 1000000 | 29 | 19 |
+| Warlock | 49 | 3900 | 950000 | 23 | 14 |
+
+Se neutralizan resistencias principales; se retiran campos, summons de Giant Spider e invisibilidad del Warlock; se preservan ataques tematicos, curaciones moderadas y control ligero. Daño diseñado para equipo stage 1 y armas previas, HP para un reto antes de quest y mejora despues. Meta aproximada 35-65s antes y 20-35s despues, no mediciones reales. Ataques basicos configurados 1000 ms en vocations.xml (rateAttackSpeed x1); usar pociones y spells existentes, no mana runes. Las armas iniciales comprobadas en send_first_items.lua; no hay mejoras garantizadas en loot de zonas previas y disponibilidad de armas vanilla superiores no confirmada. items.xml no se pudo leer por tamaño, no se modifican atributos de armas ni spells. Nephy lista IDs 3341 arcane staff, 3287 throwing star, 3288 magic sword, 3319 stonecutter axe, 3309 thunder hammer, pero cofre y asignacion real de vocaciones no comprobados; no inferir de nombre original.
+
+Propuesta pendiente de aplicar: Knight sword atk 38 def 28, axe atk 40 def 24, club atk 42 def 20 (sin elemental extra; si hay, cuenta en total); Paladin arma arrojadiza atk 42-44 alcance 5, sin consumo si recompensa unica (confirmar tipo), o atk total arco+municion 42-44; Druid/Sorcerer wand/rod daño base 80-110, 12-16 mana/ataque alcance 4, sin ML extra inicialmente. Referencias aproximadas de level 100: skill melee 65, distance 70, ML magos 35, ataque 1s. Objetivo DPS efectivo despues 120-170, antes 65-120 (estimacion depende de skills, bloqueo, hit chance, mana, rotacion y armas disponibles). Validar con pruebas reales antes de editar armas. Se mantienen stats de spells, incluyendo exori gran mana 340 cooldown 6s y exura gran ico cooldown 600000 ms; scripts no son estrictamente vanilla. No se cambia economia del equipo anterior.
+
+Loot: sin armas, municion, equipo, experience scroll, bolsa 12413. Se conservan creature products, se restaura dragon's tail/luminous orb vanilla, y se mantienen oro, comida y pociones (basicas, strong y great/spirit) como suministros. Precios Nephy existentes de productos conservados: silk 100, tail 100, green leather/scale 100, red leather/scale 200, talon 320, luminous orb 1000. Se añaden dragon ham 8, cherry 1, bread 2, great HP 110, great MP 70, great spirit 110 en ambos Nephy; precios de compra de Malak 225/144/228. Oro esperado 2574.5 gp, productos 2269.04 gp por 127; excluye pociones y comida. No se modifica mapa ni rates. Validar TTK, supervivencia, consumibles, nombres de loot y recompensa de cofres en servidor.

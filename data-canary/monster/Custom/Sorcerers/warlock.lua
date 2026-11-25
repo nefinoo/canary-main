@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "warlock"
 monster.description = "a warlock"
-monster.experience = 400000
+monster.experience = 950000
 monster.outfit = {
 	lookType = 130,
 	lookHead = 19,
@@ -29,17 +29,17 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1080
-monster.maxHealth = 1080
-monster.runHealth = 180
+monster.health = 3900
+monster.maxHealth = 3900
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
 monster.speed = 220
 monster.summonCost = 0
 
 monster.changeTarget = {
-	interval = 20,
-	chance = 30
+	interval = 5000,
+	chance = 10
 }
 
 monster.flags = {
@@ -83,7 +83,7 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -20},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
@@ -91,61 +91,40 @@ monster.elements = {
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = -50},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -62},
-	{name ="combat", interval = 1000, chance = 18, type = COMBAT_PHYSICALDAMAGE, minDamage = -18, maxDamage = -72, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -8, maxDamage = -38, range = 7, radius = 1, target = true},
-	{name ="speed", interval = 1000, chance = 7, speed = {min = -250, max = -250}, duration = 7000, range = 7, radius = 1, target = true, effect = CONST_ME_MAGIC_RED},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -25, maxDamage = -75, range = 7, radius = 3, target = true, shootEffect = CONST_ANI_BURSTARROW, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 8, range = 7, radius = 2, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 2000, chance = 18, type = COMBAT_ENERGYDAMAGE, minDamage = -25, maxDamage = -80, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT},
-	{name ="speed", interval = 6000, chance = 5, speed = {min = -250, max = -250}, duration = 7000, range = 5, radius = 1, target = true, effect = CONST_ME_MAGIC_RED}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22, maxDamage = -65 },
+	{ name = "combat", interval = 2000, chance = 65, type = COMBAT_ENERGYDAMAGE, minDamage = -38, maxDamage = -110, range = 5, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -35, maxDamage = -100, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 6000, chance = 15, type = COMBAT_MANADRAIN, minDamage = -15, maxDamage = -45, range = 5, target = true },
+	{ name = "speed", interval = 6000, chance = 10, speed = {min = -80, max = -80}, duration = 2000, range = 5, target = true, effect = CONST_ME_MAGIC_RED },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 25,
-	{name ="combat", interval = 4000, chance = 10, type = COMBAT_HEALING, minDamage = 20, maxDamage = 45, effect = CONST_ME_MAGIC_BLUE},
-	{name ="invisible", interval = 5000, chance = 7, duration = 3000, effect = CONST_ME_MAGIC_RED}
+	defense = 23,
+	armor = 14,
+	{ name = "combat", interval = 5000, chance = 15, type = COMBAT_HEALING, minDamage = 50, maxDamage = 85, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.maxSummons = 0
 monster.summons = {}
 
 monster.loot = {
-	{ name = "experience scroll", chance = 40 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Oro, comida y pociones de caceria (nivel 50)
-	{ name = "gold coin", chance = 90000, maxCount = 85 },
-	{ name = "cherry", chance = 35000, maxCount = 3 },
-	{ name = "dark mushroom", chance = 18000, maxCount = 2 },
-	{ name = "health potion", chance = 8000 },
-	{ name = "mana potion", chance = 12000 },
-	{ name = "strong health potion", chance = 2800 },
-	{ name = "strong mana potion", chance = 3500 },
-	-- Materiales originales de criatura y bag de addon
-	{ name = "talon", chance = 1100 },
-	{ id = 12413, chance = 11500 },
-	-- Plate Set: frecuente comparado con Knight y Crown
-	{ name = "plate armor", chance = 5900 },
-	{ name = "plate legs", chance = 5664 },
-	{ name = "steel helmet", chance = 6313 },
-	{ name = "bonelord shield", chance = 5664 },
-	-- Armas de la etapa
-	{ name = "barbarian axe", chance = 6500 },
-	{ name = "clerical mace", chance = 6000 },
-	{ id = 7385, chance = 6000 },
-	-- Knight Set: raro
-	{ name = "knight armor", chance = 2050 },
-	{ name = "knight legs", chance = 1927 },
-	{ name = "knight axe", chance = 1599 },
-	{ name = "devil helmet", chance = 1497 },
-	{ name = "tower shield", chance = 1414 },
-	-- Botas de progresion por set
-	{ id = 3079, chance = 882 }, -- Boots of Haste: Knight Set
+	{ name = "gold coin", chance = 100000, maxCount = 42 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 16000 },
+	{ name = "strong health potion", chance = 22000 },
+	{ name = "strong mana potion", chance = 32000 },
+	{ name = "great health potion", chance = 7000 },
+	{ name = "great mana potion", chance = 12000 },
+	{ name = "great spirit potion", chance = 6000 },
+	{ name = "cherry", chance = 40000, maxCount = 3 },
+	{ name = "bread", chance = 25000, maxCount = 2 },
+	{ name = "talon", chance = 3500 },
+	{ name = "luminous orb", chance = 1000 },
 }
 
 mType:register(monster)
