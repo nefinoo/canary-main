@@ -104,3 +104,25 @@ Oro equivalente por criatura a Orcs (aprox 8.943181818181818 vs 9.015625), pocio
 - Deepsea Blood Crab: plate armor 1.00%, paladin armor 1.00%, focus cape 1.00%, spellbook of enlightenment 1.00%.
 
 Total esperado por vuelta: 841000 EXP, nivel 44 desde 435700 EXP y nivel 50 con +50% en todas las zonas; 787 gp, 15.91 HP potions, 15.75 MP potions, 1.87 piezas de equipo raro en promedio. Sin bonus de loot, ni venta de productos. No se cambian tasas ni otros archivos de criaturas. Validacion in-game pendiente (skills, ML, dps, TTK, abastecimiento, nombre de items y posibles restricciones de nivel). Siguiente: Cyclops.
+
+## 04 - Cyclops (nivel 50-75)
+
+Mapa activo frozen: data-canary/world/frozen-monster.xml. Por agrupacion de proximidad (15 casillas, diferencia vertical <=2), zona de referencia x568-619/y823-881/z12-16: 35 Cyclops, 14 Drone, 7 Smith (56). Otro grupo x1642-1739/y181-268/z14-18: 50/6/7 (63). Se usa el primer grupo por cercania al conteo anterior del administrador (35/15/7); no se confirma que todas las criaturas sean accesibles en una sola vuelta. Las definiciones cambian globalmente para los tres tipos; no se modifica mapa.
+
+| Criatura | Cant | HP | EXP | Melee 2s | Def | Arm | Oro max 100% | HP% | MP% |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Cyclops | 35 | 380 | 45000 | 18-64 | 14 | 9 | 16 | 20 | 20 |
+| Cyclops Drone | 14 | 480 | 55000 | 22-78 | 17 | 11 | 18 | 24 | 22 |
+| Cyclops Smith | 7 | 620 | 70000 | 26-94 | 20 | 13 | 22 | 28 | 26 |
+
+Drone: roca 12-40, 35% cada 3s, alcance 5; Smith: ataque fisico 16-50, 40% cada 3s, alcance 5, embriaguez 15 por 3s con 8% cada 6s. Se neutralizan resistencias de dano directo principales, se elimina huida del Drone. Se preservan los demas flags e identidad. Equipo opcional: mismo set raro de Minotaurs; Knight exori/exori ico, Paladin exori con y exevo mas san (50, 160 mana), Druid/Sorcerer strikes y exura vita; Druid exori gran tera (70). El exori gran de Knight en el repositorio exige 90 y no se presupone. No se modifican spells, armas, equipo ni tasas globales. No se han medido DPS reales de jugadores; valores propuestos para pruebas.
+
+### Loot
+
+Se reconstruye loot: oro, health/mana potions basicas, comida, cyclops toe vanilla (4.93/6.75/10.28%), mismo conjunto de 9 equipos de Minotaurs con chances por objeto ligeramente por encima de sus maximos anteriores. Sin armas, municion, bolsa 12413 ni equipo adicional. Se mantiene oro medio comparable con Minotaurs, pociones algo mas frecuentes por criatura.
+
+- Cyclops: steel helmet 0.75%, plate legs 0.65%, paladin armor 1.15%, focus cape 1.15%.
+- Cyclops Drone: plate armor 1.15%, bonelord shield 0.70%, blue legs 0.85%, hat of the mad 1.15%, spellbook of enlightenment 1.15%.
+- Cyclops Smith: plate armor 1.25%, paladin armor 1.25%, focus cape 1.25%, hat of the mad 1.25%, spellbook of enlightenment 1.25%, blue legs 0.95%.
+
+EXP grupo 56: 2835000, salida nivel 64 desde acumulado normal de Minotaurs y 73 con +50% en todas las zonas; desde nivel 50 exacto, 67 sin bonus / 73 con +50% en esta zona. Grupo 63: 3070000, salida 65/75 desde la progresion anterior. Loot esperado grupo 56: 511 gp, 12.32 health, 11.90 mana, 2.50 piezas raras, 3.39 cyclops toes. Se conserva la seleccion de items previamente introducida; atributos/restricciones y resolucion de nombres pendientes de validar en servidor. Siguiente zona por confirmar.

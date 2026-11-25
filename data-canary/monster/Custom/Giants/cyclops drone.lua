@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops drone"
 monster.description = "a cyclops drone"
-monster.experience = 70000
+monster.experience = 55000
 monster.outfit = {
 	lookType = 280,
 	lookHead = 0,
@@ -30,7 +30,7 @@ monster.Bestiary = {
 
 monster.health = 480
 monster.maxHealth = 480
-monster.runHealth = 75
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 771
 monster.speed = 220
@@ -84,37 +84,38 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 10},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 10},
-	{type = COMBAT_HOLYDAMAGE , percent = 10},
-	{type = COMBAT_DEATHDAMAGE , percent = -5}
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 48, attack = 37},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -12, maxDamage = -55, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22, maxDamage = -78 },
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -12, maxDamage = -40, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
-	defense = 24,
-	armor = 17
+	defense = 17,
+	armor = 11
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 90000, maxCount = 42 },
+	{ name = "gold coin", chance = 100000, maxCount = 18 },
+	{ name = "health potion", chance = 24000 },
+	{ name = "mana potion", chance = 22000 },
 	{ name = "ham", chance = 55000, maxCount = 3 },
-	{ name = "health potion", chance = 6000 },
-	{ name = "mana potion", chance = 5000 },
-	{ id = 12413, chance = 5000 }, -- bolsa de materiales de addon
-	{ name = "plate armor", chance = 849 },
-	{ name = "plate legs", chance = 849 },
-	{ name = "steel helmet", chance = 849 },
-	{ name = "bonelord shield", chance = 849 },
+	{ name = "cyclops toe", chance = 6750 },
+	{ name = "plate armor", chance = 1150 },
+	{ name = "bonelord shield", chance = 700 },
+	{ name = "blue legs", chance = 850 },
+	{ name = "hat of the mad", chance = 1150 },
+	{ name = "spellbook of enlightenment", chance = 1150 },
 }
 
 mType:register(monster)

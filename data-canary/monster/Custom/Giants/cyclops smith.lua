@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops smith"
 monster.description = "a cyclops smith"
-monster.experience = 87500
+monster.experience = 70000
 monster.outfit = {
 	lookType = 277,
 	lookHead = 0,
@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 650
-monster.maxHealth = 650
+monster.health = 620
+monster.maxHealth = 620
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 656
@@ -84,38 +84,40 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
-	{type = COMBAT_FIREDAMAGE, percent = 10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 10},
-	{type = COMBAT_DEATHDAMAGE , percent = -5}
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 55, attack = 40},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -18, maxDamage = -65, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_WHIRLWINDCLUB},
-	{name ="drunk", interval = 1000, chance = 10, drunkenness = 25, duration = 10000}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -26, maxDamage = -94 },
+	{name ="combat", interval = 3000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -16, maxDamage = -50, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_WHIRLWINDCLUB},
+	{name ="drunk", interval = 6000, chance = 8, drunkenness = 15, duration = 3000}
 }
 
 monster.defenses = {
-	defense = 24,
-	armor = 17
+	defense = 20,
+	armor = 13
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 95000, maxCount = 55 },
+	{ name = "gold coin", chance = 100000, maxCount = 22 },
+	{ name = "health potion", chance = 28000 },
+	{ name = "mana potion", chance = 26000 },
 	{ name = "ham", chance = 60000, maxCount = 3 },
-	{ name = "health potion", chance = 7000 },
-	{ name = "mana potion", chance = 6000 },
-	{ id = 12413, chance = 6500 }, -- bolsa de materiales de addon
+	{ name = "cyclops toe", chance = 10280 },
 	{ name = "plate armor", chance = 1250 },
-	{ name = "plate legs", chance = 1250 },
-	{ name = "steel helmet", chance = 1250 },
-	{ name = "bonelord shield", chance = 1250 },
+	{ name = "paladin armor", chance = 1250 },
+	{ name = "focus cape", chance = 1250 },
+	{ name = "hat of the mad", chance = 1250 },
+	{ name = "spellbook of enlightenment", chance = 1250 },
+	{ name = "blue legs", chance = 950 },
 }
 
 mType:register(monster)

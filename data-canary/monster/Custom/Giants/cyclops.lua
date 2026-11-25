@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops"
 monster.description = "a cyclops"
-monster.experience = 62500
+monster.experience = 45000
 monster.outfit = {
 	lookType = 22,
 	lookHead = 0,
@@ -29,8 +29,8 @@ monster.Bestiary = {
 }
 
 
-monster.health = 360
-monster.maxHealth = 360
+monster.health = 380
+monster.maxHealth = 380
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5962
@@ -86,36 +86,36 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 25},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 20},
-	{type = COMBAT_DEATHDAMAGE , percent = -10}
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -90}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -18, maxDamage = -64 },
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 15
+	defense = 14,
+	armor = 9
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 90000, maxCount = 35 },
+	{ name = "gold coin", chance = 100000, maxCount = 16 },
+	{ name = "health potion", chance = 20000 },
+	{ name = "mana potion", chance = 20000 },
 	{ name = "meat", chance = 50000, maxCount = 3 },
-	{ name = "health potion", chance = 5000 },
-	{ name = "mana potion", chance = 4000 },
-	{ id = 12413, chance = 4000 }, -- bolsa de materiales de addon
-	{ name = "plate armor", chance = 765 },
-	{ name = "plate legs", chance = 765 },
-	{ name = "steel helmet", chance = 765 },
-	{ name = "bonelord shield", chance = 765 },
+	{ name = "cyclops toe", chance = 4930 },
+	{ name = "steel helmet", chance = 750 },
+	{ name = "plate legs", chance = 650 },
+	{ name = "paladin armor", chance = 1150 },
+	{ name = "focus cape", chance = 1150 },
 }
 
 mType:register(monster)
