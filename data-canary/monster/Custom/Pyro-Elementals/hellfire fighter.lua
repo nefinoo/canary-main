@@ -115,11 +115,11 @@ monster.loot = {
 	-- Materiales de addon originales
 	{ name = "soul orb", chance = 2222 },
 	{ id = 12413, chance = 14500 },
-	-- Plate Set: progresion mejorada
-	{ name = "plate armor", chance = 6707 },
-	{ name = "plate legs", chance = 6438 },
-	{ name = "steel helmet", chance = 7176 },
-	{ name = "bonelord shield", chance = 6438 },
+	-- Set inicial por vocacion
+	{ id = 7463, chance = 6707 },
+	{ id = 7464, chance = 6438 },
+	{ id = 7458, chance = 7176 },
+	{ id = 3550, chance = 6438 },
 	-- Knight Set
 	{ name = "knight armor", chance = 2550 },
 	{ name = "knight legs", chance = 2397 },

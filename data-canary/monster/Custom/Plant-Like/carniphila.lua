@@ -105,11 +105,11 @@ monster.loot = {
 	{ name = "strong health potion", chance = 3500 },
 	{ name = "strong mana potion", chance = 3500 },
 	{ id = 12413, chance = 11000 },
-	-- Plate Set: loot frecuente
-	{ name = "plate armor", chance = 7600 },
-	{ name = "plate legs", chance = 7296 },
-	{ name = "steel helmet", chance = 8132 },
-	{ name = "bonelord shield", chance = 7296 },
+	-- Set inicial por vocacion
+	{ id = 7463, chance = 7600 },
+	{ id = 7464, chance = 7296 },
+	{ id = 7458, chance = 8132 },
+	{ id = 3550, chance = 7296 },
 	-- Knight Set
 	{ name = "knight armor", chance = 3100 },
 	{ name = "knight legs", chance = 2914 },

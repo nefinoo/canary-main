@@ -130,11 +130,11 @@ monster.loot = {
 	{ name = "demonic essence", chance = 1429 },
 	{ name = "demon horn", chance = 800 },
 	{ id = 12413, chance = 10900 },
-	-- Plate Set: progresion mejorada
-	{ name = "plate armor", chance = 6600 },
-	{ name = "plate legs", chance = 6336 },
-	{ name = "steel helmet", chance = 7062 },
-	{ name = "bonelord shield", chance = 6336 },
+	-- Set inicial por vocacion
+	{ id = 3357, chance = 6600 },
+	{ id = 3557, chance = 6336 },
+	{ id = 3351, chance = 7062 },
+	{ id = 3554, chance = 6336 },
 	-- Knight Set
 	{ name = "knight armor", chance = 2480 },
 	{ name = "knight legs", chance = 2331 },
