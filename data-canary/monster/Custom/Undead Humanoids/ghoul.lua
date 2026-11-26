@@ -94,18 +94,14 @@ monster.loot = {
 	{ name = "strong health potion", chance = 9000 },
 	{ name = "strong mana potion", chance = 8500 },
 	{ name = "mana potion", chance = 9500 },
-	-- Knight Set
-	{ name = "knight armor", chance = 6450 },
-	{ name = "knight legs", chance = 6063 },
+	-- Set 2: Paladin
+	{ id = 3381, chance = 6450 },
+	{ id = 3382, chance = 6063 },
 	{ name = "knight axe", chance = 5031 },
-	{ name = "devil helmet", chance = 4709 },
-	{ name = "tower shield", chance = 4451 },
-	{ id = 3079, chance = 2774 }, -- Boots of Haste
+	{ id = 3385, chance = 4709 },
+	{ id = 3419, chance = 4451 },
+	{ id = 21981, chance = 2774 }, -- Set 2 boots
 	-- Crown Set: raro
-	{ name = "crown armor", chance = 1770 },
-	{ name = "crown legs", chance = 1699 },
-	{ name = "crown helmet", chance = 2124 },
-	{ name = "crown shield", chance = 1593 },
 	{ id = 10386, chance = 1593 }, -- Zaoan Shoes
 	{ id = 3055, chance = 5900 }, -- Platinum Amulet
 	{ name = "platinum coin", chance = 80000, maxCount = 2 },

@@ -98,13 +98,13 @@ monster.loot = {
 	{ name = "iron ore", chance = 16000, maxCount = 3 },
 	{ name = "small stone", chance = 30000, maxCount = 5 },
 	{ id = 12413, chance = 12500 }, -- bolsa de materiales de addon
-	-- Knight Set
-	{ name = "knight armor", chance = 6550 },
-	{ name = "knight legs", chance = 6157 },
+	-- Set 2: Knight
+	{ id = 3397, chance = 6550 },
+	{ id = 3398, chance = 6157 },
 	{ name = "knight axe", chance = 5109 },
-	{ name = "devil helmet", chance = 4781 },
+	{ id = 3396, chance = 4781 },
 	{ name = "tower shield", chance = 4520 },
-	{ id = 3079, chance = 2817 }, -- Boots of Haste
+	{ id = 4033, chance = 2817 }, -- Set 2 boots
 	-- Crown Set
 	{ name = "crown armor", chance = 1820 },
 	{ name = "crown legs", chance = 1747 },

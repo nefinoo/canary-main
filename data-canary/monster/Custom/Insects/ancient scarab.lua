@@ -123,13 +123,13 @@ monster.loot = {
 	{ id = 29420, chance = 5000, unique = true}, -- quinta pieza del set de nivel 1000 (ID solicitado)
 	
 
-	-- Knight Set (sin Plate Set)
-	{ name = "knight armor", chance = 9500 },
-	{ name = "knight legs", chance = 8930 },
+	-- Set 2: Knight
+	{ id = 3397, chance = 9500 },
+	{ id = 3398, chance = 8930 },
 	{ name = "knight axe", chance = 7410 },
-	{ name = "devil helmet", chance = 6935 },
+	{ id = 3396, chance = 6935 },
 	{ name = "tower shield", chance = 6555 },
-	{ id = 3079, chance = 4085 }, -- Boots of Haste
+	{ id = 4033, chance = 4085 }, -- Set 2 boots
 
 	-- Crown Set
 	{ name = "crown armor", chance = 4000 },

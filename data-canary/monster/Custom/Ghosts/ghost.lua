@@ -96,13 +96,13 @@ monster.loot = {
 	{ name = "platinum coin", chance = 75000, maxCount = 2 },
 	{ name = "strong health potion", chance = 8000 },
 	{ name = "strong mana potion", chance = 8000 },
-	-- Knight Set: poco frecuente
-	{ name = "knight armor", chance = 6250 },
-	{ name = "knight legs", chance = 5875 },
+	-- Set 2: Mage
+	{ id = 22085, chance = 6250 },
+	{ id = 22087, chance = 5875 },
 	{ name = "knight axe", chance = 4875 },
-	{ name = "devil helmet", chance = 4563 },
-	{ name = "tower shield", chance = 4313 },
-	{ id = 3079, chance = 2688 }, -- Boots of Haste
+	{ id = 7462, chance = 4563 },
+	{ id = 8073, chance = 4313 },
+	{ id = 3079, chance = 2688 }, -- Set 2 boots
 	-- Crown Set: muy raro
 	{ name = "crown armor", chance = 1650 },
 	{ name = "crown legs", chance = 1584 },
