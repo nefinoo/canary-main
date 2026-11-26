@@ -124,10 +124,10 @@ monster.loot = {
 	{ name = "meat", chance = 45000, maxCount = 3 },
 	{ name = "ham", chance = 35000, maxCount = 2 },
 	{ name = "spider silk", chance = 10000 },
-	{ id = 10385, chance = 850 }, -- zaoan helmet
-	{ id = 3386, chance = 650 }, -- dragon scale mail
-	{ id = 10387, chance = 780 }, -- zaoan legs
-	{ id = 3428, chance = 850 }, -- tower shield
+	{ id = 875, chance = 850 }, -- Set 3: Knight
+	{ id = 21167, chance = 650 }, -- Set 3: Knight
+	{ id = 21168, chance = 780 }, -- Set 3: Knight
+	{ id = 21169, chance = 850 }, -- Set 3: Knight
 }
 
 mType:register(monster)

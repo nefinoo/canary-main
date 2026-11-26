@@ -125,10 +125,11 @@ monster.loot = {
 	{ name = "bread", chance = 25000, maxCount = 2 },
 	{ name = "talon", chance = 3500 },
 	{ name = "luminous orb", chance = 1000 },
-	{ id = 3356, chance = 720 }, -- devil helmet
-	{ id = 8060, chance = 500 }, -- master archer's armor
-	{ id = 8863, chance = 580 }, -- yalahari leg piece
-	{ id = 3428, chance = 660 }, -- tower shield
+	{ id = 10385, chance = 720 }, -- Set 3: Paladin
+	{ id = 10384, chance = 500 }, -- Set 3: Paladin
+	{ id = 10387, chance = 580 }, -- Set 3: Paladin
+	{ id = 14088, chance = 660 }, -- Set 3: Paladin
+	{ id = 10386, chance = 500 }, -- Set 3: Paladin boots
 }
 
 mType:register(monster)

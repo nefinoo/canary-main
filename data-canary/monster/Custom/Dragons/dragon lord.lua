@@ -123,10 +123,11 @@ monster.loot = {
 	{ name = "dragon ham", chance = 60000, maxCount = 2 },
 	{ name = "red dragon leather", chance = 5000 },
 	{ name = "red dragon scale", chance = 5000 },
-	{ id = 8864, chance = 1050 }, -- yalahari mask
-	{ id = 11687, chance = 700 }, -- royal scale robe
-	{ id = 10387, chance = 850 }, -- zaoan legs
-	{ id = 8074, chance = 950 }, -- spellbook of mind control
+	{ id = 3573, chance = 1050 }, -- Set 3: Mage
+	{ id = 3567, chance = 700 }, -- Set 3: Mage
+	{ id = 645, chance = 850 }, -- Set 3: Mage
+	{ id = 8075, chance = 950 }, -- Set 3: Mage
+	{ id = 32619, chance = 700 }, -- Set 3: Mage boots
 }
 
 mType:register(monster)
