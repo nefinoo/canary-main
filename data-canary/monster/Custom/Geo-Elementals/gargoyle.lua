@@ -104,10 +104,10 @@ monster.loot = {
 	{ id = 12413, chance = 16000 }, -- bolsa de addon
 	{ name = "experience scroll", chance = 250 }, -- ID 51670, muy raro
 	-- Plate Set
-	{ name = "plate armor", chance = 12300 },
-	{ name = "plate legs", chance = 11808 },
-	{ name = "steel helmet", chance = 13161 },
-	{ name = "bonelord shield", chance = 11808 },
+	{ id = 3357, chance = 12300 },
+	{ id = 3557, chance = 11808 },
+	{ id = 3351, chance = 13161 },
+	{ id = 3554, chance = 11808 },
 	-- Knight Set
 	{ name = "knight armor", chance = 6800 },
 	{ name = "knight legs", chance = 6392 },

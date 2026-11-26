@@ -113,10 +113,10 @@ monster.loot = {
 	-- Experience Scroll ID 51670 (se mantiene raro por su valor NPC)
 	{ name = "experience scroll", chance = 750 },
 	-- Plate Set
-	{ name = "plate armor", chance = 11500 },
-	{ name = "plate legs", chance = 11040 },
-	{ name = "steel helmet", chance = 12305 },
-	{ name = "bonelord shield", chance = 11040 },
+	{ id = 3404, chance = 11500 },
+	{ id = 3560, chance = 11040 },
+	{ id = 3403, chance = 12305 },
+	{ id = 9017, chance = 11040 },
 	-- Knight Set
 	{ name = "knight armor", chance = 6000 },
 	{ name = "knight legs", chance = 5640 },
