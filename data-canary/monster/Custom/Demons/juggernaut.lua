@@ -126,18 +126,18 @@ monster.loot = {
 	{ id = 3560, chance = 6720 },
 	{ id = 3403, chance = 7490 },
 	{ id = 9017, chance = 6720 },
-	-- Knight Set
-	{ name = "knight armor", chance = 2750 },
-	{ name = "knight legs", chance = 2585 },
+	-- Set 2: Paladin
+	{ id = 3381, chance = 2750 },
+	{ id = 3382, chance = 2585 },
 	{ name = "knight axe", chance = 2145 },
-	{ name = "devil helmet", chance = 2007 },
-	{ name = "tower shield", chance = 1898 },
+	{ id = 3385, chance = 2007 },
+	{ id = 3419, chance = 1898 },
 	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 1200 },
 	{ name = "fire axe", chance = 950 },
 	{ name = "dragonbone staff", chance = 1200 },
 	-- Botas de progresion por set
-	{ id = 3079, chance = 1182 }, -- Boots of Haste: Knight Set
+	{ id = 21981, chance = 1182 }, -- Set 2 boots
 }
 
 mType:register(monster)
