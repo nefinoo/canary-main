@@ -83,10 +83,10 @@ monster.loot = {
 	{ name = "health potion", chance = 22000 },
 	{ name = "mana potion", chance = 22000 },
 	{ name = "ham", chance = 45000, maxCount = 2 },
-	{ name = "steel helmet", chance = 1300 },
-	{ name = "paladin armor", chance = 910 },
+	{ id = 3554, chance = 1300 },
+	{ id = 9017, chance = 910 },
 	{ name = "spellbook of enlightenment", chance = 1110 },
-	{ name = "plate armor", chance = 1040 },
+	{ id = 3357, chance = 1040 },
 	{ id = 3295, chance = 1000 }, -- bright sword
 	{ id = 7456, chance = 1000 }, -- noble axe
 	{ id = 3333, chance = 1000 }, -- crystal mace

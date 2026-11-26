@@ -114,10 +114,10 @@ monster.loot = {
 	{ name = "carrot", chance = 45000, maxCount = 3 },
 	{ name = "minotaur leather", chance = 5000 },
 	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
-	{ name = "focus cape", chance = 900 },
-	{ name = "hat of the mad", chance = 1200 },
+	{ id = 7463, chance = 900 },
+	{ id = 7458, chance = 1200 },
 	{ name = "spellbook of enlightenment", chance = 1020 },
-	{ name = "blue legs", chance = 1080 },
+	{ id = 3550, chance = 1080 },
 	{ id = 3295, chance = 850 }, -- bright sword
 	{ id = 7456, chance = 850 }, -- noble axe
 	{ id = 3333, chance = 850 }, -- crystal mace

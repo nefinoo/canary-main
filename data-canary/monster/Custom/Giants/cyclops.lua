@@ -112,12 +112,12 @@ monster.loot = {
 	{ name = "mana potion", chance = 20000 },
 	{ name = "meat", chance = 50000, maxCount = 3 },
 	{ name = "cyclops toe", chance = 4930 },
-	{ name = "steel helmet", chance = 1500 },
-	{ name = "plate legs", chance = 1430 },
-	{ name = "paladin armor", chance = 1050 },
-	{ name = "focus cape", chance = 1130 },
-	{ name = "blue legs", chance = 1350 },
-	{ name = "plate armor", chance = 1200 },
+	{ id = 3351, chance = 1500 },
+	{ id = 3557, chance = 1430 },
+	{ id = 3404, chance = 1050 },
+	{ id = 7463, chance = 1130 },
+	{ id = 3560, chance = 1350 },
+	{ id = 3357, chance = 1200 },
 	{ id = 3295, chance = 1250 }, -- bright sword
 	{ id = 7456, chance = 1250 }, -- noble axe
 	{ id = 3333, chance = 1250 }, -- crystal mace

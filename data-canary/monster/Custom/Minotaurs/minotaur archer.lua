@@ -113,10 +113,10 @@ monster.loot = {
 	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
 	{ name = "broken crossbow", chance = 15400 },
 	{ name = "piece of archer armor", chance = 15400 },
-	{ name = "paladin armor", chance = 770 },
-	{ name = "blue legs", chance = 990 },
-	{ name = "bonelord shield", chance = 940 },
-	{ name = "hat of the mad", chance = 1100 },
+	{ id = 3404, chance = 770 },
+	{ id = 3560, chance = 990 },
+	{ id = 3428, chance = 940 },
+	{ id = 3403, chance = 1100 },
 	{ id = 3295, chance = 800 }, -- bright sword
 	{ id = 7456, chance = 800 }, -- noble axe
 	{ id = 3333, chance = 800 }, -- crystal mace

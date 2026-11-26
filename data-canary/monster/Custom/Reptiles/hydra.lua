@@ -118,15 +118,15 @@ monster.loot = {
 	{ name = "ham", chance = 55000, maxCount = 3 },
 	{ name = "hydra head", chance = 5000 },
 	{ name = "hydra egg", chance = 800 },
-	{ name = "steel helmet", chance = 3200 },
-	{ name = "hat of the mad", chance = 3200 },
-	{ name = "plate legs", chance = 3000 },
-	{ name = "blue legs", chance = 2900 },
-	{ name = "bonelord shield", chance = 2700 },
+	{ id = 3351, chance = 3200 },
+	{ id = 7458, chance = 3200 },
+	{ id = 3557, chance = 3000 },
+	{ id = 7464, chance = 2900 },
+	{ id = 3428, chance = 2700 },
 	{ name = "spellbook of enlightenment", chance = 2700 },
-	{ name = "plate armor", chance = 2500 },
-	{ name = "focus cape", chance = 2350 },
-	{ name = "paladin armor", chance = 2200 },
+	{ id = 3357, chance = 2500 },
+	{ id = 7463, chance = 2350 },
+	{ id = 3404, chance = 2200 },
 	{ id = 3295, chance = 2600 }, -- bright sword
 	{ id = 7456, chance = 2600 }, -- noble axe
 	{ id = 3333, chance = 2600 }, -- crystal mace

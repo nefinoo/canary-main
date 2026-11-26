@@ -112,10 +112,10 @@ monster.loot = {
 	{ name = "minotaur leather", chance = 5000 },
 	{ name = "minotaur horn", chance = 8330, maxCount = 2 },
 	{ name = "piece of warrior armor", chance = 8330 },
-	{ name = "plate armor", chance = 960 },
-	{ name = "bonelord shield", chance = 1020 },
-	{ name = "plate legs", chance = 1140 },
-	{ name = "blue legs", chance = 1080 },
+	{ id = 3357, chance = 960 },
+	{ id = 3428, chance = 1020 },
+	{ id = 3557, chance = 1140 },
+	{ id = 7464, chance = 1080 },
 	{ name = "spellbook of enlightenment", chance = 1020 },
 	{ id = 3295, chance = 850 }, -- bright sword
 	{ id = 7456, chance = 850 }, -- noble axe

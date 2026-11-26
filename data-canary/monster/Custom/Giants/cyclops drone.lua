@@ -111,10 +111,10 @@ monster.loot = {
 	{ name = "mana potion", chance = 22000 },
 	{ name = "ham", chance = 55000, maxCount = 3 },
 	{ name = "cyclops toe", chance = 6750 },
-	{ name = "plate armor", chance = 1280 },
-	{ name = "bonelord shield", chance = 1360 },
-	{ name = "blue legs", chance = 1440 },
-	{ name = "hat of the mad", chance = 1600 },
+	{ id = 3554, chance = 1280 },
+	{ id = 3428, chance = 1360 },
+	{ id = 7464, chance = 1440 },
+	{ id = 3403, chance = 1600 },
 	{ name = "spellbook of enlightenment", chance = 1360 },
 	{ id = 3295, chance = 1450 }, -- bright sword
 	{ id = 7456, chance = 1450 }, -- noble axe
