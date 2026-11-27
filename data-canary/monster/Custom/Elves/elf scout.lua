@@ -14,12 +14,12 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 6300
-monster.maxHealth = 6300
+monster.health = 7300
+monster.maxHealth = 7300
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6012
-monster.speed = 280
+monster.speed = 275
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -39,7 +39,7 @@ monster.flags = {
 	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
-	targetDistance = 1,
+	targetDistance = 3,
 	healthHidden = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
@@ -83,51 +83,58 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -115, maxDamage = -245 },
-	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -155, maxDamage = -310, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA },
-	{ name = "combat", interval = 6000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -145, maxDamage = -300, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -90, maxDamage = -210 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -165, maxDamage = -355, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 6000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -175, maxDamage = -375, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 16,
-	{ name = "speed", interval = 4000, chance = 20, speed = {min = 250, max = 250}, duration = 7000, effect = CONST_ME_MAGIC_RED }
+	defense = 22,
+	armor = 18,
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 100, max = 100}, duration = 5000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	-- Moneda: una sola tirada para evitar duplicacion de platinum coins
-	{ name = "platinum coin", chance = 80000, maxCount = 3 },
+	-- Oro y consumibles: zona nivel 300+
+	{ name = "platinum coin", chance = 90000, maxCount = 5 },
 	{ name = "ham", chance = 35000, maxCount = 3 },
 	{ name = "health potion", chance = 12000 },
 	{ name = "mana potion", chance = 12000 },
-	{ name = "strong health potion", chance = 6500 },
-	{ name = "strong mana potion", chance = 6500 },
+	{ name = "strong health potion", chance = 9500 },
+	{ name = "strong mana potion", chance = 9500 },
+	{ name = "great health potion", chance = 4500 },
+	{ name = "great mana potion", chance = 4500 },
+	{ name = "great spirit potion", chance = 2500 },
 	-- Gemas y materiales de addon originales
 	{ name = "green gem", chance = 2500 },
 	{ id = 5921, chance = 1200 }, -- heaven blossom
-	{ id = 12413, chance = 12000 }, -- bag de addon
-	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
-	{ name = "experience scroll", chance = 105 },
-	-- Plate Set
-	{ id = 3404, chance = 9055 },
-	{ id = 3560, chance = 8693 },
-	{ id = 3403, chance = 9689 },
-	{ id = 9017, chance = 8693 },
-	-- Set 2: Paladin
-	{ id = 3381, chance = 4203 },
-	{ id = 3382, chance = 3951 },
+	{ id = 12413, chance = 17500 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, venta a NPC: 50000 gp)
+	{ name = "experience scroll", chance = 210 },
+	-- Set 1: Paladin (nivel 30)
+	{ id = 3403, chance = 9510 },
+	{ id = 3404, chance = 8000 },
+	{ id = 3560, chance = 9050 },
+	{ id = 9017, chance = 9860 },
+	{ id = 3428, chance = 8240 },
+	-- Set 2: Paladin (nivel 50)
+	{ id = 3385, chance = 4870 },
+	{ id = 3381, chance = 3650 },
+	{ id = 3382, chance = 4230 },
+	{ id = 21981, chance = 5220 },
+	{ id = 3419, chance = 4000 },
+	-- Set 3: Paladin (nivel 100)
+	{ id = 10385, chance = 2550 },
+	{ id = 10384, chance = 1740 },
+	{ id = 10387, chance = 2090 },
+	{ id = 10386, chance = 2780 },
+	{ id = 14088, chance = 2090 },
+	-- Amuleto y armas anteriores (sin recompensas de quest)
+	{ id = 3055, chance = 3403 }, -- Platinum Amulet
 	{ name = "knight axe", chance = 3278 },
-	{ id = 3385, chance = 3068 },
-	{ id = 3419, chance = 2900 },
-	-- Crown Set: recompensa rara de la zona
-	{ id = 3055, chance = 3403 }, -- Platinum Amulet (Crown Set)
-	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 900 },
 	{ name = "fire axe", chance = 1100 },
 	{ name = "dragonbone staff", chance = 850 },
-	-- Botas de progresion por set
-	{ id = 21981, chance = 1807 }, -- Set 2 boots
-	{ id = 10386, chance = 522 }, -- Zaoan Shoes: Crown Set
 }
 
 

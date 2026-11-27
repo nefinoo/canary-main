@@ -14,12 +14,12 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 6200
-monster.maxHealth = 6200
+monster.health = 7000
+monster.maxHealth = 7000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6003
-monster.speed = 280
+monster.speed = 285
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -83,55 +83,58 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -145, maxDamage = -290 },
-	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -110, maxDamage = -300, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW },
-	{ name = "Berserk", interval = 6000, chance = 20, minDamage = -165, maxDamage = -330, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -170, maxDamage = -330 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -145, maxDamage = -345, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW },
+	{ name = "combat", interval = 6000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -360, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
 }
 
 monster.defenses = {
 	defense = 27,
 	armor = 21,
-	{ name = "speed", interval = 4000, chance = 20, speed = {min = 250, max = 250}, duration = 7000, effect = CONST_ME_MAGIC_RED }
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 100, max = 100}, duration = 5000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	-- Moneda: una sola tirada para evitar duplicacion de platinum coins
-	{ name = "platinum coin", chance = 80000, maxCount = 3 },
+	-- Oro y consumibles: zona nivel 300+
+	{ name = "platinum coin", chance = 90000, maxCount = 5 },
 	{ name = "ham", chance = 35000, maxCount = 3 },
 	{ name = "health potion", chance = 12000 },
 	{ name = "mana potion", chance = 12000 },
-	{ name = "strong health potion", chance = 6500 },
-	{ name = "strong mana potion", chance = 6500 },
+	{ name = "strong health potion", chance = 9500 },
+	{ name = "strong mana potion", chance = 9500 },
+	{ name = "great health potion", chance = 4500 },
+	{ name = "great mana potion", chance = 4500 },
+	{ name = "great spirit potion", chance = 2500 },
 	-- Gemas y materiales de addon originales
 	{ id = 3039, chance = 2500 }, -- red gem
 	{ id = 5921, chance = 1000 }, -- heaven blossom
-	{ id = 12413, chance = 12000 }, -- bag de addon
-	-- Scroll de experiencia muy raro (ID 51670, compra NPC: 50000 gp)
-	{ name = "experience scroll", chance = 90 },
-	-- Plate Set
-	{ id = 3357, chance = 8900 },
-	{ id = 3557, chance = 8544 },
-	{ id = 3351, chance = 9523 },
-	{ id = 3554, chance = 8544 },
-	-- Set 2: Knight
-	{ id = 3397, chance = 4100 },
-	{ id = 3398, chance = 3854 },
+	{ id = 12413, chance = 16500 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, venta a NPC: 50000 gp)
+	{ name = "experience scroll", chance = 190 },
+	-- Set 1: Knight (nivel 30)
+	{ id = 3351, chance = 8860 },
+	{ id = 3357, chance = 7450 },
+	{ id = 3557, chance = 8420 },
+	{ id = 3554, chance = 9180 },
+	{ id = 3428, chance = 7670 },
+	-- Set 2: Knight (nivel 50)
+	{ id = 3396, chance = 4540 },
+	{ id = 3397, chance = 3400 },
+	{ id = 3398, chance = 3940 },
+	{ id = 4033, chance = 4860 },
+	{ id = 3419, chance = 3730 },
+	-- Set 3: Knight (nivel 100)
+	{ id = 875, chance = 2380 },
+	{ id = 21167, chance = 1620 },
+	{ id = 21168, chance = 1940 },
+	{ id = 21169, chance = 2590 },
+	{ id = 14088, chance = 1940 },
+	-- Amuleto y armas anteriores (sin recompensas de quest)
+	{ id = 3055, chance = 3300 }, -- Platinum Amulet
 	{ name = "knight axe", chance = 3198 },
-	{ id = 3396, chance = 2993 },
-	{ name = "tower shield", chance = 2829 },
-	-- Crown Set: recompensa rara de la zona
-	{ name = "crown armor", chance = 550 },
-	{ name = "crown legs", chance = 528 },
-	{ name = "crown helmet", chance = 660 },
-	{ name = "crown shield", chance = 495 },
-	{ id = 3055, chance = 3300 }, -- Platinum Amulet (Crown Set)
-	-- Fire Sword, Fire Axe y Dragonbone Staff: armas raras
 	{ name = "fire sword", chance = 850 },
 	{ name = "fire axe", chance = 1000 },
 	{ name = "dragonbone staff", chance = 800 },
-	-- Botas de progresion por set
-	{ id = 4033, chance = 1763 }, -- Set 2 boots
-	{ id = 10386, chance = 495 }, -- Zaoan Shoes: Crown Set
 }
 
 monster.raceId = 62
