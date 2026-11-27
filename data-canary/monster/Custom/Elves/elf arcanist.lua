@@ -131,7 +131,6 @@ monster.loot = {
 	{ id = 645, chance = 2250 },
 	{ id = 32619, chance = 3000 },
 	{ id = 8075, chance = 2250 },
-	{ id = 3055, chance = 3500 }, -- Platinum Amulet
 	-- Armas nivel 30
 	{ id = 3065, chance = 5400 }, -- terra rod
 	{ id = 3073, chance = 5400 }, -- wand of cosmic energy

@@ -139,7 +139,6 @@ monster.loot = {
 	{ id = 10387, chance = 1350 },
 	{ id = 10386, chance = 1780 },
 	{ id = 14088, chance = 1350 },
-	{ id = 3055, chance = 2550 }, -- Platinum Amulet
 	-- Armas nivel 30
 	{ id = 3347, chance = 4600 }, -- hunting spear
 	-- Armas nivel 50

@@ -129,7 +129,6 @@ monster.loot = {
 	{ id = 21168, chance = 1940 },
 	{ id = 21169, chance = 2590 },
 	{ id = 14088, chance = 1940 },
-	{ id = 3055, chance = 3300 }, -- Platinum Amulet
 	-- Armas nivel 30
 	{ id = 3280, chance = 5000 }, -- fire sword
 	{ id = 3318, chance = 5000 }, -- knight axe
