@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "juggernaut"
 monster.description = "a juggernaut"
-monster.experience = 625000
+monster.experience = 1650000
 monster.outfit = {
 	lookType = 244,
 	lookHead = 0,
@@ -30,12 +30,12 @@ monster.Bestiary = {
 }
 
 
-monster.health = 2650
-monster.maxHealth = 2650
+monster.health = 4800
+monster.maxHealth = 4800
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6336
-monster.speed = 280
+monster.speed = 270
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -84,43 +84,46 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 10},
-	{type = COMBAT_ENERGYDAMAGE, percent = -20},
-	{type = COMBAT_EARTHDAMAGE, percent = 30},
-	{type = COMBAT_FIREDAMAGE, percent = 30},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 5},
+	{type = COMBAT_ENERGYDAMAGE, percent = -10},
+	{type = COMBAT_EARTHDAMAGE, percent = 10},
+	{type = COMBAT_FIREDAMAGE, percent = 10},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 30},
-	{type = COMBAT_HOLYDAMAGE , percent = -15},
+	{type = COMBAT_ICEDAMAGE, percent = 10},
+	{type = COMBAT_HOLYDAMAGE , percent = -10},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -42, maxDamage = -135},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -25, maxDamage = -115, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -90, maxDamage = -230},
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -150, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
-	defense = 15,
-	armor = 20,
-	{ name = "speed", interval = 1000, chance = 12, speed = { min = 480, max = 480 }, duration = 4000, effect = CONST_ME_MAGIC_RED },
+	defense = 22,
+	armor = 19,
+	{ name = "speed", interval = 4000, chance = 20, speed = { min = 100, max = 100 }, duration = 5000, effect = CONST_ME_MAGIC_RED },
 }
 
 monster.loot = {
-	{ name = "experience scroll", chance = 65 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Oro y consumibles nivel 69
-	{ name = "gold coin", chance = 90000, maxCount = 95 },
+	{ name = "experience scroll", chance = 78 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Oro y consumibles: transicion nivel 100-200
+	{ name = "gold coin", chance = 90000, maxCount = 155 },
 	{ name = "meat", chance = 45000, maxCount = 3 },
 	{ name = "health potion", chance = 10000 },
 	{ name = "mana potion", chance = 11000 },
-	{ name = "strong health potion", chance = 4500 },
-	{ name = "strong mana potion", chance = 5000 },
+	{ name = "strong health potion", chance = 6000 },
+	{ name = "strong mana potion", chance = 6000 },
+	{ name = "great health potion", chance = 2000 },
+	{ name = "great mana potion", chance = 2000 },
+	{ name = "great spirit potion", chance = 1000 },
 	-- Materiales de addon originales
 	{ name = "dirty fur", chance = 10000 },
 	{ name = "demonic essence", chance = 1429 },
 	{ name = "soul orb", chance = 1333 },
-	{ id = 12413, chance = 11500 },
+	{ id = 12413, chance = 12500 },
 	-- Set inicial por vocacion
 	{ id = 3404, chance = 7000 },
 	{ id = 3560, chance = 6720 },
@@ -133,6 +136,13 @@ monster.loot = {
 	{ id = 3419, chance = 1898 },
 	-- Botas de progresion por set
 	{ id = 21981, chance = 1182 }, -- Set 2 boots
+	-- Escudos de progresion y Set 3: nivel 100
+	{ id = 3428, chance = 7000 },
+	{ id = 10385, chance = 1150 },
+	{ id = 10384, chance = 850 },
+	{ id = 10387, chance = 1000 },
+	{ id = 10386, chance = 1250 },
+	{ id = 14088, chance = 1000 },
 	-- Armas nivel 30
 	{ id = 3347, chance = 4200 }, -- hunting spear
 	-- Armas nivel 50

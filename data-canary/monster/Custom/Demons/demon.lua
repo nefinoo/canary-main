@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "demon"
 monster.description = "a demon"
-monster.experience = 525000
+monster.experience = 1400000
 monster.outfit = {
 	lookType = 35,
 	lookHead = 0,
@@ -28,12 +28,12 @@ monster.Bestiary = {
 }
 
 
-monster.health = 1800
-monster.maxHealth = 1800
+monster.health = 4500
+monster.maxHealth = 4500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5995
-monster.speed = 280
+monster.speed = 260
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -52,7 +52,7 @@ monster.flags = {
 	pushable = false,
 	canPushItems = true,
 	canPushCreatures = true,
-	staticAttackChance = 40,
+	staticAttackChance = 90,
 	targetDistance = 1,
 	healthHidden = false,
 	canWalkOnEnergy = false,
@@ -97,39 +97,42 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -32, maxDamage = -95},
-	{name ="combat", interval = 3000, chance = 8, type = COMBAT_MANADRAIN, minDamage = -5, maxDamage = -40, range = 7, radius = 1, target = true},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -30, maxDamage = -100, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 10, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 3000, chance = 18, type = COMBAT_ENERGYDAMAGE, minDamage = -30, maxDamage = -105, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -175},
+	{name ="combat", interval = 3000, chance = 8, type = COMBAT_MANADRAIN, minDamage = -10, maxDamage = -50, range = 7, radius = 1, target = true},
+	{name ="combat", interval = 2000, chance = 18, type = COMBAT_FIREDAMAGE, minDamage = -60, maxDamage = -150, range = 7, radius = 7, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="firefield", interval = 3000, chance = 5, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -60, maxDamage = -160, length = 8, spread = 0, effect = CONST_ME_ENERGYHIT}
 }
 
 monster.defenses = {
-	defense = 38,
-	armor = 32,
+	defense = 20,
+	armor = 18,
 	{ name = "combat", interval = 4000, chance = 8, type = COMBAT_HEALING, minDamage = 20, maxDamage = 45, effect = CONST_ME_MAGIC_BLUE },
-	{ name = "speed", interval = 1000, chance = 10, speed = { min = 200, max = 200 }, duration = 12000, effect = CONST_ME_MAGIC_RED },
+	{ name = "speed", interval = 4000, chance = 20, speed = { min = 100, max = 100 }, duration = 5000, effect = CONST_ME_MAGIC_RED },
 }
 
-monster.maxSummons = 2
+monster.maxSummons = 1
 monster.summons = {
-	{name = "fire elemental", chance = 10, interval = 1000, max = 2}
+	{name = "fire elemental", chance = 15, interval = 5000, max = 1}
 }
 
 monster.loot = {
-	{ name = "experience scroll", chance = 55 }, -- Bronze ID 51670; venta a Nephy 50000 gp
-	-- Oro y consumibles nivel 69
-	{ name = "gold coin", chance = 90000, maxCount = 85 },
+	{ name = "experience scroll", chance = 70 }, -- Bronze ID 51670; venta a Nephy 50000 gp
+	-- Oro y consumibles: transicion nivel 100-200
+	{ name = "gold coin", chance = 90000, maxCount = 130 },
 	{ name = "fire mushroom", chance = 35000, maxCount = 3 },
 	{ name = "health potion", chance = 10000 },
 	{ name = "mana potion", chance = 11000 },
-	{ name = "strong health potion", chance = 4500 },
-	{ name = "strong mana potion", chance = 5000 },
+	{ name = "strong health potion", chance = 6000 },
+	{ name = "strong mana potion", chance = 6000 },
+	{ name = "great health potion", chance = 2000 },
+	{ name = "great mana potion", chance = 2000 },
+	{ name = "great spirit potion", chance = 1000 },
 	-- Materiales de addon originales
 	{ name = "talon", chance = 4000, maxCount = 4 },
 	{ name = "demonic essence", chance = 1429 },
 	{ name = "demon horn", chance = 800 },
-	{ id = 12413, chance = 10900 },
+	{ id = 12413, chance = 12000 },
 	-- Set inicial por vocacion
 	{ id = 3357, chance = 6600 },
 	{ id = 3557, chance = 6336 },
@@ -139,9 +142,16 @@ monster.loot = {
 	{ id = 3397, chance = 2480 },
 	{ id = 3398, chance = 2331 },
 	{ id = 3396, chance = 1810 },
-	{ name = "tower shield", chance = 1711 },
 	-- Botas de progresion por set
 	{ id = 4033, chance = 1066 }, -- Set 2 boots
+	-- Escudos de progresion y Set 3: nivel 100
+	{ id = 3428, chance = 6500 },
+	{ id = 3419, chance = 2000 },
+	{ id = 875, chance = 1050 },
+	{ id = 21167, chance = 750 },
+	{ id = 21168, chance = 900 },
+	{ id = 21169, chance = 1150 },
+	{ id = 14088, chance = 900 },
 	-- Armas nivel 30
 	{ id = 3280, chance = 4000 }, -- fire sword
 	{ id = 3318, chance = 4000 }, -- knight axe
