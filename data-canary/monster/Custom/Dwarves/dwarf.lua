@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed warrior"
 monster.description = "an outlawed warrior"
-monster.experience = 1750000
+monster.experience = 2000000
 monster.outfit = {
 	lookType = 69,
 	lookHead = 20,
@@ -28,12 +28,12 @@ monster.Bestiary = {
 		Island of Destiny (Knights area), Beregar.",
 }
 
-monster.health = 4600
-monster.maxHealth = 4600
+monster.health = 5200
+monster.maxHealth = 5200
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6007
-monster.speed = 350
+monster.speed = 280
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -93,23 +93,26 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -195 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -110, maxDamage = -250 },
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 8,
-	{name ="speed", interval = 2000, chance = 20, speed = {min = 350, max = 350}, duration = 10000, effect = CONST_ME_MAGIC_RED}
+	defense = 12,
+	armor = 10,
+	{name ="speed", interval = 2000, chance = 20, speed = {min = 100, max = 100}, duration = 5000, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.loot = {
-	-- Oro, comida y pociones para el nivel 106
-	{ name = "gold coin", chance = 90000, maxCount = 105 },
+	-- Oro, comida y pociones para nivel 200+
+	{ name = "gold coin", chance = 90000, maxCount = 180 },
 	{ name = "meat", chance = 42000, maxCount = 3 },
 	{ name = "health potion", chance = 11000 },
 	{ name = "mana potion", chance = 11000 },
-	{ name = "strong health potion", chance = 5000 },
-	{ name = "strong mana potion", chance = 5000 },
+	{ name = "strong health potion", chance = 7500 },
+	{ name = "strong mana potion", chance = 7500 },
+	{ name = "great health potion", chance = 3000 },
+	{ name = "great mana potion", chance = 3000 },
+	{ name = "great spirit potion", chance = 1500 },
 	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
 	{ name = "iron ore", chance = 3000 },
 	{ name = "experience scroll", chance = 80 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
@@ -117,29 +120,30 @@ monster.loot = {
 	-- Gemas originales de la zona
 	{ name = "small diamond", chance = 6000, maxCount = 2 },
 	{ name = "yellow gem", chance = 300 },
-	-- Equipo progresivo
-	{ id = 3357, chance = 7900 },
-	{ id = 3557, chance = 7584 },
-	{ id = 3351, chance = 8453 },
-	{ id = 3554, chance = 7584 },
-	{ id = 3397, chance = 3450 },
-	{ id = 3398, chance = 3243 },
+	-- Set 1: Knight (nivel 30)
+	{ id = 3351, chance = 7600 },
+	{ id = 3357, chance = 6400 },
+	{ id = 3557, chance = 7300 },
+	{ id = 3554, chance = 7900 },
+	{ id = 3428, chance = 6600 },
+	-- Set 2: Knight (nivel 50)
+	{ id = 3396, chance = 3500 },
+	{ id = 3397, chance = 2650 },
+	{ id = 3398, chance = 3050 },
+	{ id = 4033, chance = 3800 },
+	{ id = 3419, chance = 2900 },
+	-- Set 3: Knight (nivel 100)
+	{ id = 875, chance = 1500 },
+	{ id = 21167, chance = 1050 },
+	{ id = 21168, chance = 1250 },
+	{ id = 21169, chance = 1650 },
+	{ id = 14088, chance = 1250 },
+	-- Amuleto y armas anteriores (no son recompensas de quest)
+	{ id = 3055, chance = 2400 }, -- Platinum Amulet
 	{ name = "knight axe", chance = 2691 },
-	{ id = 3396, chance = 2519 },
-	{ name = "tower shield", chance = 2381 },
-	-- Crown Set: raro
-	{ name = "crown armor", chance = 300 },
-	{ name = "crown legs", chance = 288 },
-	{ name = "crown helmet", chance = 360 },
-	{ name = "crown shield", chance = 270 },
-	{ id = 3055, chance = 2400 }, -- Platinum Amulet (Crown Set)
-	-- Armas raras
 	{ name = "fire sword", chance = 1400 },
 	{ name = "fire axe", chance = 1200 },
 	{ name = "dragonbone staff", chance = 1300 },
-	-- Botas de progresion por set
-	{ id = 4033, chance = 1484 }, -- Set 2 boots
-	{ id = 10386, chance = 270 }, -- Zaoan Shoes: Crown Set
 }
 
 mType:register(monster)
