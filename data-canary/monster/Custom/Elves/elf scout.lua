@@ -129,12 +129,13 @@ monster.loot = {
 	{ id = 10387, chance = 2090 },
 	{ id = 10386, chance = 2780 },
 	{ id = 14088, chance = 2090 },
-	-- Amuleto y armas anteriores (sin recompensas de quest)
 	{ id = 3055, chance = 3403 }, -- Platinum Amulet
-	{ name = "knight axe", chance = 3278 },
-	{ name = "fire sword", chance = 900 },
-	{ name = "fire axe", chance = 1100 },
-	{ name = "dragonbone staff", chance = 850 },
+	-- Armas nivel 30
+	{ id = 3347, chance = 5200 }, -- hunting spear
+	-- Armas nivel 50
+	{ id = 7378, chance = 4200 }, -- royal spear
+	-- Armas nivel 100: drop muy raro
+	{ id = 3287, chance = 120 }, -- throwing star
 }
 
 

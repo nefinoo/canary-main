@@ -129,12 +129,19 @@ monster.loot = {
 	{ id = 21168, chance = 1940 },
 	{ id = 21169, chance = 2590 },
 	{ id = 14088, chance = 1940 },
-	-- Amuleto y armas anteriores (sin recompensas de quest)
 	{ id = 3055, chance = 3300 }, -- Platinum Amulet
-	{ name = "knight axe", chance = 3198 },
-	{ name = "fire sword", chance = 850 },
-	{ name = "fire axe", chance = 1000 },
-	{ name = "dragonbone staff", chance = 800 },
+	-- Armas nivel 30
+	{ id = 3280, chance = 5000 }, -- fire sword
+	{ id = 3318, chance = 5000 }, -- knight axe
+	{ id = 3324, chance = 5000 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 4000 }, -- bright sword
+	{ id = 7456, chance = 4000 }, -- noble axe
+	{ id = 3333, chance = 4000 }, -- crystal mace
+	-- Armas nivel 100: drop muy raro
+	{ id = 3288, chance = 100 }, -- magic sword
+	{ id = 3319, chance = 100 }, -- stonecutter axe
+	{ id = 3309, chance = 100 }, -- thunder hammer
 }
 
 monster.raceId = 62

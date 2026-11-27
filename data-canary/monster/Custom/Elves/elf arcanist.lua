@@ -131,12 +131,15 @@ monster.loot = {
 	{ id = 645, chance = 2250 },
 	{ id = 32619, chance = 3000 },
 	{ id = 8075, chance = 2250 },
-	-- Amuleto y armas anteriores (sin recompensas de quest)
 	{ id = 3055, chance = 3500 }, -- Platinum Amulet
-	{ name = "knight axe", chance = 3354 },
-	{ name = "fire sword", chance = 1200 },
-	{ name = "fire axe", chance = 1300 },
-	{ name = "dragonbone staff", chance = 1100 },
+	-- Armas nivel 30
+	{ id = 3065, chance = 5400 }, -- terra rod
+	{ id = 3073, chance = 5400 }, -- wand of cosmic energy
+	-- Armas nivel 50
+	{ id = 3067, chance = 4400 }, -- hailstorm rod
+	{ id = 3071, chance = 4400 }, -- wand of inferno
+	-- Armas nivel 100: drop muy raro
+	{ id = 3341, chance = 140 }, -- arcane staff
 }
 
 monster.raceId = 63
