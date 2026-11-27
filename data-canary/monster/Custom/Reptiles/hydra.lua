@@ -133,6 +133,13 @@ monster.loot = {
 	{ id = 7378, chance = 2600 }, -- royal spear
 	{ id = 3067, chance = 2600 }, -- hailstorm rod
 	{ id = 3071, chance = 2600 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 3640 }, -- fire sword
+	{ id = 3318, chance = 3640 }, -- knight axe
+	{ id = 3324, chance = 3640 }, -- skull staff
+	{ id = 3347, chance = 3640 }, -- hunting spear
+	{ id = 3065, chance = 3640 }, -- terra rod
+	{ id = 3073, chance = 3640 }, -- wand of cosmic energy
 }
 
 mType:register(monster)

@@ -93,6 +93,13 @@ monster.loot = {
 	{ id = 7378, chance = 1000 }, -- royal spear
 	{ id = 3067, chance = 1000 }, -- hailstorm rod
 	{ id = 3071, chance = 1000 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 1400 }, -- fire sword
+	{ id = 3318, chance = 1400 }, -- knight axe
+	{ id = 3324, chance = 1400 }, -- skull staff
+	{ id = 3347, chance = 1400 }, -- hunting spear
+	{ id = 3065, chance = 1400 }, -- terra rod
+	{ id = 3073, chance = 1400 }, -- wand of cosmic energy
 }
 
 monster.defenses = {
