@@ -139,12 +139,15 @@ monster.loot = {
 	{ id = 21168, chance = 1540 },
 	{ id = 21169, chance = 2030 },
 	{ id = 14088, chance = 1540 },
-	-- Amuleto y armas anteriores (no son recompensas de quest)
 	{ id = 3055, chance = 2700 }, -- Platinum Amulet
-	{ name = "knight axe", chance = 2886 },
-	{ name = "fire sword", chance = 1900 },
-	{ name = "fire axe", chance = 1600 },
-	{ name = "dragonbone staff", chance = 1600 },
+	-- Armas nivel 30
+	{ id = 3280, chance = 4800 }, -- fire sword
+	{ id = 3318, chance = 4800 }, -- knight axe
+	{ id = 3324, chance = 4800 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 3800 }, -- bright sword
+	{ id = 7456, chance = 3800 }, -- noble axe
+	{ id = 3333, chance = 3800 }, -- crystal mace
 }
 
 mType:register(monster)

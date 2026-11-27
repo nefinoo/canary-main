@@ -130,6 +130,10 @@ monster.loot = {
 	{ id = 10387, chance = 580 }, -- Set 3: Paladin
 	{ id = 14088, chance = 660 }, -- Set 3: Paladin
 	{ id = 10386, chance = 500 }, -- Set 3: Paladin boots
+	-- Armas nivel 30
+	{ id = 3347, chance = 3900 }, -- hunting spear
+	-- Armas nivel 50
+	{ id = 7378, chance = 2900 }, -- royal spear
 }
 
 mType:register(monster)

@@ -128,6 +128,12 @@ monster.loot = {
 	{ id = 645, chance = 580 }, -- Set 3: Mage
 	{ id = 8075, chance = 650 }, -- Set 3: Mage
 	{ id = 32619, chance = 480 }, -- Set 3: Mage boots
+	-- Armas nivel 30
+	{ id = 3065, chance = 3800 }, -- terra rod
+	{ id = 3073, chance = 3800 }, -- wand of cosmic energy
+	-- Armas nivel 50
+	{ id = 3067, chance = 2800 }, -- hailstorm rod
+	{ id = 3071, chance = 2800 }, -- wand of inferno
 }
 
 mType:register(monster)

@@ -128,6 +128,14 @@ monster.loot = {
 	{ id = 21167, chance = 650 }, -- Set 3: Knight
 	{ id = 21168, chance = 780 }, -- Set 3: Knight
 	{ id = 21169, chance = 850 }, -- Set 3: Knight
+	-- Armas nivel 30
+	{ id = 3280, chance = 3800 }, -- fire sword
+	{ id = 3318, chance = 3800 }, -- knight axe
+	{ id = 3324, chance = 3800 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 2800 }, -- bright sword
+	{ id = 7456, chance = 2800 }, -- noble axe
+	{ id = 3333, chance = 2800 }, -- crystal mace
 }
 
 mType:register(monster)

@@ -123,15 +123,16 @@ monster.loot = {
 	-- Set 2: Mage
 	{ id = 22085, chance = 2550 },
 	{ id = 22087, chance = 2397 },
-	{ name = "knight axe", chance = 1989 },
 	{ id = 7462, chance = 1862 },
 	{ id = 8073, chance = 1759 },
-	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
-	{ name = "fire sword", chance = 1500 },
-	{ name = "fire axe", chance = 1300 },
-	{ name = "dragonbone staff", chance = 1500 },
 	-- Botas de progresion por set
 	{ id = 3079, chance = 1096 }, -- Set 2 boots
+	-- Armas nivel 30
+	{ id = 3065, chance = 4100 }, -- terra rod
+	{ id = 3073, chance = 4100 }, -- wand of cosmic energy
+	-- Armas nivel 50
+	{ id = 3067, chance = 3100 }, -- hailstorm rod
+	{ id = 3071, chance = 3100 }, -- wand of inferno
 }
 
 mType:register(monster)

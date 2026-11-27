@@ -138,15 +138,18 @@ monster.loot = {
 	-- Set 2: Knight
 	{ id = 3397, chance = 2480 },
 	{ id = 3398, chance = 2331 },
-	{ name = "knight axe", chance = 1934 },
 	{ id = 3396, chance = 1810 },
 	{ name = "tower shield", chance = 1711 },
-	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
-	{ name = "fire sword", chance = 1000 },
-	{ name = "fire axe", chance = 850 },
-	{ name = "dragonbone staff", chance = 1000 },
 	-- Botas de progresion por set
 	{ id = 4033, chance = 1066 }, -- Set 2 boots
+	-- Armas nivel 30
+	{ id = 3280, chance = 4000 }, -- fire sword
+	{ id = 3318, chance = 4000 }, -- knight axe
+	{ id = 3324, chance = 4000 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 3000 }, -- bright sword
+	{ id = 7456, chance = 3000 }, -- noble axe
+	{ id = 3333, chance = 3000 }, -- crystal mace
 }
 
 mType:register(monster)

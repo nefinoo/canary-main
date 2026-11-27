@@ -143,12 +143,13 @@ monster.loot = {
 	{ id = 645, chance = 1420 },
 	{ id = 32619, chance = 1880 },
 	{ id = 8075, chance = 1420 },
-	-- Amuleto y armas anteriores (no son recompensas de quest)
 	{ id = 3055, chance = 2850 }, -- Platinum Amulet
-	{ name = "knight axe", chance = 3003 },
-	{ name = "fire sword", chance = 1300 },
-	{ name = "fire axe", chance = 1000 },
-	{ name = "dragonbone staff", chance = 1900 },
+	-- Armas nivel 30
+	{ id = 3065, chance = 4700 }, -- terra rod
+	{ id = 3073, chance = 4700 }, -- wand of cosmic energy
+	-- Armas nivel 50
+	{ id = 3067, chance = 3700 }, -- hailstorm rod
+	{ id = 3071, chance = 3700 }, -- wand of inferno
 }
 
 mType:register(monster)

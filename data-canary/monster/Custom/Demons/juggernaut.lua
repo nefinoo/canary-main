@@ -129,15 +129,14 @@ monster.loot = {
 	-- Set 2: Paladin
 	{ id = 3381, chance = 2750 },
 	{ id = 3382, chance = 2585 },
-	{ name = "knight axe", chance = 2145 },
 	{ id = 3385, chance = 2007 },
 	{ id = 3419, chance = 1898 },
-	-- Fire Sword / Fire Axe / Dragonbone Staff: armas raras
-	{ name = "fire sword", chance = 1200 },
-	{ name = "fire axe", chance = 950 },
-	{ name = "dragonbone staff", chance = 1200 },
 	-- Botas de progresion por set
 	{ id = 21981, chance = 1182 }, -- Set 2 boots
+	-- Armas nivel 30
+	{ id = 3347, chance = 4200 }, -- hunting spear
+	-- Armas nivel 50
+	{ id = 7378, chance = 3200 }, -- royal spear
 }
 
 mType:register(monster)
