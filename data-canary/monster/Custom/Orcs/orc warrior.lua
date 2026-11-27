@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warrior"
 monster.description = "a orc warrior"
-monster.experience = 160
+monster.experience = 3200
 monster.outfit = {
 	lookType = 7,
 	lookHead = 20,
@@ -14,12 +14,28 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 125
-monster.maxHealth = 125
-monster.runHealth = 10
+monster.raceId = 7
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple in Thais, Orc Fort, below Point of No Return in Outlaw Camp and inside a \z
+		mountain north of it, Orc Peninsula, Folda, Edron Orc cave, Maze of Lost Souls, Elvenbane Castle, \z
+		Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 105
+monster.maxHealth = 105
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5979
-monster.speed = 190
+monster.speed = 80
 monster.summonCost = 360
 
 monster.changeTarget = {
@@ -81,31 +97,27 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -30}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -6, maxDamage = -28 },
 }
 
 monster.defenses = {
-	defense = 14,
-	armor = 8
+	defense = 5,
+	armor = 3
 }
 
 monster.loot = {
-	{id = 2853, chance = 100000, child = {
-			{id = 2875, chance = 20000},
-			{name = "sabre", chance = 6666},
-			{name = "machete", chance = 5000},
-			{name = "studded club", chance = 5000},
-			{name = "chain armor", chance = 5000}
-		}
-	},
-	{name = "gold coin", chance = 100000, maxCount = 12},
-	{name = "wooden shield", chance = 10000},
-	{name = "copper shield", chance = 4000},
-	{name = "meat", chance = 40000, maxCount = 2},
-	{name = "worm", chance = 50000, maxCount = 10}
+	{ name = "gold coin", chance = 100000, maxCount = 14 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 10000 },
+	{ name = "meat", chance = 35000, maxCount = 2 },
+	{ name = "orc tooth", chance = 700 },
+	{ name = "broken helmet", chance = 10800 },
+	{ name = "orc leather", chance = 4000 },
+	{ name = "skull belt", chance = 980 },
 }
 
 mType:register(monster)
+
 
 
 

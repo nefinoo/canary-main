@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="Noble lions have been sighted roaming the savannah." />
+	<announce delay="120000" type="event" message="The noble lions are wandering freely across the area." />
+
+	<!-- AREARESPAWN -->
+	<areaspawn delay="2000" fromx="145" fromy="1281" fromz="7" tox="190" toy="1302" toz="7">
+		<monster name="Noble Lion" amount="5" />
+	</areaspawn>
+</raid>

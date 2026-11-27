@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc"
 monster.description = "a orc"
-monster.experience = 160
+monster.experience = 2600
 monster.outfit = {
 	lookType = 5,
 	lookHead = 0,
@@ -14,12 +14,27 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 70
-monster.maxHealth = 70
-monster.runHealth = 15
+monster.raceId = 5
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ulderek's Rock, Edron Orc Cave, Ancient Temple, Ice Islands, Venore Orc Cave, \z
+		Rookgaard Orc Fortress, Rookgaard main cave, Fibula Dungeon, Elvenbane, Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 75
+monster.maxHealth = 75
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5966
-monster.speed = 150
+monster.speed = 75
 monster.summonCost = 300
 
 monster.changeTarget = {
@@ -69,8 +84,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -20},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -81,29 +96,25 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 22, attack = 13}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -4, maxDamage = -20 },
 }
 
 monster.defenses = {
-	defense = 8,
-	armor = 4
+	defense = 3,
+	armor = 2
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 12},
-	{name = "meat", chance = 33333, maxCount = 2},
-	{name = "studded armor", chance = 10000},
-	-- {name = "legion helmet", chance = 10000},
-	{name = "sabre", chance = 10000},
-	{id = 2853, chance = 100000, child = {
-			{name = "studded shield", chance = 10000},
-			{id = 3274, chance = 10000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 8 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 8000 },
+	{ name = "meat", chance = 30000 },
+	{ name = "orc tooth", chance = 210 },
+	{ name = "orc leather", chance = 590 },
 }
 
 mType:register(monster)
+
 
 
 

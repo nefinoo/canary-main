@@ -208,10 +208,10 @@ public:
 	void setSlot(uint32_t s) {
 		slot = s;
 	}
-	uint32_t getRequiredLevel() const {
+	uint64_t getRequiredLevel() const {
 		return reqLevel;
 	}
-	void setRequiredLevel(uint32_t level) {
+	void setRequiredLevel(uint64_t level) {
 		reqLevel = level;
 	}
 	uint32_t getRequiredMagLevel() const {
@@ -277,7 +277,7 @@ private:
 		equipFunction;
 
 	// onEquip information
-	uint32_t reqLevel = 0;
+	uint64_t reqLevel = 0;
 	uint32_t reqMagLevel = 0;
 	bool premium = false;
 	std::string vocationString;

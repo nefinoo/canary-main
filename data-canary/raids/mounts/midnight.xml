@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="Deep within lands few dare to enter, a silent shadow has emerged." />
+	<announce delay="120000" type="event" message="Whispers speak of the Midnight Panther stalking the deepest paths." />
+
+	<!-- AREARESPAWN -->
+	<singlespawn delay="2000" name="Midnight Panther" x="697" y="948" z="9"/>
+	<singlespawn delay="4000" name="Midnight Panther" x="725" y="1024" z="9"/>
+	<singlespawn delay="6000" name="Midnight Panther" x="688" y="1038" z="9"/>
+	<singlespawn delay="8000" name="Midnight Panther" x="682" y="1127" z="9"/>
+</raid>

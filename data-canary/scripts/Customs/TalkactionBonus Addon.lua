@@ -63,10 +63,10 @@ local femaleOutfits = {136,137,138,139,140,141,142,147,148,149,150,156,157,158,2
 
     -- ENVIAR MENSAJE
     local msg = string.format([[
-~° BONUS SYSTEM °~
+*** BONUS SYSTEM ***
 
 Complete outfits: %d
-Mounts: %d
+Mastered Mounts: %d
 Levels obtained: %d
 
 Extra health: %d%%
@@ -81,7 +81,8 @@ Total accumulated: %d items
 hpBonus, mpBonus, crit,
 leech, leech, loot, expBonus, total)
 
-    player:sendTextMessage(MESSAGE_LOOK, msg)
+    -- player:sendTextMessage(MESSAGE_LOOK, msg)
+	player:popupFYI(msg)
     return false
 end
 

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raids>
-	<raid name="Example" file="example.xml" interval2="300" margin="100" />	
-	<raid name="Rottie The Rotworm spidercave" file="rottie2.xml" interval2="300" margin="100" />
-	<raid name="Necropharus" file="necropharus.xml" interval2="300" margin="100" />
-	<raid name="Deathpincer" file="deathpincer.xml" interval2="300" margin="100" />
+	<raid name="Rottie the Rotworm" file="bosses/rottie2.xml" interval2="120" margin="60" />	
+	<raid name="Brutus Bloodbeard" file="bosses/pirateboss1.xml" interval2="180" margin="50" />
+	<raid name="Deadeye Devious" file="bosses/pirateboss2.xml" interval2="180" margin="70" />
+	<raid name="Lethal Lissy" file="bosses/pirateboss3.xml" interval2="180" margin="90" />
+	<raid name="Ron The Ripper" file="bosses/pirateboss4.xml" interval2="180" margin="115" />	
+	<raid name="Demodras" file="bosses/Demodras.xml" interval2="240" margin="70" />	
+	<raid name="Tiquandas Revenge" file="bosses/tiquandas.xml" interval2="240" margin="90" />
+	<raid name="the Horned Fox" file="bosses/horned.xml" interval2="240" margin="120" />
+	<raid name="The Old Widow" file="bosses/widow.xml" interval2="280" margin="120" />
+	<raid name="Necropharus" file="bosses/necropharus.xml" interval2="300" margin="180" />	
+	<raid name="Ferumbras" file="bosses/ferumbras.xml" interval2="500" margin="180" />
+	
+	<!-- monturas -->
+	<raid name="Dragonling" file="mounts/dragonling.xml" interval2="240" margin="70" />
+	<raid name="Midnight Panther" file="mounts/midnight.xml" interval2="300" margin="90" />
+	<raid name="Wild Horse" file="mounts/wild_horses.xml" interval2="180" margin="45" />
+	<raid name="Undead Cavebear" file="mounts/Undead Cavebear.xml" interval2="240" margin="90" />
+	<raid name="Vashresamun" file="bosses/vashresamun.xml" interval2="120" margin="120" />
 </raids>

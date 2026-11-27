@@ -44,6 +44,9 @@ function serverInfo.onSay(player, words, param)
 			.. "\nFist Skill Stages rate: "
 			.. getRateFromTable(skillsStages, player:getSkillLevel(SKILL_FIST), configRateSkill)
 			.. "x"
+			.. "\nFishing Skill Stages rate: "
+			.. getRateFromTable(skillsStages, player:getSkillLevel(SKILL_FISHING), configRateSkill)
+			.. "x"
 			.. "\nMagic rate: "
 			.. getRateFromTable(magicLevelStages, player:getBaseMagicLevel(), configManager.getNumber(configKeys.RATE_MAGIC))
 			.. "x"

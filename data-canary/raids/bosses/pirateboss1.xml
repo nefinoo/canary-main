@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="Heavy footsteps shake the ground... Brutus Bloodbeard marches ashore." />
+	<announce delay="12000" type="event" message="Brutus Bloodbeard thirsts for blood and battle!" />
+		<singlespawn delay="1000" name="Brutus Bloodbeard" x="347" y="1691" z="2" />
+</raid>

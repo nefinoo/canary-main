@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "outlawed warrior"
 monster.description = "an outlawed warrior"
-monster.experience = 5500
+monster.experience = 2000000
 monster.outfit = {
 	lookType = 69,
 	lookHead = 20,
@@ -14,12 +14,26 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 4200
-monster.maxHealth = 4200
+monster.raceId = 69
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Kazordoon Dwarf Mines, Dwarf Bridge, deep Elvenbane, Tiquanda Dwarf Cave, Cormaya Dwarf Cave, \z
+		Island of Destiny (Knights area), Beregar.",
+}
+
+monster.health = 5200
+monster.maxHealth = 5200
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6007
-monster.speed = 350
+monster.speed = 280
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -79,29 +93,63 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 1000, chance = 100, minDamage = -518, maxDamage = -674 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -110, maxDamage = -250 },
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 8,
-	{name ="speed", interval = 2000, chance = 20, speed = {min = 350, max = 350}, duration = 10000, effect = CONST_ME_MAGIC_RED}
+	defense = 12,
+	armor = 10,
+	{name ="speed", interval = 2000, chance = 20, speed = {min = 100, max = 100}, duration = 5000, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.loot = {
-	{name = "small diamond", chance = 100000, maxCount = 7},
-	{name = "yellow gem", chance = 25000},
-	{name = "crystal coin", chance = 50000, maxCount = 3},
-	{name = "boots of haste", chance = 2500},
-	{name = "magic sword", chance = 100},
-	{name = "magic plate armor", chance = 2500},
-	{name = "mastermind shield", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ name = "iron ore", chance = 700 },
-	-- {id = 9743, chance = 2500}
+	-- Oro, comida y pociones para nivel 200+
+	{ name = "gold coin", chance = 90000, maxCount = 180 },
+	{ name = "meat", chance = 42000, maxCount = 3 },
+	{ name = "health potion", chance = 11000 },
+	{ name = "mana potion", chance = 11000 },
+	{ name = "strong health potion", chance = 7500 },
+	{ name = "strong mana potion", chance = 7500 },
+	{ name = "great health potion", chance = 3000 },
+	{ name = "great mana potion", chance = 3000 },
+	{ name = "great spirit potion", chance = 1500 },
+	-- Material de addon y scroll de experiencia: originales conservados, probabilidad balanceada
+	{ name = "iron ore", chance = 3000 },
+	{ name = "experience scroll", chance = 80 }, -- ID 51670, recompensa muy rara (Nephy 50000 gp)
+	{ id = 12413, chance = 12000 },
+	-- Gemas originales de la zona
+	{ name = "small diamond", chance = 6000, maxCount = 2 },
+	{ name = "yellow gem", chance = 300 },
+	-- Set 1: Knight (nivel 30)
+	{ id = 3351, chance = 7600 },
+	{ id = 3357, chance = 6400 },
+	{ id = 3557, chance = 7300 },
+	{ id = 3554, chance = 7900 },
+	{ id = 3428, chance = 6600 },
+	-- Set 2: Knight (nivel 50)
+	{ id = 3396, chance = 3500 },
+	{ id = 3397, chance = 2650 },
+	{ id = 3398, chance = 3050 },
+	{ id = 4033, chance = 3800 },
+	{ id = 3419, chance = 2900 },
+	-- Set 3: Knight (nivel 100)
+	{ id = 875, chance = 1500 },
+	{ id = 21167, chance = 1050 },
+	{ id = 21168, chance = 1250 },
+	{ id = 21169, chance = 1650 },
+	{ id = 14088, chance = 1250 },
+	-- Armas nivel 30
+	{ id = 3280, chance = 4500 }, -- fire sword
+	{ id = 3318, chance = 4500 }, -- knight axe
+	{ id = 3324, chance = 4500 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 3500 }, -- bright sword
+	{ id = 7456, chance = 3500 }, -- noble axe
+	{ id = 3333, chance = 3500 }, -- crystal mace
 }
 
 mType:register(monster)
+
 
 
 

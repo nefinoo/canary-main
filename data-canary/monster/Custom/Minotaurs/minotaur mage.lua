@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur mage"
 monster.description = "a minotaur mage"
-monster.experience = 150
+monster.experience = 10500
 monster.outfit = {
 	lookType = 23,
 	lookHead = 20,
@@ -14,8 +14,25 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 155
-monster.maxHealth = 155
+monster.raceId = 23
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mintwallin, Maze of Lost Souls, Dark Pyramid, Folda (hidden cave), \z
+		Kazordoon (The Horned Fox's hideout), the Plains of Havoc, Point of No Return south of Outlaw Camp, \z
+		Elvenbane, the depths of Fibula Dungeon (level 50+), cave east from Dwarf Bridge, Foreigner Quarter, \z
+		Rookgaard Minotaur Hell (not reachable).",
+}
+
+
+monster.health = 220
+monster.maxHealth = 220
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5981
@@ -68,50 +85,56 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = 15},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -5},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 18, attack = 15},
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -15, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -35, maxDamage = -95, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="energyfield", interval = 1000, chance = 12, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -4, maxDamage = -20 },
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -8, maxDamage = -28, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -10, maxDamage = -32, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 18
+	defense = 6,
+	armor = 4
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 2920, chance = 10000},
-	{name = "leather helmet", chance = 8000},
-	{name = "leather legs", chance = 8000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "wand of cosmic energy", chance = 1333},
-			{name = "combat knife", chance = 10000},
-			{name = "carrot of doom", chance = 20000, maxCount = 5},
-			{id = 3998, chance = 10000},
-			{name = "heavy magic missile rune", chance = 2857},
-			{name = "brass armor", chance = 4000},
-			{name = "chain legs", chance = 4000},
-			{name = "taurus mace", chance = 1000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 18 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 27000 },
+	{ name = "carrot", chance = 45000, maxCount = 3 },
+	{ name = "minotaur leather", chance = 5000 },
+	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
+	{ id = 7463, chance = 900 },
+	{ id = 7458, chance = 1200 },
+	{ name = "spellbook of enlightenment", chance = 1020 },
+	{ id = 3550, chance = 1080 },
+	{ id = 3295, chance = 850 }, -- bright sword
+	{ id = 7456, chance = 850 }, -- noble axe
+	{ id = 3333, chance = 850 }, -- crystal mace
+	{ id = 7378, chance = 850 }, -- royal spear
+	{ id = 3067, chance = 850 }, -- hailstorm rod
+	{ id = 3071, chance = 850 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 1190 }, -- fire sword
+	{ id = 3318, chance = 1190 }, -- knight axe
+	{ id = 3324, chance = 1190 }, -- skull staff
+	{ id = 3347, chance = 1190 }, -- hunting spear
+	{ id = 3065, chance = 1190 }, -- terra rod
+	{ id = 3073, chance = 1190 }, -- wand of cosmic energy
 }
 
 mType:register(monster)
+
 
 
 

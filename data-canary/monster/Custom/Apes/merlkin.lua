@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "merlkin"
 monster.description = "a merlkin"
-monster.experience = 2050000
+monster.experience = 3500000000
 monster.outfit = {
 	lookType = 117,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 690000
+monster.maxHealth = 690000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6044
@@ -81,9 +81,9 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="combat", interval = 3000, chance = 34, type = COMBAT_ENERGYDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11249, maxDamage = -19037},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_FIREDAMAGE, minDamage = -11249, maxDamage = -19037, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
+	{name ="combat", interval = 3000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -11249, maxDamage = -190379, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
 	{name ="poisonfield", interval = 1000, chance = 15, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY}
 }
 
@@ -94,14 +94,26 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 50},
-	{name = "wand of decay", chance = 1538},
+	{name = "platinum coin", chance = 100000, maxCount = 15},
+	{name = "platinum coin", chance = 75000, maxCount = 26},
+	{name = "platinum coin", chance = 35000, maxCount = 30},
+	{name = "experience scroll", chance = 3000, maxCount = 3},
+	{id = 37607, chance = 100},
+	{id = 37608, chance = 100},
+	{id = 37609, chance = 100},
+	{id = 37610, chance = 100},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
 	{name = "orange", chance = 10000, maxCount = 5},
-	{name = "ape fur", chance = 1000, maxCount = 2},
+	{name = "ape fur", chance = 1333, maxCount = 2},
 	{name = "banana staff", chance = 1333, unique = true},
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

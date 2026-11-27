@@ -45,7 +45,7 @@ public:
 	WeaponShared_ptr getWeapon(const std::shared_ptr<Item> &item) const;
 
 	static int32_t getMaxMeleeDamage(int32_t attackSkill, int32_t attackValue);
-	static int32_t getMaxWeaponDamage(uint32_t level, int32_t attackSkill, int32_t attackValue, float attackFactor, bool isMelee);
+	static int32_t getMaxWeaponDamage(uint64_t level, int32_t attackSkill, int32_t attackValue, float attackFactor, bool isMelee);
 
 	bool registerLuaEvent(const WeaponShared_ptr &event, bool fromXML = false);
 	void clear(bool isFromXML = false);
@@ -80,10 +80,10 @@ public:
 		id = newId;
 	}
 
-	uint32_t getReqLevel() const {
+	uint64_t getReqLevel() const {
 		return level;
 	}
-	void setRequiredLevel(uint32_t reqlvl) {
+	void setRequiredLevel(uint64_t reqlvl) {
 		level = reqlvl;
 	}
 
@@ -230,7 +230,7 @@ private:
 
 	uint16_t id = 0;
 
-	uint32_t level = 0;
+	uint64_t level = 0;
 	uint32_t magLevel = 0;
 	uint32_t mana = 0;
 	uint32_t manaPercent = 0;

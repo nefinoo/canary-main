@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "salazaari defender"
 monster.description = "a salazaari defender"
-monster.experience = 11500
+monster.experience = 3750000
 monster.outfit = {
 	lookType = 62,
 	lookHead = 20,
@@ -14,12 +14,12 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 9400
-monster.maxHealth = 9400
+monster.health = 7000
+monster.maxHealth = 7000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6003
-monster.speed = 280
+monster.speed = 285
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -83,29 +83,83 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -749, maxDamage = -974 },
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW},
-	{name ="Berserk", interval = 2000, chance = 35, minDamage = -749, maxDamage = -974, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -170, maxDamage = -330 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -145, maxDamage = -345, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BURSTARROW },
+	{ name = "combat", interval = 6000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -360, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD }
 }
 
 monster.defenses = {
-	defense = 12,
-	armor = 6,
-	{name ="speed", interval = 2000, chance = 40, speed = {min = 0, max = 0}, duration = 0, shootEffect = CONST_ANI_SPEAR, effect = CONST_ME_DRAWBLOOD}
+	defense = 27,
+	armor = 21,
+	{ name = "speed", interval = 4000, chance = 20, speed = {min = 100, max = 100}, duration = 5000, effect = CONST_ME_MAGIC_RED }
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 5},
-	{name = "magic sword", chance = 100},
-	{name = "crown armor", chance = 2500},
-	{name = "crown legs", chance = 2500},
-	{name = "crown helmet", chance = 2500},
-	{name = "experience scroll", chance = 2000},
-	{ id = 5921, chance = 940 }, -- heaven blossom
-	-- {id = 9743, chance = 2500}
+	-- Oro y consumibles: zona nivel 300+
+	{ name = "platinum coin", chance = 90000, maxCount = 5 },
+	{ name = "ham", chance = 35000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9500 },
+	{ name = "strong mana potion", chance = 9500 },
+	{ name = "great health potion", chance = 4500 },
+	{ name = "great mana potion", chance = 4500 },
+	{ name = "great spirit potion", chance = 2500 },
+	-- Gemas y materiales de addon originales
+	{ id = 3039, chance = 2500 }, -- red gem
+	{ id = 5921, chance = 1000 }, -- heaven blossom
+	{ id = 12413, chance = 16500 }, -- bag de addon
+	-- Scroll de experiencia muy raro (ID 51670, venta a NPC: 50000 gp)
+	{ name = "experience scroll", chance = 190 },
+	-- Set 1: Knight (nivel 30)
+	{ id = 3351, chance = 8860 },
+	{ id = 3357, chance = 7450 },
+	{ id = 3557, chance = 8420 },
+	{ id = 3554, chance = 9180 },
+	{ id = 3428, chance = 7670 },
+	-- Set 2: Knight (nivel 50)
+	{ id = 3396, chance = 4540 },
+	{ id = 3397, chance = 3400 },
+	{ id = 3398, chance = 3940 },
+	{ id = 4033, chance = 4860 },
+	{ id = 3419, chance = 3730 },
+	-- Set 3: Knight (nivel 100)
+	{ id = 875, chance = 2380 },
+	{ id = 21167, chance = 1620 },
+	{ id = 21168, chance = 1940 },
+	{ id = 21169, chance = 2590 },
+	{ id = 14088, chance = 1940 },
+	-- Armas nivel 30
+	{ id = 3280, chance = 5000 }, -- fire sword
+	{ id = 3318, chance = 5000 }, -- knight axe
+	{ id = 3324, chance = 5000 }, -- skull staff
+	-- Armas nivel 50
+	{ id = 3295, chance = 4000 }, -- bright sword
+	{ id = 7456, chance = 4000 }, -- noble axe
+	{ id = 3333, chance = 4000 }, -- crystal mace
+	-- Armas nivel 100: drop muy raro
+	{ id = 3288, chance = 100 }, -- magic sword
+	{ id = 3319, chance = 100 }, -- stonecutter axe
+	{ id = 3309, chance = 100 }, -- thunder hammer
 }
 
+monster.raceId = 62
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Yalahar Foreigner Quarter and Trade Quarter, Maze of Lost Souls, Orc Fort (unreachable), \z
+		Hellgate, Shadowthorn, Ab'Dendriel elf caves, Elvenbane, north of Thais.",
+}
+
+
 mType:register(monster)
+
 
 
 

@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc warlord"
 monster.description = "a orc warlord"
-monster.experience = 670
+monster.experience = 5500
 monster.outfit = {
 	lookType = 2,
 	lookHead = 20,
@@ -14,12 +14,25 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 950
-monster.maxHealth = 950
+monster.raceId = 2
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Teleport.",
+}
+
+monster.health = 185
+monster.maxHealth = 185
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6008
-monster.speed = 290
+monster.speed = 90
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -82,41 +95,28 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -40, maxDamage = -200},
-	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -100, maxDamage = -120, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -10, maxDamage = -42 },
+	{name ="combat", interval = 3000, chance = 25, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -22, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_THROWINGSTAR}
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 22,
-	{name ="invisible", interval = 1000, chance = 4, duration = 2000, effect = CONST_ME_MAGIC_BLUE}
+	defense = 8,
+	armor = 5
 }
 
 monster.loot = {
-	{name = "backpack", chance = 100000, child = {
-			-- {id = 3049, chance = 1333},
-			{name = "gold ring", chance = 556},
-			{name = "protection amulet", chance = 2000},
-			{name = "two handed sword", chance = 1818},
-			{name = "dragon hammer", chance = 833},
-			{name = "brass legs", chance = 3333},
-			{name = "dark helmet", chance = 2500},
-			-- {name = "crusader helmet", chance = 667},
-			-- {name = "amazon helmet", chance = 333},
-			-- {name = "amazon armor", chance = 250},
-			-- {name = "amazon shield", chance = 200}
-		}
-	},
-	{name = "gold coin", chance = 50000, maxCount = 70},
-	{name = "fire sword", chance = 1538},
-	{name = "orcish axe", chance = 2000},
-	{name = "plate armor", chance = 1333},
-	{name = "plate legs", chance = 2222},
-	{name = "meat", chance = 20000, maxCount = 3},
-	{id = 3578, chance = 6667}
+	{ name = "gold coin", chance = 100000, maxCount = 26 },
+	{ name = "health potion", chance = 20000 },
+	{ name = "mana potion", chance = 18000 },
+	{ name = "fish", chance = 45000, maxCount = 2 },
+	{ name = "orc tooth", chance = 9640 },
+	{ name = "broken helmet", chance = 24350 },
+	{ name = "orc leather", chance = 20620 },
+	{ name = "skull belt", chance = 4610 },
 }
 
 mType:register(monster)
+
 
 
 

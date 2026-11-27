@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc berserker"
 monster.description = "a orc berserker"
-monster.experience = 195
+monster.experience = 4100
 monster.outfit = {
 	lookType = 8,
 	lookHead = 20,
@@ -14,12 +14,26 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 210
-monster.maxHealth = 210
+monster.raceId = 8
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Orc Fort, Dwacatra, Orc Peninsula, Elvenbane, Edron Orc Cave, Plains of Havoc, below Point of No Return in Outlaw Camp, Maze of Lost Souls, Cyclopolis, Desert Dungeon, Ancient Temple, Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 130
+monster.maxHealth = 130
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5980
-monster.speed = 250
+monster.speed = 95
 monster.summonCost = 590
 
 monster.changeTarget = {
@@ -67,8 +81,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = -20},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -79,30 +93,27 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -30, maxDamage = -200}
+	{ name = "melee", interval = 1500, chance = 100, minDamage = -8, maxDamage = -34 },
 }
 
 monster.defenses = {
-	defense = 12,
-	armor = 15,
-	{name ="speed", interval = 1000, chance = 15, speed = {min = 290, max = 290}, duration = 6000, effect = CONST_ME_MAGIC_RED}
+	defense = 4,
+	armor = 3,
+	{name ="speed", interval = 4000, chance = 10, speed = {min = 25, max = 25}, duration = 2000, effect = CONST_ME_MAGIC_RED}
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 15},
-	{name = "meat", chance = 33333, maxCount = 3},
-	{name = "halberd", chance = 6666},
-	{id = 2853, chance = 100000, child = {
-			{name = "chain armor", chance = 10000},
-			{name = "chain helmet", chance = 10000},
-			{id = 2914, chance = 5000},
-			{name = "battle axe", chance = 5000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 18 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 10000 },
+	{ name = "ham", chance = 40000, maxCount = 2 },
+	{ name = "orc tooth", chance = 3000 },
+	{ name = "orcish gear", chance = 3800 },
+	{ name = "orc leather", chance = 4000 },
 }
 
 mType:register(monster)
+
 
 
 

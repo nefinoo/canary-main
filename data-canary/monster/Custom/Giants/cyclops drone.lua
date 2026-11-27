@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops drone"
 monster.description = "a cyclops drone"
-monster.experience = 200
+monster.experience = 55000
 monster.outfit = {
 	lookType = 280,
 	lookHead = 0,
@@ -14,9 +14,23 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 325
-monster.maxHealth = 325
-monster.runHealth = 75
+monster.raceId = 391
+monster.Bestiary = {
+	class = "Giant",
+	race = BESTY_RACE_GIANT,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Cyclopolis, Mount Sternum, Mistrock and in the Cyclops version of the Forsaken Mine.",
+}
+
+
+monster.health = 480
+monster.maxHealth = 480
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 771
 monster.speed = 220
@@ -70,38 +84,55 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 10},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 10},
-	{type = COMBAT_HOLYDAMAGE , percent = 10},
-	{type = COMBAT_DEATHDAMAGE , percent = -5}
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 52, attack = 40},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -46, maxDamage = -74, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -22, maxDamage = -78 },
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -12, maxDamage = -40, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_LARGEROCK}
 }
 
 monster.defenses = {
-	defense = 24,
-	armor = 17
+	defense = 17,
+	armor = 11
 }
 
 monster.loot = {
-	{name = "battle shield", chance = 1500},
-	{name = "dark helmet", chance = 200},
-	{name = "gold coin", chance = 4000, maxCount = 24},
-	{name = "meat", chance = 5000, maxCount = 2},
-	{name = "plate shield", chance = 2000},
-	{name = "heavy machete", chance = 2000},
-	{name = "strong health potion", chance = 2000}
+	{ name = "gold coin", chance = 100000, maxCount = 18 },
+	{ name = "health potion", chance = 24000 },
+	{ name = "mana potion", chance = 22000 },
+	{ name = "ham", chance = 55000, maxCount = 3 },
+	{ name = "cyclops toe", chance = 6750 },
+	{ id = 3554, chance = 1280 },
+	{ id = 3428, chance = 1360 },
+	{ id = 7464, chance = 1440 },
+	{ id = 3403, chance = 1600 },
+	{ name = "spellbook of enlightenment", chance = 1360 },
+	{ id = 3295, chance = 1450 }, -- bright sword
+	{ id = 7456, chance = 1450 }, -- noble axe
+	{ id = 3333, chance = 1450 }, -- crystal mace
+	{ id = 7378, chance = 1450 }, -- royal spear
+	{ id = 3067, chance = 1450 }, -- hailstorm rod
+	{ id = 3071, chance = 1450 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 2030 }, -- fire sword
+	{ id = 3318, chance = 2030 }, -- knight axe
+	{ id = 3324, chance = 2030 }, -- skull staff
+	{ id = 3347, chance = 2030 }, -- hunting spear
+	{ id = 3065, chance = 2030 }, -- terra rod
+	{ id = 3073, chance = 2030 }, -- wand of cosmic energy
 }
 
 mType:register(monster)
+
 
 
 

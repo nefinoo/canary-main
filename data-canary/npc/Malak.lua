@@ -52,15 +52,37 @@ end
 
 local STORAGE_RUNE_UNLOCK = 60000
 
-local unlockedRunes = {
-    { itemName = "mana rune", clientId = 3157, buy = 1000 },
-    { itemName = "knight mana rune", clientId = 3170, buy = 1250 }
+local unlockedRunes = {		
+    { itemName = "mana rune", clientId = 3157, buy = 1000000 },
+    { itemName = "knight mana rune", clientId = 3170, buy = 1250000 }
+}
+
+local unlockedPotions = {		
+	{ itemName = "demonic mana potion", clientId = 51247, buy = 738 },
+	{ itemName = "divine spirit potion", clientId = 51138, buy = 979 },
+	{ itemName = "angelic health potion", clientId = 51246, buy = 738 },
+
+	{ itemName = "extreme mana potion", clientId = 50966, buy = 938 },
+	{ itemName = "extreme health potion", clientId = 50967, buy = 1179 },
+	{ itemName = "extreme spirit potion", clientId = 50965, buy = 938 },
+
+	{ itemName = "obscure mana potion", clientId = 51704, buy = 1138 },
+	{ itemName = "obscure health potion", clientId = 51702, buy = 1379 },
+	{ itemName = "obscure spirit potion", clientId = 51701, buy = 1138 },
+
+	{ itemName = "eternal mana potion", clientId = 53143, buy = 1338 },
+	{ itemName = "eternal health potion", clientId = 53144, buy = 1579 },
+	{ itemName = "eternal spirit potion", clientId = 53142, buy = 1338 },
+
+	{ itemName = "legendary mana potion", clientId = 50382, buy = 1538 },
+	{ itemName = "legendary health potion", clientId = 50384, buy = 1779 },
+	{ itemName = "legendary spirit potion", clientId = 50383, buy = 1538 }
 }
 
 local itemsTable = {
 	["foods"] = {
 		{ itemName = "brown mushroom", clientId = 3725, buy = 10 },
-		{ itemName = "fire mushroom", clientId = 3731, buy = 300 },
+		{ itemName = "fire mushroom", clientId = 3731, buy = 30 },
 	},
 	["exercise weapons"] = {
 		{ itemName = "durable exercise axe", clientId = 35280, buy = 6480000 },
@@ -142,10 +164,8 @@ local itemsTable = {
 		{ itemName = "wild growth rune", clientId = 3156, buy = 160 },
 	},
 	["tools"] = {
-		{ itemName = "fishing rod", clientId = 3483, buy = 150 },
 		{ itemName = "flask of rust remover", clientId = 9016, buy = 50 },
 		{ itemName = "torch", clientId = 2920, buy = 2 },
-		{ itemName = "worm", clientId = 3492, buy = 1 },
 		{ itemName = "crowbar", clientId = 3304, buy = 260 },
 		{ itemName = "backpack", clientId = 2854, buy = 20 },
 	},
@@ -183,7 +203,6 @@ local itemsTable = {
 		{ itemName = "great spirit potion", clientId = 7642, buy = 228 },
 		{ itemName = "health potion", clientId = 266, buy = 50 },
 		{ itemName = "mana potion", clientId = 268, buy = 56 },
-		{ itemName = "mana shield potion", clientId = 35563, buy = 200000 },
 		{ itemName = "ultimate health potion", clientId = 7643, buy = 379 },
 		{ itemName = "ultimate mana potion", clientId = 23373, buy = 438 },
 		{ itemName = "ultimate spirit potion", clientId = 23374, buy = 438 },
@@ -220,6 +239,24 @@ local function creatureSayCallback(npc, player, type, message)
         end
 
         npcHandler:say("Here are the runes I can offer.", npc, player)
+        npc:openShopWindowTable(player, tempTable)
+		
+    elseif message:lower() == "potions" then
+        local tempTable = {}
+        
+        -- Primero agregar todas las runas normales
+        for _, item in ipairs(itemsTable["potions"]) do
+            table.insert(tempTable, item)
+        end
+
+        -- Si el jugador tiene el storage → agregar las nuevas runas
+        if player:getStorageValue(STORAGE_RUNE_UNLOCK) == 1 then
+            for _, item in ipairs(unlockedPotions) do
+                table.insert(tempTable, item)
+            end
+        end
+
+        npcHandler:say("Here are the potions I can offer.", npc, player)
         npc:openShopWindowTable(player, tempTable)
     else
         -- Categorías normales

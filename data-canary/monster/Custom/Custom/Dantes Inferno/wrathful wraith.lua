@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Wrathful Wraith"
 monster.description = "wrathful wraith"
-monster.experience = 2500000
+monster.experience = 2500000000
 monster.outfit = {
 	lookType = 320,
 	lookHead = 0,
@@ -18,7 +18,7 @@ monster.health = 340000
 monster.maxHealth = 340000
 monster.runHealth = 0
 monster.race = "blood"
-monster.corpse = 9915
+monster.corpse = 9001
 monster.speed = 7000
 monster.summonCost = 0
 
@@ -93,6 +93,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

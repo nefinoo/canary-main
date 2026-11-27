@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Hydra"
 monster.description = "a hydra"
-monster.experience = 700
+monster.experience = 485000
 monster.outfit = {
 	lookType = 121,
 	lookHead = 0,
@@ -14,9 +14,25 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1340
-monster.maxHealth = 1340
-monster.runHealth = 300
+monster.raceId = 121
+monster.Bestiary = {
+	class = "Dragon",
+	race = BESTY_RACE_DRAGON,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Northern Hydra Mountain in east Tiquanda, southern Hydra Mountain, Hydra Egg Quest in Tiquanda \z
+	north-east of the Elephant Tusk Quest, Forbidden Lands hydra cave, Deeper Banuta, Talahu surface, \z
+	Ferumbras Citadel, Yalahar Arena and Zoo Quarter, Yalahar Foreigner Quarter (Crystal Lake), Oramond Hydra/Bog Raider Cave.",
+}
+
+
+monster.health = 1050
+monster.maxHealth = 1050
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6048
 monster.speed = 260
@@ -67,51 +83,63 @@ monster.immunities = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = -15},
-	{type = COMBAT_ENERGYDAMAGE, percent = -10},
-	{type = COMBAT_EARTHDAMAGE, percent = 100},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 100},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = 40},
-	{type = COMBAT_HOLYDAMAGE , percent = 25},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -60, maxDamage = -85},
-	{name ="speed", interval = 1000, chance = 17, speed = {min = -600, max = -600}, duration = 15000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
-	{name ="combat", interval = 3000, chance = 17, type = COMBAT_PHYSICALDAMAGE, minDamage = -87, maxDamage = -113, length = 8, spread = 3, effect = CONST_ME_LOSEENERGY},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -100, length = 8, spread = 3, effect = CONST_ME_POISONAREA}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -32, maxDamage = -112},
+	{name ="speed", interval = 6000, chance = 15, speed = {min = -100, max = -100}, duration = 3000, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_POISON, effect = CONST_ME_GREEN_RINGS},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -24, maxDamage = -65, length = 5, spread = 2, effect = CONST_ME_LOSEENERGY},
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -25, maxDamage = -75, length = 5, spread = 2, effect = CONST_ME_POISONAREA}
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 25,
-	{name ="combat", interval = 3000, chance = 45, type = COMBAT_HEALING, minDamage = 100, maxDamage = 350, effect = CONST_ME_MAGIC_BLUE}
+	defense = 24,
+	armor = 15,
+	{name ="combat", interval = 5000, chance = 15, type = COMBAT_HEALING, minDamage = 35, maxDamage = 60, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 24000, maxCount = 90, description2 = "gold coin"},
-	{name = "gold coin", chance = 24000, maxCount = 80, description2 = "gold coin"},
-	{name = "gold coin", chance = 24000, maxCount = 80, description2 = "gold coin"},
-	{name = "meat", chance = 37500, maxCount = 4, description2 = "meat"},
-	{name = "ham", chance = 25000, maxCount = 4, description2 = "ham"},
-	{name = "strong mana potion", chance = 200, description2 = "strong mana potion"},
-	{name = "life crystal", chance = 500, description2 = "life crystal"},
-	-- {name = "stone skin amulet", chance = 900, description2 = "stone skin amulet"},
-	{name = "small sapphire", chance = 5000, description2 = "small sapphire"},
-	{id = 2853, chance = 100000, description2 = "bag", child = {
-			{name = "hydra egg", chance = 600, description2 = "hydra egg"},
-			-- {id = 3098, chance = 1050, description2 = "ring of healing"},
-			{id = 3369, chance = 1000, description2 = "warrior helmet"},
-			{name = "knight armor", chance = 1200, description2 = "knight armor"},
-			{name = "medusa shield", chance = 200, description2 = "medusa shield"},
-			{name = "royal helmet", chance = 200, description2 = "royal helmet"},
-			{name = "boots of haste", chance = 120, description2 = "boots of haste"}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 28 },
+	{ name = "health potion", chance = 30000 },
+	{ name = "mana potion", chance = 30000 },
+	{ name = "strong health potion", chance = 20000 },
+	{ name = "strong mana potion", chance = 20000 },
+	{ name = "meat", chance = 35000, maxCount = 3 },
+	{ name = "ham", chance = 55000, maxCount = 3 },
+	{ name = "hydra head", chance = 5000 },
+	{ name = "hydra egg", chance = 800 },
+	{ id = 3351, chance = 3200 },
+	{ id = 7458, chance = 3200 },
+	{ id = 3557, chance = 3000 },
+	{ id = 7464, chance = 2900 },
+	{ id = 3428, chance = 2700 },
+	{ name = "spellbook of enlightenment", chance = 2700 },
+	{ id = 3357, chance = 2500 },
+	{ id = 7463, chance = 2350 },
+	{ id = 3404, chance = 2200 },
+	{ id = 3295, chance = 2600 }, -- bright sword
+	{ id = 7456, chance = 2600 }, -- noble axe
+	{ id = 3333, chance = 2600 }, -- crystal mace
+	{ id = 7378, chance = 2600 }, -- royal spear
+	{ id = 3067, chance = 2600 }, -- hailstorm rod
+	{ id = 3071, chance = 2600 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 3640 }, -- fire sword
+	{ id = 3318, chance = 3640 }, -- knight axe
+	{ id = 3324, chance = 3640 }, -- skull staff
+	{ id = 3347, chance = 3640 }, -- hunting spear
+	{ id = 3065, chance = 3640 }, -- terra rod
+	{ id = 3073, chance = 3640 }, -- wand of cosmic energy
 }
 
 mType:register(monster)

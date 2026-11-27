@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Heretic"
 monster.description = "heretic"
-monster.experience = 3100000
+monster.experience = 3100000000
 monster.outfit = {
 	lookType = 49,
 	lookHead = 0,
@@ -18,7 +18,7 @@ monster.health = 500000
 monster.maxHealth = 500000
 monster.runHealth = 0
 monster.race = "blood"
-monster.corpse = 1492
+monster.corpse = 2119
 monster.speed = 420
 monster.summonCost = 0
 
@@ -93,6 +93,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

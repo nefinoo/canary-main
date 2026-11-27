@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "lizard sentinel"
 monster.description = "a lizard sentinel"
-monster.experience = 2050000
+monster.experience = 4250000000
 monster.outfit = {
 	lookType = 114,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 176433
-monster.maxHealth = 176433
+monster.health = 900000
+monster.maxHealth = 900000
 monster.runHealth = 10
 monster.race = "blood"
 monster.corpse = 6040
@@ -79,7 +79,7 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 1000, chance = 100, minDamage = -4300, maxDamage = -5749},
+	{name ="melee", interval = 1000, chance = 100, minDamage = -11999, maxDamage = -20306},
 	{name ="combat", interval = 1000, chance = 7, type = COMBAT_PHYSICALDAMAGE, minDamage = -8653, maxDamage = -11249, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_SPEAR}
 }
 
@@ -89,27 +89,30 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "gold coin", chance = 100000, maxCount = 25},
 	{name = "snakebite rod", chance = 450},
 	{name = "obsidian lance", chance = 1428},
-	{name = "halberd", chance = 6666},
-	{name = "steel helmet", chance = 6666},
 	{name = "sentinel shield", chance = 366},
-	{name = "hunting spear", chance = 250},
 	{name = "worm", chance = 50000, maxCount = 10},
 	{name = "lizard leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 50},
-			{name = "small ruby", chance = 4000, maxCount = 4},
-			{name = "cape", chance = 20000},
-			{name = "lizard scale", chance = 5000}
-		}
-	}
+	{name = "small ruby", chance = 4000, maxCount = 4},
+	{name = "lizard scale", chance = 5000},
+	{name = "platinum coin", chance = 100000, maxCount = 25},
+	{name = "platinum coin", chance = 100000, maxCount = 29},
+	{name = "platinum coin", chance = 35000, maxCount = 33},
+	{name = "experience scroll", chance = 3200, maxCount = 3},
+	{id = 37607, chance = 150},
+	{id = 37608, chance = 150},
+	{id = 37609, chance = 150},
+	{id = 37610, chance = 150},	
+	{name = "demon helmet", chance = 800},
+	{name = "demon legs", chance = 800},
+	{name = "demon shield", chance = 800},
+	{id = 6529, chance = 800}, -- soft boots
+	{id = 50854, chance = 15},	
 }
 
 mType:register(monster)
+
 
 
 

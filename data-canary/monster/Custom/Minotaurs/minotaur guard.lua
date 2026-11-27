@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur guard"
 monster.description = "a minotaur guard"
-monster.experience = 160
+monster.experience = 11000
 monster.outfit = {
 	lookType = 29,
 	lookHead = 20,
@@ -14,8 +14,24 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 185
-monster.maxHealth = 185
+monster.raceId = 29
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple, Mintwallin, Minotaur Pyramid, Maze of Lost Souls, Folda, Cyclopolis, \z
+		Deeper Fibula Dungeon (level 50+ to open the door), Hero Cave, underground of Elvenbane, \z
+		Plains of Havoc, Kazordoon Minotaur Cave, Foreigner Quarter.",
+}
+
+
+monster.health = 260
+monster.maxHealth = 260
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5983
@@ -70,43 +86,54 @@ monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 20},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 50, attack = 35}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -14, maxDamage = -52 },
 }
 
 monster.defenses = {
-	defense = 25,
-	armor = 15
+	defense = 13,
+	armor = 8
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{name = "meat", chance = 70000, maxCount = 3},
-	{name = "double axe", chance = 5000},
-	{name = "leather legs", chance = 10000},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{id = 3274, chance = 6666},
-			{name = "fishing rod", chance = 5000},
-			{name = "chain legs", chance = 5000},
-			{name = "chain helmet", chance = 10000},
-			{name = "brass armor", chance = 2500},
-			{name = "battle shield", chance = 10000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 20 },
+	{ name = "health potion", chance = 21000 },
+	{ name = "mana potion", chance = 17000 },
+	{ name = "ham", chance = 45000, maxCount = 2 },
+	{ name = "minotaur leather", chance = 5000 },
+	{ name = "minotaur horn", chance = 8330, maxCount = 2 },
+	{ name = "piece of warrior armor", chance = 8330 },
+	{ id = 3357, chance = 960 },
+	{ id = 3428, chance = 1020 },
+	{ id = 3557, chance = 1140 },
+	{ id = 7464, chance = 1080 },
+	{ name = "spellbook of enlightenment", chance = 1020 },
+	{ id = 3295, chance = 850 }, -- bright sword
+	{ id = 7456, chance = 850 }, -- noble axe
+	{ id = 3333, chance = 850 }, -- crystal mace
+	{ id = 7378, chance = 850 }, -- royal spear
+	{ id = 3067, chance = 850 }, -- hailstorm rod
+	{ id = 3071, chance = 850 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 1190 }, -- fire sword
+	{ id = 3318, chance = 1190 }, -- knight axe
+	{ id = 3324, chance = 1190 }, -- skull staff
+	{ id = 3347, chance = 1190 }, -- hunting spear
+	{ id = 3065, chance = 1190 }, -- terra rod
+	{ id = 3073, chance = 1190 }, -- wand of cosmic energy
 }
 
 mType:register(monster)
+
 
 
 

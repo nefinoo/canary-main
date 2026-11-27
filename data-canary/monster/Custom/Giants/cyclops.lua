@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "cyclops"
 monster.description = "a cyclops"
-monster.experience = 150
+monster.experience = 45000
 monster.outfit = {
 	lookType = 22,
 	lookHead = 0,
@@ -14,8 +14,23 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 260
-monster.maxHealth = 260
+monster.raceId = 22
+monster.Bestiary = {
+	class = "Giant",
+	race = BESTY_RACE_GIANT,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Plains of Havoc, Mount Sternum, Femor Hills, Cyclops Camp, Cyclopolis, Ancient Temple, Shadowthorn, \z
+	Orc Fort, Mistrock, Foreigner Quarter, Outlaw Camp and in the Cyclops version of the Forsaken Mine. ",
+}
+
+
+monster.health = 380
+monster.maxHealth = 380
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5962
@@ -71,45 +86,55 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 25},
-	{type = COMBAT_EARTHDAMAGE, percent = -10},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
 	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 20},
-	{type = COMBAT_DEATHDAMAGE , percent = -10}
+	{type = COMBAT_HOLYDAMAGE , percent = 0},
+	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -100}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -18, maxDamage = -64 },
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 15
+	defense = 14,
+	armor = 9
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 80},
-	{name = "short sword", chance = 33333},
-	{id = 3093, chance = 2000},
-	{name = "dark helmet", chance = 4000},
-	{id = 3012, chance = 6666},
-	{name = "meat", chance = 33333, maxCount = 3},
-	{id = 2853, chance = 100000, child = {
-			{name = "battle shield", chance = 2500},
-			{name = "brass shield", chance = 2857},
-			{name = "halberd", chance = 5000},
-			{name = "gold coin", chance = 20000, maxCount = 10},
-			{name = "ham", chance = 33333, maxCount = 3}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 16 },
+	{ name = "health potion", chance = 20000 },
+	{ name = "mana potion", chance = 20000 },
+	{ name = "meat", chance = 50000, maxCount = 3 },
+	{ name = "cyclops toe", chance = 4930 },
+	{ id = 3351, chance = 1500 },
+	{ id = 3557, chance = 1430 },
+	{ id = 3404, chance = 1050 },
+	{ id = 7463, chance = 1130 },
+	{ id = 3560, chance = 1350 },
+	{ id = 3357, chance = 1200 },
+	{ id = 3295, chance = 1250 }, -- bright sword
+	{ id = 7456, chance = 1250 }, -- noble axe
+	{ id = 3333, chance = 1250 }, -- crystal mace
+	{ id = 7378, chance = 1250 }, -- royal spear
+	{ id = 3067, chance = 1250 }, -- hailstorm rod
+	{ id = 3071, chance = 1250 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 1750 }, -- fire sword
+	{ id = 3318, chance = 1750 }, -- knight axe
+	{ id = 3324, chance = 1750 }, -- skull staff
+	{ id = 3347, chance = 1750 }, -- hunting spear
+	{ id = 3065, chance = 1750 }, -- terra rod
+	{ id = 3073, chance = 1750 }, -- wand of cosmic energy
 }
 
 mType:register(monster)
+
 
 
 

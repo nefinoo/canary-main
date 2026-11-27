@@ -1,0 +1,130 @@
+-- Frozen Hell Fishing - normal encounter (level 150), balanced independently of standard hunts.
+local mType = Game.createMonsterType("Fishing Jellyfish")
+local monster = {}
+
+monster.description = "a jellyfish"
+monster.experience = 5460000
+monster.outfit = {
+	lookType = 452,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
+	lookAddons = 0,
+	lookMount = 0,
+}
+
+monster.raceId = 781
+monster.Bestiary = {
+	class = "Aquatic",
+	race = BESTY_RACE_AQUATIC,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 1,
+	Locations = "Fiehonja, Krailos Steppe underwater cave.",
+}
+
+monster.health = 6000
+monster.maxHealth = 6000
+monster.race = "undead"
+monster.corpse = 13857
+monster.speed = 84
+monster.manaCost = 0
+
+monster.changeTarget = {
+	interval = 4000,
+	chance = 10,
+}
+
+monster.strategiesTarget = {
+	nearest = 70,
+	health = 10,
+	damage = 10,
+	random = 10,
+}
+
+monster.flags = {
+	summonable = false,
+	attackable = true,
+	hostile = true,
+	convinceable = false,
+	pushable = false,
+	rewardBoss = false,
+	illusionable = true,
+	canPushItems = false,
+	canPushCreatures = true,
+	staticAttackChance = 80,
+	targetDistance = 1,
+	runHealth = 0,
+	healthHidden = false,
+	isBlockable = false,
+	canWalkOnEnergy = false,
+	canWalkOnFire = true,
+	canWalkOnPoison = true,
+	isPreyExclusive = true,
+}
+
+monster.light = {
+	level = 5,
+	color = 65,
+}
+
+monster.voices = {
+	interval = 5000,
+	chance = 10,
+	{ text = "Luuurrrp!", yell = false },
+}
+
+monster.loot = {
+	{ id = 3578, chance = 44000, maxCount = 2 },
+	{ id = 3579, chance = 22500, maxCount = 2 },
+	{ id = 3580, chance = 7900 },
+	{ id = 3581, chance = 9000 },
+	{ id = 7159, chance = 3300 },
+	{ id = 7158, chance = 700 },
+	{ name = "fish fin", chance = 800 },
+	{ name = "small sapphire", chance = 260 },
+	{ name = "platinum coin", chance = 6000, maxCount = 1 }
+}
+
+monster.attacks = {
+	{name = "melee", interval = 1500, chance = 100, minDamage = -95, maxDamage = -220, effect = CONST_ME_DRAWBLOOD },
+	{name ="combat", interval = 4000, chance = 35, type = COMBAT_ENERGYDAMAGE, minDamage = -80, maxDamage = -165, length = 8, spread = 3, effect = 38},
+	
+}
+
+monster.defenses = {
+	defense = 10,
+	armor = 11,
+	mitigation = 0.30,
+	-- { name = "invisible", interval = 2000, chance = 15 },
+}
+
+monster.elements = {
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
+}
+
+monster.immunities = {
+	{ type = "paralyze", condition = false },
+	{ type = "outfit", condition = false },
+	{ type = "invisible", condition = true },
+	{ type = "bleed", condition = false },
+}
+
+mType:register(monster)
+
+
+
+

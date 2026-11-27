@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "war wolf"
 monster.description = "a war wolf"
-monster.experience = 55
+monster.experience = 2800
 monster.outfit = {
 	lookType = 3,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 140
-monster.maxHealth = 140
+monster.health = 85
+monster.maxHealth = 85
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6009
@@ -69,32 +69,36 @@ monster.immunities = {
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
-	{type = COMBAT_EARTHDAMAGE, percent = 20},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 39, attack = 24}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -5, maxDamage = -24 },
 }
 
 monster.defenses = {
-	defense = 16,
-	armor = 10
+	defense = 4,
+	armor = 2
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "ham", chance = 33333, maxCount = 5},
-	{name = "wolf paw", chance = 6666}
+	{ name = "gold coin", chance = 100000, maxCount = 10 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 8000 },
+	{ name = "ham", chance = 35000, maxCount = 2 },
+	{ name = "wolf paw", chance = 710 },
+	{ name = "warwolf fur", chance = 5230 },
 }
 
 mType:register(monster)
+
 
 
 

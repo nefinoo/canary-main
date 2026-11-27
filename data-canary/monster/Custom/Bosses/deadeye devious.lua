@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Deadeye Devious"
 monster.description = "Deadeye Devious"
-monster.experience = 1000000
+monster.experience = 1000000000
 monster.outfit = {
 	lookType = 151,
 	lookHead = 115,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2000
-monster.maxHealth = 2000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6080
@@ -81,18 +81,18 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -250, maxDamage = -550},
-	{name ="combat", interval = 4000, chance = 60, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -250, shootEffect = CONST_ANI_THROWINGKNIFE}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -2500, maxDamage = -5500},
+	{name ="combat", interval = 4000, chance = 60, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -2500, shootEffect = CONST_ANI_THROWINGKNIFE}
 }
 
 monster.defenses = {
 	defense = 50,
 	armor = 35,
-	{name ="combat", interval = 6000, chance = 65, type = COMBAT_HEALING, minDamage = 200, maxDamage = 250, effect = CONST_ME_MAGIC_BLUE}
+	{name ="combat", interval = 6000, chance = 65, type = COMBAT_HEALING, minDamage = 2000, maxDamage = 2500, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "deadeye devious' eye patch", chance = 1000, unique = true},
+	{name = "deadeye devious' eye patch", chance = 100000, unique = true},
 	{name = "gold coin", chance = 100000, maxCount = 65},
 	{name = "knight armor", chance = 1200},
 	{name = "plate armor", chance = 4000},
@@ -102,6 +102,7 @@ monster.loot = {
 }
 
 mType:register(monster)
+
 
 
 

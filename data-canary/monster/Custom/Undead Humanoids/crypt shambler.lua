@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "deathwalker"
 monster.description = "a deathwalker"
-monster.experience = 15000
+monster.experience = 5750000
 monster.outfit = {
 	lookType = 100,
 	lookHead = 20,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 10200
-monster.maxHealth = 10200
+monster.health = 9500
+monster.maxHealth = 9500
 monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 6029
@@ -82,24 +82,50 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -1107, maxDamage = -1349},
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -1107, maxDamage = -1349, range = 1, radius = 1, target = true}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -230, maxDamage = -545 },
+	{ name = "combat", interval = 4000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -275, maxDamage = -650, range = 1, radius = 1, target = true }
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 15
+	defense = 28,
+	armor = 27
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 50000, maxCount = 5},
-	{name = "magic sword", chance = 100},
-	{name = "experience scroll", chance = 2500},
-	-- {id = 9743, chance = 2500}
-}
-
+	-- Una sola tirada de moneda para equilibrar la economia
+	{ name = "platinum coin", chance = 85000, maxCount = 4 },
+	{ name = "ham", chance = 45000, maxCount = 3 },
+	{ name = "health potion", chance = 12000 },
+	{ name = "mana potion", chance = 12000 },
+	{ name = "strong health potion", chance = 9000 },
+	{ name = "strong mana potion", chance = 9000 },
+	-- Gemas y materiales originales de addon
+	{ name = "yellow gem", chance = 3500 },
+	{ name = "green gem", chance = 2000 },
+	{ id = 12413, chance = 13000 }, -- bag aleatoria de addon
+	-- Bronze Experience Scroll (ID 51670): extremadamente raro
+	{ name = "experience scroll", chance = 160 },
+	-- Plate Set
+	{ id = 3404, chance = 9500 },
+	{ id = 3560, chance = 9120 },
+	{ id = 3403, chance = 10165 },
+	{ id = 9017, chance = 9120 },
+	-- Set 2: Paladin
+	{ id = 3381, chance = 4500 },
+	{ id = 3382, chance = 4230 },
+	{ name = "knight axe", chance = 3510 },
+	{ id = 3385, chance = 3285 },
+	{ id = 3419, chance = 3105 },
+	-- Crown Set: recompensas raras de zona
+	{ id = 3055, chance = 3800 }, -- Platinum Amulet (Crown Set)
+	-- Armas raras
+	{ name = "fire sword", chance = 1300 },
+	{ name = "fire axe", chance = 1450 },
+	{ name = "dragonbone staff", chance = 1250 },
+	-- Botas de progresion por set
+	{ id = 21981, chance = 1935 }, -- Set 2 boots
+	{ id = 10386, chance = 648 }, -- Zaoan Shoes: Crown Set
+}   	
 mType:register(monster)
-
-
 
 

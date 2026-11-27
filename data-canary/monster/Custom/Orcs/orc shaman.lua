@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "orc shaman"
 monster.description = "a orc shaman"
-monster.experience = 165
+monster.experience = 3500
 monster.outfit = {
 	lookType = 6,
 	lookHead = 0,
@@ -14,12 +14,27 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 115
-monster.maxHealth = 115
-monster.runHealth = 15
+monster.raceId = 6
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Edron Orc Cave, Temple of Xayepocax, below Point of No Return in Outlaw Camp, Venore Orc Cave, \z
+		Maze of Lost Souls, Orc Fort, north west of Thais, Elvenbane, Plains Of Havoc, Foreigner Quarter, Zao Orc Land.",
+}
+
+
+monster.health = 100
+monster.maxHealth = 100
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5978
-monster.speed = 180
+monster.speed = 80
 monster.summonCost = 0
 
 monster.changeTarget = {
@@ -67,8 +82,8 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 50},
-	{type = COMBAT_EARTHDAMAGE, percent = -5},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
 	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
@@ -79,37 +94,30 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 13},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -20, maxDamage = -30, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 1000, chance = 8, type = COMBAT_FIREDAMAGE, minDamage = -5, maxDamage = -45, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -2, maxDamage = -14 },
+	{name ="combat", interval = 2000, chance = 45, type = COMBAT_ENERGYDAMAGE, minDamage = -4, maxDamage = -14, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -4, maxDamage = -12, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA}
 }
 
 monster.defenses = {
-	defense = 10,
-	armor = 8,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 27, maxDamage = 43, effect = CONST_ME_MAGIC_BLUE}
-}
-
-monster.maxSummons = 4
-monster.summons = {
-	{name = "snake", chance = 25, interval = 1000, max = 4}
+	defense = 3,
+	armor = 2,
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_HEALING, minDamage = 5, maxDamage = 10, effect = CONST_ME_MAGIC_BLUE}
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 20},
-	{id = 3289, chance = 2222},
-	{name = "chain helmet", chance = 2222},
-	{id = 2853, chance = 100000, child = {
-			{id = 3998, chance = 5000},
-			{name = "spear", chance = 4000},
-			-- {id = 15827, chance = 3333},
-			{name = "wand of vortex", chance = 1538},
-			{name = "wand of decay", chance = 1000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 15 },
+	{ name = "health potion", chance = 8000 },
+	{ name = "mana potion", chance = 18000 },
+	{ name = "corncob", chance = 35000, maxCount = 2 },
+	{ name = "orc tooth", chance = 2100 },
+	{ name = "broken shamanic staff", chance = 10300 },
+	{ name = "shamanic hood", chance = 6860 },
+	{ name = "orc leather", chance = 10300 },
 }
 
 mType:register(monster)
+
 
 
 

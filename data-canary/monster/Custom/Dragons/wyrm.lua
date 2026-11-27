@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "Wyrm"
 monster.description = "a wyrm"
-monster.experience = 12000000
+monster.experience = 40000000000
 monster.outfit = {
 	lookType = 291,
 	lookHead = 0,
@@ -14,8 +14,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 1000000
-monster.maxHealth = 1000000
+monster.health = 4000000
+monster.maxHealth = 4000000
 monster.runHealth = 1
 monster.race = "blood"
 monster.corpse = 8113
@@ -80,10 +80,11 @@ monster.elements = {
 }
 
 monster.attacks = {
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -4000, range = 1, radius = 1, target = true},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -2000, maxDamage = -3000, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_HITAREA},
-	{name ="condition", interval = 2000, chance = 75, type = CONDITION_ENERGY, startDamage = 0, tick = 10000, minDamage = -2000, maxDamage = -5000, range = 1, radius = 3, target = false, length = 10, spread = 0, effect = CONST_ME_ENERGYHIT},
-	{name ="combat", interval = 1000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -4000, maxDamage = -5000, range = 1, radius = 1, target = true, length = 7, spread = 3, effect = CONST_ME_POFF}
+	{name ="combat", interval = 1000, chance = 80, type = COMBAT_PHYSICALDAMAGE, minDamage = -8000, maxDamage = -10500, range = 1, radius = 1, target = true},
+	{name ="combat", interval = 1000, chance = 60, type = COMBAT_PHYSICALDAMAGE, minDamage = -4000, maxDamage = -5500, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_HITAREA},
+	{name ="condition", interval = 2000, chance = 75, type = CONDITION_ENERGY, startDamage = 0, tick = -1, minDamage = -1600, maxDamage = -4000, range = 1, radius = 3, target = false, length = 10, spread = 0, effect = CONST_ME_ENERGYHIT},
+	{name ="combat", interval = 1000, chance = 66, type = COMBAT_PHYSICALDAMAGE, minDamage = -4000, maxDamage = -7000, range = 1, radius = 1, target = true, length = 7, spread = 3, effect = CONST_ME_POFF},
+	{name ="combat", interval = 6000, chance = 35, type = COMBAT_MANADRAIN, minDamage = -1000, maxDamage = -1500, range = 5, radius = 5, target = true, shootEffect = CONST_ANI_CAKE, effect = CONST_ME_CAKE},
 }
 
 monster.defenses = {
@@ -93,19 +94,31 @@ monster.defenses = {
 }
 
 monster.loot = {
-	{name = "salmon", chance = 2000},
-	{name = "northern pike", chance = 2000},
-	{name = "worm", chance = 5000, maxCount = 25},
-	{name = "rainbow trout", chance = 2000},
-	{name = "green perch", chance = 2000},
-	{name = "assassin star", chance = 5},
-	{name = "justice seeker", chance = 5},
-	{name = "experience scroll", chance = 3000},
-	-- {id = 893, chance = 5},
-	{name = "deadly wand", chance = 5}
+	{name = "worm", chance = 50000, maxCount = 25},
+	{name = "salmon", chance = 20000, maxCount = 25},
+	{name = "northern pike", chance = 20000, maxCount = 25},
+	{name = "rainbow trout", chance = 20000, maxCount = 25},
+	{name = "green perch", chance = 20000, maxCount = 25},
+	{name = "deadly star", chance = 5000},
+	{name = "deadly blade", chance = 5000},
+	{name = "deadly axe", chance = 5000},
+	{name = "deadly wand", chance = 5000},
+	{name = "deadly basher", chance = 5000},
+	{name = "experience scroll", chance = 30000, maxCount = 2},
+	{name = "platinum coin", chance = 100000, maxCount = 10},
+	{name = "platinum coin", chance = 75000, maxCount = 30},
+	{name = "platinum coin", chance = 50000, maxCount = 60},	
+	{id = 8864, chance = 500},
+	{id = 8862, chance = 500},
+	{id = 8863, chance = 500},
+	{id = 3423, chance = 500},
+	{id = 23477, chance = 500},
+	{id = 893, chance = 500},
+	
 }
 
 mType:register(monster)
+
 
 
 

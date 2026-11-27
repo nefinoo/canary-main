@@ -2,7 +2,7 @@
 local monster = {}
 
 monster.description = "a fish"
-monster.experience = 100
+monster.experience = 500000
 monster.outfit = {
 	lookType = 455,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Fiehonja.",
 }
 
-monster.health = 500
-monster.maxHealth = 500
+monster.health = 400
+monster.maxHealth = 400
 monster.race = "undead"
 monster.corpse = 3578
 monster.speed = 70
@@ -77,7 +77,7 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{name ="melee", interval = 1500, chance = 100, minDamage = -5, maxDamage = -35, effect = 2, target = false }
+	{name ="melee", interval = 2000, chance = 100, minDamage = -35, maxDamage = -60}
 }
 
 monster.defenses = {
@@ -87,13 +87,13 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = -5 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 100 },
-	{ type = COMBAT_FIREDAMAGE, percent = 100 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 100 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = 0 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
@@ -107,6 +107,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

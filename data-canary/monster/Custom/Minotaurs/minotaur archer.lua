@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "minotaur archer"
 monster.description = "a minotaur archer"
-monster.experience = 65
+monster.experience = 9000
 monster.outfit = {
 	lookType = 24,
 	lookHead = 20,
@@ -14,9 +14,24 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 100
-monster.maxHealth = 100
-monster.runHealth = 10
+monster.raceId = 24
+monster.Bestiary = {
+	class = "Humanoid",
+	race = BESTY_RACE_HUMANOID,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 0,
+	Locations = "Ancient Temple, way to Mintwallin, Folda Underground Cave, Outlaw Camp, Plains of Havoc, \z
+		Kazordoon Minotaur Tower, Daramian Minotaur Pyramid, Deeper Fibula Dungeon (level 50+ to open the door), \z
+		Hero Cave, Foreigner Quarter and Elvenbane.",
+}
+
+monster.health = 190
+monster.maxHealth = 190
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5982
 monster.speed = 170
@@ -70,45 +85,55 @@ monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 20},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 10},
 	{type = COMBAT_DEATHDAMAGE , percent = -5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 20, attack = 15},
-	{name ="combat", interval = 1000, chance = 34, type = COMBAT_PHYSICALDAMAGE, minDamage = -45, maxDamage = -85, range = 7, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -6, maxDamage = -24 },
+	{name ="combat", interval = 2000, chance = 75, type = COMBAT_PHYSICALDAMAGE, minDamage = -10, maxDamage = -32, range = 5, radius = 1, target = true, shootEffect = CONST_ANI_BOLT}
 }
 
 monster.defenses = {
-	defense = 8,
-	armor = 7
+	defense = 7,
+	armor = 4
 }
 
 monster.loot = {
-	{name = "worm", chance = 50000, maxCount = 10},
-	{name = "gold coin", chance = 100000, maxCount = 28},
-	{name = "bolt", chance = 70000, maxCount = 18},
-	{name = "meat", chance = 50000, maxCount = 3},
-	{name = "scale armor", chance = 10000},
-	{name = "soldier helmet", chance = 6666},
-	{name = "minotaur leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{id = 3349, chance = 6666},
-			{name = "piercing bolt", chance = 6000, maxCount = 8},
-			{name = "brass armor", chance = 5000},
-			{name = "chain armor", chance = 10000},
-			{name = "chain legs", chance = 4000},
-			{name = "chain helmet", chance = 10000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 16 },
+	{ name = "health potion", chance = 17000 },
+	{ name = "mana potion", chance = 17000 },
+	{ name = "meat", chance = 45000, maxCount = 2 },
+	{ name = "minotaur leather", chance = 5000 },
+	{ name = "minotaur horn", chance = 5000, maxCount = 2 },
+	{ name = "broken crossbow", chance = 15400 },
+	{ name = "piece of archer armor", chance = 15400 },
+	{ id = 3404, chance = 770 },
+	{ id = 3560, chance = 990 },
+	{ id = 3428, chance = 940 },
+	{ id = 3403, chance = 1100 },
+	{ id = 3295, chance = 800 }, -- bright sword
+	{ id = 7456, chance = 800 }, -- noble axe
+	{ id = 3333, chance = 800 }, -- crystal mace
+	{ id = 7378, chance = 800 }, -- royal spear
+	{ id = 3067, chance = 800 }, -- hailstorm rod
+	{ id = 3071, chance = 800 }, -- wand of inferno
+	-- Armas nivel 30
+	{ id = 3280, chance = 1120 }, -- fire sword
+	{ id = 3318, chance = 1120 }, -- knight axe
+	{ id = 3324, chance = 1120 }, -- skull staff
+	{ id = 3347, chance = 1120 }, -- hunting spear
+	{ id = 3065, chance = 1120 }, -- terra rod
+	{ id = 3073, chance = 1120 }, -- wand of cosmic energy
 }
 
 mType:register(monster)
+
 
 
 

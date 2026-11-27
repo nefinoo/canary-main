@@ -1,8 +1,8 @@
 ﻿local mType = Game.createMonsterType("Majin Boo")
 local monster = {}
 
-monster.description = "Majin Boo"
-monster.experience = 41000000
+monster.description = "a chaotic, childish, immensely powerful magical creature"
+monster.experience = 950000000000
 monster.outfit = {
 	lookType = 1906,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 } 
 
-monster.health = 11500000
-monster.maxHealth = 11500000
+monster.health = 95000000
+monster.maxHealth = 95000000
 monster.race = "blood"
 monster.corpse = 5981
 monster.speed = 85
@@ -79,21 +79,61 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "minotaur leather", chance = 100000 },
-	{ id = 3046, chance = 76000 }, -- magic light wand
-	{ name = "gold coin", chance = 38000, maxCount = 10 },
-	{ id = 2920, chance = 30000, maxCount = 2 }, -- torch
-	{ name = "leather legs", chance = 23000 },
-	{ id = 3595, chance = 7690 }, -- carrot
-	{ name = "leather helmet", chance = 7690 },
-	{ name = "knife", chance = 7690 },
+	{name = "crystal coin", chance = 100000, maxCount = 5},
+	{name = "crystal coin", chance = 75000, maxCount = 8},
+	{name = "crystal coin", chance = 50000, maxCount = 10},
+	{name = "experience scroll", chance = 5000, maxCount = 5},
+	{name = "silver token", chance = 2500, maxCount = 4},
+	
+	{name = "white piece of cloth", chance = 2350, maxCount = 3},
+	{name = "blue piece of cloth", chance = 1280, maxCount = 3},
+	{name = "green piece of cloth", chance = 1150, maxCount = 3},
+	{ id = 5911, chance = 2340 }, -- red piece of cloth
+	
+	-- Reward Box
+	{id = 50851, chance = 10000},
+	
+	--Montura leatherwhip
+	{id = 12306, chance = 25},
+	
+	{ id = 52374, chance = 150, unique = true}, -- sorcerer helmet
+	{ id = 52373, chance = 150, unique = true}, -- sorcerer armor
+	{ id = 52372, chance = 150, unique = true}, -- sorcerer legs
+	{ id = 52371, chance = 150, unique = true}, -- sorcerer boots
+	{ id = 52370, chance = 150, unique = true}, -- sorcerer shield
+	
+	{ id = 51200, chance = 150, unique = true}, -- paladin helmet
+	{ id = 51201, chance = 150, unique = true}, -- paladin armor
+	{ id = 51202, chance = 150, unique = true}, -- paladin legs
+	{ id = 51203, chance = 150, unique = true}, -- paladin boots
+	{ id = 53419, chance = 150, unique = true}, -- paladin shield
+	
+	{ id = 51204, chance = 150, unique = true}, -- knight helmet
+	{ id = 51206, chance = 150, unique = true}, -- knight armor
+	{ id = 51211, chance = 150, unique = true}, -- knight legs
+	{ id = 51215, chance = 150, unique = true}, -- knight boots
+	{ id = 53421, chance = 150, unique = true}, -- knight shield
+	
+	{ id = 51234, chance = 150, unique = true}, -- druid helmet
+	{ id = 51235, chance = 150, unique = true}, -- druid armor
+	{ id = 51236, chance = 150, unique = true}, -- druid legs
+	{ id = 51237, chance = 150, unique = true}, -- druid boots
+	{ id = 51504, chance = 150, unique = true}, -- druid shield
+	
+	{ id = 52375, chance = 100, unique = true}, -- wand
+	{ id = 51807, chance = 100, unique = true}, -- bow
+	{ id = 51248, chance = 100, unique = true}, -- crossbow
+	{ id = 50970, chance = 100, unique = true}, -- sword
+	{ id = 50972, chance = 100, unique = true}, -- axe
+	{ id = 50977, chance = 100, unique = true}, -- club
+	{ id = 53019, chance = 100, unique = true}, -- rod
 }
 
 monster.attacks = {
-	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -30000, maxDamage = -60000, target = true }, -- basic attack (1000-3500)
-	{ name = "death beam", interval = 2000, chance = 25, minDamage = -10000, maxDamage = -20000, target = false }, -- -_death_beam(1000-2100)
-	{ name = "big death wave", interval = 2000, chance = 25, minDamage = -10000, maxDamage = -20000, target = false }, -- -_death_wave(1000-2000)
-	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -10000, maxDamage = -20000, radius = 5, effect = CONST_ME_MORTAREA, target = false }, -- -_great_death_bomb(700-1000)
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -60000, maxDamage = -90000, target = true }, -- basic attack (1000-3500)
+	{ name = "death beam", interval = 3000, chance = 25, minDamage = -50000, maxDamage = -75000, target = false }, -- -_death_beam(1000-2100)
+	{ name = "big death wave", interval =4500, chance = 25, minDamage = -50000, maxDamage = -75000, target = false }, -- -_death_wave(1000-2000)
+	{ name = "combat", interval = 8000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -100000, maxDamage = -150000, radius = 5, effect = CONST_ME_MORTAREA, target = false }, -- -_great_death_bomb(700-1000)
 }
 
 monster.defenses = {
@@ -105,7 +145,7 @@ monster.defenses = {
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 100 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
 	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
@@ -124,6 +164,7 @@ monster.immunities = {
 }
 
 mType:register(monster)
+
 
 
 

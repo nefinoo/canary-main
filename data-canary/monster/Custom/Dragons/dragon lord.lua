@@ -3,7 +3,7 @@ local monster = {}
 
 monster.name = "dragon lord"
 monster.description = "a dragon lord"
-monster.experience = 2250
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 39,
 	lookHead = 20,
@@ -14,9 +14,29 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 2150
-monster.maxHealth = 2150
-monster.runHealth = 300
+monster.raceId = 39
+monster.Bestiary = {
+	class = "Dragon",
+	race = BESTY_RACE_DRAGON,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 0,
+	Locations = "Ankrahmun Dragon Lairs, Banshee Quest final room (level 60+ to open the door), \z
+	Deeper Cyclopolis past the Dragon Spawn (level 30+ to open the door), Draconia, Edron Dragon Lair, \z
+	Fibula Dungeon (level 50+ to open the door), Maze of Lost Souls (level 30+ to open the door), \z
+	Pits of Inferno Dragon Lair, Dragon Lord hole in Plains of Havoc, Carlin Dragon Lair, \z
+	Thais Dragon Lair, Goroma Dragon Lairs, Hot Spot, Venore Dragon Lair, Arena and Zoo Quarter(Yalahar), \z
+	beneath Fenrock, Darashia Dragon Lair, Razachai, Dragonblaze Peaks, Ferumbras Citadel, Fury Dungeon, \z
+	Lower Spike, Krailos Steppe.",
+}
+
+
+monster.health = 4400
+monster.maxHealth = 4400
+monster.runHealth = 0
 monster.race = "blood"
 monster.corpse = 5984
 monster.speed = 240
@@ -68,57 +88,56 @@ monster.immunities = {
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 20},
-	{type = COMBAT_EARTHDAMAGE, percent = 90},
-	{type = COMBAT_FIREDAMAGE, percent = 100},
+	{type = COMBAT_ENERGYDAMAGE, percent = 0},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = 0},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},
-	{type = COMBAT_ICEDAMAGE, percent = -10},
+	{type = COMBAT_ICEDAMAGE, percent = 0},
 	{type = COMBAT_HOLYDAMAGE , percent = 0},
 	{type = COMBAT_DEATHDAMAGE , percent = 0}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -287, maxDamage = -374},
-	{name ="combat", interval = 2000, chance = 17, type = COMBAT_FIREDAMAGE, minDamage = -287, maxDamage = -374, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA},
-	{name ="firefield", interval = 1000, chance = 15, range = 7, radius = 4, target = true, shootEffect = CONST_ANI_FIRE},
-	{name ="combat", interval = 3000, chance = 17, type = COMBAT_FIREDAMAGE, minDamage = -287, maxDamage = -374, length = 8, spread = 3, effect = CONST_ME_FIREAREA}
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -48, maxDamage = -155 },
+	{ name = "combat", interval = 3000, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -135, range = 5, radius = 2, target = true, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_FIREDAMAGE, minDamage = -45, maxDamage = -120, length = 5, spread = 2, effect = CONST_ME_FIREAREA },
 }
 
 monster.defenses = {
-	defense = 35,
-	armor = 22,
-	{name ="combat", interval = 1000, chance = 25, type = COMBAT_HEALING, minDamage = 57, maxDamage = 93, effect = CONST_ME_MAGIC_BLUE}
+	defense = 29,
+	armor = 19,
+	{ name = "combat", interval = 5000, chance = 20, type = COMBAT_HEALING, minDamage = 65, maxDamage = 110, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "dragon ham", chance = 20000, maxCount = 2},
-	{name = "golden mug", chance = 1818},
-	{id = 2842, chance = 3333},
-	{name = "broadsword", chance = 5000},
-	{name = "royal helmet", chance = 588},
-	{id = 3361, chance = 333},
-	{name = "royal spear", chance = 2000, maxCount = 2},
-	-- {id = 3449, chance = 2500, maxCount = 5},
-	-- {name = "power bolt", chance = 2222, maxCount = 10},
-	{name = "green mushroom", chance = 6666},
-	{name = "red dragon leather", chance = 5000},
-	{id = 2853, chance = 100000, child = {
-			{name = "gold coin", chance = 100000, maxCount = 100},
-			{name = "small emerald", chance = 833, maxCount = 2},
-			{name = "fire sword", chance = 1428},
-			{name = "small sapphire", chance = 2222, maxCount = 2},
-			{name = "tower shield", chance = 1333},
-			{name = "dragon slayer", chance = 1033},
-			{name = "dragon lance", chance = 909},
-			{name = "red dragon scale", chance = 5000}
-		}
-	}
+	{ name = "gold coin", chance = 100000, maxCount = 44 },
+	{ name = "health potion", chance = 16000 },
+	{ name = "mana potion", chance = 16000 },
+	{ name = "strong health potion", chance = 28000 },
+	{ name = "strong mana potion", chance = 28000 },
+	{ name = "great health potion", chance = 10000 },
+	{ name = "great mana potion", chance = 10000 },
+	{ name = "great spirit potion", chance = 7000 },
+	{ name = "dragon ham", chance = 60000, maxCount = 2 },
+	{ name = "red dragon leather", chance = 5000 },
+	{ name = "red dragon scale", chance = 5000 },
+	{ id = 3573, chance = 1050 }, -- Set 3: Mage
+	{ id = 3567, chance = 700 }, -- Set 3: Mage
+	{ id = 645, chance = 850 }, -- Set 3: Mage
+	{ id = 8075, chance = 950 }, -- Set 3: Mage
+	{ id = 32619, chance = 700 }, -- Set 3: Mage boots
+	-- Armas nivel 30
+	{ id = 3065, chance = 4000 }, -- terra rod
+	{ id = 3073, chance = 4000 }, -- wand of cosmic energy
+	-- Armas nivel 50
+	{ id = 3067, chance = 3000 }, -- hailstorm rod
+	{ id = 3071, chance = 3000 }, -- wand of inferno
 }
 
 mType:register(monster)
+
 
 
 
